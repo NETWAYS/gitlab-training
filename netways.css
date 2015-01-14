@@ -6,7 +6,7 @@
 
 .content ul li {
   //list-style: square;
-  list-style: square url(global/images/orange-square.png);
+  list-style: square url(global/_images/orange-square.png);
 }
 
 .content ul ul li {
@@ -103,7 +103,7 @@ div.content.subsection h1 {
   background: #FA5C0D;   /*orange:*/
 }
 div.slide.subsection {
-  background-image: url("global/images/backgrounds/pp_strasse_sw_kl.jpg");
+  background-image: url("global/_images/backgrounds/pp_strasse_sw_kl.jpg");
 }
 
 
