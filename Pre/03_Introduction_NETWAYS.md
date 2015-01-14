@@ -3,7 +3,7 @@
 
 <!SLIDE img_right>
 # INTRODUCTION NETWAYS
-![NETWAYS Staff](../images/netways/Facebook_72dpi.jpg)
+![NETWAYS Staff](../_images/netways/Facebook_72dpi.jpg)
 
 * Company foundation 1995
 * Open Source since 1997
@@ -34,33 +34,33 @@
 
 <!SLIDE single_img>
 # NETWAYS PRODUCTS
-![NETWAYS Products](../images/netways/NETWAYS_Products.png)
+![NETWAYS Products](../_images/netways/NETWAYS_Products.png)
 
 <!SLIDE single_img>
 # NETWAYS TECHNOLOGIES
-![NETWAYS Technologies](../images/netways/NETWAYS_Technologies.png)
+![NETWAYS Technologies](../_images/netways/NETWAYS_Technologies.png)
 
 <!SLIDE>
 # NETWAYS CONFERENCES
 
 <!SLIDE single_img>
 # NETWAYS TRAININGS - MONITORING AND REPORTING
-![NETWAYS Trainings Monitoring](../images/netways/NETWAYS_Trainings_Monitoring.png)
+![NETWAYS Trainings Monitoring](../_images/netways/NETWAYS_Trainings_Monitoring.png)
 
 <!SLIDE single_img>
 # NETWAYS TRAININGS - PUPPET CONFIGURATION MANAGEMENT
-![NETWAYS Trainings Puppet](../images/netways/NETWAYS_Trainings_Puppet.png)
+![NETWAYS Trainings Puppet](../_images/netways/NETWAYS_Trainings_Puppet.png)
 
 <!SLIDE>
 # NETWAYS COMMUNITY
 
 <!SLIDE single_img>
 # NETWAYS CUSTOMERS - CONSULTING (EXCERPT)
-![NETWAYS Customers Consulting](../images/netways/NETWAYS_Customers_Consulting.png)
+![NETWAYS Customers Consulting](../_images/netways/NETWAYS_Customers_Consulting.png)
 
 <!SLIDE single_img>
 # NETWAYS CUSTOMERS - HOSTING (EXCERPT)
-![NETWAYS Customers Hosting](../images/netways/NETWAYS_Customers_Hosting.png)
+![NETWAYS Customers Hosting](../_images/netways/NETWAYS_Customers_Hosting.png)
 
 <!SLIDE>
 # OUR SERVICES AT A GLANCE
