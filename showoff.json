@@ -1,0 +1,16 @@
+{
+  "name": "Training 2015",
+  "author": "NETWAYS Training-Center",
+  "authorshort": "hplatzhalter",
+  "eventLocation": "Hier im Hotel XY",
+
+  "templates":{
+    "default":"templates/default.tpl"
+  },
+
+  "sections": [
+    {"section":"Pre"},
+    {"section":"Post"}
+  ]
+}
+

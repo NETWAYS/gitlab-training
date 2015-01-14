@@ -1,0 +1,141 @@
+<!SLIDE[bg=/de-globalsites/intro_background.png]>
+<div class="intro-thema"><p>~~~CONFIG:name~~~</p></div>
+<div class="intro-eventName"><p>~~~CONFIG:eventLocation~~~</p></div>
+<div class="intro-author"><p>~~~CONFIG:author~~~</p></div>
+
+~~~SECTION:notes~~~
+
+This is a presenter note example.
+
+~~~ENDSECTION~~~
+
+<!SLIDE transition=fade>
+# MITARBEITERVORSTELLUNG
+<img src="../images/Mitarbeiterphotos/~~~CONFIG:authorshort~~~.png" alt="~~~CONFIG:author~~~" id="MAfoto1" style="position: absolute; margin: 0; padding: 4px; top: 190px; right: 150px; width:120px;height:160px; background: lightgray; border-bottom: 2px solid #474747; border-right: 2px solid #474747; border-top: 1px solid #000; border-left: 1px solid #000;">
+
+- Trainer
+  - Consultant
+  - Bei Netways seit Mai 2011
+
+- Schwerpunkte
+  - Open Source Monitoring
+  - Open Source Datacenter Solutions
+
+<!SLIDE img_right>
+# Vorstellung NETWAYS
+![MA Quadrat](../images/ma_square.jpeg)
+
+- Firmengründung 1995
+- Open Source seit 1997
+- Aktuell 40 Mitarbeiter
+- Spezialisierung in den Bereichen Open Source Systems Management und Open Source Datacenter
+<!SLIDE bullets_left-right>
+# NETWAYS Kompetenzen
+- Monitoring 
+- Consulting
+- Graphing 
+- Hosting
+- Logmanagement 
+- Managed Services
+- Konfigurationsmanagement 
+- Development
+- Reporting 
+- Support
+- Private Cloud 
+- Betrieb
+- Backup 
+- Schulungen
+- Projektmanagement 
+- Konferenzen
+- Monitoring Hardware
+<!SLIDE single_img>
+# NETWAYS Produkte
+![products](../images/netways_produkte.png)
+<!SLIDE single_img>
+# NETWAYS Technologien
+![products](../images/netways_technologien.png)
+<!SLIDE img_left>
+# NETWAYS Konferenzen
+
+![OSMC2015](../images/konferenzen/OSMC2015.png)
+
+- Open Source Monitoring Conference
+  - 16. - 19. November 2015 in Nürnberg
+  - ??? Teilnehmer (2014)
+  - Monitoring Best Practices
+
+![OSMC2015](../images/konferenzen/Baukasten_Seitenleiste_OSDC2015.jpg)
+
+- Open Source Data Center Conference
+  - 21. - 23. April 2015 in Berlin
+  - ??? Teilnehmer (2014)
+  - Open Source in großen IT Umgebungen
+
+<!SLIDE gallery3x2>
+# NETWAYS SCHULUNGEN - MONITORING UND REPORTING
+![icinga](../images/net-traings/icinga.png)
+![icinga_advanced](../images/net-traings/icinga_advanced.png)
+![icinga2](../images/net-traings/icinga2.png)
+
+![graphite](../images/net-traings/graphite.png)
+![jasper](../images/net-traings/jasper.png)
+![logstash](../images/net-traings/logstash.png)
+<!SLIDE gallery3x2>
+# NETWAYS SCHULUNGEN - PUPPET KONFIGURATIONSMANAGEMENT
+![puppet fundamentals](../images/net-traings/puppet_fundamentals.png)
+![puppet practitioner](../images/net-traings/puppet_practitioner.png)
+![puppet architect](../images/net-traings/puppet_architect.png)
+
+![individuell](../images/net-traings/individuell.png)
+</div>
+<!SLIDE logos3x4>
+# NETWAYS Kunden - Consulting
+![bild](../images/kundenlogos/original/audi-r8-logo-vectoraudi-mediaservices---audi-new-logo-k4fmcffn.jpg)
+![bild](../images/kundenlogos/original/2000px-ING-DiBa-Logo.png)
+![bild](../images/kundenlogos/original/Logo_Freudenberg_IT.jpg)
+
+![bild](../images/kundenlogos/original/DB-Mobility-Networks-Logistics_image_full.jpg)
+![bild](../images/kundenlogos/original/2000px-Deutsche_Telekom-Logo.png)
+![bild](../images/kundenlogos/original/2000px-Deutsche_Welle_logo_2012.png)
+
+![bild](../images/kundenlogos/original/640px-Hilcona_logo.png)
+![bild](../images/kundenlogos/original/Porsche_Informatik_Logo.jpg)
+![bild](../images/kundenlogos/original/logo_nuernberg.jpg)
+
+![bild](../images/kundenlogos/original/EDEKA-Logo.jpg)
+![bild](../images/kundenlogos/original/Logo_Bosch.jpg)
+![bild](../images/kundenlogos/original/gfk-logo.jpg)
+<!SLIDE logos3x4>
+# NETWAYS Kunden - Hosting
+![bild](../images/kundenlogos/original/Buerkert_Logo_RGB_Subline.jpg)
+![bild](../images/kundenlogos/original/logo_rakuten_de.jpg)
+![bild](../images/kundenlogos/original/tb_logo_12_800_72.jpg)
+
+![bild](../images/kundenlogos/original/4892_logo_baumer.png)
+![bild](../images/kundenlogos/original/clever-elements-logo.png)
+![bild](../images/kundenlogos/original/gocept_logo_filled_RGB.png)
+
+![bild](../images/kundenlogos/original/LOGO_BrandadSystems_RGB20140228-31872-pvlz53.jpg)
+![bild](../images/kundenlogos/original/PARI_LogoNeu.jpg)
+![bild](../images/kundenlogos/original/121012_OSBF_Logo.png)
+
+![bild](../images/kundenlogos/original/logo_magenta4.png)
+![bild](../images/kundenlogos/original/nueww-spon-512-inserteffect.jpg)
+<!SLIDE>
+# NETWAYS Leistungen
+- **Konzeptionierung und Planung**
+- **Workshops & Consulting zur Implementierung vor Ort**
+- **Betrieb**
+  - Komplette Monitoringsysteme
+  - Satellitensysteme
+- **Entwicklungsleistungen**
+  - Plugins
+  - Systemintegration
+- **Schulungen**
+  - Standardisierte Schulungsmodule
+  - Individuell vor Ort
+- **Support**
+  - Standardverträge
+  - Individuelle Supportkonzepte
+- **Konferenzen**
+
