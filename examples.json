@@ -9,7 +9,8 @@
   },
 
   "sections": [
-    "_examples/Slide_Styles.md"
+    "_examples/Slide_Styles.md",
+    "_examples/Syntax.md"
   ]
 }
 
