@@ -1,3 +1,7 @@
+<!SLIDE[bg=/_images/backgrounds/pp_strasse_sw_kl.jpg] subsection>
+
+# Syntax
+
 <!SLIDE>
 
 Syntax: headers1
