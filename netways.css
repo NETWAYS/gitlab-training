@@ -72,7 +72,8 @@
 .content > form > p {
     font-size: 2em;
     margin: 1em;
-    text-align: center;
+    //text-align: center;
+    text-align: left;
 }
 
 .content > pre,
