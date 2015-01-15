@@ -89,6 +89,8 @@
     display:block;
     margin-left:auto;
     margin-right:auto;
+    height: 90%;
+    width: 90%;
 }
 
 .slide .center {
@@ -145,6 +147,13 @@
     //text-align: center;
     text-align: left;
     padding: 10px;
+}
+
+.lrbullets > ul > li:nth-of-type(odd) {
+  float: left;
+  width: 400px;
+}
+.lrbullets > ul > li:nth-of-type(even) {
 }
 
 /* nested lists get their bullets back */
@@ -867,6 +876,54 @@ body#stats {
   }
 }
 
+/* SETTINGS FOR title */
+div.title-name {
+  position: absolute;
+  top: 140px;
+  float: right;
+  text-align: right;
+  width: 100%;
+}
+
+div.title-name p {
+  float: right;
+  padding: 10px;
+  font: normal 60px/1 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #FFFFFF;
+  background: #35312e;
+}
+
+div.title-eventlocation {
+  position: absolute;
+  top: 280px;
+  float: right;
+  text-align: right;
+  width: 100%;
+}
+
+div.title-eventlocation p {
+  float: right;
+  padding: 10px;
+  font: normal 36px/1 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #FFFFFF;
+  background: #FA5C0D;   /*orange:*/
+}
+
+div.title-author {
+  position: absolute;
+  top: 480px;
+  width: 100%;
+  margin-top 10px:
+}
+
+div.title-author p {
+  float: left;
+  padding: 10px;
+  font: normal 32px/1 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #000000;
+  background: #FAFAFA;
+}
+
 /* SETTINGS FOR default.tpl */
 div#net-header {
   position: absolute;
@@ -941,7 +998,7 @@ div.slide.subsection {
   background-image: url("global/_images/backgrounds/pp_strasse_sw_kl.jpg");
 }
 
-/* SETTINGS FOR Headers */
+/* SETTINGS FOR headers */
 div h1, h1 {
   position: absolute;
   top: 40px;
@@ -957,4 +1014,16 @@ div h1, h1 {
 
 .content {
   margin-top: 100px !important;
+}
+
+.img_left img {
+  float: left;
+  width: 50%;
+  height: 50%;
+}
+
+.img_right img {
+  float: right;
+  width: 50%;
+  height: 50%;
 }
