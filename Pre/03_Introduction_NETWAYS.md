@@ -2,7 +2,7 @@
 
 # INTRODUCTION NETWAYS
 
-<!SLIDE smbullets img_right>
+<!SLIDE smbullets rimg>
 
 # INTRODUCTION NETWAYS
 ![NETWAYS Staff](../_images/netways/Facebook_72dpi.jpg)
