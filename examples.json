@@ -1,0 +1,15 @@
+{
+  "name": "Training 2015",
+  "author": "NETWAYS Training-Center",
+  "authorshort": "MW",
+  "eventLocation": "Hier im Hotel XY",
+
+  "templates":{
+    "default":"templates/default.tpl"
+  },
+
+  "sections": [
+    "_examples/Slide_Styles.md"
+  ]
+}
+
