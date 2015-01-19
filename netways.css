@@ -947,10 +947,19 @@ p#header-left {
 p#header-right {
   position: absolute;
   right: 30px;
-  top: 10px;
-  font: normal 15px/1 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  top: 12px;
+  font: normal 16px/1 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   text-align: right;
 }
+img#net-logo {
+  position: absolute;
+  margin: 3px;
+  padding: 0;
+  top: 0px;
+  left: 7px;
+  width:180px;
+  //height:22px;
+} 
 
 div#net-footer {
   position: absolute;
@@ -1012,6 +1021,7 @@ div h1, h1 {
   color: #FFFFFF;
   background: #35312e;
 }
+
 
 .content {
   margin-top: 100px !important;
