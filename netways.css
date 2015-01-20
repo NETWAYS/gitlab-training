@@ -944,6 +944,16 @@ p#header-left {
   text-align: left;
 }
 
+img#header-left {
+  position: absolute;
+  margin: 3px;
+  padding: 0;
+  top: 0px;
+  left: 10px;
+  width:180px;
+  height:35px;
+}
+
 p#header-right {
   position: absolute;
   right: 30px;
@@ -951,15 +961,6 @@ p#header-right {
   font: normal 16px/1 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   text-align: right;
 }
-img#net-logo {
-  position: absolute;
-  margin: 3px;
-  padding: 0;
-  top: 0px;
-  left: 7px;
-  width:180px;
-  //height:22px;
-} 
 
 div#net-footer {
   position: absolute;
