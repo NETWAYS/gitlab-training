@@ -1,4 +1,4 @@
-<!SLIDE center>
+<!SLIDE noprint center>
 
 # THANK YOU
 

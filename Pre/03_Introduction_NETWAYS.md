@@ -1,8 +1,8 @@
-<!SLIDE subsection>
+<!SLIDE noprint subsection>
 
 # INTRODUCTION NETWAYS
 
-<!SLIDE smbullets rimg>
+<!SLIDE noprint smbullets rimg>
 
 # INTRODUCTION NETWAYS
 ![NETWAYS Staff](../_images/netways/Facebook_72dpi.jpg)
@@ -13,7 +13,7 @@
 * Specializing in the areas of Open Source Systems Management and Open Source Datacenter
 * Puppet Partner since 2009
 
-<!SLIDE lrbullets smbullets>
+<!SLIDE noprint lrbullets smbullets>
 
 # NETWAYS SKILLS
 
@@ -35,45 +35,45 @@
 * Conferences
 * Monitoring hardware
 
-<!SLIDE center>
+<!SLIDE noprint center>
 
 # NETWAYS PRODUCTS
 ![NETWAYS Products](../_images/netways/NETWAYS_Products.png)
 
-<!SLIDE center>
+<!SLIDE noprint center>
 
 # NETWAYS TECHNOLOGIES
 ![NETWAYS Technologies](../_images/netways/NETWAYS_Technologies.png)
 
-<!SLIDE>
+<!SLIDE noprint>
 
 # NETWAYS CONFERENCES
 
-<!SLIDE center>
+<!SLIDE noprint center>
 
 # NETWAYS TRAININGS - MONITORING AND REPORTING
 ![NETWAYS Trainings Monitoring](../_images/netways/NETWAYS_Trainings_Monitoring.png)
 
-<!SLIDE center>
+<!SLIDE noprint center>
 
 # NETWAYS TRAININGS - PUPPET CONFIGURATION MANAGEMENT
 ![NETWAYS Trainings Puppet](../_images/netways/NETWAYS_Trainings_Puppet.png)
 
-<!SLIDE>
+<!SLIDE noprint>
 
 # NETWAYS COMMUNITY
 
-<!SLIDE center>
+<!SLIDE noprint center>
 
 # NETWAYS CUSTOMERS - CONSULTING (EXCERPT)
 ![NETWAYS Customers Consulting](../_images/netways/NETWAYS_Customers_Consulting.png)
 
-<!SLIDE center>
+<!SLIDE noprint center>
 
 # NETWAYS CUSTOMERS - HOSTING (EXCERPT)
 ![NETWAYS Customers Hosting](../_images/netways/NETWAYS_Customers_Hosting.png)
 
-<!SLIDE smbullets small>
+<!SLIDE noprint smbullets small>
 
 # OUR SERVICES AT A GLANCE
 

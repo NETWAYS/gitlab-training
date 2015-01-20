@@ -1,3 +1,3 @@
-<!SLIDE>
+<!SLIDE noprint>
 
 # INTRODUCTION STAFF
