@@ -1,8 +1,8 @@
 {
   "name": "Icinga Basic",
-  "author": "Markus Waldmüller",
   "date": "01.01.2015",
   "location": "Nürnberg", 
+  "author": "Markus Waldmüller",
 
   "protected": ["presenter", "onepage", "print"],
   "user": "netways",
