@@ -965,10 +965,9 @@ p#header-right {
 img#header-right {
   position: absolute;
   right: 30px;
-  top: 0px;
+  top: 12px;
   width: 394px;
   height: 23px;
-  vertical-align: middle;
 }
 
 div#net-footer {
