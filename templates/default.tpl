@@ -1,8 +1,9 @@
 <div id="net-header">
  <p id="header-left"></p>
- <p id="header-right">www.netways.de <font color='#FA5C0D'>//</font> blog.netways.de <font color='#FA5C0D'>//</font> @netways </p>
+ <p id="header-right"></p>
 </div>
-<img id="header-left" src="/image/global/_images/netways/NETWAYS_Logo.png" alt="NETWAYS Logo"> 
+<img id="header-left" src="/image/global/_images/netways/NETWAYS_Logo.png" alt=""> 
+<img id="header-right" src="/image/global/_images/netways/NETWAYS_Addresses.png" alt="">
 ~~~CONTENT~~~
 <div id="net-footer">
  <p id="footer-left"></p>
