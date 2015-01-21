@@ -965,7 +965,9 @@ p#header-right {
 img#header-right {
   position: absolute;
   right: 30px;
-  top: 12px;
+  top: 0px;
+  width: 394px;
+  height: 23px;
 }
 
 div#net-footer {
