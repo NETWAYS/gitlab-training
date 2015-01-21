@@ -962,6 +962,12 @@ p#header-right {
   text-align: right;
 }
 
+img#header-right {
+  position: absolute;
+  right: 30px;
+  top: 12px;
+}
+
 div#net-footer {
   position: absolute;
   bottom: 0;
