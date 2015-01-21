@@ -1,5 +1,8 @@
 {
   "name": "Training 2015",
+  "protected": ["presenter", "onepage", "print"],
+  "user": "netways",
+  "password": "awesome",
   "author": "NETWAYS Training-Center",
   "authorshort": "MW",
   "eventLocation": "Hier im Hotel XY",
