@@ -1,19 +1,21 @@
 {
-  "name": "Training 2015",
+  "name": "Icinga Basic",
+  "author": "Markus Waldmüller",
+  "date": "01.01.2015",
+  "location": "Nürnberg", 
+
   "protected": ["presenter", "onepage", "print"],
   "user": "netways",
   "password": "awesome",
-  "author": "NETWAYS Training-Center",
-  "authorshort": "MW",
-  "eventLocation": "Hier im Hotel XY",
 
   "templates":{
     "default":"templates/default.tpl"
   },
 
   "sections": [
-    {"section":"Pre"},
+    {"section":"Pre/Title"},
+    "Pre/Staff/MW.md",
+    {"section":"Pre/NETWAYS"},
     {"section":"Post"}
   ]
 }
-

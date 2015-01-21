@@ -894,7 +894,7 @@ div.title-name p {
   background: #35312e;
 }
 
-div.title-eventlocation {
+div.title-location {
   position: absolute;
   top: 280px;
   float: right;
@@ -902,7 +902,7 @@ div.title-eventlocation {
   width: 100%;
 }
 
-div.title-eventlocation p {
+div.title-location p {
   float: right;
   padding: 10px;
   font: normal 36px/1 "Lucida Sans Unicode", "Lucida Grande", sans-serif;

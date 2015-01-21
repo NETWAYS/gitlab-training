@@ -1,3 +1,0 @@
-<!SLIDE noprint>
-
-# INTRODUCTION STAFF 
