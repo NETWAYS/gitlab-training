@@ -937,13 +937,6 @@ div#net-header {
   border-bottom-width: thin;
 }
 
-p#header-left {
-  position: absolute;
-  left: 10px;
-  top: 5px;
-  text-align: left;
-}
-
 img#header-left {
   position: absolute;
   margin: 3px;
@@ -952,14 +945,6 @@ img#header-left {
   left: 10px;
   width:180px;
   height:35px;
-}
-
-p#header-right {
-  position: absolute;
-  right: 30px;
-  top: 12px;
-  font: normal 16px/1 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  text-align: right;
 }
 
 img#header-right {
