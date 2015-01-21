@@ -968,6 +968,7 @@ img#header-right {
   top: 0px;
   width: 394px;
   height: 23px;
+  vertical-align: middle;
 }
 
 div#net-footer {
