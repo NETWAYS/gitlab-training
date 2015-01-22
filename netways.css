@@ -1032,3 +1032,10 @@ div h1, h1 {
   width: 50%;
   height: 50%;
 }
+
+.staff img {
+  float: right;
+  margin-right: 100px;
+  width: 240px;
+  height: 240px;
+}
