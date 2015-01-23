@@ -86,7 +86,7 @@
     margin: 2em;
 }
 
-.center img {
+.center p > img {
     display:block;
     margin-top: 160px;
     margin-left: 30px;
