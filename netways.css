@@ -877,83 +877,76 @@ body#stats {
   }
 }
 
-/* SETTINGS FOR title */
-div.title-name {
-  position: absolute;
-  top: 140px;
-  float: right;
-  text-align: right;
-  width: 100%;
-}
+  /* NETWAYS title */
+  div.title-name {
+    position: absolute;
+    top: 140px;
+    float: right;
+    text-align: right;
+    width: 100%;
+  }
 
-div.title-name p {
-  float: right;
-  padding: 10px;
-  font: normal 60px/1 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  color: #FFFFFF;
-  background: #35312e;
-}
+  div.title-name p {
+    float: right;
+    padding: 10px;
+    font: normal 60px/1 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #FFFFFF;
+    background: #35312e;
+  }
 
-div.title-location {
-  position: absolute;
-  top: 280px;
-  float: right;
-  text-align: right;
-  width: 100%;
-}
+  div.title-location {
+    position: absolute;
+    top: 280px;
+    float: right;
+    text-align: right;
+    width: 100%;
+  }
 
-div.title-location p {
-  float: right;
-  padding: 10px;
-  font: normal 36px/1 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  color: #FFFFFF;
-  background: #FA5C0D;   /*orange:*/
-}
+  div.title-location p {
+    float: right;
+    padding: 10px;
+    font: normal 36px/1 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #FFFFFF;
+    background: #FA5C0D;   /*orange:*/
+  }
 
-div.title-author {
-  position: absolute;
-  top: 480px;
-  width: 100%;
-  margin-top 10px:
-}
+  div.title-author {
+    position: absolute;
+    top: 480px;
+    width: 100%;
+    margin-top 10px:
+  }
 
-div.title-author p {
-  float: left;
-  padding: 10px;
-  font: normal 32px/1 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  color: #000000;
-  background: #FAFAFA;
-}
+  div.title-author p {
+    float: left;
+    padding: 10px;
+    font: normal 32px/1 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
 
-/* SETTINGS FOR default.tpl */
-div#net-header {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 40px;
-  /*line-height: 1.5em;*/
-  background: #FAFAFA;
-  border-bottom-style: solid;
-  border-bottom-width: thin;
-}
+  /* NETWAYS header */
+  div#net-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+  }
 
-img#header-left {
-  position: absolute;
-  margin: 3px;
-  padding: 0;
-  top: 0px;
-  left: 10px;
-  width:180px;
-  height:35px;
-}
+  /* Currently not in use */
+  img#header-left {
+    position: absolute;
+    top: 0px;
+    left: 30px;
+  }
 
-img#header-right {
-  position: absolute;
-  right: 30px;
-  top: 9px;
-  width: 394px;
-  height: 23px;
-}
+  img#header-right {
+    position: absolute;
+    right: 30px;
+    top: 3px;
+    width: 200px;
+    height: 93px;
+  }
 
   img#staff {
     float: right;
@@ -962,76 +955,69 @@ img#header-right {
     height: 240px;
   }
 
-div#net-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 30px;
-  background: #D9D9D9;
-}
-p#footer-left {
-  position: absolute;
-  left: 30px;
-  bottom: 5px;
-  font: normal 11px/1 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  text-align: left;
-}
+  /* NETAYS footer */
+  div#net-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    color: #FFFFFF;
+    background: #FA5C0D;
+    font: normal 15px/1 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
 
-p#footer-right {
-  position: absolute;
-  right: 40px;
-  bottom: 7.5px;
-  font: normal 15px/1 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  text-align: right;
-}
+  p#footer-left {
+    position: absolute;
+    left: 30px;
+    bottom: 7.5px;
+    text-align: left;
+  }
 
-div#footer-square{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 30px;
-  height: 30px;
-  background: #FA5C0D;   /*orange:*/
-}
+  p#footer-right {
+    position: absolute;
+    right: 30px;
+    bottom: 7.5px;
+    text-align: right;
+  }
 
-/* SETTINGS FOR subsection */
-div.content.subsection h1 {
-  position: absolute;
-  top: 200px;
-  width: auto;
-  background: orange;
-  padding: 10px;
-  font: normal 36px/1 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  color: #FFFFFF;
-  background: #FA5C0D;   /*orange:*/
-}
+  /* NETWAYS subsection */
+  div.content.subsection h1 {
+    position: absolute;
+    top: 200px;
+    width: auto;
+    background: orange;
+    padding: 10px;
+    font: normal 36px/1 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #FFFFFF;
+    background: #FA5C0D;
+  }
 
-/* SETTINGS FOR headers */
-div h1, h1 {
-  position: absolute;
-  top: 40px;
-  margin-top: 0px;
-  margin-right: 0px;
-  padding: 7px;
-  width: 100%;
-  text-align: left;
-  font: normal 28px/1 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  color: #FFFFFF;
-  background: #35312e;
-}
+  /* NETWAYS headers */
+  div h1, h1 {
+    position: absolute;
+    top: 100px;
+    margin-top: 0px;
+    margin-right: 0px;
+    padding: 7px;
+    width: 100%;
+    text-align: left;
+    font: normal 28px/1 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #FFFFFF;
+    background: #FA5C0D;
+  }
 
-.content {
-  margin-top: 100px !important;
-}
+  .content {
+    margin-top: 180px !important;
+  }
 
-.limg img {
-  float: left;
-  width: 50%;
-  height: 50%;
-}
+  .limg img {
+    float: left;
+    width: 50%;
+    height: 50%;
+  }
 
-.rimg img {
-  float: right;
-  width: 50%;
-  height: 50%;
-}
+  .rimg img {
+    float: right;
+    width: 50%;
+    height: 50%;
+  }
