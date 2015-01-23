@@ -1,5 +1,5 @@
 {
-  "name": "Icinga Basic",
+  "name": "NETWAYS Training",
   "date": "01.01.-02.01.2015",
   "location": "Nürnberg", 
   "author": "Markus Waldmüller",
@@ -16,6 +16,9 @@
     {"section":"Pre/Title"},
     "Pre/Staff/MW.md",
     {"section":"Pre/NETWAYS"},
+
+    {"section":"Test"},
+
     {"section":"Post"}
   ]
 }

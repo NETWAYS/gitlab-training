@@ -1,8 +1,8 @@
-<!SLIDE[bg=global/_images/backgrounds/pp_strasse_bunt_kl.jpg] printonly>
+<!SLIDE printonly>
 
 <div class="title-name"><p>~~~CONFIG:name~~~</p></div>
 
-<!SLIDE[bg=global/_images/backgrounds/pp_strasse_bunt_kl.jpg] noprint>
+<!SLIDE noprint>
 
 <div class="title-name"><p>~~~CONFIG:name~~~</p></div>
 <div class="title-location"><p>~~~CONFIG:date~~~ | ~~~CONFIG:location~~~</p></div>
