@@ -1,7 +1,7 @@
-<!SLIDE noprint smbullets staff>
+<!SLIDE noprint smbullets>
 
 # INTRODUCTION STAFF
-![LB](../../_images/netways/staff/LB.jpg)
+<img id="staff" src="/image/global/_images/netways/staff/LB.jpg" alt="LB">
 
 * Lennart Betz
  * Senior Consultant

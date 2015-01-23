@@ -1,7 +1,7 @@
-<!SLIDE noprint smbullets staff>
+<!SLIDE noprint smbullets>
 
 # INTRODUCTION STAFF
-![DG](../../_images/netways/staff/DG.jpg)
+<img id="staff" src="/image/global/_images/netways/staff/DG.jpg" alt="DG">
 
 ## Dirk Götz
 

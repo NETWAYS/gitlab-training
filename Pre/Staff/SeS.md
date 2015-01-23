@@ -1,6 +1,6 @@
-<!SLIDE noprint smbullets staff>
+<!SLIDE noprint smbullets>
 
 # INTRODUCTION STAFF
-![SeS](../../_images/netways/staff/SeS.jpg)
+<img id="staff" src="/image/global/_images/netways/staff/SeS.jpg" alt="SeS">
 
 * Sebastian Saemann

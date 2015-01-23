@@ -1,7 +1,7 @@
-<!SLIDE noprint smbullets staff>
+<!SLIDE noprint smbullets>
 
 # INTRODUCTION STAFF
-![CN](../../_images/netways/staff/CN.jpg)
+<img id="staff" src="/image/global/_images/netways/staff/CN.jpg" alt="CN">
 
 * Christoph Niemann
  * Senior Consultant

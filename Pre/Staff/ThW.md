@@ -1,7 +1,7 @@
-<!SLIDE noprint smbullets staff>
+<!SLIDE noprint smbullets>
 
 # INTRODUCTION STAFF
-![ThW](../../_images/netways/staff/ThW.jpg)
+<img id="staff" src="/image/global/_images/netways/staff/ThW.jpg" alt="ThW">
 
 * Thomas Widhalm
  * Senior Consultant

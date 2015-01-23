@@ -1,7 +1,7 @@
-<!SLIDE noprint smbullets staff>
+<!SLIDE noprint smbullets>
 
 # INTRODUCTION STAFF
-![MiF](../../_images/netways/staff/MiF.jpg)
+<img id="staff" src="/image/global/_images/netways/staff/MiF.jpg" alt="MiF">
 
 ## Michael Friedrich
 

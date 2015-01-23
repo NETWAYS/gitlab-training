@@ -1,7 +1,7 @@
-<!SLIDE noprint smbullets staff>
+<!SLIDE noprint smbullets>
 
 # INTRODUCTION STAFF
-![TG](../../_images/netways/staff/TG.jpg)
+<img id="staff" src="/image/global/_images/netways/staff/TG.jpg" alt="TG">
 
 * Thomas Gelf
  * Senior Consultant

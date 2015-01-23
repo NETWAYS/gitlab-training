@@ -1,7 +1,7 @@
-<!SLIDE noprint smbullets staff>
+<!SLIDE noprint smbullets>
 
 # INTRODUCTION STAFF
-![CW](../../_images/netways/staff/CW.jpg)
+<img id="staff" src="/image/global/_images/netways/staff/CW.jpg" alt="CW">
 
 * Cornelius Wachinger
  * Senior Consultant

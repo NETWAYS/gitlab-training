@@ -1,7 +1,7 @@
-<!SLIDE noprint smbullets staff>
+<!SLIDE noprint smbullets>
 
 # INTRODUCTION STAFF
-![MF](../../_images/netways/staff/MF.jpg)
+<img id="staff" src="/image/global/_images/netways/staff/MF.jpg" alt="MF">
 
 * Markus Frosch
  * Senior Consultant

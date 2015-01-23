@@ -1,6 +1,6 @@
-<!SLIDE noprint smbullets staff>
+<!SLIDE noprint smbullets>
 
 # INTRODUCTION STAFF
-![AL](../../_images/netways/staff/AL.jpg)
+<img id="staff" src="/image/global/_images/netways/staff/AL.jpg" alt="AL">
 
 * Achim Ledermüller 

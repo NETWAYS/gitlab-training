@@ -1,7 +1,7 @@
-<!SLIDE noprint smbullets staff>
+<!SLIDE noprint smbullets>
 
 # INTRODUCTION STAFF
-![MW](../../_images/netways/staff/MW.jpg)
+<img id="staff" src="/image/global/_images/netways/staff/MW.jpg" alt="MW">
 
 * Markus Waldmüller
  * Senior Consultant
