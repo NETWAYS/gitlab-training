@@ -929,7 +929,6 @@ body#stats {
     //text-align: right;
     visibility: hidden;
   }
-
 }
 
 @page {
@@ -1048,6 +1047,7 @@ body#stats {
     bottom: 7.5px;
     text-align: right;
   }
+}
 
   /* NETWAYS subsection */
   div.content.subsection h1 {
