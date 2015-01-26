@@ -1,5 +1,5 @@
 <div id="net-header">
-  <img id="header-right" src="/image/global/_images/netways/Schulung_Stammlogo_200px_ENG.jpg" alt="">
+  <img id="header-right" src="/image/global/_images/netways/Schulung_Stammlogo_200px_ENG.jpg" alt="NETWAYS Training">
 </div>
 ~~~CONTENT~~~
 <div id="net-footer">
