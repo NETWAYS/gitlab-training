@@ -4,6 +4,8 @@
   "location": "Nuremberg", 
   "author": "Markus Waldmüller",
 
+  "favicon": "global/favicon.ico",
+
   "protected": ["presenter", "onepage", "print"],
   "user": "netways",
   "password": "awesome",
