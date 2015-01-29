@@ -45,9 +45,21 @@
 # NETWAYS TECHNOLOGIES
 ![NETWAYS Technologies](../../_images/netways/NETWAYS_Technologies.png)
 
-<!SLIDE noprint>
+<!SLIDE noprint smbullets>
 
 # NETWAYS CONFERENCES
+
+* Open Source Data Center Conference
+ * 22.-23. April 2015 in Berlin
+
+* Puppet Camp
+ * 24. April 2015 in Berlin
+
+* Open Source Backup Conference
+ * 29.-30. September 2015 in Cologne
+
+* Open Source Monitoring Conference
+ * 16.-18. November 2015 in Nuremberg
 
 <!SLIDE noprint center>
 
@@ -59,9 +71,21 @@
 # NETWAYS TRAININGS - PUPPET CONFIGURATION MANAGEMENT
 ![NETWAYS Trainings Puppet](../../_images/netways/NETWAYS_Trainings_Puppet.png)
 
-<!SLIDE noprint>
+<!SLIDE noprint smbullets>
 
 # NETWAYS COMMUNITY
+
+* www.netways.org
+ * NETWAYS Addons
+ * NETWAYS Plugins
+
+* www.icinga.org
+ * Development
+ * Hosting
+
+* exchange.icinga.org
+ * Icinga / Nagios Addons and Plugins
+ * >500 Projects
 
 <!SLIDE noprint center>
 

@@ -889,7 +889,7 @@ body#stats {
 }
 
 @page {
-  size: A4;
+  size: A5;
   margin: 0;
   orphans: 3;
   widows: 3;
@@ -1038,13 +1038,33 @@ body#stats {
 
   .limg img {
     float: left;
-    width: 50%;
+    width: 400px;
     height: 50%;
+  }
+
+  .rbullets > ul {
+    float: right;
+    width: 400px;
+  }
+
+  .rbullets > ul > li {
+    float: right;
+    width: 400px;
   }
 
   .rimg img {
     float: right;
-    width: 50%;
+    width: 400px;
     height: 50%;
+  }
+
+  .lbullets > ul {
+    float: left;
+    width: 400px;
+  }
+
+  .lbullets > ul > li {
+    float: left;
+    width: 400px;
   }
 }
