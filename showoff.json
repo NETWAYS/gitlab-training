@@ -1,7 +1,7 @@
 {
   "name": "NETWAYS Training",
   "date": "01.01.-02.01.2015",
-  "location": "Nürnberg", 
+  "location": "Nuremberg", 
   "author": "Markus Waldmüller",
 
   "protected": ["presenter", "onepage", "print"],
