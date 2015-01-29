@@ -287,7 +287,7 @@ img#disconnected {
 .content table tr td {
     border-right: 1px solid #eee;
     border-bottom: 1px solid #efefef;
-    text-align: center;
+    text-align: left;
     padding: 0.5em;
 }
 
