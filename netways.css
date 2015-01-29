@@ -979,12 +979,6 @@ body#stats {
     height: 240px;
   }
 
-  img#monitoring-installation {
-    float: center;
-    margin-left: 50px;
-    width: 500px;
-  }
-
 @media screen {
   /* NETWAYS footer */
   div#net-footer {
