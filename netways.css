@@ -886,6 +886,11 @@ body#stats {
   p#footer-right {
     visibility: hidden;
   }
+
+  div.handouts {
+    display: block !important;
+    margin: 0 1em;
+  }
 }
 
 @page {
