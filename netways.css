@@ -890,6 +890,16 @@ body#stats {
   div.handouts {
     display: block !important;
     margin: 0 1em;
+    text-align: left;
+    font-size: 150%;
+  }
+  div.handouts h1, h2, h3, h4 {
+    text-align: left;
+  }
+  div.handouts p {
+    font-size: 2em;
+    margin: 0.1em;
+    text-align: left;
   }
 }
 
