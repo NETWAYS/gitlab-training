@@ -8,6 +8,16 @@
       padding:0;
   }
 
+  a, a:visited {
+    color: #FA5C0D;
+    text-decoration: none;
+  }
+
+  a:hover, a:active {
+    color: #FA5C0D;
+    text-decoration: underline;
+  }
+
   #preso, .slide {
       background: #fff;
       width: 1024px;
@@ -826,6 +836,11 @@ body#stats {
 @media print {
   body {
     font-size: 70%;
+  }
+
+  a, a:visited, a:hover, a:active {
+    color: #FA5C0D;
+    text-decoration: underline;
   }
 
   #sidebarWrapper,
