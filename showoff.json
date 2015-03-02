@@ -4,7 +4,7 @@
   "location": "Nuremberg", 
   "author": "Markus Waldmüller",
 
-  "favicon": "global/favicon.ico",
+  "favicon": "image/global/favicon.ico",
 
   "protected": ["presenter", "onepage", "print"],
   "user": "netways",
