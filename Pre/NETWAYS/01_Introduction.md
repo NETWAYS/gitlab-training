@@ -75,15 +75,15 @@
 
 # NETWAYS COMMUNITY
 
-* www.netways.org
+* <a href="http://www.netways.org">www.netways.org</a>
  * NETWAYS Addons
  * NETWAYS Plugins
 
-* www.icinga.org
+* <a href="https://www.icinga.org">www.icinga.org</a>
  * Development
  * Hosting
 
-* exchange.icinga.org
+* <a href="https://exchange.icinga.org">exchange.icinga.org</a>
  * Icinga / Nagios Addons and Plugins
  * >500 Projects
 
