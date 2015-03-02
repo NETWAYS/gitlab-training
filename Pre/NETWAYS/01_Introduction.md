@@ -45,12 +45,17 @@
 # NETWAYS TECHNOLOGIES
 ![NETWAYS Technologies](../../_images/netways/NETWAYS_Technologies.png)
 
-<!SLIDE noprint smbullets>
+<!SLIDE noprint smbullets small>
 
 # NETWAYS CONFERENCES
 
+* CeBIT
+ * 16.-20. March 2015 in Hanover
+ * Hall 6
+ * Stand H16 (110)
+
 * Open Source Data Center Conference
- * 22.-23. April 2015 in Berlin
+ * 21.-23. April 2015 in Berlin
 
 * Puppet Camp
  * 24. April 2015 in Berlin
@@ -63,15 +68,20 @@
 
 <!SLIDE noprint center>
 
-# NETWAYS TRAININGS - MONITORING AND REPORTING
-![NETWAYS Trainings Monitoring](../../_images/netways/NETWAYS_Trainings_Monitoring.png)
+# NETWAYS TRAININGS - ICINGA 2 ENTERPRISE MONITORING
+![NETWAYS Trainings Monitoring](../../_images/netways/NETWAYS_Trainings_Icinga2.png)
+
+<!SLIDE noprint center>
+
+# NETWAYS TRAININGS - SLA, LOGMANAGEMENT & GRAPHING
+![NETWAYS Trainings Puppet](../../_images/netways/NETWAYS_Trainings_Misc.png)
 
 <!SLIDE noprint center>
 
 # NETWAYS TRAININGS - PUPPET CONFIGURATION MANAGEMENT
 ![NETWAYS Trainings Puppet](../../_images/netways/NETWAYS_Trainings_Puppet.png)
 
-<!SLIDE noprint smbullets>
+<!SLIDE noprint smbullets small>
 
 # NETWAYS COMMUNITY
 
@@ -86,6 +96,9 @@
 * <a href="https://exchange.icinga.org">exchange.icinga.org</a>
  * Icinga / Nagios Addons and Plugins
  * >500 Projects
+
+* <a href="https://github.com/NETWAYS">github.com/NETWAYS</a>
+ * NETWAYS Repositories for Softwaredevelopmentprojects
 
 <!SLIDE noprint center>
 
@@ -112,6 +125,11 @@
 * Trainings
  * Standardized training modules
  * Individual on-site
+
+<!SLIDE noprint smbullets small>
+
+# OUR SERVICES AT A GLANCE
+
 * Support
  * Standardized contracts
  * Individual support concepts
