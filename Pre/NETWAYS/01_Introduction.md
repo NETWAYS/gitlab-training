@@ -49,11 +49,6 @@
 
 # NETWAYS CONFERENCES
 
-* CeBIT
- * 16.-20. March 2015 in Hanover
- * Hall 6
- * Stand H16 (110)
-
 * Open Source Data Center Conference
  * 21.-23. April 2015 in Berlin
 
