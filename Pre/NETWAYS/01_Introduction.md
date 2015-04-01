@@ -1,4 +1,4 @@
-<!SLIDE noprint subsection>
+<!SLIDE noprint subsectionnonum>
 
 # INTRODUCTION NETWAYS
 

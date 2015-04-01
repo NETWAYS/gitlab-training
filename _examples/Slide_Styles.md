@@ -1,4 +1,4 @@
-<!SLIDE[bg=/_images/backgrounds/pp_strasse_sw_kl.jpg] subsection>
+<!SLIDE subsectionnonum>
 
 # Slide Styles
 
@@ -52,9 +52,13 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 * Aloah
  * Aloah
 
-<!SLIDE[bg=/_images/backgrounds/pp_strasse_sw_kl.jpg] subsection>
+<!SLIDE subsection>
 
-# Slide Style: subsection
+# ~~~SECTION:MAJOR~~~ Slide Style: subsection
+
+<!SLIDE subsectionnonum>
+
+# Slide Style: subsectionnonum
 
 <!SLIDE command>
 

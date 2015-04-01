@@ -1,8 +1,10 @@
 {
-  "name": "Training 2015",
-  "author": "NETWAYS Training-Center",
-  "authorshort": "MW",
-  "eventLocation": "Hier im Hotel XY",
+  "name": "NETWAYS Training",
+  "date": "01.01.-02.01.2015",
+  "location": "Nuremberg",
+  "author": "Linus Torvalds",
+
+  "favicon": "image/global/favicon.ico",
 
   "templates":{
     "default":"templates/default.tpl"

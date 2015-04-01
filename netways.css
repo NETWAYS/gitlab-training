@@ -203,12 +203,6 @@
     font-family: monospace;
 }
 
-//.subsection h1 {
-//    background: #008;
-//    color: #fff;
-//	padding: .25em;
-//}
-
 .small {
     font-size: 80%;
 }
@@ -1047,6 +1041,19 @@ body#stats {
     color: #FFFFFF;
     background: #FA5C0D;
   }
+
+  /* NETWAYS subsectionnonum */
+  div.content.subsectionnonum h1 {
+    position: absolute;
+    top: 200px;
+    width: auto;
+    background: orange;
+    padding: 10px;
+    font: normal 36px/1 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #FFFFFF;
+    background: #FA5C0D;
+  }
+
 
   /* NETWAYS headers */
   div h1, h1 {
