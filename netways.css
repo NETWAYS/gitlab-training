@@ -887,20 +887,12 @@ body#stats {
     padding-bottom: 0.25em;
   }
 
-  /* NETWAYS footer */
-  p#footer-left {
-    visibility: hidden;
-  }
-
-  p#footer-right {
-    visibility: hidden;
-  }
-
+  /* Handouts */
   div.handouts {
     display: block !important;
     margin: 0 1em;
     text-align: left;
-    font-size: 150%;
+    font-size: 80%;
   }
   div.handouts h1, h2, h3, h4 {
     text-align: left;
@@ -910,10 +902,18 @@ body#stats {
     margin: 0.1em;
     text-align: left;
   }
+
+  /* NETWAYS footer */
+  p#footer-left {
+    visibility: hidden;
+  }
+  p#footer-right {
+    visibility: hidden;
+  }
 }
 
 @page {
-  size: A5;
+  size: A4;
   margin: 0;
   orphans: 3;
   widows: 3;
