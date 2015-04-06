@@ -4,29 +4,9 @@
 
 <!SLIDE>
 
-Syntax: headers1
-================
-
-This is an H2
--------------
-
-<!SLIDE>
-
-# Syntax: headers2
+# Syntax: headers
 ## This is an H2
 ### This is an H3
-#### This is an H4
-##### This is an H5
-###### This is an H6
-
-<!SLIDE>
-
-# Syntax: headers3 #
-## This is an H2 ##
-### This is an H3 ###
-#### This is an H4 ####
-##### This is an H5 #####
-###### This is an H6 ######
 
 <!SLIDE>
 
