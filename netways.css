@@ -35,6 +35,10 @@
     text-align: left;
   }
 
+  .content p > img {
+    max-width: 100%;
+  }
+
   /* Slide Styles */
 
   .bullets > ul {
