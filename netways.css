@@ -17,7 +17,7 @@
   .content h1 {
     background: #FA5C0D;
     color: white;
-    font: normal 28px/1 "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font: normal 28px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     margin-top: 0;
     margin-right: 0;
     padding: 7px;
@@ -71,6 +71,7 @@
   .supplemental.content > p {
     font-size: 2em;
   }
+
 
   /* Custom Slide Styles */
 
@@ -140,7 +141,7 @@
     background: black;
     color: white;
     float: right;
-    font: normal 60px/1 "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font: normal 60px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     padding: 10px;
   }
 
@@ -155,7 +156,7 @@
     background: #FA5C0D;
     color: black;
     float: right;
-    font: normal 36px/1 "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font: normal 36px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     padding: 10px;
   }
 
@@ -169,14 +170,14 @@
     background: none;
     color: black;
     float: left;
-    font: normal 32px/1 "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font: normal 32px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     padding: 10px;
   }
 
   div.content.subsection h1 {
     background: #FA5C0D;
     color: white;
-    font: normal 36px/1 "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font: normal 36px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     position: absolute;
     top: 200px;
     width: auto;
@@ -185,7 +186,7 @@
   div.content.subsectionnonum h1 {
     background: #FA5C0D;
     color: white;
-    font: normal 36px/1 "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font: normal 36px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     position: absolute;
     top: 200px;
     width: auto;
@@ -202,7 +203,7 @@
     background: #FA5C0D;
     bottom: 0;
     color: black;
-    font: normal 15px/1 "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font: normal 15px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     height: 30px;
     position: absolute;
     width: 100%;
@@ -235,7 +236,7 @@
   /* Global */
 
   .slide, .preso {
-    font: normal 1.5em "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font: normal 1.0em "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     height: 100%;
     margin: 0;
     margin-top: 0;
@@ -252,14 +253,13 @@
 
   .content h1, h2, h3 {
     color: black;
-    font: normal 36px/1 "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font: normal 28px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     text-align: left;
     margin-top: 130px;
     margin-left: 0.5em;
     margin-right: 3em;
   }
   .content p {
-    font: normal 2em  "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     margin: 0;
     margin-top: 0;
     margin-left: 1em;
@@ -271,23 +271,26 @@
   /* Slide Styles */
 
   .bullets > ul {
-    font: normal 3em "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     list-style: disc;
     padding-left: 40px;
   }
   .smbullets > ul {
-    font: normal 2em "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     list-style: disc;
     padding-left: 40px;
+    font-size: 2.0em;
   }
-  .bullets > ul > li,
-  .smbullets > ul > li {
+  .bullets > ul > li, .smbullets > ul > li {
     text-align: left;
+  }
+
+  .content > pre, .content > form > pre {
+    font-size: 200%;
   }
 
   .center p {
     text-align: center;
   }
+
   .center img {
     display: block;
     height: 90%;
@@ -296,7 +299,12 @@
     width: 90%;
   }
 
-  .handouts {
+  .content table tr td {
+    text-align: left;
+  }
+
+  .handouts { 
+    font-size: 1em;
     display: block !important;
   }
   .handouts h1, h2, h3 {
@@ -319,9 +327,23 @@
     text-align: left;
   }
 
-  .supplemental.content > p {
-    font-size: 2em;
+  .handouts > pre, .handouts > form > pre {
+    font-size: 1.5em;
+    word-wrap: break-word;
   }
+
+  .handouts > ul {
+    font-size: 1.5em;
+    margin-left: 2em;
+  }
+
+  .supplemental.content > p {
+  }
+
+  .supplemental .content > pre > code {
+   word-wrap: break-word;
+  }
+
 
   .toc a {
     font-size: 2em;
@@ -332,7 +354,7 @@
   }
   .toc h1 {
     color: black;
-    font: normal 36px/1 "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font: normal 36px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     text-align: left;
     margin-top: 130px;
     margin-left: 0.5em;
@@ -371,26 +393,31 @@
   div.title-name p {
     background: none;
     color: black;
-    font: normal 60px/1 "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font: normal 60px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     margin-top: 140px;
   }
 
   div.content.subsection h1 {
     background: none;
     color: black;
-    font: normal 36px/1 "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font: normal 36px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     margin-top: 200px;
   }
   div.content.subsectionnonum h1 {
     background: none;
     color: black;
-    font: normal 36px/1 "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font: normal 36px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     margin-top: 200px;
   }
 
+  .content.small table {
+    font: normal 1.5em "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+  }
+	
   p#footer-left {
     visibility: hidden;
   }
+
   p#footer-right {
     visibility: hidden;
   }
