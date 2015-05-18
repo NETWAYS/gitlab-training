@@ -251,6 +251,10 @@
     text-decoration: none;
   }
 
+  .content {
+    margin-top: 120px !important;
+  }
+
   .content h1, h2, h3 {
     color: black;
     font: normal 28px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
@@ -259,6 +263,11 @@
     margin-left: 0.5em;
     margin-right: 3em;
   }
+
+  .content h1 {
+    font-size: 15pt;
+  }
+
   .content p {
     margin: 0;
     margin-top: 0;
@@ -266,6 +275,7 @@
     margin-right: 2em;
     margin-bottom: 1em;
     text-align: left;
+    font-size: 180%;
   }
 
   /* Slide Styles */
@@ -276,7 +286,7 @@
   }
   .smbullets > ul {
     list-style: disc;
-    padding-left: 40px;
+    padding-left: 10px;
     font-size: 2.0em;
   }
   .bullets > ul > li, .smbullets > ul > li {
@@ -284,7 +294,8 @@
   }
 
   .content > pre, .content > form > pre {
-    font-size: 200%;
+    margin-left: 1em;
+    font-size: 150%;
   }
 
   .center p {
@@ -394,7 +405,8 @@
     background: none;
     color: black;
     font: normal 60px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
-    margin-top: 140px;
+    margin-top: 10px;
+    font-size: 26pt;
   }
 
   div.content.subsection h1 {
@@ -403,9 +415,10 @@
     font: normal 36px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     margin-top: 200px;
   }
+
   div.content.subsectionnonum h1 {
-    background: none;
-    color: black;
+    background: #FA5C0D;
+    color: white;
     font: normal 36px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     margin-top: 200px;
   }
