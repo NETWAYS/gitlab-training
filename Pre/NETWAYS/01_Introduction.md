@@ -49,17 +49,14 @@
 
 # NETWAYS CONFERENCES
 
-* Open Source Data Center Conference
- * 21.-23. April 2015 in Berlin
-
-* Puppet Camp
- * 24. April 2015 in Berlin
-
 * Open Source Backup Conference
  * 29.-30. September 2015 in Cologne
 
 * Open Source Monitoring Conference
- * 16.-18. November 2015 in Nuremberg
+ * 16.-19. November 2015 in Nuremberg
+
+* Open Source Data Center Conference
+ * 26.-28. April 2016 in Berlin
 
 <!SLIDE noprint center>
 
