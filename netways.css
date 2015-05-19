@@ -26,7 +26,7 @@
     top: 100px; 
     width: 100%;
   }
-  .content h2, h3 {
+  .content h2, h3, h4 {
     margin-left: 30px;
     text-align: left;
   }
@@ -243,7 +243,7 @@
     font: normal 1.0em "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     height: 100%;
     margin: 0;
-    margin-top: 1em;
+    margin-top: 0em;
     margin-left: 1em;
     margin-right: 1em;
     margin-bottom: 0;
@@ -259,7 +259,7 @@
     margin-top: 120px !important;
   }
 
-  .content h1, h2, h3 {
+  .content h1, h2, h3,  h4 {
     color: black;
     font: normal 28px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     text-align: left;
@@ -325,10 +325,10 @@
     font-size: 1em;
     display: block !important;
   }
-  .handouts h1, h2, h3 {
+  .handouts h1, h2, h3, h4 {
     font-size: 2em;
     margin: 0;
-    margin-top: 0;
+    margin-top: 1em;
     margin-left: 0.5em;
     margin-right: 3em;
     margin-bottom: 1em;
