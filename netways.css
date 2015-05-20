@@ -263,9 +263,9 @@
     margin-top: 120px !important;
   }
 
-  .content h1, h2, h3,  h4 {
+  .content h1, h2 {
     color: black;
-    font: normal "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     font-size: 28px;
     text-align: left;
     margin-top: 130px;
@@ -273,7 +273,13 @@
     margin-right: 3em;
   }
 
-  .content h1 {
+  .content h3, h4 {
+    color: black;
+    font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font-size: 18px;
+    text-align: left;
+    margin-left: 0.5em;
+    margin-right: 3em;
   }
 
   .content p {
