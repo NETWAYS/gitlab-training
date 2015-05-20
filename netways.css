@@ -239,6 +239,10 @@
 @media print {
   /* Global */
 
+  code, li, td {
+    font-size: 14px;
+  }
+
   .slide, .preso {
     font: normal 1.0em "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     height: 100%;
@@ -261,7 +265,8 @@
 
   .content h1, h2, h3,  h4 {
     color: black;
-    font: normal 28px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font: normal "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font-size: 28px;
     text-align: left;
     margin-top: 130px;
     margin-left: 0.5em;
@@ -269,17 +274,16 @@
   }
 
   .content h1 {
-    font-size: 15pt;
   }
 
   .content p {
+    font-size: 14px;
     margin: 0;
     margin-top: 0;
     margin-left: 1em;
     margin-right: 2em;
     margin-bottom: 1em;
     text-align: left;
-    font-size: 180%;
   }
 
   /* Slide Styles */
@@ -291,7 +295,6 @@
   .smbullets > ul {
     list-style: disc;
     padding-left: 10px;
-    font-size: 2.0em;
   }
   .bullets > ul > li, .smbullets > ul > li {
     text-align: left;
@@ -299,7 +302,6 @@
 
   .content > pre, .content > form > pre {
     margin-left: 1em;
-    font-size: 150%;
   }
 
   .center p {
@@ -322,11 +324,9 @@
   }
 
   .handouts { 
-    font-size: 1em;
     display: block !important;
   }
   .handouts h1, h2, h3, h4 {
-    font-size: 2em;
     margin: 0;
     margin-top: 1em;
     margin-left: 0.5em;
@@ -342,7 +342,6 @@
     margin-bottom: 2em;
   }
   .handouts p {
-    font-size: 1.5em;
     margin: 0;
     margin-top: 0;
     margin-left: 2em;
@@ -353,12 +352,10 @@
   }
 
   .handouts > pre, .handouts > form > pre {
-    font-size: 1.5em;
     word-wrap: break-word;
   }
 
   .handouts > ul {
-    font-size: 1.5em;
     list-style: disc;
     margin-left: 2em;
   }
@@ -370,9 +367,7 @@
    word-wrap: break-word;
   }
 
-
   .toc a {
-    font-size: 2em;
     margin: 0;
     margin-top: 0;
     margin-left: 2em;
@@ -420,7 +415,6 @@
     color: black;
     font: normal 60px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     margin-top: 10px;
-    font-size: 26pt;
   }
 
   div.content.subsection h1 {
