@@ -288,7 +288,7 @@
     margin-top: 0;
     margin-left: 1em;
     margin-right: 2em;
-    margin-bottom: 1em;
+    //margin-bottom: 1em;
     text-align: left;
   }
 
@@ -307,7 +307,9 @@
   }
 
   .content > pre, .content > form > pre {
-    margin-left: 1em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    //margin-left: 1em;
   }
 
   .center p {
@@ -363,7 +365,7 @@
 
   .handouts > ul {
     list-style: disc;
-    margin-left: 2em;
+    padding-left: 40px;
   }
 
   .supplemental.content > p {
