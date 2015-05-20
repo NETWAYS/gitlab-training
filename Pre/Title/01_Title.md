@@ -1,4 +1,4 @@
-<!SLIDE printonly>
+!SLIDE printonly
 
 <div class="title-name"><p>~~~CONFIG:name~~~</p></div>
 

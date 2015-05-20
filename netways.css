@@ -306,7 +306,6 @@
     margin-top: 0;
     margin-left: 1em;
     margin-right: 2em;
-    //margin-bottom: 1em;
     text-align: left;
   }
 
@@ -327,7 +326,6 @@
   .content > pre, .content > form > pre {
     margin-top: 0px;
     margin-bottom: 0px;
-    //margin-left: 1em;
   }
 
   .center p {
@@ -422,19 +420,9 @@
     text-align: left;
   }
 
-  .toc a {
-    margin: 0;
-    margin-top: 0;
+  div#toc a {
+    font-size: 14px;
     margin-left: 2em;
-    margin-right: 3em;
-  }
-  .toc h1 {
-    color: black;
-    font: normal 36px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
-    text-align: left;
-    margin-top: 130px;
-    margin-left: 0.5em;
-    margin-right: 3em;
   }
 
   /* Custom Slide Styles */
@@ -470,6 +458,7 @@
     color: black;
     font: normal 36px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   div.content.subsection h1 {
