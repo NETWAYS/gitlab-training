@@ -239,7 +239,11 @@
 @media print {
   /* Global */
 
-  code, li, td {
+  code {
+    font-size: 12px;
+  }
+
+  li, td {
     font-size: 14px;
   }
 
@@ -263,8 +267,7 @@
     margin-top: 120px !important;
   }
 
-  .content h1, h2 {
-    color: black;
+  .content h1 {
     font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     font-size: 28px;
     text-align: left;
@@ -273,8 +276,23 @@
     margin-right: 3em;
   }
 
-  .content h3, h4 {
-    color: black;
+  .content h2 {
+    font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font-size: 22px;
+    text-align: left;
+    margin-left: 0.5em;
+    margin-right: 3em;
+  }
+
+  .content h3 {
+    font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font-size: 20px;
+    text-align: left;
+    margin-left: 0.5em;
+    margin-right: 3em;
+  }
+
+  .content h4 {
     font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     font-size: 18px;
     text-align: left;
@@ -379,14 +397,14 @@
   .supplemental h1 {
     color: black;
     font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
-    font-size: 28px;
+    font-size: 22px;
     text-align: left;
   }
 
   .supplemental h2 {
     color: black;
     font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
-    font-size: 18px;
+    font-size: 20px;
     text-align: left;
   }
 
@@ -400,7 +418,7 @@
   .supplemental h4 {
     color: black;
     font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
   }
 
