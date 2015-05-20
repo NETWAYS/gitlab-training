@@ -263,7 +263,7 @@
     margin-top: 120px !important;
   }
 
-  .content, .supplemental h1, h2 {
+  .content h1, h2 {
     color: black;
     font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     font-size: 28px;
@@ -273,7 +273,7 @@
     margin-right: 3em;
   }
 
-  .content, .supplemental h3, h4 {
+  .content h3, h4 {
     color: black;
     font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     font-size: 18px;
@@ -372,6 +372,34 @@
 
   .supplemental .content > pre > code {
    word-wrap: break-word;
+  }
+
+  .supplemental h1 {
+    color: black;
+    font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font-size: 28px;
+    text-align: left;
+  }
+
+  .supplemental h2 {
+    color: black;
+    font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .supplemental h3 {
+    color: black;
+    font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .supplemental h4 {
+    color: black;
+    font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font-size: 18px;
+    text-align: left;
   }
 
   .toc a {
