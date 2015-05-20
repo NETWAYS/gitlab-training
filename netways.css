@@ -230,10 +230,10 @@
 
 @page {
   margin: 0;
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
 }
 
 @media print {
@@ -244,10 +244,10 @@
     height: 100%;
     margin: 0;
     margin-top: 0em;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-bottom: 0;
-    width: 100%;
+    margin-left: 0em;
+    margin-right: 0em;
+    margin-bottom: 0em;
+    width: 99%;
   }
 
   a, a:visited {
@@ -401,19 +401,18 @@
   div#net-header {
     border-bottom-style: solid;
     border-bottom-width: thin;
-    height: 100px;
+    height: 75px;
     margin: 0;
     position: absolute;
     top: 0;
     width: 100%;
   }
   img#header-right {
-    height: 90px;
+    height: 65px;
     margin-top: 0;
     position: absolute;
     right: 30px;
     top: 3px;
-    width: 200px;
   }
 
   div.title-name p {
