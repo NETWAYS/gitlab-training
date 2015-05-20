@@ -462,8 +462,8 @@
   }
 
   div.content.subsection h1 {
-    background: none;
-    color: black;
+    background: #FA5C0D;
+    color: white;
     font: normal 36px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     margin-top: 200px;
   }
