@@ -239,6 +239,44 @@
 @media print {
   /* Global */
 
+  div.title-page {
+    position: relative;
+    min-width: 100%;
+  }
+
+  div.netways-title {
+    text-align: right;
+    margin-top: -40px;
+    margin-bottom: 80px;
+    padding-right: 8em;
+    height: 30%;
+    background-color: white;
+  }
+
+  div.title-name {
+    background: #FA5C0D;
+    color: white;
+    width: 100%;
+    height: 480px;
+  }
+
+  div.title-name p {
+    padding-top: 40px;
+    text-align: right;
+  }
+
+  div#global_Pre_Title_01_Title #net-header {
+    visibility: hidden;
+  }
+
+  .title-footer {
+    margin-top: 70%;
+    margin-right: 10%;
+    text-align: right;
+    font-size: 12pt;
+    font-weight: bold;
+  }
+
   code {
     font-size: 12px;
   }
@@ -456,8 +494,8 @@
 
   div.title-name p {
     background: none;
-    color: black;
-    font: normal 36px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    color: white;
+    font: normal 24px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     margin-top: 10px;
     margin-bottom: 10px;
   }
