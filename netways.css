@@ -378,6 +378,7 @@
   }
 
   .content > pre, .content > form > pre {
+    font-size: 120%;
     margin-top: 0px;
     margin-bottom: 0px;
   }
