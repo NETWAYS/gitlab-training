@@ -26,10 +26,24 @@
     top: 100px; 
     width: 100%;
   }
-  .content h2, h3, h4 {
-    margin-left: 30px;
+  .content h2 {
+    font-size: 24px;
+    margin-left: 1em;
     text-align: left;
   }
+
+  .content h3 {
+    font-size: 20px;
+    margin-left: 1em;
+    text-align: left;
+  }
+
+  .content h4 {
+    font-size: 16px;
+    margin-left: 1em;
+    text-align: left;
+  }
+
   .content > p,
   .content > form > p {
     text-align: left;
@@ -317,7 +331,7 @@
 
   .content h2 {
     font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
-    font-size: 22px;
+    font-size: 24px;
     text-align: left;
     margin-left: 0.5em;
     margin-right: 3em;
@@ -333,7 +347,7 @@
 
   .content h4 {
     font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
     margin-left: 0.5em;
     margin-right: 3em;
