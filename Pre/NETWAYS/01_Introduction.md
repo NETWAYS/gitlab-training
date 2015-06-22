@@ -107,7 +107,7 @@
 # OUR SERVICES AT A GLANCE
 
 * Conceptual design and planning
-* Workshops & Consulting with one-site implementation
+* Workshops & Consulting with on-site implementation
 * Operating
  * Complete monitoring systems
  * Satellite systems
