@@ -49,9 +49,6 @@
 
 # NETWAYS CONFERENCES
 
-* Open Source Backup Conference
- * 29.-30. September 2015 in Cologne
-
 * Open Source Monitoring Conference
  * 16.-19. November 2015 in Nuremberg
 
