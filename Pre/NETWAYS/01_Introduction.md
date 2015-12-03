@@ -49,11 +49,14 @@
 
 # NETWAYS CONFERENCES
 
-* Open Source Monitoring Conference
- * 16.-19. November 2015 in Nuremberg
-
 * Open Source Data Center Conference
  * 26.-28. April 2016 in Berlin
+
+* Open Source Backup Conference
+ * 26.-27. September 2016 in Cologne
+
+* Open Source Monitoring Conference
+ * 29. November - 02. December 2016 in Nuremberg
 
 <!SLIDE noprint center>
 
