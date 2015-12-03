@@ -277,15 +277,21 @@
 
   div.title-name p {
     padding-top: 40px;
-    text-align: right;
+    text-align: left;
   }
 
   div#global_Pre_Title_01_Title #net-header {
     visibility: hidden;
   }
+  
+  div.title-release {
+    font-size: 12pt;
+    padding-left: 25px;
+    text-align: left;
+  }
 
   .title-footer {
-    margin-top: 70%;
+    margin-top: 60%;
     margin-right: 10%;
     text-align: right;
     font-size: 12pt;
