@@ -259,10 +259,8 @@
   }
 
   div.netways-title {
-    text-align: right;
-    margin-top: -40px;
+    text-align: center;
     margin-bottom: 80px;
-    padding-right: 8em;
     height: 30%;
     background-color: white;
   }
@@ -323,14 +321,14 @@
   }
 
   .content {
-    margin-top: 120px !important;
+    padding-top: 5px;
   }
 
   .content h1 {
     font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     font-size: 28px;
     text-align: left;
-    margin-top: 120px;
+    margin-top: 75px;
     margin-left: 0.5em;
     margin-right: 3em;
   }
