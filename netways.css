@@ -1,3 +1,11 @@
+.logo {
+  background: transparent url('./global/_images/netways/Schulung_Stammlogo_2000px_ENG.jpg') right center no-repeat;
+  background-size: 100px auto;
+  display: inline-block;
+  height: 100px;
+  width: 99%;
+}
+
 @media screen {
   /* Global */
 
@@ -252,7 +260,6 @@
 
 @media print {
   /* Global */
-
   div.title-page {
     position: relative;
     min-width: 100%;
