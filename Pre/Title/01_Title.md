@@ -1,12 +1,13 @@
 !SLIDE printonly
 
 <div class="title-page">
-    <div class="netways-title"><img src="../../global/_images/netways-logo-1366.png" style="width:400px;height:77px"/></div>
+    <div class="title-logo"></div>
     <div class="title-name"><p>~~~CONFIG:name~~~</p>
-      <div class="title-release">Version: ~~~CONFIG:release~~~</div>
-      <div class="title-footer">We love Open Source</div>
+    <div class="title-release">Version: ~~~CONFIG:release~~~</div>
+    <div class="title-footer">We love Open Source</div>
     </div>
 </div>
+
 
 <!SLIDE noprint>
 
