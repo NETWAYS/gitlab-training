@@ -454,6 +454,7 @@
   }
 
   .supplemental h1 {
+    margin: 0;
     color: black;
     font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     font-size: 22px;
@@ -505,6 +506,17 @@
     position: absolute;
     top: 0px;
     width: 100%;
+  }
+
+  .supplemental div#net-header {
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    height: 50px;
+    margin: 0;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    right: 30px;
   }
 
   .logo {
