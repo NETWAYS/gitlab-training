@@ -445,6 +445,10 @@
     padding-left: 40px;
   }
 
+  .supplemental {
+    right: 0.5em;
+  }
+
   .supplemental.content > p {
     font-size: 14px;
   }
