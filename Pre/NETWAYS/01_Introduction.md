@@ -5,11 +5,11 @@
 <!SLIDE noprint smbullets rimg>
 
 # INTRODUCTION NETWAYS
-![NETWAYS Staff](../../_images/netways/Facebook_72dpi.jpg)
+![NETWAYS Staff](../../_images/netways/Facebook_72dpi.png)
 
 * Company foundation 1995
 * Open Source since 1997
-* Currently 40 employees
+* Currently 47 employees
 * Specializing in the areas of Open Source Systems Management and Open Source Datacenter
 * Puppet Partner since 2009
 
