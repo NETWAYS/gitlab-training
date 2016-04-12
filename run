@@ -1,0 +1,46 @@
+#!/bin/bash
+
+usage(){
+cat << EOF
+usage: $0 options
+ OPTIONS:
+    -h        Show this message
+    -t        Presentation type (defaults to git)
+EOF
+}
+
+while getopts ":t:h" opt; do
+  case $opt in
+    h)
+      usage
+      exit 1
+      ;;
+    t)
+      TYPE=$OPTARG
+      ;;
+    \?)
+      echo "Invalid option: -$OPTARG" >&2
+      usage
+      exit 1
+      ;;
+    :)
+      echo "Option -$OPTARG requires an argument." >&2
+      usage
+      exit 1
+      ;;
+  esac
+done
+
+if [ -z "$TYPE" ]; then
+  TYPE="git"
+fi
+
+
+CMD="showoff serve -f ${TYPE}.json"
+
+echo "Navigate to http://localhost:9090/presenter and http://localhost:9090"
+echo "Running '$CMD'"
+
+`$CMD`
+
+
