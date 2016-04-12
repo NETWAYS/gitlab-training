@@ -1,0 +1,37 @@
+{
+  "name": "Git",
+  "date": "2016",
+  "location": "Everywhere",
+  "author": "NETWAYS GmbH",
+  "release": "1.0",
+
+  "favicon": "image/global/favicon.png",
+
+  "protected": ["presenter", "onepage", "print"],
+  "user": "git",
+  "password": "netwaysr0xx",
+
+  "templates":{
+    "default":"global/templates/default.tpl"
+  },
+
+  "sections": [
+  {"section":"global/Pre/Title"},
+  {"section":"global/Pre/Hints"},
+
+  // Introduction
+  {"section":"Introduction"},
+  // Commits
+  {"section":"Commits"},
+  // Commands
+  {"section":"Commands"},
+  // Workflows
+  {"section":"Workflows"},
+  // Integrations
+  {"section":"Integrations"},
+  // Hints
+  {"section":"Hints"},
+
+  {"section":"global/Post"}
+ ]
+}
