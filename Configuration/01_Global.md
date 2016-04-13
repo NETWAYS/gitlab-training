@@ -28,6 +28,8 @@ https://git-scm.com/book/tr/v2/Customizing-Git-Git-Configuration
 * Steps:
  * Use `git config --global user.name "Your Name"`
  * Use `git config --global user.email "name@domain.com"`
+* Next steps:
+ * Verify the changes by opening `$HOME/.gitconfig`
 
 
 !SLIDE supplemental exercises
@@ -44,6 +46,7 @@ https://git-scm.com/book/tr/v2/Customizing-Git-Git-Configuration
 
 * Use `git config --global user.name "Your Name"`
 * Use `git config --global user.email "name@domain.com"`
+* Verify the changes by opening `$HOME/.gitconfig`
 
 
 !SLIDE supplemental solutions
@@ -63,3 +66,9 @@ https://git-scm.com/book/tr/v2/Customizing-Git-Git-Configuration
 
     @@@ Sh
     $ git config --global user.email "michael.friedrich@netways.de"
+
+### Verification
+
+    @@@ Sh
+    $ less $HOME/.gitconfig
+
