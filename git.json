@@ -21,6 +21,8 @@
 
   // Introduction
   {"section":"Introduction"},
+  // Configuration
+  {"section":"Configuration"},
   // Commits
   {"section":"Commits"},
   // Commands
