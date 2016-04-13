@@ -21,3 +21,8 @@ In our training you will learn the elementary working method of Git but also som
  * Git-Hooks - rewrite/reformat
  * Redmine/Ticket integration
 * Tips and tricks
+
+# Material
+
+https://git-scm.com/book/en/v2/Getting-Started-Git-Basics
+https://wiki.icinga.org/display/Dev/Riding+the+Git
