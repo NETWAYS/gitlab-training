@@ -29,6 +29,8 @@
   {"section":"Commands"},
   // Workflows
   {"section":"Workflows"},
+  // Hooks
+  {"section":"Hooks"},
   // Integrations
   {"section":"Integrations"},
   // Hints
