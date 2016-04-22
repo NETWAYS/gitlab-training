@@ -17,3 +17,102 @@ When you clone a repository, Git automatically adds a shortcut called
 that you'll want to interact with it further on down the road.
 
 ~~~ENDSECTION~~~
+
+!SLIDE smbullets
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Initialize a local Git repository
+
+* Objective:
+ * Initialize git repository
+* Steps:
+ * Create a new directory
+ * Change into it
+ * Run `git init`
+
+~~~SECTION:handouts~~~
+
+****
+
+~~~ENDSECTION~~~
+
+!SLIDE supplemental exercises
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Initialize a local Git repository
+
+## Objective: Initialize git repository
+****
+
+* Initialize git repository
+
+## Steps:
+
+****
+
+* Create a new directory
+* Change into it
+* Run `git init`
+
+
+
+!SLIDE supplemental solutions
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
+****
+
+## Initialize git repository
+
+****
+
+### Create a new Git repository
+
+    @@@ Sh
+    $ mkdir training
+    $ cd training
+    $ git init
+
+
+
+!SLIDE smbullets
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Clone an existing Git repository
+
+* Objective:
+ * Clone an existing Git repository
+* Steps:
+ * Navigate to https://github.com/icinga/icinga2
+ * Copy the clone URL
+ * Use `git clone` to clone the remote Git repository
+
+~~~SECTION:handouts~~~
+
+****
+
+~~~ENDSECTION~~~
+
+!SLIDE supplemental exercises
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Clone an existing Git repository
+
+## Objective: Clone an existing Git repository
+****
+
+* Clone an existing Git repository
+
+## Steps:
+
+****
+
+* Navigate to https://github.com/icinga/icinga2
+* Copy the clone URL
+* Use `git clone` to clone the remote Git repository
+
+
+
+!SLIDE supplemental solutions
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
+****
+
+## Clone an existing Git repository
+
+****
+
+### Git clone
+
+    @@@ Sh
+    $ git clone https://github.com/Icinga/icinga2.git
+

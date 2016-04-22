@@ -18,3 +18,136 @@ for commit.
 it afterwards.
 
 ~~~ENDSECTION~~~
+
+
+!SLIDE smbullets
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: 
+
+* Objective:
+ * 
+* Steps:
+ * 
+
+~~~SECTION:handouts~~~
+
+****
+
+~~~ENDSECTION~~~
+
+!SLIDE supplemental exercises
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: 
+
+## Objective: 
+****
+
+*
+
+## Steps:
+
+****
+
+*
+
+
+!SLIDE supplemental solutions
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
+****
+
+## 
+
+****
+
+### Example for Debian/Ubuntu
+
+    @@@ Sh
+    $ apt-get install git
+
+
+
+
+!SLIDE smbullets
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: 
+
+* Objective:
+ * 
+* Steps:
+ * 
+
+~~~SECTION:handouts~~~
+
+****
+
+~~~ENDSECTION~~~
+
+!SLIDE supplemental exercises
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: 
+
+## Objective: 
+****
+
+*
+
+## Steps:
+
+****
+
+*
+
+
+!SLIDE supplemental solutions
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
+****
+
+## 
+
+****
+
+### Example for Debian/Ubuntu
+
+    @@@ Sh
+    $ apt-get install git
+
+
+
+!SLIDE smbullets
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: 
+
+* Objective:
+ * 
+* Steps:
+ * 
+
+~~~SECTION:handouts~~~
+
+****
+
+~~~ENDSECTION~~~
+
+!SLIDE supplemental exercises
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: 
+
+## Objective: 
+****
+
+*
+
+## Steps:
+
+****
+
+*
+
+
+!SLIDE supplemental solutions
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
+****
+
+## 
+
+****
+
+### Example for Debian/Ubuntu
+
+    @@@ Sh
+    $ apt-get install git
+
