@@ -32,11 +32,14 @@ systems which store the file revisions in a database.
 
 * Multiple computers required file revisions
 * CSV, Subversion
+* What happens if the server is down?
+
+!SLIDE smbullets
+# Centralized VCS
 
 <center><img src="../_images/introduction/git_introduction_cvcs_01.png" alt="CVCS"/></center>
 
 
-
 ~~~SECTION:handouts~~~
 
 ****
@@ -46,32 +49,16 @@ systems which store the file revisions in a database.
 
 
 !SLIDE smbullets
-# 
+# Distributed VCS
 
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
-
+* Clients mirror the repository
+* Git, Mercurial, Bazaar, etc.
+* Server dies, client continues
 
 !SLIDE smbullets
-# 
+# Distributed VCS
 
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
-
-
-!SLIDE smbullets
-# 
-
+<center><img src="../_images/introduction/git_introduction_dvcs_01.png" alt="CVCS"/></center>
 
 ~~~SECTION:handouts~~~
 

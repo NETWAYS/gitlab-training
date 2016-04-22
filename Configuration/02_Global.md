@@ -72,3 +72,7 @@ https://git-scm.com/book/tr/v2/Customizing-Git-Git-Configuration
     @@@ Sh
     $ less $HOME/.gitconfig
 
+### Notes
+
+You can also use `git config --list` to list all configured options.
+
