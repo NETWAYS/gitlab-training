@@ -25,4 +25,26 @@ In our training you will learn the elementary working method of Git but also som
 # Material
 
 https://git-scm.com/book/en/v2/Getting-Started-Git-Basics
+https://www.atlassian.com/git/tutorials/comparing-workflows/centralized-workflow
 https://wiki.icinga.org/display/Dev/Riding+the+Git
+
+# TODOs
+
+* History of Git
+* Comparison with SVN - https://git-scm.com/book/en/v2/Getting-Started-Git-Basics
+
+* "mode of operation of git" ... geil.
+
+* Good Commits - copy paste the developer guidelines from icinga.
+
+* Use a `git-central.git` repository for the workflow and push stuff.
+* Commands:
+ * Split them
+ * Add small labs for local work
+* Workflows:
+ * Feature
+ * Gitflow
+ * Forking
+* Integration:
+ * No labs, but provide some more details
+* Hooks
