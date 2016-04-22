@@ -5,9 +5,10 @@
 !SLIDE smbullets
 # Git Integrations
 
-* Continous integration (Jenkins, Travis)
-* Git Hooks
 * Ticket system integration (Redmine)
+* Continous integration (Jenkins, Travis)
+* Puppet Environments
+* Git Hooks
 * Development workflow
 
 ~~~SECTION:handouts~~~
