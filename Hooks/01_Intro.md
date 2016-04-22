@@ -1,3 +1,6 @@
+!SLIDE subsection
+# ~~~SECTION:MAJOR~~~ Git Hooks
+
 !SLIDE smbullets
 # Git Hooks
 

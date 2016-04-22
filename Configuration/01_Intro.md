@@ -1,8 +1,8 @@
 !SLIDE subsection
-# ~~~SECTION:MAJOR~~~ Git Commits
+# ~~~SECTION:MAJOR~~~ Git Configuration
 
 !SLIDE smbullets
-# Good Commits
+# Gonfiguration Overview
 
 blabla
 

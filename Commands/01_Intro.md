@@ -1,3 +1,6 @@
+!SLIDE subsection
+# ~~~SECTION:MAJOR~~~ Git Commands
+
 !SLIDE smbullets
 # Git Commands
 

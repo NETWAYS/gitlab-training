@@ -1,14 +1,14 @@
+!SLIDE subsection
+# ~~~SECTION:MAJOR~~~ Git Integrations
+
+
 !SLIDE smbullets
 # Git Integrations
-
-Blabla
-
-!SLIDE smbullets
-# Tools
 
 * Continous integration (Jenkins, Travis)
 * Git Hooks
 * Ticket system integration (Redmine)
+* Development workflow
 
 ~~~SECTION:handouts~~~
 

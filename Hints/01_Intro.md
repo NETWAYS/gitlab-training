@@ -1,7 +1,5 @@
-!SLIDE smbullets
-# Git Hints
-
-Blabla
+!SLIDE subsection
+# ~~~SECTION:MAJOR~~~ Git Hints
 
 !SLIDE smbullets
 # Best Practices
