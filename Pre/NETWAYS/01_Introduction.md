@@ -11,7 +11,6 @@
 * Open Source since 1997
 * Currently 47 employees
 * Specializing in the areas of Open Source Systems Management and Open Source Datacenter
-* Puppet Partner since 2009
 
 <!SLIDE noprint lrbullets smbullets>
 
