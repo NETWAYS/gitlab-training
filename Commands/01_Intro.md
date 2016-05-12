@@ -4,12 +4,17 @@
 !SLIDE smbullets
 # Git Commands
 
-Blabla
+* `git` cli command
+* sub commands for specific actions
 
 !SLIDE smbullets
 # Command Overview
 
-blabla
+* Start a working area (clone, init)
+* Work on current changes (add, reset)
+* Examine the history and state (status, log)
+* Grow, mark and tweak the history (branch, checkout, commit, merge, rebase)
+* Collaborate (fetch, pull, push)
 
 ~~~SECTION:handouts~~~
 
