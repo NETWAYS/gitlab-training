@@ -1,5 +1,5 @@
 !SLIDE subsection
-# ~~~SECTION:MAJOR~~~ Git Commands
+# ~~~SECTION:MAJOR~~~ Git Basics
 
 !SLIDE smbullets
 # Git Commands

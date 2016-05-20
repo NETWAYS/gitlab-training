@@ -1,24 +1,74 @@
 !SLIDE smbullets
-# Examine the history and state
+# Work on current changes
 
-* git status
-* git log
-* git show
+* git add
+* git mv
+* git reset
+* git rm
 
 ~~~SECTION:handouts~~~
 
 ****
 
-`git status` shows the current working tree status. Untracked files and changes (not) staged
-for commit.
+`git add` will add the file(s) and their content to the current change index
+waiting for the commit.
 
-`git log` shows the commit history of the current branch.
+`git mv` renames an existing file tracking the change for the commit. If you
+manually move the file, you will need to rm and add it again.
 
-`git show` will print the last commit details. If you want to print a specific commit id, add
-it afterwards.
+`git reset` resets the current HEAD to the specified state.
+
+`git rm` removes the file from the working tree and also from the git index.
+
+~~~ENDSECTION~~~
+!SLIDE smbullets
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add a new file
+
+* Objective:
+ * Add a new file
+* Steps:
+ * Create a new file
+ * Use `git add` to add the file to the current change index
+* Next steps:
+ * Verify the change with `git status`
+
+~~~SECTION:handouts~~~
+
+****
 
 ~~~ENDSECTION~~~
 
+!SLIDE supplemental exercises
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add a new file
+
+## Objective: Add a new file to the current change index
+****
+
+* Add a new file
+
+## Steps:
+
+****
+
+* Create a new file
+* Use `git add` to add the file to the current change index
+* Verify the change with `git status`
+
+
+!SLIDE supplemental solutions
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
+****
+
+## Add a new file
+
+****
+
+### Example for Debian/Ubuntu
+
+    @@@ Sh
+    $ cat "my first file" > myfile
+    $ git add myfile
+    $ git status
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: 
@@ -61,53 +111,6 @@ it afterwards.
 
     @@@ Sh
     $ apt-get install git
-
-
-
-
-!SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: 
-
-* Objective:
- * 
-* Steps:
- * 
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
-
-!SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: 
-
-## Objective: 
-****
-
-*
-
-## Steps:
-
-****
-
-*
-
-
-!SLIDE supplemental solutions
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
-****
-
-## 
-
-****
-
-### Example for Debian/Ubuntu
-
-    @@@ Sh
-    $ apt-get install git
-
-
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: 

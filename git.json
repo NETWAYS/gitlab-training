@@ -23,18 +23,22 @@
   {"section":"Introduction"},
   // Configuration
   {"section":"Configuration"},
+  // Basics
+  {"section":"Basics"},
   // Commits
   {"section":"Commits"},
-  // Commands
-  {"section":"Commands"},
+  // Branching
+  {"section":"Branching"},
+  // Server
+  {"section":"Server"},
+  // Collaboration
+  {"section":"Collaboration"},
   // Workflows
   {"section":"Workflows"},
-  // Hooks
-  {"section":"Hooks"},
   // Integrations
   {"section":"Integrations"},
   // Hints
-  {"section":"Hints"},
+  {"section":"Tools"},
 
   {"section":"global/Post"}
  ]

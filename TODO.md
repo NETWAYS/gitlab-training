@@ -32,9 +32,12 @@ https://wiki.icinga.org/display/Dev/Riding+the+Git
 
 * Good Commits - copy paste the developer guidelines from icinga.
 
-* Use a `git-central.git` repository for the workflow and push stuff.
+* Install a local git server
+* Use a local repository for the workflow and push stuff.
 * Commands:
- * Split them
+ * Split them ->
+  * Basics, Commits, Branching
+  * Server, Collaboration, Workflows
  * Add small labs for local work
 * Workflows:
  * Feature
@@ -42,4 +45,4 @@ https://wiki.icinga.org/display/Dev/Riding+the+Git
  * Forking
 * Integration:
  * No labs, but provide some more details
-* Hooks
+* Hooks -> Integration
