@@ -7,8 +7,6 @@
 * No external dependency (e.g. git submodule repository not available anymore)
 * No local configuration - document the external reference
 
-!SLIDE smbullets
-
 ~~~SECTION:handouts~~~
 
 ****

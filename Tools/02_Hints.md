@@ -5,8 +5,6 @@
 * dry-run `--dry-run`
 
 
-!SLIDE smbullets
-
 ~~~SECTION:handouts~~~
 
 ****

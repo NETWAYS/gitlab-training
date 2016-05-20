@@ -92,28 +92,30 @@ for integrating and sharing code changes between repositories.
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Collaborate in a central repository
 
 * Objective:
- * Clone the central repository and add your own local commit
-* Steps:
- * Clone the `git-central.git` repository
+ * Clone the training repository twice and add diverging commits
+* Steps for both:
+ * Clone the `training.git` repository
  * Add/modify a file and commit the change
  * Push your change to the remote repository
 * Next steps:
- * Explain the error message
+ * Explain the error message after the second push
 
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Collaborate in a central repository
 
-## Objective: Clone the central repository and add your own local commit
+## Objective: Clone the training repository twice and add diverging commits
 ****
 
-* Clone the central repository and add your own local commit
+* Clone the training repository twice and add diverging commits
 
 ## Steps:
 
 ****
 
-* Clone the `git-central.git` repository
+Repeat the steps 2 times:
+
+* Clone the `training.git` repository
 * Add/modify a file and commit the change
 * Push your change to the remote repository
 
@@ -122,14 +124,14 @@ for integrating and sharing code changes between repositories.
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
 ****
 
-## Clone the central repository and add your own local commit
+## Clone the training repository twice and add diverging commits
 
 ****
 
 ### Clone the central repository
 
     @@@ Sh
-    $ git clone git@master.localdomain:git-central.git
+    $ git clone git@localhost:/opt/git/training.git training-collab1
 
 ### Add/modify a file
 
@@ -146,6 +148,11 @@ for integrating and sharing code changes between repositories.
 
     @@@ Sh
     $ git push origin master
+
+### Repeat these steps with training-collab2
+
+    @@@ Sh
+    $ git clone git@localhost:/opt/git/training.git training-collab2
 
 
 !SLIDE smbullets

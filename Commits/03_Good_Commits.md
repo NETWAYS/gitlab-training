@@ -33,11 +33,12 @@
 !SLIDE smbullets
 # Commit Message Example
 
+
     A short subject for the commit line
     <newline>
-    Some body text explaining the issue, fix or
-    feature. 80 characters max width for better
-    readability.
+    Some body text explaining the issue,
+    fix or feature. 80 characters max
+    width for better readability.
     <newline>
     refs #<ticketid>
 

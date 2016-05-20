@@ -5,8 +5,6 @@
 * Independant sub directory
 
 
-!SLIDE smbullets
-
 ~~~SECTION:handouts~~~
 
 ****

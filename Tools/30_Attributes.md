@@ -5,8 +5,6 @@
 * Ignore specific files on git archive
 
 
-!SLIDE smbullets
-
 ~~~SECTION:handouts~~~
 
 ****

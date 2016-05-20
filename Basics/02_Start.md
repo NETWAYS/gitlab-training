@@ -24,7 +24,7 @@ that you'll want to interact with it further on down the road.
 * Objective:
  * Initialize git repository
 * Steps:
- * Create a new directory
+ * Create a new directory called `training.git`
  * Change into it
  * Run `git init`
 
@@ -46,7 +46,7 @@ that you'll want to interact with it further on down the road.
 
 ****
 
-* Create a new directory
+* Create a new directory called `training.git`
 * Change into it
 * Run `git init`
 
@@ -63,8 +63,8 @@ that you'll want to interact with it further on down the road.
 ### Create a new Git repository
 
     @@@ Sh
-    $ mkdir training
-    $ cd training
+    $ mkdir training.git
+    $ cd training.git
     $ git init
 
 
