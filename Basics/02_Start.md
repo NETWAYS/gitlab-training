@@ -10,7 +10,7 @@
 
 `git init` initializes an empty directory as local git repository.
 
-`git clone` clones a copy of an existing remote git repository. 
+`git clone` clones a copy of an existing remote git repository.
 
 When you clone a repository, Git automatically adds a shortcut called
 `origin` that points back to the "parent" repository, under the assumption

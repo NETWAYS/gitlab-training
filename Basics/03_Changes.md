@@ -63,10 +63,58 @@ manually move the file, you will need to rm and add it again.
 
 ****
 
-### Example for Debian/Ubuntu
+### Example
 
     @@@ Sh
     $ cat "my first file" > myfile
     $ git add myfile
+    $ git status
+
+~~~ENDSECTION~~~
+!SLIDE smbullets
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Move a file
+
+* Objective:
+ * Move a file with git
+* Steps:
+ * Use `git mv` to move the file to a new location
+* Next steps:
+ * Verify the change with `git status`
+
+~~~SECTION:handouts~~~
+
+****
+
+~~~ENDSECTION~~~
+
+!SLIDE supplemental exercises
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Move a file
+
+## Objective: Move a file with git
+****
+
+* Move a file with git
+
+## Steps:
+
+****
+
+ * Use `git mv` to move the file to a new location
+* Verify the change with `git status`
+
+
+!SLIDE supplemental solutions
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
+****
+
+## Move a file
+
+****
+
+### Example
+
+    @@@ Sh
+    $ ls myfile
+    $ git mv myfile mymovedfile
     $ git status
 
