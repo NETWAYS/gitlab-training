@@ -188,8 +188,6 @@ Repeat the steps 2 times:
  * Rebase the master branch against `origin/master`
  * Resolve possible merge conflicts
  * Push your rebased history
-* Next steps:
- * Explain what happens when everyone does that now
 
 ~~~SECTION:handouts~~~
 
