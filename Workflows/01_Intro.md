@@ -1,3 +1,7 @@
+!SLIDE subsection
+# ~~~SECTION:MAJOR~~~ Git Workflows
+
+
 !SLIDE smbullets
 # Git Workflows
 

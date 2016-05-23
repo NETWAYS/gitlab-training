@@ -1,3 +1,7 @@
+!SLIDE subsection
+# ~~~SECTION:MAJOR~~~ Git Branching
+
+
 !SLIDE smbullets
 # Working with Git branches
 
