@@ -1,5 +1,5 @@
 !SLIDE smbullets
-# Examine the history and state
+# Examine the current state
 
 * git status
 * git log
