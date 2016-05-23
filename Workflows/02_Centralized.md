@@ -244,6 +244,7 @@ instead of generating a merge commit.
 
 ### Resolve merge probblems
 
+    @@@ Sh
     $ git status
     $ vim <problem file>
 
@@ -253,6 +254,7 @@ Search for conflicts in vim:
 
 Resolve the conflicts, add the file and continue the rebase.
 
+    @@@ Sh
     $ git add <problem file>
     $ git rebase --continue
 
