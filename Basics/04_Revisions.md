@@ -24,6 +24,74 @@ also compare specific commits.
 ~~~ENDSECTION~~~
 
 
+!SLIDE smbullets
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Examine current changes
+
+* Objective:
+ * Examine current changes
+* Steps:
+ * Change files
+ * Use `git status` to see unstaged changes
+ * Add the changed files to the staging area
+ * Use `git status` again
+
+~~~SECTION:handouts~~~
+
+****
+
+~~~ENDSECTION~~~
+
+!SLIDE supplemental exercises
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Examine current changes
+
+## Objective: Examine current changes
+****
+
+* Examine current changes
+
+## Steps:
+
+* Change files
+* Use `git status` to see unstaged changes
+* Add the changed files to the staging area
+* Use `git status` again
+
+
+!SLIDE supplemental solutions
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
+****
+
+## Examine current changes
+
+****
+
+### Change files
+
+    @@@ Sh
+    $ cat "my change" > change01
+    $ git add change01
+    $ vim change01
+
+Modify and save the file.
+
+### Use git status
+
+    @@@ Sh
+    $ git status
+
+You'll recognize the unstaged changes compared to your staging area.
+
+### Add the change to the staging area
+
+    @@@ Sh
+    $ git add change01
+
+### Use git status again
+
+    @@@ Sh
+    $ git status
+
+
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Use Git Diff
@@ -32,9 +100,9 @@ also compare specific commits.
  * Play with Git Diff
 * Steps:
  * Change files
- * Use git diff to compare unstaged changes
+ * Use `git diff` to compare unstaged changes
  * Add the changed files to the staging area
- * Use git diff again
+ * Use `git diff` again
  * Compare the staging area with the git directory (HEAD)
 
 ~~~SECTION:handouts~~~
@@ -54,14 +122,10 @@ also compare specific commits.
 ## Steps:
 
 * Change files
-* Use git diff to compare unstaged changes
+* Use `git diff` to compare unstaged changes
 * Add the changed files to the staging area
-* Use git diff again
+* Use `git diff` again
 * Compare the staging area with the git directory (HEAD)
-
-****
-
-*
 
 
 !SLIDE supplemental solutions
