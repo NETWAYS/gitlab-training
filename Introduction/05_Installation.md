@@ -20,6 +20,7 @@
  * Install the `git` package
 * Steps:
  * Use the package manager to install the git package
+ * Install Bash completion package
 
 ~~~SECTION:handouts~~~
 
@@ -40,6 +41,7 @@
 ****
 
 * Use the package manager to install the git package
+* Install Bash completion package
 
 
 !SLIDE supplemental solutions
@@ -53,15 +55,15 @@
 ### Example for Debian/Ubuntu
 
     @@@ Sh
-    $ apt-get install git
+    $ apt-get install git bash-completion
 
 ### Example for RHEL/CentOS
 
     @@@ Sh
-    $ yum install git
+    $ yum install git bash-completion
 
 ### Example for Fedora
 
     @@@ Sh
-    $ dnf install git
+    $ dnf install git bash-completion
 

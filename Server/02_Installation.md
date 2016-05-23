@@ -20,7 +20,7 @@ collaboration and workflows.
 * Objective:
  * Generate public SSH key
 * Steps:
- * Use `ssh-keygen` to generate an SSH key
+ * Use `ssh-keygen -f $HOME/.ssh/training` to generate an SSH key
 
 ~~~SECTION:handouts~~~
 
@@ -44,7 +44,7 @@ in this training session.
 
 ****
 
-* Use `ssh-keygen` to generate an SSH key
+* Use `ssh-keygen -f $HOME/.ssh/training` to generate an SSH key
 
 
 !SLIDE supplemental solutions
@@ -58,7 +58,7 @@ in this training session.
 ### Example
 
     @@@ Sh
-    $ ssh-keygen
+    $ ssh-keygen -f $HOME/.ssh/training
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add git user and add SSH key
@@ -116,29 +116,43 @@ in this training session.
 
     @@@ Sh
     $ sudo adduser git
-    $ su git
+    $ su - git
     $ cd
     $ mkdir .ssh
 
 ### Add your SSH key to the git user
 
     @@@ Sh
-    $ sudo cat $HOME/.ssh/id_rsa.pub >> /home/git/.ssh/authorized_keys
+    $ whoami (ensure that you are not `git` but your local `training` user)
+
+    $ sudo cp $HOME/.ssh/training.pub /home/git/.ssh/authorized_keys
+
+Note: This overrides the `authorized_keys` file. Instead you may also copy
+the file to /tmp, then become `git` user and update the `authorized_keys` file.
+Or you use shell copy paste, depends on your likings.
+
 
 ### Test the connection
 
-   @@@ Sh
-   ssh git@localhost
+    @@@ Sh
+    ssh git@localhost
 
 ### Restrict the git user shell
 
-   @@@ Sh
-   $ sudo vim /etc/passwd
+    @@@ Sh
+    $ sudo vim /etc/passwd
    
-   git:x:1000:1000::/home/git:/usr/bin/git-shell
+    git:x:1000:1000::/home/git:/usr/bin/git-shell
 
 Note: Run `which git-shell` to determine the correct path.
 
+### Test the connection again
+
+    @@@ Sh
+    ssh git@localhost
+
+    fatal: Interactive git shell is not enabled.
+    Connection to localhost closed.
 
 
 !SLIDE smbullets
@@ -191,6 +205,11 @@ Note: Run `which git-shell` to determine the correct path.
     $ cd training.git
     $ git --bare init
 
+### Change ownership for git user
+
+    @@@ Sh
+    $ chown -R git:git /opt/git
+
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add the repository as remote origin
@@ -200,7 +219,11 @@ Note: Run `which git-shell` to determine the correct path.
 * Steps
  * Navigate into your local repository
  * Use `git remote add origin git@localhost:/opt/git/training.git` to add the origin
- * Push your local history to `origin master`
+ * Push your local history
+ * Use `--set-upstream` to enable the local branch following the remote repository
+* Bonus
+ * Configure the default push method to `simple`
+
 
 ~~~SECTION:handouts~~~
 
@@ -223,8 +246,14 @@ Note: Run `which git-shell` to determine the correct path.
 
 * Navigate into your local repository
 * Use `git remote add origin git@localhost:/opt/git/training.git` to add the origin
-* Push your local history to `origin master`
+* Push your local history
+* Use `--set-upstream` to enable the local branch following the remote repository
 
+## Bonus:
+
+****
+
+* Configure the default push method to `simple`
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
@@ -239,9 +268,33 @@ Note: Run `which git-shell` to determine the correct path.
     @@@ Sh
     $ cd $HOME/training.git
     $ git remote add origin git@localhost:/opt/git/training.git
+    $ git fetch
 
 ### Push the history
 
     @@@ Sh
-    $ git push origin master
+    $ git push
+
+This will not work since the local branch does not follow the remote branch.
+Use `--set-upstream` as proposed by the cli output.
+
+    @@@ Sh
+    $ git push --set-upstream origin master
+
+### Set default push method
+
+Git versions prior 2.0 did not define the default push method. The default behaviour
+was to use the same local branch name for the remote branch name.
+
+The new default method should be `simple` which ensures that the local branches
+will only be pushed to remote branches which `git pull` is following.
+
+Our setup did not clone the repository (which includes a virtual git pull). Therefore
+the local master branch does not follow a remote branch.
+
+In order to fix that, add the default push method to your global configuration.
+
+    @@@ Sh
+    git config --global push.default simple
+
 
