@@ -22,12 +22,48 @@
 
 ~~~ENDSECTION~~~
 
+
 !SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Use Feature Branches
+# Gitflow Workflow - Historical Branches
 
-* Objective:
+* Master branch for release history (including version tags)
+* Develop branch for feature integration
 
-* Steps:
+<center><img src="../_images/workflows/git_gitflow_workflow_02.png" alt="Gitflow Workflow"/></center>
+
+
+~~~SECTION:handouts~~~
+
+****
+
+
+~~~ENDSECTION~~~
+
+!SLIDE smbullets
+# Gitflow Workflow - Feature Branches
+
+* New features in their own branches
+* Feature branches use `develop` as their parent branch
+* Once completed, merged back to `develop`
+
+<center><img src="../_images/workflows/git_gitflow_workflow_03.png" alt="Gitflow Workflow"/></center>
+
+
+~~~SECTION:handouts~~~
+
+****
+
+
+~~~ENDSECTION~~~
+
+!SLIDE smbullets
+# Gitflow Workflow - Release Branches
+
+* Enough features in `develop`: `release` branch based on `develop`
+* Ready to ship: merged to `master` and tagged with version
+
+<center><img src="../_images/workflows/git_gitflow_workflow_04.png" alt="Gitflow Workflow"/></center>
+
 
 ~~~SECTION:handouts~~~
 
@@ -35,81 +71,20 @@
 
 ~~~ENDSECTION~~~
 
-!SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Use Feature Branches
-
-## Objective: 
-****
-
-*
-
-## Steps:
-
-****
-
-*
-
-!SLIDE supplemental solutions
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
-****
-
-## Use Feature Branches
-
-****
-
-### 
-
-    @@@ Sh
-    $ 
-
-
-
-
-
-
-
 !SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Use Feature Branches
+# Gitflow Workflow - Maintenance Branches
 
-* Objective:
+* Fixes based on `master`
+* Merged to `master`, tagged and merged to `develop`
 
-* Steps:
+<center><img src="../_images/workflows/git_gitflow_workflow_05.png" alt="Gitflow Workflow"/></center>
+
 
 ~~~SECTION:handouts~~~
 
 ****
 
+
 ~~~ENDSECTION~~~
-
-!SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Use Feature Branches
-
-## Objective: 
-****
-
-*
-
-## Steps:
-
-****
-
-*
-
-!SLIDE supplemental solutions
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
-****
-
-## Use Feature Branches
-
-****
-
-### 
-
-    @@@ Sh
-    $ 
-
-
-
-
 
 
