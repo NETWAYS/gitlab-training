@@ -32,9 +32,7 @@ https://wiki.icinga.org/display/Dev/Riding+the+Git
 
 * Review/Extend Labs
 * Review content
-* Workflows:
- * Gitflow
- * Forking
 * Integration:
  * No labs, but provide some more details
 * Hooks -> Integration
+ * Add Jenkins Trigger example
