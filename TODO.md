@@ -30,17 +30,9 @@ https://wiki.icinga.org/display/Dev/Riding+the+Git
 
 # TODOs
 
-* Good Commits - copy paste the developer guidelines from icinga.
-
-* Install a local git server
-* Use a local repository for the workflow and push stuff.
-* Commands:
- * Split them ->
-  * Basics, Commits, Branching
-  * Server, Collaboration, Workflows
- * Add small labs for local work
+* Review/Extend Labs
+* Review content
 * Workflows:
- * Feature
  * Gitflow
  * Forking
 * Integration:
