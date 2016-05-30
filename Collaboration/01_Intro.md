@@ -4,7 +4,9 @@
 !SLIDE smbullets
 # Collaboration
 
-
+* Work locally
+* Push to remote repository
+* Share your work with others
 
 ~~~SECTION:handouts~~~
 

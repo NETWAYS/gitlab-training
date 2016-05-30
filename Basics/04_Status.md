@@ -1,8 +1,8 @@
 !SLIDE smbullets
 # Examine the current state
 
-* git status
-* git diff
+* `git status`: show current working tree status
+* `git diff`: compare changes between working tree and HEAD
 
 ~~~SECTION:handouts~~~
 
@@ -90,7 +90,7 @@ You'll recognize the unstaged changes compared to your staging area.
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Use Git Diff
 
 * Objective:
- * Play with Git Diff
+ * Play with `git diff`
 * Steps:
  * Change files
  * Use `git diff` to compare unstaged changes
@@ -110,7 +110,7 @@ You'll recognize the unstaged changes compared to your staging area.
 ## Objective: Play with Git Diff
 ****
 
-* Play with Git Diff
+* Play with `git diff`
 
 ## Steps:
 

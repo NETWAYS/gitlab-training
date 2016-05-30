@@ -5,6 +5,7 @@
 * Add, list, delete
 * Push tags to remote repository
 * Checkout branches based on tags
+* Release software versions based on tags (e.g. v2.4.10)
 
 ~~~SECTION:handouts~~~
 

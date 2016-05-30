@@ -1,13 +1,17 @@
 !SLIDE smbullets
 # Configuration
 
-* $HOME/.gitconfig
 * CLI command support
+* $HOME/.gitconfig
 
-!SLIDE smbullets
-# Global Configuration
+Example:
 
-* Username and email address for commit messages
+    @@@ Sh
+    $ git config --global color.ui auto
+
+    $ cat $HOME/.gitconfig
+    [color]
+    ui = auto
 
 
 ~~~SECTION:handouts~~~
@@ -19,6 +23,21 @@ https://git-scm.com/book/tr/v2/Customizing-Git-Git-Configuration
 
 ~~~ENDSECTION~~~
 
+!SLIDE smbullets
+# Configuration Sections
+
+* Commit author (`user`)
+* Aliases (`alias`)
+* Colors for diff and verbose commit (`color`)
+* Core functionality (`core`)
+
+
+~~~SECTION:handouts~~~
+
+****
+
+
+~~~ENDSECTION~~~
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Configure your username and email address

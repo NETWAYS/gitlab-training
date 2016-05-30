@@ -4,7 +4,7 @@
 !SLIDE smbullets
 # Git Server Overview
 
-* Git daemon
+* Git server
 * Web interfaces
 * Entire collaboration suites
 

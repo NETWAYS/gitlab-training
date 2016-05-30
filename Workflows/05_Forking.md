@@ -1,16 +1,13 @@
 !SLIDE smbullets
 # Forking Workflow
 
-<center><img src="../_images/workflows/git_forking_workflow_01.png" alt="Forking Workflow"/></center>
-
-!SLIDE smbullets
-# Forking Workflow
-
 * Every developer has
  * a server-side repository
  * a private local repository
 * Developers push their own server-side repository
 * Project maintainer pushes to offical repository
+
+<center><img src="../_images/workflows/git_forking_workflow_01.png" alt="Forking Workflow"/></center>
 
 ~~~SECTION:handouts~~~
 

@@ -1,18 +1,15 @@
 !SLIDE smbullets
 # Advanced commands
 
-* git cherry-pick
-* git apply
-* git am
-* git archive
-* git stash
+* `git cherry-pick`: collect commit into your working tree
+* `git archive`: create tarball
+* `git stash`: put current changes on a temporary stack
 
 ~~~SECTION:handouts~~~
 
 ****
 
 `git cherry-pick` collects a specific commit into your working tree.
-
 
 `git archive` creates a tarball from the given working tree (HEAD or tag).
 

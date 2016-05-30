@@ -1,8 +1,8 @@
 !SLIDE smbullets
 # Start a project
 
-* git init
-* git clone
+* `git init`: initialize a local git repository
+* `git clone`: clone a copy of existing remote repository
 
 ~~~SECTION:handouts~~~
 

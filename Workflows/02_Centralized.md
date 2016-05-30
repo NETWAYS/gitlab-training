@@ -1,15 +1,11 @@
 !SLIDE smbullets
 # Centralized Workflow
 
-<center><img src="../_images/workflows/git_centralized_workflow_01.png" alt="Centralized Workflow"/></center>
-
-!SLIDE smbullets
-# Centralized Workflow
-
 * Multiple users
 * Each user has a local copy
 * Central `master` branch
 
+<center><img src="../_images/workflows/git_centralized_workflow_01.png" alt="Centralized Workflow"/></center>
 
 ~~~SECTION:handouts~~~
 
@@ -52,6 +48,7 @@ for integrating and sharing code changes between repositories.
 * Stored in central repository
 * Adds all local commits that are not in the central master branch
 
+<center><img src="../_images/workflows/git_centralized_workflow_02.png" alt="Centralized Workflow"/></center>
 
 ~~~SECTION:handouts~~~
 
@@ -59,12 +56,6 @@ for integrating and sharing code changes between repositories.
 
 
 ~~~ENDSECTION~~~
-
-!SLIDE smbullets
-# Centralized Workflow - Local and Remote
-
-<center><img src="../_images/workflows/git_centralized_workflow_02.png" alt="Centralized Workflow"/></center>
-
 
 !SLIDE smbullets
 # Centralized Workflow - Managing Conflicts
@@ -72,21 +63,14 @@ for integrating and sharing code changes between repositories.
 * Central repository's commit history is important
 * If local commit history diverges, pushing changes is denied
 
+<center><img src="../_images/workflows/git_centralized_workflow_03.png" alt="Centralized Workflow"/></center>
+
 ~~~SECTION:handouts~~~
 
 ****
 
 
 ~~~ENDSECTION~~~
-
-!SLIDE smbullets
-# Centralized Workflow - Diverged History
-
-<center><img src="../_images/workflows/git_centralized_workflow_03.png" alt="Centralized Workflow"/></center>
-
-
-
-
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Collaborate in a central repository
@@ -163,20 +147,14 @@ Repeat the steps 2 times:
  * Rebase local changes on top of it
  * Linear history
 
+<center><img src="../_images/workflows/git_centralized_workflow_04_example.png" alt="Centralized Workflow"/></center>
+
 ~~~SECTION:handouts~~~
 
 ****
 
 
 ~~~ENDSECTION~~~
-
-!SLIDE smbullets
-# Centralized Workflow - Rebased History
-
-<center><img src="../_images/workflows/git_centralized_workflow_04_example.png" alt="Centralized Workflow"/></center>
-
-
-
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Resolve conflicts in a central repository

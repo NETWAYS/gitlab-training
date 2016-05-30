@@ -3,9 +3,9 @@
 
 Manually apply and create git patches.
 
-* git apply
-* git am
-* git format-patch
+* `git apply`: apply git patch
+* `git am`: read patches from STDIN and apply them
+* `git format-patch`: create git patch
 
 ~~~SECTION:handouts~~~
 

@@ -16,18 +16,3 @@
 
 ~~~ENDSECTION~~~
 
-!SLIDE smbullets
-# Configuration Sections
-
-* Commit author (`user`)
-* Aliases (`alias`)
-* Colors for diff and verbose commit (`color`)
-* Core functionality (`core`)
-
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~

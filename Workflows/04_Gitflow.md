@@ -1,11 +1,6 @@
 !SLIDE smbullets
 # Gitflow Workflow
 
-<center><img src="../_images/workflows/git_gitflow_workflow_01.png" alt="Gitflow Workflow"/></center>
-
-!SLIDE smbullets
-# Gitflow Workflow
-
 * Strict branching model for project releases
 * Based on Feature Branch Workflow
 * Assigns roles to different branches
@@ -21,6 +16,11 @@
 
 
 ~~~ENDSECTION~~~
+
+!SLIDE smbullets
+# Gitflow Workflow
+
+<center><img src="../_images/workflows/git_gitflow_workflow_01.png" alt="Gitflow Workflow"/></center>
 
 
 !SLIDE smbullets

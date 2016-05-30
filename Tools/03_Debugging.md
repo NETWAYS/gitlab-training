@@ -1,9 +1,9 @@
 !SLIDE smbullets
 # Debugging
 
-* git bisect
-* git blame
-* git grep
+* `git bisect`: binary search for commits causing a bug
+* `git blame`: open editor with commit/author/date addition
+* `git grep`: search for pattern in commit history
 
 ~~~SECTION:handouts~~~
 

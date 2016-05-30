@@ -1,5 +1,5 @@
 !SLIDE subsection
-# ~~~SECTION:MAJOR~~~ Git Introcuction
+# ~~~SECTION:MAJOR~~~ Git Introduction
 
 !SLIDE smbullets
 # Version Control
