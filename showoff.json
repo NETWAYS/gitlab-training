@@ -16,7 +16,9 @@
   },
 
   "sections": [
-  {"section":"global/Pre/Title"},
+  "global/Pre/Title",
+  "global/Pre/NETWAYS",
+  "global/Pre/Staff/MiF.md",
   {"section":"global/Pre/Hints"},
 
   // Introduction

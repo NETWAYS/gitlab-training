@@ -31,12 +31,7 @@ while getopts ":t:h" opt; do
   esac
 done
 
-if [ -z "$TYPE" ]; then
-  TYPE="git"
-fi
-
-
-CMD="showoff serve -f ${TYPE}.json"
+CMD="showoff serve"
 
 echo "Navigate to http://localhost:9090/presenter and http://localhost:9090"
 echo "Running '$CMD'"
