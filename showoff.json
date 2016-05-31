@@ -39,8 +39,10 @@
   {"section":"Workflows"},
   // Integrations
   {"section":"Integrations"},
-  // Hints
+  // Tools
   {"section":"Tools"},
+  // Additional
+  {"section":"Additional"},
 
   {"section":"global/Post"}
  ]
