@@ -28,17 +28,17 @@ there are public services such as Github or Bitbucket.
 !SLIDE smbullets
 # Git Web
 
-<center><img src="../_images/server/git_server_gitweb.png" style="width: 800px;" alt="Git Web"/></center>
+<center><img src="../_images/server/git_server_gitweb.png" style="width: 600px;" alt="Git Web"/></center>
 
 !SLIDE smbullets
 # GitHub
 
-<center><img src="../_images/server/git_server_github.png" style="width: 800px;" alt="Git Web"/></center>
+<center><img src="../_images/server/git_server_github.png" style="width: 600px;" alt="Git Web"/></center>
 
 !SLIDE smbullets
 # GitLab
 
-<center><img src="../_images/server/git_server_gitlab.png" style="width: 800px;" alt="Git Web"/></center>
+<center><img src="../_images/server/git_server_gitlab.png" style="width: 600px;" alt="Git Web"/></center>
 
 !SLIDE smbullets
 # Git Server Protocol
