@@ -58,22 +58,14 @@
     $ vim post-receive
 
     #!/bin/bash
-    # oldref newref refname
-    JENKINS_HOST="http://localhost"
-    JENKINS_PORT=8080
-    JENKINS_ENV="testing"
-    JENKINS_USER="jenkins"
-    JENKINS_API_TOKEN="your-jenkins-api-token-here"
-    JENKINS_JOB="training"
 
-    echo "executing post-receive hook"
-    echo "environment=${ENVIRONMENT}"
-    echo "user=${JENKINS_USER}"
+    echo "executing jenkins hook"
 
-    curl -u ${JENKINS_USER}:${JENKINS_API_TOKEN} \
-      --data "delay=0sec&environment=${JENKINS_ENV}" \
-      "${JENKINS_HOST}:${JENKINS_PORT}/job/${JENKINS_JOB/buildWithParameters}"
+    curl -s http://localhost:8080/job/training/build
 
+In case the Jenkins server requires authorization this must be passed
+via `-u user:pass`. Newer versions of Jenkins also support authentication
+using an API token.
 
 ### Make post-receive executable
 
