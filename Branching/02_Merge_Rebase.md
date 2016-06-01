@@ -1,9 +1,9 @@
 !SLIDE smbullets
 # Work on Git History
 
-* git merge
-* git rebase
-* git tag
+* `git merge`: join commit histories together
+* `git rebase`: import commit history and add your commits on top
+* `git tag`: add point to the current commit
 
 ~~~SECTION:handouts~~~
 
