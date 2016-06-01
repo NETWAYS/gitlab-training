@@ -21,6 +21,7 @@ collaboration and workflows.
  * Generate public SSH key
 * Steps:
  * Use `ssh-keygen -f $HOME/.ssh/training` to generate an SSH key
+ * Configure SSH to use this key for `localhost` in `~/.ssh/config`
 
 ~~~SECTION:handouts~~~
 
@@ -45,6 +46,7 @@ in this training session.
 ****
 
 * Use `ssh-keygen -f $HOME/.ssh/training` to generate an SSH key
+* Configure SSH to use this key for `localhost` in `~/.ssh/config`
 
 
 !SLIDE supplemental solutions
@@ -55,10 +57,22 @@ in this training session.
 
 ****
 
-### Example
+### Generate key
 
     @@@ Sh
     $ ssh-keygen -f $HOME/.ssh/training
+
+### Configure SSH
+
+    @@@ Sh
+    $ vim $HOME/.ssh/config
+
+    Host localhost
+        IdentityFile ~/.ssh/training
+
+
+In case you are using the default `id_rsa` ssh key file, you don't
+need this configuration.
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add git user and add SSH key
@@ -162,7 +176,7 @@ Note: Run `which git-shell` to determine the correct path.
  * Create a new repository on the Git Server
 * Steps:
  * Create a new repository called `training.git` in `/opt/git`
- * Initialize a bare repository
+ * Initialize a bare repository (`git --bare init`)
 
 ~~~SECTION:handouts~~~
 
@@ -183,7 +197,7 @@ Note: Run `which git-shell` to determine the correct path.
 ****
 
 * Create a new repository called `training.git` in `/opt/git`
-* Initialize a bare repository
+* Initialize a bare repository (`git --bare init`)
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
