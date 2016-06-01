@@ -74,6 +74,18 @@ Example:
  * Modified
  * Staged
 
+~~~SECTION:notes~~~
+
+`Committed` means that the data is safely stored in your local database.
+
+`Modified` means that you have changed the file but have not committed
+it to your Git database yet.
+
+`Staged` means that you have marked a modified or added file in its
+current version to go into your next commit snapshot.
+
+~~~ENDSECTION~~~
+
 ~~~SECTION:handouts~~~
 
 ****
@@ -95,6 +107,23 @@ current version to go into your next commit snapshot.
  * Git directory
  * Working directory
  * Staging area
+
+~~~SECTION:notes~~~
+
+The `Git directory` is where Git stores the metadata and object database
+for your project. This is the most important part of Git, and it is what
+is copied when you clone a repository from another computer.
+
+The `working directory` is a single checkout of one version of the project.
+These files are pulled out of the compressed database in the Git directory
+and placed on disk for you to use or modify.
+
+The `staging area` is a file, generally located in your Git directory, that
+stores information about what will go into your next commit.
+It is sometimes referred to as the "index", but it’s also common to refer
+to it as the staging area.
+
+~~~ENDSECTION~~~
 
 ~~~SECTION:handouts~~~
 
@@ -124,6 +153,8 @@ to it as the staging area.
  * Takes files in `staging area`
  * Stores snapshot permanently in `Git directory`
 
+<center><img src="../_images/introduction/git_introduction_basics_03_three_states.png" alt="Basics 3 States"/></center>
+
 ~~~SECTION:handouts~~~
 
 ****
@@ -133,17 +164,6 @@ to it as the staging area.
 * `Staged` means that the file has been modified and it was added to the staging area
 
 * `Modified` means that the file was changed since it was checked out but has not been staged yet.
-
-~~~ENDSECTION~~~
-
-!SLIDE smbullets
-# Basic Git Workflow
-
-<center><img src="../_images/introduction/git_introduction_basics_03_three_states.png" alt="Basics 3 States"/></center>
-
-~~~SECTION:handouts~~~
-
-****
 
 ~~~ENDSECTION~~~
 

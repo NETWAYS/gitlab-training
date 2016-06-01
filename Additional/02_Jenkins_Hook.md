@@ -19,8 +19,11 @@
  * Add Jenkins git hook
 * Steps:
  * Modify/Add `post-receive` server-side git hook
- * Provide/Generate an URL token for the Jenkins REST API
  * Use cURL to manually trigger a job build using the Jenkins REST API
+
+Example:
+
+http://localhost:8080/job/{jenkins-job-name}/build
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add Jenkins Git Hook
@@ -35,8 +38,11 @@
 ****
 
 * Modify/Add `post-receive` server-side git hook
-* Provide/Generate an URL token for the Jenkins REST API
 * Use cURL to manually trigger a job build using the Jenkins REST API
+
+Example:
+
+http://localhost:8080/job/{jenkins-job-name}/build
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
