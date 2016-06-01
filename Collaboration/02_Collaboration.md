@@ -1,10 +1,10 @@
 !SLIDE smbullets
 # Collaboration with others
 
-* git fetch
-* git pull
-* git push
-* git remote
+* `git fetch`: download references from remote repository
+* `git pull`: fetch and update the local history from remote repository
+* `git push`: update remote references and push local history to remote repository
+* `git remote`: configure/list remote repository (default `origin`)
 
 ~~~SECTION:handouts~~~
 
