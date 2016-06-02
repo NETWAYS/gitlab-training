@@ -5,7 +5,7 @@
 * Each user has a local copy
 * Central `master` branch
 
-<center><img src="../_images/workflows/git_centralized_workflow_01.png" style="width:800px;height:400px;" alt="Centralized Workflow"/></center>
+<center><img src="../_images/workflows/git_centralized_workflow_01.png" alt="Centralized Workflow"/></center>
 
 !SLIDE smbullets printonly
 # Centralized Workflow
@@ -14,7 +14,7 @@
 * Each user has a local copy
 * Central `master` branch
 
-<center><img src="../_images/workflows/git_centralized_workflow_01.png" style="width:480px;height:240px;" alt="Centralized Workflow"/></center>
+<center><img src="../_images/workflows/git_centralized_workflow_01.png" style="width:303px;height:272px;" alt="Centralized Workflow"/></center>
 
 ~~~SECTION:handouts~~~
 
