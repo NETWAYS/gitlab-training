@@ -18,8 +18,7 @@ There is a variety of Git server tools, web interfaces and addons out there.
 * gitosis
 * gitolite
 * GitLab
-
-
+<div>&nbsp;</div>
 In case you do not want to host your own Git server,there are public services such as Github or Bitbucket.
 
 ~~~ENDSECTION~~~
