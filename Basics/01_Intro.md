@@ -46,25 +46,32 @@ Example from Git CLI command:
 	</tbody>
 </table>
 
-
-    start a working area (see also: git help tutorial)
-       clone      Clone a repository into a new directory
-       init       Create an empty Git repository or reinitialize an existing one
+<table>
+	<thead>
+		<tr><td colspan="2">work on the current change (see also: git help everyday)</td></tr>
+	</thead>
+	<tbody>
+		<tr><td>add</td><td>Add file contents to the index</td></tr>
+		<tr><td>mv</td><td>Move or rename a file, a directory, or a symlink</td></tr>
+		<tr><td>reset</td><td>Reset current HEAD to the specified state</td></tr>
+		<tr><td>rm</td><td>Remove files from the working tree and from the index</td></tr>
+	</tbody>
+</table>
+   
+<table>
+	<thead>
+		<tr><td colspan="2">examine the history and state (see also: git help revisions)</td></tr>
+	</thread>
+	<tbody>
+		<tr><td>bisect</td><td>Use binary search to find the commit that introduced a bug</td></tr>
+		<tr><td>grep</td><td>Print lines matching a pattern</td></tr>
+		<tr><td>log</td><td>Show commit logs</td></tr>
+		<tr><td>show</td><td>Show various types of objects</td></tr>
+		<tr><td>status</td><td>Show the working tree status</td></tr>
+	</tbody>
+</table> 
     
-    work on the current change (see also: git help everyday)
-       add        Add file contents to the index
-       mv         Move or rename a file, a directory, or a symlink
-       reset      Reset current HEAD to the specified state
-       rm         Remove files from the working tree and from the index
-    
-    examine the history and state (see also: git help revisions)
-       bisect     Use binary search to find the commit that introduced a bug
-       grep       Print lines matching a pattern
-       log        Show commit logs
-       show       Show various types of objects
-       status     Show the working tree status
-    
-    grow, mark and tweak your common history
+	grow, mark and tweak your common history
        branch     List, create, or delete branches
        checkout   Switch branches or restore working tree files
        commit     Record changes to the repository
