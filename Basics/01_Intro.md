@@ -23,7 +23,7 @@
 Example from Git CLI command:
 
 <table>
-	<thead>
+	<thead style="background-color:#f6edc3;">
 		<tr><td colspan="2">start a working area (see also: git help tutorial)</td></tr>
 	</thead>
 	<tbody>
