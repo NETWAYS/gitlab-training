@@ -8,6 +8,8 @@
 
 <center><img src="../_images/integrations/git_integrations_jenkins_git_hook.png" style="width:6.65cm;height:2.41cm" alt="Git Integrations Jenkins"/></center>
 
+~~~PAGEBREAK~~~
+
 ~~~SECTION:handouts~~~
 
 ****
