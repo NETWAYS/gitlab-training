@@ -14,7 +14,7 @@
 * Each user has a local copy
 * Central `master` branch
 
-<center><img src="../_images/workflows/git_centralized_workflow_01.png" style="width:50%;height:50%;" alt="Centralized Workflow"/></center>
+<center><img src="../_images/workflows/git_centralized_workflow_01.png" style="width:151px;height:136px;" alt="Centralized Workflow"/></center>
 
 ~~~SECTION:handouts~~~
 
