@@ -57,7 +57,7 @@ for integrating and sharing code changes between repositories.
 * Stored in central repository
 * Adds all local commits that are not in the central master branch
 
-<center><img src="../_images/workflows/git_centralized_workflow_02.png" style="width:800px;height:400px;" alt="Centralized Workflow"/></center>
+<center><img src="../_images/workflows/git_centralized_workflow_02.png" style="width:406px;height:400px;" alt="Centralized Workflow"/></center>
 
 !SLIDE smbullets printonly
 # Centralized Workflow - Publish Changes
@@ -66,7 +66,7 @@ for integrating and sharing code changes between repositories.
 * Stored in central repository
 * Adds all local commits that are not in the central master branch
 
-<center><img src="../_images/workflows/git_centralized_workflow_02.png" style="max-width:406px;max-height:400px;" alt="Centralized Workflow"/></center>
+<center><img src="../_images/workflows/git_centralized_workflow_02.png" style="max-width:396px;max-height:390px;" alt="Centralized Workflow"/></center>
 
 ~~~SECTION:handouts~~~
 
