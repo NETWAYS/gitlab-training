@@ -57,7 +57,6 @@ Example from Git CLI command:
 		<tr><td>rm</td><td>Remove files from the working tree and from the index</td></tr>
 	</tbody>
 </table>
-~~~PAGEBREAK~~~
 <table>
 	<thead>
 		<tr><td colspan="2">examine the history and state (see also: git help revisions)</td></tr>
@@ -71,15 +70,21 @@ Example from Git CLI command:
 	</tbody>
 </table> 
 ~~~PAGEBREAK~~~
-	grow, mark and tweak your common history
-       branch     List, create, or delete branches
-       checkout   Switch branches or restore working tree files
-       commit     Record changes to the repository
-       diff       Show changes between commits, commit and working tree, etc
-       merge      Join two or more development histories together
-       rebase     Forward-port local commits to the updated upstream head
-       tag        Create, list, delete or verify a tag object signed with GPG
-~~~PAGEBREAK~~~
+<table>
+	<thead>
+		<tr><td colspan="2">grow, mark and tweak your common history</td></tr>
+	</thead>
+	<tbody>
+		<tr><td>branch</td><td>List, create, or delete branches</td></tr>
+		<tr><td>checkout</td><td>Switch branches or restore working tree files</td></tr>
+		<tr><td>commit</td><td>Record changes to the repository</td></tr>
+		<tr><td>diff</td><td>Show changes between commits, commit and working tree, etc</td></tr>
+		<tr><td>merge</td><td>Join two or more development histories together</td></tr>
+		<tr><td>rebase</td><td>Forward-port local commits to the updated upstream head</td></tr>
+		<tr><td>tag</td><td>Create, list, delete or verify a tag object signed with GPG</td></tr>
+	</tbody>
+</table>
+
     collaborate (see also: git help workflows)
        fetch      Download objects and refs from another repository
        pull       Fetch from and integrate with another repository or a local branch
