@@ -161,7 +161,7 @@ to it as the staging area.
 
 ~~~ENDSECTION~~~
 
-!SLIDE smbullets
+!SLIDE smbullets noprint
 # Basic Git Workflow
 
 * Modify files in `working directory`
@@ -170,7 +170,20 @@ to it as the staging area.
  * Takes files in `staging area`
  * Stores snapshot permanently in `Git directory`
 
-<center><img src="../_images/introduction/git_introduction_basics_03_three_states.png" alt="Basics 3 States"/></center>
+<center><img src="../_images/introduction/git_introduction_basics_03_three_states.png" style="width:800px;height:400px;" alt="Basics 3 States"/></center>
+
+!SLIDE smbullets printonly
+# Basic Git Workflow
+
+* Modify files in `working directory`
+* Stage the files, adding snapshots to the `staging area`
+* Commit
+ * Takes files in `staging area`
+ * Stores snapshot permanently in `Git directory`
+
+<center><img src="../_images/introduction/git_introduction_basics_03_three_states.png" style="width:480px;height:240px;" alt="Basics 3 States"/></center>
+
+~~~ENDSECTION~~~
 
 ~~~SECTION:handouts~~~
 
