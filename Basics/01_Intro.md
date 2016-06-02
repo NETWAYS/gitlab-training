@@ -45,7 +45,7 @@ Example from Git CLI command:
 		<tr><td>init</td><td>Create an empty Git repository or reinitialize an existing one</td></tr>
 	</tbody>
 </table>
-
+~~~PAGEBREAK~~~
 <table>
 	<thead>
 		<tr><td colspan="2">work on the current change (see also: git help everyday)</td></tr>
@@ -57,7 +57,7 @@ Example from Git CLI command:
 		<tr><td>rm</td><td>Remove files from the working tree and from the index</td></tr>
 	</tbody>
 </table>
-   
+~~~PAGEBREAK~~~
 <table>
 	<thead>
 		<tr><td colspan="2">examine the history and state (see also: git help revisions)</td></tr>
@@ -70,7 +70,7 @@ Example from Git CLI command:
 		<tr><td>status</td><td>Show the working tree status</td></tr>
 	</tbody>
 </table> 
-    
+~~~PAGEBREAK~~~
 	grow, mark and tweak your common history
        branch     List, create, or delete branches
        checkout   Switch branches or restore working tree files
@@ -79,7 +79,7 @@ Example from Git CLI command:
        merge      Join two or more development histories together
        rebase     Forward-port local commits to the updated upstream head
        tag        Create, list, delete or verify a tag object signed with GPG
-    
+~~~PAGEBREAK~~~
     collaborate (see also: git help workflows)
        fetch      Download objects and refs from another repository
        pull       Fetch from and integrate with another repository or a local branch
