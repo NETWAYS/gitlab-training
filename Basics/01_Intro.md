@@ -57,6 +57,7 @@ Example from Git CLI command:
 		<tr><td>rm</td><td>Remove files from the working tree and from the index</td></tr>
 	</tbody>
 </table>
+<div>&nbsp;</div>
 <table>
 	<thead>
 		<tr><td colspan="2">examine the history and state (see also: git help revisions)</td></tr>
@@ -84,11 +85,16 @@ Example from Git CLI command:
 		<tr><td>tag</td><td>Create, list, delete or verify a tag object signed with GPG</td></tr>
 	</tbody>
 </table>
-
-    collaborate (see also: git help workflows)
-       fetch      Download objects and refs from another repository
-       pull       Fetch from and integrate with another repository or a local branch
-       push       Update remote refs along with associated objects
-
+<div>&nbsp;</div>
+<table>
+	<thead>
+		<tr><td colspan="2">collaborate (see also: git help workflows)</td></tr>
+	</thead>
+	<tbody>
+		<tr><td>fetch</td><td>Download objects and refs from another repository</td></tr>
+		<tr><td>pull</td><td>Fetch from and integrate with another repository or a local branch</td></tr>
+		<tr><td>push</td><td>Update remote refs along with associated objects</td></tr>
+	</tbody>
+</table>
 
 ~~~ENDSECTION~~~
