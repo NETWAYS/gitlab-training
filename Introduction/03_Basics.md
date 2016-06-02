@@ -183,16 +183,14 @@ to it as the staging area.
 
 <center><img src="../_images/introduction/git_introduction_basics_03_three_states.png" style="width:480px;height:240px;" alt="Basics 3 States"/></center>
 
-~~~ENDSECTION~~~
+~~~PAGEBREAK~~~
 
 ~~~SECTION:handouts~~~
 
 ****
 
 * If a particular version of a file is in the Git directory, it’s considered `committed`.
-
 * `Staged` means that the file has been modified and it was added to the staging area
-
 * `Modified` means that the file was changed since it was checked out but has not been staged yet.
 
 ~~~ENDSECTION~~~
