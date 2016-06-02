@@ -23,14 +23,13 @@
 Example from Git CLI command:
 
 <table>
-    <thead>
-            <tr><td>foo</td></tr>
-            <tr><td>bar</td></tr>
-    </thead>
-    <tbody>
-            <tr><td>foo</td></tr>
-            <tr><td>bar</td></tr>
-    </tbody>
+	<thead>
+		<tr><td colspan="2">start a working area (see also: git help tutorial)</td></tr>
+	</thead>
+	<tbody>
+		<tr><td>clone</td><td>Clone a repository into a new directory</td></tr>
+		<tr><td>init</td><td>Create an empty Git repository or reinitialize an existing one</td></tr>
+	</tbody>
 </table>
 
 
