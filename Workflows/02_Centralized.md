@@ -65,7 +65,7 @@ for integrating and sharing code changes between repositories.
 * Developers push their local master branch
 * Stored in central repository
 * Adds all local commits that are not in the central master branch
-
+* test
 <center><img src="../_images/workflows/git_centralized_workflow_02.png" style="width:406px;height:190px;" alt="Centralized Workflow"/></center>
 
 ~~~SECTION:handouts~~~
