@@ -1,2 +1,6 @@
-.vagrant
+# Exclude all hidden files
+.*
+# Except those related to Git
+!.git*
+
 stats
