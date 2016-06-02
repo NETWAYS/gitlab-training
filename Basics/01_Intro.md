@@ -24,11 +24,11 @@ Example from Git CLI command:
 
 <style type="text/css">
 	table {
-		font-size: 8px;
+		font-size: 7.5pt;
 	}
 
 	thead {
-		font-size: 10px;
+		font-size: 8.5pt;
 		background-color:#f6edc3;
 	}
 
