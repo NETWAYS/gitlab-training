@@ -40,7 +40,7 @@ for integrating and sharing code changes between repositories.
 * Developers clone the central repository
 * Work in local copies
 * New commits are stored locally
-* Importing the remote repository's changes is optional
+* Importing the remote repositories changes is optional
 
 
 ~~~SECTION:handouts~~~
@@ -50,14 +50,23 @@ for integrating and sharing code changes between repositories.
 
 ~~~ENDSECTION~~~
 
-!SLIDE smbullets
+!SLIDE smbullets noprint
 # Centralized Workflow - Publish Changes
 
 * Developers push their local master branch
 * Stored in central repository
 * Adds all local commits that are not in the central master branch
 
-<center><img src="../_images/workflows/git_centralized_workflow_02.png" alt="Centralized Workflow"/></center>
+<center><img src="../_images/workflows/git_centralized_workflow_02.png" style="width:800px;height:400px;" alt="Centralized Workflow"/></center>
+
+!SLIDE smbullets printonly
+# Centralized Workflow - Publish Changes
+
+* Developers push their local master branch
+* Stored in central repository
+* Adds all local commits that are not in the central master branch
+
+<center><img src="../_images/workflows/git_centralized_workflow_02.png" style="width:480px;height:240px;" alt="Centralized Workflow"/></center>
 
 ~~~SECTION:handouts~~~
 
