@@ -66,7 +66,7 @@ for integrating and sharing code changes between repositories.
 * Stored in central repository
 * Adds all local commits that are not in the central master branch
 
-<center><img src="../_images/workflows/git_centralized_workflow_02.png" style="max-width:396px;max-height:390px;" alt="Centralized Workflow"/></center>
+<center><img src="../_images/workflows/git_centralized_workflow_02.png" style="width:396px;height:390px;clip:rect(0, 0, 0, 20px);" alt="Centralized Workflow" height="390" width="396" /></center>
 
 ~~~SECTION:handouts~~~
 
