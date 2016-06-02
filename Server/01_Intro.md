@@ -23,20 +23,35 @@ In case you do not want to host your own Git server,there are public services su
 
 ~~~ENDSECTION~~~
 
-!SLIDE smbullets
+!SLIDE smbullets noprint
 # Git Web
 
-<center><img src="../_images/server/git_server_gitweb.png" style="width: 600px;" alt="Git Web"/></center>
+<center><img src="../_images/server/git_server_gitweb.png" style="width:800px;height:400px;" alt="Git Web"/></center>
 
-!SLIDE smbullets
+!SLIDE smbullets noprint
 # GitHub
 
-<center><img src="../_images/server/git_server_github.png" style="width: 600px;" alt="Git Web"/></center>
+<center><img src="../_images/server/git_server_github.png" style="width:800px;height:400px;" alt="Git Web"/></center>
 
-!SLIDE smbullets
+!SLIDE smbullets noprint
 # GitLab
 
-<center><img src="../_images/server/git_server_gitlab.png" style="width: 600px;" alt="Git Web"/></center>
+<center><img src="../_images/server/git_server_gitlab.png" style="width:800px;height:400px;" alt="Git Web"/></center>
+
+!SLIDE smbullets printonly
+# Git Web
+
+<center><img src="../_images/server/git_server_gitweb.png" style="width:480px;height:240px;" alt="Git Web"/></center>
+
+!SLIDE smbullets printonly
+# GitHub
+
+<center><img src="../_images/server/git_server_github.png" style="width:480px;height:240px;" alt="Git Web"/></center>
+
+!SLIDE smbullets printonly
+# GitLab
+
+<center><img src="../_images/server/git_server_gitlab.png" style="width:480px;height:240px;" alt="Git Web"/></center>
 
 !SLIDE smbullets
 # Git Server Protocol
