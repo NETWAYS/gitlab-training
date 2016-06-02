@@ -22,8 +22,17 @@
 
 Example from Git CLI command:
 
+<style type="text/css">
+	thead {
+		background-color:#f6edc3;
+	}
+
+	tbody tr:nth-child(even) {
+		background-color:#eee8e8;
+	}
+</style>
 <table>
-	<thead style="background-color:#f6edc3;">
+	<thead>
 		<tr><td colspan="2">start a working area (see also: git help tutorial)</td></tr>
 	</thead>
 	<tbody>
