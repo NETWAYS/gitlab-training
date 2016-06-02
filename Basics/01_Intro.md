@@ -22,6 +22,18 @@
 
 Example from Git CLI command:
 
+	@@@ Html
+	<table>
+		<thead>
+			<tr><td>foo</td></tr>
+			<tr><td>bar</td></tr>
+		</thead>
+		<tbody>
+			<tr><td>foo</td></tr>
+			<tr><td>bar</td></tr>
+		</tbody>
+	</table>
+
     start a working area (see also: git help tutorial)
        clone      Clone a repository into a new directory
        init       Create an empty Git repository or reinitialize an existing one
