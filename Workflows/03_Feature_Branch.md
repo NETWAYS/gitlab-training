@@ -1,4 +1,4 @@
-!SLIDE smbullets
+!SLIDE smbulletsi noprint
 # Feature Branch Workflow
 
 * Feature development takes place in dedicated branches
@@ -7,6 +7,16 @@
 * Feature branches can be rebased against stable master branch on demand
 
 <center><img src="../_images/workflows/git_feature_branch_workflow_01.png" alt="Feature Branch Workflow"/></center>
+
+!SLIDE smbullets printonly
+# Feature Branch Workflow
+
+* Feature development takes place in dedicated branches
+* Does not interfere with the main codebase
+* Master branch does not contain broken code
+* Feature branches can be rebased against stable master branch on demand
+
+<center><img src="../_images/workflows/git_feature_branch_workflow_01.png" style="width:563ps;height:213;" alt="Feature Branch Workflow"/></center>
 
 ~~~SECTION:handouts~~~
 
