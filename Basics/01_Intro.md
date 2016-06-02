@@ -23,12 +23,18 @@
 Example from Git CLI command:
 
 <style type="text/css">
+	table {
+		font-size: 12px;
+	}
+
 	thead {
+		font-size: 14px;
+		font-weight: bold;
 		background-color:#f6edc3;
 	}
 
 	tbody tr:nth-child(even) {
-		background-color:#eee8e8;
+		background-color:#f0f0f0;
 	}
 </style>
 <table>
