@@ -25,6 +25,8 @@ The issue id can be for example passed from the git hook into the Jenkins job.
 This requires strict rules on git commits - a git commit without any referenced
 issue id will destroy this workflow.
 
+~~~PAGEBREAK~~~
+
 Define and document a git commit format specification and enforce this
 to your users. In addition to that install a git hook on the server
 which rejects a git push when the commit is missing an issue id.
