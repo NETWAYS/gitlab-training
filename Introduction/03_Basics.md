@@ -13,13 +13,22 @@
 ~~~ENDSECTION~~~
 
 
-!SLIDE smbullets
+!SLIDE smbullets noprint
 # Snapshots and Differences
 
 * Information as a list of file-based changes
 * File changes and deltas over time
 
-<center><img src="../_images/introduction/git_introduction_basics_01_changes.png" alt="Basics Changes"/></center>
+<center><img src="../_images/introduction/git_introduction_basics_01_changes.png" style="width:526px;height:305px;" alt="Basic Changes"/></center>
+
+!SLIDE smbullets printonly
+# Snapshots and Differences
+
+* Information as a list of file-based changes
+* File changes and deltas over time
+
+<center><img src="../_images/introduction/git_introduction_basics_01_changes.png" style="width:480px;height:278px;" alt="Basic Changes"/></center>
+
 
 !SLIDE smbullets
 # Stream of Snapshots
