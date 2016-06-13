@@ -2,26 +2,6 @@
 
 https://www.netways.de/events_schulungen/git/
 
-# Overview
-
-Hereafter we would like to give you an overview of our Git training concept. If you have any questions, do not hesitate to contact us.
-
-The Open Source software Git is steady gaining more popularity since its release and it became the tool for distributed version management. But Git is not only interesting for developers, but it is also established in the DevOps-movement. This happened on the one hand due to the idea and realization of Git, but also because of the many available tools and services, which interact perfectly with Git.
-In our training you will learn the elementary working method of Git but also some tricks which can be very useful in the daily work with the source code management.
-
-
-* History of Git
-* Short comparison with other software  for the version management
-* Introduction of the mode of operation of Git
-* What are "good" Commits and why is this important?
-* Explanation of the most important commands
-* Introduction of git-workflows
-* Presentation of services and tools which interact with Git
- * Jenkins
- * Git-Hooks - rewrite/reformat
- * Redmine/Ticket integration
-* Tips and tricks
-
 # Material
 
 https://git-scm.com/book/en/v2/Getting-Started-Git-Basics
@@ -30,9 +10,36 @@ https://wiki.icinga.org/display/Dev/Riding+the+Git
 
 # TODOs
 
-* Review/Extend Labs
-* Review content
-* Integration:
- * No labs, but provide some more details
-* Hooks -> Integration
- * Add Jenkins Trigger example
+- Introduction MiF - Bild kaputt
+- Stream of Snapshot-Bild nicht so gut erklärt
+- Work locally - 3 Stages, zuerst Bild dann Erklärung (2 statt 3 Slides)
+- Besser erklären was modified, staged, committed bedeutet (etwa: "git add" - was passiert bei "git commit")
+- Bash Completion erklären (Emanuel hat nachgefragt, was das ist)
+- Bash Completion als Extra-Schritt, nicht bei Git-Installation direkt
+- Bash-Prompt für Git als kleines LAB einbauen (siehe Blog-Einträge bzw .bashrc von MiF). Damit zeigt es auch immer den aktuellen Branch an.
+- git config cli besser erklären
+- touch file -> fehlendes "git add" -> dann "git commit" -> nichts passiert (Frage von Rottmaier)
+- Unterschied git fetch und git pull besser erklären - Unterschied lokal/remote, ggf Grafik dazu baun
+- Lab 8.3 praxis orientierter - "Feature Branches" - bessere Namen im Lab vorgeben
+- Lab 10.2 - fehlt die CLI Ausgabe um die Authors in den Slides, nicht nur in den Exercises
+- Grafiken für git submodule und git subtree
+- Einzelne git cli commands ohne Erklärung
+- Grafiken in den Unterlagen die sehr breit sind, schaun in A5 hochkant scheisse aus (mit slides und noprint bzw print 90 grad gedreht arbeiten)
+- Git Server: git --bare init directoryname bzw. besser erklären was das macht (nur das was etwa im lokalen Repository in .git liegt)
+- Branches und Tags remote löschen - fehlt komplett
+- Refs und Heads besser erklären, etwa bei Git Hook - was ist refname (refs/heads/master, refs/tags/v0.1)
+- Git server: ssh-copy-id verwenden
+
+- Evtl Lab für .mailmap rausnehmen
+- .gitignore fehlt komplett - das muss am Anfang mit rein
+
+- Frage von Teilnehmer: Wie kann ich eine Datei "zurückholen" bzw einen bestimmten Commit nur für diese Datei auschecken
+- Wann benutze ich Branches?
+- Workflows - Best Practices, wie wenden wir das zB bei NETWAYS/Icinga an?
+
+- Empfehlungen von Programmen und CLI Tools (SourceTree, TortoiseGit, ...)
+- vim-fugitive
+- .gitconfig - zB Whitespace Highlighting, Colors als Lab bzw. in den Unterlagen
+- Additional: Source mitreinnehmen? http://www.legendiary.at/2011/01/20/visualize-icinga-git-with-gource/
+
+- Verweis auf offizielle Doku sowie NETWAYS-Blog mit neuen Inhalten
