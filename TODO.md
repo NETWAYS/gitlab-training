@@ -10,6 +10,12 @@ https://wiki.icinga.org/display/Dev/Riding+the+Git
 
 # TODOs
 
+* git commit --amend erklären
+* git rebase -i HEAD~2
+ * pick -> edit um die Commit-Historie anzupassen
+ * pick + suqash erklären (Grafik)
+
+
 - Introduction MiF - Bild kaputt
 - Stream of Snapshot-Bild nicht so gut erklärt
 - Work locally - 3 Stages, zuerst Bild dann Erklärung (2 statt 3 Slides)
