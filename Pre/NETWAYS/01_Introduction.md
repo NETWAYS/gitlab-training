@@ -1,127 +1,79 @@
-<!SLIDE noprint subsectionnonum>
+!SLIDE noprint subsectionnonum
+# About NETWAYS
 
-# INTRODUCTION NETWAYS
 
-<!SLIDE noprint smbullets rimg>
+!SLIDE noprint smbullets
+# About  NETWAYS
 
-# INTRODUCTION NETWAYS
-![NETWAYS Staff](../../_images/netways/Facebook_72dpi.png)
+* Open Source Service Company
+* Located in Nuremberg
+* Currently 50 employees
+* Specialised in
+ * Open Source Systems Management
+ * Open Source Datacenter
+* Individual Open Source solutions
 
-* Company foundation 1995
-* Open Source since 1997
-* Currently 47 employees
-* Specializing in the areas of Open Source Systems Management and Open Source Datacenter
 
-<!SLIDE noprint lrbullets smbullets>
+!SLIDE noprint center
+# NETWAYS Products
 
-# NETWAYS SKILLS
+<center><img src="../../_images/netways/NETWAYS_Products.png" style="width:800px;height:369px;" alt="NETWAYS Products"/></center>
 
-* Monitoring
-* Graphing
-* Logmanagement
-* Configuration management
-* Reporting
-* Private Cloud
-* Backup
-* Project management
-* Consulting
-* Hosting
-* Managed Services
-* Development
-* Support
-* Operating
-* Trainings
-* Conferences
-* Monitoring hardware
 
-<!SLIDE noprint center>
+!SLIDE noprint center
+# NETWAYS Technologies
 
-# NETWAYS PRODUCTS
-![NETWAYS Products](../../_images/netways/NETWAYS_Products.png)
+<center><img src="../../_images/netways/NETWAYS_Technologies.png" style="width:800px;height:419px;" alt="NETWAYS Technologies"/></center>
 
-<!SLIDE noprint center>
 
-# NETWAYS TECHNOLOGIES
-![NETWAYS Technologies](../../_images/netways/NETWAYS_Technologies.png)
+!SLIDE noprint center
+# NETWAYS Consulting Customers (partly)
 
-<!SLIDE noprint smbullets small>
+<center><img src="../../_images/netways/NETWAYS_Customers_Consulting.png" style="width:800px;height:507px;" alt="NETWAYS Technologies"/></center>
 
-# NETWAYS CONFERENCES
 
-* Open Source Backup Conference
- * 26.-27. September 2016 in Cologne
+!SLIDE noprint center
+# NETWAYS Hosting Customers (partly)
 
-* Open Source Monitoring Conference
- * 29. November - 02. December 2016 in Nuremberg
+<center><img src="../../_images/netways/NETWAYS_Customers_Hosting.png" style="width:800px;height:438px;" alt="NETWAYS Technologies"/></center>
 
-* Open Source Data Center Conference
- * 16.-18. May 2017 in Berlin
 
-<!SLIDE noprint center>
+!SLIDE noprint center
+# NETWAYS Events
 
-# NETWAYS TRAININGS - ICINGA 2 ENTERPRISE MONITORING
-![NETWAYS Trainings Monitoring](../../_images/netways/NETWAYS_Trainings_Icinga2.png)
+<center><img src="../../_images/netways/NETWAYS_Events.png" style="width:800px;height:156px;" alt="NETWAYS Events"/></center>
 
-<!SLIDE noprint center>
 
-# NETWAYS TRAININGS - SLA, LOGMANAGEMENT & GRAPHING
-![NETWAYS Trainings Puppet](../../_images/netways/NETWAYS_Trainings_Misc.png)
-
-<!SLIDE noprint center>
-
-# NETWAYS TRAININGS - PUPPET CONFIGURATION MANAGEMENT
-![NETWAYS Trainings Puppet](../../_images/netways/NETWAYS_Trainings_Puppet.png)
-
-<!SLIDE noprint smbullets small>
-
-# NETWAYS COMMUNITY
+!SLIDE noprint smbullets
+# NETWAYS Community
 
 * <a href="http://www.netways.org">www.netways.org</a>
  * NETWAYS Addons
  * NETWAYS Plugins
-
 * <a href="https://www.icinga.org">www.icinga.org</a>
  * Development
  * Hosting
-
 * <a href="https://exchange.icinga.org">exchange.icinga.org</a>
  * Icinga / Nagios Addons and Plugins
- * >500 Projects
-
+ * Open for all platforms 
 * <a href="https://github.com/NETWAYS">github.com/NETWAYS</a>
  * NETWAYS Repositories for Softwaredevelopmentprojects
 
-<!SLIDE noprint center>
 
-# NETWAYS CUSTOMERS - CONSULTING (EXCERPT)
-![NETWAYS Customers Consulting](../../_images/netways/NETWAYS_Customers_Consulting.png)
+!SLIDE noprint center
+# NETWAYS Trainings
 
-<!SLIDE noprint center>
+<center><img src="../../_images/netways/NETWAYS_Trainings.png" style="width:800px;height:385px;" alt="NETWAYS Trainings"/></center>
 
-# NETWAYS CUSTOMERS - HOSTING (EXCERPT)
-![NETWAYS Customers Hosting](../../_images/netways/NETWAYS_Customers_Hosting.png)
 
-<!SLIDE noprint smbullets small>
+!SLIDE noprint smbullets
+# NETWAYS Services
 
-# OUR SERVICES AT A GLANCE
-
-* Conceptual design and planning
-* Workshops & Consulting with on-site implementation
-* Operating
- * Complete monitoring systems
- * Satellite systems
-* Development services
- * Plugins
- * System integration
+* Concepts and organisation
+* Workshops & Consulting services (onsite implementation)
+* Operational support
+* Development
+* Outsourcing
 * Trainings
- * Standardized training modules
- * Individual on-site
-
-<!SLIDE noprint smbullets small>
-
-# OUR SERVICES AT A GLANCE
-
 * Support
- * Standardized contracts
- * Individual support concepts
-* Conferences
+* Conferences / Events
