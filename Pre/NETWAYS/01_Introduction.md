@@ -17,7 +17,7 @@
 !SLIDE noprint center
 # NETWAYS Products
 
-<center><img src="../../_images/netways/NETWAYS_Products.png" style="width:800px;height:369px;" alt="NETWAYS Products"/></center>
+<center><img src="../../_images/netways/NETWAYS_Products.png" style="width:800px;height:360px;" alt="NETWAYS Products"/></center>
 
 
 !SLIDE noprint center
@@ -29,13 +29,13 @@
 !SLIDE noprint center
 # NETWAYS Consulting Customers (partly)
 
-<center><img src="../../_images/netways/NETWAYS_Customers_Consulting.png" style="width:800px;height:507px;" alt="NETWAYS Technologies"/></center>
+<center><img src="../../_images/netways/NETWAYS_Customers_Consulting.png" style="width:800px;height:361px;" alt="NETWAYS Technologies"/></center>
 
 
 !SLIDE noprint center
 # NETWAYS Hosting Customers (partly)
 
-<center><img src="../../_images/netways/NETWAYS_Customers_Hosting.png" style="width:800px;height:438px;" alt="NETWAYS Technologies"/></center>
+<center><img src="../../_images/netways/NETWAYS_Customers_Hosting.png" style="width:800px;height:330px;" alt="NETWAYS Technologies"/></center>
 
 
 !SLIDE noprint center
