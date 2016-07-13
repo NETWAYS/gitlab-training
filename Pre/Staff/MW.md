@@ -5,5 +5,5 @@
 
 ## Markus Waldmüller
 
-* Senior Consultant
+* Lead Senior Consultant
 * @NETWAYS since 2013
