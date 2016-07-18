@@ -1,6 +1,6 @@
 <!SLIDE noprint smbullets>
 
-# INTRODUCTION STAFF
+# Trainer
 <img id="staff" src="/image/global/_images/netways/staff/DG.jpg" alt="DG">
 
 ## Dirk Götz

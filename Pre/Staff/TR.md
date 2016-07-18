@@ -1,6 +1,6 @@
 <!SLIDE noprint smbullets>
 
-# INTRODUCTION STAFF
+# Trainer
 <img id="staff" src="/image/global/_images/netways/staff/TR.jpg" alt="TR">
 
 * Tobias Redel

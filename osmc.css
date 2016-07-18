@@ -229,7 +229,7 @@
   div#net-footer {
     background: #0095BF;
     bottom: 0;
-    color: black;
+    color: white;
     font: normal 15px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     height: 30px;
     position: absolute;
@@ -443,6 +443,10 @@
   .handouts > ul {
     list-style: disc;
     padding-left: 40px;
+  }
+
+  .supplemental {
+    right: 0.5em;
   }
 
   .supplemental.content > p {

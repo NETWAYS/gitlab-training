@@ -1,9 +1,9 @@
 <!SLIDE noprint smbullets>
 
-# INTRODUCTION STAFF
+# Trainer
 <img id="staff" src="/image/global/_images/netways/staff/MW.jpg" alt="MW">
 
 ## Markus Waldmüller
 
-* Senior Consultant
+* Lead Senior Consultant
 * @NETWAYS since 2013
