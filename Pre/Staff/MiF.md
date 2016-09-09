@@ -7,6 +7,5 @@
 
 * Senior Developer
 * Joined NETWAYS in 2012
-* Icinga Core Developer
-* Joined the Icinga project in 2009
-
+* Icinga Developer & Community Manager
+* Developing stuff since ~2002
