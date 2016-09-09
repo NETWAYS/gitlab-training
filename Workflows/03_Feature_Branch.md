@@ -147,7 +147,7 @@ The new branch `my-feature` will be based on the `master` branch.
 
     @@@ Sh
     $ git checkout master
-    $ cat "master" > file
+    $ echo "master" > file
     $ git add file
     $ git commit -v -m "Add master fix"
     $ git push origin master

@@ -20,7 +20,7 @@
 * pre-rebase
 * post-checkout
 * post-merge
-* Usefule to
+* Useful to
  * Preserve file modes
  * Check code style/syntax
 

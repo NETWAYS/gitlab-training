@@ -5,8 +5,22 @@
 !SLIDE smbullets
 # Working with Git branches
 
-* git branch
-* git checkout
+A git branch creates a new history line starting from the current
+git commit.
+
+Branches are useful to develop features/fixes in their isolated
+environment.
+
+* Master branch
+* Develop a new feature in a dedicated branch
+* Put fixes into the master branch (production)
+* Continue to work on the feature
+
+!SLIDE smbullets
+# Git branch CLI commands
+
+* `git branch`: list, create and delete branches
+* `git checkout`: switch branches, or restore the working tree
 
 ~~~SECTION:handouts~~~
 
