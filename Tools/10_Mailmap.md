@@ -70,6 +70,8 @@ https://github.com/Icinga/icinga2/blob/master/AUTHORS
 
     @@@ Sh
     $ less AUTHORS
+    Michael Friedrich <michael.friedrich@netways.de>
+    Other Name <other@email.com>
 
 ### Add and commit
 
@@ -133,4 +135,4 @@ https://github.com/Icinga/icinga2/blob/master/AUTHORS
 
     @@@ Sh
     $ less AUTHORS
-
+    Michael Friedrich <michael.friedrich@netways.de>
