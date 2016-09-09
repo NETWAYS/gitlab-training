@@ -72,7 +72,7 @@ and not a global file, this will also work.
 ### Add file/directory
 
     @@@ Sh
-    $ cat "temporary" > generated.tmp
+    $ echo "temporary" > generated.tmp
     $ mkdir debug
     $ touch debug/.timestamp
 
