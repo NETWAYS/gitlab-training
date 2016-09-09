@@ -78,14 +78,14 @@ Example:
 !SLIDE smbullets
 # The three states
 
-* Three stages in your working directory:
- * Committed
- * Modified
- * Staged
+* Working directory ("modified")
+* Staging area ("staged")
+* Git directory ("committed")
+
+<center><img src="../_images/introduction/git_introduction_basics_03_three_states.png" alt="Basics 3 States"/></center>
+
 
 ~~~SECTION:notes~~~
-
-`Committed` means that the data is safely stored in your local database.
 
 `Modified` means that you have changed the file but have not committed
 it to your Git database yet.
@@ -93,35 +93,7 @@ it to your Git database yet.
 `Staged` means that you have marked a modified or added file in its
 current version to go into your next commit snapshot.
 
-~~~ENDSECTION~~~
-
-~~~SECTION:handouts~~~
-
-****
-
 `Committed` means that the data is safely stored in your local database.
-
-`Modified` means that you have changed the file but have not committed
-it to your Git database yet.
-
-`Staged` means that you have marked a modified or added file in its
-current version to go into your next commit snapshot.
-
-~~~ENDSECTION~~~
-
-!SLIDE smbullets
-# The three states
-
-* Three main sections:
- * Git directory
- * Working directory
- * Staging area
-
-~~~SECTION:notes~~~
-
-The `Git directory` is where Git stores the metadata and object database
-for your project. This is the most important part of Git, and it is what
-is copied when you clone a repository from another computer.
 
 The `working directory` is a single checkout of one version of the project.
 These files are pulled out of the compressed database in the Git directory
@@ -132,15 +104,25 @@ stores information about what will go into your next commit.
 It is sometimes referred to as the "index", but it’s also common to refer
 to it as the staging area.
 
+The `Git directory` is where Git stores the metadata and object database
+for your project. This is the most important part of Git, and it is what
+is copied when you clone a repository from another computer.
+
+
 ~~~ENDSECTION~~~
 
 ~~~SECTION:handouts~~~
 
 ****
 
-The `Git directory` is where Git stores the metadata and object database
-for your project. This is the most important part of Git, and it is what
-is copied when you clone a repository from another computer.
+
+`Modified` means that you have changed the file but have not committed
+it to your Git database yet.
+
+`Staged` means that you have marked a modified or added file in its
+current version to go into your next commit snapshot.
+
+`Committed` means that the data is safely stored in your local database.
 
 The `working directory` is a single checkout of one version of the project.
 These files are pulled out of the compressed database in the Git directory
@@ -150,6 +132,10 @@ The `staging area` is a file, generally located in your Git directory, that
 stores information about what will go into your next commit.
 It is sometimes referred to as the "index", but it’s also common to refer
 to it as the staging area.
+
+The `Git directory` is where Git stores the metadata and object database
+for your project. This is the most important part of Git, and it is what
+is copied when you clone a repository from another computer.
 
 ~~~ENDSECTION~~~
 
@@ -157,12 +143,10 @@ to it as the staging area.
 # Basic Git Workflow
 
 * Modify files in `working directory`
-* Stage the files, adding snapshots to the `staging area`
-* Commit
+* Stage the files, adding snapshots to the `staging area` ("git add")
+* Commit ("git commit")
  * Takes files in `staging area`
  * Stores snapshot permanently in `Git directory`
-
-<center><img src="../_images/introduction/git_introduction_basics_03_three_states.png" alt="Basics 3 States"/></center>
 
 ~~~SECTION:handouts~~~
 
