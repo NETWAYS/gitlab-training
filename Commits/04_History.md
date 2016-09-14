@@ -1,9 +1,9 @@
 !SLIDE smbullets
 # Examine the Git history
 
-* git log
-* git show
-* git diff
+* `git log`: Show commit history of the current branch.
+* `git show`: Print commit details. If the commit id is ommitted, the last commit is printed.
+* `git diff`: Show changes between working tree and last commit.
 
 ~~~SECTION:handouts~~~
 
