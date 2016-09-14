@@ -30,7 +30,7 @@
 <center><img src="../_images/introduction/git_introduction_basics_01_changes.png" style="width:480px;height:278px;" alt="Basic Changes"/></center>
 
 
-!SLIDE smbullets
+!SLIDE smbullets noprint
 # Stream of Snapshots
 
 * Set of snapshots of a mini-filesystem
@@ -39,6 +39,14 @@
 
 <center><img src="../_images/introduction/git_introduction_basics_02_snapshots.png" alt="Basics Snapshots"/></center>
 
+!SLIDE smbullets printonly
+# Stream of Snapshots
+
+* Set of snapshots of a mini-filesystem
+* Git Commit, take snapshot, store reference to that snapshot
+* No change - link to the previous identical stored file
+
+<center><img src="../_images/introduction/git_introduction_basics_02_snapshots.png" style="width:480px" alt="Basics Snapshots"/></center>
 
 ~~~SECTION:handouts~~~
 
