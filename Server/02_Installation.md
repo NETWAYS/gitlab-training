@@ -176,7 +176,11 @@ Note: Run `which git-shell` to determine the correct path.
  * Create a new repository on the Git Server
 * Steps:
  * Create a new repository called `training.git` in `/opt/git`
- * Initialize a bare repository (`git --bare init`)
+ * Initialize a bare repository (`git init --bare`)
+
+A bare repository does not have a working directory. This acts
+as storage facility on the server, while development happens
+in cloned repositories.
 
 ~~~SECTION:handouts~~~
 
@@ -197,7 +201,7 @@ Note: Run `which git-shell` to determine the correct path.
 ****
 
 * Create a new repository called `training.git` in `/opt/git`
-* Initialize a bare repository (`git --bare init`)
+* Initialize a bare repository (`git init --bare`)
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
@@ -217,7 +221,7 @@ Note: Run `which git-shell` to determine the correct path.
 
     @@@ Sh
     $ cd training.git
-    $ git --bare init
+    $ git init --bare
 
 ### Change ownership for git user
 
