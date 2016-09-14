@@ -27,17 +27,32 @@ Cronjob example for updating the git repositories from the Web API:
 
 ~~~ENDSECTION~~~
 
-!SLIDE smbullets
+!SLIDE smbullets noprint
 # Redmine - Project Repository
 
 <center><img src="../_images/integrations/git_integrations_redmine_01.png" style="width: 600px;" alt="Redmine Integration"/></center>
 
-!SLIDE smbullets
+!SLIDE smbullets printonly
+# Redmine - Project Repository
+
+<center><img src="../_images/integrations/git_integrations_redmine_01.png" style="width: 480px;" alt="Redmine Integration"/></center>
+
+!SLIDE smbullets noprint
 # Redmine - Global Repository Settings
 
 <center><img src="../_images/integrations/git_integrations_redmine_02.png" style="width: 600px;" alt="Redmine Integration"/></center>
 
-!SLIDE smbullets
+!SLIDE smbullets printonly
+# Redmine - Global Repository Settings
+
+<center><img src="../_images/integrations/git_integrations_redmine_02.png" style="width: 480px;" alt="Redmine Integration"/></center>
+
+!SLIDE smbullets noprint
 # Redmine - Global Issue Resolving
 
 <center><img src="../_images/integrations/git_integrations_redmine_03.png" style="width: 600px;" alt="Redmine Integration"/></center>
+
+!SLIDE smbullets printonly
+# Redmine - Global Issue Resolving
+
+<center><img src="../_images/integrations/git_integrations_redmine_03.png" style="width: 480px;" alt="Redmine Integration"/></center>

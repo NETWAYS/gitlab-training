@@ -41,7 +41,7 @@ for integrating and sharing code changes between repositories.
 
 ~~~ENDSECTION~~~
 
-!SLIDE smbullets
+!SLIDE smbullets noprint
 # Centralized Workflow - Publish Changes
 
 * Developers push their local master branch
@@ -50,6 +50,15 @@ for integrating and sharing code changes between repositories.
 
 <center><img src="../_images/workflows/git_centralized_workflow_02.png" alt="Centralized Workflow"/></center>
 
+!SLIDE smbullets printonly
+# Centralized Workflow - Publish Changes
+
+* Developers push their local master branch
+* Stored in central repository
+* Adds all local commits that are not in the central master branch
+
+<center><img src="../_images/workflows/git_centralized_workflow_02.png" width="480px" alt="Centralized Workflow"/></center>
+
 ~~~SECTION:handouts~~~
 
 ****
@@ -57,13 +66,21 @@ for integrating and sharing code changes between repositories.
 
 ~~~ENDSECTION~~~
 
-!SLIDE smbullets
+!SLIDE smbullets noprint
 # Centralized Workflow - Managing Conflicts
 
 * Central repository's commit history is important
 * If local commit history diverges, pushing changes is denied
 
 <center><img src="../_images/workflows/git_centralized_workflow_03.png" alt="Centralized Workflow"/></center>
+
+!SLIDE smbullets printonly
+# Centralized Workflow - Managing Conflicts
+
+* Central repository's commit history is important
+* If local commit history diverges, pushing changes is denied
+
+<center><img src="../_images/workflows/git_centralized_workflow_03.png" width="480px" alt="Centralized Workflow"/></center>
 
 ~~~SECTION:handouts~~~
 
@@ -139,15 +156,23 @@ Repeat the steps 2 times:
     $ git clone git@localhost:/opt/git/training.git training-collab2
 
 
-!SLIDE smbullets
-# Centralized Workflow - Managing Conflicts
+!SLIDE smbullets noprint
+# Centralized Workflow - Managing Conflicts Solution
 
-* Solution
- * Fetch the remote history
- * Rebase local changes on top of it
- * Linear history
+* Fetch the remote history
+* Rebase local changes on top of it
+* Linear history
 
 <center><img src="../_images/workflows/git_centralized_workflow_04_example.png" alt="Centralized Workflow"/></center>
+
+!SLIDE smbullets printonly
+# Centralized Workflow - Managing Conflicts Solution
+
+* Fetch the remote history
+* Rebase local changes on top of it
+* Linear history
+
+<center><img src="../_images/workflows/git_centralized_workflow_04_example.png" width="480px" alt="Centralized Workflow"/></center>
 
 ~~~SECTION:handouts~~~
 

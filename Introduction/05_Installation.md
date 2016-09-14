@@ -72,7 +72,7 @@
  * Modify your prompt to highlight the git state
 * Steps:
  * Use the package manager to install the `bash-completion` package
- * Fetch the `git-prompt.sh` script from https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+ * Fetch the `git-prompt.sh` script from https://github.com/git/git - `contrib/completion/git-prompt.sh`
  * Customize your prompt
  * Persist changes in your .bashrc file
 
