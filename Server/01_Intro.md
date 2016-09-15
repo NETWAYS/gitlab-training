@@ -33,7 +33,7 @@ there are public services such as Github or Bitbucket.
 !SLIDE smbullets printonly
 # Git Web
 
-<center><img src="../_images/server/git_server_gitweb.png" style="width=480px;height=260px" alt="Git Web"/></center>
+<center><img src="../_images/server/git_server_gitweb.png" style="width:480px;height:260px" alt="Git Web"/></center>
 
 !SLIDE smbullets noprint
 # GitHub
@@ -43,7 +43,7 @@ there are public services such as Github or Bitbucket.
 !SLIDE smbullets printonly
 # GitHub
 
-<center><img src="../_images/server/git_server_github.png" style="width=480px;height=260px" alt="GitHub"/></center>
+<center><img src="../_images/server/git_server_github.png" style="width:480px;height:260px" alt="GitHub"/></center>
 
 !SLIDE smbullets noprint
 # GitLab
@@ -53,7 +53,7 @@ there are public services such as Github or Bitbucket.
 !SLIDE smbullets printonly
 # GitLab
 
-<center><img src="../_images/server/git_server_gitlab.png" style="width=480px;height=260px" alt="Gitlab"/></center>
+<center><img src="../_images/server/git_server_gitlab.png" style="width:480px;height:260px" alt="Gitlab"/></center>
 
 !SLIDE smbullets
 # Git Server Protocol

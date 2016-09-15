@@ -46,7 +46,7 @@
 * Git Commit, take snapshot, store reference to that snapshot
 * No change - link to the previous identical stored file
 
-<center><img src="../_images/introduction/git_introduction_basics_02_snapshots.png" style="width=480px;height=264px" alt="Basics Snapshots"/></center>
+<center><img src="../_images/introduction/git_introduction_basics_02_snapshots.png" style="width:480px;height:264px" alt="Basics Snapshots"/></center>
 
 ~~~SECTION:handouts~~~
 

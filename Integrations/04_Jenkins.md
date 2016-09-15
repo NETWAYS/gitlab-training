@@ -16,7 +16,7 @@
 * Run tests which update your ticket system
 * Build packages and deploy them into your repository
 
-<center><img src="../_images/integrations/git_integrations_jenkins_git_hook.png" style="width=480px;height=174px" alt="Git Integrations Jenkins"/></center>
+<center><img src="../_images/integrations/git_integrations_jenkins_git_hook.png" style="width:480px;height:174px" alt="Git Integrations Jenkins"/></center>
 
 ~~~SECTION:handouts~~~
 
