@@ -1,2 +1,4 @@
 .vagrant
 stats
+static
+*.pdf
