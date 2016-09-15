@@ -19,4 +19,4 @@ for f in matches:
     width, height = im.size
     new_height = new_width * height / width
 
-    print '%s" style="width=%dpx;height=%dpx"' % (f, new_width, new_height)
+    print '%s" style="width:%dpx;height:%dpx"' % (f, new_width, new_height)
