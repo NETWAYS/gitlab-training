@@ -1,11 +1,5 @@
-!SLIDE subsection
-# ~~~SECTION:MAJOR~~~ Additional Git Examples
-
 !SLIDE smbullets
-# Overview
-
-
-* Jenkins Git Hook
+# Jenkins Git Hook
 
 In case you have an existing Jenkins server (e.g. by visiting the NETWAYS training)
 you may want connect a git repository and a Jenkins job.
