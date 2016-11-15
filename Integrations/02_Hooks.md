@@ -126,7 +126,7 @@ Example:
     set -- $line
 
     # print the commits between oldref and newref and count the lines
-    num=$(git log --pretty=oneline ${1}..{2}| wc -l)
+    num=$(git log --pretty=oneline ${1}..${2}| wc -l)
 
     echo "New ref name '${3}' created. Pushed ${num} commits. Old ref '${1}' to new ref '${2}'."
     exit 0
