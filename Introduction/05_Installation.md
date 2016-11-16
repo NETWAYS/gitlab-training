@@ -73,8 +73,16 @@
 * Steps:
  * Use the package manager to install the `bash-completion` package
  * Fetch the `git-prompt.sh` script from https://github.com/git/git - `contrib/completion/git-prompt.sh`
- * Customize your prompt
- * Persist changes in your .bashrc file
+ * Customize your prompt in your `$HOME/.bashrc` file
+
+.download share/git-prompt.sh
+.download share/bashrc
+
+~~~SECTION:notes~~~
+
+Files can be downloaded from http://localhost:9090/download
+
+~~~ENDSECTION~~~
 
 ~~~SECTION:handouts~~~
 
@@ -129,19 +137,14 @@
     @@@ Sh
     $ wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 
-### Customize your prompt
-
-    @@@ Sh
-    $ source ~/git-prompt.sh
-    $ export GIT_PS1_SHOWDIRTYSTATE=1
-    $ export PS1='[\u@\h] \W$(__git_ps1 " (%s)") \$ '
-
-### Persist changes in your .bashrc file
+### Customize your prompt in your .bashrc file
 
     @@@ Sh
     $ vim $HOME/.bashrc
     source ~/git-prompt.sh
     export GIT_PS1_SHOWDIRTYSTATE=1
     export PS1='[\u@\h] \W$(__git_ps1 " (%s)") \$ '
+
+    $ source $HOME/.bashrc
 
 
