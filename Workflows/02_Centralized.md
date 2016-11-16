@@ -131,13 +131,15 @@ Repeat the steps 2 times:
 
 ### Clone the central repository
 
+The last parameter specifies the target directory `training-global1`.
+
     @@@ Sh
     $ git clone git@localhost:/opt/git/training.git training-collab1
 
 ### Add/modify a file
 
     @@@ Sh
-    $ cat "Training Test" > michaelfriedrich
+    $ echo "Training Test" > michaelfriedrich
 
 ### Commit the change
 
@@ -151,6 +153,8 @@ Repeat the steps 2 times:
     $ git push origin master
 
 ### Repeat these steps with training-collab2
+
+The last parameter specifies the target directory `training-global2`.
 
     @@@ Sh
     $ git clone git@localhost:/opt/git/training.git training-collab2

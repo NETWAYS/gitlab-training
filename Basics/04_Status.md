@@ -61,7 +61,7 @@ also compare specific commits.
 ### Change files
 
     @@@ Sh
-    $ cat "my change" > change01
+    $ echo "my change" > change01
     $ git add change01
     $ vim change01
 
@@ -132,7 +132,7 @@ You'll recognize the unstaged changes compared to your staging area.
 ### Change files
 
     @@@ Sh
-    $ cat "my change" > diff01
+    $ echo "my change" > diff01
     $ git add diff01
     $ vim diff01
 

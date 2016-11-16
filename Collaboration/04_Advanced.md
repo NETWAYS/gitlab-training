@@ -69,7 +69,7 @@ stages, `git stash list` will list them.
 ### Make changes
 
     @@@ Sh
-    $ cat "my fix" > check_git.py
+    $ echo "my fix" > check_git.py
     $ git add check_git.py
 
 ### Examine the state with git status

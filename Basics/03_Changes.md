@@ -66,7 +66,7 @@ manually move the file, you will need to rm and add it again.
 ### Example
 
     @@@ Sh
-    $ cat "my first file" > myfile
+    $ echo "my first file" > myfile
     $ git add myfile
     $ git status
 

@@ -93,7 +93,7 @@ The new branch `my-feature` will be based on the `master` branch.
 ### Add and commit changes
 
     @@@ Sh
-    $ cat "# TODOs for feature" > feature.md
+    $ echo "# TODOs for feature" > feature.md
     $ git add feature.md
     $ git commit -v -m "Start my feature"
 
