@@ -135,7 +135,7 @@ environment.
 ### List the branches
 
     @@@ Sh
-    $ git branches
+    $ git branch
     * master
       mybranch
 
