@@ -22,27 +22,27 @@
   {"section":"global/Pre/Hints"},
 
   // Introduction
-  {"section":"Introduction"},
+  {"section":"01_Introduction"},
   // Configuration
-  {"section":"Configuration"},
+  {"section":"02_Configuration"},
   // Basics
-  {"section":"Basics"},
+  {"section":"03_Basics"},
   // Commits
-  {"section":"Commits"},
+  {"section":"04_Commits"},
   // Branching
-  {"section":"Branching"},
+  {"section":"05_Branching"},
   // Server
-  {"section":"Server"},
+  {"section":"06_Server"},
   // Collaboration
-  {"section":"Collaboration"},
+  {"section":"07_Collaboration"},
   // Workflows
-  {"section":"Workflows"},
+  {"section":"08_Workflows"},
   // Integrations
-  {"section":"Integrations"},
+  {"section":"09_Integrations"},
   // Hints
-  {"section":"Hints"},
+  {"section":"10_Hints"},
   // Additional
-  {"section":"Additional"},
+  {"section":"11_Additional"},
 
   {"section":"global/Post"}
  ]
