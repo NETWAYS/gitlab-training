@@ -145,7 +145,7 @@ Repeat the steps 2 times:
     $ git add -A .
     $ git commit -av -m "My test commit"
 
-### Push the changes to the rempote repository
+### Push the changes to the remote repository
 
     @@@ Sh
     $ git push origin master
