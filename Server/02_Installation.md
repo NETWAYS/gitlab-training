@@ -130,9 +130,16 @@ in this training session.
 
     @@@ Sh
     $ sudo adduser git
-    $ su - git
+
+Change to the newly created user and create the `.ssh` directory:
+
+    $ sudo su - git
     $ cd
     $ mkdir .ssh
+    $ touch .ssh/config
+    $ chmod 640 .ssh/config
+    $ chmod 750 .ssh
+    $ exit
 
 ### Add your SSH key to the git user
 
@@ -148,10 +155,19 @@ Or you use shell copy paste, depends on your likings.
 
 ### Test the connection
 
+Ensure that you are working as your local training user, not `git`.
+
     @@@ Sh
-    ssh git@localhost
+    $ ssh git@localhost
+
+Exit the test and continue working as your local training user.
+
+    @@@ Sh
+    $ exit
 
 ### Restrict the git user shell
+
+Ensure that you are working as your local training user.
 
     @@@ Sh
     $ sudo vim /etc/passwd
@@ -162,8 +178,10 @@ Note: Run `which git-shell` to determine the correct path.
 
 ### Test the connection again
 
+Ensure that you are working as your local training user, not `git`.
+
     @@@ Sh
-    ssh git@localhost
+    $ ssh git@localhost
 
     fatal: Interactive git shell is not enabled.
     Connection to localhost closed.
@@ -213,17 +231,24 @@ in cloned repositories.
 
 ### Create the directory
 
+Become `root` user and create the directory.
+
     @@@ Sh
+    $ sudo -i
     $ mkdir -p /opt/git && cd /opt/git
     $ mkdir training.git
 
 ### Initialize the bare Git repository
+
+Continue as `root`user and initialize the bare Git repository.
 
     @@@ Sh
     $ cd training.git
     $ git init --bare
 
 ### Change ownership for git user
+
+Ensure that the `git` user gets ownership of the Git repository storage.
 
     @@@ Sh
     $ chown -R git:git /opt/git
