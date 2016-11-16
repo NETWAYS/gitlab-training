@@ -192,7 +192,7 @@ The last parameter specifies the target directory `training-global2`.
  * Rebase your local history with the remote repository
 * Steps:
  * Fetch the changes
- * Rebase the master branch against `origin/master`
+ * Rebase the master branch against remote `origin/master`
  * Resolve possible merge conflicts
  * Push your rebased history
 
@@ -226,7 +226,7 @@ instead of generating a merge commit.
 ****
 
 * Fetch the changes
-* Rebase the master branch against `origin/master`
+* Rebase the master branch against remote `origin/master`
 * Resolve possible merge conflicts
 * Push your rebased history
 
@@ -245,6 +245,8 @@ instead of generating a merge commit.
     $ git fetch
 
 ### Rebase your local history
+
+Rebase your local history against the remote origin master branch.
 
     @@@ Sh
     $ git rebase origin/master
