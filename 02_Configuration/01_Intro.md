@@ -2,7 +2,7 @@
 # ~~~SECTION:MAJOR~~~ Git Configuration
 
 !SLIDE smbullets
-# Gonfiguration Overview
+# Configuration Overview
 
 * Global configuration for the user
  * `$HOME/.gitconfig`
