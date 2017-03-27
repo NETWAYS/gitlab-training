@@ -41,7 +41,7 @@
 !SLIDE noprint center
 # NETWAYS Events
 
-<center><img src="../../_images/netways/osdc_logo_2016_500x230.png" style="width:500px;height:230px;" alt="OSDC 2017"/></center>
+<center><img src="../../_images/netways/osdc_logo_2017_500x230.png" style="width:500px;height:230px;" alt="OSDC 2017"/></center>
 
 
 !SLIDE noprint smbullets
