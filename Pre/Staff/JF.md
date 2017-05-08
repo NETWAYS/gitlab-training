@@ -5,7 +5,7 @@
 
 ## Jean-Marcel Flach
 
-* Junior Developer
+* Developer
 * Joined NETWAYS in 2014
-* Icinga 2 Developer
+* Icinga 2 Team Member
 
