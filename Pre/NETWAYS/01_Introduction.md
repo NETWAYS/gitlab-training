@@ -7,7 +7,7 @@
 
 * Open Source Service Company
 * Located in Nuremberg
-* Currently 50 employees
+* Currently 55 employees
 * Specialised in
  * Open Source Systems Management
  * Open Source Datacenter
@@ -41,7 +41,13 @@
 !SLIDE noprint center
 # NETWAYS Events
 
-<center><img src="../../_images/netways/osdc_logo_2017_500x230.png" style="width:500px;height:230px;" alt="OSDC 2017"/></center>
+<center><img src="../../_images/osbconf/osbconf_2017_logo_2000.png" style="width:500px;height:160px;" alt="OSBConf 2017"/></center>
+
+
+!SLIDE noprint center
+# NETWAYS Events
+
+<center><img src="../../_images/osmc/osmc_logo_2017_transparent_500x230.png" style="width:500px;height:230px;" alt="OSMC 2017"/></center>
 
 
 !SLIDE noprint smbullets
