@@ -56,10 +56,10 @@
 * <a href="http://www.netways.org">www.netways.org</a>
  * NETWAYS Addons
  * NETWAYS Plugins
-* <a href="https://www.icinga.org">www.icinga.org</a>
+* <a href="https://www.icinga.com">www.icinga.com</a>
  * Development
  * Hosting
-* <a href="https://exchange.icinga.org">exchange.icinga.org</a>
+* <a href="https://exchange.icinga.com">exchange.icinga.com</a>
  * Icinga / Nagios Addons and Plugins
  * Open for all platforms 
 * <a href="https://github.com/NETWAYS">github.com/NETWAYS</a>
