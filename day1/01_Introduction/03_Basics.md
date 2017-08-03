@@ -19,7 +19,7 @@
 * Information as a list of file-based changes
 * File changes and deltas over time
 
-<center><img src="../_images/introduction/git_introduction_basics_01_changes.png" style="width:526px;height:305px;" alt="Basic Changes"/></center>
+<center><img src="../../_images/introduction/git_introduction_basics_01_changes.png" style="width:526px;height:305px;" alt="Basic Changes"/></center>
 
 !SLIDE smbullets printonly
 # Snapshots and Differences
@@ -27,7 +27,7 @@
 * Information as a list of file-based changes
 * File changes and deltas over time
 
-<center><img src="../_images/introduction/git_introduction_basics_01_changes.png" style="width:480px;height:278px;" alt="Basic Changes"/></center>
+<center><img src="../../_images/introduction/git_introduction_basics_01_changes.png" style="width:480px;height:278px;" alt="Basic Changes"/></center>
 
 
 !SLIDE smbullets noprint
@@ -37,7 +37,7 @@
 * Git Commit, take snapshot, store reference to that snapshot
 * No change - link to the previous identical stored file
 
-<center><img src="../_images/introduction/git_introduction_basics_02_snapshots.png" alt="Basics Snapshots"/></center>
+<center><img src="../../_images/introduction/git_introduction_basics_02_snapshots.png" alt="Basics Snapshots"/></center>
 
 !SLIDE smbullets printonly
 # Stream of Snapshots
@@ -46,7 +46,7 @@
 * Git Commit, take snapshot, store reference to that snapshot
 * No change - link to the previous identical stored file
 
-<center><img src="../_images/introduction/git_introduction_basics_02_snapshots.png" style="width:480px;height:264px" alt="Basics Snapshots"/></center>
+<center><img src="../../_images/introduction/git_introduction_basics_02_snapshots.png" style="width:480px;height:264px" alt="Basics Snapshots"/></center>
 
 ~~~SECTION:handouts~~~
 
@@ -90,7 +90,7 @@ Example:
 * Staging area ("staged")
 * Git directory ("committed")
 
-<center><img src="../_images/introduction/git_introduction_basics_03_three_states.png" alt="Basics 3 States"/></center>
+<center><img src="../../_images/introduction/git_introduction_basics_03_three_states.png" alt="Basics 3 States"/></center>
 
 
 ~~~SECTION:notes~~~

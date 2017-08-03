@@ -34,7 +34,7 @@ systems which store the file revisions in a database.
 * CSV, Subversion
 * What happens if the server is down?
 
-<center><img src="../_images/introduction/git_introduction_cvcs_01.png" alt="CVCS"/></center>
+<center><img src="../../_images/introduction/git_introduction_cvcs_01.png" alt="CVCS"/></center>
 
 
 ~~~SECTION:handouts~~~
@@ -52,7 +52,7 @@ systems which store the file revisions in a database.
 * Git, Mercurial, Bazaar, etc.
 * Server dies, client continues
 
-<center><img src="../_images/introduction/git_introduction_dvcs_01.png" alt="CVCS"/></center>
+<center><img src="../../_images/introduction/git_introduction_dvcs_01.png" alt="CVCS"/></center>
 
 ~~~SECTION:handouts~~~
 

@@ -5,7 +5,7 @@
 * Each user has a local copy
 * Central `master` branch
 
-<center><img src="../_images/workflows/git_centralized_workflow_01.png" alt="Centralized Workflow"/></center>
+<center><img src="../../_images/workflows/git_centralized_workflow_01.png" alt="Centralized Workflow"/></center>
 
 ~~~SECTION:handouts~~~
 
@@ -48,7 +48,7 @@ for integrating and sharing code changes between repositories.
 * Stored in central repository
 * Adds all local commits that are not in the central master branch
 
-<center><img src="../_images/workflows/git_centralized_workflow_02.png" alt="Centralized Workflow"/></center>
+<center><img src="../../_images/workflows/git_centralized_workflow_02.png" alt="Centralized Workflow"/></center>
 
 !SLIDE smbullets printonly
 # Centralized Workflow - Publish Changes
@@ -57,7 +57,7 @@ for integrating and sharing code changes between repositories.
 * Stored in central repository
 * Adds all local commits that are not in the central master branch
 
-<center><img src="../_images/workflows/git_centralized_workflow_02.png" style="width:480px;height:472px" alt="Centralized Workflow"/></center>
+<center><img src="../../_images/workflows/git_centralized_workflow_02.png" style="width:480px;height:472px" alt="Centralized Workflow"/></center>
 
 ~~~SECTION:handouts~~~
 
@@ -72,7 +72,7 @@ for integrating and sharing code changes between repositories.
 * Central repository's commit history is important
 * If local commit history diverges, pushing changes is denied
 
-<center><img src="../_images/workflows/git_centralized_workflow_03.png" alt="Centralized Workflow"/></center>
+<center><img src="../../_images/workflows/git_centralized_workflow_03.png" alt="Centralized Workflow"/></center>
 
 !SLIDE smbullets printonly
 # Centralized Workflow - Managing Conflicts
@@ -80,7 +80,7 @@ for integrating and sharing code changes between repositories.
 * Central repository's commit history is important
 * If local commit history diverges, pushing changes is denied
 
-<center><img src="../_images/workflows/git_centralized_workflow_03.png" style="width:480px;height:300px" alt="Centralized Workflow"/></center>
+<center><img src="../../_images/workflows/git_centralized_workflow_03.png" style="width:480px;height:300px" alt="Centralized Workflow"/></center>
 
 ~~~SECTION:handouts~~~
 
@@ -167,7 +167,7 @@ The last parameter specifies the target directory `training-global2`.
 * Rebase local changes on top of it
 * Linear history
 
-<center><img src="../_images/workflows/git_centralized_workflow_04_example.png" alt="Centralized Workflow"/></center>
+<center><img src="../../_images/workflows/git_centralized_workflow_04_example.png" alt="Centralized Workflow"/></center>
 
 !SLIDE smbullets printonly
 # Centralized Workflow - Managing Conflicts Solution
@@ -176,7 +176,7 @@ The last parameter specifies the target directory `training-global2`.
 * Rebase local changes on top of it
 * Linear history
 
-<center><img src="../_images/workflows/git_centralized_workflow_04_example.png" style="width:480px;height:252px" alt="Centralized Workflow"/></center>
+<center><img src="../../_images/workflows/git_centralized_workflow_04_example.png" style="width:480px;height:252px" alt="Centralized Workflow"/></center>
 
 ~~~SECTION:handouts~~~
 

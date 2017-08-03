@@ -1,6 +1,6 @@
 {
   "name": "Git",
-  "date": "2016",
+  "date": "2017",
   "location": "Everywhere",
   "author": "NETWAYS GmbH",
   "release": "1.2",
@@ -22,27 +22,27 @@
   {"section":"global/Pre/Hints"},
 
   // Introduction
-  {"section":"01_Introduction"},
+  {"section":"day1/01_Introduction"},
   // Configuration
-  {"section":"02_Configuration"},
+  {"section":"day1/02_Configuration"},
   // Basics
-  {"section":"03_Basics"},
+  {"section":"day1/03_Basics"},
   // Commits
-  {"section":"04_Commits"},
+  {"section":"day1/04_Commits"},
   // Branching
-  {"section":"05_Branching"},
+  {"section":"day1/05_Branching"},
   // Server
-  {"section":"06_Server"},
+  {"section":"day1/06_Server"},
   // Collaboration
-  {"section":"07_Collaboration"},
+  {"section":"day1/07_Collaboration"},
   // Workflows
-  {"section":"08_Workflows"},
+  {"section":"day2/08_Workflows"},
   // Integrations
-  {"section":"09_Integrations"},
+  {"section":"day2/09_Integrations"},
   // Hints
-  {"section":"10_Hints"},
+  {"section":"day2/10_Hints"},
   // Additional
-  {"section":"11_Additional"},
+  {"section":"day2/11_Additional"},
 
   {"section":"global/Post"}
  ]

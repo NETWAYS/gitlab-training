@@ -7,7 +7,7 @@
 * Developers push their own server-side repository
 * Project maintainer pushes to offical repository
 
-<center><img src="../_images/workflows/git_forking_workflow_01.png" alt="Forking Workflow"/></center>
+<center><img src="../../_images/workflows/git_forking_workflow_01.png" alt="Forking Workflow"/></center>
 
 ~~~SECTION:handouts~~~
 

@@ -6,7 +6,7 @@
 * Master branch does not contain broken code
 * Feature branches can be rebased against stable master branch on demand
 
-<center><img src="../_images/workflows/git_feature_branch_workflow_01.png" alt="Feature Branch Workflow"/></center>
+<center><img src="../../_images/workflows/git_feature_branch_workflow_01.png" alt="Feature Branch Workflow"/></center>
 
 !SLIDE smbullets printonly
 # Feature Branch Workflow
@@ -16,7 +16,7 @@
 * Master branch does not contain broken code
 * Feature branches can be rebased against stable master branch on demand
 
-<center><img src="../_images/workflows/git_feature_branch_workflow_01.png" style="width:480px;height:182px" alt="Feature Branch Workflow"/></center>
+<center><img src="../../_images/workflows/git_feature_branch_workflow_01.png" style="width:480px;height:182px" alt="Feature Branch Workflow"/></center>
 
 ~~~SECTION:handouts~~~
 
