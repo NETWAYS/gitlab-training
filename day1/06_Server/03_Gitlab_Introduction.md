@@ -67,49 +67,33 @@ found in the official documentation: https://docs.gitlab.com/ce/install/installa
 ~~~ENDSECTION~~~
 
 
+~~~ENDSECTION~~~
 !SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Generate public SSH key
+# GitLab: First Steps
 
-* Objective:
- * Generate public SSH key
-* Steps:
- * Use `ssh-keygen` to generate an SSH key
+* Navigate to the GitLab URL
+* Use `root` and set a new password
+* Login
+* Get familiar and follow the trainer's explanations
+
+
 
 ~~~SECTION:handouts~~~
 
 ****
 
-This key will be pre-generated on training notebooks.
+GitLab 8.6+ removed the option to set a default root password. The web interface will
+always prompt you to set a proper password.
+
+Discussion here: https://gitlab.com/gitlab-org/gitlab-ce/issues/1980
+
+Possible workaround:
+
+```
+sed -i "s/^# gitlab_rails\['initial_root_password'\].*/gitlab_rails['initial_root_password'] = \"password\"/g" /etc/gitlab/gitlab.rb
+gitlab-ctl reconfigure
+gitlab-ctl restart
+```
 
 
 ~~~ENDSECTION~~~
-
-!SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Generate public SSH key
-
-## Objective: Generate public SSH key
-****
-
-* Generate public SSH key
-
-## Steps:
-
-****
-
-* Use `ssh-keygen` to generate an SSH key
-
-
-!SLIDE supplemental solutions
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
-****
-
-## Generate public SSH key
-
-****
-
-### Generate key
-
-    @@@ Sh
-    $ ssh-keygen
-
-
