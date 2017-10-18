@@ -15,4 +15,10 @@ apt-get -y install language-pack-en postfix unattended-upgrades
 curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | bash
 
 apt-get install -y gitlab-ce
+
+# set initial root password
+sed -i "s/^# gitlab_rails\['initial_root_password'\].*/gitlab_rails['initial_root_password'] = \"password\"/g" /etc/gitlab/gitlab.rb
+
+# reconfigure and restart
 gitlab-ctl reconfigure
+gitlab-ctl restart
