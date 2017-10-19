@@ -36,13 +36,17 @@
   // Collaboration
   {"section":"day1/07_Collaboration"},
   // Workflows
-  {"section":"day2/08_Workflows"},
+  {"section":"day2/01_Workflows"},
   // Integrations
-  {"section":"day2/09_Integrations"},
+  {"section":"day2/02_Integrations"},
+  // CI
+  {"section":"day2/03_CI"},
   // Hints
-  {"section":"day2/10_Hints"},
+  {"section":"day2/04_Hints"},
+  // GitLab Hints
+  {"section":"day2/05_Gitlab_Hints"},
   // Additional
-  {"section":"day2/11_Additional"},
+  {"section":"day2/06_Additional"},
 
   {"section":"global/Post"}
  ]

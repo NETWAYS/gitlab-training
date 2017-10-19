@@ -1,7 +1,7 @@
 !SLIDE smbullets
-# Email
+# Apply and Create Patches
 
-Manually apply and create git patches.
+Manually apply and create Git patches.
 
 * `git apply`: apply git patch
 * `git am`: read patches from STDIN and apply them
