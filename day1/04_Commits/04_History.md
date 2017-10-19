@@ -79,3 +79,83 @@ also compare specific commits.
     $ git diff <commitid1> <commitid2>
 
 
+
+!SLIDE smbullets noprint
+# Advanced history with tig
+
+* `tig` helps visualize history and branches
+* Inspect specific commits while scrolling
+
+<center><img src="../../_images/commits/git_history_tig.png"  style="width: 600px;" alt="Tig"/></center>
+
+!SLIDE smbullets printonly
+# Advanced history with tig
+
+* `tig` helps visualize history and branches
+* Inspect specific commits while scrolling
+
+<center><img src="../../_images/commits/git_history_tig.png"  style="width: 480px;" alt="Tig"/></center>
+
+~~~SECTION:handouts~~~
+
+****
+
+~~~ENDSECTION~~~
+
+!SLIDE smbullets
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Learn more about tig
+
+* Objective:
+ * Install and use tig
+* Steps:
+ * Install the tig package
+ * Run tig in your git repository directory
+
+~~~SECTION:handouts~~~
+
+****
+
+~~~ENDSECTION~~~
+
+!SLIDE supplemental exercises
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Learn more about tig
+
+## Objective: Install and use tig
+****
+
+* Learn more about tig
+
+## Steps:
+
+****
+
+* Install the tig package
+* Run tig in your git repository directory
+
+!SLIDE supplemental solutions
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
+****
+
+## Learn more about tig
+
+****
+
+### Install tig
+
+CentOS 7 (requires the EPEL repository):
+
+    @@@ Sh
+    # yum install epel-release
+    # yum makecache
+    # yum install tig
+
+Debian/Ubuntu
+
+    @@@ Sh
+    # apt-get install tig
+
+### Use tig
+
+    @@@ Sh
+    $ tig
+
