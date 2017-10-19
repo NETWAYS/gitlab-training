@@ -1,3 +1,22 @@
+!SLIDE smbullets
+# Continuous Integration: Jenkins
+
+* Self-hosted application
+* Jobs
+* Push trigger or time-based cronjobs
+* Build pipelines
+* Build agents for Linux/Unix, Windows, etc.
+* Written in Java
+* Many plugins available
+
+~~~SECTION:handouts~~~
+
+****
+
+
+~~~ENDSECTION~~~
+
+
 !SLIDE smbullets noprint
 # Jenkins Workflow
 

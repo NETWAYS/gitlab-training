@@ -4,6 +4,7 @@
 * Client or server-side scripts
 * Conditional execution (update, post-receive, etc.)
 * Integration with external tools
+* Web hooks available in GitLab, GitHub, etc.
 
 ~~~SECTION:handouts~~~
 
