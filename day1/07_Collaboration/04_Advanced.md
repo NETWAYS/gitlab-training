@@ -1,5 +1,5 @@
 !SLIDE smbullets
-# Advanced commands
+# Advanced Git Commands
 
 * `git cherry-pick`: collect commit into your working tree
 * `git archive`: create tarball

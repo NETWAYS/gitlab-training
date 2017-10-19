@@ -10,8 +10,6 @@ system.
 * Issue tracking and project management (dashboards, etc.)
 * Merge, review, report
 * Continuous integration (CI)
-  * Build pipelines
-  * Built-in container registry
 
 ~~~SECTION:handouts~~~
 
@@ -42,6 +40,23 @@ The source code is publicly available for both editions.
 You'll need a valid license for running EE in production.
 
 ~~~ENDSECTION~~~
+
+
+!SLIDE smbullets
+# GitLab Deployment
+
+* Self-hosted
+* gitlab.com Cloud
+* nws.netways.de Cloud
+
+
+~~~SECTION:handouts~~~
+
+****
+
+~~~ENDSECTION~~~
+
+
 !SLIDE smbullets
 # GitLab Components
 
@@ -52,12 +67,13 @@ You'll need a valid license for running EE in production.
 * NodeJS for Javascript rendering
 * Golang for background daemons
 
-
-It is recommended to use the Omnibus installation package.
+It is recommended to use the Omnibus installation package or use
+a managed cloud hosting service.
 
 ~~~SECTION:handouts~~~
 
 ****
+
 
 Omnibus packages: https://about.gitlab.com/installation/?version=ce
 
@@ -65,6 +81,8 @@ More details on the manual installation instructions can be
 found in the official documentation: https://docs.gitlab.com/ce/install/installation.html
 
 ~~~ENDSECTION~~~
+
+
 
 
 ~~~ENDSECTION~~~
