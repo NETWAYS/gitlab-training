@@ -1,6 +1,23 @@
 !SLIDE smbullets
 # GitHub/GitLab Flow
 
+* Fork/Branch off master, implement feature
+* Pull Request, Comments and Reviews
+* Deploy, test and merge
+
+<center><img src="../../_images/workflows/git_github_workflow.png" alt="GitHub Workflow"/></center>
+
+~~~SECTION:handouts~~~
+
+****
+
+
+
+~~~ENDSECTION~~~
+
+!SLIDE smbullets
+# GitHub/GitLab Flow: How it works
+
 * Based on Forking Workflow
 * Forked repository branches are linked as "Pull Request" or "Merge Request"
 * Review code changes in PRs
