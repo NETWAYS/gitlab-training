@@ -58,98 +58,69 @@ Example:
 
     aa453216d1b3e49e7f6f98441fa56946ddcd6a20 68f7abf4e6f922807889f52bc043ecd31b79f814 refs/heads/master
 
+Example for a simple post-receive demo hook:
+
+```
+$ vim post-receive
+
+#!/bin/bash
+# oldref newref refname
+read line
+set -- $line
+
+# print the commits between oldref and newref and count the lines
+num=$(git log --pretty=oneline ${1}..${2}| wc -l)
+
+echo "New ref name '${3}' created. Pushed ${num} commits. Old ref '${1}' to new ref '${2}'."
+exit 0
+
+$ chmod +x post-receive
+```
+
+Test on the client:
+
+```
+$ whoami
+$ cd $HOME/training.git
+$ echo "1" > hooktest
+$ git add hooktest
+$ git commit -av -m "1. hooktest"
+$ echo "2" >> hooktest
+$ git commit -av -m "2. hooktest"
+
+$ git log
+$ git push
+...
+remote: New ref name 'refs/heads/master' created. Pushed 2 commits. Old ref ... to new ref ... .
+```
+
+
 ~~~ENDSECTION~~~
 
 
 !SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add post-receive Git Hook
+# Web Hooks
 
-* Objective:
- * Add post-receive git hook
-* Steps:
- * Become root and navigate into `/opt/git/training.git/hooks`
- * Add new file `post-receive`
- * Read from STDIN
- * Calculate the commit count between old and new reference
- * Print refname, oldref, newref and the commit count
- * Make the script executable
-* Next steps:
- * Add, commit and push a change in your repository
+* HTTP Callback
+* Pluggable with test and deployment services
+  * Travis CI
+  * Jenkins
 
-!SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add post-receive Git Hook
-
-## Objective: Add post-receive Git Hook
-****
-
-* Add and test post-receive Git Hook
-
-## Steps:
+~~~SECTION:handouts~~~
 
 ****
 
-* Become root and navigate into `/opt/git/training.git/hooks`
-* Add new file `post-receive`
-* Read from STDIN
-* Calculate the commit count between old and new reference
-* Print refname, oldref, newref and the commit count
-* Make the script executable
 
-## Next Steps:
+~~~ENDSECTION~~~
 
-****
-
-* Add, commit and push a change in your repository
+!SLIDE smbullets
+# GitLab Web Hooks
 
 
-!SLIDE supplemental solutions
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
-****
-
-## Add post-receive Git Hook
+~~~SECTION:handouts~~~
 
 ****
 
-### Become root and chdir to the training repository hooks directory
+Reference example (German): https://blog.netways.de/2016/06/29/gitlab-webhooks/
 
-    @@@ Sh
-    $ sudo -i
-    $ cd /opt/git/training.git/hooks
-
-### Add post-receive file
-
-    @@@ Sh
-    $ vim post-receive
-
-    #!/bin/bash
-    # oldref newref refname
-    read line
-    set -- $line
-
-    # print the commits between oldref and newref and count the lines
-    num=$(git log --pretty=oneline ${1}..${2}| wc -l)
-
-    echo "New ref name '${3}' created. Pushed ${num} commits. Old ref '${1}' to new ref '${2}'."
-    exit 0
-
-
-### Make post-receive executable
-
-    @@@ Sh
-    $ chmod +x post-receive
-
-### Change to your user and add, commit, push changes
-
-    @@@ Sh
-    $ whoami
-    $ cd $HOME/training.git
-    $ echo "1" > hooktest
-    $ git add hooktest
-    $ git commit -av -m "1. hooktest"
-    $ echo "2" >> hooktest
-    $ git commit -av -m "2. hooktest"
-
-    $ git log
-    $ git push
-    ...
-    remote: New ref name 'refs/heads/master' created. Pushed 2 commits. Old ref ... to new ref ... .
+~~~ENDSECTION~~~
