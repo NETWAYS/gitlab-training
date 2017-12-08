@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
     p.name = "Gitlab Training Environment"
     p.update_guest_tools = true
     p.optimize_power_consumption = false
-    p.memory = 1024
+    p.memory = 2048
     p.cpus = 2
   end
 
