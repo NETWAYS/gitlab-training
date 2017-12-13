@@ -12,7 +12,7 @@
 @media screen {
   /* Global */
 
-  .slide, .preso {
+  .slide, #preso {
     height: 768px;
     width: 1024px;
   }
@@ -34,7 +34,7 @@
     padding: 7px;
     position: absolute;
     text-align: left;
-    top: 100px; 
+    top: 100px;
     width: 100%;
   }
   .content h2 {
@@ -67,19 +67,64 @@
   /* Slide Styles */
 
   .bullets > ul {
-    font-size: 3em;
+    font-size: 1.5em;
     list-style: disc;
-    padding-left: 40px;
   }
   .smbullets > ul {
-    font-size: 2em;
     list-style: disc;
-    padding-left: 40px;
   }
   .bullets > ul > li,
   .smbullets > ul > li {
     text-align: left;
   }
+  .bullets > ul > li > p,
+  .smbullets > ul > li > p {
+    margin: 0;
+  }
+
+  /* Legacy styles start - For backward compliance with slides created using showoff v0.9.11.1 */
+  .slide.small > .content.small > p,
+  .slide.small > .content.small > ul,
+  .slide.small > .content.small > pre,
+  .slide.small > .content.small > table {
+    font-size: 2em;
+  }
+
+  .slide.small > .content.smbullets.small > ul > li {
+    margin: 0;
+  }
+
+  /* Rules used by showoff v0.19.3 - not working as previously/intended */
+  .content.center {
+    position: unset;
+    top: unset;
+    -webkit-transform: unset;
+    -ms-transform: unset;
+    transform: unset;
+  }
+  /* Our own adjustments */
+  .content.center {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content.center > :not(#net-header):not(#net-footer):not(h1) {
+    position: relative;
+    /*
+      TODO: There is obviously a better solution, right?
+
+      header-height(100px)
+      + footer-height(30px)
+      + h1-height(
+        line-height(28px)
+        + border(2px)
+        + padding(14px)
+      )
+    */
+    top: -174px;
+  }
+  /* Legacy styles end */
 
   .center p {
     text-align: center;
@@ -137,6 +182,12 @@
     float: right;
     width: 50%;
   }
+
+  /* Legacy styles start - Print specific styles which are not hidden anymore? */
+  .pagebreak {
+    display: none;
+  }
+  /* Legacy styles end */
 
   /* Custom Layout */
 
@@ -240,6 +291,7 @@
     bottom: 7.5px;
     left: 30px;
     position: absolute;
+    margin: 0;
     text-align: left;
   }
 
@@ -247,6 +299,7 @@
     bottom: 7.5px;
     position: absolute;
     right: 30px;
+    margin: 0;
     text-align: right;
   }
 }
@@ -283,7 +336,7 @@
   div#global_Pre_Title_01_Title #net-header {
     visibility: hidden;
   }
-  
+
   div.title-release {
     font-size: 12pt;
     padding-left: 25px;
@@ -306,7 +359,7 @@
     font-size: 14px;
   }
 
-  .slide, .preso {
+  .slide, #preso {
     font: normal 1.0em "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     height: 100%;
     margin: 0;
@@ -359,13 +412,8 @@
     margin-right: 3em;
   }
 
-  .content p {
-    font-size: 14px;
-    margin: 0;
-    margin-top: 0;
-    margin-left: 1em;
-    margin-right: 2em;
-    margin-bottom: 0.4em;
+  .content > p {
+    font-size: 16px;
     text-align: left;
   }
 
@@ -379,14 +427,21 @@
     list-style: disc;
     padding-left: 10px;
   }
-  .bullets > ul > li, .smbullets > ul > li {
+  .bullets > ul > li,
+  .smbullets > ul > li {
     text-align: left;
   }
+  .bullets > ul > li > p,
+  .smbullets > ul > li > p {
+    margin: 0;
+  }
 
-  .content > pre, .content > form > pre {
+  .content > pre, .handouts > pre, .content > form > pre {
     font-size: 120%;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0 2em;
+  }
+  .content > pre > code, .handouts > pre > code, .content > form > pre > code {
+    overflow: visible;
   }
 
   .center p {
@@ -405,11 +460,17 @@
     text-align: left;
   }
 
-  .break {
+  .annotations {
+    display: none;
   }
 
-  .handouts { 
+  .pagebreak {
+    margin: 1em;
+  }
+
+  .handouts {
     display: block !important;
+    border: none;
   }
   .handouts h1, h2, h3, h4 {
     margin: 0;
@@ -420,18 +481,10 @@
     text-align: left;
   }
   .handouts hr {
-    margin: 0;
-    margin-top: 2em;
-    margin-left: 1em;
-    margin-right: 2em;
-    margin-bottom: 2em;
+    margin: 2em 0;
   }
   .handouts p {
-    margin: 0;
-    margin-top: 0;
-    margin-left: 2em;
-    margin-right: 3em;
-    margin-bottom: 1em;
+    margin: 0 3em 1em 2em;
     text-align: left;
     word-wrap: break-word;
   }
@@ -570,5 +623,9 @@
   p#footer-right {
     height: 0px;
     visibility: collapse;
+  }
+
+  #net-header + h1 {
+    border: none;
   }
 }
