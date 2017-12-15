@@ -221,13 +221,13 @@
   }
 
   .title-logo img {
-    margin: 0;
+    margin: 0 auto;
   }
 
   .title-cover {
     margin: 1em;
     padding: 1em;
-    height: 40em;
+    height: 30em;
     color: white;
     background: #FA5C0D;
   }
@@ -241,7 +241,7 @@
   }
 
   .title-footer {
-    margin-top: 33.5em;
+    margin-top: 23.5em;
     text-align: right;
     font-weight: bold;
   }
