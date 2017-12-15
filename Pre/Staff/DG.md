@@ -1,7 +1,7 @@
 <!SLIDE noprint smbullets>
 
 # Trainer
-<img id="staff" src="/image/global/_images/netways/staff/DG.jpg" alt="DG">
+<img id="staff" src="/global/_images/netways/staff/DG.jpg" alt="DG">
 
 ## Dirk Götz
 

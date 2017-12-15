@@ -1,7 +1,7 @@
 <!SLIDE noprint smbullets>
 
 # Trainer
-<img id="staff" src="/image/global/_images/netways/staff/ThW.jpg" alt="ThW">
+<img id="staff" src="/global/_images/netways/staff/ThW.jpg" alt="ThW">
 
 * Thomas Widhalm
  * Senior Consultant

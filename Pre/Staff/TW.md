@@ -1,7 +1,7 @@
 <!SLIDE noprint smbullets>
 
 # Trainer
-<img id="staff" src="/image/global/_images/netways/staff/TW.jpg" alt="TW">
+<img id="staff" src="/global/_images/netways/staff/TW.jpg" alt="TW">
 
 * Thilo Wening
  * Consultant
