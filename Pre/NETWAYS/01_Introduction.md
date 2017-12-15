@@ -14,28 +14,28 @@
 * Individual Open Source solutions
 
 
-!SLIDE noprint center
+!SLIDE noprint
 # NETWAYS Products
 
-<center><img src="../../_images/netways/NETWAYS_Products.png" style="width:800px;height:360px;" alt="NETWAYS Products"/></center>
+.margin-top-1-5 <img src="../../_images/netways/NETWAYS_Products.png" style="width: 80%" alt="NETWAYS Products">
 
 
-!SLIDE noprint center
+!SLIDE noprint
 # NETWAYS Consulting Customers (partly)
 
-<center><img src="../../_images/netways/NETWAYS_Customers_Consulting.png" style="width:800px;height:361px;" alt="NETWAYS Technologies"/></center>
+.margin-top-1-5 <img src="../../_images/netways/NETWAYS_Customers_Consulting.png" style="width: 80%" alt="NETWAYS Technologies">
 
 
-!SLIDE noprint center
+!SLIDE noprint
 # NETWAYS Hosting Customers (partly)
 
-<center><img src="../../_images/netways/NETWAYS_Customers_Hosting.png" style="width:800px;height:330px;" alt="NETWAYS Technologies"/></center>
+.margin-top-1-5 <img src="../../_images/netways/NETWAYS_Customers_Hosting.png" style="width: 80%" alt="NETWAYS Technologies">
 
 
-!SLIDE noprint center
+!SLIDE noprint
 # NETWAYS Events
 
-<center><img src="../../_images/osmc/osmc_logo_2017_transparent_500x230.png" style="width:500px;height:230px;" alt="OSMC 2017"/></center>
+.margin-top-1-5 <img src="../../_images/osmc/osmc_logo_2017_transparent_500x230.png" style="width: 80%" alt="OSMC 2017">
 
 
 !SLIDE noprint smbullets
@@ -54,10 +54,10 @@
  * NETWAYS Repositories for Softwaredevelopmentprojects
 
 
-!SLIDE noprint center
+!SLIDE noprint
 # NETWAYS Trainings
 
-<center><img src="../../_images/netways/NETWAYS_Trainings.png" style="width:800px;height:385px;" alt="NETWAYS Trainings"/></center>
+.margin-top-1-5 <img src="../../_images/netways/NETWAYS_Trainings.png" style="width:80%" alt="NETWAYS Trainings">
 
 
 !SLIDE noprint smbullets

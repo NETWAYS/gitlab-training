@@ -1,4 +1,4 @@
 !SLIDE noprint center
 # Thank You
 
-Thank you for your attention!
+.large.margin-top-1-3 Thank you for your attention!
