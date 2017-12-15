@@ -1,0 +1,39 @@
+@media screen {
+  /* Layout */
+  .net-footer,
+  .content .net-header + h1:not(.section-title) {
+    background: #183047;
+  }
+
+  /* Global */
+  .title-name p {
+    background: #0B222D;
+  }
+
+  .title-location p {
+    background: #43A8B8;
+  }
+
+  /* Slides */
+  a, a:visited {
+    color: #183047;
+  }
+}
+
+@media print {
+  /* Layout */
+  .subsection .net-header + h1:not(.section-title),
+  .subsectionnonum .net-header + h1:not(.section-title) {
+    background: #183047;
+  }
+
+  /* Global */
+  .title-cover {
+    background: #183047;
+  }
+
+  /* Slides */
+  a, a:visited {
+    color: #183047;
+  }
+}

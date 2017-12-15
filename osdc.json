@@ -1,0 +1,24 @@
+{
+  "name": "OSDC Example",
+  "date": "Now",
+  "location": "Here",
+  "author": "You",
+  "release": "1.0",
+
+  "favicon": "image/global/favicon.ico",
+  "logo": "/global/_images/osdc/osdc_logo_500x177.png",
+
+  "protected": ["presenter", "onepage", "print"],
+  "user": "netways",
+  "password": "awesome",
+
+  "templates" : {
+    "default": "global/templates/osdc.tpl"
+  },
+
+  "sections": [
+    {"section": "global/Pre/Title"},
+    {"section": "global/Pre/NETWAYS"},
+    {"section": "global/Pre/Hints"}
+  ]
+}

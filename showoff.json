@@ -6,6 +6,7 @@
   "release": "1.1",
 
   "favicon": "image/global/favicon.ico",
+  "logo": "/global/_images/netways/netways-logo-1366.png",
 
   "protected": ["presenter", "onepage", "print"],
   "user": "netways",

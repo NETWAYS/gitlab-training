@@ -1,0 +1,24 @@
+{
+  "name": "OSMC Example",
+  "date": "Now",
+  "location": "Here",
+  "author": "You",
+  "release": "1.0",
+
+  "favicon": "image/global/favicon.ico",
+  "logo": "/global/_images/osmc/osmc_logo_2017_transparent_500x230.png",
+
+  "protected": ["presenter", "onepage", "print"],
+  "user": "netways",
+  "password": "awesome",
+
+  "templates" : {
+    "default": "global/templates/osmc.tpl"
+  },
+
+  "sections": [
+    {"section": "global/Pre/Title"},
+    {"section": "global/Pre/NETWAYS"},
+    {"section": "global/Pre/Hints"}
+  ]
+}

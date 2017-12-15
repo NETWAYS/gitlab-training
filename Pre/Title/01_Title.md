@@ -1,7 +1,7 @@
 !SLIDE printonly
 
 <div class="title-logo">
-    <img src="/global/_images/netways/netways-logo-1366.png" alt="NETWAYS" width="517px" height="100px">
+    <img src="~~~CONFIG:logo~~~" alt="Logo not found or configured" height="100px">
 </div>
 <div class="title-cover">
     <div class="title-name">~~~CONFIG:name~~~</div>

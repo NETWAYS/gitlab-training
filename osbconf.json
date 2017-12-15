@@ -1,0 +1,24 @@
+{
+  "name": "OSBC Example",
+  "date": "Now",
+  "location": "Here",
+  "author": "You",
+  "release": "1.0",
+
+  "favicon": "image/global/favicon.ico",
+  "logo": "/global/_images/osbconf/osbconf_2017_logo_2000.png",
+
+  "protected": ["presenter", "onepage", "print"],
+  "user": "netways",
+  "password": "awesome",
+
+  "templates" : {
+    "default": "global/templates/osbconf.tpl"
+  },
+
+  "sections": [
+    {"section": "global/Pre/Title"},
+    {"section": "global/Pre/NETWAYS"},
+    {"section": "global/Pre/Hints"}
+  ]
+}
