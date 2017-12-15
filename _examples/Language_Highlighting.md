@@ -1,8 +1,8 @@
-<!SLIDE[bg=/_images/backgrounds/pp_strasse_sw_kl.jpg] subsection>
+!SLIDE[bg=/_images/backgrounds/pp_strasse_sw_kl.jpg] subsection
 
 # Language Highlighting
 
-<!SLIDE small>
+!SLIDE small
 
 # Language Highlighting: Html
 
@@ -18,7 +18,7 @@
      <tr>
     </table>
 
-<!SLIDE small>
+!SLIDE small
 
 # Language Highlighting: Sh
 

@@ -1,4 +1,4 @@
-<!SLIDE toc>
+!SLIDE toc
 # Table of Contents
 
 ~~~TOC~~~

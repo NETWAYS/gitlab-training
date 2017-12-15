@@ -1,14 +1,14 @@
-<!SLIDE[bg=/_images/backgrounds/pp_strasse_sw_kl.jpg] subsection>
+!SLIDE[bg=/_images/backgrounds/pp_strasse_sw_kl.jpg] subsection
 
 # Syntax
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: headers
 ## This is an H2
 ### This is an H3
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: blockquotes1
 
@@ -19,7 +19,7 @@
 > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
 > id sem consectetuer libero luctus adipiscing.
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: blockquotes2
 
@@ -30,7 +30,7 @@ Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
 id sem consectetuer libero luctus adipiscing.
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: blockquotes3
 
@@ -40,7 +40,7 @@ id sem consectetuer libero luctus adipiscing.
 >
 > Back to the first level.
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: blockquotes4
 
@@ -53,7 +53,7 @@ id sem consectetuer libero luctus adipiscing.
 > 
 >     return shell_exec("echo $input | $markdown_script");
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: lists1
 
@@ -61,7 +61,7 @@ id sem consectetuer libero luctus adipiscing.
 *   Green
 *   Blue
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: lists2
 
@@ -69,7 +69,7 @@ id sem consectetuer libero luctus adipiscing.
 +   Green
 +   Blue
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: lists3
 
@@ -77,7 +77,7 @@ id sem consectetuer libero luctus adipiscing.
 -   Green
 -   Blue
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: lists4
 
@@ -85,7 +85,7 @@ id sem consectetuer libero luctus adipiscing.
 2.  McHale
 3.  Parish
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: lists5
 
@@ -93,7 +93,7 @@ id sem consectetuer libero luctus adipiscing.
 1.  McHale
 1.  Parish
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: lists6
 
@@ -101,7 +101,7 @@ id sem consectetuer libero luctus adipiscing.
 1. McHale
 8. Parish
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: lists7
 
@@ -111,7 +111,7 @@ id sem consectetuer libero luctus adipiscing.
 *   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
     Suspendisse id sem consectetuer libero luctus adipiscing.
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: lists8
 
@@ -121,14 +121,14 @@ viverra nec, fringilla in, laoreet vitae, risus.
 *   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
 Suspendisse id sem consectetuer libero luctus adipiscing.
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: lists9
 
 *   Bird
 *   Magic
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: lists10
 
@@ -136,7 +136,7 @@ Suspendisse id sem consectetuer libero luctus adipiscing.
 
 *   Magic
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: lists11
 
@@ -150,7 +150,7 @@ Suspendisse id sem consectetuer libero luctus adipiscing.
 
 2.  Suspendisse id sem consectetuer libero luctus adipiscing.
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: lists12
 
@@ -162,7 +162,7 @@ sit amet, consectetuer adipiscing elit.
 
 *   Another item in the same list.
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: lists13
 
@@ -171,7 +171,7 @@ sit amet, consectetuer adipiscing elit.
     > This is a blockquote
     > inside a list item.
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: lists14
 
@@ -179,7 +179,7 @@ sit amet, consectetuer adipiscing elit.
 
         <code goes here>
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: code block
 
@@ -187,7 +187,7 @@ This is a normal paragraph:
 
     This is a code block.
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: horizontal rules
 
@@ -201,7 +201,7 @@ This is a normal paragraph:
 
 ---------------------------------------
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: links1
 
@@ -209,7 +209,7 @@ This is [an example](http://example.com/ "Title") inline link.
 
 [This link](http://example.net/) has no title attribute.
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: links2
 
@@ -221,7 +221,7 @@ This is [an example] [id] reference-style link.
 
 [id]: http://example.com/  "Optional Title Here"
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: emphasis
 
@@ -233,7 +233,7 @@ _single underscores_
 
 __double underscores__
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: code
 
@@ -249,7 +249,7 @@ Please don't use any `<blink>` tags.
 
 `&#8212;` is the decimal-encoded equivalent of `&mdash;`.
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: images
 
@@ -257,7 +257,7 @@ Please don't use any `<blink>` tags.
 
 ![NETWAYS Logo](../_images/netways/NETWAYS_Logo.png "Optional title")
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: automatic links
 
@@ -265,7 +265,7 @@ Please don't use any `<blink>` tags.
 
 <info@netways.de>
 
-<!SLIDE>
+!SLIDE
 
 # Syntax: backslash escapes
 

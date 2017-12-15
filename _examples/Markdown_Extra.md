@@ -1,8 +1,8 @@
-<!SLIDE subsectionnonum>
+!SLIDE subsectionnonum
 
 # Markdown Extra
 
-<!SLIDE>
+!SLIDE
 
 # Markdown Extra: Table
 
@@ -11,7 +11,7 @@ First Header  | Second Header
 Content Cell  | Content Cell
 Content Cell  | Content Cell
 
-<!SLIDE>
+!SLIDE
 
 # Markdown Extra: Footnote
 

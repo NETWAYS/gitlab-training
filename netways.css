@@ -2,6 +2,14 @@
    Corrections for strange CSS rules by showoff
  ************************************************/
 
+.code {
+  white-space: unset;
+}
+.content.code p {
+  font-family: monospace;
+  white-space: pre;
+}
+
 .content.center {
   position: unset;
   top: unset;
@@ -18,8 +26,8 @@
   }
 
   /* The following assumes we'd get 24px (1.5em) by default: 24 / (16 x 0.7 x 0.7) */
-  .slide.small .content.smaller .net-header,
-  .slide.small .content.smaller .net-footer {
+  .slide.smaller .content.smaller .net-header,
+  .slide.smaller .content.smaller .net-footer {
     font-size: 306.122449%;
   }
 
@@ -27,7 +35,7 @@
   .slide.small .content.small .net-header + h1:not(.section-title) {
     font-size: 3.515625em;
   }
-  .slide.small .content.smaller .net-header + h1:not(.section-title) {
+  .slide.smaller .content.smaller .net-header + h1:not(.section-title) {
     font-size: 4.591836735em;
   }
 }
@@ -350,12 +358,14 @@
   .lrbullets > ul > li:nth-of-type(even) {
   }
 
-  .limg img {
+  .limg > img,
+  .limg > p > img {
     float: left;
     width: 400px;
     height: 50%;
   }
-  .rimg img {
+  .rimg > img,
+  .rimg > p > img {
     float: right;
     width: 50%;
     height: 50%;
