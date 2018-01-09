@@ -2,6 +2,29 @@
 # ~~~SECTION:MAJOR~~~ Git Server
 
 !SLIDE smbullets
+# Introduction
+
+* Central storage for repositories
+* Collaboration between teams
+* User based access control
+* Trigger events (e.g. for CI)
+
+~~~SECTION:handouts~~~
+
+****
+
+There is a variety of Git server tools, web interfaces
+and addons out there.
+
+* GitLab
+* gitosis
+* gitolite
+
+In case you don't want to host your own Git server,
+there are public services such as GitHub, GitLab or Bitbucket.
+
+~~~ENDSECTION~~~
+!SLIDE smbullets
 # Git Server Overview
 
 * Git server daemon
