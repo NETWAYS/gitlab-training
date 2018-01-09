@@ -2,7 +2,7 @@
 # Secure HTTPS environment
 
 * Use Let's Encrypt or own certificates
-* Enable HTTPS in Gitlab/Nginx
+* Enable HTTPS in GitLab/Nginx
 * Forward all HTTP requests to HTTPS
 
 

@@ -24,7 +24,7 @@ and addons out there.
 * gitolite
 
 In case you don't want to host your own Git server,
-there are public services such as Github, GitLab or Bitbucket.
+there are public services such as GitHub, GitLab or Bitbucket.
 
 ~~~ENDSECTION~~~
 
@@ -41,12 +41,12 @@ there are public services such as Github, GitLab or Bitbucket.
 !SLIDE smbullets noprint
 # GitLab
 
-<center><img src="../../_images/server/git_server_gitlab.png" style="width: 600px;" alt="Gitlab"/></center>
+<center><img src="../../_images/server/git_server_gitlab.png" style="width: 600px;" alt="GitLab"/></center>
 
 !SLIDE smbullets printonly
 # GitLab
 
-<center><img src="../../_images/server/git_server_gitlab.png" style="width:480px;height:260px" alt="Gitlab"/></center>
+<center><img src="../../_images/server/git_server_gitlab.png" style="width:480px;height:260px" alt="GitLab"/></center>
 
 !SLIDE smbullets
 # Git Server Protocol

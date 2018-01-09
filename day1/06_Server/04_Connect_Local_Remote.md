@@ -221,7 +221,7 @@ the changes to the Git repository.
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add the repository as remote origin
 
 * Objective:
- * Add the Gitlab project as remote origin
+ * Add the GitLab project as remote origin
 * Steps
  * Navigate into your local repository
  * Use `` <----- TODO as remote origin URL

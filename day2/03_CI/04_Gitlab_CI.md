@@ -147,14 +147,14 @@ https://docs.docker.com
 ~~~ENDSECTION~~~
 
 !SLIDE smbullets noprint
-# Gitlab CI: Docker and CI Runners
+# GitLab CI: Docker and CI Runners
 
-<center><img src="../../_images/ci/git_gitlab_ci_runners_docker.png" alt="Gitlab CI Runners Docker"/></center>
+<center><img src="../../_images/ci/git_gitlab_ci_runners_docker.png" alt="GitLab CI Runners Docker"/></center>
 
 !SLIDE smbullets printonly
-# Gitlab CI: Docker and CI Runners
+# GitLab CI: Docker and CI Runners
 
-<center><img src="../../_images/workflows/git_gitlab_ci_runners_docker.png" style="width:480px" alt="Gitlab CI Runners Docker"/></center>
+<center><img src="../../_images/workflows/git_gitlab_ci_runners_docker.png" style="width:480px" alt="GitLab CI Runners Docker"/></center>
 
 ~~~SECTION:handouts~~~
 
