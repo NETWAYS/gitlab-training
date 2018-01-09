@@ -80,7 +80,7 @@ This key will be pre-generated on training notebooks.
 * Steps:
  * Navigate into `User settings` (from the menu)
  * Choose `SSH Keys`
- * Paste your public SSH key into the form
+ * Paste your public SSH key from `$HOME/.ssh/id_rsa.pub` into the form
  * Save it
 
 ~~~SECTION:handouts~~~
@@ -104,7 +104,7 @@ This key will be pre-generated on training notebooks.
 
 * Navigate into `User settings` (from the menu)
 * Choose `SSH Keys`
-* Paste your public SSH key into the form
+* Paste your public SSH key from `$HOME/.ssh/id_rsa.pub` into the form
 * Save it
 
 
