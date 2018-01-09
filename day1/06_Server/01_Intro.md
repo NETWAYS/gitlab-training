@@ -26,16 +26,6 @@ there are public services such as Github, GitLab or Bitbucket.
 ~~~ENDSECTION~~~
 
 !SLIDE smbullets noprint
-# Git Web
-
-<center><img src="../../_images/server/git_server_gitweb.png" style="width: 600px;" alt="Git Web"/></center>
-
-!SLIDE smbullets printonly
-# Git Web
-
-<center><img src="../../_images/server/git_server_gitweb.png" style="width:480px;height:260px" alt="Git Web"/></center>
-
-!SLIDE smbullets noprint
 # GitHub
 
 <center><img src="../../_images/server/git_server_github.png" style="width: 600px;" alt="GitHub"/></center>
