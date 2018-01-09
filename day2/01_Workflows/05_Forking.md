@@ -38,9 +38,16 @@
 # Forking Workflow - How it works
 
 * Multiple remote repositories
- * origin (default own server-side repository)
- * upstream (official repository)
-* Merge branches from origin/<branch> to upstream/<branch> and vice versa
+ * `origin` (default own server-side repository)
+ * `upstream` (official repository)
+* Merge branches from `origin/<branch>` to `upstream/<branch>` and vice versa
+* Pull changes from `upstream` HEAD to own repository
+
+Example:
+
+```
+$ git pull upstream HEAD
+```
 
 ~~~SECTION:handouts~~~
 
