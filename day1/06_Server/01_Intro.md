@@ -4,9 +4,12 @@
 !SLIDE smbullets
 # Git Server Overview
 
-* Git server
+* Git server daemon
 * Web interfaces
 * Entire collaboration suites
+  * GitHub
+  * GitLab
+  * Bitbucket
 
 
 ~~~SECTION:handouts~~~
@@ -49,7 +52,11 @@ there are public services such as Github, GitLab or Bitbucket.
 # Git Server Protocol
 
 * Local protocol
-* Read/write access via SSH
+  * `file:///opt/git/repo.git`
 * Git protocol
-* HTTPS protocol
+  * `git://domain.com/repo.git`
+* Read/write access via SSH
+  * `git@domain.com:repo.git`
+* HTTPS protocol (write access via oauth tokens)
+  * `https://github.com/NETWAYS/graphing-training.git`
 
