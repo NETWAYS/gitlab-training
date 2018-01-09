@@ -89,8 +89,11 @@ found in the official documentation: https://docs.gitlab.com/ce/install/installa
 !SLIDE smbullets
 # GitLab: First Steps
 
-* Navigate to the GitLab URL
-* Use `root` and set a new password
+TODO
+
+* Start the GitLab VM
+* Navigate to the GitLab URL: http://192.168.56.101
+* Use `root` and `password`
 * Login
 * Get familiar and follow the trainer's explanations
 
