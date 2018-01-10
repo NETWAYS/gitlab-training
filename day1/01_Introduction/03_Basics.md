@@ -26,34 +26,12 @@
 
 * Information as a list of file-based changes
 * File changes and deltas over time
+  * Git Commit, take snapshot, store reference to that snapshot
+  * Set of snapshots of a mini-filesystem
+  * No change - link to the previous identical stored file
 
 <center><img src="../../_images/introduction/git_introduction_basics_01_changes.png" style="width:480px;height:278px;" alt="Basic Changes"/></center>
 
-
-!SLIDE smbullets noprint
-# Stream of Snapshots
-
-* Set of snapshots of a mini-filesystem
-* Git Commit, take snapshot, store reference to that snapshot
-* No change - link to the previous identical stored file
-
-<center><img src="../../_images/introduction/git_introduction_basics_02_snapshots.png" alt="Basics Snapshots"/></center>
-
-!SLIDE smbullets printonly
-# Stream of Snapshots
-
-* Set of snapshots of a mini-filesystem
-* Git Commit, take snapshot, store reference to that snapshot
-* No change - link to the previous identical stored file
-
-<center><img src="../../_images/introduction/git_introduction_basics_02_snapshots.png" style="width:480px;height:264px" alt="Basics Snapshots"/></center>
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
 
 !SLIDE smbullets
 # Work locally
