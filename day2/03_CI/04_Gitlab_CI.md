@@ -246,6 +246,14 @@ Note: Packages are pre-installed in the VM.
 ****
 
 Reference: https://gitlab.com/gitlab-org/gitlab-runner/blob/master/docs/install/linux-repository.md
+Reference: https://docs.gitlab.com/runner/install/linux-repository.html
+
+Example on Ubuntu:
+
+```
+curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh | sudo bash
+apt-get install gitlab-runner
+```
 
 ~~~ENDSECTION~~~
 
