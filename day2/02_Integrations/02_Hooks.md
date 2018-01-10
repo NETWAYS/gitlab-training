@@ -98,29 +98,3 @@ remote: New ref name 'refs/heads/master' created. Pushed 2 commits. Old ref ... 
 ~~~ENDSECTION~~~
 
 
-!SLIDE smbullets
-# Web Hooks
-
-* HTTP Callback
-* Pluggable with test and deployment services
-  * Travis CI
-  * Jenkins
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
-
-!SLIDE smbullets
-# GitLab Web Hooks
-
-
-~~~SECTION:handouts~~~
-
-****
-
-Reference example (German): https://blog.netways.de/2016/06/29/gitlab-webhooks/
-
-~~~ENDSECTION~~~
