@@ -5,8 +5,9 @@
 # Configuration Overview
 
 * Global configuration for the user
- * `$HOME/.gitconfig`
+  * `$HOME/.gitconfig`
 * Local to the repository
+  * `training/.git/config`
 
 
 ~~~SECTION:handouts~~~
