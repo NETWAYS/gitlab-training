@@ -17,9 +17,22 @@
 
 
 
-!SLIDE smbullets
+!SLIDE smbullets small
 # Travis CI Example
 
+    $ cat .travis.yml
+
+    language: php
+
+    php:
+      - '7.1'
+
+    branches:
+      only:
+      - master
+
+    script:
+      - php phpunit.phar -c modules/test/phpunit.xml --verbose
 
 ~~~SECTION:handouts~~~
 
