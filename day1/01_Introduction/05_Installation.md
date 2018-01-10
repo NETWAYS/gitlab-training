@@ -2,8 +2,12 @@
 # Git Installation
 
 * Available as package
-* OSX, Windows installers
-* Compile from source
+* macOS, Windows installers
+* Bash Integration
+  * Completion
+  * Show status and branch in the terminal
+
+<img src="../../_images/introduction/git_installation_cli_example.png" alt="Bash Integration"/>
 
 ~~~SECTION:handouts~~~
 

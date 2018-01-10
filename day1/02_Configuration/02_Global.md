@@ -31,6 +31,9 @@ https://git-scm.com/book/tr/v2/Customizing-Git-Git-Configuration
 * Colors for diff and verbose commit (`color`)
 * Core functionality (`core`)
 
+Example:
+
+<img src="../../_images/configuration/git_configuration_gitconfig_user.png" alt="Git Config"/>
 
 ~~~SECTION:handouts~~~
 
