@@ -2,7 +2,7 @@
 # Git CLI
 
 * Work on the CLI
-* GUIs implement partial feature sets of the cli tool
+* GUIs implement partial feature sets of the CLI tool
 * Shell sub commands
 * Bash-completion
 

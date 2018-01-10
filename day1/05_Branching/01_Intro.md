@@ -17,10 +17,13 @@ environment.
 * Continue to work on the feature
 
 !SLIDE smbullets
-# Git branch CLI commands
+# Git Branch CLI commands
 
-* `git branch`: list, create and delete branches
-* `git checkout`: switch branches, or restore the working tree
+* `git branch`
+  * List, create and delete branches.
+* `git checkout`
+  * Switch branches.
+  * Restore the working tree.
 
 ~~~SECTION:handouts~~~
 

@@ -4,7 +4,7 @@
 * `git commit`
  * Specific changes added to the changing index
  * All changes (`-a`)
-* Verbose mode shows changes compared to HEAD (`-v`)
+* Verbose mode shows changes compared to latest commit (`-v`)
 * Uses the configured editor (vim, nano, etc.)
 
 ~~~SECTION:handouts~~~

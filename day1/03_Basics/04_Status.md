@@ -1,8 +1,10 @@
 !SLIDE smbullets
 # Examine the current state
 
-* `git status`: show current working tree status
-* `git diff`: compare changes between working tree and HEAD
+* `git status`
+  * Show current working tree status.
+* `git diff`
+  * Compare changes between working tree and latest commit.
 
 ~~~SECTION:handouts~~~
 
@@ -96,7 +98,7 @@ You'll recognize the unstaged changes compared to your staging area.
  * Use `git diff` to compare unstaged changes
  * Add the changed files to the staging area
  * Use `git diff` again
- * Compare the staging area with the git directory (HEAD)
+ * Compare the staging area with the latest commit in `.git repository`
 
 ~~~SECTION:handouts~~~
 
@@ -118,7 +120,7 @@ You'll recognize the unstaged changes compared to your staging area.
 * Use `git diff` to compare unstaged changes
 * Add the changed files to the staging area
 * Use `git diff` again
-* Compare the staging area with the git directory (HEAD)
+* Compare the staging area with the latest commit in `.git repository`
 
 
 !SLIDE supplemental solutions

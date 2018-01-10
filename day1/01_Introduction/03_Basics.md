@@ -132,16 +132,16 @@ is copied when you clone a repository from another computer.
 # Basic Git Workflow
 
 * Modify files in `working directory`
-* Stage the files, adding snapshots to the `staging area` ("git add")
+* Stage the files which add snapshots to the `staging area` ("git add")
 * Commit ("git commit")
  * Takes files in `staging area`
- * Stores snapshot permanently in `Git directory`
+ * Stores snapshot permanently in `.git directory`
 
 ~~~SECTION:handouts~~~
 
 ****
 
-* If a particular version of a file is in the Git directory, it’s considered `committed`.
+* If a particular version of a file is in the `.git directory`, it’s considered `committed`.
 
 * `Staged` means that the file has been modified and it was added to the staging area
 

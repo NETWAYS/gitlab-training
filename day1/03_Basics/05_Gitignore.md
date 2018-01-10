@@ -1,8 +1,8 @@
 !SLIDE smbullets
 # Exclude files with .gitignore
 
-* Do not track files in your git repository
-* Files already tracked by git are not affected
+* Do not track files in your Git repository
+* Files already tracked by Git are not affected
 * Examples
  * Build directories from source code compilation
  * Files generated at runtime (e.g. test results or stats)

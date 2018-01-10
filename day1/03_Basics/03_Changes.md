@@ -1,10 +1,14 @@
 !SLIDE smbullets
 # Work on current changes
 
-* `git add`: add file(s) to current change index
-* `git mv`: rename file(s) tracked by git
-* `git reset`: reset the current HEAD, discard changes
-* `git rm`: remove the file(s) from working tree and git index
+* `git add`
+  * Add file(s) to current change index.
+* `git mv`
+  * Rename file(s) tracked by Git.
+* `git reset`
+  * Reset the current HEAD, discard changes.
+* `git rm`
+  * Remove the file(s) from working tree and git index.
 
 ~~~SECTION:handouts~~~
 
