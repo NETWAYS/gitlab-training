@@ -224,7 +224,7 @@ the changes to the Git repository.
  * Add the GitLab project as remote origin
 * Steps
  * Navigate into your local repository
- * Use `` <----- TODO as remote origin URL
+ * Use `git@gitlab.localdomain:root/training.git`
  * Push your local history
  * Use `--set-upstream` to enable the local branch tracking the remote repository 
 * Bonus
