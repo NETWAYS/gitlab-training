@@ -1,11 +1,19 @@
-!SLIDE smbullets
+!SLIDE smbullets small
 # Git Subtree
 
-* Import an external git repository history
+* Merge an external git repository history
 * Directory in your main repository (`--prefix`)
 * Squash the remote history into one commit
 * No external dependency (e.g. git submodule repository not available anymore)
 * No local configuration - document the external reference
+
+Example for imported Puppet modules:
+
+    $ git subtree add --prefix modules/icinga2 \
+    https://github.com/Icinga/puppet-icinga2 HEAD --squash
+
+    $ git subtree pull  --prefix modules/icinga2 \
+    https://github.com/Icinga/puppet-icinga2 HEAD --squash
 
 ~~~SECTION:handouts~~~
 
