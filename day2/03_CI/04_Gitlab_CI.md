@@ -170,13 +170,14 @@ https://docs.gitlab.com/runner/install/docker.html
 
 
 !SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Get CI Runner Token
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Inspect CI Runner settings
 
 * Objective:
- * Get CI Runner Token
+ * Inspect CI Runner Settings
 * Steps:
  * Navigate to Admin > Overview > Runners
- * Inspect and copy the token
+ * Inspect the token
+ * Check existing runners
 
 
 ~~~SECTION:handouts~~~
@@ -190,17 +191,18 @@ Reference: https://gitlab.com/gitlab-org/gitlab-runner/blob/master/docs/install/
 ~~~ENDSECTION~~~
 
 !SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Get CI Runner Token
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Inspect CI Runner settings
 
 ## Get CI Runner Token
 ****
 
-* Use the GitLab Admin UI to get the token
+* Use the GitLab Admin UI to inspect CI runners
 
 ## Steps:
 
 * Navigate to Admin > Overview > Runners
-* Inspect and copy the token
+* Inspect the token
+* Check existing runners
 
 
 !SLIDE supplemental solutions
@@ -211,7 +213,7 @@ Reference: https://gitlab.com/gitlab-org/gitlab-runner/blob/master/docs/install/
 
 ****
 
-http://192.168.56.101/admin/runners
+Navigate to `/admin/runners`.
 
 ```
 How to setup a shared Runner for a new project
@@ -237,9 +239,10 @@ Registered runners are listed at the bottom.
  * Paste the token
  * Add description `training01` and tag `training`
  * Untagged builds: `true`, Lock to current project: `false`
- * Executor: `docker`, Default: `alpine/latest` 
+ * Executor: `docker`, Default: `alpine/latest`
 
-Note: Packages are pre-installed in the VM.
+Note: This exercise is not needed for the NWS Gitlab instance
+where runners are pre-installed.
 
 ~~~SECTION:handouts~~~
 
@@ -288,8 +291,8 @@ apt-get install gitlab-runner
 ## Steps:
 
 * Run `gitlab-runner register` as root
-* Use `http://192.168.56.101` as host
-* Paste the token
+* Use the HTTP Url as host
+* Paste the runner token
 * Add description `training01` and tag `training`
 * Untagged builds: `true`, Lock to current project: `false`
 * Executor: `docker`, Default: `alpine/latest` 
@@ -335,6 +338,7 @@ apt-get install gitlab-runner
     alpine:latest
 
     Runner registered successfully. Feel free to start it, but if it's running already the config should be automatically reloaded!
+
 
 !SLIDE smbullets
 # GitLab CI: Configuration in .gitlab-ci.yml
@@ -504,61 +508,147 @@ https://gitlab.com/gitlab-org/gitlab-ci-yml
 
 ~~~ENDSECTION~~~
 
-!SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: 
+!SLIDE smbullets small
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Preparations
 
-TODO
-
-* Use `services`
-* Add script which runs some simple tests (py, php)
-* More foo to play around
-
-* Objective:
- * 
+* Objectives:
+ * Prepare container to convert Markdown to HTML
 * Steps:
- * 
+ * Modify `.gitlab-ci.yml` and add a `before_script` section after the `image` section
+ * Update `apk` package manager and install `python` and `py-pip` packages
+ * Use `pip` to install the `markdown` and `Pygments` libraries
+ * Commit and push the changes
+
+Example:
+
+    before_script:
+      - apk update && apk add python py-pip
+      - pip install markdown Pygments
 
 ~~~SECTION:handouts~~~
 
 ****
 
-Reference: https://docs.gitlab.com/ce/ci/services/README.html
+The base image uses Alpine Linux which has a very small installation size
+and footprint.
+
+In contrast to the "typical" Linux distribution containers, this allows for
+faster tests and deployment scripts.
+
+If your build pipeline involves specific distributions, choose the best and
+reliable container distribution you prefer.
+
+Alpine uses its own package manager. This exercise installs
+
+* Python and its package manager `pip`
+* Markdown conversion packages for Python
+
+Reference: https://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management
 
 ~~~ENDSECTION~~~
 
 !SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: 
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Preparations
 
-## 
+## Prepare container to convert Markdown to HTML
 ****
 
-* 
+* Prepare container to convert Markdown to HTML
 
 ## Steps:
 
-*
+* Modify `.gitlab-ci.yml` and add a `before_script` section after the `image` section
+* Update `apk` package manager and install `python` and `py-pip` packages
+* Use `pip` to install the `markdown` and `Pygments` libraries
+* Commit and push the changes
+
+Example:
+
+    before_script:
+      - apk update && apk add python py-pip
+      - pip install markdown Pygments
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
 ****
 
-## 
+## Prepare container to convert Markdown to HTML
 
 ****
 
-### 
+### Edit .gitlab-ci.yml and add before_script
 
     @@@ Sh
-    $
+    $ vim .gitlab-ci.yml
+
+    image: alpine:latest
+
+    before_script:
+
+### Update apk and install Python/pip
+
+    @@@ Sh
+    $ vim .gitlab-ci.yml
+
+    image: alpine:latest
+
+    before_script:
+      - apk update && apk add python py-pip
+
+### Install Markdown Python libraries
+
+    @@@ Sh
+    $ vim .gitlab-ci.yml
+
+    image: alpine:latest
+
+    before_script:
+      - apk update && apk add python py-pip
+      - pip install markdown Pygments
+
+### Verify the content
+
+    @@@ Sh
+    $ vim .gitlab-ci.yml
+
+    image: alpine:latest
+
+    before_script:
+      - apk update && apk add python py-pip
+      - pip install markdown Pygments
+
+    all_tests:
+      script:
+        - exit 0
+
+### Commit and push the changes
+
+    @@@ Sh
+    $ git commit -av -m "CI: Prepare markdown conversion"
+    $ git push
 
 
-!SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~:
+!SLIDE smbullets small
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Create Docs
 
 * Objective:
- * 
+ * Create HTML docs from Markdown
 * Steps:
- * 
+ * Add a new section `markdown` after the `all_tests` section
+ * Add `script` and convert `README.md` to `README.html` using Python
+ * Add `archifacts` with `paths` pointing to `README.html`. Expires in `1 week`.
+ * Commit and push the changes
+ * Download and view the `README.html` file in your browser
+
+Example:
+
+    markdown:
+      script:
+        - python -m markdown README.md > README.html
+      artifacts:
+        paths:
+        - README.html
+        expire_in: 1 week
 
 ~~~SECTION:handouts~~~
 
@@ -567,28 +657,157 @@ Reference: https://docs.gitlab.com/ce/ci/services/README.html
 ~~~ENDSECTION~~~
 
 !SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: 
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Create Docs
 
-## 
+## Create HTML docs from Markdown
 ****
 
-* 
+* Create HTML docs from Markdown
 
 ## Steps:
 
-*
+* Add a new section `markdown` after the `all_tests` section
+* Add `script` and convert `README.md` to `README.html` using Python
+* Add `archifacts` with `paths` pointing to `README.html`. Expires in `1 week`.
+* Commit and push the changes
+* Download and view the `README.html` file in your browser
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
 ****
 
-## 
+## Create HTML docs from Markdown
 
 ****
 
-### 
+### Edit .gitlab-ci.yml and add markdown section
 
     @@@ Sh
-    $
+    $ vim .gitlab-ci.yml
+
+    ...
+
+    all_tests:
+      script:
+        - exit 0
+
+    markdown:
+
+### Add script to convert Markdown into HTML
+
+    @@@ Sh
+    $ vim .gitlab-ci.yml
+
+    ...
+
+    markdown:
+      - python -m markdown README.md > README.html
+
+### Store artifacts
+
+Add `paths` section which includes `README.html` as entry.
+Tell GitLab to expire this artifact in `1 week`.
+
+    @@@ Sh
+    $ vim .gitlab-ci.yml
+
+    ...
+
+    markdown:
+      - python -m markdown README.md > README.html
+      artifacts:
+        paths:
+        - README.html
+        expire_in: 1 week
+
+### Verify the content
+
+    @@@ Sh
+    $ vim .gitlab-ci.yml
+
+    image: alpine:latest
+
+    before_script:
+      - apk update && apk add python py-pip
+      - pip install markdown Pygments
+
+    all_tests:
+      script:
+        - exit 0
+
+    markdown:
+      - python -m markdown README.md > README.html
+      artifacts:
+        paths:
+        - README.html
+        expire_in: 1 week
+
+### Commit and push the changes
+
+    @@@ Sh
+    $ git commit -av -m "CI: Generate HTML docs from Markdown"
+    $ git push
+
+### Download HTML artifacts
+
+Navigate into the repository > `CI / CD` > Jobs > `#...`  and choose `Job Artifacts`.
+Download them, extract them and open the HTML file with your browser.
+
+!SLIDE smbullets small
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Update Docs
+
+* Objective:
+ * Add what you have learned so far into README.md and generate docs
+* Steps:
+ * Edit `README.md`
+ * Commit and push changes
+ * Download and view the `README.html` file in your browser
 
 
+~~~SECTION:handouts~~~
+
+****
+
+~~~ENDSECTION~~~
+
+!SLIDE supplemental exercises
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Update Docs
+
+## Update docs
+****
+
+* Add what you have learned so far into README.md and generate docs
+
+## Steps:
+
+* Edit `README.md`
+* Commit and push changes
+* Download and view the `README.html` file in your browser
+
+!SLIDE supplemental solutions
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
+****
+
+## Update docs
+
+****
+
+### Edit README.md and add learned details
+
+    @@@ Sh
+    vim README.md
+
+    # CI Runners
+
+    ....
+
+### Commit and push changes
+
+    @@@ Sh
+    git commit -av -m "Add notes on CI runners"
+    git push
+
+### Download HTML artifacts
+
+Navigate into the repository > `CI / CD` > Jobs > `#...`  and choose `Job Artifacts`.
+Download them, extract them and open the HTML file with your browser.
