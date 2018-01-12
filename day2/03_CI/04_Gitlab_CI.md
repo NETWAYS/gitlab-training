@@ -227,26 +227,16 @@ Start the Runner!
 
 Registered runners are listed at the bottom.
 
+#### Register Runner
 
-!SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Register CI Runner
-
-* Objective:
- * Register CI runner
 * Steps:
  * Run `gitlab-runner register` as root
- * Use `http://192.168.56.101` as host
+ * Use the HTTP Url as host
  * Paste the token
  * Add description `training01` and tag `training`
  * Untagged builds: `true`, Lock to current project: `false`
  * Executor: `docker`, Default: `alpine/latest`
 
-Note: This exercise is not needed for the NWS Gitlab instance
-where runners are pre-installed.
-
-~~~SECTION:handouts~~~
-
-****
 
 Reference: https://gitlab.com/gitlab-org/gitlab-runner/blob/master/docs/install/linux-repository.md
 Reference: https://docs.gitlab.com/runner/install/linux-repository.html
@@ -278,40 +268,13 @@ curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/sc
 apt-get install gitlab-runner
 ```
 
-~~~ENDSECTION~~~
 
-!SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Register CI Runner
-
-## Register CI Runner
-****
-
-* Register CI Runner with the previously copied token
-
-## Steps:
-
-* Run `gitlab-runner register` as root
-* Use the HTTP Url as host
-* Paste the runner token
-* Add description `training01` and tag `training`
-* Untagged builds: `true`, Lock to current project: `false`
-* Executor: `docker`, Default: `alpine/latest` 
-
-
-!SLIDE supplemental solutions
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
-****
-
-## Register CI Runner
-
-****
-
-### Start CLI
+Start CLI
 
     @@@ Sh
     # gitlab-runner register
     Running in system-mode.
- 
+
     Please enter the gitlab-ci coordinator URL (e.g. https://gitlab.com/):
     http://192.168.56.101
 
