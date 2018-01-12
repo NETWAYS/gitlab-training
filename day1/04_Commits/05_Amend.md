@@ -1,7 +1,7 @@
 !SLIDE smbullets
 # Amend changes to commits
 
-* Change the commit message, e.g. typos or missing details
+* Change the commit message, e.g. typos or missing changes broke the build
 * Amend changes from staging
 * Helps if new files were added but not committed
 * `git commit --amend`
@@ -19,8 +19,7 @@
 * Objective:
  * Use git amend
 * Steps:
- * Add two new files: `check_amend` and `README.md`
- * Add `check_amend` to the staging index and commit the change
+ * Modify README.md
  * Add `README.md` to the staging index
  * Use `git commit --amend README.md` to add the change to the previous commit
 * Bonus:
@@ -45,8 +44,7 @@
 
 ****
 
-* Add two new files: `check_amend` and `README.md`
-* Add `check_amend` to the staging index and commit the change
+* Modify README.md
 * Add `README.md` to the staging index
 * Use `git commit --amend README.md` to add the change to the previous commit
 
@@ -65,18 +63,9 @@
 ### Add the files
 
     @@@ Sh
-    $ echo "amend training" > check_amend
-    $ echo "A check plugin" > README.md
+    $ vim README.md
 
-### Add check_amend to the staging index
-
-    @@@ Sh
-    $ git add check_amend
-
-### Commit the change with check_amend
-
-    @@@ Sh
-    $ git commit -v check_amend -m "first import"
+    `git commit --amend` adds missing changes to the previous commit.
 
 ### Add README.md to the staging index
 
@@ -88,7 +77,8 @@
 
     @@@ Sh
     $ git commit --amend -v README.md
+      Update training notes
 
-    first import including README.md
+      My first amended commit :)
 
-Adopt the commit message as additional exercise
+Adopt the commit message as additional exercise above.

@@ -139,13 +139,13 @@ The last parameter specifies the target directory `training-global1`.
 ### Add/modify a file
 
     @@@ Sh
-    $ echo "Training Test" > michaelfriedrich
+    $ echo "My Name" > AUTHORS
 
 ### Commit the change
 
     @@@ Sh
     $ git add -A .
-    $ git commit -av -m "My test commit"
+    $ git commit -av -m "Add myself to AUTHORS"
 
 ### Push the changes to the remote repository
 
@@ -191,7 +191,9 @@ The last parameter specifies the target directory `training-global2`.
 * Objective:
  * Rebase your local history with the remote repository
 * Steps:
- * Fetch the changes
+ * Reset the local history by 2 commits (or where you've edited README.md last)
+ * Update and commit README.md
+ * Fetch the remote repository
  * Rebase the master branch against remote `origin/master`
  * Resolve possible merge conflicts
  * Push your rebased history
@@ -225,6 +227,8 @@ instead of generating a merge commit.
 
 ****
 
+* Reset the local history by 2 commits (or where you've edited README.md last)
+* Update and commit README.md
 * Fetch the changes
 * Rebase the master branch against remote `origin/master`
 * Resolve possible merge conflicts
@@ -238,6 +242,21 @@ instead of generating a merge commit.
 ## Rebase your local history with the remote repository
 
 ****
+
+### Reset the history by 2 commits
+
+    @@@ Sh
+    $ git reset --hard HEAD^^
+
+### Update and commit README.md
+
+    @@@ Sh
+    $ vim README.md
+
+    Testing rebase
+
+    $ git add README.md
+    $ git commit -v README.md "Rebase test"
 
 ### Fetch the remote changes
 
@@ -255,7 +274,7 @@ Rebase your local history against the remote origin master branch.
 
     @@@ Sh
     $ git status
-    $ vim <problem file>
+    $ vim README.md
 
 Search for conflicts in vim:
 
@@ -264,7 +283,7 @@ Search for conflicts in vim:
 Resolve the conflicts, add the file and continue the rebase.
 
     @@@ Sh
-    $ git add <problem file>
+    $ git add README.md
     $ git rebase --continue
 
 

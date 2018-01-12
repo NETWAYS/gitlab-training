@@ -25,16 +25,22 @@ manually move the file, you will need to rm and add it again.
 `git rm` removes the file from the working tree and also from the git index.
 
 ~~~ENDSECTION~~~
-!SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add a new file
+!SLIDE smbullets small
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add a new README.md file
 
 * Objective:
- * Add a new file
+ * Add a new README.md file
 * Steps:
- * Create a new file
- * Use `git add` to add the file to the current change index
+ * Create README.md and add `# Git Training Notes` as first line
+ * Use `git add` to add README.md to the current change index
 * Next steps:
  * Verify the change with `git status`
+
+Best practice is to have a README.md file written in Markdown
+in every project. This gets rendered by GitHub/GitLab in readable HTML.
+
+> During this training we will learn many new things. Keep notes
+> in the README.md file.
 
 ~~~SECTION:handouts~~~
 
@@ -43,18 +49,18 @@ manually move the file, you will need to rm and add it again.
 ~~~ENDSECTION~~~
 
 !SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add a new file
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add a new README.md file
 
-## Objective: Add a new file to the current change index
+## Objective: Add a new README.md file to the current change index
 ****
 
-* Add a new file
+* Add a new README.md file
 
 ## Steps:
 
 ****
 
-* Create a new file
+* Create a new README.md file
 * Use `git add` to add the file to the current change index
 * Verify the change with `git status`
 
@@ -63,15 +69,15 @@ manually move the file, you will need to rm and add it again.
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
 ****
 
-## Add a new file
+## Add a new README.md file
 
 ****
 
 ### Example
 
     @@@ Sh
-    $ echo "my first file" > myfile
-    $ git add myfile
+    $ echo "# Git Training Notes" > README.md
+    $ git add README.md
     $ git status
 
 ~~~ENDSECTION~~~
@@ -81,7 +87,9 @@ manually move the file, you will need to rm and add it again.
 * Objective:
  * Move a file with git
 * Steps:
- * Use `git mv` to move the file to a new location
+ * Use `touch authors` and add the file to the staging index
+ * Verify it with `git status`
+ * Use `git mv` to move `authors` into `AUTHORS`
 * Next steps:
  * Verify the change with `git status`
 
@@ -103,7 +111,9 @@ manually move the file, you will need to rm and add it again.
 
 ****
 
- * Use `git mv` to move the file to a new location
+* Use `touch authors` and add the file to the staging index
+* Verify it with `git status`
+* Use `git mv` to move `authors` into `AUTHORS`
 * Verify the change with `git status`
 
 
@@ -118,7 +128,9 @@ manually move the file, you will need to rm and add it again.
 ### Example
 
     @@@ Sh
-    $ ls myfile
-    $ git mv myfile mymovedfile
+    $ touch authors
+    $ git add authors
+    $ git status
+    $ git mv authors AUTHORS
     $ git status
 

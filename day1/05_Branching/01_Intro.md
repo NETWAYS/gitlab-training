@@ -86,9 +86,9 @@ environment.
 * Objective:
  * Create and checkout a new branch
 * Steps:
- * Create a new branch from the current master branch
- * List the branches
- * Checkout the new branch
+ * Create a new branch `feature/docs` from the current master branch
+ * List the branches with `git branch`
+ * Checkout the new branch with `git checkout feature/docs`
 * Bonus:
  * Verify how `git checkout -b` works
  * Explain how it helps here
@@ -111,9 +111,9 @@ environment.
 
 ****
 
-* Create a new branch from the current master branch
-* List the branches
-* Checkout the new branch
+* Create a new branch `feature/docs` from the current master branch
+* List the branches with `git branch`
+* Checkout the new branch with `git checkout feature/docs`
 
 ## Bonus:
 
@@ -133,22 +133,22 @@ environment.
 ### Create the branch
 
     @@@ Sh
-    $ git branch mybranch master
+    $ git branch feature/docs master
 
 ### List the branches
 
     @@@ Sh
     $ git branch
     * master
-      mybranch
+      feature/docs
 
 ### Checkout the created branch
 
     @@@ Sh
-    $ git checkout mybranch
+    $ git checkout feature/docs
     $ git branch
       master
-    * mybranch
+    * feature/docs
 
 ### Use it all at once
 
@@ -158,7 +158,7 @@ when working with branches quite often.
 
     @@@ Sh
     $ git checkout master
-    $ git checkout -b mybranch2
+    $ git checkout -b fix/docs
 
 
 !SLIDE smbullets
@@ -215,7 +215,7 @@ when working with branches quite often.
 ### Delete the previously created branch
 
     @@@ Sh
-    $ git branch -D mybranch
+    $ git branch -D feature/docs
 
 ### Try to delete the current branch
 

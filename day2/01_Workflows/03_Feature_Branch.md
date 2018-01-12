@@ -115,7 +115,7 @@ The new branch `my-feature` will be based on the `master` branch.
  * Checkout your feature branch (hint: `git branch` lists all branches)
  * Diff your feature branch to the current master
  * Checkout the `master` branch
- * Merge the feature branch
+ * Merge the feature branch with `--no-ff`
  * Show the graphical history with `git log --pretty=oneline --abbrev-commit --graph`
 
 ~~~SECTION:handouts~~~
@@ -141,7 +141,7 @@ The new branch `my-feature` will be based on the `master` branch.
 * Checkout your feature branch (hint: `git branch` lists all branches)
 * Diff your feature branch to the current master
 * Checkout the `master` branch
-* Merge the feature branch
+* Merge the feature branch with `--no-ff`
 * Show the graphical history with `git log --pretty=oneline --abbrev-commit --graph`
 
 
@@ -157,23 +157,26 @@ The new branch `my-feature` will be based on the `master` branch.
 
     @@@ Sh
     $ git checkout master
-    $ echo "master" > file
-    $ git add file
-    $ git commit -v -m "Add master fix"
+    $ vim README.md
+
+    I'm learning about workflows today.
+
+    $ git add README.md
+    $ git commit -v -m "Update docs"
     $ git push origin master
 
 ### Checkout the feature branch and compare it with the master branch
 
     @@@ Sh
     $ git branch
-    $ git checkout my-feature
-    $ git diff master my-feature
+    $ git checkout feature/docs
+    $ git diff master feature/docs
 
 ### Checkout the master and merge the feature branch
 
     @@@ Sh
     $ git checkout master
-    $ git merge my-feature
+    $ git merge --no-ff feature/docs
 
 ### Examine the history
 

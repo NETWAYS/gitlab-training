@@ -35,7 +35,8 @@ and not a global file, this will also work.
 * Objective:
  * Add .gitignore file and exclude files/directories
 * Steps:
- * Create a file and a directory
+ * Create a file `generated.tmp`
+ * Create a directory `debug` with the file `.timestamp`
  * Examine the state with `git status`
  * Exclude them in a .gitignore file
  * Examine the state with `git status`
@@ -56,7 +57,8 @@ and not a global file, this will also work.
 
 ## Steps:
 
-* Create a file and a directory
+* Create a file `generated.tmp`
+* Create a directory `debug` with the file `.timestamp`
 * Examine the state with `git status`
 * Exclude them in a .gitignore file
 * Examine the state with `git status`

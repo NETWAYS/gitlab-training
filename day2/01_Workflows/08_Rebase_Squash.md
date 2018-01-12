@@ -78,11 +78,11 @@ If you do not have any.
     $ git checkout -b feature/squash-test
 
     @@@ Sh
-    $ echo "1" > check_squash
+    $ echo "# Rebase and Squash" >> README.md
     $ git commit -av -m "commit1"
-    $ echo "2" >> check_squash
+    $ echo "  " >> README.md
     $ git commit -av -m "commit2"
-    $ echo "3" >> check_squash
+    $ echo "`git rebase -i` is interactive" >> README.md
     $ git commit -av -m "commit3"
 
 ### Use git rebase to squash three commits
@@ -98,3 +98,8 @@ The interactive mode opens the editor you are familiar with
 from commit messages.
 
 ### Choose the commits to squash
+
+    @@@ Sh
+    pick 5a31d9e commit1
+    squash ce90e16 commit2
+    squash ed6a68f commit3

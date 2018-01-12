@@ -22,11 +22,11 @@ requiring you to add a commit message.
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Commit Changes
 
 * Objective:
- * Add/modify files and commit your changes
+ * Modify files and commit your changes
 * Steps:
- * Add/modify file
+ * Modify README.md
  * Add the change to the changing index
- * Commit the change to your Git history
+ * Commit the change to your Git history with `git commit -v README.md`
 * Next steps:
  * Use `git log` to verify the history
 
@@ -42,15 +42,15 @@ requiring you to add a commit message.
 ## Objective: Commit Changes
 ****
 
-* Add/modify files and commit your changes
+* Modify files and commit your changes
 
 ## Steps:
 
 ****
 
-* Add/modify file
+* Modify README.md
 * Add the change to the changing index
-* Commit the change to your Git history
+* Commit the change to your Git history with `git commit -v README.md`
 
 ## Next steps:
 
@@ -70,17 +70,21 @@ requiring you to add a commit message.
 ### Add/modify file
 
     @@@ Sh
-    $ echo "my first commit" > README
-    $ git add README
+    $ vim README.md
+
+    `git commit` also has `-a` which is evil.
+
+    $ git add README.md
 
 ### Commit the changed file
 
     @@@ Sh
     $ git status
-    $ git commit -v README
-    Add my first file
-    
-    Cool :)
+    $ git commit -v README.md
+      Update training notes
+
+      My first commit :)
+
 
     Save and exit.
 

@@ -25,7 +25,7 @@ also compare specific commits.
 * Objective:
  * Examine current changes
 * Steps:
- * Change files
+ * Edit README.md and add notes
  * Use `git status` to see unstaged changes
  * Add the changed files to the staging area
  * Use `git status` again
@@ -46,7 +46,7 @@ also compare specific commits.
 
 ## Steps:
 
-* Change files
+* Edit README.md
 * Use `git status` to see unstaged changes
 * Add the changed files to the staging area
 * Use `git status` again
@@ -63,9 +63,15 @@ also compare specific commits.
 ### Change files
 
     @@@ Sh
-    $ echo "my change" > change01
-    $ git add change01
-    $ vim change01
+    $ vim README.md
+    # Git Training Notes
+
+    I've learned about `git add` already.
+
+    ```
+    git add -A
+    git status
+    ```
 
 Modify and save the file.
 
@@ -79,7 +85,7 @@ You'll recognize the unstaged changes compared to your staging area.
 ### Add the change to the staging area
 
     @@@ Sh
-    $ git add change01
+    $ git add README.md
 
 ### Use git status again
 
@@ -94,9 +100,9 @@ You'll recognize the unstaged changes compared to your staging area.
 * Objective:
  * Play with `git diff`
 * Steps:
- * Change files
+ * Edit README.md
  * Use `git diff` to compare unstaged changes
- * Add the changed files to the staging area
+ * Add the changed file to the staging area
  * Use `git diff` again
  * Compare the staging area with the latest commit in `.git repository`
 
@@ -116,9 +122,9 @@ You'll recognize the unstaged changes compared to your staging area.
 
 ## Steps:
 
-* Change files
+* Edit README.md
 * Use `git diff` to compare unstaged changes
-* Add the changed files to the staging area
+* Add the changed file to the staging area
 * Use `git diff` again
 * Compare the staging area with the latest commit in `.git repository`
 
@@ -134,9 +140,9 @@ You'll recognize the unstaged changes compared to your staging area.
 ### Change files
 
     @@@ Sh
-    $ echo "my change" > diff01
-    $ git add diff01
-    $ vim diff01
+    $ vim README.md
+
+    I've also learned the difference between local changes and the staging area.
 
 Modify and save the file.
 
@@ -150,7 +156,7 @@ You'll recognize the unstaged changes compared to your staging area.
 ### Add the change to the staging area
 
     @@@ Sh
-    $ git add diff01
+    $ git add README.md
 
 ### Use git diff again
 

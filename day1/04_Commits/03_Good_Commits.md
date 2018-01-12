@@ -30,9 +30,8 @@
 
 ~~~ENDSECTION~~~
 
-!SLIDE smbullets
+!SLIDE smbullets small
 # Commit Message Example
-
 
     A short subject for the commit line
     <newline>
