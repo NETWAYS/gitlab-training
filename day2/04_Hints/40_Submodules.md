@@ -12,7 +12,7 @@ Example:
       new file: puppet-icinga2
 
     $ git submodule
-      ad5e30952f3971eea7a52936ccfed1fd904c9fa4 puppet-icinga2 (heads/master)
+      ad5e309... puppet-icinga2 (heads/master)
 
 Fresh clone:
 

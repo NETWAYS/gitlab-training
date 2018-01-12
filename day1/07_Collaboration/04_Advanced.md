@@ -131,12 +131,12 @@ stages, `git stash list` will list them.
   * `--soft` adds changes to the staging index.
   * `--hard` drops them indefinitely.
 
+Try it out with the trainer.
 
     $ git reset --soft HEAD^
 
     $ git reset --hard HEAD^
 
-Try it out with the trainer.
 
 ~~~SECTION:handouts~~~
 

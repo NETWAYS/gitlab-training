@@ -8,7 +8,7 @@ you want to delete such branches?
 
 Pushing `NULL` into a remote branch will delete it.
 
-`git push origin :<remotebranch>`.
+`git push origin :<remotebranch>`
 
 
 !SLIDE smbullets

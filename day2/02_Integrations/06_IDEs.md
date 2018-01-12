@@ -1,6 +1,3 @@
-!SLIDE subsection
-# ~~~SECTION:MAJOR~~~ IDE Integrations
-
 !SLIDE smbullets
 # IDEs
 
@@ -14,6 +11,7 @@
 
 ****
 
+~~~ENDSECTION~~~
 
 !SLIDE smbullets
 # Atom

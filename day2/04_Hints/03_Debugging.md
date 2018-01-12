@@ -1,9 +1,12 @@
 !SLIDE smbullets
 # Debugging
 
-* `git bisect`: binary search for commits causing a bug
-* `git blame`: open editor with commit/author/date addition
-* `git grep`: search for pattern in commit history
+* `git bisect`
+  * Binary search for commits causing a bug
+* `git blame`
+  * Open editor with commit/author/date addition
+* `git grep`
+  * Search for pattern in commit history
 
 ~~~SECTION:handouts~~~
 
@@ -56,12 +59,12 @@
 ### Pick a file and use Git Blame
 
     @@@ Sh
-    $ git blame testfile
+    $ git blame README.md
 
 ### Modify and commit changes and use Git Blame again
 
     @@@ Sh
-    $ echo "1" >> testfile && git commit -av -m "1"
-    $ echo "2" >> testfile && git commit -av -m "2"
+    $ echo "Blame me" >> README.md && git commit -av -m "Blame me"
+    $ echo "Blame me, too." >> README.md && git commit -av -m "Blame me, too"
 
-    $ git blame testfile
+    $ git blame README.md

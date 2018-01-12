@@ -9,5 +9,5 @@ Find the last commit which affected the given path.
 
 Then checkout the version at the commit before using the caret `^` symbol.
 
-`git checkout <deletingcommit>^ -- <filepath>`.
+`git checkout <deletingcommit>^ -- <filepath>`
 
