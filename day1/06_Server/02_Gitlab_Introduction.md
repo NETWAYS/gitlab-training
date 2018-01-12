@@ -83,36 +83,3 @@ found in the official documentation: https://docs.gitlab.com/ce/install/installa
 ~~~ENDSECTION~~~
 
 
-
-
-~~~ENDSECTION~~~
-!SLIDE smbullets
-# GitLab: First Steps
-
-* Start the GitLab VM
-* Navigate to the GitLab URL: http://gitlab.localdomain or http://192.168.56.101
-* Use `root` and `password`
-* Login
-* Get familiar and follow the trainer's explanations
-
-
-
-~~~SECTION:handouts~~~
-
-****
-
-GitLab 8.6+ removed the option to set a default root password. The web interface will
-always prompt you to set a proper password.
-
-Discussion here: https://gitlab.com/gitlab-org/gitlab-ce/issues/1980
-
-Possible workaround:
-
-```
-sed -i "s/^# gitlab_rails\['initial_root_password'\].*/gitlab_rails['initial_root_password'] = \"password\"/g" /etc/gitlab/gitlab.rb
-gitlab-ctl reconfigure
-gitlab-ctl restart
-```
-
-
-~~~ENDSECTION~~~

@@ -3,16 +3,18 @@
 
 * Local standalone repository
 * Connect to remote server
-* Clone, Pull, Fetch, Push via SSH
+* Clone, Pull, Fetch, Push via SSH/HTTPS
+
+You can also start fresh without any local repository
+and clone that from remote.
+
+For training purposes we've started to work offline and
+learn the Git basics before diving into remote workflows.
 
 ~~~SECTION:handouts~~~
 
 ****
 
-You can also start fresh without any local repository
-and clone that from remote. For training purposes we've
-started to work offline and learn the Git basics before
-jumping into remote workflows.
 
 
 ~~~ENDSECTION~~~
@@ -20,125 +22,33 @@ jumping into remote workflows.
 !SLIDE smbullets
 # Requirements
 
-* SSH key pair on the client
-* Public SSH key added to GitLab user
+* SSH or HTTPS auth
+  * NWS apps come pre-defined with HTTPS clone/fetch only.
 * New GitLab repository for this user
 * Configure local repository for the remote server
 
-
-!SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Generate public SSH key
-
-* Objective:
- * Generate public SSH key
-* Steps:
- * Use `ssh-keygen` to generate an SSH key
-
 ~~~SECTION:handouts~~~
 
 ****
 
-This key will be pre-generated on training notebooks.
+# SSH Keys
+
+Generate a new SSH key pair on your client.
+
+```
+ssh-keygen
+```
+
+Copy the public key into your GitLab settings.
+
+```
+cat $HOME/.ssh/id_rsa.pub
+```
+
+User > Settings > SSH Keys
 
 
 ~~~ENDSECTION~~~
-
-!SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Generate public SSH key
-
-## Objective: Generate public SSH key
-****
-
-* Generate public SSH key
-
-## Steps:
-
-****
-
-* Use `ssh-keygen` to generate an SSH key
-
-
-!SLIDE supplemental solutions
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
-****
-
-## Generate public SSH key
-
-****
-
-### Generate key
-
-    @@@ Sh
-    $ ssh-keygen
-
-
-!SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add public SSH key to GitLab user
-
-* Objective:
- * Add public SSH key to GitLab user
-* Steps:
- * Navigate into `User settings` (from the menu)
- * Choose `SSH Keys`
- * Paste your public SSH key from `$HOME/.ssh/id_rsa.pub` into the form
- * Save it
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
-
-!SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add public SSH key to GitLab user
-
-## Objective: Add public SSH key to GitLab user
-****
-
-* Add public SSH key to GitLab user
-
-## Steps:
-
-****
-
-* Navigate into `User settings` (from the menu)
-* Choose `SSH Keys`
-* Paste your public SSH key from `$HOME/.ssh/id_rsa.pub` into the form
-* Save it
-
-
-!SLIDE supplemental solutions
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
-****
-
-## Add public SSH key to GitLab user
-
-****
-
-### Navigate into User settings
-
-GitLab changes the layout between major versions.
-Using 10.x the user menu can be found on the right top corner.
-
-Choose `Settings`.
-
-### SSH Keys
-
-The `SSH Keys` settings is located on the left menu.
-
-### Paste SSH Key
-
-Use your favorite editor/CLI command to copy paste
-the public SSH key from `$HOME/.ssh/id_rsa.pub`
-into the web form.
-
-    @@@Sh
-    $ cat $HOME/.ssh/id_rsa.pub
-
-### Save
-
-Click `Add key`.
 
 
 !SLIDE smbullets
@@ -153,7 +63,7 @@ Click `Add key`.
  * Leave it as `Private`
  * Create the project
 * Note:
- * Learn about the project view and the SSH clone URL
+ * Learn about the project view and the HTTPS clone URL
 
 ~~~SECTION:handouts~~~
 
@@ -184,7 +94,7 @@ Click `Add key`.
 
 ****
 
-* Learn about the project view and the SSH clone URL
+* Learn about the project view and the HTTPS clone URL
 
 
 !SLIDE supplemental solutions
@@ -204,13 +114,13 @@ other options as default.
 
 ### Project View
 
-You'll notice the `SSH` URL centered below the project name.
+You'll notice the `iHTTPS` URL centered below the project name.
 
 We will be using this remote URL for connecting our local repository
 in the next step.
 
 Right now the repository is empty and does not contain any file.
-GitLab offers you to add new files, e.g. a README or LICENSE details
+GitLab offers you to add new files, e.g. a README.md file or LICENSE details
 directly in the browser. In the background, it is still comitting
 the changes to the Git repository.
 
@@ -223,8 +133,9 @@ the changes to the Git repository.
 * Objective:
  * Add the GitLab project as remote origin
 * Steps
+ * Open the project in GitLab and extract the `HTTPS` clone URL
  * Navigate into your local repository
- * Use `git@gitlab.localdomain:root/training.git`
+ * Use `git remote add origin <remoteurl>`
  * Push your local history
  * Use `--set-upstream` to enable the local branch tracking the remote repository 
 * Bonus
@@ -249,10 +160,11 @@ the changes to the Git repository.
 
 ****
 
+* Open the project in GitLab and extract the `HTTPS` clone URL
 * Navigate into your local repository
-* Use `` <------ TODO as remote origin URL
+* Use `git remote add origin <remoteurl>`
 * Push your local history
-* Use `--set-upstream` to enable the local branch following the remote repository
+* Use `--set-upstream` to enable the local branch tracking the remote repository 
 
 ## Bonus:
 
@@ -272,7 +184,7 @@ the changes to the Git repository.
 
     @@@ Sh
     $ cd $HOME/training.git
-    $ git remote add origin git@localhost:/opt/git/training.git <---- TODO
+    $ git remote add origin https://[...].nws.netways.de/root/training.git
     $ git fetch
 
 ### Push the history
@@ -281,7 +193,7 @@ the changes to the Git repository.
     $ git push
 
 This will not work since the local branch does not follow the remote branch.
-Use `--set-upstream` as proposed by the cli output.
+Use `--set-upstream` as proposed by the cli output. Short form is `-u`.
 
     @@@ Sh
     $ git push --set-upstream origin master
