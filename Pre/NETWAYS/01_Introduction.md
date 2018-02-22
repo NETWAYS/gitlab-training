@@ -32,10 +32,13 @@
 <center><img src="../../_images/netways/NETWAYS_Customers_Hosting.png" style="width:800px;height:330px;" alt="NETWAYS Technologies"/></center>
 
 
-!SLIDE noprint center
+!SLIDE noprint smbullets
 # NETWAYS Events
 
-<center><img src="../../_images/osmc/osmc_logo_2017_transparent_500x230.png" style="width:500px;height:230px;" alt="OSMC 2017"/></center>
+* **OSMC** - Open Source Monitoring Conference
+* **OSDC** - Open Source Datacenter Conference
+* **OSBConf** - Open Source Backup Conference
+* Camps
 
 
 !SLIDE noprint smbullets
