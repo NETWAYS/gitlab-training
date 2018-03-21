@@ -14,7 +14,7 @@ Vagrant.configure("2") do |config|
   config.vm.network "private_network", ip: "192.168.56.101"
   # config.vm.synced_folder "../data", "/vagrant_data"
   config.vm.provider :parallels do |p, override|
-    p.name = "GitLab Training"
+    p.name = "gitlab"
     p.update_guest_tools = true
     p.optimize_power_consumption = false
     p.memory = 2048
@@ -27,7 +27,7 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.provider "virtualbox" do |vb, override|
-    vb.name = "GitLab Training"
+    vb.name = "gitlab"
     vb.customize ["modifyvm", :id, "--memory", "1024"]
     vb.customize ["modifyvm", :id, "--cpus", "2"]
   end
