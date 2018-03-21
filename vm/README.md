@@ -12,3 +12,11 @@ vagrant halt
 - Export via VirtualBox GUI.
 - Store as `gitlab.ova` and sync to the provisioner share.
 - Let Foreman handle the rest.
+
+# Details
+
+192.168.56.101 - gitlab.localdomain
+
+root/password as login.
+
+GitLab CI Runner and Docker pre-installed.
