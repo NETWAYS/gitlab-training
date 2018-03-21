@@ -1,6 +1,7 @@
 #!/bin/bash
 
-$GITLAB_URL = "http://gitlab.localdomain"
+# Keep in sync with https://git.netways.org/netways-training/provision-puppet-modules/blob/master/training/manifests/git.pp
+GITLAB_URL="http://gitlab.localdomain"
 
 # https://about.gitlab.com/installation/?version=ce
 
@@ -48,5 +49,5 @@ apt-get -y install docker-ce
 
 # GitLab Runner
 curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh | sudo bash
-apt-get -< install gitlab-runner
+apt-get -y install gitlab-runner
 
