@@ -1,25 +1,43 @@
+# GitLab Training
 
+## Environment
 
-# Docker Container
+The training material focuses on https://nws.netways.de where every attendee
+gets their own GitLab instance.
 
-    ./start-showoff.sh
+The [vm/](vm/) directory provides a fallback VM which can be exported
+from Vagrant/VirtualBox and is provisioned onto the training notebook @NETWAYS.
 
+## Trainer Instructions
 
-## Build Static HTML
+### Docker Container
 
-    docker exec -ti showoff bash
+```
+./start-showoff.sh
+```
 
-    showoff static print
+#### Build Static HTML
+
+```
+docker exec -ti showoff bash
+```
+
+```
+showoff static print
 
 or
-    showoff static supplemental exercises
-    showoff static supplemental solutions
 
-## Convert HTML to PDF
+showoff static supplemental exercises
+showoff static supplemental solutions
+```
+
+#### Convert HTML to PDF
 
 On MacOS:
 
-    brew cask install wkhtmltopdf
+```
+brew cask install wkhtmltopdf
 
-    wkhtmltopdf -s A5 --print-media-type --footer-left [page] --footer-right '© NETWAYS' static/index.html git.pdf
-    open git.pdf
+wkhtmltopdf -s A5 --print-media-type --footer-left [page] --footer-right '© NETWAYS' static/index.html git.pdf
+open git.pdf
+```
