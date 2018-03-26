@@ -1,15 +1,15 @@
 {
-  "name": "Git",
-  "date": "2017",
-  "location": "Everywhere",
-  "author": "NETWAYS GmbH",
-  "release": "1.2",
+  "name": "GitLab",
+  "date": "2018",
+  "location": "Nuremberg",
+  "author": "Michael Friedrich",
+  "release": "2.0.0",
 
   "favicon": "image/global/favicon.png",
 
   "protected": ["presenter", "onepage", "print"],
-  "user": "git",
-  "password": "netwaysr0xx",
+  "user": "netways",
+  "password": "awesome",
 
   "templates":{
     "default":"global/templates/default.tpl"
