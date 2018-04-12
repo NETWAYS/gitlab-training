@@ -42,6 +42,7 @@ environment.
 * Objective:
  * Show the current branch
 * Steps:
+ * Change into `$HOME/training`
  * Use `git branch` to highlight the current branch
 
 ~~~SECTION:handouts~~~
@@ -62,6 +63,7 @@ environment.
 
 ****
 
+* Change into `$HOME/training`
 * Use `git branch` to highlight the current branch
 
 
@@ -76,6 +78,8 @@ environment.
 ### Example
 
     @@@ Sh
+    $ cd $HOME/training
+
     $ git branch
     * master
 
@@ -86,11 +90,12 @@ environment.
 * Objective:
  * Create and checkout a new branch
 * Steps:
- * Create a new branch `feature/docs` from the current master branch
+ * Change into `$HOME/training`
+ * Create a new branch `feature/docs` based off `master` with `git branch feature/docs master`
  * List the branches with `git branch`
  * Checkout the new branch with `git checkout feature/docs`
 * Bonus:
- * Verify how `git checkout -b` works
+ * Verify how `git checkout -b feature/docs2` works
  * Explain how it helps here
 
 ~~~SECTION:handouts~~~
@@ -111,13 +116,14 @@ environment.
 
 ****
 
-* Create a new branch `feature/docs` from the current master branch
+* Change into `$HOME/training`
+* Create a new branch `feature/docs` based off `master` with `git branch feature/docs master`
 * List the branches with `git branch`
 * Checkout the new branch with `git checkout feature/docs`
 
 ## Bonus:
 
-* Verify how `git checkout -b` works
+* Verify how `git checkout -b feature/docs2` works
 * Explain how it helps here
 
 ****
@@ -133,6 +139,8 @@ environment.
 ### Create the branch
 
     @@@ Sh
+    $ cd $HOME/training
+
     $ git branch feature/docs master
 
 ### List the branches
@@ -158,7 +166,7 @@ when working with branches quite often.
 
     @@@ Sh
     $ git checkout master
-    $ git checkout -b fix/docs
+    $ git checkout -b feature/docs2
 
 
 !SLIDE smbullets
@@ -167,8 +175,9 @@ when working with branches quite often.
 * Objective:
  * Delete the previously created branch
 * Steps:
+ * Change into `$HOME/training`
  * Switch to the master branch
- * Use `git branch -D` to delete the selected branch
+ * Use `git branch -d` to delete the selected branch
 * Bonus:
  * Try to delete the branch you are currently on
 
@@ -190,8 +199,9 @@ when working with branches quite often.
 
 ****
 
+* Change into `$HOME/training`
 * Switch to the master branch
-* Use `git branch -D` to delete the selected branch
+* Use `git branch -d feature/docs2` to delete the selected branch
 
 ## Bonus:
 
@@ -210,16 +220,18 @@ when working with branches quite often.
 ### Checkout the master branch
 
     @@@ Sh
+    $ cd $HOME/training
+
     $ git checkout master
 
 ### Delete the previously created branch
 
     @@@ Sh
-    $ git branch -D feature/docs
+    $ git branch -d feature/docs2
 
 ### Try to delete the current branch
 
     @@@ Sh
     $ git checkout master
-    $ git branch -D master
+    $ git branch -d master
 
