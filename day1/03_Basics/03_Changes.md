@@ -2,25 +2,27 @@
 # Work on current changes
 
 * `git add`
-  * Add file(s) to current change index.
+  * Add (modified) file(s) from the working directory into the staging index.
 * `git mv`
   * Rename file(s) tracked by Git.
 * `git reset`
-  * Reset the current HEAD, discard changes.
+  * Reset files added to the staging index.
+  * `--soft` keeps the changes (default), `--hard` removes them indefinitely.
 * `git rm`
-  * Remove the file(s) from working tree and git index.
+  * Remove the file(s) from working tree and Git repository.
+  * Note that file(s) will be visible in Git history, and can be restored from it.
 
 ~~~SECTION:handouts~~~
 
 ****
 
-`git add` will add the file(s) and their content to the current change index
+`git add` will add the file(s) and their content to the staging index
 waiting for the commit.
 
 `git mv` renames an existing file tracking the change for the commit. If you
 manually move the file, you will need to rm and add it again.
 
-`git reset` resets the current HEAD to the specified state.
+`git reset` resets files added to the staging index.
 
 `git rm` removes the file from the working tree and also from the git index.
 
@@ -82,16 +84,14 @@ in every project. This gets rendered by GitHub/GitLab in readable HTML.
 
 ~~~ENDSECTION~~~
 !SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Move a file
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Reset File from Staging Index
 
 * Objective:
- * Move a file with git
+ * Reset file from staging index
 * Steps:
- * Use `touch authors` and add the file to the staging index
- * Verify it with `git status`
- * Use `git mv` to move `authors` into `AUTHORS`
-* Next steps:
- * Verify the change with `git status`
+ * Remove the previously added `README.md` file from the staging index with `git reset --soft README.md`
+ * Verify it with `git status` and explain what happened.
+ * Re-add the `README.md` and examine again with `git status`.
 
 ~~~SECTION:handouts~~~
 
@@ -100,37 +100,40 @@ in every project. This gets rendered by GitHub/GitLab in readable HTML.
 ~~~ENDSECTION~~~
 
 !SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Move a file
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Reset File from Staging Index
 
-## Objective: Move a file with git
+## Objective: Reset File from Staging Index
 ****
 
-* Move a file with git
+* Reset file from staging index
+
 
 ## Steps:
 
 ****
 
-* Use `touch authors` and add the file to the staging index
-* Verify it with `git status`
-* Use `git mv` to move `authors` into `AUTHORS`
-* Verify the change with `git status`
-
+* Remove the previously added `README.md` file from the staging index with `git reset --soft README.md`
+* Verify it with `git status` and explain what happened.
+* Re-add the `README.md` and examine again with `git status`.
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
 ****
 
-## Move a file
+## Remove file from staging index.
 
 ****
 
 ### Example
 
     @@@ Sh
-    $ touch authors
-    $ git add authors
     $ git status
-    $ git mv authors AUTHORS
+
+    $ git reset --soft README.md
+
+    $ git status
+
+    $ git add README.md
+
     $ git status
 
