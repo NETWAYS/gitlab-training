@@ -51,7 +51,7 @@ Example:
  * Use `git config --global user.name "Your Name"`
  * Use `git config --global user.email "name@domain.com"`
 * Next steps:
- * Verify the changes with `git config --list`
+ * Verify the changes with `git config --global --list`
 
 
 !SLIDE supplemental exercises
@@ -68,7 +68,7 @@ Example:
 
 * Use `git config --global user.name "Your Name"`
 * Use `git config --global user.email "name@domain.com"`
-* Verify the changes with `git config --list`
+* Verify the changes with `git config --global --list`
 
 
 !SLIDE supplemental solutions
@@ -92,7 +92,7 @@ Example:
 ### Verification
 
     @@@ Sh
-    $ git config --list
+    $ git config --global --list
 
 In addition to that you can open the `.gitconfig` file in your $HOME directory.
 
@@ -100,5 +100,5 @@ In addition to that you can open the `.gitconfig` file in your $HOME directory.
 
 ### Notes
 
-You can also use `git config --list` to list all configured options.
+You can also use `git config --global --list` to list all configured options.
 
