@@ -94,8 +94,11 @@ for integrating and sharing code changes between repositories.
 
 * Objective:
  * Clone the training repository twice and add diverging commits
+* Steps:
+ * Clone the `training.git` repository into `$HOME/training1`
+ * Clone the `training.git` repository into `$HOME/training2`
 * Steps for both:
- * Clone the `training.git` repository
+ * Change into each directory
  * Add/modify a file and commit the change
  * Push your change to the remote repository
 * Next steps:
@@ -114,9 +117,14 @@ for integrating and sharing code changes between repositories.
 
 ****
 
+* Clone the `training.git` repository into `$HOME/training1`
+* Clone the `training.git` repository into `$HOME/training2`
+
+Add the directory destination after the Git clone URL.
+
 Repeat the steps 2 times:
 
-* Clone the `training.git` repository
+* Change into each directory
 * Add/modify a file and commit the change
 * Push your change to the remote repository
 
@@ -131,10 +139,11 @@ Repeat the steps 2 times:
 
 ### Clone the central repository
 
-The last parameter specifies the target directory `training-global1`.
+The last parameter specifies the target directory `training1`.
 
     @@@ Sh
-    $ git clone git@localhost:/opt/git/training.git training-collab1
+    $ cd $HOME
+    $ git clone https://[...].nws.netways.de/root/training.git training1
 
 ### Add/modify a file
 
@@ -152,12 +161,13 @@ The last parameter specifies the target directory `training-global1`.
     @@@ Sh
     $ git push origin master
 
-### Repeat these steps with training-collab2
+### Repeat these steps with training2
 
-The last parameter specifies the target directory `training-global2`.
+The last parameter specifies the target directory `training2`.
 
     @@@ Sh
-    $ git clone git@localhost:/opt/git/training.git training-collab2
+    $ cd $HOME
+    $ git clone https://[...].nws.netways.de/root/training.git training2
 
 
 !SLIDE smbullets noprint
@@ -191,12 +201,15 @@ The last parameter specifies the target directory `training-global2`.
 * Objective:
  * Rebase your local history with the remote repository
 * Steps:
- * Reset the local history by 2 commits (or where you've edited README.md last)
+ * Change into `$HOME/training`
+ * Reset the local history by 2 commits with `git reset --hard HEAD~2`
  * Update and commit README.md
- * Fetch the remote repository
- * Rebase the master branch against remote `origin/master`
- * Resolve possible merge conflicts
+ * Fetch the remote repository and use `git diff origin/master` to compare the changes
+ * Rebase the master branch against the remote master branch with `git rebase origin/master`
+ * Resolve possible merge conflicts, add them and continue with `git rebase --continue`
  * Push your rebased history
+
+Hint: `>>>` marks conflicts and show the differences on merge.
 
 ~~~SECTION:handouts~~~
 
@@ -227,13 +240,13 @@ instead of generating a merge commit.
 
 ****
 
-* Reset the local history by 2 commits (or where you've edited README.md last)
+* Change into `$HOME/training`
+* Reset the local history by 2 commits with `git reset --hard HEAD~2`
 * Update and commit README.md
-* Fetch the changes
-* Rebase the master branch against remote `origin/master`
-* Resolve possible merge conflicts
+* Fetch the remote repository and use `git diff origin/master` to compare the changes
+* Rebase the master branch against the remote master branch with `git rebase origin/master`
+* Resolve possible merge conflicts, add them and continue with `git rebase --continue`
 * Push your rebased history
-
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
@@ -246,7 +259,7 @@ instead of generating a merge commit.
 ### Reset the history by 2 commits
 
     @@@ Sh
-    $ git reset --hard HEAD^^
+    $ git reset --hard HEAD~2
 
 ### Update and commit README.md
 
@@ -258,10 +271,12 @@ instead of generating a merge commit.
     $ git add README.md
     $ git commit -v README.md "Rebase test"
 
-### Fetch the remote changes
+### Fetch and diff the remote changes
 
     @@@ Sh
     $ git fetch
+
+    $ git diff origin/master
 
 ### Rebase your local history
 
