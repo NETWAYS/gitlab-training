@@ -11,6 +11,7 @@
 * `git diff`
   * Show changes between working tree and last commit.
   * Supports source and target parameters.
+  * Can be used to compare 2 commit ids, branches, etc.
 
 ~~~SECTION:handouts~~~
 
@@ -33,6 +34,8 @@ also compare specific commits.
 * Objective:
  * Examine the commit history
 * Steps:
+ * Change into `$HOME/training`
+ * Add and commit remaining changes e.g. `.gitignore`
  * Use `git log` to print the current history
  * Use `git show` to show specific commits (defaults to the latest)
  * Use `git diff` to compare changes between specific revisions
@@ -55,6 +58,8 @@ also compare specific commits.
 
 ****
 
+* Change into `$HOME/training`
+* Add and commit remaining changes e.g. `.gitignore`
 * Use `git log` to print the current history
 * Use `git show` to show specific commits (defaults to the latest)
 * Use `git diff` to compare changes between specific revisions
@@ -66,6 +71,15 @@ also compare specific commits.
 ## Examine the Commit History
 
 ****
+
+### Add and commit remaining changes
+
+    @@@ Sh
+    $ cd $HOME/training
+
+    $ git status
+    $ git add .gitignore
+    $ git commit -v .gitignore -m "Add .gitignore file"
 
 ### Use git log
 
@@ -93,7 +107,7 @@ also compare specific commits.
 * `tig` helps visualize history and branches
 * Inspect specific commits while scrolling
 
-<center><img src="../../_images/commits/git_history_tig.png"  style="width: 600px;" alt="Tig"/></center>
+<center><img src="../../_images/commits/git_history_tig.png"  style="width: 800px;" alt="Tig"/></center>
 
 !SLIDE smbullets printonly
 # Advanced history with tig
@@ -115,8 +129,12 @@ also compare specific commits.
 * Objective:
  * Install and use tig
 * Steps:
- * Install the tig package
- * Run tig in your git repository directory
+ * Install the `tig` package
+ * Run tig in `$HOME/training`
+ * Clone a different repository and run tig there e.g. `$HOME/icinga2`
+* Next steps:
+ * Select a line and press `Enter`
+ * `q` quits the detail view and the application
 
 ~~~SECTION:handouts~~~
 
@@ -137,7 +155,15 @@ also compare specific commits.
 ****
 
 * Install the tig package
-* Run tig in your git repository directory
+* Run tig in `$HOME/training`
+* Clone a different repository and run tig there e.g. `$HOME/icinga2`
+
+## Next Steps:
+
+****
+
+* Select a line and press `Enter`
+* `q` quits the detail view and the application
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
@@ -164,5 +190,9 @@ Debian/Ubuntu
 ### Use tig
 
     @@@ Sh
+    $ cd $HOME/training
     $ tig
 
+    @@@ Sh
+    $ cd $HOME/icinga2
+    $ tig
