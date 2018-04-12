@@ -3,8 +3,12 @@
 
 * `git status`
   * Show current working tree status.
+  * `Untracked` files and added to staging area.
+  * Modifications
 * `git diff`
   * Compare changes between working tree and latest commit.
+
+Later we will learn how to compare specific commits and branches too.
 
 ~~~SECTION:handouts~~~
 
@@ -25,6 +29,7 @@ also compare specific commits.
 * Objective:
  * Examine current changes
 * Steps:
+ * Change into `$HOME/training`
  * Edit README.md and add notes
  * Use `git status` to see unstaged changes
  * Add the changed files to the staging area
@@ -46,6 +51,7 @@ also compare specific commits.
 
 ## Steps:
 
+* Change into `$HOME/training`
 * Edit README.md
 * Use `git status` to see unstaged changes
 * Add the changed files to the staging area
@@ -63,13 +69,14 @@ also compare specific commits.
 ### Change files
 
     @@@ Sh
+    $ cd $HOME/training
+
     $ vim README.md
     # Git Training Notes
 
     I've learned about `git add` already.
 
     ```
-    git add -A
     git status
     ```
 
@@ -98,8 +105,9 @@ You'll recognize the unstaged changes compared to your staging area.
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Use Git Diff
 
 * Objective:
- * Play with `git diff`
+ * Use `git diff`
 * Steps:
+ * Change into `$HOME/training`
  * Edit README.md
  * Use `git diff` to compare unstaged changes
  * Add the changed file to the staging area
@@ -118,10 +126,11 @@ You'll recognize the unstaged changes compared to your staging area.
 ## Objective: Play with Git Diff
 ****
 
-* Play with `git diff`
+* Use `git diff`
 
 ## Steps:
 
+* Change into `$HOME/training`
 * Edit README.md
 * Use `git diff` to compare unstaged changes
 * Add the changed file to the staging area
