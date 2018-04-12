@@ -2,10 +2,15 @@
 # Work on Git History
 
 * `git commit`
- * Specific changes added to the changing index
- * All changes (`-a`)
+ * Selected changes from the staging index
+ * All changes (`-a`) not necessarily added to the staging index
 * Verbose mode shows changes compared to latest commit (`-v`)
 * Uses the configured editor (vim, nano, etc.)
+ * `-m` allows for a short commit message without editor view
+
+Commits use the `user.name` and `user.email` settings to qualify
+you as the author of this change. In addition to that the date
+and time is stored.
 
 ~~~SECTION:handouts~~~
 
@@ -24,7 +29,8 @@ requiring you to add a commit message.
 * Objective:
  * Modify files and commit your changes
 * Steps:
- * Modify README.md
+ * Change into `$HOME/training`
+ * Modify the `README.md` file and add more docs
  * Add the change to the changing index
  * Commit the change to your Git history with `git commit -v README.md`
 * Next steps:
@@ -48,8 +54,9 @@ requiring you to add a commit message.
 
 ****
 
-* Modify README.md
-* Add the change to the changing index
+* Change into `$HOME/training`
+* Modify the `README.md` file and add more docs
+* Add the change to the staging index
 * Commit the change to your Git history with `git commit -v README.md`
 
 ## Next steps:
@@ -70,9 +77,11 @@ requiring you to add a commit message.
 ### Add/modify file
 
     @@@ Sh
+    $ cd $HOME/training
+
     $ vim README.md
 
-    `git commit` also has `-a` which is evil.
+    `git commit` also has `-a` which should be used with care.
 
     $ git add README.md
 
