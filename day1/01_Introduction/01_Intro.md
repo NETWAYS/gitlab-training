@@ -31,7 +31,7 @@ systems which store the file revisions in a database.
 # Centralized VCS
 
 * Multiple computers required file revisions
-* CSV, Subversion
+* CVS, Subversion
 * What happens if the server is down?
 
 <center><img src="../../_images/introduction/git_introduction_cvcs_01.png" alt="CVCS"/></center>
