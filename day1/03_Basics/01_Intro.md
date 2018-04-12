@@ -2,13 +2,7 @@
 # ~~~SECTION:MAJOR~~~ Git Basics
 
 !SLIDE smbullets
-# Git Commands
-
-* `git` cli command
-* sub commands for specific actions
-
-!SLIDE smbullets
-# Command Overview
+# Git Command Overview
 
 * Start a working area (clone, init)
 * Work on current changes (add, reset)
