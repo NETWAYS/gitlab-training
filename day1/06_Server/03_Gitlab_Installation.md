@@ -4,7 +4,7 @@
 This training focuses on a pre-installed GitLab instance.
 
 Each user gets access to NWS - https://nws.netways.de
-and an GitLab CE app.
+and a GitLab CE app.
 
 GitLab supports working with
 
@@ -27,7 +27,7 @@ handout.
 * Objective:
  * Create a new GitLab app in NWS
 * Steps:
-  * Navigate to https://nws.netways.de and register a trial account
+  * Navigate to https://nws.netways.de and register a trial account if not existing
   * Choose Apps > GitLab CE > Basic
   * Deploy the app
   * Choose Live View and set a secure password for the `root` user.
@@ -52,7 +52,7 @@ handout.
 
 ****
 
-* Navigate to https://nws.netways.de and register a trial account
+* Navigate to https://nws.netways.de and register a trial account if not existing
 * Choose Apps > GitLab CE > Basic
 * Deploy the app
 * Choose Live View and set a secure password for the `root` user.

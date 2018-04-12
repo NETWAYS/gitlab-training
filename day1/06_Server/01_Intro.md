@@ -21,7 +21,12 @@ and addons out there.
 * gitolite
 
 In case you don't want to host your own Git server,
-there are public services such as GitHub, GitLab or Bitbucket.
+there are open source and enterprise hosting options available.
+
+NETWAYS also provides GitLab hosting services:
+
+* https://www.netways.de/managed_hosting/gitlab_ce_hosting/
+* https://nws.netways.de/products/gitlab-ce
 
 ~~~ENDSECTION~~~
 !SLIDE smbullets
@@ -39,47 +44,38 @@ there are public services such as GitHub, GitLab or Bitbucket.
 
 ****
 
-There is a variety of Git server tools, web interfaces
-and addons out there.
-
-* GitLab
-* gitosis
-* gitolite
-
-In case you don't want to host your own Git server,
-there are public services such as GitHub, GitLab or Bitbucket.
 
 ~~~ENDSECTION~~~
 
 !SLIDE smbullets noprint
+# GitLab
+
+<center><img src="../../_images/server/git_server_gitlab.png" style="width: 800px;" alt="GitLab"/></center>
+
+!SLIDE smbullets printonly
+# GitLab
+
+<center><img src="../../_images/server/git_server_gitlab.png" style="width:480px;height:260px" alt="GitLab"/></center>
+!SLIDE smbullets noprint
 # GitHub
 
-<center><img src="../../_images/server/git_server_github.png" style="width: 600px;" alt="GitHub"/></center>
+<center><img src="../../_images/server/git_server_github.png" style="width: 800px;" alt="GitHub"/></center>
 
 !SLIDE smbullets printonly
 # GitHub
 
 <center><img src="../../_images/server/git_server_github.png" style="width:480px;height:260px" alt="GitHub"/></center>
 
-!SLIDE smbullets noprint
-# GitLab
-
-<center><img src="../../_images/server/git_server_gitlab.png" style="width: 600px;" alt="GitLab"/></center>
-
-!SLIDE smbullets printonly
-# GitLab
-
-<center><img src="../../_images/server/git_server_gitlab.png" style="width:480px;height:260px" alt="GitLab"/></center>
 
 !SLIDE smbullets
 # Git Server Protocol
 
-* Local protocol
-  * `file:///opt/git/repo.git`
+* Read/write access via SSH
+  * `git@github.com:username/repo.git`
+* HTTPS protocol (write access via oauth tokens)
+  * `https://my-gitlab.nws.netways.de/username/repo.git`
 * Git protocol
   * `git://domain.com/repo.git`
-* Read/write access via SSH
-  * `git@domain.com:repo.git`
-* HTTPS protocol (write access via oauth tokens)
-  * `https://github.com/NETWAYS/graphing-training.git`
+* Local protocol
+  * `file:///opt/git/repo.git`
 

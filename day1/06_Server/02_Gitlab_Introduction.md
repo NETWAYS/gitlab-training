@@ -11,6 +11,10 @@ system.
 * Merge, review, report
 * Continuous integration (CI)
 
+Hosted: https://www.netways.de/managed_hosting/gitlab_ce_hosting/
+
+NWS: https://nws.netways.de/products/gitlab-ce
+
 ~~~SECTION:handouts~~~
 
 ****
@@ -38,21 +42,6 @@ Comparison: https://about.gitlab.com/images/feature_page/gitlab-features.pdf
 
 The source code is publicly available for both editions.
 You'll need a valid license for running EE in production.
-
-~~~ENDSECTION~~~
-
-
-!SLIDE smbullets
-# GitLab Deployment
-
-* Self-hosted
-* gitlab.com Cloud
-* nws.netways.de Cloud
-
-
-~~~SECTION:handouts~~~
-
-****
 
 ~~~ENDSECTION~~~
 

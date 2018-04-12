@@ -8,8 +8,9 @@
 You can also start fresh without any local repository
 and clone that from remote.
 
-For training purposes we've started to work offline and
-learn the Git basics before diving into remote workflows.
+For training purposes we've started to work offline in `$HOME/training`.
+Now we want to publish the local commits to a newly created Git repository
+in GitLab.
 
 ~~~SECTION:handouts~~~
 
@@ -26,6 +27,8 @@ learn the Git basics before diving into remote workflows.
   * NWS apps come pre-defined with HTTPS clone/fetch only.
 * New GitLab repository for this user
 * Configure local repository for the remote server
+
+
 
 ~~~SECTION:handouts~~~
 
@@ -114,7 +117,7 @@ other options as default.
 
 ### Project View
 
-You'll notice the `iHTTPS` URL centered below the project name.
+You'll notice the `HTTPS` URL centered below the project name.
 
 We will be using this remote URL for connecting our local repository
 in the next step.
@@ -124,6 +127,60 @@ GitLab offers you to add new files, e.g. a README.md file or LICENSE details
 directly in the browser. In the background, it is still comitting
 the changes to the Git repository.
 
+
+
+!SLIDE smbullets
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Configure Client Credentials Helper
+
+* Objective:
+ * Configure client credentials helper
+* Steps:
+ * Run `git config --global --get credential.helper`
+ * Verify that it is set to `/usr/libexec/git-core/git-credential-gnome-keyring` on CentOS 7
+
+More details can be found in your NWS GitLab app in the FAQ section on top.
+
+~~~SECTION:handouts~~~
+
+****
+
+
+~~~ENDSECTION~~~
+
+!SLIDE supplemental exercises
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Configure client credentials helper
+
+## Objective: Configure client credentials helper
+****
+
+ * Configure client credentials helper
+
+## Steps:
+
+****
+
+* Run `git config --global --get credential.helper`
+* Verify that it is set to `/usr/libexec/git-core/git-credential-gnome-keyring` on CentOS 7
+
+
+!SLIDE supplemental solutions
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
+****
+
+## Configure client credentials helper
+
+****
+### Verify and set
+
+
+    @@@ Sh
+    $ git config --global --get credential.helper
+    /usr/libexec/git-core/git-credential-gnome-keyring
+
+If not set, you can set it explicitly.
+
+    @@@ Sh
+    $ git config --global credential.helper /usr/libexec/git-core/git-credential-gnome-keyring
 
 
 
@@ -137,7 +194,7 @@ the changes to the Git repository.
  * Navigate into your local repository
  * Use `git remote add origin <remoteurl>`
  * Push your local history
- * Use `--set-upstream` to enable the local branch tracking the remote repository 
+ * Use `--set-upstream` (short: `-u`) to enable the local branch tracking the remote repository 
 * Bonus
  * Set default push method to `simple`
 
@@ -164,7 +221,7 @@ the changes to the Git repository.
 * Navigate into your local repository
 * Use `git remote add origin <remoteurl>`
 * Push your local history
-* Use `--set-upstream` to enable the local branch tracking the remote repository 
+* Use `--set-upstream` (short: `-u`) to enable the local branch tracking the remote repository 
 
 ## Bonus:
 
