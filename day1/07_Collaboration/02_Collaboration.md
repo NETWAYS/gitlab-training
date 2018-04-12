@@ -2,13 +2,13 @@
 # Collaboration with others
 
 * `git fetch`
-  * Download only references from remote repository.
+  * Get the remote branch reference pointer to the latest commit and cache it locally.
 * `git pull`
-  * Fetch and update the local history from remote repository.
+  * Fetch and update the local history from remote repository. This pulls in source code changes and commits.
 * `git push`
-  * Update remote references and push local history to remote repository.
+  * Update remote references and push local history to remote repository. This pushes source code changes and commits.
 * `git remote`
-  * Configure/list remote repository (default `origin`).
+  * Configure/list remote repository URLs (default `origin`).
 
 ~~~SECTION:handouts~~~
 
@@ -30,8 +30,10 @@
 * Objective:
  * Learn more about git push
 * Steps:
- * Make changes (add, commit)
- * Push your changes
+ * Change into `$HOME/training`
+ * Edit `README.md` and add a note on `git push`
+ * Add and commit the changes
+ * Push the changes
 
 ~~~SECTION:handouts~~~
 
@@ -49,8 +51,10 @@
 
 ## Steps:
 
-* Make changes (add, commit)
-* Push your changes
+* Change into `$HOME/training`
+* Edit `README.md` and add a note on `git push`
+* Add and commit the changes
+* Push the changes
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
@@ -63,8 +67,15 @@
 ### Make changes
 
     @@@ Sh
-    $ echo -e '#!/bin/sh\necho "training test"' > git.sh
-    $ git add git.sh
+    $ cd $HOME/training
+    $ git checkout master
+
+    $ vim README.md
+
+    Now I know how to publish my changes to my NWS hosted GitLab server.
+
+    $ git add README.md
+    $ git commit -v README.md -m "Add docs for git push"
 
 ### Push changes
 
@@ -77,7 +88,7 @@
 * Objective:
  * Learn more about git fetch and git pull
 * Steps:
- * Reset your local commit history by one
+ * Reset your local commit history by one with `git reset --hard HEAD^`
  * Fetch and pull changes from remote
  * Explain the difference
 * Bonus:
@@ -99,7 +110,7 @@
 
 ## Steps:
 
-* Reset your local commit history by one
+* Reset your local commit history by one with `git reset --hard HEAD^`
 * Fetch and pull changes from remote
 * Explain the difference
 

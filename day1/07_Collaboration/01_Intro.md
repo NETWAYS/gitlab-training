@@ -7,6 +7,8 @@
 * Work locally
 * Push to remote repository
 * Share your work with others
+* Review, discuss, collaborate
+* Change, adopt, release
 
 ~~~SECTION:handouts~~~
 

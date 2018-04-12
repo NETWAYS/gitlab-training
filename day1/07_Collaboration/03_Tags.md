@@ -5,7 +5,7 @@
 * Add, list, delete
 * Push tags to remote repository
 * Checkout branches based on tags
-* Release software versions based on tags (e.g. v2.5.4)
+* Release software versions based on tags (e.g. v2.9.0)
 
 ~~~SECTION:handouts~~~
 
@@ -29,7 +29,8 @@ Example for checking out a tag into a new branch:
  * Use `git tag` and add the `v0.1` tag
  * Verify the added tag with `git tag -l`
 * Bonus:
- * Push tags to remote origin
+ * Add a tag description with `-m`
+ * Push tags to remote origin with `git push --tags`
 
 ~~~SECTION:handouts~~~
 
@@ -52,7 +53,7 @@ Example for checking out a tag into a new branch:
 
 ## Bonus:
 
-* Push tags to remote origin
+* Push tags to remote origin with `git push --tags`
 
 
 !SLIDE supplemental solutions
