@@ -1,11 +1,10 @@
 !SLIDE smbullets
 # Exclude files with .gitignore
 
-* Do not track files in your Git repository
-* Files already tracked by Git are not affected
-* Examples
- * Build directories from source code compilation
- * Files generated at runtime (e.g. test results or stats)
+* Build directories from source code compilation (e.g. `debug`, `release`)
+* Files generated at runtime (e.g. test results or stats)
+* User specific IDE settings
+* Local Vagrant boxes and other temporary files
 
 ~~~SECTION:handouts~~~
 
@@ -35,6 +34,7 @@ and not a global file, this will also work.
 * Objective:
  * Add .gitignore file and exclude files/directories
 * Steps:
+ * Change into `$HOME/training`
  * Create a file `generated.tmp`
  * Create a directory `debug` with the file `.timestamp`
  * Examine the state with `git status`
@@ -57,6 +57,7 @@ and not a global file, this will also work.
 
 ## Steps:
 
+* Change into `$HOME/training`
 * Create a file `generated.tmp`
 * Create a directory `debug` with the file `.timestamp`
 * Examine the state with `git status`
@@ -73,8 +74,13 @@ and not a global file, this will also work.
 
 ### Add file/directory
 
+Create a dummy file and directory which contains a file itself. This is
+for simulating unwanted files in the working directory.
+
     @@@ Sh
-    $ echo "temporary" > generated.tmp
+    $ cd $HOME/training
+
+    $ touch generated.tmp
     $ mkdir debug
     $ touch debug/.timestamp
 
