@@ -5,7 +5,7 @@
  * `git add` for all changes in a file
  * `git add -p` for interactive selection of changes in a file
 * `git commit <file1> <file2>`
-* Enable the verbose mode `-v` for the commit diff while editing
+* Enable the verbose mode `-v` to show the differences below the editor
 * `git commit` uses the `EDITOR` environment variable to detect your preferred editor
 
 ~~~SECTION:handouts~~~
@@ -18,26 +18,17 @@
 !SLIDE smbullets
 # Commit Message Overview
 
-* Pick a short telling subject (max. 80 characters)
+* Pick a short telling subject (max. 80-120 characters)
 * Add a new line
-* Add a body text explaining the issue (max. 80 characters in a line)
+* Add a body text explaining the issue (max. 80-120 characters in a line)
 * Optional: Add external reference markers, e.g. for ticket systems
 
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
-
-!SLIDE smbullets small
-# Commit Message Example
+Example:
 
     A short subject for the commit line
     <newline>
-    Some body text explaining the issue,
-    fix or feature. 80 characters max
-    width for better readability.
+    Some body text explaining the issue.
+    80-120 characters max width.
     <newline>
     refs #<ticketid>
 
@@ -47,3 +38,4 @@
 
 
 ~~~ENDSECTION~~~
+
