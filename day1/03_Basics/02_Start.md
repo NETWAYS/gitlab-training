@@ -85,6 +85,10 @@ called an `origin`.
  * Change into it
  * Run `git init`
 
+We will be working inside the `training` directory throughout the training
+unless noted otherwise.
+
+
 ~~~SECTION:handouts~~~
 
 ****
