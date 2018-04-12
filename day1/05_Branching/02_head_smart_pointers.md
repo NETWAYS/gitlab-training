@@ -22,6 +22,7 @@ This can be used for `git show`. More advanced techniques will be discussed late
 * Objective:
  * Use `HEAD` and only show the second latest commit.
 * Steps:
+ * Change into `$HOME/training`
  * Combine `git show` with `HEAD^` or `HEAD~1`
 
 ~~~SECTION:handouts~~~
@@ -42,6 +43,7 @@ This can be used for `git show`. More advanced techniques will be discussed late
 
 ****
 
+* Change into `$HOME/training`
 * Use `HEAD` and only show the second latest commit.
 
 
@@ -54,6 +56,9 @@ This can be used for `git show`. More advanced techniques will be discussed late
 ****
 
 ### Example
+
+    @@@ Sh
+    $ cd $HOME/training
 
     @@@ Sh
     $ git show HEAD^
@@ -69,13 +74,18 @@ or
 !SLIDE smbullets
 # Branches and "smart pointers"
 
-`feature/awesome` as branch name also points to the latest commit.
+`feature/docs` as branch name also points to the latest commit.
 
 You don't need to change branches to
 
-* show different branch histories.
-* show specific commits where you don't know the commit id.
-* compare branches and committed code.
+* show different branch histories
+* show specific commits where you don't know the commit id
+* compare branches and committed code
+
+Example:
+
+    $ git show feature/docs
+    commit b825ff86e4022a8fbcf52cb5a1d9a1984bd2a310 (feature/docs)
 
 ~~~SECTION:handouts~~~
 
@@ -86,12 +96,12 @@ You don't need to change branches to
 * Objective:
  * Use `git log` from the master branch on another branch
 * Steps:
- * Create a new branch aside from master, if not existing: `git branch -b feature/awesome`
+ * Create a new branch aside from master, if not existing: `git branch -b feature/docs`
  * Switch to the master branch
- * Use `git log feature/awesome`
+ * Use `git log feature/docs`
 * Bonus:
  * Modify and commit changes
- * Diff current HEAD against `feature/awesome` branch
+ * Diff current HEAD against `feature/docs` branch
 
 ~~~SECTION:handouts~~~
 
@@ -111,16 +121,16 @@ You don't need to change branches to
 
 ****
 
-* Create a new branch aside from master, if not existing: `git branch -b feature/awesome`
+* Create a new branch aside from master, if not existing: `git branch -b feature/docs`
 * Switch to the master branch
-* Use `git log feature/awesome`
+* Use `git log feature/docs`
 
 ## Bonus:
 
 ****
 
 * Modify and commit changes
-* Diff current HEAD against `feature/awesome` branch
+* Diff current HEAD against `feature/docs` branch
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
@@ -134,7 +144,7 @@ You don't need to change branches to
 
     @@@ Sh
     $ git checkout master
-    $ git checkout -b feature/awesome
+    $ git checkout -b feature/dpcs
 
 ### Switch to the master branch
 
@@ -144,7 +154,7 @@ You don't need to change branches to
 ### Show the history of the other branch
 
     @@@ Sh
-    $ git show feature/awesome
+    $ git show feature/docs
 
 ### Commit change on master
 
@@ -156,4 +166,4 @@ You don't need to change branches to
 ### Show diff between HEAD and branch
 
     @@@ Sh
-    $ git diff HEAD feature/awesome
+    $ git diff HEAD feature/docs
