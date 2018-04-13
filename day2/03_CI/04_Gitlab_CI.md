@@ -105,27 +105,6 @@ https://docs.gitlab.com/ce/administration/container_registry.html
 
 
 !SLIDE smbullets
-# GitLab CI: Docker, Containers - what's that?
-
-docker.com:
-
-"Docker is an open platform for developers and sysadmins to build, ship, and run distributed applications. Consisting of Docker Engine, a portable, lightweight runtime and packaging tool, and Docker Hub, a cloud service for sharing applications and automating workflows, Docker enables apps to be quickly assembled from components and eliminates the friction between development, QA, and production environments. As a result, IT can ship faster and run the same app, unchanged, on laptops, data center VMs, and any cloud."
-
-
-
-~~~SECTION:handouts~~~
-
-****
-
-Documentation References:
-
-
-https://docs.docker.com
-
-
-~~~ENDSECTION~~~
-
-!SLIDE smbullets
 # GitLab CI: Docker, Containers - how to use it
 
 * Run an application in an isolated environment
@@ -306,9 +285,9 @@ Start CLI
 !SLIDE smbullets
 # GitLab CI: Configuration in .gitlab-ci.yml
 
-* image
-* services
-* all_tests
+* `image` as container base image
+* `services` which should be running
+* `all_tests` as job name
 
 Example:
 
@@ -337,7 +316,7 @@ https://about.gitlab.com/2016/03/01/gitlab-runner-with-docker/
 * Steps:
  * Create the `.gitlab-ci.yml` file in the `training` directory (vim, nano, etc.)
  * Add `image: alpine/latest` to specify base image
- * `all_tests` specifies `script` as array element, which itself runs `exit 1`
+ * Add job `all_tests` with `script` as array element, which itself runs `exit 1`
 
 
 
@@ -359,7 +338,7 @@ https://about.gitlab.com/2016/03/01/gitlab-runner-with-docker/
 
 * Create the `.gitlab-ci.yml` file in the `training` directory (vim, nano, etc.)
 * Add `image: alpine/latest` to specify base image
-* `all_tests` specifies `script` as array element, which itself runs `exit 1`
+* Add job `all_tests` with `script` as array element, which itself runs `exit 1`
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
@@ -372,7 +351,7 @@ https://about.gitlab.com/2016/03/01/gitlab-runner-with-docker/
 ### Create CI configuration file
 
     @@@ Sh
-    $ cd training
+    $ cd $HOME/training
     $ vim .gitlab-ci.yml
 
     image: alpine:latest
@@ -597,7 +576,7 @@ Example:
 * Objective:
  * Create HTML docs from Markdown
 * Steps:
- * Add a new section `markdown` after the `all_tests` section
+ * Add a new job `markdown` after the `all_tests` job
  * Add `script` and convert `README.md` to `README.html` using Python
  * Add `archifacts` with `paths` pointing to `README.html`. Expires in `1 week`.
  * Commit and push the changes
@@ -629,7 +608,7 @@ Example:
 
 ## Steps:
 
-* Add a new section `markdown` after the `all_tests` section
+* Add a new job `markdown` after the `all_tests` job
 * Add `script` and convert `README.md` to `README.html` using Python
 * Add `archifacts` with `paths` pointing to `README.html`. Expires in `1 week`.
 * Commit and push the changes
