@@ -96,7 +96,7 @@ Example:
 * Objective:
  * Use `git log` from the master branch on another branch
 * Steps:
- * Create a new branch aside from master, if not existing: `git branch -b feature/docs`
+ * Create a new branch aside from master, if not existing: `git checkout -b feature/docs`
  * Switch to the master branch
  * Use `git log feature/docs`
 * Bonus:
@@ -121,7 +121,7 @@ Example:
 
 ****
 
-* Create a new branch aside from master, if not existing: `git branch -b feature/docs`
+* Create a new branch aside from master, if not existing: `git checkout -b feature/docs`
 * Switch to the master branch
 * Use `git log feature/docs`
 
