@@ -31,6 +31,7 @@
 # Gitflow Workflow - Historical Branches
 
 * Master branch for release history (including version tags)
+* Master branch is always `stable` and in production
 * Develop branch for feature integration
 
 <center><img src="../../_images/workflows/git_gitflow_workflow_02.png" alt="Gitflow Workflow"/></center>
@@ -39,6 +40,7 @@
 # Gitflow Workflow - Historical Branches
 
 * Master branch for release history (including version tags)
+* Master branch is always `stable` and in production
 * Develop branch for feature integration
 
 <center><img src="../../_images/workflows/git_gitflow_workflow_02.png" style="width:480px;height:177px" alt="Gitflow Workflow"/></center>
