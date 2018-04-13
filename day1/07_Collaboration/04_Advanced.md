@@ -39,7 +39,7 @@ stages, `git stash list` will list them.
  * Examine the status with git status
  * Stash your current changes to the working directory
  * Run git status again
- * Examine the stash with `git stash list`
+ * Examine the stash with `git stash list` and `git stash show -p`
  * Fetch the previously stashed changes with `git stash pop`
 
 ~~~SECTION:handouts~~~
@@ -63,7 +63,7 @@ stages, `git stash list` will list them.
 * Examine the status with git status
 * Stash your current changes to the working directory
 * Run git status again
-* Examine the stash with `git stash list`
+* Examine the stash with `git stash list` and `git stash show -p`
 * Fetch the previously stashed changes with `git stash pop`
 
 !SLIDE supplemental solutions
@@ -107,6 +107,22 @@ stages, `git stash list` will list them.
     @@@ Sh
     $ git stash list
     stash@{0}: WIP on master: 31dcde5 Add docs for git push
+
+    @@@ Sh
+    $ git stash show -p
+
+    diff --git a/README.md b/README.md
+    index 2081a37..550db95 100644
+    --- a/README.md
+    +++ b/README.md
+    @@ -15,3 +15,7 @@ Now for real.
+     ```
+     git commit --amend
+     ```
+    +
+    +## Git Stash
+    +
+    +`git stash`
 
 ### Fetch previously stashed changes
 
