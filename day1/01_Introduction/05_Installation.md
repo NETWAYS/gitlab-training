@@ -152,3 +152,54 @@ Files can be downloaded from http://localhost:9090/download
     $ source $HOME/.bashrc
 
 
+!SLIDE smbullets
+# More Git Shell Integrations
+
+* Powerline Shell
+
+<img src="../../_images/introduction/git_shell_powerline.png" alt="Powerline Shell Integration"/>
+
+* Windows Powershell: git-posh
+
+<img src="../../_images/introduction/git_shell_powershell.png" alt="Powershell Integration"/>
+
+~~~SECTION:handouts~~~
+
+****
+
+### Powerline Shell Integration
+
+The Powerline shell integration can be found here: https://github.com/b-ryan/powerline-shell
+
+    @@@ Sh
+    # yum -y install epel-release
+    # yum -y install python-pip
+    # pip install powerline-shell
+
+    @@@ Sh
+    $ vim $HOME/.bashrc
+
+    function _update_ps1() {
+        PS1=$(powerline-shell $?)
+    }
+
+    if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+        PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+    fi
+
+Powerline needs an additional font which can be downloaded from here:
+https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf
+
+Choose `Raw` and install it into your system.
+
+Modify your terminal profile settings and choose `Meslo LG` as font.
+
+### Windows Powershell Integration
+
+The Windows Powershell integration requires NuGet. Open a new Powershell prompt and enter:
+
+    @@@ Sh
+    Install-Module git-posh
+    Add-PoshGitToProfile
+
+~~~ENDSECTION~~~
