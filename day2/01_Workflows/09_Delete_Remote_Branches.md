@@ -10,6 +10,7 @@ Pushing `NULL` into a remote branch will delete it.
 
 `git push origin :<remotebranch>`
 
+Hint: You can delete branches in GitLab/GitHub too.
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Delete remote branch
@@ -17,7 +18,8 @@ Pushing `NULL` into a remote branch will delete it.
 * Objective:
  * Delete remote branch
 * Steps:
- * Create or identify a remote branch
+ * Change into `$HOME/training`
+ * Create or identify a remote branch `feature/docs-wrong-name`
  * Delete the remote branch
 
 ~~~SECTION:handouts~~~
@@ -36,7 +38,8 @@ Pushing `NULL` into a remote branch will delete it.
 
 ## Steps:
 
-* Create or identify a remote branch
+* Change into `$HOME/training`
+* Create or identify a remote branch `feature/docs-wrong-name`
 * Delete the remote branch
 
 !SLIDE supplemental solutions
@@ -52,24 +55,26 @@ Pushing `NULL` into a remote branch will delete it.
 If you do not have any.
 
     @@@ Sh
+    $ cd $HOME/training
     $ git checkout master
-    $ git checkout -b feature/to-be-deleted
-    $ git push --set-upstream origin feature/to-be-deleted
+    $ git checkout -b feature/docs-wrong-name
+    $ git push -u origin feature/docs-wrong-name
 
 ### Identify remote branch to delete
 
     @@@ Sh
     $ git branch -r
-      feature/to-be-deleted
+      feature/docs-wrong-name
 
 ### Delete remote branch
 
     @@@ Sh
-    $ git push origin :feature/to-be-deleted
+    $ git push origin :feature/docs-wrong-name
 
 Now verify it is gone (Hint: `-r` lists remote branches).
 
     @@@ Sh
+    $ git fetch
     $ git branch -r
 
 

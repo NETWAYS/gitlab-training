@@ -20,7 +20,7 @@ all commits into one commit.
 * Steps:
  * Add 3 commits to your history
  * Use `git rebase -i HEAD~3` to start the interactive mode. `HEAD~3` takes the last 3 commits compared to current HEAD.
- * Use `pick` for the top commit`
+ * Use `pick` for the top commit
  * Replace `pick` with `squash` for the other commits
  * Save and edit the final commit message
  * Use `git log` to verify the history
