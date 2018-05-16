@@ -25,8 +25,20 @@ from Vagrant/VirtualBox and is provisioned onto the training notebook @NETWAYS.
 
 # Trainer Instructions
 
-## Docker Container
+Requirements:
+
+* Docker
+
+## Start Showoff in Docker
 
 ```
-./start-showoff.sh
+./start.sh
+```
+
+## Print Static Content
+
+For GitHub.
+
+```
+./print.sh
 ```
