@@ -1,0 +1,574 @@
+.title-logo {
+  background: transparent url('./global/_images/netways/netways-logo-1366.png') center center no-repeat;
+  background-size: 400px auto;
+  display: inline-block;
+  height: 77px;
+  width: 460px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+@media screen {
+  /* Global */
+
+  .slide, .preso {
+    height: 768px;
+    width: 1024px;
+  }
+
+  a, a:visited {
+    color: #FA5C0D;
+    text-decoration: none;
+  }
+
+  .content {
+    margin-top: 160px !important;
+  }
+  .content h1 {
+    background: #FA5C0D;
+    color: white;
+    font: normal 28px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    margin-top: 0;
+    margin-right: 0;
+    padding: 7px;
+    position: absolute;
+    text-align: left;
+    top: 100px; 
+    width: 100%;
+  }
+  .content h2 {
+    font-size: 24px;
+    margin-left: 1em;
+    text-align: left;
+  }
+
+  .content h3 {
+    font-size: 20px;
+    margin-left: 1em;
+    text-align: left;
+  }
+
+  .content h4 {
+    font-size: 16px;
+    margin-left: 1em;
+    text-align: left;
+  }
+
+  .content > p,
+  .content > form > p {
+    text-align: left;
+  }
+
+  .content p > img {
+    max-width: 100%;
+  }
+
+  /* Slide Styles */
+
+  .bullets > ul {
+    font-size: 3em;
+    list-style: disc;
+    padding-left: 40px;
+  }
+  .smbullets > ul {
+    font-size: 2em;
+    list-style: disc;
+    padding-left: 40px;
+  }
+  .bullets > ul > li,
+  .smbullets > ul > li {
+    text-align: left;
+  }
+
+  .center p {
+    text-align: center;
+  }
+  .center img {
+    display: block;
+    height: 90%;
+    margin-top: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .break {
+    visibility: collapse;
+  }
+
+  .supplemental.content > p {
+    font-size: 2em;
+  }
+
+  /* Custom Slide Styles */
+
+  .lrbullets > ul > li:nth-of-type(odd) {
+    float: left;
+    width: 50%;
+  }
+  .lrbullets > ul > li:nth-of-type(even) {
+  }
+
+  .limg img {
+    float: left;
+    width: 400px;
+    height: 50%;
+  }
+  .rimg img {
+    float: right;
+    width: 50%;
+    height: 50%;
+  }
+
+  .lbullets > ul {
+    float: left;
+    width: 50%;
+  }
+  .lbullets > ul > li {
+    float: left;
+    width: 50%;
+  }
+  .rbullets > ul {
+    float: right;
+    width: 50%;
+  }
+  .rbullets > ul > li {
+    float: right;
+    width: 50%;
+  }
+
+  /* Custom Layout */
+
+  div#net-header {
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    height: 100px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .logo {
+    background: transparent url('./global/_images/netways/Schulung_Stammlogo_2000px_ENG.jpg') right center no-repeat;
+    background-size: 150px auto;
+    height: 99%;
+    width: 99%;
+  }
+
+  div.title-name {
+    float: right;
+    position: absolute;
+    text-align: right;
+    top: 140px;
+    width: 100%;
+  }
+  div.title-name p {
+    background: black;
+    color: white;
+    float: right;
+    font: normal 60px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    padding: 10px;
+  }
+
+  div.title-location {
+    float: right;
+    position: absolute;
+    text-align: right;
+    top: 280px;
+    width: 100%;
+  }
+  div.title-location p {
+    background: #FA5C0D;
+    color: black;
+    float: right;
+    font: normal 36px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    padding: 10px;
+  }
+
+  div.title-author {
+    margin-top: 10px;
+    position: absolute;
+    top: 480px;
+    width: 100%;
+  }
+  div.title-author p {
+    background: none;
+    color: black;
+    float: left;
+    font: normal 32px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    padding: 10px;
+  }
+
+  div.content.subsection h1 {
+    background: #FA5C0D;
+    color: white;
+    font: normal 36px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    position: absolute;
+    top: 200px;
+    width: auto;
+  }
+
+  div.content.subsectionnonum h1 {
+    background: #FA5C0D;
+    color: white;
+    font: normal 36px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    position: absolute;
+    top: 200px;
+    width: auto;
+  }
+
+  img#staff {
+    float: right;
+    margin-right: 100px;
+    width: 240px;
+    height: 240px;
+  }
+
+  div#net-footer {
+    background: #FA5C0D;
+    bottom: 0;
+    color: white;
+    font: normal 15px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    height: 30px;
+    position: absolute;
+    width: 100%;
+  }
+
+  p#footer-left {
+    bottom: 7.5px;
+    left: 30px;
+    position: absolute;
+    text-align: left;
+  }
+
+  p#footer-right {
+    bottom: 7.5px;
+    position: absolute;
+    right: 30px;
+    text-align: right;
+  }
+}
+
+@page {
+  margin: 0;
+  margin-top: 1em;
+  margin-left: 2em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+@media print {
+  /* Global */
+
+  div.title-page {
+    position: relative;
+    min-width: 100%;
+  }
+
+  div.title-name {
+    background: #FA5C0D;
+    color: white;
+    width: 100%;
+    height: 480px;
+    margin-left: 10px;
+  }
+
+  div.title-name p {
+    padding-top: 40px;
+    text-align: left;
+  }
+
+  div#global_Pre_Title_01_Title #net-header {
+    visibility: hidden;
+  }
+  
+  div.title-release {
+    font-size: 12pt;
+    padding-left: 25px;
+    text-align: left;
+  }
+
+  .title-footer {
+    margin-top: 60%;
+    margin-right: 10%;
+    text-align: right;
+    font-size: 12pt;
+    font-weight: bold;
+  }
+
+  code {
+    font-size: 12px;
+  }
+
+  li, td {
+    font-size: 14px;
+  }
+
+  .slide, .preso {
+    font: normal 1.0em "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    height: 100%;
+    margin: 0;
+    margin-top: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
+    margin-bottom: 0em;
+    width: 99%;
+  }
+
+  a, a:visited {
+    color: #FA5C0D;
+    text-decoration: none;
+  }
+
+  .content {
+    padding-top: 5px;
+  }
+
+  .content h1 {
+    font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font-size: 28px;
+    text-align: left;
+    margin-top: 75px;
+    margin-left: 0.5em;
+    margin-right: 3em;
+  }
+
+  .content h2 {
+    font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font-size: 24px;
+    text-align: left;
+    margin-left: 0.5em;
+    margin-right: 3em;
+  }
+
+  .content h3 {
+    font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font-size: 20px;
+    text-align: left;
+    margin-left: 0.5em;
+    margin-right: 3em;
+  }
+
+  .content h4 {
+    font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font-size: 16px;
+    text-align: left;
+    margin-left: 0.5em;
+    margin-right: 3em;
+  }
+
+  .content p {
+    font-size: 14px;
+    margin: 0;
+    margin-top: 0;
+    margin-left: 1em;
+    margin-right: 2em;
+    margin-bottom: 0.4em;
+    text-align: left;
+  }
+
+  /* Slide Styles */
+
+  .bullets > ul {
+    list-style: disc;
+    padding-left: 40px;
+  }
+  .smbullets > ul {
+    list-style: disc;
+    padding-left: 10px;
+  }
+  .bullets > ul > li, .smbullets > ul > li {
+    text-align: left;
+  }
+
+  .content > pre, .content > form > pre {
+    font-size: 120%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .center p {
+    text-align: center;
+  }
+
+  .center img {
+    display: block;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .content table tr td {
+    text-align: left;
+  }
+
+  .break {
+  }
+
+  .handouts { 
+    display: block !important;
+  }
+  .handouts h1, h2, h3, h4 {
+    margin: 0;
+    margin-top: 1em;
+    margin-left: 0.5em;
+    margin-right: 3em;
+    margin-bottom: 1em;
+    text-align: left;
+  }
+  .handouts hr {
+    margin: 0;
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+  }
+  .handouts p {
+    margin: 0;
+    margin-top: 0;
+    margin-left: 2em;
+    margin-right: 3em;
+    margin-bottom: 1em;
+    text-align: left;
+    word-wrap: break-word;
+  }
+
+  .handouts > pre, .handouts > form > pre {
+    word-wrap: break-word;
+  }
+
+  .handouts > ul {
+    list-style: disc;
+    padding-left: 40px;
+  }
+
+  .supplemental {
+    right: 0.5em;
+  }
+
+  .supplemental.content > p {
+    font-size: 14px;
+  }
+
+  .supplemental .content > pre > code {
+   word-wrap: break-word;
+  }
+
+  .supplemental h1 {
+    margin: 0;
+    color: black;
+    font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font-size: 22px;
+    text-align: left;
+  }
+
+  .supplemental h2 {
+    color: black;
+    font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .supplemental h3 {
+    color: black;
+    font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .supplemental h4 {
+    color: black;
+    font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    font-size: 16px;
+    text-align: left;
+  }
+
+  div#toc a {
+    font-size: 14px;
+    margin-left: 2em;
+  }
+
+  /* Custom Slide Styles */
+
+  .lrbullets > ul > li:nth-of-type(odd) {
+    float: left;
+    width: 50%;
+  }
+  .lrbullets > ul > li:nth-of-type(even) {
+  }
+
+  /* Custom Layout */
+
+  div#net-header {
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    height: 50px;
+    margin: 0;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+  }
+
+  .supplemental div#net-header {
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    height: 50px;
+    margin: 0;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    right: 30px;
+  }
+
+  .logo {
+    background: transparent url('./global/_images/netways/Schulung_Stammlogo_2000px_ENG.jpg') right center no-repeat;
+    background-size: 100px auto;
+    display: inline-block;
+    height: 40px;
+    width: 99%;
+  }
+
+  div.title-name p {
+    background: none;
+    color: white;
+    font: normal 24px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  div.content.subsection h1 {
+    background: #FA5C0D;
+    color: white;
+    font: normal 36px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    margin-top: 200px;
+  }
+
+  div.content.subsectionnonum h1 {
+    background: #FA5C0D;
+    color: white;
+    font: normal 36px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+    margin-top: 200px;
+  }
+
+  .content.small table {
+    font: normal 1.5em "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+  }
+
+  div#net-footer {
+     height: 0px;
+     visibility: collapse;
+  }
+
+  p#footer-left {
+    height: 0px;
+    visibility: collapse;
+  }
+
+  p#footer-right {
+    height: 0px;
+    visibility: collapse;
+  }
+}
