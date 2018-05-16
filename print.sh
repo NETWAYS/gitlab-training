@@ -22,6 +22,6 @@ docker run \
   -e "LANGUAGE=$CLANG" \
   -e "LC_ALL=$CANG" \
   $IMAGE \
-  showoff static print
+  ./print_all.sh
 
 exit $?
