@@ -1,18 +1,329 @@
-.title-logo {
-  background: transparent url('./global/_images/netways/netways-logo-1366.png') center center no-repeat;
-  background-size: 400px auto;
-  display: inline-block;
-  height: 77px;
-  width: 460px;
-  margin-top: 60px;
-  margin-bottom: 50px;
-  text-align: center;
+/*************************************************
+   Corrections for strange CSS rules by showoff
+ ************************************************/
+
+.code {
+  white-space: unset;
 }
+.content.code p {
+  font-family: monospace;
+  white-space: pre;
+}
+
+.content.center {
+  position: unset;
+  top: unset;
+  -webkit-transform: unset;
+  -ms-transform: unset;
+  transform: unset;
+}
+
+@media screen {
+  /* The following assumes we'd get 24px (1.5em) by default: 24 / (16 x 0.8 x 0.8) */
+  .slide.small .content.small .net-header,
+  .slide.small .content.small .net-footer {
+    font-size: 234.375%;
+  }
+
+  /* The following assumes we'd get 24px (1.5em) by default: 24 / (16 x 0.7 x 0.7) */
+  .slide.smaller .content.smaller .net-header,
+  .slide.smaller .content.smaller .net-footer {
+    font-size: 306.122449%;
+  }
+
+  /* The following assumes the same as above, but is for non-container elements */
+  .slide.small .content.small .net-header + h1:not(.section-title) {
+    font-size: 3.515625em;
+  }
+  .slide.smaller .content.smaller .net-header + h1:not(.section-title) {
+    font-size: 4.591836735em;
+  }
+}
+
+@media print {
+  /* The following assumes we'd get 16px (1em) by default: 16 / (16 x 0.8) */
+  .content.small .net-header,
+  .content.small .net-footer {
+    font-size: 125%;
+  }
+
+  /* The following assumes we'd get 16px (1em) by default: 16 / (16 x 0.7) */
+  .content.smaller .net-header,
+  .content.smaller .net-footer {
+    font-size: 142.8571429%;
+  }
+
+  /* The following assumes the same as above, but is for non-container elements */
+  .content.small .net-header + h1:not(.section-title) {
+    font-size: 1.875em;
+  }
+  .content.smaller .net-header + h1:not(.section-title) {
+    font-size: 2.142857144em;
+  }
+}
+
+/*************************************************
+                      Layout
+
+                !!!!!!!!!!!!!!!!!!!!
+ Please pay attention that all layout styles do not
+ depend on any raw pixel sizes. Hence when adjusting
+ anything, please use percent or em as size unit.
+ And adjust dependent elements, paddings, margins
+ accordingly. Thank you!
+                !!!!!!!!!!!!!!!!!!!!
+
+ ************************************************/
+
+.net-header img {
+  margin-right: 0;
+}
+
+.content .net-header + h1:not(.section-title) {
+  line-height: 100%;
+  font-size: 1.5em;
+  padding: .1em .25em;
+  border-bottom: none;
+}
+
+.content.subsection .net-header + h1:not(.section-title),
+.content.subsectionnonum .net-header + h1:not(.section-title) {
+  display: inline-block;
+  margin-top: 3em;
+  font-size: 2em;
+}
+
+.center .net-header + h1 {
+  text-align: left;
+}
+
+@media screen {
+  .slide:not(.small):not(.smaller) {
+    font-size: 1.5em;  /* Already done by showoff, but in case they'll change it in the future.. */
+  }
+
+  .net-header {
+    height: 4.104166667em;
+    padding-bottom: .0625em;
+  }
+
+  .subsection .net-header,
+  .subsectionnonum .net-header,
+  #Pre_Title_01_Title1 .net-header,
+  #global_Pre_Title_01_Title1 .net-header {
+    border-bottom: .0625em solid black;
+    padding-bottom: 0;
+  }
+
+  .net-header img {
+    /* Solves that the image overlays the header's border.
+       #preso's transformation still produces artifacts, though.. */
+    margin-top: -.0625em;
+    /* Yep, applied on every slide. Otherwise we'll get flickering when switching slides */
+  }
+
+  .content .net-header + h1:not(.section-title) {
+    margin: 0;
+    color: white;
+    background: #FA5C0D;
+  }
+
+  .net-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background: #FA5C0D;
+  }
+
+  .net-footer * {
+    font-size: 62.5%;
+  }
+
+  .net-footer :first-child {
+    display: inline-block;
+    margin: .5em 1em;
+  }
+
+  .net-footer :last-child {
+    float: right;
+    margin: .5em 1em;
+  }
+}
+
+@media print {
+  .slide:not(.small):not(.smaller) {
+    font-size: 1em;  /* Already done by showoff, but in case they'll change it in the future.. */
+  }
+
+  .net-header {
+    height: 6.1875em;
+    border-bottom: .0625em solid black;
+  }
+
+  .net-header img {
+    height: 99%; /* The negative margin workaround does not work with wkhtmltopdf.. */
+  }
+
+  #Pre_Title_01_Title1 .net-header,
+  #global_Pre_Title_01_Title1 .net-header {
+    display: none;
+  }
+
+  .content:not(.subsection):not(.subsectionnonum) .net-header + h1:not(.section-title) {
+    margin: .3em 0;
+  }
+
+  .subsection .net-header + h1:not(.section-title),
+  .subsectionnonum .net-header + h1:not(.section-title) {
+    white-space: nowrap; /* TODO: Why?? Only wkhtmltopdf requires this.. */
+    color: white;
+    background: #FA5C0D;
+  }
+
+  .net-footer {
+    display: none;
+  }
+}
+
+/*************************************************
+                   Global styles
+ ************************************************/
+
+@media screen {
+  .title-name {
+    overflow: auto;
+  }
+
+  .title-name p {
+    float: right;
+    margin: 1em 0;
+    padding: .25em;
+    font-size: 2.5em;
+    color: white;
+    background: black;
+  }
+
+  .title-location {
+    overflow: auto;
+  }
+
+  .title-location p {
+    float: right;
+    margin: 1em 0;
+    padding: .25em;
+    font-size: 1.5em;
+    color: black;
+    background: #FA5C0D;
+  }
+
+  .title-author p {
+    font-size: 1.35em;
+  }
+}
+
+@media print {
+  .title-logo {
+    margin: 1em;
+  }
+
+  .title-logo img {
+    margin: 0 auto;
+  }
+
+  .title-cover {
+    margin: 0.5em;
+    margin-top: 4em;
+    padding: 1em;
+    height: 30em;
+    color: white;
+    background: #FA5C0D;
+  }
+
+  .title-name {
+    font-size: 2em;
+  }
+
+  .title-subtitle {
+    font-size: 1.5em;
+   }
+
+  .title-release {
+    margin-top: 2em;
+  }
+
+  .title-footer {
+    margin-top: 19.5em;
+    margin-right: 1em;
+    text-align: right;
+    font-weight: bold;
+  }
+}
+
+/*************************************************
+                   Slide styles
+ ************************************************/
+
+@media screen {
+  /**
+    Please note:
+      4.166666667em  = Header height
+      1.8em          = h1 height
+      1.354166667em  = Footer height
+      24.679166666em = Content height
+      32em           = Total slide height
+   **/
+  .content > .margin-top-1-8 { margin-top: 3.084895833em; }
+  .content > .margin-top-1-7 { margin-top: 3.525595238em; }
+  .content > .margin-top-1-6 { margin-top: 4.113194444em; }
+  .content > .margin-top-1-5 { margin-top: 4.935833333em; }
+  .content > .margin-top-1-4 { margin-top: 6.169791666em; }
+  .content > .margin-top-1-3 { margin-top: 8.226388889em; }
+  .content > .margin-top-1-2 { margin-top: 12.339583333em; }
+
+  /* Since bigtext does not work with our layout.. */
+  .content > .large { font-size: 120%; }
+  .content > .larger { font-size: 140%; }
+  .content > .even-larger { font-size: 180%; }
+  .content > .big { font-size: 150%; }
+  .content > .bigger { font-size: 300%; }
+  .content > .probably-too-big { font-size: 600%; }
+}
+
+@media print {
+  /**
+    Please note:
+      6.25em     = Header height
+      2.7em      = h1 height
+      2.03125em  = Footer height
+      38.81875em = Content height
+      49.8em     = Total slide height
+   **/
+  .content > .margin-top-1-8 { margin-top: 4.85234375em; }
+  .content > .margin-top-1-7 { margin-top: 5.545535714em; }
+  .content > .margin-top-1-6 { margin-top: 6.469791667em; }
+  .content > .margin-top-1-5 { margin-top: 7.76375em; }
+  .content > .margin-top-1-4 { margin-top: 9.7046875em; }
+  .content > .margin-top-1-3 { margin-top: 12.939583333em; }
+  .content > .margin-top-1-2 { margin-top: 19.409375em; }
+
+  /* Since bigtext does not work with our layout.. */
+  .content > .large { font-size: 180%; }
+  .content > .larger { font-size: 210%; }
+  .content > .even-larger { font-size: 270%; }
+  .content > .big { font-size: 225%; }
+  .content > .bigger { font-size: 450%; }
+  .content > .probably-too-big { font-size: 900%; }
+}
+
+/*************************************************
+                   Legacy styles
+ ************************************************/
 
 @media screen {
   /* Global */
 
-  .slide, .preso {
+  .slide, #preso {
     height: 768px;
     width: 1024px;
   }
@@ -22,21 +333,6 @@
     text-decoration: none;
   }
 
-  .content {
-    margin-top: 160px !important;
-  }
-  .content h1 {
-    background: #FA5C0D;
-    color: white;
-    font: normal 28px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
-    margin-top: 0;
-    margin-right: 0;
-    padding: 7px;
-    position: absolute;
-    text-align: left;
-    top: 100px; 
-    width: 100%;
-  }
   .content h2 {
     font-size: 24px;
     margin-left: 1em;
@@ -67,24 +363,38 @@
   /* Slide Styles */
 
   .bullets > ul {
-    font-size: 3em;
+    font-size: 1.5em;
     list-style: disc;
-    padding-left: 40px;
   }
   .smbullets > ul {
-    font-size: 2em;
     list-style: disc;
-    padding-left: 40px;
   }
   .bullets > ul > li,
   .smbullets > ul > li {
     text-align: left;
   }
+  .bullets > ul > li > p,
+  .smbullets > ul > li > p {
+    margin: 0;
+  }
+
+  /* Legacy styles start - For backward compliance with slides created using showoff v0.9.11.1 */
+  .slide.small > .content.small > p,
+  .slide.small > .content.small > ul,
+  .slide.small > .content.small > pre,
+  .slide.small > .content.small > table {
+    font-size: 2em;
+  }
+
+  .slide.small > .content.smbullets.small > ul > li {
+    margin: 0;
+  }
+  /* Legacy styles end */
 
   .center p {
     text-align: center;
   }
-  .center img {
+  .center > img {
     display: block;
     height: 90%;
     margin-top: 160px;
@@ -110,12 +420,14 @@
   .lrbullets > ul > li:nth-of-type(even) {
   }
 
-  .limg img {
+  .limg > img,
+  .limg > p > img {
     float: left;
     width: 400px;
     height: 50%;
   }
-  .rimg img {
+  .rimg > img,
+  .rimg > p > img {
     float: right;
     width: 50%;
     height: 50%;
@@ -138,116 +450,19 @@
     width: 50%;
   }
 
+  /* Legacy styles start - Print specific styles which are not hidden anymore? */
+  .pagebreak {
+    display: none;
+  }
+  /* Legacy styles end */
+
   /* Custom Layout */
-
-  div#net-header {
-    border-bottom-style: solid;
-    border-bottom-width: thin;
-    height: 100px;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-
-  .logo {
-    background: transparent url('./global/_images/netways/Schulung_Stammlogo_2000px_ENG.jpg') right center no-repeat;
-    background-size: 150px auto;
-    height: 99%;
-    width: 99%;
-  }
-
-  div.title-name {
-    float: right;
-    position: absolute;
-    text-align: right;
-    top: 140px;
-    width: 100%;
-  }
-  div.title-name p {
-    background: black;
-    color: white;
-    float: right;
-    font: normal 60px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
-    padding: 10px;
-  }
-
-  div.title-location {
-    float: right;
-    position: absolute;
-    text-align: right;
-    top: 280px;
-    width: 100%;
-  }
-  div.title-location p {
-    background: #FA5C0D;
-    color: black;
-    float: right;
-    font: normal 36px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
-    padding: 10px;
-  }
-
-  div.title-author {
-    margin-top: 10px;
-    position: absolute;
-    top: 480px;
-    width: 100%;
-  }
-  div.title-author p {
-    background: none;
-    color: black;
-    float: left;
-    font: normal 32px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
-    padding: 10px;
-  }
-
-  div.content.subsection h1 {
-    background: #FA5C0D;
-    color: white;
-    font: normal 36px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
-    position: absolute;
-    top: 200px;
-    width: auto;
-  }
-
-  div.content.subsectionnonum h1 {
-    background: #FA5C0D;
-    color: white;
-    font: normal 36px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
-    position: absolute;
-    top: 200px;
-    width: auto;
-  }
 
   img#staff {
     float: right;
     margin-right: 100px;
     width: 240px;
     height: 240px;
-  }
-
-  div#net-footer {
-    background: #FA5C0D;
-    bottom: 0;
-    color: white;
-    font: normal 15px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
-    height: 30px;
-    position: absolute;
-    width: 100%;
-  }
-
-  p#footer-left {
-    bottom: 7.5px;
-    left: 30px;
-    position: absolute;
-    text-align: left;
-  }
-
-  p#footer-right {
-    bottom: 7.5px;
-    position: absolute;
-    right: 30px;
-    text-align: right;
   }
 }
 
@@ -260,53 +475,16 @@
 }
 
 @media print {
-  /* Global */
-
-  div.title-page {
-    position: relative;
-    min-width: 100%;
-  }
-
-  div.title-name {
-    background: #FA5C0D;
-    color: white;
-    width: 100%;
-    height: 480px;
-    margin-left: 10px;
-  }
-
-  div.title-name p {
-    padding-top: 40px;
-    text-align: left;
-  }
-
-  div#global_Pre_Title_01_Title #net-header {
-    visibility: hidden;
-  }
-  
-  div.title-release {
-    font-size: 12pt;
-    padding-left: 25px;
-    text-align: left;
-  }
-
-  .title-footer {
-    margin-top: 60%;
-    margin-right: 10%;
-    text-align: right;
-    font-size: 12pt;
-    font-weight: bold;
-  }
-
   code {
     font-size: 12px;
+    margin-left: 0em;
   }
 
   li, td {
     font-size: 14px;
   }
 
-  .slide, .preso {
+  .slide, #preso {
     font: normal 1.0em "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
     height: 100%;
     margin: 0;
@@ -324,15 +502,6 @@
 
   .content {
     padding-top: 5px;
-  }
-
-  .content h1 {
-    font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
-    font-size: 28px;
-    text-align: left;
-    margin-top: 75px;
-    margin-left: 0.5em;
-    margin-right: 3em;
   }
 
   .content h2 {
@@ -359,13 +528,8 @@
     margin-right: 3em;
   }
 
-  .content p {
-    font-size: 14px;
-    margin: 0;
-    margin-top: 0;
-    margin-left: 1em;
-    margin-right: 2em;
-    margin-bottom: 0.4em;
+  .content > p {
+    font-size: 16px;
     text-align: left;
   }
 
@@ -379,21 +543,28 @@
     list-style: disc;
     padding-left: 10px;
   }
-  .bullets > ul > li, .smbullets > ul > li {
+  .bullets > ul > li,
+  .smbullets > ul > li {
     text-align: left;
   }
+  .bullets > ul > li > p,
+  .smbullets > ul > li > p {
+    margin: 0;
+  }
 
-  .content > pre, .content > form > pre {
+  .content > pre, .handouts > pre, .content > form > pre {
     font-size: 120%;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0 2em;
+  }
+  .content > pre > code, .handouts > pre > code, .content > form > pre > code {
+    overflow: visible;
   }
 
   .center p {
     text-align: center;
   }
 
-  .center img {
+  .center > img {
     display: block;
     height: 90%;
     margin-left: auto;
@@ -405,11 +576,17 @@
     text-align: left;
   }
 
-  .break {
+  .annotations {
+    display: none;
   }
 
-  .handouts { 
+  .pagebreak {
+    margin: 1em;
+  }
+
+  .handouts {
     display: block !important;
+    border: none;
   }
   .handouts h1, h2, h3, h4 {
     margin: 0;
@@ -420,18 +597,10 @@
     text-align: left;
   }
   .handouts hr {
-    margin: 0;
-    margin-top: 2em;
-    margin-left: 1em;
-    margin-right: 2em;
-    margin-bottom: 2em;
+    margin: 2em 0;
   }
   .handouts p {
-    margin: 0;
-    margin-top: 0;
-    margin-left: 2em;
-    margin-right: 3em;
-    margin-bottom: 1em;
+    margin: 0 3em 1em 2em;
     text-align: left;
     word-wrap: break-word;
   }
@@ -502,73 +671,7 @@
 
   /* Custom Layout */
 
-  div#net-header {
-    border-bottom-style: solid;
-    border-bottom-width: thin;
-    height: 50px;
-    margin: 0;
-    position: absolute;
-    top: 0px;
-    width: 100%;
-  }
-
-  .supplemental div#net-header {
-    border-bottom-style: solid;
-    border-bottom-width: thin;
-    height: 50px;
-    margin: 0;
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    right: 30px;
-  }
-
-  .logo {
-    background: transparent url('./global/_images/netways/Schulung_Stammlogo_2000px_ENG.jpg') right center no-repeat;
-    background-size: 100px auto;
-    display: inline-block;
-    height: 40px;
-    width: 99%;
-  }
-
-  div.title-name p {
-    background: none;
-    color: white;
-    font: normal 24px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  div.content.subsection h1 {
-    background: #FA5C0D;
-    color: white;
-    font: normal 36px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
-    margin-top: 200px;
-  }
-
-  div.content.subsectionnonum h1 {
-    background: #FA5C0D;
-    color: white;
-    font: normal 36px/1 "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
-    margin-top: 200px;
-  }
-
   .content.small table {
     font: normal 1.5em "Open Sans", "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
-  }
-
-  div#net-footer {
-     height: 0px;
-     visibility: collapse;
-  }
-
-  p#footer-left {
-    height: 0px;
-    visibility: collapse;
-  }
-
-  p#footer-right {
-    height: 0px;
-    visibility: collapse;
   }
 }
