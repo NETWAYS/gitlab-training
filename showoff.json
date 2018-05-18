@@ -1,53 +1,39 @@
 {
-  "name": "GitLab",
-  "date": "2018",
+  "title": "GitLab",
+  "subtitle": "Version Control System & Continuous Integration",
   "location": "Nuremberg",
   "author": "Michael Friedrich",
   "release": "2.1.0",
 
-  "favicon": "image/global/favicon.png",
+  "favicon": "image/global/favicon.ico",
+  "logo": "/global/_images/netways/netways-logo-1366.png",
 
   "protected": ["presenter", "onepage", "print"],
   "user": "netways",
   "password": "awesome",
 
   "templates":{
-    "default":"global/templates/default.tpl"
+    "default":"./global/templates/default.tpl"
   },
 
   "sections": [
-  "global/Pre/Title",
-  "global/Pre/NETWAYS",
-  "global/Pre/Staff/MiF.md",
-  {"section":"global/Pre/Hints"},
+    {"section":"global/Pre/Title"},
 
-  // Introduction
-  {"section":"day1/01_Introduction"},
-  // Configuration
-  {"section":"day1/02_Configuration"},
-  // Basics
-  {"section":"day1/03_Basics"},
-  // Commits
-  {"section":"day1/04_Commits"},
-  // Branching
-  {"section":"day1/05_Branching"},
-  // Server
-  {"section":"day1/06_Server"},
-  // Collaboration
-  {"section":"day1/07_Collaboration"},
-  // Workflows
-  {"section":"day2/01_Workflows"},
-  // Integrations
-  {"section":"day2/02_Integrations"},
-  // CI
-  {"section":"day2/03_CI"},
-  // Hints
-  {"section":"day2/04_Hints"},
-  // GitLab Hints
-  {"section":"day2/05_Gitlab_Hints"},
-  // Additional
-  {"section":"day2/06_Additional"},
+    {"section":"day1/01_Introduction"},
+    {"section":"day1/02_Configuration"},
+    {"section":"day1/03_Basics"},
+    {"section":"day1/04_Commits"},
+    {"section":"day1/05_Branching"},
+    {"section":"day1/06_Server"},
+    {"section":"day1/07_Collaboration"},
 
-  {"section":"global/Post"}
- ]
+    {"section":"day2/01_Workflows"},
+    {"section":"day2/02_Integrations"},
+    {"section":"day2/03_CI"},
+    {"section":"day2/04_Hints"},
+    {"section":"day2/05_Gitlab_Hints"},
+    {"section":"day2/06_Additional"},
+
+    {"section":"global/Post"}
+  ]
 }
