@@ -1,31 +1,87 @@
+body,
+.ui-widget,
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #222;
+}
+
+h1,
+h2,
+h3 {
+  margin: 8px 0;
+  padding: 0 8px;
+  font-weight: normal;
+}
+
+h1:first-child {
+  border-bottom: 3px solid #222;
+}
+
+pre {
+  margin: 1em 40px;
+  padding: .25em;
+}
+
+/* when code blocks are embedded in a table, we don't need giant whitespace */
+table pre {
+  margin: 0;
+}
+
+/* applies to inline code only */
+code {
+  padding: 2px 4px;
+  font-size: 1.1em;
+  background-color: #ededed;
+  border-radius: 4px;
+}
+
+pre code {
+  display: block;
+  padding: unset;
+  border-radius: unset;
+  overflow: hidden;
+}
+
 @media screen {
   /* explicitly size parent elements so the screen blanker works */
   html, body{
     height:100%;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+  }
+    html.floatingNotes {
+      overflow: scroll;
+    }
+
+    body.busy {
+      cursor: progress;
+    }
+
+  body#download,
+  body#stats {
+    overflow: auto;
   }
 
-  body {
-      font-size: 100%;
-      font-family: "Gill Sans", Helvetica, Arial, sans-serif;
-      background:#333;
-      overflow:hidden;
-      margin:0;
-      padding:0;
+  #preso,
+  .slide {
+    background: #fff;
+    width: 1024px;
+    height: 768px;
+    margin-left:auto;
+    margin-right:auto;
+    overflow:hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
   }
 
-  #preso, .slide {
-      background: #fff;
-      width: 1024px;
-      height: 768px;
-      margin-left:auto;
-      margin-right:auto;
-      overflow:hidden;
-      -webkit-box-shadow:0 0 25px rgba(0,0,0,0.35);
-      -moz-box-shadow:0 0 25px rgba(0,0,0,0.35);
-      box-shadow:0 0 25px rgba(0,0,0,0.35);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+  .slide {
+    font-size: 1.5em;
   }
 
   #preso, .slide.background-fit {
@@ -33,27 +89,25 @@
   }
 
   #footer {
-      background: rgba(221,221,221,0.75);
-      color:#333;
-      padding: 2px 5px;
-      width: 1005px;
-      height: 20px;
-      line-height:20px;
-      font-size:14px;
-      position:relative;
-      top:-24px;
-      margin:0 auto;
-      -webkit-border-top-left-radius: 3px;
-      -webkit-border-top-right-radius: 3px;
-      -moz-border-radius-topleft: 3px;
-      -moz-border-radius-topright: 3px;
-      border-top-left-radius: 3px;
-      border-top-right-radius: 3px;
-      z-index: 2147483647; /* max, see http://www.puidokas.com/max-z-index/ */
-      display: none;
-  }
-  #followMode {
+    background-color: #f2f2f2;
+    -webkit-box-shadow:0 0 25px rgba(0,0,0,0.35);
+    -moz-box-shadow:0 0 25px rgba(0,0,0,0.35);
+    box-shadow:0 0 25px rgba(0,0,0,0.35);
+    padding: 4px 8px;
+    width: 100%;
+    position:fixed;
+    bottom: 0;
+    z-index: 2147483647; /* max, see http://www.puidokas.com/max-z-index/ */
     display: none;
+  }
+    #footer .container {
+      border: 1px solid #ccc;
+      padding: 2px 6px;
+      margin: 0 3px;
+      border-radius: 3px;
+    }
+  #followMode {
+    font-weight: bold;
   }
   #pauseScreen {
       background: rgba(0, 0, 0, 0.85);
@@ -65,107 +119,140 @@
       display: none;
       margin: auto;
       color: white;
-      font-size: 2em;
       padding: 1em;
       z-index: 2147483647; /* max, see http://www.puidokas.com/max-z-index/ */
       text-align: center;
   }
+  #buttonNav {
+    display: none;
+  }
+
+  /* prevent large images from getting too out of hand */
+  .content img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  /* set up annotation overlays */
+  .slide canvas.annotations {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+}
+
+.ui-button:active {
+  border-color: #263238;
+  background-color: #263238;
 }
 
 /* plain (non-bullet) text */
 .content > p,
 .content > form > p {
-    font-size: 2em;
-    margin: 1em;
-    text-align: center;
+  margin: 1em;
 }
 
-.content > pre,
-.content > form > pre {
-    font-size: 300%;
-}
 .content > blockquote,
 .content > form > blockquote {
-    font-size: 250%;
-    margin: 2em;
+  margin: 2em;
 }
 
-.center img {
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
+.content img,
+.content svg {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
 }
 
-.slide .center {
-  height: 740px;
-  width: 1020px;
-  display: table-cell;
+.cover h1 {
+  border: none;
+}
+
+.slide .center,
+#slides.supplemental .slide .center {
+  position: relative;
+  /* for some reason, setting top to 50% is pushing the content too far down, no idea why */
+  top: 42%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.center h1,
+.center h2,
+.center h3,
+.center h4,
+.center h5,
+.center h6,
+#slides.supplemental .slide .center h1,
+#slides.supplemental .slide .center h2,
+#slides.supplemental .slide .center h3,
+#slides.supplemental .slide .center h4,
+#slides.supplemental .slide .center h5,
+#slides.supplemental .slide .center h6
+{
   text-align: center;
-  vertical-align: middle;
 }
 
-/* numbered lists are numbered */
-.content ol {
-    margin-left: 40px;
-    font-size: 3em;
-    text-align: left;
-    padding-left: 40px;
-}
-.content ol > li {
-    list-style: decimal;
-    display: list-item;
+.small {
+    font-size: 80%;
 }
 
+.smaller {
+    font-size: 70%;
+}
+
+/* inverse slide style */
+.slide.inverse {
+  color: #efefef;
+  background-color: #262626;
+}
+  .slide.inverse code {
+    color: black;
+  }
+  .slide.inverse h1:first-child {
+    border-bottom: 3px solid #efefef;
+  }
+
+/**********************************
+ ***       List styling         ***
+ **********************************/
+
+.content > ol,
+.content > ul {
+  margin-left: 2em;
+}
+
+.content ol > li,
+.content > ul li,
+.content > form > ul li {
+  margin: .5em;
+}
 
 /* ironically, normal lists have bullets and 'bullets' lists don't */
-.content > ul,
-.content > form > ul {
-    list-style: disc;
-    font-size: 3em;
-    text-align: left;
-    padding-left: 40px;
-}
-.content > ul > li,
-.content > form > ul > li {
-    padding: .5em;
-    margin-left: 40px;
-}
-
-/* ironically, normal lists have bullets and 'bullets' lists don't */
-.bullets > ul {
-    list-style: none;
-	font-size: 3em;
-	padding-left: 0px;
+.bullets ul {
+  list-style: none;
+  padding-left: 0px;
 }
 .bullets > ul > li {
-    text-align: center;
-    padding: 25px;
+  text-align: center;
+  padding: 25px;
 }
-.smbullets > ul {
-    font-size: 2.5em;
-}
+
 .smbullets > ul > li {
-    text-align: center;
-    padding: 10px;
+  text-align: center;
+  padding: 10px;
 }
 
-/* nested lists get their bullets back */
-.content ul ul,
-.content ol ul {
-  list-style: disc;
-  margin: 10px 10px;
-  padding-left: 40px;
-  text-align: left;
+.bullets ul ul > li {
+  font-size: 80%;
 }
 
-.bullets ul ul > li { font-size: 80%; }
-
-.content ul li.incremental.hidden {
-  display: none;
-}
-
-.commandline pre {
-    font-size: 2em;
+.content .incremental.hidden {
+  visibility: hidden;
 }
 
 .commandline code.command {
@@ -178,66 +265,28 @@
 
 .command h1 {
     white-space: pre;
-    font-family: monospace;
-    font-size: 3em;
 }
 
 .code {
     white-space: pre;
-    font-family: monospace;
 }
 
-.subsection h1 {
-    background: #008;
-    color: #fff;
-    padding: .25em;
-}
+#notes, .notes-section, .instructor, .solguide { display: none }
 
-.small {
-    font-size: 80%;
-}
-
-.smaller {
-    font-size: 70%;
-}
-
-h1,h2,h3 { font-weight: normal; text-align: center; margin: 0.5em 0; }
-h1 { font-size: 5em; }
-h2 { font-size: 3em; }
-h3 { font-size: 2em; }
-
-/* make this invisible as possible, while still rendering so that wkhtmltopdf doesn't ignore it */
-.content h1.section_title {
-  color: transparent !important;
-  opacity: 0 !important;
-  font-size: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-pre { margin: 1em 40px; padding: .25em; }
-
-#navigation.hidden,
-#stylepicker.hidden {
-  position:absolute; top:0; left:-9999px; width:1px; height:1px; overflow:hidden;
-}
-
-.notes, .handouts, .instructor, .solguide { display: none }
-.buttonNav { display: none }
 .offscreen { position:absolute; top:0; left:-9999px; overflow:hidden; }
-#debugInfo { margin-left: 30px; }
-#notesInfo { margin-left: 30px; display: none }
-#slideFilename {
-  position: absolute;
-  right: 5px;
-  bottom: 0px;
-  height: 23px;
-  padding-left: 10px;
-  background: #ccc;
-  z-index: 2147483647;
+
+body.presenter #debugInfo {
+  margin-left: 30px;
 }
+
+#notesInfo {
+  margin-left: 30px;
+  display: none;
+}
+
 img#disconnected {
   float: right;
+  margin: 5px;
   display: none;
 }
 
@@ -249,256 +298,365 @@ img#disconnected {
   display: none;
 }
 
-#help {
-    background: #9f9;
-    position: absolute;
-    right: 80px;
-    display: none;
-    z-index: 2147483647; /* max, see http://www.puidokas.com/max-z-index/ */
-}
-#help table tr td.key {
-    text-align: right;
-    border-right: 2px solid #8b8;
-    padding-right: 4px;
-    font-weight: bold;
-}
-
 /**********************************
  ***       Table styling        ***
  **********************************/
 
 .content table {
-    margin-left: auto;
-    margin-right: auto;
-    border-collapse:collapse;
-    width: 80%;
-    font-size: 1.7em;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse:collapse;
+  width: 90%;
+  font-size: .9em;
 }
 
-.content.small table {
-    font-size: 1.6em;
-    width: 90%;
-}
-.content.smaller table {
-    font-size: 1.5em;
-    width: 95%;
+.content thead {
+  border-bottom: 2px solid #ccc;
 }
 
-.content table th {
-    border-bottom: 2px solid #ccc;
-    padding: 0.5em;
-    font-weight: bold;
+.content tr:not(:last-child) {
+  border-bottom: 1px solid #ccc;
 }
 
-.content table tr td {
-    border-right: 1px solid #eee;
-    border-bottom: 1px solid #efefef;
-    text-align: center;
-    padding: 0.5em;
+.content tbody tr:nth-child(2n+1) {
+  background-color: #f9f9f9;
 }
 
-.content table tr td:last-child {
-    border-right: none;
+.content td {
+  padding: .25em .5em;
 }
 
-.content table li {
-    list-style-type: disc;
+.content td:first-child {
+  border-right: 2px solid #ccc;
 }
-
 
 /**********************************
  ***      Sidebar styling       ***
  **********************************/
-
-#feedbackWrapper {
-  float: left;
-  height: 100%;
+#hamburger {
   position: fixed;
-  background-color: #dfdfdf;
-  opacity: 0.98;
-  z-index: 2147483647; /* max, see http://www.puidokas.com/max-z-index/ */
+  padding: 4px 8px;
+  opacity: .05;
+  border-radius: .1em;
+  transition: all .2s;
+  z-index: 2147483647;
+  float: left;
 }
 
-#feedbackSidebar {
-  height: 100%;
-  width: 200px;
-  background: transparent url(grippy-close.png) no-repeat right center;
-  display: none;
+#hamburger:hover,
+#hamburger.highlight {
+  opacity: 1;
+  background-color: #337ab7;
+  color: #ffffff;
 }
 
-#feedbackSidebar img#feedbackActivity {
+#sidebarExit {
   position: absolute;
-  right: 3px;
-  top: 3px;
+  height: 100%;
+  width: 100%;
+  left: 240px;
+  z-index: 2147483647;
+}
+
+#feedbackSidebar,
+#sidebarExit,
+.submenu {
   display: none;
 }
 
-#feedbackHandle {
+.sideMenu {
+  position: absolute;
   height: 100%;
-  width: 9px;
-  background: transparent url(grippy.png) no-repeat center;
+  width: 240px;
+  background-color: #ffffff;
+  box-shadow:0 0 25px rgba(0,0,0,0.35);
+  overflow: auto;
+  z-index: 2147483647;
 }
 
-#feedbackSidebar div.row {
+.sideMenu textarea {
+  min-height: 80px;
+  width: 90%;
+  margin: 8px;
+  border-color: #dddddd;
+  border-radius: .3em;
+}
+
+.sideMenu p {
   text-align: center;
-  margin: 5px 0;
-  padding: 5px 0;
+  margin: 0;
 }
 
-#feedbackWrapper h4 {
-  text-align: left;
-  margin-left: 3px;
+.sideMenu i {
+  margin-right: 8px;
 }
-#feedbackSidebar span.buttonWrapper {
-  height: 60px;
-  width: 85px;
-  padding: 5px;
+
+.sideMenu hr {
+  clear: both;
+}
+
+.optionWrapper,
+.buttonWrapper {
+  line-height: 48px;
+  padding: 0 16px;
+  font-weight: bold;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.buttonWrapper:hover,
+.submenu a:hover,
+.submenu .highlighted a {
+  background-color:#337ab7;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.buttonWrapper.disabled {
+  opacity: 0.25;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  background-color: initial !important;
+  color: initial !important;
+}
+.buttonWrapper.disabled:hover {
+  background-color: initial !important;
+  color: initial !important;
+}
+
+#paceWrapper {
+  display: flex;
+}
+
+#paceWrapper div {
+  flex: 1;
+  line-height: 30px;
+  margin: 12px 0;
+  padding: 0;
+  text-align: center;}
+
+#paceWrapper i {
+  margin-right: 0;
+}
+
+.submenu .buttonWrapper{
   display: inline-block;
-}
-#feedbackSidebar span.buttonWrapper button {
-  margin: 44px auto 0 auto;
-}
-
-#feedbackSidebar span.buttonWrapper.slower {
-  background: transparent url(slow.png) no-repeat center top;
-}
-
-#feedbackSidebar span.buttonWrapper.faster {
-  background: transparent url(fast.png) no-repeat center top;
-}
-
-#feedbackSidebar textarea {
-  height: 85px;
-  width: 85%;
-}
-
-#feedbackSidebar #disclaimer {
-  position: absolute;
-  bottom: 25px;
-  width: 100%;
+  width: 90%;
+  margin: 0 5%;
+  padding: 0;
+  background-color: #337ab7;
+  border: 1px solid #2e6da4;
+  color: #ffffff;
+  border-radius: 4px;
   text-align: center;
+  line-height: 36px;
 }
 
-#feedbackSidebar div.row.tools {
+.submenu .buttonWrapper:hover {
+  background-color: #286090;
+  border-color: #204d74;
+}
+
+.submenu ul {
+  font-size: .9em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.submenu a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+
+.submenu a i {
+  float: right;
+}
+
+.navSection {
+  border-top: 1px solid #ccc;
+  padding: .8em;
+}
+
+.navItem {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: .5em 1.5em;
+}
+
+#navigationHover {
+  display: none;
   position: absolute;
-  bottom: 30px;
-  width: 100%;
-  text-align: center;
+  overflow: hidden;
+  width: 640px;
+  height: 500px;
+  z-index: 99999;
+  background-color: inherit;
+  margin: 0px;
+  box-shadow:0 0 25px rgba(0,0,0,0.35);
+  transform: scale(0.3);
+  transform-origin: 0 0;
 }
 
-#feedbackSidebar div.row > button {
-  width: 90%%;
-  margin: auto 5%;
+#askedQuestions {
+  margin: 0;
+}
+#askedQuestions li {
+  cursor: default;
+}
+#askedQuestions li:hover {
+  background-color: #dedede;
+}
+#askedQuestions li:hover:after {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  padding: 0 8px;
+  float: right;
+  content: "\f057"; /* fa-times-circle */
+}
+#askedQuestions li.closed {
+  text-decoration: line-through;
+  color: #ccc;
+}
+#languageMenu {
+  line-height: 2em;
 }
 
-.fg-menu-container {
-    z-index: 2147483647; /* max, see http://www.puidokas.com/max-z-index/ */
-}
 
-.fg-button { clear:left; margin:0 4px 40px 20px; padding: .4em 1em; text-decoration:none !important; cursor:pointer; position: relative; text-align: center; zoom: 1; }
-.fg-button .ui-icon { position: absolute; top: 50%; margin-top: -8px; left: 50%; margin-left: -8px; }
-a.fg-button { float:left; }
-.fg-button-icon-right { padding-right: 2.1em; }
-.fg-button-icon-right .ui-icon { left: auto; right: .2em; margin-left: 0; }
+/* End Sidebar styling */
 
-.fg-button.ui-state-loading .ui-icon { background: url(spinner_bar.gif) no-repeat 0 0; }
-
-#navmenu, #stylemenu {
+/* questions HUD indicator */
+#questionsIndicator {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 50px;
-  z-index: 2147483647; /* max, see http://www.puidokas.com/max-z-index/ */
+  top: 12px;
+  right: 12px;
+  width: 1em;
+  height: 1em;
+  font-size: 2em;
+  background-color: #fb8d8d;
+  border: 1px solid #900e0e;
+  border-radius: 5px;
+  padding: 0 0 0.25em 0.25em;
+  opacity: 0.5;
+  z-index: 999999999;
+  display: none;
 }
-
-.code .c { color: #999988; font-style: italic } /* Comment */
-.code .err { color: #a61717; background-color: #e3d2d2 } /* Error */
-.code .k { font-weight: bold } /* Keyword */
-.code .o { font-weight: bold } /* Operator */
-.code .cm { color: #999988; font-style: italic } /* Comment.Multiline */
-.code .cp { color: #999999; font-weight: bold } /* Comment.Preproc */
-.code .c1 { color: #999988; font-style: italic } /* Comment.Single */
-.code .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
-.code .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
-.code .gd .x { color: #000000; background-color: #ffaaaa } /* Generic.Deleted.Specific */
-.code .ge { font-style: italic } /* Generic.Emph */
-.code .gr { color: #aa0000 } /* Generic.Error */
-.code .gh { color: #999999 } /* Generic.Heading */
-.code .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
-.code .gi .x { color: #000000; background-color: #aaffaa } /* Generic.Inserted.Specific */
-.code .go { color: #888888 } /* Generic.Output */
-.code .gp { color: #555555 } /* Generic.Prompt */
-.code .gs { font-weight: bold } /* Generic.Strong */
-.code .gu { color: #aaaaaa } /* Generic.Subheading */
-.code .gt { color: #aa0000 } /* Generic.Traceback */
-.code .kc { font-weight: bold } /* Keyword.Constant */
-.code .kd { font-weight: bold } /* Keyword.Declaration */
-.code .kp { font-weight: bold } /* Keyword.Pseudo */
-.code .kr { font-weight: bold } /* Keyword.Reserved */
-.code .kt { color: #445588; font-weight: bold } /* Keyword.Type */
-.code .m { color: #009999 } /* Literal.Number */
-.code .s { color: #d14 } /* Literal.String */
-.code .na { color: #008080 } /* Name.Attribute */
-.code .nb { color: #0086B3 } /* Name.Builtin */
-.code .nc { color: #445588; font-weight: bold } /* Name.Class */
-.code .no { color: #008080 } /* Name.Constant */
-.code .ni { color: #800080 } /* Name.Entity */
-.code .ne { color: #990000; font-weight: bold } /* Name.Exception */
-.code .nf { color: #990000; font-weight: bold } /* Name.Function */
-.code .nn { color: #555555 } /* Name.Namespace */
-.code .nt { color: #000080 } /* Name.Tag */
-.code .nv { color: #008080 } /* Name.Variable */
-.code .ow { font-weight: bold } /* Operator.Word */
-.code .w { color: #bbbbbb } /* Text.Whitespace */
-.code .mf { color: #009999 } /* Literal.Number.Float */
-.code .mh { color: #009999 } /* Literal.Number.Hex */
-.code .mi { color: #009999 } /* Literal.Number.Integer */
-.code .mo { color: #009999 } /* Literal.Number.Oct */
-.code .sb { color: #d14 } /* Literal.String.Backtick */
-.code .sc { color: #d14 } /* Literal.String.Char */
-.code .sd { color: #d14 } /* Literal.String.Doc */
-.code .s2 { color: #d14 } /* Literal.String.Double */
-.code .se { color: #d14 } /* Literal.String.Escape */
-.code .sh { color: #d14 } /* Literal.String.Heredoc */
-.code .si { color: #d14 } /* Literal.String.Interpol */
-.code .sx { color: #d14 } /* Literal.String.Other */
-.code .sr { color: #009926 } /* Literal.String.Regex */
-.code .s1 { color: #d14 } /* Literal.String.Single */
-.code .ss { color: #990073 } /* Literal.String.Symbol */
-.code .bp { color: #999999 } /* Name.Builtin.Pseudo */
-.code .vc { color: #008080 } /* Name.Variable.Class */
-.code .vg { color: #008080 } /* Name.Variable.Global */
-.code .vi { color: #008080 } /* Name.Variable.Instance */
-.code .il { color: #009999 } /* Literal.Number.Integer.Long */
+/* end questions HUD indicator */
 
 .results {
   background-color:#002200;
   color:#00AA00;
-  font-size:2em;
   border:2px solid black;
   position: fixed;
   top:0px;
   width:100%;
   padding:15px;
   margin:0px;
-  font-family: monospace;
   z-index: 2147483647; /* max, see http://www.puidokas.com/max-z-index/ */
 }
 
-.executing {
-  color:#0000FF !important;
-  background-color: yellow;
+.results pre {
+  margin: 0;
+  padding: 0;
 }
 
-.executing:hover {
+/* Add Console "code highlighting" styles to resemble the look of a terminal window. */
+pre.highlight code.language-console,
+pre.highlight code.console {
+  background: #222;
+  background: url(titlebar/left.png) left top no-repeat, url(titlebar/right.png) right top no-repeat, url(titlebar/center.png) center top repeat-x #222;
+  color: #fff;
+  padding: 30px 0.5em 0.5em;
+  border: 1px solid #acacac;
+  border-radius: 6px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  box-shadow: 0px 0px 10px #acacac;
+  overflow: hidden;
+}
+
+pre.highlight code.language-powershellconsole,
+pre.highlight code.powershellconsole {
+  background: rgb(1, 36, 86);
+  background: url(titlebar/powershell-controls.png) right top no-repeat, url(titlebar/powershell.png) left top repeat-x rgb(1, 36, 86);
+  color: rgb(238, 237, 240);
+  padding: 32px 0.5em 0.5em;
+  border: 6px solid rgb(102, 202, 234);
+  border-top: 2px solid rgb(102, 202, 234);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+pre.highlight code.language-console.nochrome,
+pre.highlight code.language-powershellconsole.nochrome {
+  background-image: none;
+  border-width: 1px;
+  padding: 0.5em;
+  border-radius: 4px;
+}
+
+pre.highlight code .highlightedLine {
+  background-color: #f5e2e2;
+  color: #000;
+  display: inline-block;
+  width: 100%;
+}
+
+/* to avoid breaking changes */
+.highlight .language-shell {
+  display: block;
+  background-color: #222;
+  color: #00ff40;
+  border: 2px solid #ddd;
+  padding: 0.5em;
+  overflow: hidden;
+}
+
+/* Diagram styling: overriding mermaid.css as needed */
+.language-render-diagram,
+.language-render-diagram .noteText,
+.language-render-diagram .node text,
+.language-render-diagram div.mermaidTooltip {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+
+/**********************************
+ ***       code execution       ***
+ **********************************/
+ .execute {
+  position: relative;
   cursor: pointer;
 }
+
+.execute:after {
+  font-family: FontAwesome;
+  content: "\F144";
+  position: absolute;
+  right: .5em;
+}
+
+.executing:after {
+  content: "\f1ce";
+  color: #e74c3c;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+.executing:hover { cursor: wait; }
+/* End code execution */
+
 
 #tips, #preshow_timer {
   display:inline;
   background-color:#000;
   color:#fff;
-  font-size:3em;
   border:2px solid black;
   position: fixed;
   padding:25px;
@@ -529,77 +687,294 @@ a.fg-button { float:left; }
 /**********************************
  ***       form widgets         ***
  **********************************/
-.content div.form.element {
-    text-align: left;
-    padding-left: 40px;
+form .element {
+  font-size: .8em;
+  width: 90%;
+  margin: 0 auto;
 }
-.content div.form.element label {
-  margin-right: 0.5em;
+
+.element input + label,
+.element label + input,
+.element select {
+  margin-left: 0.5em;
 }
-.content div.form.element select {
-  font-size: 2em;
-}
-.content div.form.element textarea {
+
+.element textarea {
   display: block;
   width: 85%;
 }
-.content div.form.element ul {
-  list-style: disc;
+
+.element ul {
+  list-style: none;
+  margin-top: 0;
 }
-.content div.form.element ul > li {
-  margin-left: 40px;
+
+.element input[type=checkbox],
+.element input[type=radio] {
+  font-size: 1em;
+  width: 1em;
+  height: 1em;
 }
-/* TODO: not sure why the preview window honks things up */
-#preview .content div.form.element select {
-  font-size: 0.8em;
-}
-.content div.form.element.warning {
+
+.warning {
   background-color: #ff7373;
 }
-.content form div.tools {
-  font-size: 2em;
+.tools {
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
 }
-.content form div.tools * {
-  float: right;
+
+.tools input[type=submit],
+.tools input[type=button] {
+  height: 24px;
+  font-size: .6em;
+  border: none;
 }
-.content form div.tools input[type=submit],
-.content form div.tools input[type=button] {
-  margin: 1em;
+.tools input[type=submit].dirty {
+  color: #fff;
+  background-color: #2e6da4;
 }
-.content form div.tools input[type=submit].dirty {
-  color: red;
-}
-.content form div.tools input[type=button].display {
+.tools input[type=button].display {
   display: none;
 }
 
-div.rendered.form {
+.rendered {
   border: 1px solid #ccc;
   border-radius: 0.5em;
-  margin: 1em;
-  padding: 0.25em;
+  padding: .5em;
+  min-height: 3em;
 }
-div.rendered.form label {
-  display: block;
-  font-weight: bold;
+
+.rendered label {
   border-bottom: 1px solid #999;
 }
-div.rendered.form .item {
-  display: block;
-  width: 0;
-/*   overflow: hidden; */
-  height: 1.25em;
-  white-space: nowrap;
+.item {
+  width: 100%;
+  position: relative;
 }
-div.rendered.form .item.barstyle0 { background-color: #bb73bb; }
-div.rendered.form .item.barstyle1 { background-color: #59b859; }
-div.rendered.form .item.barstyle2 { background-color: #e3742f; }
-div.rendered.form .item.barstyle3 { background-color: #4848e8; }
-div.rendered.form .item.barstyle4 { background-color: #f75d5d; }
 
-#notes .form.wrapper {
+.answer {
+  position: absolute;
+  left: 0;
+}
+.bar {
+  height: 1.25em;
+  background-color: #e74c3c;
+  border: 1px solid #f45f5f;
+  border-left: none;
+  border-radius: 0 0.4em 0.4em 0;
+}
+.correct .bar {
+  background-color: #dff0d8;
+  border: 1px solid #00AA00;
+  border-left: none;
+}
+
+.count {
   display: none;
 }
+
+/**********************************
+ ***     form answer key        ***
+ **********************************/
+
+/* no, the option styling will likely not do anything */
+.slide.answerkey form option.incorrect,
+.slide.answerkey form label.incorrect {
+  text-decoration: line-through;
+  font-weight: 100;
+  opacity: .7;
+  color: #e74c3c; /* red */
+}
+.slide.answerkey form label.correct,
+.slide.answerkey form option.correct {
+  font-weight: 900;
+  color: #00AA00; /* green */
+}
+
+.slide.answerkey input::before {
+  margin-left: -1em;
+  vertical-align: top;
+  font-family: FontAwesome;
+  font-weight: bold;
+  text-decoration: none;
+}
+  /* Be careful with order here; these rules depend on cascading order */
+  .slide.answerkey input::before,
+  .slide.answerkey input.correct:checked::before {
+    content: "\f14a"; /* square checkmark */
+    color: #00AA00;   /* green */
+  }
+  .slide.answerkey input:checked::before,
+  .slide.answerkey input.correct::before {
+    content: "\f00d"; /* times */
+    color: #e74c3c;   /* red */
+  }
+
+
+
+/*****************
+ ***   modals   ***
+ *****************/
+.ui-dialog.ui-widget-content {
+  border: none;
+  box-shadow:0 0 25px rgba(0,0,0,0.35);
+}
+
+.ui-dialog .links,
+#settings-modal .description,
+.ui-dialog select {
+  font-size: .75em;
+}
+
+.ui-dialog .ui-dialog-buttonpane{
+  border: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+.ui-dialog .ui-widget-header {
+  border: none;
+  background-color: transparent;
+}
+
+.ui-dialog .setting {
+  margin-bottom: 8px;
+}
+
+.ui-dialog .setting input {
+  margin-left: 1em;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+  float: none;
+  padding-left: 1em;
+}
+
+.ui-dialog .ui-button {
+  font-size: .8em;
+}
+
+.ui-dialog .links {
+  text-align: right;
+}
+
+.ui-dialog p,
+.ui-dialog select {
+  margin-left: 30px;
+}
+
+.ui-dialog p {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.ui-dialog .right {
+  float: right;
+}
+
+.ui-dialog .auxillary {
+  background: none;
+  border: none;
+  font-size: small;
+}
+  .ui-dialog .auxillary:active {
+    color: #ccc;
+  }
+
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+
+#help-modal {
+  display: none;
+  font-size: .9em;
+}
+
+  #help-modal .ui-dialog .ui-dialog-title {
+    font-size: 1em;
+  }
+
+#help div {
+  padding: 6px 0;
+}
+
+  #help div + div {
+    border-top: 1px solid #eee;
+  }
+
+  #help .description,
+  #help .action,
+  #help .hotkeys {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #help .description {
+    width: 30%;
+  }
+
+  #help .action {
+    width: 15%;
+    color: gray;
+  }
+
+  #help .hotkeys {
+    width: 25%;
+  }
+
+  #help .hotkeys .key {
+    border: 1px solid #ccc;
+    background-color: #dfdfdf;
+    border-radius: 0.25em;
+    padding: 0.15em 0.5em;
+    margin: 0.25em;
+  }
+
+ /*****************
+  *** end modal ***
+  *****************/
+
+/******************************
+ ***   Tour customization   ***
+ ******************************/
+.introjs-skipbutton {
+  color: red;
+}
+.introjs-nextbutton {
+  font-weight: bold;
+}
+.introjs-donebutton {
+  color: white;
+  font-weight: bold;
+  background-image: linear-gradient(to bottom, #62c462, #51a351);
+  border-color: #51a351 #51a351 #387038;
+  text-shadow: none;
+}
+.introjs-donebutton:focus,
+.introjs-donebutton:active {
+  background-color: #51a351;
+  background-image: none;
+}
+.tourDark {
+  background-color: rgba(183, 183, 183, 0.9);
+}
+.introjs-tooltip h1,
+.introjs-tooltip h2,
+.introjs-tooltip h3,
+.introjs-tooltip h4,
+.introjs-tooltip h5,
+.introjs-tooltip h6 {
+  border-bottom: 2px solid black;
+  margin: 0 0 0.5em 0;
+}
+.introjs-tooltip h1 { font-size: 1.3em; }
+.introjs-tooltip h2 { font-size: 1.2em; }
+.introjs-tooltip h3 { font-size: 1.1em; }
+.introjs-tooltip h4 { font-size: 1em;   }
+
+
 
 /**********************************
  ***   supplemental materials   ***
@@ -611,56 +986,30 @@ div.rendered.form .item.barstyle4 { background-color: #f75d5d; }
   width: 8.1in;
 }
 
-.supplemental h1 { font-family: 'Arvo'; text-align: left; }
+.supplemental h1,
 .supplemental h2,
     .supplemental h3,
     .supplemental h4,
     .supplemental h5,
-    .supplemental h6 { font-family: 'PT Sans'; text-align: left; }
-
-.supplemental h1 { font-size: 2em; }
-.supplemental h2 { font-size: 1.5em; }
-.supplemental h3,
-    .supplemental h4,
-    .supplemental h5,
-    .supplemental h6 { font-size: 1.3em; text-align: left; }
-
-.supplemental .content > p,
-    .supplemental .content > ol,
-    .supplemental .content > ul { font-size: 1em; }
+    .supplemental h6 { text-align: left; }
 
 .supplemental img { max-width: 7in; }
-.supplemental .content > pre,
-  .supplemental .content > pre > code { font-size: 10pt; font-family: 'Courier New', Courier, monospace; }
+
 .supplemental ul { list-style: disc; margin-left: 1.25em !important; padding-left: inherit !important; }
-.supplemental .content table { font-size: 0.65em; } /* Ugly hack for tables, which never seem to scale properly. Ick */
 
 /* downloads page */
-/* we want scrolls! */
-body#download {
-  overflow:auto;
-  height: auto;
+#download {
+  max-width: 90%;
+  margin: 0 auto;
 }
-#download h1 {
-  font-size: 3em;
-}
-ul#downloads {
-    margin-left:  20%;
-    font-size: large;
-    list-style-type: disc;
-}
-ul#downloads li {
-    margin: 0.5em;
+
+#download h4 {
+  margin-left: .5em;
 }
 
 /**********************
  ***   stats page   ***
  **********************/
-/* we want scrolls! */
-body#stats {
-  overflow:auto;
-  height: auto;
-}
 
 /* apply some nifty rounding styles to the row */
 #stats div.row {
@@ -668,10 +1017,12 @@ body#stats {
   margin: 0.25em 1em;
   padding: 0.1em;
   background-color: #dfdfdf;
+  color: #222;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   -khtml-border-radius: 5px;
   border-radius: 5px;
+  cursor: default;
 }
 /* and to the bar inside the row */
 #stats div.bar {
@@ -692,6 +1043,68 @@ body#stats {
   top: 0.15em;
   right: 0.25em;
 }
+
+/* Add the disclosure triangles */
+#stats div.row:before {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25em;
+  text-decoration: inherit;
+}
+  #stats div.row.top:hover:before {
+    position: absolute;
+    content: "\f0da"; /* fa-caret-right */
+    margin-left: -0.5em;
+  }
+  #stats div.row.top.active:before {
+    position: absolute;
+    content: "\f0d7"; /* fa-caret-down */
+    margin-left: -0.75em;
+  }
+
+#stats h2 {
+  border-bottom: 1px solid #eee;
+}
+#stats #viewers,
+#stats #elapsed {
+  text-align: center;
+  min-height: 2em;
+}
+#stats #viewers.zoomline,
+#stats #elapsed.zoomline {
+  text-align: left;
+}
+#stats .zoomline .col.current,
+#stats .zoomline .col.current .inner {
+  background-color: #ffb105;
+  min-width: 5px;
+}
+#stats .zoomline .col.current:hover {
+  min-width: 10px;
+  background: #ffb105;
+  background: linear-gradient(#efefec, #ffb105);
+}
+#stats .zoomline .col.current:hover .inner,
+#stats .zoomline .col.current .inner:hover {
+  background-color: #f3708d;
+}
+
+
+#stats #stray,
+#stats #idle {
+  display: none;
+  width: 75%;
+  margin: 1em auto;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+}
+  #stats #stray {
+    background-color: #8e030a;
+  }
+  #stats #idle {
+    background-color: #3a64c1;
+  }
 
 /* style all three boxes */
 #stats div#least,
@@ -732,6 +1145,7 @@ body#stats {
 }
 #stats div#all div.bar {
   background: #66b366;
+  border-color: #000;
 }
 
 /* detail view */
@@ -745,45 +1159,143 @@ body#stats {
  *** end stats page ***
  **********************/
 
-/**********************
- ** presenter popups **
+ /**********************
+ ***    Callouts    ***
  **********************/
-.tipsy-inner { text-align: left; max-width: 500px; }
-.tipsy-inner h1 { font-size: 1.5em; }
-.tipsy-inner h2 { font-size: 1.35em; }
-.tipsy-inner h3 { font-size: 1.25em; }
-.tipsy-inner a { color: #0d8dfd; }
-.tipsy-inner a:hover { color: #04ffff; }
 
-.tipsy-inner p.newpage { text-align: right; padding-bottom: 0.25em; }
-.tipsy-inner p.newpage a {
-  color: white;
-  padding: 0.25em;
+.callout {
+  padding: 1em;
+  position: relative;
+  line-height: 1.2em;
+  border: 1px solid #222;
+  border-radius: 4px;
+  background-color: transparent; /* because there's a warning class with a red background */
+}
+
+  .callout:before {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+    text-decoration: inherit;
+    position: absolute;
+    left: 0.3em;
+  }
+  .callout:after {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5em;
+    text-decoration: inherit;
+    position: absolute;
+    left: 0.5em;
+    top: 0.65em;
+    color: #fff;
+  }
+
+  .callout.info,
+  .callout.warning,
+  .callout.question,
+  .callout.exercise,
+  .callout.stop,
+  .callout.thumbsup,
+  .callout.conversation,
+  .callout.glossary,
+  .callout.terminal {
+    padding-left: 3em;
+  }
+
+  .callout.info:before         { content: "\f05a"; } /* fa-info-circle */
+  .callout.warning:before      { content: "\f071"; } /* fa-exclamation-triangle */
+  .callout.question:before     { content: "\f059"; } /* fa-question-circle */
+  .callout.exercise:before     { content: "\f41b"; } /* fa-pencil-square */
+  .callout.stop:before         { content: "\f05e"; } /* fa-ban */
+  .callout.thumbsup:before     { content: "\f164"; } /* fa-thumbs-up */
+  .callout.conversation:before { content: "\f0e5"; } /* fa-comment */
+  .callout.glossary:before     { content: "\f02d"; } /* fa-book */
+
+  .callout.terminal:before     { content: "\f0c8"; } /* fa-square */
+  .callout.terminal:after      { content: "\f120"; } /* fa-terminal */
+
+
+/* callouts used on error pages */
+.error .callout {
+  padding-left: 4em;
+  margin: 1em;
+  background-color: #ffe0e0;
+  padding-bottom: 0;
+}
+  .error .callout p:first-of-type {
+    margin-top: 0;
+  }
+
+/**********************
+***  end callouts   ***
+**********************/
+.callout.glossary a.label,
+ul.glossary.terms a.label {
+  display: block;
+  font-weight: 600;
   text-decoration: none;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  border: 1px solid black;
 }
-.tipsy-inner p.newpage a:hover {
-  font-weight: bold;
-  background-color: #222;
-  border: 1px solid white;
+ul.glossary.terms a.return {
+  text-decoration: none;
+  padding-right: 3em;
+}
+a.term {
+  text-decoration: none;
+}
+a.term:after {
+  font-family: FontAwesome;
+  font-size: 0.8em;
+  vertical-align: super;
+  content: "\f27b";
+  text-decoration: none;/* fa-commenting-o */
 }
 
 
-.tipsy-inner #stats { min-width: 450px; }
-.tipsy-inner #stats .row { color: black; }
-.tipsy-inner #stats #all { max-height: 325px; overflow: auto; }
+/**********************
+***  glossary       ***
+**********************/
 
-.tipsy-inner ul#downloads { font-size: 1em; margin-left: 0.25em; }
-/************************
- * end presenter popups *
- ************************/
+/**************************
+*** activity indicators ***
+***************************/
+.slide.activity .activityToggle {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
 
-/* iPhone */
-/* Portrait */
+#synchronize {
+  display: none;
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  font-size: 0.8em;
+}
+
+/* Render hidden headlines so that when we print with wkhtmltopdf, we can use section
+   titles for page headers.  it would make sense to put this in the print section, but
+   then you get a weird double headline when previewing a print in the browser. */
+
+/* make this invisible as possible, while still rendering so that wkhtmltopdf doesn't ignore it */
+h1.section_title {
+  color: transparent !important;
+  opacity: 0 !important;
+  font-size: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* because the above section headers are h1 elements rendered only in print */
+.content:not(.cover) h1:not(.section_title) {
+  border-bottom: 2px solid #222;
+}
+
+/**** end hidden headlines ****/
+
+/* Tiny mobile devices. Larger devices scale automatically. */
 @media screen and (max-width: 320px)
 {
   html,body,#footer {
@@ -794,93 +1306,142 @@ body#stats {
     padding: 0;
   }
   body > #preso {
-    width: 976px;
-    zoom: 0.32;
+    transform: scale(.32);
+    transform-origin: 0 0;
+    width: 2928px;
   }
   #preso .slide {
     width: 100%;
     margin: 0;
     padding: 0;
   }
+}
+/* show notes, etc. when in portrait mode with plenty of room for it. */
+@media screen and (max-width: 1024px) and (orientation:portrait) {
+  body { overflow: auto; }
 
+  /* Styling to make the handout notes appear in the printed output. */
+  #notes {
+    display: block;
+    clear: both;
+    margin: 1em 1em 4em 1em;
+    font-size: 9pt;
+    border-top: 2px dashed #999;
+  }
 }
 
-/* Landscape */
-/*
-@media screen and (max-width: 480px)
-{
-  #preso {
-      margin: 0;
-      padding: 0;
-      width: 480px;
-      margin-left:auto;
-      margin-right:auto;
-  }
-  #footer {
-      background: #eee;
-      margin: 0;
-      padding: 2px;
-      width: 480px;
-      height: 20px;
-      margin-left:auto;
-      margin-right:auto;
-  }
-}
-*/
-
-/** Print **/
-@media print {
-  body {
-    font-size: 70%;
+/* Show button navigation on touch screen devices. */
+@media screen and (pointer: coarse) {
+  #buttonNav {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
 
-  #sidebarWrapper,
-  #sidebar,
-  #sidebarHandle {
-    display:none,
-
-  }
-
-  #preso, .slide {
-    border: 1px solid #999;
-  }
-
-  .slide .center {
-    width: 800px;
-    height: 600px;
-    display: table-cell;
+  #buttonNav div {
+    display: inline-block;
+    width: 50%;
+    line-height: 3em;
+    background-color: #337ab7;
+    color: #fff;
+    font-weight: bold;
     text-align: center;
     vertical-align: middle;
   }
+}
 
-  #preso, .slide {
-      background: #fff;
-      width: 800px;
-      height: 600px;
-      margin-left:auto;
-      margin-right:auto;
-      overflow:hidden;
+/** Print **/
+@media print {
+   #preso,
+  .slide:not(.center) {
+    max-height: inherit !important;
+    height: 100% !important; /* because otherwise handout notes are cutoff by the inline height set on the slide */
+  }
+
+  /* prevent large images from running off the page */
+  .content img {
+    max-width: 7in;
+    max-height: 9.5in;
   }
 
   #footer {
-      background: #eee;
-      padding: 2px;
-      width: 590px;
-      height: 20  px;
-      margin-left:auto;
-      margin-right:auto;
+    background: #eee;
+    padding: 2px;
+    width: 590px;
+    height: 20  px;
+    margin-left:auto;
+    margin-right:auto;
   }
 
-  pre, code {
-    font-family: Monaco, monospace;
+  /* keep the activity toggle from showing in printed output */
+  .slide.activity .activityToggle {
+    display: none;
+  }
+
+  /* Styling to make the handout notes appear in the printed output. */
+  .notes-section {
+    display: block;
+    clear: both;
+    margin-top: 1em;
+    border-top: 2px dashed #999;
+  }
+
+  .notes-section .callout {
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+
+  .notes-section.notes .personal {
+    float: right;
+    border-left: 2px solid #999;
+    border-bottom: 2px solid #999;
+    border-radius: 0 0 0 0.5em;
+    padding: 0.1em 0 0.25em 0.25em;
+    margin: 0 0 1em 1em;
+    max-width: 35%;
+  }
+
+  .notes-section.notes .personal h1 {
+    margin-top: 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.5em;
   }
 
   /* page break styling */
-  div.break {
+  .pagebreak {
     page-break-after: always;
     font-size: small;
     font-style: italic;
     padding-top: 0.25em;
     padding-bottom: 0.25em;
   }
+
 }
+
+ /***********************
+ ***    Animations    ***
+ ***********************/
+
+@-webkit-keyframes spin {
+    from   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    to {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+@keyframes spin {
+    from   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    to {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+/* end animations */
