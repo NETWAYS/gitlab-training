@@ -5,6 +5,6 @@
 ~~~CONTENT~~~
 
 <div class="net-footer">
-    <p>Graphite + Grafana Training</p>
+    <p>GitLab Training</p>
     <p>by NETWAYS GmbH (www.netways.de)</p>
 </div>
