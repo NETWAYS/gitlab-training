@@ -95,14 +95,12 @@ for integrating and sharing code changes between repositories.
 * Objective:
  * Clone the training repository twice and add diverging commits
 * Steps:
- * Clone the `training.git` repository into `$HOME/training1`
- * Clone the `training.git` repository into `$HOME/training2`
+ * Clone the `training.git` repository into `$HOME/training1` and `$HOME/training2`
 * Steps for both:
  * Change into each directory
  * Add/modify a file and commit the change
  * Push your change to the remote repository
-* Next steps:
- * Explain the error message after the second push
+* Explain the error message after the second push
 
 
 !SLIDE supplemental exercises
@@ -201,13 +199,11 @@ The last parameter specifies the target directory `training2`.
 * Objective:
  * Rebase your local history with the remote repository
 * Steps:
- * Change into `$HOME/training`
  * Reset the local history by 2 commits with `git reset --hard HEAD~2`
  * Update and commit README.md
- * Fetch the remote repository and use `git diff origin/master` to compare the changes
- * Rebase the master branch against the remote master branch with `git rebase origin/master`
- * Resolve possible merge conflicts, add them and continue with `git rebase --continue`
- * Push your rebased history
+ * Fetch remote and compare with `git diff origin/master`
+ * Rebase with `git rebase origin/master`
+ * Resolve possible merge conflicts, add them and continue with `git rebase --continue`, push rebased history
 
 Hint: `>>>` marks conflicts and show the differences on merge.
 

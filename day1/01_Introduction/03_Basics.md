@@ -16,7 +16,6 @@
 !SLIDE smbullets noprint
 # Snapshots and Differences
 
-* Information as a list of file-based changes
 * File changes and deltas over time
   * Git Commit, take snapshot, store reference to that snapshot
   * Set of snapshots of a mini-filesystem
@@ -27,7 +26,6 @@
 !SLIDE smbullets printonly
 # Snapshots and Differences
 
-* Information as a list of file-based changes
 * File changes and deltas over time
   * Git Commit, take snapshot, store reference to that snapshot
   * Set of snapshots of a mini-filesystem

@@ -95,8 +95,7 @@ environment.
  * List the branches with `git branch`
  * Checkout the new branch with `git checkout feature/docs`
 * Bonus:
- * Verify how `git checkout -b feature/docs2` works
- * Explain how it helps here
+ * Explain `git checkout -b feature/docs2`
 
 ~~~SECTION:handouts~~~
 

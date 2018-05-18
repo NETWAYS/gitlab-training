@@ -4,6 +4,19 @@
 * `git log`
   * Show commit history of the current branch.
   * Supports `-10` notation to show a limited number of commits.
+
+~~~SECTION:handouts~~~
+
+****
+
+`git log` shows the commit history of the current branch.
+
+
+~~~ENDSECTION~~~
+
+!SLIDE smbullets
+# Examine the Git history
+
 * `git show`
   * Print commit details.
   * If the commit id is omitted, the last commit is printed.
@@ -17,8 +30,6 @@
 
 ****
 
-`git log` shows the commit history of the current branch.
-
 `git show` will print the last commit details. If you want to print a specific commit id, add
 it afterwards.
 
@@ -26,7 +37,6 @@ it afterwards.
 also compare specific commits.
 
 ~~~ENDSECTION~~~
-
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Examine the Commit History

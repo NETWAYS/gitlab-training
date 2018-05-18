@@ -5,12 +5,6 @@
   * Put current changes on a temporary stack.
 * `git cherry-pick`
   * Collect specific commit into your working tree.
-* `git reset`
-  * Remove the current commit(s).
-  * `--soft` adds changes to the staging index.
-  * `--hard` drops them indefinitely.
-* `git archive`
-  * Create tarball without the `.git directory`.
 
 ~~~SECTION:handouts~~~
 
@@ -24,7 +18,6 @@ where your uncommitted changes will not apply.
 Use `git stash pop` to fetch the changes again. You can stash multiple uncommitted
 stages, `git stash list` will list them.
 
-`git archive` creates a tarball from the given working tree (HEAD or tag).
 ~~~ENDSECTION~~~
 
 

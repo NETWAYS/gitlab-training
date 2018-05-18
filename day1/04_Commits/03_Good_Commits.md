@@ -6,7 +6,7 @@
  * `git add -p` for interactive selection of changes in a file
 * `git commit <file1> <file2>`
 * Enable the verbose mode `-v` to show the differences below the editor
-* `git commit` uses the `EDITOR` environment variable to detect your preferred editor
+ * Write a short summary based on the visible changes
 
 ~~~SECTION:handouts~~~
 

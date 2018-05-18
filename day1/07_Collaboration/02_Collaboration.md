@@ -2,13 +2,11 @@
 # Collaboration with others
 
 * `git fetch`
-  * Get the remote branch reference pointer to the latest commit and cache it locally.
+  * Update the remote branch reference pointers to the latest commit and cache it locally.
+  * Does not pull in any remote commit history.
 * `git pull`
-  * Fetch and update the local history from remote repository. This pulls in source code changes and commits.
-* `git push`
-  * Update remote references and push local history to remote repository. This pushes source code changes and commits.
-* `git remote`
-  * Configure/list remote repository URLs (default `origin`).
+  * Fetch and update the local history from remote repository (implicit fetch).
+  * This pulls in source code changes and commits.
 
 ~~~SECTION:handouts~~~
 
@@ -17,6 +15,25 @@
 `git fetch` downloads objects and references from another remote repository.
 
 `git pull` invokes a fetch and updates the local history with commits from the remote repository.
+
+
+~~~ENDSECTION~~~
+
+
+!SLIDE smbullets
+# Collaboration with others
+
+* `git push`
+  * Update remote references and push local history to remote repository.
+  * This pushes source code changes and commits.
+  * Halts if the remote history diverged from your local history.
+* `git remote`
+  * Configure/list remote repository URLs (default `origin`).
+
+~~~SECTION:handouts~~~
+
+****
+
 
 `git push` updates remote references and pushes your local commit history to the remote repository.
 

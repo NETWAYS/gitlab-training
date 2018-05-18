@@ -20,10 +20,8 @@
 # Forking Workflow - How it works
 
 * Developers fork, commit and push into their own repository
-* Developers create a `Pull Request` for the official repository
-* CI triggers automated tests for the PR
-* Developers/Maintainers review and merge PR
-* CI triggers deployment task
+* Developers create a `Pull Request` for the official repository, CI triggers automated tests for the PR
+* Developers/Maintainers review and merge PR, CI triggers deployment task
 
 <center><img src="../../_images/workflows/git_github_workflow.png" alt="GitHub Workflow"/></center>
 
