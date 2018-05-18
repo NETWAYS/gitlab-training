@@ -28,7 +28,7 @@ problems in collaboration with others.
  * Modify `README.md` and add docs about amend
  * Add `README.md` to the staging index and commit the change
  * Edit `README.md` again and add it to staging
- * Use `git commit --amend README.md` to add the change to the previous commit
+ * Use `git commit --amend README.md` and explain what happens
 * Bonus:
  * Adopt the commit message using `git commit --amend`
 

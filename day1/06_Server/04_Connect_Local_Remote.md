@@ -191,10 +191,9 @@ If not set, you can set it explicitly.
  * Add the GitLab project as remote origin
 * Steps
  * Open the project in GitLab and extract the `HTTPS` clone URL
- * Navigate into your local repository
+ * Navigate into your local repository in `$HOME/training`
  * Use `git remote add origin <remoteurl>`
- * Push your local history
- * Use `--set-upstream` (short: `-u`) to enable the local branch tracking the remote repository 
+ * Push your local history with `--set-upstream` (short: `-u`)
 * Bonus
  * Set default push method to `simple`
 
@@ -280,7 +279,7 @@ In order to fix that, add the default push method to your global configuration.
  * Compare the local history to the remote project's history
 * Steps:
  * Click on `History` in the project view and examine the Git commits
- * Run `git log` on your shell and compare them to GitLab
+ * Run `git log` or `tig` on your shell and compare them to GitLab
 
 ~~~SECTION:handouts~~~
 
@@ -305,7 +304,7 @@ In order to fix that, add the default push method to your global configuration.
 ****
 
 * Click on `History` in the project view and examine the Git commits
-* Run `git log` on your shell and compare them to GitLab
+* Run `git log` or `tig` on your shell and compare them to GitLab
 
 
 !SLIDE supplemental solutions
@@ -320,7 +319,7 @@ In order to fix that, add the default push method to your global configuration.
 
 Choose `History` and look at the Git commits, their author, subject and timestamp.
 
-Compare it with the local `git log` entries. 
+Compare it with the local `git log` or `tig` entries. 
 
 
 

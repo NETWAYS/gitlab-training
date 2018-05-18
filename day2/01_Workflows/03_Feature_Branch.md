@@ -119,16 +119,11 @@ The new branch `feature/docs-workflows` will be based on the `master` branch.
  * Update `master` branch and merge feature branch `feature/docs-workflows`
 
 * Steps:
- * Change into `$HOME/training`
  * Checkout the feature branch `feature/docs-workflows`
  * Edit `README.md`, add and commit the changes
  * Diff the feature branch to the current master with `git diff master`
- * Checkout the `master` branch
- * Merge the feature branch as non-fast-forward with `--no-ff`
- * Show the history tree with `tig` or inside GitLab
-
-* Bonus:
- * Explain why the forced merge commit with `--no-ff` is important
+ * Checkout the `master` branch, merge the feature branch as non-fast-forward with `--no-ff`
+ * Show the history tree with `tig` or inside GitLab and explain why the forced merge commit with `--no-ff` is important
 
 ~~~SECTION:handouts~~~
 

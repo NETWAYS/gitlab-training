@@ -5,11 +5,10 @@ GitLab is available as self-hosted or cloud based repository management
 system.
 
 * Git repositories
-* User and group management
-* Fine granular permissions (branch protection, etc.)
+* User and group management and fine granular permissions
 * Issue tracking and project management (dashboards, etc.)
 * Merge, review, report
-* Continuous integration (CI)
+* Continuous integration/deployment (CI/CD)
 
 Hosted: https://www.netways.de/managed_hosting/gitlab_ce_hosting/
 

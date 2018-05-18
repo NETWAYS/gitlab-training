@@ -33,6 +33,6 @@ RUN cd $HOME \
   && tar vxf wkhtmltox-0.12.3_linux-generic-amd64.tar.xz \
   && cp wkhtmltox/bin/wk* /usr/local/bin/
 
-RUN gem install showoff --version=0.9.11.1
+RUN gem install showoff --version=0.19.6
 
 CMD "/bin/bash"

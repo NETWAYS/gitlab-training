@@ -1,16 +1,10 @@
 !SLIDE smbullets
-# Work on current changes
+# Add current changes
 
 * `git add`
   * Add (modified) file(s) from the working directory into the staging index.
 * `git mv`
   * Rename file(s) tracked by Git.
-* `git reset`
-  * Reset files added to the staging index.
-  * `--soft` keeps the changes (default), `--hard` removes them indefinitely.
-* `git rm`
-  * Remove the file(s) from working tree and Git repository.
-  * Note that file(s) will be visible in Git history, and can be restored from it.
 
 ~~~SECTION:handouts~~~
 
@@ -22,11 +16,30 @@ waiting for the commit.
 `git mv` renames an existing file tracking the change for the commit. If you
 manually move the file, you will need to rm and add it again.
 
+~~~ENDSECTION~~~
+
+
+!SLIDE smbullets
+# Remove changes
+
+* `git reset`
+  * Reset files added to the staging index.
+  * `--soft` keeps the changes (default), `--hard` removes them indefinitely.
+* `git rm`
+  * Remove the file(s) from working tree and Git repository.
+  * Note that file(s) will be visible in Git history, and can be restored from it.
+
+~~~SECTION:handouts~~~
+
+****
+
 `git reset` resets files added to the staging index.
 
 `git rm` removes the file from the working tree and also from the git index.
 
 ~~~ENDSECTION~~~
+
+
 !SLIDE smbullets small
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add a new README.md file
 
@@ -42,8 +55,8 @@ manually move the file, you will need to rm and add it again.
 Best practice is to have a README.md file written in Markdown
 in every project. This gets rendered by GitHub/GitLab in readable HTML.
 
-> During this training we will learn many new things. Keep notes
-> in the README.md file.
+During this training we will learn many new things. Keep notes
+in the `README.md` file.
 
 ~~~SECTION:handouts~~~
 
