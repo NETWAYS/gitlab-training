@@ -76,7 +76,7 @@
  ************************************************/
 
 .net-header img {
-  margin-right: 1.5em;
+  margin-right: 0;
 }
 
 .content .net-header + h1:not(.section-title) {
@@ -109,8 +109,8 @@
 
   .subsection .net-header,
   .subsectionnonum .net-header,
-  #pre_netways_title_00_title1 .net-header,
-  #global_pre_netways_title_00_title1 .net-header {
+  #pre_osdc_title_00_title1 .net-header,
+  #global_pre_osdc_title_00_title1 .net-header {
     border-bottom: .0625em solid black;
     padding-bottom: 0;
   }
@@ -125,7 +125,7 @@
   .content .net-header + h1:not(.section-title) {
     margin: 0;
     color: white;
-    background: #FA5C0D;
+    background: #27A737;
   }
 
   .net-footer {
@@ -133,7 +133,7 @@
     bottom: 0;
     width: 100%;
     color: white;
-    background: #FA5C0D;
+    background: #27A737;
   }
 
   .net-footer * {
@@ -165,8 +165,8 @@
     height: 99%; /* The negative margin workaround does not work with wkhtmltopdf.. */
   }
 
-  #pre_netways_title_00_title1 .net-header,
-  #global_pre_netways_title_00_title1 .net-header {
+  #pre_osdc_title_00_title1 .net-header,
+  #global_pre_osdc_title_00_title1 .net-header {
     display: none;
   }
 
@@ -178,7 +178,7 @@
   .subsectionnonum .net-header + h1:not(.section-title) {
     white-space: nowrap; /* TODO: Why?? Only wkhtmltopdf requires this.. */
     color: white;
-    background: #FA5C0D;
+    background: #27A737;
   }
 
   .net-footer {
@@ -214,7 +214,7 @@
     padding: .25em;
     font-size: 1.5em;
     color: black;
-    background: #FA5C0D;
+    background: #27A737;
   }
 
   .title-author p {
@@ -237,7 +237,7 @@
     padding: 1em;
     height: 30em;
     color: white;
-    background: #FA5C0D;
+    background: #27A737;
   }
 
   .title-name {
@@ -324,7 +324,7 @@
   }
 
   a, a:visited {
-    color: #FA5C0D;
+    color: #27A737;
     text-decoration: none;
   }
 
@@ -490,7 +490,7 @@
   }
 
   a, a:visited {
-    color: #FA5C0D;
+    color: #27A737;
     text-decoration: none;
   }
 
