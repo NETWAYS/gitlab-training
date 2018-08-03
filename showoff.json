@@ -1,0 +1,26 @@
+{
+  "name": "NETWAYS Training",
+  "subtitle": "Open Source Training",
+  "author": "Open Source Community",
+  "release": "0.0.1",
+
+  "favicon": "global/favicon.ico",
+
+  "protected": ["presenter", "onepage", "print"],
+
+  "user": "netways",
+  "password": "awesome",
+
+  "templates":{
+    "default": "layouts/netways.tpl"
+  },
+
+  "sections": [
+    {"section": "pre/netways/title"},
+    {"section": "trainer"},
+    {"section": "pre/netways/about"},
+    {"section": "pre/hints"},
+
+    {"section": "post"}
+  ]
+}
