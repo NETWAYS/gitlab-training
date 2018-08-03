@@ -1,23 +1,25 @@
 {
-  "title": "GitLab",
+  "name": "GitLab",
   "subtitle": "Version Control System & Continuous Integration",
   "location": "Nuremberg",
   "author": "Michael Friedrich",
   "release": "2.2.0",
 
   "favicon": "image/global/favicon.ico",
-  "logo": "/global/_images/netways/netways-logo-1366.png",
 
   "protected": ["presenter", "onepage", "print"],
   "user": "netways",
   "password": "awesome",
 
-  "templates":{
-    "default":"./global/templates/default.tpl"
+  "templates" : {
+       "default"   : "global/layouts/netways.tpl"
   },
 
   "sections": [
-    {"section":"global/Pre/Title"},
+    {"section": "global/pre/netways/title"},
+    {"section": "trainer"},
+    {"section": "global/pre/netways/about"},
+    {"section": "global/pre/hints"},
 
     {"section":"day1/01_Introduction"},
     {"section":"day1/02_Configuration"},
@@ -34,6 +36,6 @@
     {"section":"day2/05_Gitlab_Hints"},
     {"section":"day2/06_Additional"},
 
-    {"section":"global/Post"}
+    {"section": "global/post"}
   ]
 }

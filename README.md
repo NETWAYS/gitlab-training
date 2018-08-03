@@ -37,19 +37,11 @@ Requirements:
 * Docker
 * https://nws.netways.de GitLab instances for the trainer and participants
 
-### Start Showoff in Docker
+To run the presentation you will need [showoff 0.19.x](https://rubygems.org/gems/showoff/versions/0.19.6).
+After installing it simply run `showoff serve` to get presenter mode with additional notes
+and display window to present to your students.
 
-```
-./start.sh
-```
-
-### Print Static Content
-
-For GitHub.
-
-```
-./print.sh
-```
+More instructions [here](https://github.com/NETWAYS/training-global#using-docker-to-build-and-serve-the-slide-deck).
 
 ### Environment
 

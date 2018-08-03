@@ -3,3 +3,4 @@ stats
 *.pdf
 vm/*.ova
 vm/mnt
+trainer/

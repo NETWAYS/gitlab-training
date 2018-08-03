@@ -76,7 +76,7 @@
  ************************************************/
 
 .net-header img {
-  margin-right: 0;
+  margin-right: 1.5em;
 }
 
 .content .net-header + h1:not(.section-title) {
@@ -109,8 +109,8 @@
 
   .subsection .net-header,
   .subsectionnonum .net-header,
-  #Pre_Title_01_Title1 .net-header,
-  #global_Pre_Title_01_Title1 .net-header {
+  #pre_netways_title_00_title1 .net-header,
+  #global_pre_netways_title_00_title1 .net-header {
     border-bottom: .0625em solid black;
     padding-bottom: 0;
   }
@@ -165,8 +165,8 @@
     height: 99%; /* The negative margin workaround does not work with wkhtmltopdf.. */
   }
 
-  #Pre_Title_01_Title1 .net-header,
-  #global_Pre_Title_01_Title1 .net-header {
+  #pre_netways_title_00_title1 .net-header,
+  #global_pre_netways_title_00_title1 .net-header {
     display: none;
   }
 
@@ -204,11 +204,11 @@
     background: black;
   }
 
-  .title-location {
+  .title-subtitle {
     overflow: auto;
   }
 
-  .title-location p {
+  .title-subtitle p {
     float: right;
     margin: 1em 0;
     padding: .25em;
@@ -244,17 +244,12 @@
     font-size: 2em;
   }
 
-  .title-subtitle {
-    font-size: 1.5em;
-   }
-
   .title-release {
     margin-top: 2em;
   }
 
   .title-footer {
-    margin-top: 19.5em;
-    margin-right: 1em;
+    margin-top: 23.5em;
     text-align: right;
     font-weight: bold;
   }
@@ -477,7 +472,6 @@
 @media print {
   code {
     font-size: 12px;
-    margin-left: 0em;
   }
 
   li, td {
