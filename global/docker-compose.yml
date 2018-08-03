@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  showoff:
+    build: .
+    image: netways/showoff:0.19.6
+    ports:
+      - "9090:9090"
+    volumes:
+      - "$PWD:/training"
+    environment:
+      - "LANG=C.UTF-8"
+      - "LANGUAGE=C.UTF-8"
+      - "LC_ALL=C.UTF-8"
+
