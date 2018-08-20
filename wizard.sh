@@ -51,29 +51,9 @@ printsolutions () {
 }
 
 setlayout () {
-  find . -type l -maxdepth 1 -delete
+  find . -type l -name *.css -maxdepth 1 -delete
   ln -s global/layouts/$1.css .
 }
-
-reset () {
-  CHANGES=$($GIT status --porcelain $SCRIPT_DIR | grep -v wizard)
-  if [[ -n $CHANGES ]]; then
-    if [[ -n $NO_RESET ]]; then
-      echo "Git has changes but NO_RESET was provided, abort"
-    else
-      echo ""
-      echo -n "There are changes in '$SCRIPT_DIR', reset ... "
-      $GIT status --porcelain $SCRIPT_DIR | grep -v 'wizard' | cut -f3 -d ' ' | xargs $GIT checkout HEAD --
-      echo "done"
-    fi
-  fi
-
-  exit 0
-}
-
-# Begin
-
-trap "reset" EXIT
 
 if [[ ! -x $DOCKER ]]; then
   echo "Command 'docker' not found, exit"
@@ -96,10 +76,10 @@ echo "###########################"
 echo -e "\n### LAYOUT ###"
 
 echo -e "
-  [1] NETWAYS
-  [2] OSMC
-  [3] OSDC
-  [4] OSBConf\n"
+   [1] NETWAYS
+   [2] OSMC
+   [3] OSDC
+   [4] OSBConf\n"
 
 LAYOUT_DEFAULT=1
 read -p "Which Layout? [1-4] (Default: "$LAYOUT_DEFAULT"): " LAYOUT
@@ -124,16 +104,20 @@ esac
 
 setlayout $LAYOUT
 
-echo -e "\n### MODE ###\n"
+echo -e "\n### MODE ###"
 
-MODE_DEFAULT=serve
-read -p "Which mode? [serve/print] (Default: "$MODE_DEFAULT"): " MODE
+echo -e "
+   [1] serve
+   [2] print\n"
+
+MODE_DEFAULT=1
+read -p "Which mode? [1-2] (Default: "$MODE_DEFAULT"): " MODE
 MODE="${MODE:-$MODE_DEFAULT}"
 
-if [[ $MODE == serve ]]; then
+if [[ $MODE == 1 ]]; then
   echo "--- RUN SHOWOFF SERVE ---"
   execdocker "showoff serve"
-elif [[ $MODE == print ]]; then
+elif [[ $MODE == 2 ]]; then
   echo -e "\n### PRINT ###"
 
   echo -e "

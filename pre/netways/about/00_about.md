@@ -13,7 +13,7 @@
  * Development
  * Support
  * Trainings
- * Events
+ * Conferences
 
 
 !SLIDE noprint
@@ -35,12 +35,12 @@
 
 
 !SLIDE noprint
-# NETWAYS Events
+# NETWAYS Conferences & Camps
 
-.margin-top-1-5 <img src="../../../_images/osmc/osmc_logo_2017_transparent_500x230.png" style="width:80%" alt="NETWAYS Events">
+<center><img src="../_images/overview_conferences.png" style="width:800px;height:566px;" alt="NETWAYS Conferences & Camps"/></center>
 
 
 !SLIDE noprint
-# NETWAYS Trainings
+# NETWAYS Trainings & Workshops
 
-.margin-top-1-5 <img src="../../../_images/netways/NETWAYS_Trainings.png" style="width:80%" alt="NETWAYS Trainings">
+<center><img src="../_images/overview_trainings.png" style="width:800px;height:566px;" alt="NETWAYS Trainings & Workshops"/></center>

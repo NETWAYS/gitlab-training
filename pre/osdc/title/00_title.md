@@ -1,7 +1,7 @@
 !SLIDE printonly
   
 <div class="title-logo">
-    <img src="/global/pre/osdc/_images/osdc_logo_500x177.png" alt="OSDC" width="350px" height="68px">
+    <img src="/global/pre/osdc/_images/OSDC_logo_500x224.png" alt="OSDC" width="350px" height="157px">
 </div>
 <div class="title-cover">
     <div class="title-name">~~~CONFIG:name~~~</div>
