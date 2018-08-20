@@ -1,5 +1,5 @@
 <div class="net-header">
-    <img src="/global/pre/osbconf/_images/osbconf_2017_logo_2000.png" alt="OSBConf" width="313px" height="100px">
+    <img src="/global/pre/osbconf/_images/OSBConf_logo_500x122.png" alt="OSBConf" width="410px" height="100px">
 </div>
 
 ~~~CONTENT~~~

@@ -1,5 +1,5 @@
 <div class="net-header">
-    <img src="/global/pre/osmc/_images/osmc_logo_500x211.png" alt="OSMC" width="236px" height="100px">
+    <img src="/global/pre/osmc/_images/OSMC_logo_500x217.png" alt="OSMC" width="231px" height="100px">
 </div>
 
 ~~~CONTENT~~~

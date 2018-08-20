@@ -125,7 +125,7 @@
   .content .net-header + h1:not(.section-title) {
     margin: 0;
     color: white;
-    background: #FA5C0D;
+    background: #F15A22;
   }
 
   .net-footer {
@@ -133,7 +133,7 @@
     bottom: 0;
     width: 100%;
     color: white;
-    background: #FA5C0D;
+    background: #F15A22;
   }
 
   .net-footer * {
@@ -157,12 +157,13 @@
   }
 
   .net-header {
-    height: 6.1875em;
+    height: 4em;
     border-bottom: .0625em solid black;
   }
 
   .net-header img {
-    height: 99%; /* The negative margin workaround does not work with wkhtmltopdf.. */
+    height: 80%; /* The negative margin workaround does not work with wkhtmltopdf.. */
+    width: 7em;
   }
 
   #pre_netways_title_00_title1 .net-header,
@@ -176,9 +177,9 @@
 
   .subsection .net-header + h1:not(.section-title),
   .subsectionnonum .net-header + h1:not(.section-title) {
-    white-space: nowrap; /* TODO: Why?? Only wkhtmltopdf requires this.. */
+    width: 13.6em; /* Without this explicit slide max-width wkhtmltopdf is unable to produce proper line breaks */
     color: white;
-    background: #FA5C0D;
+    background: #F15A22;
   }
 
   .net-footer {
@@ -214,7 +215,7 @@
     padding: .25em;
     font-size: 1.5em;
     color: black;
-    background: #FA5C0D;
+    background: #F15A22;
   }
 
   .title-author p {
@@ -235,9 +236,9 @@
     margin: 0.5em;
     margin-top: 4em;
     padding: 1em;
-    height: 30em;
+    height: 31em;
     color: white;
-    background: #FA5C0D;
+    background: #F15A22;
   }
 
   .title-name {
@@ -324,7 +325,7 @@
   }
 
   a, a:visited {
-    color: #FA5C0D;
+    color: #F15A22;
     text-decoration: none;
   }
 
@@ -355,6 +356,11 @@
     max-width: 100%;
   }
 
+  .content > ul,
+  .content > ol {
+    margin-left: 0;
+  }
+
   /* Slide Styles */
 
   .bullets > ul {
@@ -371,6 +377,10 @@
   .bullets > ul > li > p,
   .smbullets > ul > li > p {
     margin: 0;
+  }
+
+  ul ol, ol ul, ul ul, ol ol {
+    padding-left: 1em;
   }
 
   /* Legacy styles start - For backward compliance with slides created using showoff v0.9.11.1 */
@@ -490,7 +500,7 @@
   }
 
   a, a:visited {
-    color: #FA5C0D;
+    color: #F15A22;
     text-decoration: none;
   }
 
@@ -527,6 +537,11 @@
     text-align: left;
   }
 
+  .content > ul,
+  .content > ol {
+    margin-left: 0;
+  }
+
   /* Slide Styles */
 
   .bullets > ul {
@@ -546,9 +561,13 @@
     margin: 0;
   }
 
+  ul ol, ol ul, ul ul, ol ol {
+    padding-left: 1em;
+  }
+
   .content > pre, .handouts > pre, .content > form > pre {
     font-size: 120%;
-    margin: 0 2em;
+    margin: 0;
   }
   .content > pre > code, .handouts > pre > code, .content > form > pre > code {
     overflow: visible;

@@ -1,7 +1,7 @@
 !SLIDE printonly
   
 <div class="title-logo">
-    <img src="/global/pre/osbconf/_images/osbconf_2017_logo_2000.png" alt="OSBConf" width="350px" height="68px">
+    <img src="/global/pre/osbconf/_images/OSBConf_logo_500x122.png" alt="OSBConf" width="350px" height="86px">
 </div>
 <div class="title-cover">
     <div class="title-name">~~~CONFIG:name~~~</div>

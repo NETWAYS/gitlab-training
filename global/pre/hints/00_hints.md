@@ -1,4 +1,4 @@
-!SLIDE smbullets
+!SLIDE
 # Training Hints
 
 * Ask questions! Dumb questions do not exist.

@@ -79,6 +79,7 @@ step is absolutely needed to succeed.
 
   "sections": [
    {"section": "global/pre/netways/title"},
+   {"section": "global/pre/toc"},
    {"section": "trainer"},
    {"section": "global/pre/netways/about"},
    {"section": "global/pre/hints"},
@@ -154,7 +155,10 @@ Which Layout? [1-4] (Default: 1):
 
 ### MODE ###
 
-Which mode? [serve/print] (Default: serve): print
+ [1] serve
+ [2] print
+
+Which mode? [1-2] (Default: 1): 2
 
 ### PRINT ###
 
@@ -163,6 +167,6 @@ Which mode? [serve/print] (Default: serve): print
    [3] Handouts & Exercises & Solutions
    [4] Exercises & Solutions
 
-What to print? [1-4] (Default: 2): 
-Which version? (Default: 2.1.1): 
+What to print? [1-4] (Default: 2): 1
+Which version? (Default: 0.0.1):
 ```
