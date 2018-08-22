@@ -25,7 +25,7 @@ manually move the file, you will need to rm and add it again.
 * `git reset`
   * Reset files added to the staging index.
   * Reset and drop commits
-  * `--soft` keeps the changes (default), `--hard` removes them indefinitely.
+  * `--soft` keeps the changes (default), `--hard` removes them.
 * `git rm`
   * Remove the file(s) from working tree and Git repository.
   * Note that file(s) will be visible in Git history, and can be restored from it.
@@ -34,7 +34,12 @@ manually move the file, you will need to rm and add it again.
 
 ****
 
-`git reset` resets files added to the staging index.
+`git reset` resets files added to the staging index. You can also use it to
+reset commits from the history.
+
+Hint: If you are using a `--hard` reset, you can still undo the change
+with the help of the ref log where git stores "meta" information about
+any change: `git reset --hard HEAD@{1}`.
 
 `git rm` removes the file from the working tree and also from the git index.
 

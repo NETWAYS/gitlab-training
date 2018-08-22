@@ -199,7 +199,7 @@ The last parameter specifies the target directory `training2`.
 * Objective:
  * Rebase your local history with the remote repository
 * Steps:
- * Reset the local history by 2 commits with `git reset --hard HEAD~2`
+ * Simulate two commits in the past: `git reset --hard HEAD~2`
  * Update and commit README.md
  * Fetch remote and compare with `git diff origin/master`
  * Rebase with `git rebase origin/master`
@@ -237,7 +237,7 @@ instead of generating a merge commit.
 ****
 
 * Change into `$HOME/training`
-* Reset the local history by 2 commits with `git reset --hard HEAD~2`
+* Simulate two commits in the past: `git reset --hard HEAD~2`
 * Update and commit README.md
 * Fetch the remote repository and use `git diff origin/master` to compare the changes
 * Rebase the master branch against the remote master branch with `git rebase origin/master`
@@ -252,7 +252,10 @@ instead of generating a merge commit.
 
 ****
 
-### Reset the history by 2 commits
+### Simulate two commits in the past
+
+This is just for testing the rebase laster on with different commit history
+branches. Commits can be reset from the history with the following command:
 
     @@@ Sh
     $ git reset --hard HEAD~2
