@@ -112,7 +112,6 @@ You'll recognize the unstaged changes compared to your staging area.
  * Use `git diff` to compare unstaged changes
  * Add the changed file to the staging area
  * Use `git diff` again
- * Compare the staging area with the latest commit in `.git repository`
 
 ~~~SECTION:handouts~~~
 
@@ -135,7 +134,6 @@ You'll recognize the unstaged changes compared to your staging area.
 * Use `git diff` to compare unstaged changes
 * Add the changed file to the staging area
 * Use `git diff` again
-* Compare the staging area with the latest commit in `.git repository`
 
 
 !SLIDE supplemental solutions
