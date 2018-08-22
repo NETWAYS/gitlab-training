@@ -24,6 +24,7 @@ manually move the file, you will need to rm and add it again.
 
 * `git reset`
   * Reset files added to the staging index.
+  * Reset and drop commits
   * `--soft` keeps the changes (default), `--hard` removes them indefinitely.
 * `git rm`
   * Remove the file(s) from working tree and Git repository.
@@ -106,7 +107,7 @@ in the `README.md` file.
  * Reset file from staging index
 * Steps:
  * Change into `$HOME/training`
- * Remove the previously added `README.md` file from the staging index with `git reset --soft README.md`
+ * Remove the previously added `README.md` file from the staging index with `git reset README.md`
  * Verify it with `git status` and explain what happened.
  * Re-add the `README.md` and examine again with `git status`.
 
@@ -130,7 +131,7 @@ in the `README.md` file.
 ****
 
 * Change into `$HOME/training`
-* Remove the previously added `README.md` file from the staging index with `git reset --soft README.md`
+* Remove the previously added `README.md` file from the staging index with `git reset README.md`
 * Verify it with `git status` and explain what happened.
 * Re-add the `README.md` and examine again with `git status`.
 
@@ -149,7 +150,7 @@ in the `README.md` file.
 
     $ git status
 
-    $ git reset --soft README.md
+    $ git reset README.md
 
     $ git status
 
