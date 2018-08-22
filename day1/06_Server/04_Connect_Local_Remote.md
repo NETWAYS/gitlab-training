@@ -193,9 +193,10 @@ If not set, you can set it explicitly.
  * Open the project in GitLab and extract the `HTTPS` clone URL
  * Navigate into your local repository in `$HOME/training`
  * Use `git remote add origin <remoteurl>`
- * Push your local history with `--set-upstream` (short: `-u`)
+ * Push your local branch with `--set-upstream` (short: `-u`)
 * Bonus
  * Set default push method to `simple`
+ * Explain what `git push -u origin --all` does suggested by GitLab
 
 ~~~SECTION:handouts~~~
 
@@ -219,7 +220,7 @@ If not set, you can set it explicitly.
 * Open the project in GitLab and extract the `HTTPS` clone URL
 * Navigate into your local repository
 * Use `git remote add origin <remoteurl>`
-* Push your local history
+* Push your local branch
 * Use `--set-upstream` (short: `-u`) to enable the local branch tracking the remote repository 
 
 ## Bonus:
@@ -227,6 +228,7 @@ If not set, you can set it explicitly.
 ****
 
 * Configure the default push method to `simple`
+* Explain what `git push -u origin --all` does suggested by GitLab
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
@@ -270,6 +272,19 @@ In order to fix that, add the default push method to your global configuration.
     @@@ Sh
     git config --global push.default simple
 
+### Push and update all branches
+
+`git push -u origin master` creates a new remote branch, updates the tracking to the
+local current branch and pushes all references/commits.
+
+If you want to sync all local branches, you can omit the branch name in the command and
+use `--all` instead.
+
+    @@@ Sh
+    git push -u origin --all
+
+Keep in mind that syncing all your local branches might create unwanted remote branches.
+Those can be there just for testing things, or are not meant for the public domain.
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Explore Project History
