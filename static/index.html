@@ -303,7 +303,7 @@ $ git status</code></pre>
 
 $ git status
 
-$ git reset --soft README.md
+$ git reset README.md
 
 $ git status
 
@@ -871,7 +871,8 @@ $ git commit -v README.md -m "What I've learned so far: HEAD"</code></pre>
 personal account. Login and navigate to Apps &gt; GitLab CE &gt; Basic
 and deploy the app.</p>
 
-<p>Use Live View and set a secure root password. The login into GitLab.</p>
+<p>Use Access and Live View and set a secure root password.
+Then login into GitLab.</p>
 
 <div class="net-footer">
     <p>Open Source Training</p>
@@ -994,6 +995,19 @@ the local master branch does not follow a remote branch.</p>
 <p>In order to fix that, add the default push method to your global configuration.</p>
 
 <pre class="highlight"><code class="language-sh">git config --global push.default simple</code></pre>
+
+<h3>Push and update all branches</h3>
+
+<p><code>git push -u origin master</code> creates a new remote branch, updates the tracking to the
+local current branch and pushes all references/commits.</p>
+
+<p>If you want to sync all local branches, you can omit the branch name in the command and
+use <code>--all</code> instead.</p>
+
+<pre class="highlight"><code class="language-sh">git push -u origin --all</code></pre>
+
+<p>Keep in mind that syncing all your local branches might create unwanted remote branches.
+Those can be there just for testing things, or are not meant for the public domain.</p>
 
 <div class="net-footer">
     <p>Open Source Training</p>
@@ -1279,7 +1293,10 @@ $ git clone https://[...].nws.netways.de/root/training.git training2</code></pre
 
 <hr>
 
-<h3>Reset the history by 2 commits</h3>
+<h3>Simulate two commits in the past</h3>
+
+<p>This is just for testing the rebase laster on with different commit history
+branches. Commits can be reset from the history with the following command:</p>
 
 <pre class="highlight"><code class="language-sh">$ git reset --hard HEAD~2</code></pre>
 
