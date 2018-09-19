@@ -577,7 +577,7 @@ Example:
  * Create HTML docs from Markdown
 * Steps:
  * Add a new `markdown` and use `script` to generate `README.html`
- * Add `archifacts` with `paths` pointing to `README.html`. Expires in `1 week`
+ * Add `artifacts` with `paths` pointing to `README.html`. Expires in `1 week`
  * Commit and push the changes, then download and view the `README.html` file in your browser
 
 Example:
@@ -608,7 +608,7 @@ Example:
 
 * Add a new job `markdown` after the `all_tests` job
 * Add `script` and convert `README.md` to `README.html` using Python
-* Add `archifacts` with `paths` pointing to `README.html`. Expires in `1 week`.
+* Add `artifacts` with `paths` pointing to `README.html`. Expires in `1 week`.
 * Commit and push the changes
 * Download and view the `README.html` file in your browser
 
@@ -641,7 +641,8 @@ Example:
     ...
 
     markdown:
-      - python -m markdown README.md > README.html
+      script:
+        - python -m markdown README.md > README.html
 
 ### Store artifacts
 
@@ -654,7 +655,8 @@ Tell GitLab to expire this artifact in `1 week`.
     ...
 
     markdown:
-      - python -m markdown README.md > README.html
+      script:
+        - python -m markdown README.md > README.html
       artifacts:
         paths:
         - README.html
