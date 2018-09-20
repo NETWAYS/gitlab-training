@@ -3,6 +3,7 @@
 
 * `git add`
   * Add (modified) file(s) from the working directory into the staging index.
+  * `-A` adds all files. Question: Where is this applicable?
 * `git mv`
   * Rename file(s) tracked by Git.
 
@@ -12,6 +13,10 @@
 
 `git add` will add the file(s) and their content to the staging index
 waiting for the commit.
+
+If you're using `-A` to add all files, you need to ensure that
+unwanted files are not added. Learn more about `git reset` in the next
+slide to selectively unstage added changes.
 
 `git mv` renames an existing file tracking the change for the commit. If you
 manually move the file, you will need to rm and add it again.
@@ -24,8 +29,7 @@ manually move the file, you will need to rm and add it again.
 
 * `git reset`
   * Reset files added to the staging index.
-  * Reset and drop commits
-  * `--soft` keeps the changes (default), `--hard` removes them.
+  * Hint: This comes in handy with `git add -A` before.
 * `git rm`
   * Remove the file(s) from working tree and Git repository.
   * Note that file(s) will be visible in Git history, and can be restored from it.
@@ -37,9 +41,8 @@ manually move the file, you will need to rm and add it again.
 `git reset` resets files added to the staging index. You can also use it to
 reset commits from the history.
 
-Hint: If you are using a `--hard` reset, you can still undo the change
-with the help of the ref log where git stores "meta" information about
-any change: `git reset --hard HEAD@{1}`.
+This also is helpful when you need to add 95 out of 100 changes. First, use `git add -A`
+and then selectively unstage the unwanted 5 changes.
 
 `git rm` removes the file from the working tree and also from the git index.
 
