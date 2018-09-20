@@ -68,23 +68,28 @@
     @@@ Sh
     $ dnf install git
 
-!SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Install Git Bash Completion
+!SLIDE smbullets small
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Install Git Bash Integration
 
 * Objective:
- * Install the `bash-completion` package
- * Modify your prompt to highlight the git state
+ * Install bash completion and Git status
 * Steps:
  * Use the package manager to install the `bash-completion` package
  * Fetch the `git-prompt.sh` script from https://github.com/git/git - `contrib/completion/git-prompt.sh`
  * Customize your prompt in your `$HOME/.bashrc` file
 
-.download share/git-prompt.sh
-.download share/bashrc
+Example:
+
+    $ vim $HOME/.bashrc
+    source ~/git-prompt.sh
+    export GIT_PS1_SHOWDIRTYSTATE=1
+    export PS1='[\u@\h] \W$(__git_ps1 " (%s)") \$ '
+
+    $ source $HOME/.bashrc
+
 
 ~~~SECTION:notes~~~
 
-Files can be downloaded from http://localhost:9090/download
 
 ~~~ENDSECTION~~~
 
@@ -92,12 +97,74 @@ Files can be downloaded from http://localhost:9090/download
 
 ****
 
+The training notebooks come pre-provisioned with this `.bashrc` configuration:
+
+    @@@ Sh
+    vim $HOME/.bashrc
+
+    # Enable Git branch and modifications in colored terminal
+    #
+    # Adopted from Michael Friedrich's dev environment.
+    
+    # requires git bash completion
+    source /etc/bash_completion.d/git
+    # CentOS 7 specific (!)
+    source /usr/share/git-core/contrib/completion/git-prompt.sh
+    
+    # global options
+    export GIT_PS1_SHOWDIRTYSTATE=1
+    #export GIT_PS1_SHOWSTASHSTATE='y'
+    #export GIT_PS1_SHOWUNTRACKEDFILES='y'
+    #export GIT_PS1_DESCRIBE_STYLE='contains'
+    export GIT_PS1_SHOWUPSTREAM='git'
+    
+    function myPrompt() {
+            local GREEN_BOLD="\[\033[01;32m\]"
+            local RED_BOLD="\[\033[01;31m\]"
+            local BLUE_BOLD="\[\033[01;34m\]"
+            local GREEND="\[\033[02;32m\]"
+            local REDD="\[\033[02;32m\]"
+            local DEFAULT="\[\033[00m\]"
+    
+            # \h ... hostname
+            # \w ... workdir
+            # \$? ... RC
+            # \u ... user
+            # \$(formattedGitBranch) ... git branch if available
+    
+            local USER_BOLD=$GREEN_BOLD
+            local USERD=$GREEND
+            local USERAT="\u@\h"
+            local USERHASH="\$"
+    
+            if [ `/usr/bin/whoami` = 'root' ]
+            then
+                    USER_BOLD=$RED_BOLD
+                    USERD=$REDD
+                    USERAT="\h"
+                    USERHASH="#"
+            fi
+    
+            PS1="$USER_BOLD$USERAT$DEFAULT $BLUE_BOLD\w$DEFAULT"
+            PS1=$PS1"$DEFAULT$GREEND\$(__git_ps1)$BLUE_BOLD $USERHASH $DEFAULT"
+    
+            # window title
+            case "$TERM" in
+                    xterm*|rxvt*)
+                            PS1="\[\e]0;\h: \w (\u)\a\]$PS1"
+                            ;;
+            esac
+    }
+
+# set git colored prompt based on uid
+myPrompt
+
 ~~~ENDSECTION~~~
 
 !SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Install Git
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Install Git Bash Integration
 
-## Objective: Install the Git package
+## Objective: Install the Git Bash Integration
 ****
 
 * Install the `bash-completion` package
@@ -117,7 +184,7 @@ Files can be downloaded from http://localhost:9090/download
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
 ****
 
-## Install Git Bash Completion
+## Install Git Bash Integration
 
 ****
 
@@ -142,6 +209,9 @@ Files can be downloaded from http://localhost:9090/download
     $ wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 
 ### Customize your prompt in your .bashrc file
+
+Additional configuration settings can be found
+in the source code documentation at https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh#L38
 
     @@@ Sh
     $ vim $HOME/.bashrc
