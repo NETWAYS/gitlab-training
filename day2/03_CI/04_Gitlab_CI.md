@@ -214,7 +214,7 @@ Registered runners are listed at the bottom.
  * Paste the token
  * Add description `training01` and tag `training`
  * Untagged builds: `true`, Lock to current project: `false`
- * Executor: `docker`, Default: `alpine/latest`
+ * Executor: `docker`, Default: `alpine:latest`
 
 
 Reference: https://gitlab.com/gitlab-org/gitlab-runner/blob/master/docs/install/linux-repository.md
@@ -315,7 +315,7 @@ https://about.gitlab.com/2016/03/01/gitlab-runner-with-docker/
  * Create CI configuration for the training project
 * Steps:
  * Create the `.gitlab-ci.yml` file in the `training` directory (vim, nano, etc.)
- * Add `image: alpine/latest` to specify base image
+ * Add `image: alpine:latest` to specify base image
  * Add job `all_tests` with `script` as array element, which itself runs `exit 1`
 
 
@@ -337,7 +337,7 @@ https://about.gitlab.com/2016/03/01/gitlab-runner-with-docker/
 ## Steps:
 
 * Create the `.gitlab-ci.yml` file in the `training` directory (vim, nano, etc.)
-* Add `image: alpine/latest` to specify base image
+* Add `image: alpine:latest` to specify base image
 * Add job `all_tests` with `script` as array element, which itself runs `exit 1`
 
 !SLIDE supplemental solutions
