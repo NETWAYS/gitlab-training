@@ -15,6 +15,7 @@
 
 
 ~~~ENDSECTION~~~
+
 !SLIDE smbullets
 # Administration
 
@@ -32,6 +33,26 @@ Explore this with the trainer and discuss specific topics.
 
 
 ~~~ENDSECTION~~~
+
+
+!SLIDE smbullets
+# Administration: Appearance and Customization
+
+Navigate to `Admin > Appearance`.
+
+* Custom header logo
+* Login page text
+* New project guidelines
+* Custom Themes (SASS, CSS)
+
+~~~SECTION:handouts~~~
+
+****
+
+More details for custom themes: https://gitlab.com/gitlab-org/end-user-training-slides/blob/master/css/theme/README.md
+
+~~~ENDSECTION~~~
+
 
 !SLIDE smbullets
 # Best Practices
