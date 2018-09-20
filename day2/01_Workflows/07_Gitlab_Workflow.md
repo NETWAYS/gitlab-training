@@ -1,56 +1,12 @@
 !SLIDE smbullets
-# Forking Workflow with GitHub/GitLab
+# GitLab Workflow
 
-* Every developer has
- * a server-side repository
- * a private repository as copy of the server-side repo
-* Developers push their own server-side repository
-* Project maintainer pushes to official repository
+* Manage roles and permissions
+* Developers create `Merge Requests` from branches, tests and CI builds run automatically
+* Review and inline code comments
+* Project maintainer merges requests and manages issues/milestones/releases
 
-<center><img src="../../_images/workflows/git_forking_workflow_01.png" alt="Forking Workflow"/></center>
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
-
-!SLIDE smbullets
-# Forking Workflow - How it works
-
-* Developers fork, commit and push into their own repository
-* Developers create a `Pull Request` for the official repository, CI triggers automated tests for the PR
-* Developers/Maintainers review and merge PR, CI triggers deployment task
-
-<center><img src="../../_images/workflows/git_github_workflow.png" alt="GitHub Workflow"/></center>
-
-~~~SECTION:handouts~~~
-
-****
-
-References:
-
-GitHub: https://guides.github.com/introduction/flow/
-GitLab: https://docs.gitlab.com/ce/workflow/forking_workflow.html
-
-~~~ENDSECTION~~~
-
-!SLIDE smbullets small
-# Forking Workflow - Multiple Remote Repositories
-
-* **Multiple** remote repositories
- * `origin` is yours, e.g. git@github.com:dnsmichi/icinga2.git
- * `upstream` is official with releases, e.g. https://github.com/icinga/icinga2.git
-* Merge branches from `origin/<branch>` to `upstream/<branch>` and vice versa
-
-Example:
-
-    $ git remote -v
-    origin	git@github.com:dnsmichi/icinga2.git (fetch)
-    origin	git@github.com:dnsmichi/icinga2.git (push)
-    upstream	https://github.com/icinga/icinga2.git (fetch)
-    upstream	https://github.com/icinga/icinga2.git (push)
+<center><img src="../../_images/workflows/git_gitlab_workflow.png" alt="Gitlab Workflow"/></center>
 
 ~~~SECTION:handouts~~~
 
@@ -60,25 +16,54 @@ Example:
 ~~~ENDSECTION~~~
 
 !SLIDE smbullets
-# GitHub/GitLab Workflow - Keep in Sync
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Create Milestone and first Issue
 
-* Pull changes from `upstream` HEAD to own repository master branch to sync development
-* Remote `HEAD` is the default branch for this repository, usually `master`
-* Remember, HEAD is just a smart pointer. You can use a branch name too.
+* Objective
+ * Create Milestone `v0.1`
+ * Create Issue `Update documentation`
 
-Example:
-
-    $ git checkout master
-    $ git fetch upstream
-    $ git pull upstream HEAD
-    $ git push origin master
+* Steps:
+ * Navigate into `Issues > Milestones`
+ * Select `New Milestone` and use `v0.1` as title
+ * Navigate to `Issues` and select `New issue`
+ * Use `Update documentation` as title, add a description
+ * Assign the `v0.1` milestone
 
 ~~~SECTION:handouts~~~
 
 ****
 
-
 ~~~ENDSECTION~~~
+
+!SLIDE supplemental exercises
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Create Milestone and First Issue
+
+## Objective: Create Milestone and First Issue
+****
+
+* Create Milestone and First Issue
+
+## Steps:
+
+****
+
+* Navigate into `Issues > Milestones`
+* Select `New Milestone` and use `v0.1` as title
+* Navigate to `Issues` and select `New issue`
+* Use `Update documentation` as title, add a description
+* Assign the `v0.1` milestone
+
+!SLIDE supplemental solutions
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
+****
+
+## Create Milestone and First Issue
+
+****
+
+Follow the instructions and ask the trainer for help.
+
+
 
 
 !SLIDE smbullets
@@ -92,9 +77,9 @@ Example:
  * Create the branch `feature/docs-merge-request`
  * Edit `README.md`, add, commit and push the changes
  * Open the proposed GitLab URL in your browser
- * Fill in the merge request and submit it
+ * Fill in the merge request and add `fixes #1`
  * Simulate a review and merge it
- * Pull changes to local master branch and use `tig`
+ * Analyse the history in GitLab/tig and open issue #1
 
 ~~~SECTION:handouts~~~
 
@@ -105,7 +90,7 @@ Example:
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Create Merge Request
 
-## Objective: Merge Feature Branches
+## Objective: Create Merge Request
 ****
 
 * Create Merge Request
@@ -118,15 +103,15 @@ Example:
 * Create the branch `feature/docs-merge-request`
 * Edit `README.md`, add, commit and push the changes
 * Open the proposed GitLab URL in your browser
-* Fill in the merge request and submit it
+* Fill in the merge request and add `fixes #1`
 * Simulate a review and merge it
-* Pull changes to local master branch and use `tig`
+* Analyse the history in GitLab/tig and open issue #1
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
 ****
 
-## Merge Feature Branches
+## Create Merge Request
 
 ****
 
@@ -166,11 +151,18 @@ GitLab puts the URL into the shell output on pushing the branch.
 
 Open the URL in your browser.
 
-Specify a topic, description and create the merge request.
+Specify a topic and description. Add `fixes #1` into the MR's description.
+
+Create the merge request. Add a comment inline to the source code
+and see what happens in the interface.
 
 Merge the request to master and investigate the Git history.
 
-### Pull changes to master after merge
+Open the previously created issue and verify that is was closed
+by merging the MR.
+
+
+### Pull changes to local master after merge
 
     @@@ Sh
     $ git checkout master
