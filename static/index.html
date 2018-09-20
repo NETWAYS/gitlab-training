@@ -121,7 +121,7 @@
 
 <hr>
 
-<h2>Install Git Bash Completion</h2>
+<h2>Install Git Bash Integration</h2>
 
 <hr>
 
@@ -142,6 +142,9 @@
 <pre class="highlight"><code class="language-sh">$ wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh</code></pre>
 
 <h3>Customize your prompt in your .bashrc file</h3>
+
+<p>Additional configuration settings can be found
+in the source code documentation at <a href="https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh#L38" target="_blank">https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh#L38</a></p>
 
 <pre class="highlight"><code class="language-sh">$ vim $HOME/.bashrc
 source ~/git-prompt.sh
@@ -1445,8 +1448,8 @@ fixes #12</code></pre>
 </div>
 <canvas class="annotations"></canvas>
 </div>
-<div data-section="day2/01_Workflows" data-title="06_Github_Gitlab_Flow" id="day2_01_Workflows_06_Github_Gitlab_Flow1" class="slide supplemental solutions" data-transition="none">
-<div class="content supplemental solutions" ref="day2/01_Workflows/06_Github_Gitlab_Flow:1">
+<div data-section="day2/01_Workflows" data-title="07_Gitlab_Workflow" id="day2_01_Workflows_07_Gitlab_Workflow1" class="slide supplemental solutions" data-transition="none">
+<div class="content supplemental solutions" ref="day2/01_Workflows/07_Gitlab_Workflow:1">
 <div class="net-header">
     <img src="./file///global/pre/netways/_images/Schulung_Stammlogo_2000px_ENG.jpg" alt="NETWAYS Training" width="215px" height="100px">
 </div>
@@ -1455,7 +1458,30 @@ fixes #12</code></pre>
 
 <hr>
 
-<h2>Merge Feature Branches</h2>
+<h2>Create Milestone and First Issue</h2>
+
+<hr>
+
+<p>Follow the instructions and ask the trainer for help.</p>
+
+<div class="net-footer">
+    <p>Open Source Training</p>
+    <p>by NETWAYS (netways.de)</p>
+</div>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="day2/01_Workflows" data-title="07_Gitlab_Workflow" id="day2_01_Workflows_07_Gitlab_Workflow2" class="slide supplemental solutions" data-transition="none">
+<div class="content supplemental solutions" ref="day2/01_Workflows/07_Gitlab_Workflow:2">
+<div class="net-header">
+    <img src="./file///global/pre/netways/_images/Schulung_Stammlogo_2000px_ENG.jpg" alt="NETWAYS Training" width="215px" height="100px">
+</div>
+
+<h1>Lab 8.6: Proposed Solution</h1>
+
+<hr>
+
+<h2>Create Merge Request</h2>
 
 <hr>
 
@@ -1492,11 +1518,17 @@ Branch 'feature/docs-merge-request' set up to track remote branch 'feature/docs-
 
 <p>Open the URL in your browser.</p>
 
-<p>Specify a topic, description and create the merge request.</p>
+<p>Specify a topic and description. Add <code>fixes #1</code> into the MR's description.</p>
+
+<p>Create the merge request. Add a comment inline to the source code
+and see what happens in the interface.</p>
 
 <p>Merge the request to master and investigate the Git history.</p>
 
-<h3>Pull changes to master after merge</h3>
+<p>Open the previously created issue and verify that is was closed
+by merging the MR.</p>
+
+<h3>Pull changes to local master after merge</h3>
 
 <pre class="highlight"><code class="language-sh">$ git checkout master
 $ git pull
@@ -1509,13 +1541,13 @@ $ tig</code></pre>
 </div>
 <canvas class="annotations"></canvas>
 </div>
-<div data-section="day2/01_Workflows" data-title="08_Rebase_Squash" id="day2_01_Workflows_08_Rebase_Squash1" class="slide supplemental solutions" data-transition="none">
-<div class="content supplemental solutions" ref="day2/01_Workflows/08_Rebase_Squash:1">
+<div data-section="day2/01_Workflows" data-title="09_Rebase_Squash" id="day2_01_Workflows_09_Rebase_Squash1" class="slide supplemental solutions" data-transition="none">
+<div class="content supplemental solutions" ref="day2/01_Workflows/09_Rebase_Squash:1">
 <div class="net-header">
     <img src="./file///global/pre/netways/_images/Schulung_Stammlogo_2000px_ENG.jpg" alt="NETWAYS Training" width="215px" height="100px">
 </div>
 
-<h1>Lab 8.6: Proposed Solution</h1>
+<h1>Lab 8.7: Proposed Solution</h1>
 
 <hr>
 
@@ -1562,13 +1594,13 @@ squash ed6a68f commit3</code></pre>
 </div>
 <canvas class="annotations"></canvas>
 </div>
-<div data-section="day2/01_Workflows" data-title="09_Delete_Remote_Branches" id="day2_01_Workflows_09_Delete_Remote_Branches1" class="slide supplemental solutions" data-transition="none">
-<div class="content supplemental solutions" ref="day2/01_Workflows/09_Delete_Remote_Branches:1">
+<div data-section="day2/01_Workflows" data-title="10_Delete_Remote_Branches" id="day2_01_Workflows_10_Delete_Remote_Branches1" class="slide supplemental solutions" data-transition="none">
+<div class="content supplemental solutions" ref="day2/01_Workflows/10_Delete_Remote_Branches:1">
 <div class="net-header">
     <img src="./file///global/pre/netways/_images/Schulung_Stammlogo_2000px_ENG.jpg" alt="NETWAYS Training" width="215px" height="100px">
 </div>
 
-<h1>Lab 8.7: Proposed Solution</h1>
+<h1>Lab 8.8: Proposed Solution</h1>
 
 <hr>
 
@@ -1647,7 +1679,7 @@ Start the Runner!
 </li>
 <li>Untagged builds: <code>true</code>, Lock to current project: <code>false</code>
 </li>
-<li>Executor: <code>docker</code>, Default: <code>alpine/latest</code>
+<li>Executor: <code>docker</code>, Default: <code>alpine:latest</code>
 </li>
 </ul>
 </li>
@@ -1894,7 +1926,8 @@ markdown:</code></pre>
 ...
 
 markdown:
-  - python -m markdown README.md &gt; README.html</code></pre>
+  script:
+    - python -m markdown README.md &gt; README.html</code></pre>
 
 <h3>Store artifacts</h3>
 
@@ -1906,7 +1939,8 @@ Tell GitLab to expire this artifact in <code>1 week</code>.</p>
 ...
 
 markdown:
-  - python -m markdown README.md &gt; README.html
+  script:
+    - python -m markdown README.md &gt; README.html
   artifacts:
     paths:
     - README.html
@@ -1989,13 +2023,59 @@ Download them, extract them and open the HTML file with your browser.</p>
 </div>
 <canvas class="annotations"></canvas>
 </div>
-<div data-section="day2/04_Hints" data-title="03_Debugging" id="day2_04_Hints_03_Debugging1" class="slide supplemental solutions" data-transition="none">
-<div class="content supplemental solutions" ref="day2/04_Hints/03_Debugging:1">
+<div data-section="day2/04_Gitlab_Hints" data-title="02_UI" id="day2_04_Gitlab_Hints_02_UI1" class="slide supplemental solutions" data-transition="none">
+<div class="content supplemental solutions" ref="day2/04_Gitlab_Hints/02_UI:1">
 <div class="net-header">
     <img src="./file///global/pre/netways/_images/Schulung_Stammlogo_2000px_ENG.jpg" alt="NETWAYS Training" width="215px" height="100px">
 </div>
 
 <h1>Lab 11.1: Proposed Solution</h1>
+
+<hr>
+
+<h2>Use the Issue Board</h2>
+
+<hr>
+
+<p>Follow the instructions and ask the trainer for help in case.</p>
+
+<div class="net-footer">
+    <p>Open Source Training</p>
+    <p>by NETWAYS (netways.de)</p>
+</div>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="day2/04_Gitlab_Hints" data-title="02_UI" id="day2_04_Gitlab_Hints_02_UI2" class="slide supplemental solutions" data-transition="none">
+<div class="content supplemental solutions" ref="day2/04_Gitlab_Hints/02_UI:2">
+<div class="net-header">
+    <img src="./file///global/pre/netways/_images/Schulung_Stammlogo_2000px_ENG.jpg" alt="NETWAYS Training" width="215px" height="100px">
+</div>
+
+<h1>Lab 11.2: Proposed Solution</h1>
+
+<hr>
+
+<h2>Update README.md with the Web IDE</h2>
+
+<hr>
+
+<p>Follow the instructions and ask the trainer for help in case.</p>
+
+<div class="net-footer">
+    <p>Open Source Training</p>
+    <p>by NETWAYS (netways.de)</p>
+</div>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="day2/05_Git_Hints" data-title="03_Debugging" id="day2_05_Git_Hints_03_Debugging1" class="slide supplemental solutions" data-transition="none">
+<div class="content supplemental solutions" ref="day2/05_Git_Hints/03_Debugging:1">
+<div class="net-header">
+    <img src="./file///global/pre/netways/_images/Schulung_Stammlogo_2000px_ENG.jpg" alt="NETWAYS Training" width="215px" height="100px">
+</div>
+
+<h1>Lab 12.1: Proposed Solution</h1>
 
 <hr>
 
@@ -2021,13 +2101,13 @@ $ git blame README.md</code></pre>
 </div>
 <canvas class="annotations"></canvas>
 </div>
-<div data-section="day2/04_Hints" data-title="20_Aliases" id="day2_04_Hints_20_Aliases1" class="slide supplemental solutions" data-transition="none">
-<div class="content supplemental solutions" ref="day2/04_Hints/20_Aliases:1">
+<div data-section="day2/05_Git_Hints" data-title="20_Aliases" id="day2_05_Git_Hints_20_Aliases1" class="slide supplemental solutions" data-transition="none">
+<div class="content supplemental solutions" ref="day2/05_Git_Hints/20_Aliases:1">
 <div class="net-header">
     <img src="./file///global/pre/netways/_images/Schulung_Stammlogo_2000px_ENG.jpg" alt="NETWAYS Training" width="215px" height="100px">
 </div>
 
-<h1>Lab 11.2: Proposed Solution</h1>
+<h1>Lab 12.2: Proposed Solution</h1>
 
 <hr>
 
