@@ -33,9 +33,8 @@
     {"section":"day2/01_Workflows"},
     {"section":"day2/02_Integrations"},
     {"section":"day2/03_CI"},
-    {"section":"day2/04_Hints"},
-    {"section":"day2/05_Gitlab_Hints"},
-    {"section":"day2/06_Additional"},
+    {"section":"day2/04_Gitlab_Hints"},
+    {"section":"day2/05_Git_Hints"},
 
     {"section": "global/post"}
   ]
