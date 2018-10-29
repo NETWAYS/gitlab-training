@@ -8,7 +8,7 @@
 * Single user environments
 * Multiple users working together
 * Branching models
-* Patch and pull request workflow integration
+* Merge and pull request workflow integration
 
 ~~~SECTION:handouts~~~
 
