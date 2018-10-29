@@ -1076,6 +1076,10 @@ $ git commit -v README.md -m "Add docs for git push"</code></pre>
 
 <pre class="highlight"><code class="language-sh">$ git push origin master</code></pre>
 
+<h3>List remote branches</h3>
+
+<pre class="highlight"><code class="language-sh">$ git branch -r</code></pre>
+
 <div class="net-footer">
     <p>Open Source Training</p>
     <p>by NETWAYS (netways.de)</p>
@@ -2015,6 +2019,84 @@ git push</code></pre>
 
 <p>Navigate into the repository &gt; <code>CI / CD</code> &gt; Jobs &gt; <code>#...</code>  and choose <code>Job Artifacts</code>.
 Download them, extract them and open the HTML file with your browser.</p>
+
+<div class="net-footer">
+    <p>Open Source Training</p>
+    <p>by NETWAYS (netways.de)</p>
+</div>
+</div>
+<canvas class="annotations"></canvas>
+</div>
+<div data-section="day2/03_CI" data-title="05_Gitlab_Pipelines" id="day2_03_CI_05_Gitlab_Pipelines1" class="slide supplemental solutions" data-transition="none">
+<div class="content supplemental solutions" ref="day2/03_CI/05_Gitlab_Pipelines:1">
+<div class="net-header">
+    <img src="./file///global/pre/netways/_images/Schulung_Stammlogo_2000px_ENG.jpg" alt="NETWAYS Training" width="215px" height="100px">
+</div>
+
+<h1>Lab 10.7: Proposed Solution</h1>
+
+<hr>
+
+<h2>Build a job pipeline with stages</h2>
+
+<hr>
+
+<h3>Edit .gitlab-ci.yml and add stages</h3>
+
+<pre class="highlight"><code class="language-sh">$ vim .gitlab-ci.yml
+
+stages:
+  - test
+  - deploy</code></pre>
+
+<h3>Add jobs to stages</h3>
+
+<pre class="highlight"><code class="language-sh">$ vim .gitlab-ci.yml
+
+...
+
+all_tests:
+  stage: test
+
+...
+
+markdown:
+  stage: deploy</code></pre>
+
+<h3>Complete example</h3>
+
+<pre class="highlight"><code class="language-sh">$ vim .gitlab-ci.yml
+
+image: alpine:latest
+
+before_script:
+  - apk update &amp;&amp; apk add python py-pip
+  - pip install markdown Pygments
+
+stages:
+  - test
+  - deploy
+
+all_tests:
+  stage: test
+  script:
+    - exit 0
+
+markdown:
+  stage: deploy
+  script:
+    - python -m markdown README.md &gt; README.html
+  artifacts:
+    paths:
+    - README.html
+    expire_in: 1 week</code></pre>
+
+<h3>Commit and push the changes</h3>
+
+<pre class="highlight"><code class="language-sh">$ git commit -av -m "CI: Add pipelines"
+$ git push</code></pre>
+
+<h3>Check the GitLab Job Pipelines</h3>
 
 <div class="net-footer">
     <p>Open Source Training</p>
