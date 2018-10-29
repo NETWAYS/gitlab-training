@@ -18,16 +18,6 @@
 ~~~ENDSECTION~~~
 
 !SLIDE smbullets noprint
-# Gitflow Workflow
-
-<center><img src="../../_images/workflows/git_gitflow_workflow_01.png" alt="Gitflow Workflow"/></center>
-
-!SLIDE smbullets printonly
-# Gitflow Workflow
-
-<center><img src="../../_images/workflows/git_gitflow_workflow_01.png" style="width:480px;height:263px" alt="Gitflow Workflow"/></center>
-
-!SLIDE smbullets noprint
 # Gitflow Workflow - Historical Branches
 
 * Master branch for release history (including version tags)

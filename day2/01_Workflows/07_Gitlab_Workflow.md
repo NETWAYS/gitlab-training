@@ -1,8 +1,8 @@
 !SLIDE smbullets
 # GitLab Workflow
 
-* Manage roles and permissions
-* Developers create `Merge Requests` from branches, tests and CI builds run automatically
+* Manage branch access with roles and permissions
+* Create `Merge Requests` from branches, CI runs tests/builds automatically
 * Review and inline code comments
 * Project maintainer merges requests and manages issues/milestones/releases
 

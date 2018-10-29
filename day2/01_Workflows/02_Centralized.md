@@ -1,9 +1,10 @@
 !SLIDE smbullets
 # Centralized Workflow
 
-* Multiple users
-* Each user has a local copy
-* Central `master` branch
+* Developers clone the central repository
+* Work in local copies
+* New commits are stored locally
+* Importing the remote repository's changes is optional
 
 <center><img src="../../_images/workflows/git_centralized_workflow_01.png" alt="Centralized Workflow"/></center>
 
@@ -24,22 +25,6 @@ for integrating and sharing code changes between repositories.
 
 ~~~ENDSECTION~~~
 
-
-!SLIDE smbullets
-# Centralized Workflow - Developers
-
-* Developers clone the central repository
-* Work in local copies
-* New commits are stored locally
-* Importing the remote repository's changes is optional
-
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
 
 !SLIDE smbullets noprint
 # Centralized Workflow - Publish Changes
@@ -169,7 +154,7 @@ The last parameter specifies the target directory `training2`.
 
 
 !SLIDE smbullets noprint
-# Centralized Workflow - Managing Conflicts Solution
+# Centralized Workflow - Managing Conflicts: Rebase History
 
 * Fetch the remote history
 * Rebase local changes on top of it
@@ -178,7 +163,7 @@ The last parameter specifies the target directory `training2`.
 <center><img src="../../_images/workflows/git_centralized_workflow_04_example.png" alt="Centralized Workflow"/></center>
 
 !SLIDE smbullets printonly
-# Centralized Workflow - Managing Conflicts Solution
+# Centralized Workflow - Managing Conflicts: Rebase History
 
 * Fetch the remote history
 * Rebase local changes on top of it

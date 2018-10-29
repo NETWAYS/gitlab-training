@@ -28,7 +28,6 @@
 !SLIDE smbullets
 # Feature Branch Workflow - How it works
 
-* Central repository
 * Create a new branch for each feature
 * Descriptive branch names, e.g. `feature/docs-workflows`
 * Changes in a feature branch similar to centralized workflow
