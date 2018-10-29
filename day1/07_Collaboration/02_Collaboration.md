@@ -29,6 +29,8 @@
   * Halts if the remote history diverged from your local history.
 * `git remote`
   * Configure/list remote repository URLs (default `origin`).
+* `git branch -r`
+  * List remote branches, prefixed with the remote name.
 
 ~~~SECTION:handouts~~~
 
@@ -51,6 +53,8 @@
  * Edit `README.md` and add a note on `git push`
  * Add and commit the changes
  * Push the changes
+* Bonus:
+ * List all remote branches with `git branch -r`
 
 ~~~SECTION:handouts~~~
 
@@ -72,6 +76,10 @@
 * Edit `README.md` and add a note on `git push`
 * Add and commit the changes
 * Push the changes
+
+## Bonus:
+
+* List all remote branches with `git branch -r`
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
@@ -98,6 +106,11 @@
 
     @@@ Sh
     $ git push origin master
+
+### List remote branches
+
+    @@@ Sh
+    $ git branch -r
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Learn more about git fetch and git pull
