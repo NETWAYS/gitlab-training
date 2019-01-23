@@ -431,11 +431,11 @@ Future examples and tests work the same way.
 !SLIDE smbullets
 # GitLab CI: .gitlab-ci.yml Templates
 
-* Repository: https://gitlab.com/gitlab-org/gitlab-ci-yml
- * PHP: https://gitlab.com/gitlab-org/gitlab-ci-yml/blob/master/PHP.gitlab-ci.yml
- * Python: https://gitlab.com/gitlab-org/gitlab-ci-yml/blob/master/Python.gitlab-ci.yml
- * C++: https://gitlab.com/gitlab-org/gitlab-ci-yml/blob/master/C++.gitlab-ci.yml
- * ...
+* Repository: https://gitlab.com/gitlab-org/gitlab-ce/tree/master/lib/gitlab/ci/templates
+ * PHP
+ * C++
+ * Go
+ * Python
 
 ~~~SECTION:handouts~~~
 
