@@ -428,28 +428,6 @@ Future examples and tests work the same way.
 
 
 
-!SLIDE smbullets
-# GitLab CI: .gitlab-ci.yml Templates
-
-* Repository: https://gitlab.com/gitlab-org/gitlab-ce/tree/master/lib/gitlab/ci/templates
- * PHP
- * C++
- * Go
- * Python
-
-~~~SECTION:handouts~~~
-
-****
-
-Documentation References:
-
-https://docs.gitlab.com/ce/ci/README.html#examples
-
-https://gitlab.com/gitlab-org/gitlab-ci-yml
-
-
-~~~ENDSECTION~~~
-
 !SLIDE smbullets small
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Preparations
 
@@ -753,3 +731,48 @@ Download them, extract them and open the HTML file with your browser.
 
 Navigate into the repository > `CI / CD` > Jobs > `#...`  and choose `Job Artifacts`.
 Download them, extract them and open the HTML file with your browser.
+
+
+
+
+!SLIDE smbullets
+# GitLab CI: .gitlab-ci.yml Templates
+
+* Repository: https://gitlab.com/gitlab-org/gitlab-ce/tree/master/lib/gitlab/ci/templates
+ * PHP
+ * C++
+ * Go
+ * Python
+
+~~~SECTION:handouts~~~
+
+****
+
+Documentation References:
+
+https://docs.gitlab.com/ce/ci/README.html#examples
+
+https://gitlab.com/gitlab-org/gitlab-ci-yml
+
+
+~~~ENDSECTION~~~
+
+
+!SLIDE smbullets
+# GitLab CI: Variables
+
+* Variables accessible in the Job container
+ * Pre-defined environment variables
+ * User-defined project variables
+ * .gitlab-ci.yml defined variables
+
+https://docs.gitlab.com/ce/ci/variables/
+
+~~~SECTION:handouts~~~
+
+****
+
+
+
+~~~ENDSECTION~~~
+
