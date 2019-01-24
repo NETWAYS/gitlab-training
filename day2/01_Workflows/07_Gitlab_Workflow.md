@@ -73,13 +73,15 @@ Follow the instructions and ask the trainer for help.
  * Create merge request from feature branch
 
 * Steps:
- * Change into `$HOME/training`
- * Create the branch `feature/docs-merge-request`
+ * Create/checkout the branch `feature/docs-merge-request`
  * Edit `README.md`, add, commit and push the changes
  * Open the proposed GitLab URL in your browser
- * Fill in the merge request and add `fixes #1`
- * Simulate a review and merge it
+ * Fill in the merge request and add `fixes #1` as description
+ * Merge the MR and tick `delect source branch`
  * Analyse the history in GitLab/tig and open issue #1
+
+* Bonus:
+ * Run `git fetch --prune` on the CLI and explain it
 
 ~~~SECTION:handouts~~~
 
@@ -99,13 +101,19 @@ Follow the instructions and ask the trainer for help.
 
 ****
 
-* Change into `$HOME/training`
-* Create the branch `feature/docs-merge-request`
+* Create/checkout the branch `feature/docs-merge-request`
 * Edit `README.md`, add, commit and push the changes
 * Open the proposed GitLab URL in your browser
-* Fill in the merge request and add `fixes #1`
-* Simulate a review and merge it
+* Fill in the merge request and add `fixes #1` as description
+* Merge the MR and tick `delect source branch`
 * Analyse the history in GitLab/tig and open issue #1
+
+## Bonus:
+
+****
+
+* Run `git fetch --prune` on the CLI and explain it
+
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
@@ -131,7 +139,7 @@ Follow the instructions and ask the trainer for help.
 
 ### Navigate into GitLab and create merge request
 
-GitLab puts the URL into the shell output on pushing the branch.
+GitLab puts the URL into the shell output when pushing the branch.
 
     @@@ Sh
     $ git push -u origin feature/docs-merge-request
@@ -156,11 +164,18 @@ Specify a topic and description. Add `fixes #1` into the MR's description.
 Create the merge request. Add a comment inline to the source code
 and see what happens in the interface.
 
-Merge the request to master and investigate the Git history.
+Merge the MR and tick `delete source branch`.
 
 Open the previously created issue and verify that is was closed
 by merging the MR.
 
+
+### Run git fetch --prune
+
+This CLI command deletes local branches where the remote tracking branch is gone.
+
+    @@@ Sh
+    $ git fetch --prune
 
 ### Pull changes to local master after merge
 
@@ -168,4 +183,6 @@ by merging the MR.
     $ git checkout master
     $ git pull
     $ tig
+
+
 
