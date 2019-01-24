@@ -135,10 +135,12 @@ the changes to the Git repository.
 * Objective:
  * Configure client credentials helper
 * Steps:
- * Run `git config --global --get credential.helper`
- * Verify that it is set to `/usr/libexec/git-core/git-credential-gnome-keyring` on CentOS 7
+ * Install the helper with `yum -y install git-gnome-keyring`
+ * Run `git config --global credential.helper /usr/libexec/git-core/git-credential-gnome-keyring`
+ * Verify this setting in `~/.gitconfig`
 
-More details can be found in your NWS GitLab app in the FAQ section on top.
+Navigate into `NWS > GitLab App View > FAQ > Why do we recommend HTTPS over SSH?`
+and select `git credential helpers`.
 
 ~~~SECTION:handouts~~~
 
@@ -159,9 +161,12 @@ More details can be found in your NWS GitLab app in the FAQ section on top.
 
 ****
 
-* Run `git config --global --get credential.helper`
-* Verify that it is set to `/usr/libexec/git-core/git-credential-gnome-keyring` on CentOS 7
+* Install the helper with `yum -y install git-gnome-keyring`
+* Run `git config --global credential.helper /usr/libexec/git-core/git-credential-gnome-keyring`
+* Verify this setting in `~/.gitconfig`
 
+Navigate into `NWS > GitLab App View > FAQ > Why do we recommend HTTPS over SSH?`
+and select `git credential helpers`.
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
@@ -170,8 +175,13 @@ More details can be found in your NWS GitLab app in the FAQ section on top.
 ## Configure client credentials helper
 
 ****
-### Verify and set
 
+### Installation
+
+    @@@ Sh
+    $ sudo yum -y install git-gnome-keyring
+
+### Verify and set
 
     @@@ Sh
     $ git config --global --get credential.helper
@@ -182,6 +192,10 @@ If not set, you can set it explicitly.
     @@@ Sh
     $ git config --global credential.helper /usr/libexec/git-core/git-credential-gnome-keyring
 
+### Verify
+
+    @@@ Sh
+    $ cat ~/.gitconfig
 
 
 !SLIDE smbullets
