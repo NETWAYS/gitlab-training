@@ -7,6 +7,8 @@ environment, here are a few recommendations for GUI clients:
 * Sourcetree (Windows, macOS)
 * GitKraken (Windows, Linux, macOS)
 * TortoiseGit (Windows)
+* GitExtensions (Windows)
+* GitHub Desktop (Windows, macOS)
 
 ~~~SECTION:handouts~~~
 
@@ -14,6 +16,8 @@ environment, here are a few recommendations for GUI clients:
 
 Additional GUI clients can be found here:
 https://git-scm.com/download/gui/linux
+
+https://gitextensions.github.io/
 
 ~~~ENDSECTION~~~
 
@@ -40,6 +44,19 @@ Download: https://www.sourcetreeapp.com/
 ****
 
 Download: https://www.gitkraken.com/
+
+~~~ENDSECTION~~~
+
+!SLIDE smbullets
+# Git GUI Clients: GitHub Desktop
+
+<img src="../../_images/introduction/git_gui_client_github_desktop.png" alt="GUI Client: GitHub Desktop"/>
+
+~~~SECTION:handouts~~~
+
+****
+
+Download: https://desktop.github.com/
 
 ~~~ENDSECTION~~~
 
