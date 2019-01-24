@@ -127,6 +127,7 @@ also compare specific commits.
  * Use `git diff` to compare unstaged changes
  * Add the changed file to the staging area
  * Use `git diff` again
+ * Explain what `git diff --staged` does
 
 ~~~SECTION:handouts~~~
 
@@ -149,6 +150,7 @@ also compare specific commits.
 * Use `git diff` to compare unstaged changes
 * Add the changed file to the staging area
 * Use `git diff` again
+* Explain what `git diff --staged` does
 
 
 !SLIDE supplemental solutions
@@ -185,3 +187,9 @@ You'll recognize the unstaged changes compared to your staging area.
     @@@ Sh
     $ git diff
 
+### Use git diff --staged
+
+    @@@ Sh
+    $ git diff --staged
+
+This compares the staged changes for the commit with the latest committed changes.
