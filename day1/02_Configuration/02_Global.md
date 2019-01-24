@@ -2,16 +2,16 @@
 # Configuration
 
 * CLI command support
-* $HOME/.gitconfig
+* Edit $HOME/.gitconfig directly
 
 Example:
 
     @@@ Sh
-    $ git config --global color.ui auto
+    $ git config --global user.email michael.friedrich@netways.de
 
     $ cat $HOME/.gitconfig
-    [color]
-    ui = auto
+    [user]
+    email = michael.friedrich@netways.de
 
 
 ~~~SECTION:handouts~~~
