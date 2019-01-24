@@ -1,25 +1,7 @@
 !SLIDE smbullets
-# Continuous Integration: Jenkins
+# Jenkins
 
-* Self-hosted application
-* Jobs
-* Push trigger or time-based cronjobs
-* Build pipelines
-* Build agents for Linux/Unix, Windows, etc.
-* Written in Java
-* Many plugins available
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
-
-
-!SLIDE smbullets noprint
-# Jenkins Workflow
-
+* Standalone self-hosted server (Java)
 * Trigger build jobs from git commits
 * Start build jobs from specific branches (e.g. daily snapshots)
 * Run tests which update your ticket system
@@ -28,8 +10,9 @@
 <center><img src="../../_images/ci/git_jenkins_ci_git_hook.png" style="width:600px" alt="Git CI Jenkins"/></center>
 
 !SLIDE smbullets printonly
-# Jenkins Workflow
+# Continuous Integration: Jenkins
 
+* Standalone self-hosted server (Java)
 * Trigger build jobs from git commits
 * Start build jobs from specific branches (e.g. daily snapshots)
 * Run tests which update your ticket system

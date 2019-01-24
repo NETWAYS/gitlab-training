@@ -20,20 +20,3 @@
 ~~~ENDSECTION~~~
 
 
-!SLIDE smbullets
-# Continuous Integration: Overview
-
-* Travis CI
-* Jenkins
-* GitLab CI
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
-
-
-
-
