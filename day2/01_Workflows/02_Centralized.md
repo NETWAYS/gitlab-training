@@ -78,79 +78,82 @@ for integrating and sharing code changes between repositories.
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Collaborate in a central repository
 
 * Objective:
- * Clone the training repository twice and add diverging commits
+ * Create conflicting history tree
 * Steps:
- * Clone the `training.git` repository into `$HOME/training1` and `$HOME/training2`
-* Steps for both:
- * Change into each directory
- * Add/modify a file and commit the change
- * Push your change to the remote repository
-* Explain the error message after the second push
-
+ * Open the GitLab project `training`
+ * Edit `README.md`, add `This change is from my colleague.`.
+ * Stage & commit the change to master
+* Local steps:
+ * Change into `training` directory
+ * Edit `README.md`, add `This is my local change.`.
+ * Commit and try to push, explain the error message
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Collaborate in a central repository
 
-## Objective: Clone the training repository twice and add diverging commits
+## Objective: Create conflicting history tree
 ****
 
-* Clone the training repository twice and add diverging commits
+* Create conflicting history tree
 
 ## Steps:
 
 ****
 
-* Clone the `training.git` repository into `$HOME/training1`
-* Clone the `training.git` repository into `$HOME/training2`
+* Open the GitLab project `training`
+* Edit `README.md`, add `This change is from my colleague.`.
+* Stage & commit the change to master
 
-Add the directory destination after the Git clone URL.
+## Local CLI Steps:
 
-Repeat the steps 2 times:
+****
 
-* Change into each directory
-* Add/modify a file and commit the change
-* Push your change to the remote repository
+* Change into `training` directory
+* Edit `README.md`, add `This is my local change.`.
+* Commit and try to push, explain the error message
 
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
 ****
 
-## Clone the training repository twice and add diverging commits
+## Create conflicting history tree
 
 ****
 
-### Clone the central repository
+### Create remote commit in GitLab
 
-The last parameter specifies the target directory `training1`.
+Navigate into the `training` project in GitLab and select
+the `Repository` view.
 
-    @@@ Sh
-    $ cd $HOME
-    $ git clone https://[...].nws.netways.de/root/training.git training1
+Click onto `README.md` and choose to edit it from the browser.
 
-### Add/modify a file
+Add `This change is from my colleague.` at the bottom of the file.
 
-    @@@ Sh
-    $ echo "My Name" > AUTHORS
+Stage and commit the change to the master branch.
 
-### Commit the change
+### Create local commit on the CLI
 
-    @@@ Sh
-    $ git add -A .
-    $ git commit -av -m "Add myself to AUTHORS"
-
-### Push the changes to the remote repository
+Change into the `training` directory, edit the `README.md` file
+and commit the changes.
 
     @@@ Sh
-    $ git push origin master
+    $ cd $HOME/training
+    $ vim README.md
 
-### Repeat these steps with training2
+    ...
 
-The last parameter specifies the target directory `training2`.
+    This is my local change.
+
+    $ git commit -av -m "Update docs for conflicts"
+
+### Try to push the commit
 
     @@@ Sh
-    $ cd $HOME
-    $ git clone https://[...].nws.netways.de/root/training.git training2
+    $ git push
+
+This will fail as the history is now diverged and pushing
+in a non-fast forward fashion is not allowed.
 
 
 !SLIDE smbullets noprint
@@ -184,13 +187,13 @@ The last parameter specifies the target directory `training2`.
 * Objective:
  * Rebase your local history with the remote repository
 * Steps:
- * Simulate two commits in the past: `git reset --hard HEAD~2`
- * Update and commit README.md
- * Fetch remote and compare with `git diff origin/master`
+ * Fetch remote with `git fetch`
+ * Compare changes with `git diff origin/master`
  * Rebase with `git rebase origin/master`
- * Resolve possible merge conflicts, add them and continue with `git rebase --continue`, push rebased history
+ * Resolve possible merge conflicts, add them
+ * Continue with `git rebase --continue`, push rebased history
 
-Hint: `>>>` marks conflicts and show the differences on merge.
+Hint: `>>>` marks conflicts and show the differences on merge/rebase.
 
 ~~~SECTION:handouts~~~
 
@@ -221,13 +224,11 @@ instead of generating a merge commit.
 
 ****
 
-* Change into `$HOME/training`
-* Simulate two commits in the past: `git reset --hard HEAD~2`
-* Update and commit README.md
-* Fetch the remote repository and use `git diff origin/master` to compare the changes
-* Rebase the master branch against the remote master branch with `git rebase origin/master`
-* Resolve possible merge conflicts, add them and continue with `git rebase --continue`
-* Push your rebased history
+* Fetch remote with `git fetch`
+* Compare changes with `git diff origin/master`
+* Rebase with `git rebase origin/master`
+* Resolve possible merge conflicts, add them
+* Continue with `git rebase --continue`, push rebased history
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
@@ -236,24 +237,6 @@ instead of generating a merge commit.
 ## Rebase your local history with the remote repository
 
 ****
-
-### Simulate two commits in the past
-
-This is just for testing the rebase laster on with different commit history
-branches. Commits can be reset from the history with the following command:
-
-    @@@ Sh
-    $ git reset --hard HEAD~2
-
-### Update and commit README.md
-
-    @@@ Sh
-    $ vim README.md
-
-    Testing rebase
-
-    $ git add README.md
-    $ git commit -v README.md "Rebase test"
 
 ### Fetch and diff the remote changes
 
