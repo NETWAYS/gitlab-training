@@ -20,10 +20,11 @@ environment.
 # Git Branch CLI commands
 
 * `git branch`
-  * List, create and delete branches.
+ * Create new branch without leaving the current one.
+ * Delete branches
+ * List branches
 * `git checkout`
-  * Switch branches.
-  * Restore the working tree.
+  * Switch between branches
 
 ~~~SECTION:handouts~~~
 
@@ -31,7 +32,7 @@ environment.
 
 `git branch` allows you to list, create and delete branches.
 
-`git checkout` will switch between branches, or restore your current working tree.
+`git checkout` will switch between branches.
 
 ~~~ENDSECTION~~~
 
