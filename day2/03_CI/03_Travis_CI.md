@@ -1,5 +1,5 @@
 !SLIDE smbullets
-# Continuous Integration: Travis CI
+# Travis CI
 
 * Cloud based CI system
 * Supports Ubuntu 14.04 LTS and macOS

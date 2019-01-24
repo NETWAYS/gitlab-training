@@ -27,6 +27,7 @@ NWS: https://nws.netways.de/products/gitlab-ce
 * Enterprise Edition (EE), additional features
   * Multiple LDAP servers
   * LDAP group import
+  * Merge Request Review Approvals
   * Git Hooks (not web hooks)
   * Search backend with Elasticsearch
 

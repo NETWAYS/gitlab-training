@@ -24,31 +24,6 @@ manually move the file, you will need to rm and add it again.
 ~~~ENDSECTION~~~
 
 
-!SLIDE smbullets
-# Remove changes
-
-* `git reset`
-  * Reset files added to the staging index.
-  * Hint: This comes in handy with `git add -A` before.
-* `git rm`
-  * Remove the file(s) from working tree and Git repository.
-  * Note that file(s) will be visible in Git history, and can be restored from it.
-
-~~~SECTION:handouts~~~
-
-****
-
-`git reset` resets files added to the staging index. You can also use it to
-reset commits from the history.
-
-This also is helpful when you need to add 95 out of 100 changes. First, use `git add -A`
-and then selectively unstage the unwanted 5 changes.
-
-`git rm` removes the file from the working tree and also from the git index.
-
-~~~ENDSECTION~~~
-
-
 !SLIDE smbullets small
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add a new README.md file
 
@@ -108,6 +83,34 @@ in the `README.md` file.
     $ git status
 
 ~~~ENDSECTION~~~
+
+
+!SLIDE smbullets
+# Remove changes
+
+* `git reset`
+  * Reset files added to the staging index.
+  * Hint: This comes in handy with `git add -A` before.
+* `git rm`
+  * Remove the file(s) from working tree and Git repository.
+  * Note that file(s) will be visible in Git history, and can be restored from it.
+
+~~~SECTION:handouts~~~
+
+****
+
+`git reset` resets files added to the staging index. You can also use it to
+reset commits from the history.
+
+This also is helpful when you need to add 95 out of 100 changes. First, use `git add -A`
+and then selectively unstage the unwanted 5 changes.
+
+`git rm` removes the file from the working tree and also from the git index.
+
+~~~ENDSECTION~~~
+
+
+
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Reset File from Staging Index
 

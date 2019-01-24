@@ -3,10 +3,9 @@
 
 * `git status`
   * Show current working tree status.
-  * `Untracked` files and added to staging area.
-  * Modifications
-* `git diff`
-  * Compare changes between working tree and latest commit.
+  * Modified files
+  * Modified and added to staging for commit
+  * Untracked files
 
 Later we will learn how to compare specific commits and branches too.
 
@@ -16,9 +15,6 @@ Later we will learn how to compare specific commits and branches too.
 
 `git status` shows the current working tree status. Untracked files and changes (not) staged
 for commit.
-
-`git diff` shows changes between the current working tree and the last commit. You can
-also compare specific commits.
 
 ~~~ENDSECTION~~~
 
@@ -100,6 +96,25 @@ You'll recognize the unstaged changes compared to your staging area.
     $ git status
 
 
+!SLIDE smbullets
+# Examine the current state: Diff
+
+* `git diff`
+  * Compare changes between modified working tree and latest commit.
+  * Output is a unified diff similar to `diff -ur file1 file2`.
+
+Later we will learn how to compare specific commits and branches too.
+
+~~~SECTION:handouts~~~
+
+****
+
+`git diff` shows changes between the current working tree and the last commit. You can
+also compare specific commits.
+
+~~~ENDSECTION~~~
+
+
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Use Git Diff
@@ -112,6 +127,7 @@ You'll recognize the unstaged changes compared to your staging area.
  * Use `git diff` to compare unstaged changes
  * Add the changed file to the staging area
  * Use `git diff` again
+ * Explain what `git diff --staged` does
 
 ~~~SECTION:handouts~~~
 
@@ -134,6 +150,7 @@ You'll recognize the unstaged changes compared to your staging area.
 * Use `git diff` to compare unstaged changes
 * Add the changed file to the staging area
 * Use `git diff` again
+* Explain what `git diff --staged` does
 
 
 !SLIDE supplemental solutions
@@ -170,3 +187,9 @@ You'll recognize the unstaged changes compared to your staging area.
     @@@ Sh
     $ git diff
 
+### Use git diff --staged
+
+    @@@ Sh
+    $ git diff --staged
+
+This compares the staged changes for the commit with the latest committed changes.

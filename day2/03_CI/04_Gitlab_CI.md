@@ -1,5 +1,5 @@
 !SLIDE smbullets
-# Continuous Integration: GitLab CI
+# GitLab CI
 
 * Build Pipelines
 * Natively integrated into GitLab
