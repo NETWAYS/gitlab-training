@@ -6,6 +6,7 @@
 * Push tags to remote repository
 * Checkout branches based on tags
 * Release software versions based on tags (e.g. v2.9.0)
+* Tags can/should follow milestone versions in ticket systems
 
 ~~~SECTION:handouts~~~
 
@@ -28,9 +29,10 @@ Example for checking out a tag into a new branch:
 * Steps:
  * Use `git tag` and add the `v0.1` tag
  * Verify the added tag with `git tag -l`
-* Bonus:
- * Add a tag description with `-m`
  * Push tags to remote origin with `git push --tags`
+ * Open GitLab and navigate into `Repository > Tags`
+* Bonus:
+ * Add a tag description with `git tag -m "Release v0.1" v0.1`
 
 ~~~SECTION:handouts~~~
 
@@ -50,10 +52,12 @@ Example for checking out a tag into a new branch:
 
 * Use `git tag` and add the `v0.1` tag
 * Verify the added tag with `git tag -l`
+* Push tags to remote origin with `git push --tags`
+* Open GitLab and navigate into `Repository > Tags`
 
 ## Bonus:
 
-* Push tags to remote origin with `git push --tags`
+* Add a tag description with `git tag -m "Release v0.1" v0.1`
 
 
 !SLIDE supplemental solutions
@@ -79,3 +83,7 @@ Example for checking out a tag into a new branch:
 
     @@@ Sh
     $ git push --tags
+
+### GitLab
+
+Navigate into the `training` project in `Repository > Tags`.
