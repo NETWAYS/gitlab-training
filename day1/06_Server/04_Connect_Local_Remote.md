@@ -309,6 +309,8 @@ Those can be there just for testing things, or are not meant for the public doma
 * Steps:
  * Click on `History` in the project view and examine the Git commits
  * Run `git log` or `tig` on your shell and compare them to GitLab
+* Bonus:
+ * Use `Repository > Graph` in GitLab
 
 ~~~SECTION:handouts~~~
 
@@ -335,6 +337,9 @@ Those can be there just for testing things, or are not meant for the public doma
 * Click on `History` in the project view and examine the Git commits
 * Run `git log` or `tig` on your shell and compare them to GitLab
 
+## Bonus:
+
+* Use `Repository > Graph` in GitLab
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
@@ -350,5 +355,7 @@ Choose `History` and look at the Git commits, their author, subject and timestam
 
 Compare it with the local `git log` or `tig` entries. 
 
+### GitLab Graphs
 
+Navigate into `Repository > Graph` to get an alternative history view.
 
