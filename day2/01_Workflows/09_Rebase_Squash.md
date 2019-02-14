@@ -197,3 +197,18 @@ and choose `Protected Branches > Expand`.
 
 Add `master` as protected branch, and set all options to
 `maintainers` again.
+
+!SLIDE smbullets
+# More Hints: Force Push in shared branch, what now?
+
+* You pulled the 3 commits now being squashed in master.
+* Your colleage force pushed the branch with 1 squashed commit.
+* You cannot rebase anymore.
+* Instead, you need to reset your local branch to the remote branch base.
+
+Discuss this with the trainer.
+
+    $ git fetch
+    $ git checkout feature/new-backend
+    $ git reset --hard origin/feature/new-backend
+
