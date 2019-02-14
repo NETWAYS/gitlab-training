@@ -81,11 +81,20 @@ Follow the instructions and ask the trainer for help.
  * Analyse the history in GitLab/tig and open issue #1
 
 * Bonus:
- * Run `git fetch --prune` on the CLI and explain it
+ * Run `git fetch --prune` and `git branch -d feature/docs-merge-request`
 
 ~~~SECTION:handouts~~~
 
 ****
+
+For future branch cleanups, you'll need to compare the deleted
+remote branch references from `git fetch --prune` with the local
+branch names, review them and then delete them.
+
+    @@@Sh
+    $ git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}'
+    $ git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d
+
 
 ~~~ENDSECTION~~~
 
@@ -112,7 +121,7 @@ Follow the instructions and ask the trainer for help.
 
 ****
 
-* Run `git fetch --prune` on the CLI and explain it
+* Run `git fetch --prune` and `git branch -d feature/docs-merge-request`
 
 
 !SLIDE supplemental solutions
@@ -170,12 +179,11 @@ Open the previously created issue and verify that is was closed
 by merging the MR.
 
 
-### Run git fetch --prune
-
-This CLI command deletes local branches where the remote tracking branch is gone.
+### Update local index and delete the branch
 
     @@@ Sh
     $ git fetch --prune
+    $ git branch -d feature/docs-merge-request
 
 ### Pull changes to local master after merge
 
