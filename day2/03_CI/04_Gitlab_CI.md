@@ -133,7 +133,7 @@ https://docs.docker.com
 !SLIDE smbullets printonly
 # GitLab CI: Docker and CI Runners
 
-<center><img src="../../_images/ci/git_gitlab_ci_runners_docker.png" style="width:480px" alt="GitLab CI Runners Docker"/></center>
+<center><img src="../../_images/ci/git_gitlab_ci_runners_docker.png" style="width:450px" alt="GitLab CI Runners Docker"/></center>
 
 ~~~SECTION:handouts~~~
 

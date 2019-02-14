@@ -55,7 +55,7 @@ NETWAYS also provides GitLab hosting services:
 !SLIDE smbullets printonly
 # GitLab
 
-<center><img src="../../_images/server/git_server_gitlab.png" style="width:480px;height:260px" alt="GitLab"/></center>
+<center><img src="../../_images/server/git_server_gitlab.png" style="width:450px" alt="GitLab"/></center>
 !SLIDE smbullets noprint
 # GitHub
 
@@ -64,7 +64,7 @@ NETWAYS also provides GitLab hosting services:
 !SLIDE smbullets printonly
 # GitHub
 
-<center><img src="../../_images/server/git_server_github.png" style="width:480px;height:260px" alt="GitHub"/></center>
+<center><img src="../../_images/server/git_server_github.png" style="width:450px" alt="GitHub"/></center>
 
 
 !SLIDE smbullets

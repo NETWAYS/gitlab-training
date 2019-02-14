@@ -31,7 +31,7 @@
   * Set of snapshots of a mini-filesystem
   * No change - link to the previous identical stored file
 
-<center><img src="../../_images/introduction/git_introduction_basics_01_changes.png" style="width:480px;height:278px;" alt="Basic Changes"/></center>
+<center><img src="../../_images/introduction/git_introduction_basics_01_changes.png" style="width:450px" alt="Basic Changes"/></center>
 
 
 !SLIDE smbullets

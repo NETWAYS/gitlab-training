@@ -125,7 +125,7 @@ also compare specific commits.
 * `tig` helps visualize history and branches
 * Inspect specific commits while scrolling
 
-<center><img src="../../_images/commits/git_history_tig.png"  style="width: 480px;" alt="Tig"/></center>
+<center><img src="../../_images/commits/git_history_tig.png"  style="width: 450px;" alt="Tig"/></center>
 
 ~~~SECTION:handouts~~~
 

@@ -1,4 +1,4 @@
-!SLIDE smbullets
+!SLIDE smbullets noprint
 # Forking Workflow with GitHub
 
 * Fork aka "create a copy" of the server-side repository
@@ -7,6 +7,16 @@
 * Developers/Maintainers review and merge PR, CI triggers deployment task
 
 <center><img src="../../_images/workflows/git_github_workflow.png" alt="GitHub Workflow"/></center>
+
+!SLIDE smbullets printonly
+# Forking Workflow with GitHub
+
+* Fork aka "create a copy" of the server-side repository
+* Commit and push into own repository copy
+* Create a `Pull Request` for original repo, CI runs automated tests
+* Developers/Maintainers review and merge PR, CI triggers deployment task
+
+<center><img src="../../_images/workflows/git_github_workflow.png" style="width:450px" alt="GitHub Workflow"/></center>
 
 ~~~SECTION:handouts~~~
 

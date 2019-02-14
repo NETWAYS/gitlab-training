@@ -1,4 +1,4 @@
-!SLIDE smbullets
+!SLIDE smbullets noprint
 # Git Installation
 
 * Available as package
@@ -8,6 +8,17 @@
   * Show status and branch in the terminal
 
 <img src="../../_images/introduction/git_installation_cli_example.png" alt="Bash Integration"/>
+
+!SLIDE smbullets printonly
+# Git Installation
+
+* Available as package
+* macOS, Windows installers
+* Bash Integration
+  * Completion
+  * Show status and branch in the terminal
+
+<img src="../../_images/introduction/git_installation_cli_example.png" style="width:450px" alt="Bash Integration"/>
 
 ~~~SECTION:handouts~~~
 
@@ -222,16 +233,27 @@ in the source code documentation at https://github.com/git/git/blob/master/contr
     $ source $HOME/.bashrc
 
 
-!SLIDE smbullets
+!SLIDE smbullets noprint
 # More Git Shell Integrations
 
-* Powerline Shell
+Powerline Shell
 
 <img src="../../_images/introduction/git_shell_powerline.png" alt="Powerline Shell Integration"/>
 
-* Windows Powershell: git-posh
+Windows Powershell: git-posh
 
 <img src="../../_images/introduction/git_shell_powershell.png" alt="Powershell Integration"/>
+
+!SLIDE smbullets printonly
+# More Git Shell Integrations
+
+Powerline Shell
+
+<img src="../../_images/introduction/git_shell_powerline.png" style="width:400px" alt="Powerline Shell Integration"/>
+
+Windows Powershell: git-posh
+
+<img src="../../_images/introduction/git_shell_powershell.png" style="width:400px" alt="Powershell Integration"/>
 
 ~~~SECTION:handouts~~~
 

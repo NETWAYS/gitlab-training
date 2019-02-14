@@ -28,7 +28,7 @@ Reference: https://docs.gitlab.com/ce/ci/pipelines.html
 !SLIDE smbullets printonly
 # GitLab Pipelines: Example
 
-<center><img src="../../_images/ci/git_gitlab_ci_pipelines_project_ci_cd.png" style="width:480px" alt="GitLab Pipelines"/></center>
+<center><img src="../../_images/ci/git_gitlab_ci_pipelines_project_ci_cd.png" style="width:450px" alt="GitLab Pipelines"/></center>
 
 ~~~SECTION:handouts~~~
 
