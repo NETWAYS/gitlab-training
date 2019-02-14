@@ -2,7 +2,8 @@
 # Add current changes
 
 * `git add`
-  * Add (modified) file(s) from the working directory into the staging index.
+  * Add new files to Git (staged)
+  * Add modified file(s) from the working directory into the staging index.
   * `-A` adds all files. Question: Where is this applicable?
 * `git mv`
   * Rename file(s) tracked by Git.
@@ -12,7 +13,8 @@
 ****
 
 `git add` will add the file(s) and their content to the staging index
-waiting for the commit.
+waiting for the commit. This applies to both, new files and also modified
+files.
 
 If you're using `-A` to add all files, you need to ensure that
 unwanted files are not added. Learn more about `git reset` in the next
@@ -31,7 +33,7 @@ manually move the file, you will need to rm and add it again.
  * Add a new README.md file
 * Steps:
  * Change into `$HOME/training`
- * Create README.md and add `# Git Training Notes` as first line
+ * Create README.md and add `# GitLab Training Notes` as first line
  * Use `git add` to add README.md to the current change index
 * Next steps:
  * Verify the change with `git status`
@@ -61,7 +63,7 @@ in the `README.md` file.
 ****
 
 * Change into `$HOME/training`
-* Create a new README.md file
+* Create README.md and add `# GitLab Training Notes` as first line
 * Use `git add` to add the file to the current change index
 * Verify the change with `git status`
 
@@ -78,7 +80,7 @@ in the `README.md` file.
 
     @@@ Sh
     $ cd $HOME/training
-    $ echo "# Git Training Notes" > README.md
+    $ echo "# GitLab Training Notes" > README.md
     $ git add README.md
     $ git status
 
@@ -94,6 +96,8 @@ in the `README.md` file.
 * `git rm`
   * Remove the file(s) from working tree and Git repository.
   * Note that file(s) will be visible in Git history, and can be restored from it.
+* `git rm --cached`
+  * Alternative suggested by Git CLI for `git reset`
 
 ~~~SECTION:handouts~~~
 
