@@ -32,7 +32,7 @@
 * Default editor for command line commits
 * GitHub integration with Pull Requests
 
-<center><img src="../../_images/integrations/git_integrations_ide_atom.png"  style="width: 480px;" alt="Atom"/></center>
+<center><img src="../../_images/integrations/git_integrations_ide_atom.png"  style="width: 450px;" alt="Atom"/></center>
 
 ~~~SECTION:handouts~~~
 
@@ -62,7 +62,7 @@ http://blog.atom.io/2017/05/16/git-and-github-integration-comes-to-atom.html
 * Add, commit, fetch, push, pull, etc.
 * GitHub integration
 
-<center><img src="../../_images/integrations/git_integrations_ide_phpstorm.png"  style="width: 480px;" alt="PHPStorm"/></center>
+<center><img src="../../_images/integrations/git_integrations_ide_phpstorm.png"  style="width: 450px;" alt="PHPStorm"/></center>
 
 ~~~SECTION:handouts~~~
 
@@ -86,7 +86,7 @@ Reference: https://www.jetbrains.com/help/idea/using-git-integration.html
 * Git for Windows bundled in 2015+
 * Native GUI integration
 
-<center><img src="../../_images/integrations/git_integrations_ide_visualstudio.png"  style="width: 480px;" alt="Visual Studio"/></center>
+<center><img src="../../_images/integrations/git_integrations_ide_visualstudio.png"  style="width: 450px;" alt="Visual Studio"/></center>
 
 ~~~SECTION:handouts~~~
 

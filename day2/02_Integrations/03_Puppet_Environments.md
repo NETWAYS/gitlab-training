@@ -28,4 +28,4 @@ https://www.netways.de/en/events_trainings/puppet_trainings/scaling_puppet/
 !SLIDE smbullets printonly
 # Puppet Environments: r10k
 
-<center><img src="../../_images/integrations/git_integrations_puppet_environments_r10k.png" style="width:480px" alt="r10k"/></center>
+<center><img src="../../_images/integrations/git_integrations_puppet_environments_r10k.png" style="width:450px" alt="r10k"/></center>

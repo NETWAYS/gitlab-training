@@ -33,7 +33,7 @@
 * Master branch is always `stable` and in production
 * Develop branch for feature integration
 
-<center><img src="../../_images/workflows/git_gitflow_workflow_02.png" style="width:480px;height:177px" alt="Gitflow Workflow"/></center>
+<center><img src="../../_images/workflows/git_gitflow_workflow_02.png" style="width:450px" alt="Gitflow Workflow"/></center>
 
 
 ~~~SECTION:handouts~~~
@@ -59,7 +59,7 @@
 * Feature branches use `develop` as their parent branch
 * Once completed, merged back to `develop`
 
-<center><img src="../../_images/workflows/git_gitflow_workflow_03.png" style="width:480px;height:256px" alt="Gitflow Workflow"/></center>
+<center><img src="../../_images/workflows/git_gitflow_workflow_03.png" style="width:450px" alt="Gitflow Workflow"/></center>
 
 ~~~SECTION:handouts~~~
 
@@ -82,7 +82,7 @@
 * Enough features in `develop`: `release` branch based on `develop`
 * Ready to ship: merged to `master` and tagged with version
 
-<center><img src="../../_images/workflows/git_gitflow_workflow_04.png" style="width:480px;height:283px" alt="Gitflow Workflow"/></center>
+<center><img src="../../_images/workflows/git_gitflow_workflow_04.png" style="width:450px" alt="Gitflow Workflow"/></center>
 
 ~~~SECTION:handouts~~~
 
@@ -104,7 +104,7 @@
 * Fixes based on `master`
 * Merged to `master`, tagged and merged to `develop`
 
-<center><img src="../../_images/workflows/git_gitflow_workflow_05.png" style="width:480px;height:283px" alt="Gitflow Workflow"/></center>
+<center><img src="../../_images/workflows/git_gitflow_workflow_05.png" style="width:450px" alt="Gitflow Workflow"/></center>
 
 ~~~SECTION:handouts~~~
 
