@@ -24,6 +24,8 @@ handout.
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Create GitLab app in NWS
 
+**Note**: Skip this lab if already done.
+
 * Objective:
  * Create a new GitLab app in NWS
 * Steps:

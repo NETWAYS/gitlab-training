@@ -22,6 +22,7 @@
     {"section": "global/pre/netways/about"},
     {"section": "global/pre/hints"},
 
+    {"section":"day1/00_Organisation"},
     {"section":"day1/01_Introduction"},
     {"section":"day1/02_Configuration"},
     {"section":"day1/03_Basics"},
