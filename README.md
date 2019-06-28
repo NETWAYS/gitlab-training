@@ -1,7 +1,8 @@
 # GitLab Training
 
-This training is designed as a two days hands-on training introducing Git,
-GitLab, Workflows, CI/CD and many best practices.
+This [training](https://www.netways.de/trainings/gitlab/) is designed
+as a two days hands-on training introducing Git,
+GitLab, Workflows, CI/CD and many best practices with GitLab and Git.
 
 The training participants will get an in-depth insight into the Git basics,
 configuration and "good" commits. They also learn about GitLab basics with
@@ -9,25 +10,27 @@ repository and user management and continue to practice Git version control
 with real-life exercises.
 
 Moving along from standalone environments, participants collaborate with
-others and get an overview on different Git workflows. Continuing with
+others and get an overview on different Git workflows. Solving conflicts,
+rebasing, merging and even squasing commits also is practiced. Continuing with
 practices, the training dives deep into continuous integration and
 delivery (CI/CD) with GitLab, runners and DevOps production pipelines.
 
-On top of that, the training provides more hints on GitLab usage, tools
+On top of that, the training provides more hints on GitLab usage (project
+management, Web IDE, API, etc.), tools, IDEs and UIs
 for working with Git and anything proven useful for daily best practice.
 
-Target audience are developers and Linux administrators.
+Target audience are developers and Linux administrators. Linux basics
+and CLI/editor knowledge is required.
 
 We have developed our training material based on years of experience in
-professional service and training. To support our work, please join the official
-training sessions and get your ticket at [NETWAYS](https://www.netways.de/en/trainings/home/).
+development, professional services and training. To support our work,
+please join the official training sessions and get your ticket at [NETWAYS](https://www.netways.de/trainings/gitlab/).
 
 ## Online Material
 
 In addition to the sources you can find the rendered material on
 [netways.github.io](https://netways.github.io/gitlab-training)
 
-* [Presentation](https://netways.github.io/gitlab-training)
 * [Handouts](https://github.com/NETWAYS/gitlab-training/releases)
 
 ## Provide your training
@@ -37,9 +40,13 @@ Requirements:
 * Docker
 * https://nws.netways.de GitLab instances for the trainer and participants
 
-To run the presentation you will need [showoff 0.19.x](https://rubygems.org/gems/showoff/versions/0.19.6).
-After installing it simply run `showoff serve` to get presenter mode with additional notes
-and display window to present to your students.
+Start the presentation with the default settings:
+
+```
+./global/wizard.sh
+[Enter]
+[Enter]
+```
 
 More instructions [here](https://github.com/NETWAYS/training-global#using-docker-to-build-and-serve-the-slide-deck).
 
@@ -51,6 +58,9 @@ gets their own GitLab instance.
 The [vm/](vm/) directory provides a fallback VM which can be exported
 from Vagrant/VirtualBox and is provisioned onto the training notebook @NETWAYS.
 
+### Trainer
+
+Additional trainer introduction slides can be [provided](https://github.com/NETWAYS/training-global#2-create-a-directory-to-provide-trainer-introduction).
 
 # Contribution
 
