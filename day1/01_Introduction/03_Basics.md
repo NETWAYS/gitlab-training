@@ -132,7 +132,7 @@ is copied when you clone a repository from another computer.
 * Modify files in `working directory`
 * Stage the files which add snapshots to the `staging area` ("git add")
 * Commit ("git commit")
- * Takes files in `staging area`
+ * Takes files from `staging area`
  * Stores snapshot permanently in `.git directory`
 
 ~~~SECTION:handouts~~~
