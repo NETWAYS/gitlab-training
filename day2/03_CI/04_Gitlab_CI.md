@@ -89,13 +89,12 @@ https://docs.gitlab.com/runner/register/index.html
 
 ****
 
-```
-# vim /etc/gitlab/gitlab.rb
+   @@@ Sh 
+   $ vim /etc/gitlab/gitlab.rb
 
-registry_external_url 'https://gitlab.example.com:5000'
+   registry_external_url 'https://gitlab.example.com:5000'
 
-# gitlab-ctl reconfigure
-```
+   $ gitlab-ctl reconfigure
 
 Documentation References:
 
