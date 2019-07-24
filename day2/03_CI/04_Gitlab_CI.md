@@ -62,9 +62,7 @@ Documentation reference: https://docs.gitlab.com/runner/
 
 * Separate server
 * Installation via package repository
-* `gitlab-runner register`
-
-Note: This is not needed for the built-in `docker executor` runner.
+* `gitlab-runner register` Note: This is not needed for the built-in `docker executor` runner.
 
 ~~~SECTION:handouts~~~
 
