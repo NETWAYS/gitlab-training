@@ -12,7 +12,7 @@
   "password": "awesome",
 
   "templates" : {
-       "default"   : "global/layouts/netways.tpl"
+       "default": "global/layouts/netways.tpl"
   },
 
   "sections": [
