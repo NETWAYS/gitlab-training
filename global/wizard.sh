@@ -93,13 +93,13 @@ done
 
 case "$LAYOUT" in
   1) LAYOUT=netways
-     sed -i '' 's|^[ \t\s]*"default":.*|    "default": "global/layouts/netways.tpl"|' showoff.json;;
+     sed -i 's|^[ \t\s]*"default":.*|    "default": "global/layouts/netways.tpl"|' showoff.json;;
   2) LAYOUT=osmc
-     sed -i '' 's|^[ \t\s]*"default":.*|    "default": "global/layouts/osmc.tpl"|' showoff.json;;
+     sed -i 's|^[ \t\s]*"default":.*|    "default": "global/layouts/osmc.tpl"|' showoff.json;;
   3) LAYOUT=osdc
-     sed -i '' 's|^[ \t\s]*"default":.*|    "default": "global/layouts/osdc.tpl"|' showoff.json;;
+     sed -i 's|^[ \t\s]*"default":.*|    "default": "global/layouts/osdc.tpl"|' showoff.json;;
   4) LAYOUT=osbconf
-     sed -i '' 's|^[ \t\s]*"default":.*|    "default": "global/layouts/osbconf.tpl"|' showoff.json;;
+     sed -i 's|^[ \t\s]*"default":.*|    "default": "global/layouts/osbconf.tpl"|' showoff.json;;
 esac
 
 setlayout $LAYOUT
