@@ -51,7 +51,7 @@ printsolutions () {
 }
 
 setlayout () {
-  find . -type l -name *.css -maxdepth 1 -delete
+  find . -maxdepth 1 -type l -name *.css -delete
   ln -s global/layouts/$1.css .
 }
 
