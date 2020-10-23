@@ -2,14 +2,21 @@
 # ~~~SECTION:MAJOR~~~ Training Organisation
 
 !SLIDE smbullets
-# Training Notebook
+# GoToTraining Application
 
-* User: training Password: netways
-* Base OS is CentOS 7 with Gnome
-  * Wifi settings are pre-configured
-  * CLI exercises use the default terminal
-  * Password-less sudo is pre-configured
-* GitLab App from NWS - nws.netways.de, test account required
+
+* Raise your hand if you want to talk
+* Mute and unmute your microphone
+* Chat with others or get help from the trainer
+
+!SLIDE smbullets
+# Terminal session
+
+Click on the link in your email to join the session
+
+* Operating system is CentOS 7
+* We use tmux to join your session and help you
+* Change the appearance of the terminal as you like
 
 
 ~~~SECTION:handouts~~~
