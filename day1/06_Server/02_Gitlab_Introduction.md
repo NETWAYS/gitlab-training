@@ -23,15 +23,17 @@ NWS: https://nws.netways.de/products/gitlab-ce
 !SLIDE smbullets
 # GitLab Editions
 
-* Community Edition (CE), part of this training
+* Community Edition (CE), Open Source and free to use
 * Enterprise Edition (EE), additional features
-  * Multiple LDAP servers
-  * LDAP group import
-  * Merge Request Review Approvals
-  * Git Hooks (not web hooks)
-  * Search backend with Elasticsearch
+  * Multiple LDAP servers, LDAP group import
+  * Search backend with Elasticsearch, additional HA capabilities
+  * Dependency Scanning, Audit logs
+  * Merge Request Review Approvals, Issue Relations
+  * Burndown charts
+  * Epics, manage group of issues over many projects
 
-
+https://about.gitlab.com/pricing/self-managed/feature-comparison/
+https://about.gitlab.com/install/ce-or-ee/
 
 ~~~SECTION:handouts~~~
 
