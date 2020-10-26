@@ -434,14 +434,14 @@ Future examples and tests work the same way.
  * Prepare container to convert Markdown to HTML
 * Steps:
  * Modify `.gitlab-ci.yml` and add a `before_script` section after the `image` section
- * Update `apk` package manager and install `python` and `py-pip` packages
+ * Update `apk` package manager and install `python3` and `py-pip` packages
  * Use `pip` to install the `markdown` and `Pygments` libraries
  * Commit and push the changes
 
 Example:
 
     before_script:
-      - apk update && apk add python py-pip
+      - apk update && apk add python3 py-pip
       - pip install markdown Pygments
 
 ~~~SECTION:handouts~~~
@@ -477,14 +477,14 @@ Reference: https://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management
 ## Steps:
 
 * Modify `.gitlab-ci.yml` and add a `before_script` section after the `image` section
-* Update `apk` package manager and install `python` and `py-pip` packages
+* Update `apk` package manager and install `python3` and `py-pip` packages
 * Use `pip` to install the `markdown` and `Pygments` libraries
 * Commit and push the changes
 
 Example:
 
     before_script:
-      - apk update && apk add python py-pip
+      - apk update && apk add python3 py-pip
       - pip install markdown Pygments
 
 !SLIDE supplemental solutions
@@ -512,7 +512,7 @@ Example:
     image: alpine:latest
 
     before_script:
-      - apk update && apk add python py-pip
+      - apk update && apk add python3 py-pip
 
 ### Install Markdown Python libraries
 
@@ -522,7 +522,7 @@ Example:
     image: alpine:latest
 
     before_script:
-      - apk update && apk add python py-pip
+      - apk update && apk add python3 py-pip
       - pip install markdown Pygments
 
 ### Verify the content
@@ -533,7 +533,7 @@ Example:
     image: alpine:latest
 
     before_script:
-      - apk update && apk add python py-pip
+      - apk update && apk add python3 py-pip
       - pip install markdown Pygments
 
     all_tests:
@@ -561,7 +561,7 @@ Example:
 
     markdown:
       script:
-        - python -m markdown README.md > README.html
+        - python3 -m markdown README.md > README.html
       artifacts:
         paths:
         - README.html
@@ -619,7 +619,7 @@ Example:
 
     markdown:
       script:
-        - python -m markdown README.md > README.html
+        - python3 -m markdown README.md > README.html
 
 ### Store artifacts
 
@@ -633,7 +633,7 @@ Tell GitLab to expire this artifact in `1 week`.
 
     markdown:
       script:
-        - python -m markdown README.md > README.html
+        - python3 -m markdown README.md > README.html
       artifacts:
         paths:
         - README.html
@@ -647,7 +647,7 @@ Tell GitLab to expire this artifact in `1 week`.
     image: alpine:latest
 
     before_script:
-      - apk update && apk add python py-pip
+      - apk update && apk add python3 py-pip
       - pip install markdown Pygments
 
     all_tests:
@@ -655,7 +655,7 @@ Tell GitLab to expire this artifact in `1 week`.
         - exit 0
 
     markdown:
-      - python -m markdown README.md > README.html
+      - python3 -m markdown README.md > README.html
       artifacts:
         paths:
         - README.html
