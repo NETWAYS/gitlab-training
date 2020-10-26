@@ -103,8 +103,8 @@
   }
 
   .net-header {
-    height: 4.104166667em;
-    padding-bottom: .0625em;
+    #height: 4.104166667em;
+    #padding-bottom: .0625em;
   }
 
   .subsection .net-header,
@@ -116,16 +116,18 @@
   }
 
   .net-header img {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
     /* Solves that the image overlays the header's border.
        #preso's transformation still produces artifacts, though.. */
-    margin-top: -.0625em;
+       #margin-top: -.0625em;
     /* Yep, applied on every slide. Otherwise we'll get flickering when switching slides */
   }
 
   .content .net-header + h1:not(.section-title) {
     margin: 0;
     color: white;
-    background: #F15A22;
+    background: #164857;
   }
 
   .net-footer {
@@ -133,7 +135,7 @@
     bottom: 0;
     width: 100%;
     color: white;
-    background: #F15A22;
+    background: #164857;
   }
 
   .net-footer * {
@@ -162,7 +164,7 @@
   }
 
   .net-header img {
-    height: 80%; /* The negative margin workaround does not work with wkhtmltopdf.. */
+    height: 60%; /* The negative margin workaround does not work with wkhtmltopdf.. */
     width: 7em;
   }
 
@@ -179,7 +181,7 @@
   .subsectionnonum .net-header + h1:not(.section-title) {
     width: 13.6em; /* Without this explicit slide max-width wkhtmltopdf is unable to produce proper line breaks */
     color: white;
-    background: #F15A22;
+    background: #164857;
   }
 
   .net-footer {
@@ -214,8 +216,8 @@
     margin: 1em 0;
     padding: .25em;
     font-size: 1.5em;
-    color: black;
-    background: #F15A22;
+    color: white;
+    background: #164857;
   }
 
   .title-author p {
@@ -238,7 +240,7 @@
     padding: 1em;
     height: 31em;
     color: white;
-    background: #F15A22;
+    background: #164857;
   }
 
   .title-name {
@@ -325,7 +327,7 @@
   }
 
   a, a:visited {
-    color: #F15A22;
+    color: #164857;
     text-decoration: none;
   }
 
@@ -500,7 +502,7 @@
   }
 
   a, a:visited {
-    color: #F15A22;
+    color: #164857;
     text-decoration: none;
   }
 
