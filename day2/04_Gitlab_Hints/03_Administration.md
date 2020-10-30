@@ -25,7 +25,6 @@ Navigate to `Admin > Appearance`.
 * Custom header logo
 * Login page text
 * New project guidelines
-* Custom Themes
 
 ~~~SECTION:handouts~~~
 
