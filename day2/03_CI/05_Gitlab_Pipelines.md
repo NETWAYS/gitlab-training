@@ -173,3 +173,18 @@ Reference: https://docs.gitlab.com/ce/ci/pipelines.html
 
 ~~~ENDSECTION~~~
 
+!SLIDE smbullets
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Pipeline schedules
+
+* Pipelines are normally run based on certain conditions being met
+* Pipeline schedules can be used to also run pipelines at specific intervals.
+
+* Objective:
+ * Create a new schedule for running pipelines
+* Steps:
+ * Navigate to `CI / CD > Schedules`
+ * Click `New schedule` and configure a pipeline schedule
+ * Click `Save pipeline schedule` to save
+
+
+
