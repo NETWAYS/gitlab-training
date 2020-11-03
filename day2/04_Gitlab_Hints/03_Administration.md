@@ -25,13 +25,11 @@ Navigate to `Admin > Appearance`.
 * Custom header logo
 * Login page text
 * New project guidelines
-* Custom Themes (SASS, CSS)
 
 ~~~SECTION:handouts~~~
 
 ****
 
-More details for custom themes: https://gitlab.com/gitlab-org/end-user-training-slides/blob/master/css/theme/README.md
 
 ~~~ENDSECTION~~~
 
