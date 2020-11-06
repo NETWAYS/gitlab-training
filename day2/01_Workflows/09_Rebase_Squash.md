@@ -212,3 +212,11 @@ Discuss this with the trainer.
     $ git checkout feature/new-backend
     $ git reset --hard origin/feature/new-backend
 
+
+!SLIDE smbullets    
+# Alternatives to force push?
+
+* `git revert`
+* Creates a new commit undoing changes
+* Can be used on merges too!
+* Allows to document an undo
