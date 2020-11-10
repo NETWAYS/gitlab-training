@@ -64,8 +64,6 @@ Documentation reference: https://docs.gitlab.com/runner/
 * Installation via package repository
 * `gitlab-runner register`
 
-Note: This is not needed for the built-in `docker executor` runner.
-
 ~~~SECTION:handouts~~~
 
 ****
