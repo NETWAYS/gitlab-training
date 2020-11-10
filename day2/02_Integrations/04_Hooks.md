@@ -10,21 +10,6 @@
 
 ****
 
-
-~~~ENDSECTION~~~
-
-
-!SLIDE smbullets
-# Client Hooks
-
-* Useful to
- * Preserve file modes
- * Check code style/syntax
-
-~~~SECTION:handouts~~~
-
-****
-
 * pre-commit
 * pre-rebase
 * post-checkout
@@ -34,11 +19,15 @@
 
 
 !SLIDE smbullets
-# Server-side Hooks
+# Git Hooks: Use Cases
 
-* Deny non-fast-forward pushes
-* Check branch permissions
-* Notify external tools (Mail, IRC, Jenkins, etc.)
+* Client Side
+  * Preserve file modes
+
+* Server Side
+  * Deny non-fast-forward pushes
+  * Check branch permissions
+  * Notify external tools (Mail, IRC, Jenkins, etc.)
 
 Note: Not available with GitLab CE.
 
