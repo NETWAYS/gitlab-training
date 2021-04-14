@@ -13,9 +13,9 @@ You can manage nearly everything.
 
 ****
 
-Reference: https://docs.gitlab.com/ce/api/README.html
+References: https://docs.gitlab.com/ce/api/README.html
 
-API Clients: https://about.gitlab.com/applications/#api-clients
+API Ressources: https://docs.gitlab.com/ce/api/api_resources.html
 
 ~~~ENDSECTION~~~
 
