@@ -12,8 +12,8 @@ Moving to GitHub, we extended this to:
 * Developers review and approve PRs, maintainer merges
 * Maintainer prepares and publishes a release
 
-https://github.com/Icinga/icinga2/blob/main/CONTRIBUTING.md
-https://github.com/Icinga/icinga2/blob/main/RELEASE.md
+https://github.com/Icinga/icinga2/blob/master/CONTRIBUTING.md
+https://github.com/Icinga/icinga2/blob/master/RELEASE.md
 
 
 ~~~SECTION:handouts~~~
