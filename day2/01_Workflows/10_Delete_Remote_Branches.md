@@ -56,7 +56,7 @@ If you do not have any.
 
     @@@ Sh
     $ cd $HOME/training
-    $ git checkout master
+    $ git checkout main
     $ git checkout -b feature/docs-wrong-name
     $ git push -u origin feature/docs-wrong-name
 

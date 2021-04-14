@@ -2,8 +2,8 @@
 # Workflow Examples: Icinga 2
 
 * Feature branch workflow
-* `master` as development branch
-* Major releases from `master`, `support/x.y` for bugfix releases
+* `main` as development branch
+* Major releases from `main`, `support/x.y` for bugfix releases
 
 Moving to GitHub, we extended this to:
 
@@ -12,8 +12,8 @@ Moving to GitHub, we extended this to:
 * Developers review and approve PRs, maintainer merges
 * Maintainer prepares and publishes a release
 
-https://github.com/Icinga/icinga2/blob/master/CONTRIBUTING.md
-https://github.com/Icinga/icinga2/blob/master/RELEASE.md
+https://github.com/Icinga/icinga2/blob/main/CONTRIBUTING.md
+https://github.com/Icinga/icinga2/blob/main/RELEASE.md
 
 
 ~~~SECTION:handouts~~~

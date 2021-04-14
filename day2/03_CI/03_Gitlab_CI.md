@@ -410,7 +410,7 @@ Future examples and tests work the same way.
     @@@ Sh
     $ git add .gitlab-ci.yml
     $ git commit -av -m "Add GitLab CI config"
-    $ git push origin master
+    $ git push origin main
 
 ### Modify exit code
 
