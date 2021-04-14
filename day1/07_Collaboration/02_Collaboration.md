@@ -8,7 +8,7 @@
 * `git remote`
   * Configure/list remote repository URLs (default `origin`)
 * `git branch -r`
-  * List remote branches, prefixed with the remote name, e.g. `origin/master`
+  * List remote branches, prefixed with the remote name, e.g. `origin/main`
 
 ~~~SECTION:handouts~~~
 
@@ -71,7 +71,7 @@
 
     @@@ Sh
     $ cd $HOME/training
-    $ git checkout master
+    $ git checkout main
 
     $ vim README.md
 
@@ -83,7 +83,7 @@
 ### Push changes
 
     @@@ Sh
-    $ git push origin master
+    $ git push origin main
 
 ### List remote branches
 
@@ -146,8 +146,8 @@ Example:
  * Learn more about git fetch and git pull
 * Steps:
  * Go to your project repository in GitLab
- * Edit the `README.md` in your browser and commit the change to master
- * Run `git fetch` and explain `git diff master origin/master`
+ * Edit the `README.md` in your browser and commit the change to main
+ * Run `git fetch` and explain `git diff main origin/main`
  * Run `git pull`
  * Explain the difference
 
@@ -168,8 +168,8 @@ Example:
 ## Steps:
 
 * Go to your project repository in GitLab
-* Edit the `README.md` in your browser and commit the change to master
-* Run `git fetch` and explain `git diff master origin/master`
+* Edit the `README.md` in your browser and commit the change to main
+* Run `git fetch` and explain `git diff main origin/main`
 * Run `git pull`
 * Explain the difference
 
@@ -192,7 +192,7 @@ Navigate into the `training` project and choose `Repository`.
 Click on the `README.md` file and choose to `edit` it directly.
 Add some documentation like `This change was done via GitLab web.`.
 
-Stage and commit the change directly to master.
+Stage and commit the change directly to main.
 
 ### Fetch changes
 
@@ -206,7 +206,7 @@ not changes pulled yet.
 
     @@@ Sh
     $ git log
-    $ git diff master origin/master
+    $ git diff main origin/main
 
 ### Pull changes
 
@@ -218,5 +218,5 @@ updated with the remote history.
 
     @@@ Sh
     $ git log
-    $ git diff master origin/master
+    $ git diff main origin/main
 

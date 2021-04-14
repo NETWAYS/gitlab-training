@@ -409,6 +409,13 @@ Future examples and tests work the same way.
 ##  Make the commit and trigger GitLab job
 ****
 
+### Git Add, Commit, Push
+
+    @@@ Sh
+    $ git add .gitlab-ci.yml
+    $ git commit -av -m "Add GitLab CI config"
+    $ git push origin main
+
 ### Modify exit code
 
     @@@ Sh

@@ -29,10 +29,21 @@ https://docs.gitlab.com/ee/administration/server_hooks.html
 
 * There are also server-side web hooks that can be triggered
 
-  * HTTP Callback
-  * Limit on event, e.g. push, merge, comment, etc.
-  * Integrate CI services or external ticket systems
-  * Chat bot integration
+~~~ENDSECTION~~~
+
+!SLIDE smbullets
+# Web Hooks
+
+* HTTP Callback
+* Limit on event, e.g. push, merge, comment, etc.
+* Integrate CI services
+* Integrate external ticket systems
+* Chat bot integration
+  * Rocket.Chat
+  * Slack
+
+~~~SECTION:handouts~~~
+>>>>>>> 3b648e1 (Rename master to main)
 
 ****
 

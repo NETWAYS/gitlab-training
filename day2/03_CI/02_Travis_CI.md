@@ -27,7 +27,7 @@
 
     branches:
       only:
-      - master
+      - main
 
     script:
       - php phpunit.phar -c modules/test/phpunit.xml --verbose

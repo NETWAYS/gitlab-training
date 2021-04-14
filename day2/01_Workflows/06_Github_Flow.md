@@ -51,16 +51,16 @@ Example:
 
 # Forking Workflow - Keep in Sync
 
-* Pull changes from `upstream` HEAD to own repository master branch to sync development
-* Remote `HEAD` is the default branch for this repository, usually `master`
+* Pull changes from `upstream` HEAD to own repository main branch to sync development
+* Remote `HEAD` is the default branch for this repository, usually `main`
 * Remember, HEAD is just a smart pointer. You can use a branch name too
 
 Example:
 
-    $ git checkout master
+    $ git checkout main
     $ git fetch upstream
     $ git pull upstream HEAD
-    $ git push origin master
+    $ git push origin main
 
 
 ~~~ENDSECTION~~~

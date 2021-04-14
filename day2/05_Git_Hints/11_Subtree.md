@@ -23,12 +23,12 @@ Adding a git subtree requires
 
 * Existing directory tree except for the one created
 * Git clone URL
-* The branch which should be added (use `master` as default)
+* The branch which should be added (use `main` as default)
 * Optionally `--squash` all commits into one
 
 Example:
 
-    git subtree add --prefix clippy.js https://github.com/smore-inc/clippy.js.git master --squash
+    git subtree add --prefix clippy.js https://github.com/smore-inc/clippy.js.git main --squash
 
 
 ~~~ENDSECTION~~~

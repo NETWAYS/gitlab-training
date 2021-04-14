@@ -94,10 +94,10 @@ Example:
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Show history of different branch
 
 * Objective:
- * Use `git log` from the master branch on another branch
+ * Use `git log` from the main branch on another branch
 * Steps:
- * Create a new branch aside from master, if not existing: `git checkout -b feature/docs`
- * Switch to the master branch
+ * Create a new branch aside from main, if not existing: `git checkout -b feature/docs`
+ * Switch to the main branch
  * Use `git log feature/docs`
 * Bonus:
  * Modify and commit changes
@@ -115,14 +115,14 @@ Example:
 ## Objective: Delete the branch
 ****
 
-* Use `git log` from the master branch on another branch
+* Use `git log` from the main branch on another branch
 
 ## Steps:
 
 ****
 
-* Create a new branch aside from master, if not existing: `git checkout -b feature/docs`
-* Switch to the master branch
+* Create a new branch aside from main, if not existing: `git checkout -b feature/docs`
+* Switch to the main branch
 * Use `git log feature/docs`
 
 ## Bonus:
@@ -143,20 +143,20 @@ Example:
 ### Create a new branch, if not exisiting
 
     @@@ Sh
-    $ git checkout master
-    $ git checkout -b feature/docs
+    $ git checkout main
+    $ git checkout -b feature/dpcs
 
-### Switch to the master branch
+### Switch to the main branch
 
     @@@ Sh
-    $ git checkout master
+    $ git checkout main
 
 ### Show the history of the other branch
 
     @@@ Sh
     $ git show feature/docs
 
-### Commit change on master
+### Commit change on main
 
     @@@ Sh
     $ echo "I understand HEAD now" >> README.md
