@@ -181,6 +181,7 @@ Reference: https://docs.gitlab.com/ce/ci/pipelines.html
 * Pipelines are normally run based on certain conditions being met
 * Pipeline schedules can be used to also run pipelines at specific intervals.
 * Navigate to `CI / CD > Schedules` to create a new pipeline
+* Pipelines can be scheduled using Cron syntax
 
 
 
