@@ -21,9 +21,13 @@ Reference: https://docs.gitlab.com/ce/ci/pipelines.html
 
 
 !SLIDE smbullets noprint
-# GitLab Pipelines: Example
+# GitLab Pipelines: Basic Pipelines
 
 <center><img src="../../_images/ci/git_gitlab_ci_pipelines_project_ci_cd.png" alt="GitLab Pipelines"/></center>
+
+* runs all steps in stage concurrently before starting next stage
+* not the most efficient
+* easy to maintain
 
 !SLIDE smbullets printonly
 # GitLab Pipelines: Example
@@ -183,5 +187,47 @@ Reference: https://docs.gitlab.com/ce/ci/pipelines.html
 * Navigate to `CI / CD > Schedules` to create a new pipeline
 * Pipelines can be scheduled using Cron syntax
 
+****
 
+!SLIDE smbullets
+# GitLab Pipelines: Directed Acyclic Graph Pipelines
+
+* maximum efficiency
+* disregards stage order
+* use `needs` keyword to define dependencies between jobs
+
+Example:
+    
+    build_a:
+      stage: build
+      script:
+        - echo "This job builds something quickly."
+
+    test_a:
+      stage: test
+      needs: [build_a]
+      script:
+        - echo "This test job will start as soon as build_a finishes."
+
+
+****
+
+!SLIDE smbullets
+# GitLab Pipelines: Child / Parent Pipelines
+
+* clean configuration
+* split your tests for different parts of your code
+
+Example:
+
+    stages:
+      - triggers
+
+    trigger_a:
+      stage: triggers
+      trigger:
+        include: a/.gitlab-ci.yml
+      rules:
+        - changes:
+            - a/*
 

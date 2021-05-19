@@ -128,76 +128,6 @@ directly in the browser. In the background, it is still comitting
 the changes to the Git repository.
 
 
-
-!SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Configure Client Credentials Helper
-
-* Objective:
- * Configure client credentials helper
-* Steps:
- * Install the helper with `yum -y install git-gnome-keyring`
- * Run `git config --global credential.helper /usr/libexec/git-core/git-credential-gnome-keyring`
- * Verify this setting in `~/.gitconfig`
-
-Navigate into `NWS > GitLab App View > FAQ > Why do we recommend HTTPS over SSH?`
-and select `git credential helpers`.
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
-
-!SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Configure client credentials helper
-
-## Objective: Configure client credentials helper
-****
-
- * Configure client credentials helper
-
-## Steps:
-
-****
-
-* Install the helper with `yum -y install git-gnome-keyring`
-* Run `git config --global credential.helper /usr/libexec/git-core/git-credential-gnome-keyring`
-* Verify this setting in `~/.gitconfig`
-
-Navigate into `NWS > GitLab App View > FAQ > Why do we recommend HTTPS over SSH?`
-and select `git credential helpers`.
-
-!SLIDE supplemental solutions
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
-****
-
-## Configure client credentials helper
-
-****
-
-### Installation
-
-    @@@ Sh
-    $ sudo yum -y install git-gnome-keyring
-
-### Verify and set
-
-    @@@ Sh
-    $ git config --global --get credential.helper
-    /usr/libexec/git-core/git-credential-gnome-keyring
-
-If not set, you can set it explicitly.
-
-    @@@ Sh
-    $ git config --global credential.helper /usr/libexec/git-core/git-credential-gnome-keyring
-
-### Verify
-
-    @@@ Sh
-    $ cat ~/.gitconfig
-
-
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add the repository as remote origin
 
@@ -299,6 +229,56 @@ use `--all` instead.
 
 Keep in mind that syncing all your local branches might create unwanted remote branches.
 Those can be there just for testing things, or are not meant for the public domain.
+
+
+!SLIDE smbullets
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add a credential cache
+
+* Objective:
+ * Add the credentail cache to the configuration
+* Steps
+ * Go to your terminal
+ * Use `git config credential.helper 'cache --timeout=99999'`
+
+~~~SECTION:handouts~~~
+
+****
+
+
+~~~ENDSECTION~~~
+
+!SLIDE supplemental exercises
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add a credential cache
+
+## Objective: Add the credentail cache to the configuration
+****
+
+* Add the credentail cache to the configuration
+
+## Steps:
+
+****
+
+* Go to your terminal
+* Use `git config credential.helper 'cache --timeout=99999'` 
+
+!SLIDE supplemental solutions
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
+****
+
+## Add a credential cache
+
+****
+
+### Add a credential cache
+
+    @@@ Sh
+    $ cd $HOME/training.git
+    $ git config credential.helper 'cache --timeout=99999'
+
+This will make git save the credentials you enter the first time you
+interact with the server and use them for `99999` seconds before you need to re-enter them.
+
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Explore Project History

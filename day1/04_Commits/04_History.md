@@ -5,11 +5,16 @@
   * Show commit history of the current branch.
   * Supports `-10` notation to show a limited number of commits.
 
+* `git blame <filename>`
+  * Show authors of a certain file line-by-line
+  * Supports `--color-lines` notation for grouping lines of the same commit.
+
 ~~~SECTION:handouts~~~
 
 ****
 
 `git log` shows the commit history of the current branch.
+`git blame <filename>`shows the author line-by-line of the selected file.
 
 
 ~~~ENDSECTION~~~
@@ -49,6 +54,7 @@ also compare specific commits.
  * Use `git log` to print the current history
  * Use `git show` to show specific commits (defaults to the latest)
  * Use `git diff` to compare changes between specific revisions
+ * Use `git blame .gitignore` to see the authors for the file
 
 ~~~SECTION:handouts~~~
 
@@ -73,6 +79,7 @@ also compare specific commits.
 * Use `git log` to print the current history
 * Use `git show` to show specific commits (defaults to the latest)
 * Use `git diff` to compare changes between specific revisions
+* Use `git blame .gitignore` to see the authors for the file
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
@@ -109,7 +116,10 @@ also compare specific commits.
     $ git diff
     $ git diff <commitid1> <commitid2>
 
+### Use git blame
 
+    @@@ Sh
+    $ git blame .gitignore
 
 !SLIDE smbullets noprint
 # Advanced history with tig
