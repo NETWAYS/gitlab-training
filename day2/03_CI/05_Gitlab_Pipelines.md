@@ -77,7 +77,7 @@ Documentation: https://docs.gitlab.com/ce/ci/yaml/README.html#stage
 
 * Edit .gitlab-ci.yml and add stages
 * Add jobs to stages
-* Commit and push the changes
+* Commit the changes
 * Check the GitLab Job Pipelines
 
 !SLIDE supplemental solutions
@@ -148,6 +148,8 @@ Documentation: https://docs.gitlab.com/ce/ci/yaml/README.html#stage
     $ git push
 
 ### Check the GitLab Job Pipelines
+
+This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious alternative.
 
 
 !SLIDE smbullets
