@@ -11,7 +11,7 @@ Example:
 
     @@@ Sh
     $ git stash
-    Saved working directory and index state WIP on master: 4b4f6c2 <msg>
+    Saved working directory and index state WIP on main: 4b4f6c2 <msg>
 
     $ git stash pop
     Dropped refs/stash@{0} (43d879b99aca12b6175c5362339b177af22589a9)
@@ -93,21 +93,21 @@ stages, `git stash list` will list them.
 
     @@@ Sh
     $ git stash
-    Saved working directory and index state WIP on master: 31dcde5 Add docs for git push
+    Saved working directory and index state WIP on main: 31dcde5 Add docs for git push
     HEAD is now at 31dcde5 Add docs for git push
 
 ### Examine the state with git status
 
     @@@ Sh
     $ git status
-    On branch master
+    On branch main
     nothing to commit, working tree clean
 
 ### Examine the stash list
 
     @@@ Sh
     $ git stash list
-    stash@{0}: WIP on master: 31dcde5 Add docs for git push
+    stash@{0}: WIP on main: 31dcde5 Add docs for git push
 
     @@@ Sh
     $ git stash show -p
@@ -161,7 +161,7 @@ stages, `git stash list` will list them.
  * Create and checkout the `feature/docs-hotfix` branch
  * Edit `README.md` and commit the change
  * Use `git log -1` to examine the Git commit
- * Checkout the master branch
+ * Checkout the main branch
  * Use `git cherry-pick -x <id>`
  * Verify the commit with `git show`
 
@@ -185,7 +185,7 @@ stages, `git stash list` will list them.
 * Create and checkout the `feature/docs-hotfix` branch
 * Edit `README.md` and commit the change
 * Use `git log -1` to examine the Git commit
-* Checkout the master branch
+* Checkout the main branch
 * Use `git cherry-pick -x <id>`
 * Verify the commit with `git show`
 
@@ -209,7 +209,7 @@ stages, `git stash list` will list them.
     $ vim README.md
 
     Now I am learning how to use git cherry-pick. This change will be cherry-picked
-    into the master branch simulating a hot-fix.
+    into the main branch simulating a hot-fix.
 
     $ git commit -av -m "Update docs for cherry-pick"
 
@@ -219,17 +219,17 @@ stages, `git stash list` will list them.
     $ git show -1
     commit 550ccc6c65832d43969f44a03692772a30fa39fb (HEAD -> feature/docs-hotfix)
 
-### Checkout the master branch
+### Checkout the main branch
 
     @@@ Sh
-    $ git checkout master
+    $ git checkout main
 
 #### Cherry-pick the commit
 
     @@@ Sh
     $ git cherry-pick 550ccc6c65832d43969f44a03692772a30fa39fb
 
-    [master 0460d16] Update docs for cherry-pick
+    [main 0460d16] Update docs for cherry-pick
     Date: Thu Jan 24 14:52:19 2019 +0100
     1 file changed, 3 insertions(+)
 
@@ -237,7 +237,7 @@ stages, `git stash list` will list them.
 
     @@@ Sh
     $ git show
-    commit 2f3a0096017051d9ab86774282203dc6c9827ee4 (HEAD -> master)
+    commit 2f3a0096017051d9ab86774282203dc6c9827ee4 (HEAD -> main)
     Author: Michael Friedrich <michael.friedrich@netways.de>
     Date:   Thu Jan 24 14:52:19 2019 +0100
 

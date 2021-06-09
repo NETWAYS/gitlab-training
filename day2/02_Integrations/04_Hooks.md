@@ -48,7 +48,7 @@ format:
 
 Example:
 
-    aa453216d1b3e49e7f6f98441fa56946ddcd6a20 68f7abf4e6f922807889f52bc043ecd31b79f814 refs/heads/master
+    aa453216d1b3e49e7f6f98441fa56946ddcd6a20 68f7abf4e6f922807889f52bc043ecd31b79f814 refs/heads/main
 
 ~~~ENDSECTION~~~
 

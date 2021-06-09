@@ -146,7 +146,7 @@ branch names, review them and then delete them.
 
     @@@ Sh
     $ cd $HOME/training
-    $ git checkout master
+    $ git checkout main
     $ git checkout -b feature/docs-merge-request
     $ vim README.md
 
@@ -195,10 +195,10 @@ by merging the MR.
     $ git fetch --prune
     $ git branch -d feature/docs-merge-request
 
-### Pull changes to local master after merge
+### Pull changes to local main after merge
 
     @@@ Sh
-    $ git checkout master
+    $ git checkout main
     $ git pull
     $ tig
 
