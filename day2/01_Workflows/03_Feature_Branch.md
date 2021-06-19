@@ -182,7 +182,7 @@ The new branch `feature/docs-workflows` will be based on the `master` branch.
     @@@ Sh
     $ git branch
     $ git checkout feature/docs-workflows
-    $ git diff master feature/docs
+    $ git diff master feature/docs-workflows
 
 ### Checkout the master and merge the feature branch
 

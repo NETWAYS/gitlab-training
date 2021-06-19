@@ -140,11 +140,11 @@ Example:
 
 ****
 
-### Create a new branch
+### Create a new branch, if not exisiting
 
     @@@ Sh
     $ git checkout master
-    $ git checkout -b feature/dpcs
+    $ git checkout -b feature/docs
 
 ### Switch to the master branch
 
