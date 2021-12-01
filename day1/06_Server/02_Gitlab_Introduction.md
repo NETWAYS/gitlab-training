@@ -72,7 +72,7 @@ a managed cloud hosting service.
 ****
 
 
-Omnibus packages: https://about.gitlab.com/installation/?version=ce
+Installation packages: https://about.gitlab.com/install/
 
 More details on the manual installation instructions can be
 found in the official documentation: https://docs.gitlab.com/ce/install/installation.html
