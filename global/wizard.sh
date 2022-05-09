@@ -21,7 +21,7 @@ execdocker () {
     --name=$CNAME \
     --rm \
     -p 9090:9090 \
-    -v "$DIR:/training" \
+    -v "$DIR:/training:z" \
     -e "LANG=$CLANG" \
     -e "LANGUAGE=$CLANG" \
     -e "LC_ALL=$CANG" \
