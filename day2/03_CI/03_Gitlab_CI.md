@@ -42,9 +42,9 @@ https://docs.gitlab.com/ce/user/project/container_registry.html
 # GitLab Runners
 
 * Written in Go
-* Linux/Unix, macOS, Windows, Docker support
+* Linux/Unix, macOS, Windows, Container support
 * Run multiple jobs in parallel
-* Run jobs locally, in Docker containers, remote via SSH
+* Run jobs locally, in Containers, remote via SSH
 * Can run Bash, Windows Batch/Powershell
 
 
@@ -102,9 +102,9 @@ https://docs.gitlab.com/ce/administration/container_registry.html
 
 
 !SLIDE smbullets
-# GitLab CI: Docker, Containers - how to use it
+# GitLab CI: Containers - how to use it
 
-* Run an application in an isolated environment
+* Run an application in an isolated environment (Docker, Podman)
 * Layered images providing additional libraries and tools, e.g. base linux, mysql, apache, ruby
 * Start container, run tests, return results
 * Light-weight and fast, can run on each Git push
@@ -118,17 +118,18 @@ https://docs.gitlab.com/ce/administration/container_registry.html
 Documentation References:
 
 https://docs.docker.com
+https://podman.io/
 
 
 ~~~ENDSECTION~~~
 
 !SLIDE smbullets noprint
-# GitLab CI: Docker and CI Runners
+# GitLab CI: Containers and CI Runners
 
 <center><img src="../../_images/ci/git_gitlab_ci_runners_docker.png" alt="GitLab CI Runners Docker"/></center>
 
 !SLIDE smbullets printonly
-# GitLab CI: Docker and CI Runners
+# GitLab CI: Containers and CI Runners
 
 <center><img src="../../_images/ci/git_gitlab_ci_runners_docker.png" style="width:450px" alt="GitLab CI Runners Docker"/></center>
 
@@ -139,6 +140,7 @@ https://docs.docker.com
 Documentation References:
 
 https://docs.docker.com
+https://podman.io/
 https://docs.gitlab.com/runner/install/docker.html
 
 ~~~ENDSECTION~~~
