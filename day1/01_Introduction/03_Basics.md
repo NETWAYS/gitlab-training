@@ -46,7 +46,7 @@
 !SLIDE smbullets
 # Integrity
 
-* Everything has a checksum (SHA-1)
+* Everything has a checksum (SHA)
 * No changes possible without Git knowing about them
 * Checksums are used everywhere
 * Revert changes and even restore deleted files

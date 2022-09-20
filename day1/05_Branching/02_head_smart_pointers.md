@@ -1,7 +1,7 @@
 !SLIDE smbullets
 # HEAD and "smart pointers"
 
-A git commit is unique and identified by its SHA1 checksum.
+A git commit is unique and identified by its SHA checksum.
 
 `HEAD` is a pointer to the latest commit in the current branch.
 
