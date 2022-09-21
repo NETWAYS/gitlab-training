@@ -78,9 +78,9 @@ or
 
 You don't need to change branches to
 
-* show different branch histories
-* show specific commits where you don't know the commit id
-* compare branches and committed code
+* Show different branch histories
+* Show specific commits where you don't know the commit id
+* Compare branches and committed code
 
 Example:
 
