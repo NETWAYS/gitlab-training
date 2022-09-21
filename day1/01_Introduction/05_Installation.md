@@ -9,9 +9,9 @@
 
 Example:
 
-<code><span style="color:blue;">training@netways</span> <span style="color:green">~</span>$</span> cd git/icinga</code>
+<code><span style="color:blue;">training@netways</span> <span style="color:green">~</span>$</span> cd repository</code>
 
-<code><span style="color:blue;">training@netways</span> <span style="color:green">~/git/icinga</span> <span style="color:red">(fix/issue-5=)</span> $ ls</code>
+<code><span style="color:blue;">training@netways</span> <span style="color:green">~/repository</span> <span style="color:red">(feature/docs)</span> $</code>
 
 !SLIDE smbullets printonly
 # Git Installation
@@ -24,9 +24,9 @@ Example:
 
 Example:
 
-<code><span style="color:blue;">training@netways</span> <span style="color:green">~</span>$</span> cd git/icinga</code>
+<code><span style="color:blue;">training@netways</span> <span style="color:green">~</span>$</span> cd repository</code>
 
-<code><span style="color:blue;">training@netways</span> <span style="color:green">~/git/icinga</span> <span style="color:red">(fix/issue-5=)</span> $ ls</code>
+<code><span style="color:blue;">training@netways</span> <span style="color:green">~/repository</span> <span style="color:red">(feature/docs)</span> $</code>
 
 
 ~~~SECTION:handouts~~~
