@@ -25,9 +25,9 @@ Reference: https://docs.gitlab.com/ce/ci/pipelines.html
 
 <center><img src="../../_images/ci/git_gitlab_ci_pipelines_project_ci_cd.png" alt="GitLab Pipelines"/></center>
 
-* runs all steps in stage concurrently before starting next stage
-* not the most efficient
-* easy to maintain
+* Runs all steps in stage concurrently before starting next stage
+* Not the most efficient
+* Easy to maintain
 
 !SLIDE smbullets printonly
 # GitLab Pipelines: Example
@@ -189,9 +189,9 @@ Reference: https://docs.gitlab.com/ce/ci/pipelines.html
 !SLIDE smbullets
 # GitLab Pipelines: Directed Acyclic Graph Pipelines
 
-* maximum efficiency
-* disregards stage order
-* use `needs` keyword to define dependencies between jobs
+* Maximum efficiency
+* Disregards stage order
+* Use `needs` keyword to define dependencies between jobs
 
 Example:
     
@@ -212,8 +212,8 @@ Example:
 !SLIDE smbullets
 # GitLab Pipelines: Child / Parent Pipelines
 
-* clean configuration
-* split your tests for different parts of your code
+* Clean configuration
+* Split your tests for different parts of your code
 
 Example:
 
