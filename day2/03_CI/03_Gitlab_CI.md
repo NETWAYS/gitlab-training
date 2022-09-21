@@ -313,7 +313,9 @@ https://about.gitlab.com/2016/03/01/gitlab-runner-with-docker/
 * Objective:
  * Create CI configuration for the training project
 * Steps:
- * Create the `.gitlab-ci.yml` file in the `training` directory (vim, nano, etc.)
+
+ * Navigate your GitLab Web interface and click the button 'Web IDE'
+ * Click 'Add file' and create the `.gitlab-ci.yml` file from the suggestions
  * Add `image: docker.io/alpine:latest` to specify base image
  * Add job `all_tests` with `script` as array element, which itself runs `exit 1`
 
@@ -335,7 +337,9 @@ https://about.gitlab.com/2016/03/01/gitlab-runner-with-docker/
 
 ## Steps:
 
-* Create the `.gitlab-ci.yml` file in the `training` directory (vim, nano, etc.)
+
+* Navigate your GitLab Web interface and click the button 'Web IDE'
+* Click 'Add file' and create the `.gitlab-ci.yml` file from the suggestions
 * Add `image: docker.io/alpine:latest` to specify base image
 * Add job `all_tests` with `script` as array element, which itself runs `exit 1`
 
@@ -349,9 +353,11 @@ https://about.gitlab.com/2016/03/01/gitlab-runner-with-docker/
 
 ### Create CI configuration file
 
+ * Navigate your GitLab Web interface and click the button 'Web IDE'
+ * Click 'Add file' and create the `.gitlab-ci.yml` file from the suggestions
+
+
     @@@ Sh
-    $ cd $HOME/training
-    $ vim .gitlab-ci.yml
 
     image: docker.io/alpine:latest
 
@@ -364,16 +370,16 @@ Future examples and tests work the same way.
 
 
 !SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Push to GitLab
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Make the commit
 
 * Objective:
- * Add .gitlab-ci.yml to Git and push to GitLab
+ * Commit the .gitlab-ci.yml
 * Steps:
- * Use `git add .gitlab-ci.yml` and commit the change
- * Push the commit into the remote repository
- * Navigate to the project into `CI / CD` and verify the running job
+ * Click 'Commit'
+ * Select 'Commit to master branch' and commit
+ * Navigate to `CI / CD` and verify the running job
 * Bonus
- * Modify the exit code to `0`, add, commit, push and verify again
+ * Modify the exit code to `0`, commit and verify again
 
 ~~~SECTION:handouts~~~
 
@@ -382,42 +388,33 @@ Future examples and tests work the same way.
 ~~~ENDSECTION~~~
 
 !SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Push to GitLab
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Make the commit
 
-## Push CI config and trigger GitLab job
+## Make the commit and trigger GitLab job
 ****
 
-* Add .gitlab-ci.yml to Git and push to GitLab
+* Make the commit and trigger GitLab job
 
 ## Steps:
 
-* Use `git add .gitlab-ci.yml` and commit the change
-* Push the commit into the remote repository
-* Navigate to the project into `CI / CD` and verify the running job
+* Click 'Commit'
+* Select 'Commit to master branch' and commit
+* Navigate to `CI / CD` and verify the running job
 
 ## Bonus:
 
-* Modify the exit code to `0`, add, commit, push and verify again
+* Modify the exit code to `0`, commit and verify again
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
 ****
 
-## Push CI config and trigger GitLab job
-
+##  Make the commit and trigger GitLab job
 ****
-
-### Git Add, Commit, Push
-
-    @@@ Sh
-    $ git add .gitlab-ci.yml
-    $ git commit -av -m "Add GitLab CI config"
-    $ git push origin master
 
 ### Modify exit code
 
     @@@ Sh
-    $ vim .gitlab-ci.yml
 
     image: docker.io/alpine:latest
 
@@ -436,7 +433,7 @@ Future examples and tests work the same way.
  * Modify `.gitlab-ci.yml` and add a `before_script` section after the `image` section
  * Update `apk` package manager and install `python3` and `py-pip` packages
  * Use `pip` to install the `markdown` and `Pygments` libraries
- * Commit and push the changes
+ * Commit the changes
 
 Example:
 
@@ -498,7 +495,6 @@ Example:
 ### Edit .gitlab-ci.yml and add before_script
 
     @@@ Sh
-    $ vim .gitlab-ci.yml
 
     image: docker.io/alpine:latest
 
@@ -507,7 +503,6 @@ Example:
 ### Update apk and install Python/pip
 
     @@@ Sh
-    $ vim .gitlab-ci.yml
 
     image: docker.io/alpine:latest
 
@@ -517,7 +512,6 @@ Example:
 ### Install Markdown Python libraries
 
     @@@ Sh
-    $ vim .gitlab-ci.yml
 
     image: docker.io/alpine:latest
 
@@ -528,7 +522,6 @@ Example:
 ### Verify the content
 
     @@@ Sh
-    $ vim .gitlab-ci.yml
 
     image: docker.io/alpine:latest
 
@@ -540,13 +533,6 @@ Example:
       script:
         - exit 0
 
-### Commit and push the changes
-
-    @@@ Sh
-    $ git commit -av -m "CI: Prepare markdown conversion"
-    $ git push
-
-
 !SLIDE smbullets small
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Create Docs
 
@@ -555,7 +541,7 @@ Example:
 * Steps:
  * Add a new `markdown` and use `script` to generate `README.html`
  * Add `artifacts` with `paths` pointing to `README.html`. Expires in `1 week`
- * Commit and push the changes, then download and view the `README.html` file in your browser
+ * Commit the changes, then download and view the `README.html` file in your browser
 
 Example:
 
@@ -586,7 +572,7 @@ Example:
 * Add a new job `markdown` after the `all_tests` job
 * Add `script` and convert `README.md` to `README.html` using Python
 * Add `artifacts` with `paths` pointing to `README.html`. Expires in `1 week`.
-* Commit and push the changes
+* Commit the changes
 * Download and view the `README.html` file in your browser
 
 !SLIDE supplemental solutions
@@ -600,7 +586,6 @@ Example:
 ### Edit .gitlab-ci.yml and add markdown section
 
     @@@ Sh
-    $ vim .gitlab-ci.yml
 
     ...
 
@@ -613,7 +598,6 @@ Example:
 ### Add script to convert Markdown into HTML
 
     @@@ Sh
-    $ vim .gitlab-ci.yml
 
     ...
 
@@ -627,7 +611,6 @@ Add `paths` section which includes `README.html` as entry.
 Tell GitLab to expire this artifact in `1 week`.
 
     @@@ Sh
-    $ vim .gitlab-ci.yml
 
     ...
 
@@ -642,7 +625,6 @@ Tell GitLab to expire this artifact in `1 week`.
 ### Verify the content
 
     @@@ Sh
-    $ vim .gitlab-ci.yml
 
     image: docker.io/alpine:latest
 
@@ -661,12 +643,6 @@ Tell GitLab to expire this artifact in `1 week`.
         - README.html
         expire_in: 1 week
 
-### Commit and push the changes
-
-    @@@ Sh
-    $ git commit -av -m "CI: Generate HTML docs from Markdown"
-    $ git push
-
 ### Download HTML artifacts
 
 Navigate into the repository > `CI / CD` > Jobs > `#...`  and choose `Job Artifacts`.
@@ -679,7 +655,7 @@ Download them, extract them and open the HTML file with your browser.
  * Add what you have learned so far into README.md and generate docs
 * Steps:
  * Edit `README.md`
- * Commit and push changes
+ * Commit changes
  * Download and view the `README.html` file in your browser
 
 
@@ -700,7 +676,7 @@ Download them, extract them and open the HTML file with your browser.
 ## Steps:
 
 * Edit `README.md`
-* Commit and push changes
+* Commit changes
 * Download and view the `README.html` file in your browser
 
 !SLIDE supplemental solutions
@@ -714,18 +690,11 @@ Download them, extract them and open the HTML file with your browser.
 ### Edit README.md and add learned details
 
     @@@ Sh
-    vim README.md
 
     # CI Runners
 
     ....
-
-### Commit and push changes
-
-    @@@ Sh
-    git commit -av -m "Add notes on CI runners"
-    git push
-
+    
 ### Download HTML artifacts
 
 Navigate into the repository > `CI / CD` > Jobs > `#...`  and choose `Job Artifacts`.
