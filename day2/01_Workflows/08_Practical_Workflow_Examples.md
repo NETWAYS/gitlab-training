@@ -8,11 +8,12 @@
 Moving to GitHub, we extended this to:
 
 * (WIP) Pull Requests, local and community forks
-* Travis CI (Linux) & Appveyor (Windows) automated tests
+* Travis CI, GitHub Actions (Linux) & Appveyor (Windows) automated tests
 * Developers review and approve PRs, maintainer merges
 * Maintainer prepares and publishes a release
 
 https://github.com/Icinga/icinga2/blob/master/CONTRIBUTING.md
+
 https://github.com/Icinga/icinga2/blob/master/RELEASE.md
 
 
