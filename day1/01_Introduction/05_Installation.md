@@ -7,7 +7,11 @@
   * Completion
   * Show status and branch in the terminal
 
-<img src="../../_images/introduction/git_installation_cli_example.png" alt="Bash Integration"/>
+Example:
+
+    @@@ Sh
+    training@netways ~$ cd git/icinga
+    training@netways ~/git/icinga (fix/issue-5=) $
 
 !SLIDE smbullets printonly
 # Git Installation
@@ -18,7 +22,11 @@
   * Completion
   * Show status and branch in the terminal
 
-<img src="../../_images/introduction/git_installation_cli_example.png" style="width:450px" alt="Bash Integration"/>
+Example:
+
+    @@@ Sh
+    training@netways ~$ cd git/icinga
+    training@netways ~/git/icinga (fix/issue-5=) $
 
 ~~~SECTION:handouts~~~
 

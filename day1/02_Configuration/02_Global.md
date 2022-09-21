@@ -33,7 +33,12 @@ https://git-scm.com/book/tr/v2/Customizing-Git-Git-Configuration
 
 Example:
 
-<img src="../../_images/configuration/git_configuration_gitconfig_user.png" alt="Git Config"/>
+    @@@ Sh
+    [user]
+      email = michael.friedrich@netways.de
+      name  = Michael Friedrich
+    [color "status"]
+      untracked = red
 
 ~~~SECTION:handouts~~~
 
