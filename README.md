@@ -58,10 +58,6 @@ gets their own GitLab instance.
 The [vm/](vm/) directory provides a fallback VM which can be exported
 from Vagrant/VirtualBox and is provisioned onto the training notebook @NETWAYS.
 
-### Trainer
-
-Additional trainer introduction slides can be [provided](https://github.com/NETWAYS/training-global#2-create-a-directory-to-provide-trainer-introduction).
-
 # Contribution
 
 Patches to fix mistakes or add optional content are always appreciated. If you want to see
