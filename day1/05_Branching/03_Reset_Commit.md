@@ -13,6 +13,17 @@ Try it out with the trainer.
     $ git reset --soft HEAD^
     $ git reset --hard HEAD^
 
+!SLIDE smbullets
+# Revert Git Commits
+
+* `git revert <sha>`
+  * Revert some existing commit(s)
+* Creates a new commit that will revert the existing commit(s)
+
+Try it out with the trainer.
+
+    $ git revert HEAD^
+
 
 ~~~SECTION:handouts~~~
 

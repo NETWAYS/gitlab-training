@@ -9,11 +9,12 @@
 * Located in Nuremberg, Germany
 * Services
  * Consulting
- * Hosting
+ * Outsourcing
  * Development
  * Support
+ * Web Services
  * Trainings
- * Conferences
+ * Events
 
 
 !SLIDE noprint
@@ -23,24 +24,24 @@
 
 
 !SLIDE noprint
-# NETWAYS Consulting Customers
+# NETWAYS Consulting and Outsourcing Customers
 
-<center><img src="../_images/consulting_customers.png" style="width:800px;height:454px;" alt="NETWAYS Consulting Customers"/></center>
+<center><img src="../_images/nps_customers.png" style="width:800px;height:454px;" alt="NETWAYS Consulting and Outsourcing Customers"/></center>
 
 
 !SLIDE noprint
-# NETWAYS Hosting Customers
+# NETWAYS Cloud and Hosting Customers
 
-<center><img src="../_images/hosting_customers.png" style="width:800px;height:454px;" alt="NETWAYS Hosting Customers"/></center>
+<center><img src="../_images/nms_customers.png" style="width:800px;height:454px;" alt="NETWAYS Cloud and Hosting Customers"/></center>
 
 
 !SLIDE noprint
 # NETWAYS Conferences & Camps
 
-<center><img src="../_images/overview_conferences.png" style="width:800px;height:566px;" alt="NETWAYS Conferences & Camps"/></center>
+<center><img src="../_images/overview_conferences.png" style="width:800px;height:450px;" alt="NETWAYS Conferences & Camps"/></center>
 
 
 !SLIDE noprint
 # NETWAYS Trainings & Workshops
 
-<center><img src="../_images/overview_trainings.png" style="width:800px;height:566px;" alt="NETWAYS Trainings & Workshops"/></center>
+<center><img src="../_images/overview_trainings.png" style="width:800px;height:450px;" alt="NETWAYS Trainings & Workshops"/></center>

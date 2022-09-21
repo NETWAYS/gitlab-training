@@ -42,9 +42,9 @@ https://docs.gitlab.com/ce/user/project/container_registry.html
 # GitLab Runners
 
 * Written in Go
-* Linux/Unix, macOS, Windows, Docker support
+* Linux/Unix, macOS, Windows, Container support
 * Run multiple jobs in parallel
-* Run jobs locally, in Docker containers, remote via SSH
+* Run jobs locally, in Containers, remote via SSH
 * Can run Bash, Windows Batch/Powershell
 
 
@@ -102,9 +102,9 @@ https://docs.gitlab.com/ce/administration/container_registry.html
 
 
 !SLIDE smbullets
-# GitLab CI: Docker, Containers - how to use it
+# GitLab CI: Containers - how to use it
 
-* Run an application in an isolated environment
+* Run an application in an isolated environment (Docker, Podman)
 * Layered images providing additional libraries and tools, e.g. base linux, mysql, apache, ruby
 * Start container, run tests, return results
 * Light-weight and fast, can run on each Git push
@@ -118,17 +118,18 @@ https://docs.gitlab.com/ce/administration/container_registry.html
 Documentation References:
 
 https://docs.docker.com
+https://podman.io/
 
 
 ~~~ENDSECTION~~~
 
 !SLIDE smbullets noprint
-# GitLab CI: Docker and CI Runners
+# GitLab CI: Containers and CI Runners
 
 <center><img src="../../_images/ci/git_gitlab_ci_runners_docker.png" alt="GitLab CI Runners Docker"/></center>
 
 !SLIDE smbullets printonly
-# GitLab CI: Docker and CI Runners
+# GitLab CI: Containers and CI Runners
 
 <center><img src="../../_images/ci/git_gitlab_ci_runners_docker.png" style="width:450px" alt="GitLab CI Runners Docker"/></center>
 
@@ -139,6 +140,7 @@ https://docs.docker.com
 Documentation References:
 
 https://docs.docker.com
+https://podman.io/
 https://docs.gitlab.com/runner/install/docker.html
 
 ~~~ENDSECTION~~~
@@ -211,7 +213,7 @@ Registered runners are listed at the bottom.
  * Paste the token
  * Add description `training01` and tag `training`
  * Untagged builds: `true`, Lock to current project: `false`
- * Executor: `docker`, Default: `alpine:latest`
+ * Executor: `docker`, Default: `docker.io/alpine:latest`
 
 
 Reference: https://gitlab.com/gitlab-org/gitlab-runner/blob/master/docs/install/linux-repository.md
@@ -274,7 +276,7 @@ Start CLI
     docker
 
     Please enter the default Docker image (e.g. ruby:2.1):
-    alpine:latest
+    docker.io/alpine:latest
 
     Runner registered successfully. Feel free to start it, but if it's running already the config should be automatically reloaded!
 
@@ -288,7 +290,7 @@ Start CLI
 
 Example:
 
-    image: alpine:latest
+    image: docker.io/alpine:latest
 
     all_tests:
       script:
@@ -311,9 +313,10 @@ https://about.gitlab.com/2016/03/01/gitlab-runner-with-docker/
 * Objective:
  * Create CI configuration for the training project
 * Steps:
+
  * Navigate your GitLab Web interface and click the button 'Web IDE'
  * Click 'Add file' and create the `.gitlab-ci.yml` file from the suggestions
- * Add `image: alpine:latest` to specify base image
+ * Add `image: docker.io/alpine:latest` to specify base image
  * Add job `all_tests` with `script` as array element, which itself runs `exit 1`
 
 
@@ -334,9 +337,10 @@ https://about.gitlab.com/2016/03/01/gitlab-runner-with-docker/
 
 ## Steps:
 
+
 * Navigate your GitLab Web interface and click the button 'Web IDE'
 * Click 'Add file' and create the `.gitlab-ci.yml` file from the suggestions
-* Add `image: alpine:latest` to specify base image
+* Add `image: docker.io/alpine:latest` to specify base image
 * Add job `all_tests` with `script` as array element, which itself runs `exit 1`
 
 !SLIDE supplemental solutions
@@ -355,7 +359,7 @@ https://about.gitlab.com/2016/03/01/gitlab-runner-with-docker/
 
     @@@ Sh
 
-    image: alpine:latest
+    image: docker.io/alpine:latest
 
     all_tests:
       script:
@@ -412,7 +416,7 @@ Future examples and tests work the same way.
 
     @@@ Sh
 
-    image: alpine:latest
+    image: docker.io/alpine:latest
 
     all_tests:
       script:
@@ -492,7 +496,7 @@ Example:
 
     @@@ Sh
 
-    image: alpine:latest
+    image: docker.io/alpine:latest
 
     before_script:
 
@@ -500,7 +504,7 @@ Example:
 
     @@@ Sh
 
-    image: alpine:latest
+    image: docker.io/alpine:latest
 
     before_script:
       - apk update && apk add python3 py-pip
@@ -509,7 +513,7 @@ Example:
 
     @@@ Sh
 
-    image: alpine:latest
+    image: docker.io/alpine:latest
 
     before_script:
       - apk update && apk add python3 py-pip
@@ -519,7 +523,7 @@ Example:
 
     @@@ Sh
 
-    image: alpine:latest
+    image: docker.io/alpine:latest
 
     before_script:
       - apk update && apk add python3 py-pip
@@ -622,7 +626,7 @@ Tell GitLab to expire this artifact in `1 week`.
 
     @@@ Sh
 
-    image: alpine:latest
+    image: docker.io/alpine:latest
 
     before_script:
       - apk update && apk add python3 py-pip

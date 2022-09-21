@@ -1,13 +1,41 @@
+!SLIDE smbullets noprint
+
+# Who are you?
+
+* Name and Company
+* Your role and or daily business
+* Any previous experiences with git
+* Your expectations for this training
+
 !SLIDE subsection
 # ~~~SECTION:MAJOR~~~ Training Organisation
 
 !SLIDE smbullets
-# GoToTraining Application
+# Training Virtual Machine / Notebook
+* Base OS is CentOS 7
+  * Password-less sudo is configured
+  * Git and terminal integrations are installed
 
+* Virtual Machine
+  * User: training Password: netways0815!
+  * Is a tmux shell
 
-* Raise your hand if you want to talk
-* Mute and unmute your microphone
-* Chat with others or get help from the trainer
+* Notebook
+  * User: training Password: netways
+  * Uses GNOME
+  * WiFi is pre-configured
+  * Exercises use the default terminal
+
+* GitLab App from NWS - nws.netways.de, test account required
+
+!SLIDE smbullets
+# BBB Application
+
+* Lower and raise your hand in the bottom right
+* Mute and unmute or share camera in the bottom
+* Chat and shared notes to the left
+* Click on your name to set a status
+
 
 !SLIDE smbullets
 # Terminal session

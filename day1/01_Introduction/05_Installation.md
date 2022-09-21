@@ -7,7 +7,11 @@
   * Completion
   * Show status and branch in the terminal
 
-<img src="../../_images/introduction/git_installation_cli_example.png" alt="Bash Integration"/>
+Example:
+
+<code><span style="color:blue;">training@netways</span> <span style="color:green">~</span>$</span> cd repository</code>
+
+<code><span style="color:blue;">training@netways</span> <span style="color:green">~/repository</span> <span style="color:red">(feature/docs)</span> $</code>
 
 !SLIDE smbullets printonly
 # Git Installation
@@ -18,7 +22,12 @@
   * Completion
   * Show status and branch in the terminal
 
-<img src="../../_images/introduction/git_installation_cli_example.png" style="width:450px" alt="Bash Integration"/>
+Example:
+
+<code><span style="color:blue;">training@netways</span> <span style="color:green">~</span>$</span> cd repository</code>
+
+<code><span style="color:blue;">training@netways</span> <span style="color:green">~/repository</span> <span style="color:red">(feature/docs)</span> $</code>
+
 
 ~~~SECTION:handouts~~~
 

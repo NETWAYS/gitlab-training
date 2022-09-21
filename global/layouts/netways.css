@@ -103,8 +103,8 @@
   }
 
   .net-header {
-    #height: 4.104166667em;
-    #padding-bottom: .0625em;
+    /* height: 4.104166667em; */
+    /* padding-bottom: .0625em; */
   }
 
   .subsection .net-header,
@@ -120,7 +120,7 @@
     margin-bottom: 0.5em;
     /* Solves that the image overlays the header's border.
        #preso's transformation still produces artifacts, though.. */
-       #margin-top: -.0625em;
+       /* margin-top: -.0625em; */
     /* Yep, applied on every slide. Otherwise we'll get flickering when switching slides */
   }
 

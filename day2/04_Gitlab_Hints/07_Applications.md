@@ -1,9 +1,9 @@
 !SLIDE smbullets
-# GitLab Applications
+# GitLab Integrations
 
-GitLab provides an extensive list of external applications:
+GitLab provides an extensive list of external integrations:
 
-https://about.gitlab.com/applications/
+https://docs.gitlab.com/ce/integration/
 
 * CLI clients
 * API clients
@@ -14,9 +14,9 @@ https://about.gitlab.com/applications/
 
 ****
 
-Reference: https://docs.gitlab.com/ce/api/README.html
+References: https://docs.gitlab.com/ce/api/README.html
 
-API Clients: https://about.gitlab.com/applications/#api-clients
+API Ressources: https://docs.gitlab.com/ce/api/api_resources.html
 
 ~~~ENDSECTION~~~
 
