@@ -9,9 +9,9 @@
 
 Example:
 
-    @@@ Sh
-    training@netways ~$ cd git/icinga
-    training@netways ~/git/icinga (fix/issue-5=) $
+<code><span style="color:blue;">training@netways</span> <span style="color:green">~</span>$</span> cd git/icinga</code>
+
+<code><span style="color:blue;">training@netways</span> <span style="color:green">~/git/icinga</span> <span style="color:red">(fix/issue-5=)</span> $ ls</code>
 
 !SLIDE smbullets printonly
 # Git Installation
@@ -24,9 +24,10 @@ Example:
 
 Example:
 
-    @@@ Sh
-    training@netways ~$ cd git/icinga
-    training@netways ~/git/icinga (fix/issue-5=) $
+<code><span style="color:blue;">training@netways</span> <span style="color:green">~</span>$</span> cd git/icinga</code>
+
+<code><span style="color:blue;">training@netways</span> <span style="color:green">~/git/icinga</span> <span style="color:red">(fix/issue-5=)</span> $ ls</code>
+
 
 ~~~SECTION:handouts~~~
 
