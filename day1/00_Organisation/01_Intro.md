@@ -1,3 +1,12 @@
+!SLIDE smbullets noprint
+
+# Who are you?
+
+* Name and Company
+* Your role and or daily business
+* Any previous experiences with git
+* Your expectations for this training
+
 !SLIDE subsection
 # ~~~SECTION:MAJOR~~~ Training Organisation
 
