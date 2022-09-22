@@ -99,7 +99,14 @@
 * `git branch -a` lists all branches
 * Use `git branch -vv` to list tracking
 
-<center><img src="../../_images/collaboration/git_branch_tracking.png" alt="Tracking"/></center>
+Example:
+
+    @@@ Sh
+    git branch -vv
+      feature/config  7b36d4a [origin/feature/] Add flag to extend config
+      fix/replication 324882e [origin/fix/replication: gone] Fix bug #231
+      *master         f2cce0c [origin/master] Rename test directory
+      wip-foobar      d92a5ad Why wont it work?!
 
 ~~~SECTION:handouts~~~
 

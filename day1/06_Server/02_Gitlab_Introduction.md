@@ -23,14 +23,20 @@ NWS: https://nws.netways.de/products/gitlab-ce
 !SLIDE smbullets
 # GitLab Editions
 
-* Community Edition (CE), Open Source and free to use
-* Enterprise Edition (EE), additional features
-  * Multiple LDAP servers, LDAP group import
-  * Search backend with Elasticsearch, additional HA capabilities
-  * Dependency Scanning, Audit logs
-  * Merge Request Review Approvals, Issue Relations
-  * Burndown charts
-  * Epics, manage group of issues over many projects
+* Free Edition, Free-forever features for individual users
+* Premium Edition, Enhance team productivity and coordination
+  * Faster code reviews
+  * Advanced CI/CD
+  * Enterprise agile planning
+  * Release controls
+  * Self-managed reliability
+* Ultimate Edition, Organization wide security, compliance, and planning
+  * Advanced security testing
+  * Security risk mitigation
+  * Compliance
+  * Portfolio management
+  * Value stream management
+  * Free guest users
 
 https://about.gitlab.com/pricing/self-managed/feature-comparison/
 https://about.gitlab.com/install/ce-or-ee/
@@ -66,7 +72,7 @@ a managed cloud hosting service.
 ****
 
 
-Omnibus packages: https://about.gitlab.com/installation/?version=ce
+Installation packages: https://about.gitlab.com/install/
 
 More details on the manual installation instructions can be
 found in the official documentation: https://docs.gitlab.com/ce/install/installation.html

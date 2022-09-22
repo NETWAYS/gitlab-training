@@ -42,9 +42,9 @@ https://docs.gitlab.com/ce/user/project/container_registry.html
 # GitLab Runners
 
 * Written in Go
-* Linux/Unix, macOS, Windows, Docker support
+* Linux/Unix, macOS, Windows, Container support
 * Run multiple jobs in parallel
-* Run jobs locally, in Docker containers, remote via SSH
+* Run jobs locally, in Containers, remote via SSH
 * Can run Bash, Windows Batch/Powershell
 
 
@@ -102,9 +102,9 @@ https://docs.gitlab.com/ce/administration/container_registry.html
 
 
 !SLIDE smbullets
-# GitLab CI: Docker, Containers - how to use it
+# GitLab CI: Containers - how to use it
 
-* Run an application in an isolated environment
+* Run an application in an isolated environment (Docker, Podman)
 * Layered images providing additional libraries and tools, e.g. base linux, mysql, apache, ruby
 * Start container, run tests, return results
 * Light-weight and fast, can run on each Git push
@@ -118,17 +118,18 @@ https://docs.gitlab.com/ce/administration/container_registry.html
 Documentation References:
 
 https://docs.docker.com
+https://podman.io/
 
 
 ~~~ENDSECTION~~~
 
 !SLIDE smbullets noprint
-# GitLab CI: Docker and CI Runners
+# GitLab CI: Containers and CI Runners
 
 <center><img src="../../_images/ci/git_gitlab_ci_runners_docker.png" alt="GitLab CI Runners Docker"/></center>
 
 !SLIDE smbullets printonly
-# GitLab CI: Docker and CI Runners
+# GitLab CI: Containers and CI Runners
 
 <center><img src="../../_images/ci/git_gitlab_ci_runners_docker.png" style="width:450px" alt="GitLab CI Runners Docker"/></center>
 
@@ -139,6 +140,7 @@ https://docs.docker.com
 Documentation References:
 
 https://docs.docker.com
+https://podman.io/
 https://docs.gitlab.com/runner/install/docker.html
 
 ~~~ENDSECTION~~~
@@ -211,7 +213,7 @@ Registered runners are listed at the bottom.
  * Paste the token
  * Add description `training01` and tag `training`
  * Untagged builds: `true`, Lock to current project: `false`
- * Executor: `docker`, Default: `alpine:latest`
+ * Executor: `docker`, Default: `docker.io/alpine:latest`
 
 
 Reference: https://gitlab.com/gitlab-org/gitlab-runner/blob/master/docs/install/linux-repository.md
@@ -274,7 +276,7 @@ Start CLI
     docker
 
     Please enter the default Docker image (e.g. ruby:2.1):
-    alpine:latest
+    docker.io/alpine:latest
 
     Runner registered successfully. Feel free to start it, but if it's running already the config should be automatically reloaded!
 
@@ -288,7 +290,7 @@ Start CLI
 
 Example:
 
-    image: alpine:latest
+    image: docker.io/alpine:latest
 
     all_tests:
       script:
@@ -312,7 +314,8 @@ https://about.gitlab.com/2016/03/01/gitlab-runner-with-docker/
  * Create CI configuration for the training project
 * Steps:
  * Create the `.gitlab-ci.yml` file in the `training` directory (Web IDE)
- * Add `image: alpine:latest` to specify base image
+ * Add `image: docker.io/alpine:latest` to specify base image
+
  * Add job `all_tests` with `script` as array element, which itself runs `exit 1`
 
 
@@ -334,7 +337,8 @@ https://about.gitlab.com/2016/03/01/gitlab-runner-with-docker/
 ## Steps:
 
 * Create the `.gitlab-ci.yml` file in the `training` directory (Web IDE)
-* Add `image: alpine:latest` to specify base image
+* Add `image: docker.io/alpine:latest` to specify base image
+
 * Add job `all_tests` with `script` as array element, which itself runs `exit 1`
 
 !SLIDE supplemental solutions
@@ -347,11 +351,13 @@ https://about.gitlab.com/2016/03/01/gitlab-runner-with-docker/
 
 ### Create CI configuration file
 
-    @@@ Sh
-    $ cd $HOME/training
-    $ vim .gitlab-ci.yml
+ * Navigate your GitLab Web interface and click the button 'Web IDE'
+ * Click 'Add file' and create the `.gitlab-ci.yml` file from the suggestions
 
-    image: alpine:latest
+
+    @@@ Sh
+
+    image: docker.io/alpine:latest
 
     all_tests:
       script:
@@ -400,23 +406,14 @@ Future examples and tests work the same way.
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
 ****
 
-## Push CI config and trigger GitLab job
-
+##  Make the commit and trigger GitLab job
 ****
-
-### Git Add, Commit, Push
-
-    @@@ Sh
-    $ git add .gitlab-ci.yml
-    $ git commit -av -m "Add GitLab CI config"
-    $ git push origin master
 
 ### Modify exit code
 
     @@@ Sh
-    $ vim .gitlab-ci.yml
 
-    image: alpine:latest
+    image: docker.io/alpine:latest
 
     all_tests:
       script:
@@ -496,18 +493,16 @@ Example:
 ### Edit .gitlab-ci.yml and add before_script
 
     @@@ Sh
-    $ vim .gitlab-ci.yml
 
-    image: alpine:latest
+    image: docker.io/alpine:latest
 
     before_script:
 
 ### Update apk and install Python/pip
 
     @@@ Sh
-    $ vim .gitlab-ci.yml
 
-    image: alpine:latest
+    image: docker.io/alpine:latest
 
     before_script:
       - apk update && apk add python3 py-pip
@@ -515,9 +510,8 @@ Example:
 ### Install Markdown Python libraries
 
     @@@ Sh
-    $ vim .gitlab-ci.yml
 
-    image: alpine:latest
+    image: docker.io/alpine:latest
 
     before_script:
       - apk update && apk add python3 py-pip
@@ -526,9 +520,8 @@ Example:
 ### Verify the content
 
     @@@ Sh
-    $ vim .gitlab-ci.yml
 
-    image: alpine:latest
+    image: docker.io/alpine:latest
 
     before_script:
       - apk update && apk add python3 py-pip
@@ -537,7 +530,7 @@ Example:
     all_tests:
       script:
         - exit 0
-
+        
 ### Commit and push the changes
 
     @@@ Sh
@@ -545,7 +538,6 @@ Example:
     $ git push
 
 This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious alternative.
-
 
 !SLIDE smbullets small
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Create Docs
@@ -600,7 +592,6 @@ Example:
 ### Edit .gitlab-ci.yml and add markdown section
 
     @@@ Sh
-    $ vim .gitlab-ci.yml
 
     ...
 
@@ -613,7 +604,6 @@ Example:
 ### Add script to convert Markdown into HTML
 
     @@@ Sh
-    $ vim .gitlab-ci.yml
 
     ...
 
@@ -627,7 +617,6 @@ Add `paths` section which includes `README.html` as entry.
 Tell GitLab to expire this artifact in `1 week`.
 
     @@@ Sh
-    $ vim .gitlab-ci.yml
 
     ...
 
@@ -642,9 +631,8 @@ Tell GitLab to expire this artifact in `1 week`.
 ### Verify the content
 
     @@@ Sh
-    $ vim .gitlab-ci.yml
 
-    image: alpine:latest
+    image: docker.io/alpine:latest
 
     before_script:
       - apk update && apk add python3 py-pip
@@ -660,12 +648,6 @@ Tell GitLab to expire this artifact in `1 week`.
         paths:
         - README.html
         expire_in: 1 week
-
-### Commit and push the changes
-
-    @@@ Sh
-    $ git commit -av -m "CI: Generate HTML docs from Markdown"
-    $ git push
 
 ### Download HTML artifacts
 
@@ -715,18 +697,11 @@ This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious a
 ### Edit README.md and add learned details
 
     @@@ Sh
-    vim README.md
 
     # CI Runners
 
     ....
-
-### Commit and push changes
-
-    @@@ Sh
-    git commit -av -m "Add notes on CI runners"
-    git push
-
+    
 ### Download HTML artifacts
 
 Navigate into the repository > `CI / CD` > Jobs > `#...`  and choose `Job Artifacts`.
@@ -762,10 +737,14 @@ https://gitlab.com/gitlab-org/gitlab-ci-yml
 !SLIDE smbullets
 # GitLab CI: Variables
 
-* Variables accessible in the Job container
+* CI Variables are accessible in the Job Container
  * Pre-defined environment variables
  * User-defined project variables
  * .gitlab-ci.yml defined variables
+
+* Example uses are:
+ * Credentials (`AWS_ACCESS_KEY`)
+ * Controlling builds (`CMAKE_C_FLAGS`)
 
 https://docs.gitlab.com/ce/ci/variables/
 

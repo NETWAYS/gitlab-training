@@ -39,13 +39,13 @@ in GitLab.
 Generate a new SSH key pair on your client.
 
 ```
-ssh-keygen
+ssh-keygen -t ed25519
 ```
 
 Copy the public key into your GitLab settings.
 
 ```
-cat $HOME/.ssh/id_rsa.pub
+cat $HOME/.ssh/id_ed25519.pub
 ```
 
 User > Settings > SSH Keys
