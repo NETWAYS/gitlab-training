@@ -729,10 +729,14 @@ https://gitlab.com/gitlab-org/gitlab-ci-yml
 !SLIDE smbullets
 # GitLab CI: Variables
 
-* Variables accessible in the Job container
+* CI Variables are accessible in the Job Container
  * Pre-defined environment variables
  * User-defined project variables
  * .gitlab-ci.yml defined variables
+
+* Example uses are:
+ * Credentials (`AWS_ACCESS_KEY`)
+ * Controlling builds (`CMAKE_C_FLAGS`)
 
 https://docs.gitlab.com/ce/ci/variables/
 
