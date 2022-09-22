@@ -77,6 +77,7 @@ Reference: https://www.jetbrains.com/help/idea/using-git-integration.html
 
 * Git for Windows bundled in 2015+
 * Native GUI integration
+* GitHub integration
 
 <center><img src="../../_images/integrations/git_integrations_ide_visualstudio.png"  style="width: 800px;" alt="Visual Studio"/></center>
 
