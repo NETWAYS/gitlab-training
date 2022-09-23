@@ -81,7 +81,7 @@ Documentation: https://docs.gitlab.com/ce/ci/yaml/README.html#stage
 
 * Edit .gitlab-ci.yml and add stages
 * Add jobs to stages
-* Commit and push the changes
+* Commit the changes
 * Check the GitLab Job Pipelines
 
 !SLIDE supplemental solutions
@@ -153,6 +153,8 @@ Documentation: https://docs.gitlab.com/ce/ci/yaml/README.html#stage
 
 ### Check the GitLab Job Pipelines
 
+This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious alternative.
+
 
 !SLIDE smbullets
 # Jobs, Stages, Pipelines
@@ -183,6 +185,7 @@ Reference: https://docs.gitlab.com/ce/ci/pipelines.html
 * Pipelines are normally run based on certain conditions being met
 * Pipeline schedules can be used to also run pipelines at specific intervals.
 * Navigate to `CI / CD > Schedules` to create a new pipeline
+* Pipelines can be scheduled using Cron syntax
 
 ****
 

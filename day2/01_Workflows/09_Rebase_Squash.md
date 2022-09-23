@@ -81,7 +81,7 @@ If you do not have any.
     $ git commit -av -m "commit1"
     $ echo "  " >> README.md
     $ git commit -av -m "commit2"
-    $ echo "`git rebase -i` is interactive" >> README.md
+    $ echo "git rebase -i is interactive" >> README.md
     $ git commit -av -m "commit3"
 
     @@@ Sh

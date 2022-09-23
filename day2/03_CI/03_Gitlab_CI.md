@@ -313,10 +313,9 @@ https://about.gitlab.com/2016/03/01/gitlab-runner-with-docker/
 * Objective:
  * Create CI configuration for the training project
 * Steps:
-
- * Navigate your GitLab Web interface and click the button 'Web IDE'
- * Click 'Add file' and create the `.gitlab-ci.yml` file from the suggestions
+ * Create the `.gitlab-ci.yml` file in the `training` directory (Web IDE)
  * Add `image: docker.io/alpine:latest` to specify base image
+
  * Add job `all_tests` with `script` as array element, which itself runs `exit 1`
 
 
@@ -337,10 +336,9 @@ https://about.gitlab.com/2016/03/01/gitlab-runner-with-docker/
 
 ## Steps:
 
-
-* Navigate your GitLab Web interface and click the button 'Web IDE'
-* Click 'Add file' and create the `.gitlab-ci.yml` file from the suggestions
+* Create the `.gitlab-ci.yml` file in the `training` directory (Web IDE)
 * Add `image: docker.io/alpine:latest` to specify base image
+
 * Add job `all_tests` with `script` as array element, which itself runs `exit 1`
 
 !SLIDE supplemental solutions
@@ -365,21 +363,21 @@ https://about.gitlab.com/2016/03/01/gitlab-runner-with-docker/
       script:
         - exit 1
 
+This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious alternative.
 The script will always fail. We will use different exit states to fix it.
 Future examples and tests work the same way.
 
 
 !SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Make the commit
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Commit to GitLab
 
 * Objective:
- * Commit the .gitlab-ci.yml
+ * Commit .gitlab-ci.yml in GitLab
 * Steps:
- * Click 'Commit'
- * Select 'Commit to master branch' and commit
- * Navigate to `CI / CD` and verify the running job
+ * Commit via the WebIDE into the remote repository
+ * Navigate to the project into `CI / CD` and verify the running job
 * Bonus
- * Modify the exit code to `0`, commit and verify again
+ * Modify the exit code to `0`, commit, push and verify again
 
 ~~~SECTION:handouts~~~
 
@@ -388,22 +386,21 @@ Future examples and tests work the same way.
 ~~~ENDSECTION~~~
 
 !SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Make the commit
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Commit to GitLab
 
-## Make the commit and trigger GitLab job
+## Commit CI config and trigger GitLab job
 ****
 
-* Make the commit and trigger GitLab job
+* Commit .gitlab-ci.yml to GitLab
 
 ## Steps:
 
-* Click 'Commit'
-* Select 'Commit to master branch' and commit
-* Navigate to `CI / CD` and verify the running job
+* Commit into the remote repository
+* Navigate to the project into `CI / CD` and verify the running job
 
 ## Bonus:
 
-* Modify the exit code to `0`, commit and verify again
+* Modify the exit code to `0`, commit, push and verify again
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
@@ -422,6 +419,7 @@ Future examples and tests work the same way.
       script:
         - exit 0
 
+This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious alternative.
 
 
 !SLIDE smbullets small
@@ -476,7 +474,7 @@ Reference: https://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management
 * Modify `.gitlab-ci.yml` and add a `before_script` section after the `image` section
 * Update `apk` package manager and install `python3` and `py-pip` packages
 * Use `pip` to install the `markdown` and `Pygments` libraries
-* Commit and push the changes
+* Commit the changes
 
 Example:
 
@@ -532,6 +530,14 @@ Example:
     all_tests:
       script:
         - exit 0
+        
+### Commit and push the changes
+
+    @@@ Sh
+    $ git commit -av -m "CI: Prepare markdown conversion"
+    $ git push
+
+This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious alternative.
 
 !SLIDE smbullets small
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Create Docs
@@ -647,6 +653,7 @@ Tell GitLab to expire this artifact in `1 week`.
 
 Navigate into the repository > `CI / CD` > Jobs > `#...`  and choose `Job Artifacts`.
 Download them, extract them and open the HTML file with your browser.
+This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious alternative.
 
 !SLIDE smbullets small
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Update Docs
@@ -699,6 +706,7 @@ Download them, extract them and open the HTML file with your browser.
 
 Navigate into the repository > `CI / CD` > Jobs > `#...`  and choose `Job Artifacts`.
 Download them, extract them and open the HTML file with your browser.
+This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious alternative.
 
 
 
