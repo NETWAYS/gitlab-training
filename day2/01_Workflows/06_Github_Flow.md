@@ -53,7 +53,7 @@ Example:
 
 * Pull changes from `upstream` HEAD to own repository master branch to sync development
 * Remote `HEAD` is the default branch for this repository, usually `master`
-* Remember, HEAD is just a smart pointer. You can use a branch name too.
+* Remember, HEAD is just a smart pointer. You can use a branch name too
 
 Example:
 

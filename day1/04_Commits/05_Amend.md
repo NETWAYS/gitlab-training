@@ -5,7 +5,7 @@
 * Amend changes from staging
 * Helps if new files were added but not committed
 * `git commit --amend` changes the latest commit
- * Amending commits in Git history is possible, explained later with `git rebase`.
+ * Amending commits in Git history is possible, explained later with `git rebase`
 
 If you amend changes to a specific commit, a new unique commit id is generated.
 This changes the Git history and we will learn later how to resolve possible

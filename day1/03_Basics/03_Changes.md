@@ -3,10 +3,10 @@
 
 * `git add`
   * Add new files to Git (staged)
-  * Add modified file(s) from the working directory into the staging index.
+  * Add modified file(s) from the working directory into the staging index
   * `-A` adds all files. Question: Where is this applicable?
 * `git mv`
-  * Rename file(s) tracked by Git.
+  * Rename file(s) tracked by Git
 
 ~~~SECTION:handouts~~~
 
@@ -91,11 +91,11 @@ in the `README.md` file.
 # Remove changes
 
 * `git reset`
-  * Reset files added to the staging index.
-  * Hint: This comes in handy with `git add -A` before.
+  * Reset files added to the staging index
+  * Hint: This comes in handy with `git add -A` before
 * `git rm`
-  * Remove the file(s) from working tree and Git repository.
-  * Note that file(s) will be visible in Git history, and can be restored from it.
+  * Remove the file(s) from working tree and Git repository
+  * Note that file(s) will be visible in Git history, and can be restored from it
 * `git rm --cached`
   * Alternative suggested by Git CLI for `git reset`
 
@@ -123,8 +123,8 @@ and then selectively unstage the unwanted 5 changes.
 * Steps:
  * Change into `$HOME/training`
  * Remove the previously added `README.md` file from the staging index with `git reset README.md`
- * Verify it with `git status` and explain what happened.
- * Re-add the `README.md` and examine again with `git status`.
+ * Verify it with `git status` and explain what happened
+ * Re-add the `README.md` and examine again with `git status`
 
 ~~~SECTION:handouts~~~
 
@@ -147,8 +147,8 @@ and then selectively unstage the unwanted 5 changes.
 
 * Change into `$HOME/training`
 * Remove the previously added `README.md` file from the staging index with `git reset README.md`
-* Verify it with `git status` and explain what happened.
-* Re-add the `README.md` and examine again with `git status`.
+* Verify it with `git status` and explain what happened
+* Re-add the `README.md` and examine again with `git status`
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution

@@ -2,7 +2,7 @@
 # Advanced Git Commands: Stash
 
 * `git stash`
- * Put current changes on a temporary stack.
+ * Put current changes on a temporary stack
  * Useful when changing branches (diff would not apply)
  * Use with care, pop changes immediately after changing back
  * Only local, not stored in the central repository
@@ -138,7 +138,7 @@ stages, `git stash list` will list them.
 # Advanced Git Commands: Cherry-Pick
 
 * `git cherry-pick`
-  * Collect specific commit into your working tree.
+  * Collect specific commit into your working tree
   * Applies the contained patch
   * When the base commit differs, checksum changes = new commit id
   * Use `git cherry-pick -x <sha1>` to add source comment

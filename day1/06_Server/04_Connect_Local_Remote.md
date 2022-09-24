@@ -24,7 +24,7 @@ in GitLab.
 # Requirements
 
 * SSH or HTTPS auth
-  * NWS apps come pre-defined with HTTPS clone/fetch only.
+  * NWS apps come pre-defined with HTTPS clone/fetch only
 * New GitLab repository for this user
 * Configure local repository for the remote server
 

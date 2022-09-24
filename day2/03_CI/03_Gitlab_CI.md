@@ -577,7 +577,7 @@ Example:
 
 * Add a new job `markdown` after the `all_tests` job
 * Add `script` and convert `README.md` to `README.html` using Python
-* Add `artifacts` with `paths` pointing to `README.html`. Expires in `1 week`.
+* Add `artifacts` with `paths` pointing to `README.html`. Expires in `1 week`
 * Commit the changes
 * Download and view the `README.html` file in your browser
 

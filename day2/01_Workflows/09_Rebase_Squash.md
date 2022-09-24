@@ -20,8 +20,8 @@ Ask the trainer to draw an image for better illustration and discussion.
 * Objective:
  * Rebase and squash commits
 * Steps:
- * Add 3 commits to the `master` branch and push them.
- * Use `git rebase -i HEAD~3` to start the interactive mode. `HEAD~3` takes the last 3 commits compared to current HEAD.
+ * Add 3 commits to the `master` branch and push them
+ * Use `git rebase -i HEAD~3` to start the interactive mode. `HEAD~3` takes the last 3 commits compared to current HEAD
  * Use `pick` for the top commit
  * Replace `pick` with `squash` for the other commits
  * Save and edit the final commit message
@@ -50,8 +50,8 @@ history into the development branches.
 
 ## Steps:
 
-* Add 3 commits to the `master` branch and push them.
-* Use `git rebase -i HEAD~3` to start the interactive mode. `HEAD~3` takes the last 3 commits compared to current HEAD.
+* Add 3 commits to the `master` branch and push them
+* Use `git rebase -i HEAD~3` to start the interactive mode. `HEAD~3` takes the last 3 commits compared to current HEAD
 * Use `pick` for the top commit`
 * Replace `pick` with `squash` for the other commits
 * Save and edit the final commit message
@@ -131,9 +131,9 @@ https://about.gitlab.com/2014/11/26/keeping-your-code-protected/
 Possible use cases for protecting branches:
 
 * Releases are tagged from the `master` branch, no-one should be allowed
-to modify this history at any point in time.
+to modify this history at any point in time
 * In case you are supporting older versions, you'll probably have `release/x.y`
-or `support/x.y` branches. No-one is allowed to override anything in there.
+or `support/x.y` branches. No-one is allowed to override anything in there
 
 In case a commit gets lost, either being deleted or the history is rewritten,
 the corresponding release tag points to nothing. Meaning to say, that release
@@ -201,10 +201,10 @@ Add `master` as protected branch, and set all options to
 !SLIDE smbullets
 # More Hints: Force Push in shared branch, what now?
 
-* You pulled the 3 commits now being squashed in master.
-* Your colleague force pushed the branch with 1 squashed commit.
-* You cannot rebase anymore.
-* Instead, you need to reset your local branch to the remote branch base.
+* You pulled the 3 commits now being squashed in master
+* Your colleague force pushed the branch with 1 squashed commit
+* You cannot rebase anymore
+* Instead, you need to reset your local branch to the remote branch base
 
 Discuss this with the trainer.
 
