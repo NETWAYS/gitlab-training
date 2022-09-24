@@ -20,7 +20,7 @@ environment.
 # Git Branch CLI commands
 
 * `git branch`
- * Create new branch without leaving the current one.
+ * Create new branch without leaving the current one
  * Delete branches
  * List branches
 * `git checkout`

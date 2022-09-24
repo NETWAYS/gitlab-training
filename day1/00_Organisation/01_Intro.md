@@ -63,9 +63,9 @@ Click on the link in your email to join the session
   * Navigate to https://nws.netways.de and register a trial account if not existing
   * Choose Apps > GitLab CE > Basic
   * Deploy the app
-  * Choose `Access` and `Live View` and set a secure password for the `root` user.
-  * Login with `root` and your chosen password.
-  * Wait for the trainer with the Git Basics.
+  * Choose `Access` and `Live View` and set a secure password for the `root` user
+  * Login with `root` and your chosen password
+  * Wait for the trainer with the Git Basics
 
 ~~~SECTION:handouts~~~
 

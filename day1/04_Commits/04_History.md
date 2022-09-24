@@ -2,19 +2,19 @@
 # Examine the Git history
 
 * `git log`
-  * Show commit history of the current branch.
-  * Supports `-10` notation to show a limited number of commits.
+  * Show commit history of the current branch
+  * Supports `-10` notation to show a limited number of commits
 
 * `git blame <filename>`
   * Show authors of a certain file line-by-line
-  * Supports `--color-lines` notation for grouping lines of the same commit.
+  * Supports `--color-lines` notation for grouping lines of the same commit
 
 ~~~SECTION:handouts~~~
 
 ****
 
-`git log` shows the commit history of the current branch.
-`git blame <filename>`shows the author line-by-line of the selected file.
+`git log` shows the commit history of the current branch
+`git blame <filename>`shows the author line-by-line of the selected file
 
 
 ~~~ENDSECTION~~~
@@ -23,12 +23,12 @@
 # Examine the Git history
 
 * `git show`
-  * Print commit details.
-  * If the commit id is omitted, the last commit is printed.
-  * Supports `-10` notation to show a limited number of commits.
+  * Print commit details
+  * If the commit id is omitted, the last commit is printed
+  * Supports `-10` notation to show a limited number of commits
 * `git diff`
-  * Show changes between working tree and last commit.
-  * Supports source and target parameters.
+  * Show changes between working tree and last commit
+  * Supports source and target parameters
   * Can be used to compare 2 commit ids, branches, etc.
 
 ~~~SECTION:handouts~~~

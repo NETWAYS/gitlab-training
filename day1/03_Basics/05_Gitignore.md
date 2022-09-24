@@ -16,14 +16,14 @@ ignore directories instead of both directories and files
 matching the pattern.
 
 If you want to ignore a file globally in your repository
-you can preceed the path with `**/` which means `any directory`.
+you can preceed the path with `**/` which means `any directory`
 
 Example for ignoring a debug file anywhere in your repository:
 
     **/debug
 
 If you prefer to keep `.gitignore` files in specific directories
-and not a global file, this will also work.
+and not a global file, this will also work
 
 ~~~ENDSECTION~~~
 

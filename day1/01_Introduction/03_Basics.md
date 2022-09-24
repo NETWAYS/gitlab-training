@@ -139,11 +139,11 @@ is copied when you clone a repository from another computer.
 
 ****
 
-* If a particular version of a file is in the `.git directory`, it’s considered `committed`.
+* If a particular version of a file is in the `.git directory`, it’s considered `committed`
 
 * `Staged` means that the file has been modified and it was added to the staging area
 
-* `Modified` means that the file was changed since it was checked out but has not been staged yet.
+* `Modified` means that the file was changed since it was checked out but has not been staged yet
 
 ~~~ENDSECTION~~~
 

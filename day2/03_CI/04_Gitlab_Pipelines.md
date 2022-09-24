@@ -165,7 +165,7 @@ This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious a
 <img src="../../_images/ci/git_gitlab_ci_jobs_stages.png"/>
 </center>
 
-* Failure: Edit the first job to `exit 1`.
+* Failure: Edit the first job to `exit 1`
 
 <center>
 <img src="../../_images/ci/git_gitlab_ci_jobs_stages_failed.png"/>
@@ -183,7 +183,7 @@ Reference: https://docs.gitlab.com/ce/ci/pipelines.html
 # Pipeline schedules
 
 * Pipelines are normally run based on certain conditions being met
-* Pipeline schedules can be used to also run pipelines at specific intervals.
+* Pipeline schedules can be used to also run pipelines at specific intervals
 * Navigate to `CI / CD > Schedules` to create a new pipeline
 * Pipelines can be scheduled using Cron syntax
 

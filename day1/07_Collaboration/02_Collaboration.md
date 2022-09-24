@@ -2,13 +2,13 @@
 # Collaboration: Put History
 
 * `git push`
-  * Update remote references and push local history to remote repository.
-  * This pushes source code changes and commits.
-  * Halts if the remote history diverged from your local history.
+  * Update remote references and push local history to remote repository
+  * This pushes source code changes and commits
+  * Halts if the remote history diverged from your local history
 * `git remote`
-  * Configure/list remote repository URLs (default `origin`).
+  * Configure/list remote repository URLs (default `origin`)
 * `git branch -r`
-  * List remote branches, prefixed with the remote name, e.g. `origin/master`.
+  * List remote branches, prefixed with the remote name, e.g. `origin/master`
 
 ~~~SECTION:handouts~~~
 
@@ -120,11 +120,11 @@ Example:
 # Collaboration: Get History
 
 * `git fetch`
-  * Update the remote branch reference pointers to the latest commit and cache it locally.
-  * Does not pull in any remote commit history.
+  * Update the remote branch reference pointers to the latest commit and cache it locally
+  * Does not pull in any remote commit history
 * `git pull`
-  * Fetch and update the local history from remote repository (implicit fetch).
-  * This pulls in source code changes and commits.
+  * Fetch and update the local history from remote repository (implicit fetch)
+  * This pulls in source code changes and commits
 
 ~~~SECTION:handouts~~~
 

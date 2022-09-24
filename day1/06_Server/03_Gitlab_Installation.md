@@ -32,7 +32,7 @@ handout.
   * Navigate to https://nws.netways.de and register a trial account if not existing
   * Choose Apps > GitLab CE > Basic
   * Deploy the app
-  * Choose Access and Live View and set a secure password for the `root` user.
+  * Choose Access and Live View and set a secure password for the `root` user
   * Login
 
 ~~~SECTION:handouts~~~
@@ -57,7 +57,7 @@ handout.
 * Navigate to https://nws.netways.de and register a trial account if not existing
 * Choose Apps > GitLab CE > Basic
 * Deploy the app
-* Choose Access and Live View and set a secure password for the `root` user.
+* Choose Access and Live View and set a secure password for the `root` user
 * Login
 
 

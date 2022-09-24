@@ -2,19 +2,19 @@
 # Examine the current state
 
 * `git status`
-  * Show current working tree status.
+  * Show current working tree status
   * Modified files
   * Modified and added to staging for commit
   * Untracked files
 
-Later we will learn how to compare specific commits and branches too.
+Later we will learn how to compare specific commits and branches too
 
 ~~~SECTION:handouts~~~
 
 ****
 
 `git status` shows the current working tree status. Untracked files and changes (not) staged
-for commit.
+for commit
 
 ~~~ENDSECTION~~~
 
@@ -70,7 +70,7 @@ for commit.
     $ vim README.md
     # Git Training Notes
 
-    I've learned about `git add` already.
+    I've learned about `git add` already
 
     ```
     git status
@@ -100,8 +100,8 @@ You'll recognize the unstaged changes compared to your staging area.
 # Examine the current state: Diff
 
 * `git diff`
-  * Compare changes between modified working tree and latest commit.
-  * Output is a unified diff similar to `diff -ur file1 file2`.
+  * Compare changes between modified working tree and latest commit
+  * Output is a unified diff similar to `diff -ur file1 file2`
 
 Later we will learn how to compare specific commits and branches too.
 
@@ -110,7 +110,7 @@ Later we will learn how to compare specific commits and branches too.
 ****
 
 `git diff` shows changes between the current working tree and the last commit. You can
-also compare specific commits.
+also compare specific commits
 
 ~~~ENDSECTION~~~
 

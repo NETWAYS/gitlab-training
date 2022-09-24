@@ -2,18 +2,18 @@
 # Start a project
 
 * `git clone`
-  * Clone a copy of existing remote repository.
-  * Can be newly created in GitLab/GitHub and empty.
+  * Clone a copy of existing remote repository
+  * Can be newly created in GitLab/GitHub and empty
 * `git init`
-  * Initialize a local empty Git repository.
+  * Initialize a local empty Git repository
 
 ~~~SECTION:handouts~~~
 
 ****
 
-`git clone` clones a copy of an existing remote Git repository.
+`git clone` clones a copy of an existing remote Git repository
 
-`git init` initializes an empty directory as local Git repository.
+`git init` initializes an empty directory as local Git repository
 
 When you clone a repository, Git automatically adds a shortcut called
 `origin` that points back to the "parent" repository, under the assumption

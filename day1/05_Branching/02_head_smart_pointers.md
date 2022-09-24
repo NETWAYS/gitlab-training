@@ -20,7 +20,7 @@ This can be used for `git show`. More advanced techniques will be discussed late
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Show the second commit
 
 * Objective:
- * Use `HEAD` and only show the second latest commit.
+ * Use `HEAD` and only show the second latest commit
 * Steps:
  * Change into `$HOME/training`
  * Combine `git show` with `HEAD^` or `HEAD~1`
@@ -44,7 +44,7 @@ This can be used for `git show`. More advanced techniques will be discussed late
 ****
 
 * Change into `$HOME/training`
-* Use `HEAD` and only show the second latest commit.
+* Use `HEAD` and only show the second latest commit
 
 
 !SLIDE supplemental solutions
