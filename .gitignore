@@ -2,3 +2,5 @@
 static
 stats
 trainer
+*.pdf
+global
