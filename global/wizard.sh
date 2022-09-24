@@ -4,7 +4,7 @@ CLANG=${CLANG:-C.UTF-8}
 IMAGE=${IMAGE:-netways/showoff:0.19.6}
 CNAME=${CNAME:-showoff}
 TRAINING=${TRAINING:-$(basename "$DIR")}
-DOCKER=${DOCKER:-$(command -v docker)}
+RUNTIME=${RUNTIME:-$(command -v docker)}
 GIT=${GIT:-$(command -v git)}
 SCRIPT_DIR=$(cd $(dirname $0); pwd -P)
 NO_RESET=${NO_RESET:-""}
@@ -12,11 +12,11 @@ NO_RESET=${NO_RESET:-""}
 # Functions
 
 execdocker () {
-  if [[ -n $($DOCKER ps -aq -f name=$CNAME 2> /dev/null) ]]; then
-    $DOCKER rm -f $CNAME 2> /dev/null
+  if [[ -n $($RUNTIME ps -aq -f name=$CNAME 2> /dev/null) ]]; then
+    $RUNTIME rm -f $CNAME 2> /dev/null
   fi
 
-  $DOCKER run \
+  $RUNTIME run \
     -it \
     --name=$CNAME \
     --rm \
@@ -51,12 +51,15 @@ printsolutions () {
 }
 
 setlayout () {
-  find . -type l -name *.css -maxdepth 1 -delete
+  find . -maxdepth 1 -type l -name *.css -delete
   ln -s global/layouts/$1.css .
 }
 
-if [[ ! -x $DOCKER ]]; then
-  echo "Command 'docker' not found, exit"
+# Create reference if it doesn't exist
+ln -sf . global
+
+if [[ ! -x $RUNTIME ]]; then
+  echo "Command '${RUNTIME}' not found, exit"
   exit 1
 fi
 
@@ -93,13 +96,13 @@ done
 
 case "$LAYOUT" in
   1) LAYOUT=netways
-     sed -i '' 's|^[ \t\s]*"default":.*|    "default": "global/layouts/netways.tpl"|' showoff.json;;
+     sed -i 's|^[ \t\s]*"default":.*|    "default": "global/layouts/netways.tpl"|' showoff.json;;
   2) LAYOUT=osmc
-     sed -i '' 's|^[ \t\s]*"default":.*|    "default": "global/layouts/osmc.tpl"|' showoff.json;;
+     sed -i 's|^[ \t\s]*"default":.*|    "default": "global/layouts/osmc.tpl"|' showoff.json;;
   3) LAYOUT=osdc
-     sed -i '' 's|^[ \t\s]*"default":.*|    "default": "global/layouts/osdc.tpl"|' showoff.json;;
+     sed -i 's|^[ \t\s]*"default":.*|    "default": "global/layouts/osdc.tpl"|' showoff.json;;
   4) LAYOUT=osbconf
-     sed -i '' 's|^[ \t\s]*"default":.*|    "default": "global/layouts/osbconf.tpl"|' showoff.json;;
+     sed -i 's|^[ \t\s]*"default":.*|    "default": "global/layouts/osbconf.tpl"|' showoff.json;;
 esac
 
 setlayout $LAYOUT
