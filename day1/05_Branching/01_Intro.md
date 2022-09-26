@@ -12,6 +12,7 @@ Branches are useful to develop features/fixes in their isolated
 environment.
 
 * Main branch
+  * Note: Historically it was `master`, many vendors are now moving to `main`
 * Develop a new feature in a dedicated branch
 * Put fixes into the main branch (production)
 * Continue to work on the feature
