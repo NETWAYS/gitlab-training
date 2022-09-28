@@ -11,9 +11,10 @@ git commit.
 Branches are useful to develop features/fixes in their isolated
 environment.
 
-* Master branch
+* Main branch
+  * Note: Historically it was `master`, many vendors are now moving to `main`
 * Develop a new feature in a dedicated branch
-* Put fixes into the master branch (production)
+* Put fixes into the main branch (production)
 * Continue to work on the feature
 
 !SLIDE smbullets
@@ -82,7 +83,7 @@ environment.
     $ cd $HOME/training
 
     $ git branch
-    * master
+    * main
 
 
 !SLIDE smbullets
@@ -92,7 +93,7 @@ environment.
  * Create and checkout a new branch
 * Steps:
  * Change into `$HOME/training`
- * Create a new branch `feature/docs` based off `master` with `git branch feature/docs master`
+ * Create a new branch `feature/docs` based off `main` with `git branch feature/docs main`
  * List the branches with `git branch`
  * Checkout the new branch with `git checkout feature/docs`
 * Bonus:
@@ -117,7 +118,7 @@ environment.
 ****
 
 * Change into `$HOME/training`
-* Create a new branch `feature/docs` based off `master` with `git branch feature/docs master`
+* Create a new branch `feature/docs` based off `main` with `git branch feature/docs main`
 * List the branches with `git branch`
 * Checkout the new branch with `git checkout feature/docs`
 
@@ -141,13 +142,13 @@ environment.
     @@@ Sh
     $ cd $HOME/training
 
-    $ git branch feature/docs master
+    $ git branch feature/docs main
 
 ### List the branches
 
     @@@ Sh
     $ git branch
-    * master
+    * main
       feature/docs
 
 ### Checkout the created branch
@@ -155,7 +156,7 @@ environment.
     @@@ Sh
     $ git checkout feature/docs
     $ git branch
-      master
+      main
     * feature/docs
 
 ### Use it all at once
@@ -165,7 +166,7 @@ and does the checkout afterwards. That way you'll safe some time
 when working with branches quite often.
 
     @@@ Sh
-    $ git checkout master
+    $ git checkout main
     $ git checkout -b feature/docs2
 
 
@@ -176,7 +177,7 @@ when working with branches quite often.
  * Delete the previously created branch
 * Steps:
  * Change into `$HOME/training`
- * Switch to the master branch
+ * Switch to the main branch
  * Use `git branch -d` to delete the selected branch
 * Bonus:
  * Try to delete the branch you are currently on
@@ -200,7 +201,7 @@ when working with branches quite often.
 ****
 
 * Change into `$HOME/training`
-* Switch to the master branch
+* Switch to the main branch
 * Use `git branch -d feature/docs2` to delete the selected branch
 
 ## Bonus:
@@ -217,12 +218,12 @@ when working with branches quite often.
 
 ****
 
-### Checkout the master branch
+### Checkout the main branch
 
     @@@ Sh
     $ cd $HOME/training
 
-    $ git checkout master
+    $ git checkout main
 
 ### Delete the previously created branch
 
@@ -232,6 +233,6 @@ when working with branches quite often.
 ### Try to delete the current branch
 
     @@@ Sh
-    $ git checkout master
-    $ git branch -d master
+    $ git checkout main
+    $ git branch -d main
 

@@ -3,8 +3,8 @@
 
 * Feature development happens in named branches
 * Does not interfere with the main codebase
-* Master branch does not contain broken code
-* Feature branches can be rebased against stable master branch on demand
+* Main branch does not contain broken code
+* Feature branches can be rebased against stable main branch on demand
 
 <center><img src="../../_images/workflows/git_feature_branch_workflow_01.png" alt="Feature Branch Workflow"/></center>
 
@@ -13,8 +13,8 @@
 
 * Feature development happens in named branches
 * Does not interfere with the main codebase
-* Master branch does not contain broken code
-* Feature branches can be rebased against stable master branch on demand
+* Main branch does not contain broken code
+* Feature branches can be rebased against stable main branch on demand
 
 <center><img src="../../_images/workflows/git_feature_branch_workflow_01.png" style="width:450px" alt="Feature Branch Workflow"/></center>
 
@@ -49,7 +49,7 @@
  * Create a new feature branch `feature/docs-workflows`
 * Steps:
  * Change into `$HOME/training`
- * Use `git checkout -b feature/docs-workflows` to create a new feature branch based on the master
+ * Use `git checkout -b feature/docs-workflows` to create a new feature branch based on the main
  * Add and commit changes
  * Push the branch to your central repository
 
@@ -72,7 +72,7 @@
 ****
 
 * Change into `$HOME/training`
-* Use `git checkout -b feature/docs-workflows` to create a new feature branch based on the master
+* Use `git checkout -b feature/docs-workflows` to create a new feature branch based on the main
 * Add and commit changes
 * Push the branch to your central repository
 
@@ -86,11 +86,11 @@
 
 ### Create a new branch
 
-The new branch `feature/docs-workflows` will be based on the `master` branch.
+The new branch `feature/docs-workflows` will be based on the `main` branch.
 
     @@@ Sh
     $ cd $HOME/training
-    $ git checkout master
+    $ git checkout main
     $ git checkout -b feature/docs-workflows
 
 ### Add and commit changes
@@ -115,13 +115,13 @@ The new branch `feature/docs-workflows` will be based on the `master` branch.
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Merge Feature Branches
 
 * Objective:
- * Update `master` branch and merge feature branch `feature/docs-workflows`
+ * Update `main` branch and merge feature branch `feature/docs-workflows`
 
 * Steps:
  * Checkout the feature branch `feature/docs-workflows`
  * Edit `README.md`, add and commit the changes
- * Diff the feature branch to the current master with `git diff master`
- * Checkout the `master` branch, merge the feature branch as non-fast-forward with `--no-ff`
+ * Diff the feature branch to the current main with `git diff main`
+ * Checkout the `main` branch, merge the feature branch as non-fast-forward with `--no-ff`
  * Show the history tree with `tig` or inside GitLab and explain why the forced merge commit with `--no-ff` is important
 
 ~~~SECTION:handouts~~~
@@ -136,7 +136,7 @@ The new branch `feature/docs-workflows` will be based on the `master` branch.
 ## Objective: Merge Feature Branches
 ****
 
-* Update master branch and merge feature branch
+* Update main branch and merge feature branch
 
 ## Steps:
 
@@ -145,8 +145,8 @@ The new branch `feature/docs-workflows` will be based on the `master` branch.
 * Change into `$HOME/training`
 * Checkout the feature branch `feature/docs-workflows`
 * Edit `README.md`, add and commit the changes
-* Diff the feature branch to the current master with `git diff master`
-* Checkout the `master` branch
+* Diff the feature branch to the current main with `git diff main`
+* Checkout the `main` branch
 * Merge the feature branch as non-fast-forward with `--no-ff`
 * Show the history tree with `tig` or inside GitLab
 
@@ -177,17 +177,17 @@ The new branch `feature/docs-workflows` will be based on the `master` branch.
     $ git commit -v README.md -m "Update docs for workflows"
     $ git push origin feature/docs-workflows
 
-### Checkout the feature branch and compare it with the master branch
+### Checkout the feature branch and compare it with the main branch
 
     @@@ Sh
     $ git branch
     $ git checkout feature/docs-workflows
-    $ git diff master feature/docs-workflows
+    $ git diff main feature/docs
 
-### Checkout the master and merge the feature branch
+### Checkout the main and merge the feature branch
 
     @@@ Sh
-    $ git checkout master
+    $ git checkout main
     $ git merge --no-ff feature/docs-workflows
 
     In this commit message, I may add a reference to a GitLab issue like this

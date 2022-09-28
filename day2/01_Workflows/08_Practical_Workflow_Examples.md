@@ -2,8 +2,8 @@
 # Workflow Examples: Icinga 2
 
 * Feature branch workflow
-* `master` as development branch
-* Major releases from `master`, `support/x.y` for bugfix releases
+* `main` as development branch
+* Major releases from `main`, `support/x.y` for bugfix releases
 
 Moving to GitHub, we extended this to:
 

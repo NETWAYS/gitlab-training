@@ -88,7 +88,7 @@ for simulating unwanted files in the working directory.
 
     @@@ Sh
     $ git status
-    On branch master
+    On branch main
     
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
@@ -111,7 +111,7 @@ trailing slash).
 
     @@@ Sh
     $ git status
-    On branch master
+    On branch main
     
     Untracked files:
       (use "git add <file>..." to include in what will be committed)

@@ -29,18 +29,18 @@ for integrating and sharing code changes between repositories.
 !SLIDE smbullets noprint
 # Centralized Workflow - Publish Changes
 
-* Developers push their local master branch
+* Developers push their local main branch
 * Stored in central repository
-* Adds all local commits that are not in the central master branch
+* Adds all local commits that are not in the central main branch
 
 <center><img src="../../_images/workflows/git_centralized_workflow_02.png" alt="Centralized Workflow"/></center>
 
 !SLIDE smbullets printonly
 # Centralized Workflow - Publish Changes
 
-* Developers push their local master branch
+* Developers push their local main branch
 * Stored in central repository
-* Adds all local commits that are not in the central master branch
+* Adds all local commits that are not in the central main branch
 
 <center><img src="../../_images/workflows/git_centralized_workflow_02.png" style="width:450px" alt="Centralized Workflow"/></center>
 
@@ -83,7 +83,7 @@ for integrating and sharing code changes between repositories.
  * Open the GitLab project `training`
  * Open `README.md` using the Gitlab Web IDE
  * Edit `README.md`, add `This change is from my colleague.`
- * Stage & commit the change to master
+ * Stage & commit the change to main
 * Local steps:
  * Change into `training` directory on your local machine
  * Edit `README.md`, add `This is my local change.`
@@ -103,8 +103,7 @@ for integrating and sharing code changes between repositories.
 
 * Open the GitLab project `training`
 * Open `README.md` using the Gitlab Web IDE
-* Edit `README.md`, add `This change is from my colleague.`
-* Stage & commit the change to master
+* Stage & commit the change to main
 
 ## Local CLI Steps:
 
@@ -132,7 +131,7 @@ Click onto `README.md` and choose to edit it from the browser.
 
 Add `This change is from my colleague.` at the bottom of the file.
 
-Stage and commit the change to the master branch.
+Stage and commit the change to the main branch.
 
 ### Create local commit on the CLI
 
@@ -190,8 +189,8 @@ in a non-fast forward fashion is not allowed.
  * Rebase your local history with the remote repository
 * Steps:
  * Fetch remote with `git fetch`
- * Compare changes with `git diff origin/master`
- * Rebase with `git rebase origin/master`
+ * Compare changes with `git diff origin/main`
+ * Rebase with `git rebase origin/main`
  * Resolve possible merge conflicts, add them
  * Continue with `git rebase --continue`, push rebased history
 
@@ -227,8 +226,8 @@ instead of generating a merge commit.
 ****
 
 * Fetch remote with `git fetch`
-* Compare changes with `git diff origin/master`
-* Rebase with `git rebase origin/master`
+* Compare changes with `git diff origin/main`
+* Rebase with `git rebase origin/main`
 * Resolve possible merge conflicts, add them
 * Continue with `git rebase --continue`, push rebased history
 
@@ -245,14 +244,14 @@ instead of generating a merge commit.
     @@@ Sh
     $ git fetch
 
-    $ git diff origin/master
+    $ git diff origin/main
 
 ### Rebase your local history
 
-Rebase your local history against the remote origin master branch.
+Rebase your local history against the remote origin main branch.
 
     @@@ Sh
-    $ git rebase origin/master
+    $ git rebase origin/main
 
 ### Resolve merge probblems
 
@@ -273,7 +272,7 @@ Resolve the conflicts, add the file and continue the rebase.
 
 ### Push the changes to the remote repository
 
-    $ git push origin master
+    $ git push origin main
 
 
 

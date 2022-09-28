@@ -198,7 +198,7 @@ This will not work since the local branch does not follow the remote branch.
 Use `--set-upstream` as proposed by the cli output. Short form is `-u`.
 
     @@@ Sh
-    $ git push --set-upstream origin master
+    $ git push --set-upstream origin main
 
 ### Set default push method
 
@@ -209,7 +209,7 @@ The new default method should be `simple` which ensures that the local branches
 will only be pushed to remote branches which `git pull` is following.
 
 Our setup did not clone the repository (which includes a virtual git pull). Therefore
-the local master branch does not follow a remote branch.
+the local main branch does not follow a remote branch.
 
 In order to fix that, add the default push method to your global configuration.
 
@@ -218,7 +218,7 @@ In order to fix that, add the default push method to your global configuration.
 
 ### Push and update all branches
 
-`git push -u origin master` creates a new remote branch, updates the tracking to the
+`git push -u origin main` creates a new remote branch, updates the tracking to the
 local current branch and pushes all references/commits.
 
 If you want to sync all local branches, you can omit the branch name in the command and
