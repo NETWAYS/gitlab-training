@@ -4,6 +4,7 @@
 
 !SLIDE smbullets small noprint
 # Let's repeat what we have learned
+## Repository and Branches
 
     Use `cd` to leave the training repository
 
@@ -18,8 +19,14 @@
     Add an empty file called `.keep` in `testdata/`
     Check the git status again
     Commit the new directory
+    
+    
+!SLIDE smbullets small noprint
 
-    Switch to the master branch and edit/commit the `README.md`
+## Advanced Commands
+
+    Switch to the master branch
+    Edit + commit the `README.md`
     Cherry-pick (with the -x flag) the first commit from `feature/testdata`
     check the git log
 
