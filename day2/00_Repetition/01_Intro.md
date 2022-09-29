@@ -23,6 +23,7 @@
     
 !SLIDE smbullets  noprint
 
+# Let's repeat what we have learned
 ## Advanced Commands
 
    1. Switch to the master branch  
