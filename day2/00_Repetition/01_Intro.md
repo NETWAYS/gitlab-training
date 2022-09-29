@@ -26,7 +26,7 @@
 # Let's repeat what we have learned
 ## Advanced Commands
 
-   1. Switch to the master branch  
+   1. Switch to the main branch  
      1.1 Edit + commit the `README.md`  
      1.2 Cherry-pick (with the -x flag) the first commit from `feature/testdata`  
      1.3 check the git log  
