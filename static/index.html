@@ -1144,7 +1144,7 @@ email = michael.friedrich@netways.de</code></pre>
 
 <ul>
 <li>Start a working area (clone, init)</li>
-<li>Work on current changes (add, reset)</li>
+<li>Work on current changes (add, rm)</li>
 <li>Examine the history and state (status, log)</li>
 <li>Grow, mark and tweak the history (branch, checkout, commit, merge, rebase)</li>
 <li>Collaborate (fetch, pull, push)</li>
@@ -1168,10 +1168,10 @@ email = michael.friedrich@netways.de</code></pre>
    init       Create an empty Git repository or reinitialize an existing one
 
 work on the current change (see also: git help everyday)
-   add        Add file contents to the index
-   mv         Move or rename a file, a directory, or a symlink
-   reset      Reset current HEAD to the specified state
-   rm         Remove files from the working tree and from the index
+   add         Add file contents to the index
+   mv          Move or rename a file, a directory, or a symlink
+   rm --cached Reset current HEAD to the specified state
+   rm          Remove files from the working tree and from the index
 
 examine the history and state (see also: git help revisions)
    bisect     Use binary search to find the commit that introduced a bug
@@ -1379,7 +1379,7 @@ waiting for the commit. This applies to both, new files and also modified
 files.</p>
 
 <p>If you're using <code>-A</code> to add all files, you need to ensure that
-unwanted files are not added. Learn more about <code>git reset</code> in the next
+unwanted files are not added. Learn more about <code>git rm --cached</code> in the next
 slide to selectively unstage added changes.</p>
 
 <p><code>git mv</code> renames an existing file tracking the change for the commit. If you
@@ -1453,7 +1453,7 @@ in the <code>README.md</code> file.</p>
 
 <ul>
 <li>
-<code>git reset</code>
+<code>git rm --cached</code>
 
 <ul>
 <li>Reset files added to the staging index.</li>
@@ -1468,15 +1468,6 @@ in the <code>README.md</code> file.</p>
 <li>Note that file(s) will be visible in Git history, and can be restored from it.</li>
 </ul>
 </li>
-<li>
-<code>git rm --cached</code>
-
-<ul>
-<li>Alternative suggested by Git CLI for <code>git reset</code>
-</li>
-</ul>
-</li>
-</ul>
 
 
 
@@ -1489,7 +1480,7 @@ in the <code>README.md</code> file.</p>
 
 <hr>
 
-<p><code>git reset</code> resets files added to the staging index. You can also use it to
+<p><code>git rm --cached</code> resets files added to the staging index. You can also use it to
 reset commits from the history.</p>
 
 <p>This also is helpful when you need to add 95 out of 100 changes. First, use <code>git add -A</code>
@@ -1521,7 +1512,7 @@ and then selectively unstage the unwanted 5 changes.</p>
 <ul>
 <li>Change into <code>$HOME/training</code>
 </li>
-<li>Remove the previously added <code>README.md</code> file from the staging index with <code>git reset README.md</code>
+<li>Remove the previously added <code>README.md</code> file from the staging index with <code>git rm --cached README.md</code>
 </li>
 <li>Verify it with <code>git status</code> and explain what happened.</li>
 <li>Re-add the <code>README.md</code> and examine again with <code>git status</code>.</li>

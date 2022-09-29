@@ -17,7 +17,7 @@ waiting for the commit. This applies to both, new files and also modified
 files.
 
 If you're using `-A` to add all files, you need to ensure that
-unwanted files are not added. Learn more about `git reset` in the next
+unwanted files are not added. Learn more about `git rm --cached` in the next
 slide to selectively unstage added changes.
 
 `git mv` renames an existing file tracking the change for the commit. If you
@@ -90,20 +90,18 @@ in the `README.md` file.
 !SLIDE smbullets
 # Remove changes
 
-* `git reset`
+* `git rm --cached`
   * Reset files added to the staging index
   * Hint: This comes in handy with `git add -A` before
 * `git rm`
   * Remove the file(s) from working tree and Git repository
   * Note that file(s) will be visible in Git history, and can be restored from it
-* `git rm --cached`
-  * Alternative suggested by Git CLI for `git reset`
 
 ~~~SECTION:handouts~~~
 
 ****
 
-`git reset` resets files added to the staging index. You can also use it to
+`git rm --cached` resets files added to the staging index. You can also use it to
 reset commits from the history.
 
 This also is helpful when you need to add 95 out of 100 changes. First, use `git add -A`
@@ -122,7 +120,7 @@ and then selectively unstage the unwanted 5 changes.
  * Reset file from staging index
 * Steps:
  * Change into `$HOME/training`
- * Remove the previously added `README.md` file from the staging index with `git reset README.md`
+ * Remove the previously added `README.md` file from the staging index with `git rm --cached README.md`
  * Verify it with `git status` and explain what happened
  * Re-add the `README.md` and examine again with `git status`
 
@@ -146,7 +144,7 @@ and then selectively unstage the unwanted 5 changes.
 ****
 
 * Change into `$HOME/training`
-* Remove the previously added `README.md` file from the staging index with `git reset README.md`
+* Remove the previously added `README.md` file from the staging index with `git rm --cached README.md`
 * Verify it with `git status` and explain what happened
 * Re-add the `README.md` and examine again with `git status`
 
@@ -165,7 +163,7 @@ and then selectively unstage the unwanted 5 changes.
 
     $ git status
 
-    $ git reset README.md
+    $ git rm --cached README.md
 
     $ git status
 
