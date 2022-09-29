@@ -31,9 +31,9 @@
      1.3 check the git log  
 
    2. Create and commit `.gitignore` that ignores `testdata/`  
-     2.1 Check tig
-     2.2 Merge (with the --no-ff flag) the `feature/testdata` branch
-     2.3 Check tig again
+     2.1 Check tig  
+     2.2 Merge (with the --no-ff flag) the `feature/testdata` branch  
+     2.3 Check tig again  
 
 ~~~SECTION:handouts~~~
 
