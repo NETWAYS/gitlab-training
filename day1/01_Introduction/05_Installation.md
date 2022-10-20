@@ -176,9 +176,6 @@ The training notebooks come pre-provisioned with this `.bashrc` configuration:
             esac
     }
 
-# set git colored prompt based on uid
-myPrompt
-
 ~~~ENDSECTION~~~
 
 !SLIDE supplemental exercises
