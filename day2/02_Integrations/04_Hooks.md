@@ -43,7 +43,6 @@ https://docs.gitlab.com/ee/administration/server_hooks.html
   * Slack
 
 ~~~SECTION:handouts~~~
->>>>>>> 3b648e1 (Rename master to main)
 
 ****
 
