@@ -240,6 +240,8 @@ Those can be there just for testing things, or are not meant for the public doma
  * Go to your terminal
  * Use `git config credential.helper 'cache --timeout=99999'`
 
+This is only for the training. In reality use SSH authentication.
+
 ~~~SECTION:handouts~~~
 
 ****
@@ -260,7 +262,9 @@ Those can be there just for testing things, or are not meant for the public doma
 ****
 
 * Go to your terminal
-* Use `git config credential.helper 'cache --timeout=99999'` 
+* Use `git config credential.helper 'cache --timeout=99999'`
+
+This is only for the training. In reality use SSH authentication.
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
@@ -279,6 +283,7 @@ Those can be there just for testing things, or are not meant for the public doma
 This will make git save the credentials you enter the first time you
 interact with the server and use them for `99999` seconds before you need to re-enter them.
 
+This is only for the training. In reality use SSH authentication.
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Explore Project History
