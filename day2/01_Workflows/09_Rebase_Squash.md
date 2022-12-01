@@ -12,8 +12,6 @@ all commits into one commit.
     commit2
     commit3
 
-Ask the trainer to draw an image for better illustration and discussion.
-
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Rebase and squash commits
 
