@@ -1,3 +1,6 @@
+!SLIDE subsection
+# ~~~SECTION:MAJOR~~~ Further GitLab Features
+
 !SLIDE smbullets
 # Issue Boards
 
@@ -60,74 +63,6 @@ Follow the instructions and ask the trainer for help in case.
 
 
 !SLIDE smbullets
-# Web IDE
-
-* Write code in the browser
-* Commit changes
- * Which triggers CI pipelines to provide immediate feedback
-* Syntax highlighting
-* Auto-completion
-* Under heavy development, use 11.2+
-
-~~~SECTION:handouts~~~
-
-****
-
-https://about.gitlab.com/2018/06/15/introducing-gitlab-s-integrated-development-environment/
-https://blog.netways.de/2018/06/28/a-peek-into-gitlab-11-the-web-ide-and-auto-devops-with-kubernetes/
-
-
-~~~ENDSECTION~~~
-
-
-!SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Update README.md with the Web IDE
-
-* Objective:
- * Use the Web IDE to write documentation and verify CI results
-* Steps:
- * Navigate to `Repository > Files` and click `Web IDE`
- * Select `README.md` from the tree
- * Edit the file, use the live preview
- * Commit the changes, select `Commit to main branch`
- * Select the rocket icon on the right, check the pipeline status
-
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
-
-!SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Update README.md with the Web IDE
-
-## Update README.md with the Web IDE
-****
-
-* Use the Web IDE to write documentation and verify CI results
-
-## Steps:
-
-* Navigate to `Repository > Files` and click `Web IDE`
-* Select `README.md` from the tree
-* Edit the file, use the live preview
-* Commit the changes, select `Commit to main branch`
-* Select the rocket icon on the right, check the pipeline status
-
-!SLIDE supplemental solutions
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
-****
-
-## Update README.md with the Web IDE
-
-****
-
-Follow the instructions and ask the trainer for help in case.
-
-
-
-!SLIDE smbullets
 # Project Snippets
 
 * Keep notes outside of the repository
@@ -160,10 +95,12 @@ https://docs.gitlab.com/ce/user/project/wiki/
 ~~~ENDSECTION~~~
 
 !SLIDE smbullets
-# Project Graph
+# Container and Package Registry
 
-* History lines in a graph
-* Similar to tig and GUI clients
+* Every GitLab project can have its own space to store its Docker images
+* Image naming convention: `<registry URL>/<namespace>/<project>/<image>`
+  * `git.example.com/mynamespace/myproject:some-tag`
+* Package registry for a variety of supported package managers (npm, pypi, Ruby gems, etc.)
 
 ~~~SECTION:handouts~~~
 
@@ -171,4 +108,3 @@ https://docs.gitlab.com/ce/user/project/wiki/
 
 
 ~~~ENDSECTION~~~
-
