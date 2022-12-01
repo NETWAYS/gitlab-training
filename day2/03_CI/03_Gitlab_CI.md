@@ -2,6 +2,7 @@
 # GitLab CI
 
 * Build Pipelines
+  * Consists of one or more Jobs
 * Natively integrated into GitLab
 * Invokes GitLab Runners
 * Local container registry for runners
