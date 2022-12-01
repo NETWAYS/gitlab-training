@@ -3,7 +3,7 @@
 
 * `git add`
   * Add new files to Git (staged)
-  * Add modified file(s) from the working directory into the staging index
+  * Add modified file(s) from the working directory into the staging area
   * `-A` adds all files. Question: Where is this applicable?
 * `git mv`
   * Rename file(s) tracked by Git
@@ -12,7 +12,7 @@
 
 ****
 
-`git add` will add the file(s) and their content to the staging index
+`git add` will add the file(s) and their content to the staging area
 waiting for the commit. This applies to both, new files and also modified
 files.
 
@@ -34,7 +34,7 @@ manually move the file, you will need to rm and add it again.
 * Steps:
  * Change into `$HOME/training`
  * Create README.md and add `# GitLab Training Notes` as first line
- * Use `git add` to add README.md to the current change index
+ * Use `git add` to add README.md to the current change area
 * Next steps:
  * Verify the change with `git status`
 
@@ -53,7 +53,7 @@ in the `README.md` file.
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add a new README.md file
 
-## Objective: Add a new README.md file to the current change index
+## Objective: Add a new README.md file to the current change area
 ****
 
 * Add a new README.md file
@@ -64,7 +64,7 @@ in the `README.md` file.
 
 * Change into `$HOME/training`
 * Create README.md and add `# GitLab Training Notes` as first line
-* Use `git add` to add the file to the current change index
+* Use `git add` to add the file to the current staging area
 * Verify the change with `git status`
 
 
@@ -91,7 +91,7 @@ in the `README.md` file.
 # Remove changes
 
 * `git rm --cached`
-  * Reset files added to the staging index
+  * Reset files added to the staging area
   * Hint: This comes in handy with `git add -A` before
 * `git rm`
   * Remove the file(s) from working tree and Git repository
@@ -101,26 +101,26 @@ in the `README.md` file.
 
 ****
 
-`git rm --cached` resets files added to the staging index. You can also use it to
+`git rm --cached` resets files added to the staging area. You can also use it to
 reset commits from the history.
 
 This also is helpful when you need to add 95 out of 100 changes. First, use `git add -A`
 and then selectively unstage the unwanted 5 changes.
 
-`git rm` removes the file from the working tree and also from the git index.
+`git rm` removes the file from the working tree and also from the staging area.
 
 ~~~ENDSECTION~~~
 
 
 
 !SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Reset File from Staging Index
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Reset File from Staging Area
 
 * Objective:
- * Reset file from staging index
+ * Reset file from staging area
 * Steps:
  * Change into `$HOME/training`
- * Remove the previously added `README.md` file from the staging index with `git rm --cached README.md`
+ * Remove the previously added `README.md` file from the staging area with `git rm --cached README.md`
  * Verify it with `git status` and explain what happened
  * Re-add the `README.md` and examine again with `git status`
 
@@ -131,12 +131,12 @@ and then selectively unstage the unwanted 5 changes.
 ~~~ENDSECTION~~~
 
 !SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Reset File from Staging Index
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Reset File from Staging Area
 
-## Objective: Reset File from Staging Index
+## Objective: Reset File from Staging Area
 ****
 
-* Reset file from staging index
+* Reset file from staging area
 
 
 ## Steps:
@@ -144,7 +144,7 @@ and then selectively unstage the unwanted 5 changes.
 ****
 
 * Change into `$HOME/training`
-* Remove the previously added `README.md` file from the staging index with `git rm --cached README.md`
+* Remove the previously added `README.md` file from the staging area with `git rm --cached README.md`
 * Verify it with `git status` and explain what happened
 * Re-add the `README.md` and examine again with `git status`
 
@@ -152,7 +152,7 @@ and then selectively unstage the unwanted 5 changes.
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
 ****
 
-## Remove file from staging index.
+## Remove file from staging area.
 
 ****
 

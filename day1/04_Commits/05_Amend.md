@@ -2,7 +2,7 @@
 # Amend changes to commits
 
 * Change the commit message, e.g. typos or missing changes broke the build
-* Amend changes from staging
+* Amend changes from staging area
 * Helps if new files were added but not committed
 * `git commit --amend` changes the latest commit
  * Amending commits in Git history is possible, explained later with `git rebase`
@@ -26,8 +26,8 @@ problems in collaboration with others.
 * Steps:
  * Change into `$HOME/training`
  * Modify `README.md` and add docs about amend
- * Add `README.md` to the staging index and commit the change
- * Edit `README.md` again and add it to staging
+ * Add `README.md` to the staging area and commit the change
+ * Edit `README.md` again and add it to staging area
  * Use `git commit --amend README.md` and explain what happens
 * Bonus:
  * Adopt the commit message using `git commit --amend`
@@ -53,8 +53,8 @@ problems in collaboration with others.
 
 * Change into `$HOME/training`
 * Modify `README.md` and add docs about amend
-* Add `README.md` to the staging index and commit the change
-* Edit `README.md` again and add it to staging
+* Add `README.md` to the staging area and commit the change
+* Edit `README.md` again and add it to staging area
 * Use `git commit --amend README.md` to add the change to the previous commit
 
 ## Bonus:
@@ -78,7 +78,7 @@ problems in collaboration with others.
 
     `git commit --amend` adds missing changes to the previous commit.
 
-### Add README.md to the staging index and commit the change
+### Add README.md to the staging area and commit the change
 
     @@@ Sh
     $ git add README.md
