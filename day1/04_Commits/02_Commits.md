@@ -2,8 +2,8 @@
 # Work on Git History
 
 * `git commit`
- * Selected changes from the staging index
- * All changes (`-a`) not necessarily added to the staging index
+ * Selected changes from the staging area
+ * All changes (`-a`) not necessarily added to the staging area
 * Verbose mode shows changes compared to latest commit (`-v`)
 * Uses the configured editor (vim, nano, etc.)
  * `-m` allows for a short commit message without editor view
@@ -31,7 +31,7 @@ requiring you to add a commit message.
 * Steps:
  * Change into `$HOME/training`
  * Modify the `README.md` file and add more docs
- * Add the change to the changing index
+ * Add the change to the staging area
  * Commit the change to your Git history with `git commit -v README.md`
 * Next steps:
  * Use `git log` to verify the history
@@ -56,7 +56,7 @@ requiring you to add a commit message.
 
 * Change into `$HOME/training`
 * Modify the `README.md` file and add more docs
-* Add the change to the staging index
+* Add the change to the staging area
 * Commit the change to your Git history with `git commit -v README.md`
 
 ## Next steps:
