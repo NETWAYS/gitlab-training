@@ -56,6 +56,8 @@ also compare specific commits.
  * Use `git diff` to compare changes between specific revisions
  * Use `git blame .gitignore` to see the authors for the file
 
+Bonus: Try `git log` with the `--graph` and `--oneline` option.
+
 ~~~SECTION:handouts~~~
 
 ****
@@ -80,6 +82,8 @@ also compare specific commits.
 * Use `git show` to show specific commits (defaults to the latest)
 * Use `git diff` to compare changes between specific revisions
 * Use `git blame .gitignore` to see the authors for the file
+
+Bonus: Try `git log` with the `--graph` and `--oneline` option.
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
