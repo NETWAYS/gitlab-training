@@ -35,8 +35,8 @@
     {"section":"day2/01_Workflows"},
     {"section":"day2/02_Integrations"},
     {"section":"day2/03_CI"},
-    {"section":"day2/04_Gitlab_Hints"},
-    {"section":"day2/05_Git_Hints"},
+    {"section":"day2/04_Summary"},
+    {"section":"day2/05_Outlook"},
 
     {"section": "global/post"}
   ]

@@ -1,3 +1,7 @@
+!SLIDE subsection
+# ~~~SECTION:MAJOR~~~ Further Git Features
+
+
 !SLIDE smbullets
 # Debugging
 
