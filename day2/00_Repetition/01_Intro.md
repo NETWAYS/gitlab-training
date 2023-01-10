@@ -7,11 +7,11 @@
 ## Repository and Branches
 
    1. Use `cd` to leave the training repository  
-     1.1 Make a new directory "repitition"  
+     1.1 Make a new directory "repetition"
      1.2 Switch into the new directory  
      1.3 Initialise a new repo  
 
-   2. Add a new local name and email in `.gitconfig`  
+   2. Add a new local name and email in `.git/config`
      2.1 Add a `README.md` file and create a commit  
      2.2 Make changes in the `README.md` and amend the commit  
 
@@ -22,7 +22,7 @@
      3.4 Check the git status again  
 
    4. Commit all changes in `feature/testdata`  
-     4.1 Checkout the main branch again  
+     4.1 Checkout the `main` branch again
      4.2 Cherry-pick the newest commit from `feature/testdata`  
      4.3 Look at the history  
 
