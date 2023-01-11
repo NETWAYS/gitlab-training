@@ -1,10 +1,19 @@
 !SLIDE smbullets
 # Exclude files with .gitignore
 
-* Build directories from source code compilation (e.g. `debug`, `release`)
+* Build directories from source code compilation (e.g. `debug/`, `release/`)
 * Files generated at runtime (e.g. test results or stats)
+* Temporary files (e.g. `*.tmp`, `temp/`)
 * User specific IDE settings
-* Local Vagrant boxes and other temporary files
+
+Example:
+
+    cat .gitignore
+    release/
+    *.tmp
+    .idea
+
+Personal ignore patterns can be defined in `.git/info/exclude`
 
 ~~~SECTION:handouts~~~
 
