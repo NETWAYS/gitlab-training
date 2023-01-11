@@ -6,7 +6,7 @@
 * Main branch does not contain broken code
 * Feature branches can be rebased against stable main branch on demand
 
-<center><img src="../../_images/workflows/git_feature_branch_workflow_01.png" alt="Feature Branch Workflow"/></center>
+<center><img src="../../_images/mermaid/workflow-branches.mmd.png" alt="Feature Branch Workflow"/></center>
 
 !SLIDE smbullets printonly
 # Feature Branch Workflow
@@ -16,7 +16,7 @@
 * Main branch does not contain broken code
 * Feature branches can be rebased against stable main branch on demand
 
-<center><img src="../../_images/workflows/git_feature_branch_workflow_01.png" style="width:450px" alt="Feature Branch Workflow"/></center>
+<center><img src="../../_images/mermaid/workflow-branches.mmd.png" alt="Feature Branch Workflow" width="75%" /></center>
 
 ~~~SECTION:handouts~~~
 
@@ -199,9 +199,3 @@ The new branch `feature/docs-workflows` will be based on the `main` branch.
 
     @@@ Sh
     $ tig
-
-
-
-
-
-

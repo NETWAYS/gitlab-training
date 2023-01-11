@@ -50,6 +50,21 @@ Start the presentation with the default settings:
 
 More instructions [here](https://github.com/NETWAYS/training-global#using-docker-to-build-and-serve-the-slide-deck).
 
+## Render mermaid.js
+
+Many diagrams are rendered using [mermaid.js](https://mermaid.js.org/). The diagrams are stored in `*.mmd` files and are rendered using the mermaid-cli.
+
+```
+# Uses a containerized mermaid-cli to render all images
+bash render-images.sh
+```
+
+To render a single image:
+
+```
+docker run -u `id -u`:`id -g` --rm -v $(pwd)/_images/mermaid:/data minlag/mermaid-cli -e png -i "/data/image-to-render.mmd"
+```
+
 ### Environment
 
 The training material focuses on https://nws.netways.de where every attendee
@@ -68,5 +83,3 @@ The rendered content will be updated at least if we do a newer version of the ma
 will also be tagged on git.
 
 Material is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](http://creativecommons.org/licenses/by-nc-sa/4.0/).
-
-

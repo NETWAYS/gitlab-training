@@ -6,7 +6,7 @@
 * Create a `Pull Request` for original repo, CI runs automated tests
 * Developers/Maintainers review and merge PR, CI triggers deployment task
 
-<center><img src="../../_images/workflows/git_github_workflow.png" alt="GitHub Workflow"/></center>
+<center><img src="../../_images/mermaid/workflow-github-pr.mmd.png" alt="GitHub Workflow"/></center>
 
 !SLIDE smbullets printonly
 # Forking Workflow with GitHub
@@ -16,7 +16,7 @@
 * Create a `Pull Request` for original repo, CI runs automated tests
 * Developers/Maintainers review and merge PR, CI triggers deployment task
 
-<center><img src="../../_images/workflows/git_github_workflow.png" style="width:450px" alt="GitHub Workflow"/></center>
+<center><img src="../../_images/mermaid/workflow-github-pr.mmd.png" alt="GitHub Workflow" width="75%" /></center>
 
 ~~~SECTION:handouts~~~
 
@@ -64,5 +64,3 @@ Example:
 
 
 ~~~ENDSECTION~~~
-
-

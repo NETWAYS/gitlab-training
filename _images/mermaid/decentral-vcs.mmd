@@ -1,0 +1,12 @@
+graph RL
+    subgraph CentralVCS
+    C{{Version DB}}
+    end
+    C <--> A
+    C <--> B
+    subgraph ClientA
+    A{{VersionDB}}
+    end
+    subgraph ClientB
+    B{{VersionDB}}
+    end

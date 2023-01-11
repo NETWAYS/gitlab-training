@@ -6,7 +6,7 @@
 * Review and inline code comments
 * Project maintainer merges requests and manages issues/milestones/releases
 
-<center><img src="../../_images/workflows/git_gitlab_workflow.png" alt="Gitlab Workflow"/></center>
+<center><img src="../../_images/mermaid/workflow-gitlab-mr.mmd.png" alt="GitLab Workflow"/></center>
 
 !SLIDE smbullets printonly
 # GitLab Workflow
@@ -16,7 +16,7 @@
 * Review and inline code comments
 * Project maintainer merges requests and manages issues/milestones/releases
 
-<center><img src="../../_images/workflows/git_gitlab_workflow.png" style="width:450px" alt="Gitlab Workflow"/></center>
+<center><img src="../../_images/mermaid/workflow-gitlab-mr.mmd.png" alt="GitLab Workflow" width="75%" /></center>
 
 ~~~SECTION:handouts~~~
 
