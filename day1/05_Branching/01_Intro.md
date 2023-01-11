@@ -14,7 +14,7 @@ environment.
 * Main branch
   * Note: Historically it was `master`, many vendors are now moving to `main`
 * Develop a new feature in a dedicated branch
-* Put fixes into the main branch (production)
+* Merge fixes into the main branch (production)
 * Continue to work on the feature
 
 !SLIDE smbullets
@@ -26,6 +26,8 @@ environment.
  * List branches
 * `git checkout`
   * Switch between branches
+* `git merge`
+  * Incorporates commits from a branch into the current one
 
 ~~~SECTION:handouts~~~
 
@@ -34,6 +36,8 @@ environment.
 `git branch` allows you to list, create and delete branches.
 
 `git checkout` will switch between branches.
+
+`git merge` incorporate commits from one branch into the current one.
 
 ~~~ENDSECTION~~~
 
@@ -171,13 +175,54 @@ when working with branches quite often.
 
 
 !SLIDE smbullets
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Merge the branch
+
+* Objective:
+ * Use `git merge` to merge the new branch
+* Steps:
+ * Change into `$HOME/training`
+ * Modify the `README.md` and commit the change
+ * Switch to the main branch
+ * Use `git merge feature/docs` to merge the branch
+
+!SLIDE supplemental solutions
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
+****
+
+## Merge the branch
+
+****
+
+### Checkout the main branch
+
+    @@@ Sh
+    $ cd $HOME/training
+
+    $ git checkout feature/docs
+    $ vim README.md
+    $ git add README.md
+    $ git commit -m "Update README"
+
+### Merge the branch
+
+    @@@ Sh
+    $ git checkout main
+    $ git merge feature/docs
+
+~~~SECTION:handouts~~~
+
+****
+
+~~~ENDSECTION~~~
+
+
+!SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Delete the branch
 
 * Objective:
  * Delete the previously created branch
 * Steps:
  * Change into `$HOME/training`
- * Switch to the main branch
  * Use `git branch -d` to delete the selected branch
 * Bonus:
  * Try to delete the branch you are currently on
@@ -235,4 +280,3 @@ when working with branches quite often.
     @@@ Sh
     $ git checkout main
     $ git branch -d main
-
