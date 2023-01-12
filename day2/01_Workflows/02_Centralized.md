@@ -71,6 +71,31 @@ for integrating and sharing code changes between repositories.
 
 ****
 
+~~~ENDSECTION~~~
+
+!SLIDE smbullets
+# Centralized Workflow - Merge Conflicts
+
+* Conflicts arise when the same lines in a file have changed
+* When merging Git will try to automatically integrate new changes
+* Git cannot automatically determine what is correct
+  * `>>>` marks conflicts and show the differences
+  * `===` is the barrier between the two states
+
+Important: those markers need to be deleted from the files
+
+Example:
+
+    @@@Sh
+    <<<<<<< HEAD
+    What is on HEAD
+    =======
+    What is on other branch
+    >>>>>>> other-branch
+
+~~~SECTION:handouts~~~
+
+****
 
 ~~~ENDSECTION~~~
 
@@ -194,8 +219,6 @@ in a non-fast forward fashion is not allowed.
  * Resolve possible merge conflicts, add them
  * Continue with `git rebase --continue`, push rebased history
 
-Hint: `>>>` marks conflicts and show the differences on merge/rebase.
-
 ~~~SECTION:handouts~~~
 
 ****
@@ -273,6 +296,3 @@ Resolve the conflicts, add the file and continue the rebase.
 ### Push the changes to the remote repository
 
     $ git push origin main
-
-
-
