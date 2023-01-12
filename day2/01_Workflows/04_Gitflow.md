@@ -24,7 +24,7 @@
 * Main branch is always `stable` and in production
 * Develop branch for feature integration
 
-<center><img src="../../_images/mermaid/workflow-historical-branches.mmd.png" alt="Gitflow Workflow"/></center>
+<center><img src="../../_images/mermaid/workflow-historical-branches.mmd.png" alt="Gitflow Workflow" width="400px"/></center>
 
 !SLIDE smbullets printonly
 # Gitflow Workflow - Historical Branches
@@ -50,7 +50,7 @@
 * Feature branches use `develop` as their parent branch
 * Once completed, merged back to `develop`
 
-<center><img src="../../_images/mermaid/workflow-feature-branches.mmd.png" alt="Gitflow Workflow"/></center>
+<center><img src="../../_images/mermaid/workflow-feature-branches.mmd.png" alt="Gitflow Workflow" width="600px" /></center>
 
 !SLIDE smbullets printonly
 # Gitflow Workflow - Feature Branches
@@ -74,7 +74,7 @@
 * Enough features in `develop`: `release` branch based on `develop`
 * Ready to ship: merged to `main` and tagged with version
 
-<center><img src="../../_images/mermaid/workflow-release-branches.mmd.png" alt="Gitflow Workflow"/></center>
+<center><img src="../../_images/mermaid/workflow-release-branches.mmd.png" alt="Gitflow Workflow" width="580px" /></center>
 
 !SLIDE smbullets printonly
 # Gitflow Workflow - Release Branches
@@ -96,7 +96,7 @@
 * Fixes based on `main`
 * Merged to `main`, tagged and merged to `develop`
 
-<center><img src="../../_images/mermaid/workflow-maintenance-branch.mmd.png" style="width:800px" alt="Gitflow Workflow"/></center>
+<center><img src="../../_images/mermaid/workflow-maintenance-branch.mmd.png" alt="Gitflow Workflow" width="600px" /></center>
 
 !SLIDE smbullets printonly
 # Gitflow Workflow - Maintenance Branches
@@ -112,5 +112,3 @@
 
 
 ~~~ENDSECTION~~~
-
-
