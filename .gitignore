@@ -5,3 +5,4 @@ stats
 vm/*.ova
 vm/mnt
 trainer/
+static/
