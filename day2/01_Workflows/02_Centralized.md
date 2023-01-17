@@ -6,8 +6,6 @@
 * New commits are stored locally
 * Importing the remote repository's changes is optional
 
-<center><img src="../../_images/workflows/git_centralized_workflow_01.png" alt="Centralized Workflow"/></center>
-
 ~~~SECTION:handouts~~~
 
 ****
@@ -33,7 +31,11 @@ for integrating and sharing code changes between repositories.
 * Stored in central repository
 * Adds all local commits that are not in the central main branch
 
-<center><img src="../../_images/workflows/git_centralized_workflow_02.png" alt="Centralized Workflow"/></center>
+Local Repository
+<center><img src="../../_images/mermaid/workflow-local.mmd.png"></center>
+
+Remote Repository
+<center><img src="../../_images/mermaid/workflow-remote.mmd.png"></center>
 
 !SLIDE smbullets printonly
 # Centralized Workflow - Publish Changes
@@ -42,7 +44,11 @@ for integrating and sharing code changes between repositories.
 * Stored in central repository
 * Adds all local commits that are not in the central main branch
 
-<center><img src="../../_images/workflows/git_centralized_workflow_02.png" style="width:450px" alt="Centralized Workflow"/></center>
+Local Repository
+<center><img src="../../_images/mermaid/workflow-local.mmd.png" width="50%"></center>
+
+Remote Repository
+<center><img src="../../_images/mermaid/workflow-remote.mmd.png" width="50%"></center>
 
 ~~~SECTION:handouts~~~
 
@@ -57,7 +63,7 @@ for integrating and sharing code changes between repositories.
 * Central repository's commit history is important
 * If local commit history diverges, pushing changes is denied
 
-<center><img src="../../_images/workflows/git_centralized_workflow_03.png" alt="Centralized Workflow"/></center>
+<center><img src="../../_images/mermaid/workflow-diverge.mmd.png" alt="Diverged Remote"/></center>
 
 !SLIDE smbullets printonly
 # Centralized Workflow - Managing Conflicts
@@ -65,7 +71,8 @@ for integrating and sharing code changes between repositories.
 * Central repository's commit history is important
 * If local commit history diverges, pushing changes is denied
 
-<center><img src="../../_images/workflows/git_centralized_workflow_03.png" style="width:450px" alt="Centralized Workflow"/></center>
+<center><img src="../../_images/mermaid/workflow-diverge.mmd.png" alt="Diverged Remote" width="75%" /></center>
+
 
 ~~~SECTION:handouts~~~
 
@@ -186,19 +193,21 @@ in a non-fast forward fashion is not allowed.
 # Centralized Workflow - Managing Conflicts: Rebase History
 
 * Fetch the remote history
-* Rebase local changes on top of it
-* Linear history
+* Rebase local changes on top of it for a linear history
 
-<center><img src="../../_images/workflows/git_centralized_workflow_04_example.png" alt="Centralized Workflow"/></center>
+<center><img src="../../_images/mermaid/workflow-before-rebase.mmd.png" alt="Before Rebase"/></center>
+
+<center><img src="../../_images/mermaid/workflow-after-rebase.mmd.png" alt="After Rebase"/></center>
 
 !SLIDE smbullets printonly
 # Centralized Workflow - Managing Conflicts: Rebase History
 
 * Fetch the remote history
-* Rebase local changes on top of it
-* Linear history
+* Rebase local changes on top of it for a linear history
 
-<center><img src="../../_images/workflows/git_centralized_workflow_04_example.png" style="width:450px" alt="Centralized Workflow"/></center>
+<center><img src="../../_images/mermaid/workflow-before-rebase.mmd.png" alt="Before Rebase" width="75%" /></center>
+
+<center><img src="../../_images/mermaid/workflow-after-rebase.mmd.png" alt="After Rebase"width="75%" /></center>
 
 ~~~SECTION:handouts~~~
 

@@ -1,0 +1,53 @@
+%%{init: { 'theme': 'default' , 'themeVariables': {
+          'git0': '#ff0000',
+          'git1': '#d0661c',
+          'git2': '#00ff00',
+          'git3': '#7171ff',
+          'git4': '#ff00ff',
+          'git5': '#00ffff',
+          'git6': '#ffff00',
+          'git7': '#ff00ff',
+          'git8': '#00ffff'
+} } }%%
+gitGraph
+    commit tag:"v0.1"
+    branch hotfix
+    checkout hotfix
+    commit
+    branch develop
+    checkout develop
+    commit
+    branch featureB
+    checkout featureB
+    commit
+    checkout main
+    checkout hotfix
+    commit
+    checkout develop
+    commit
+    checkout featureB
+    commit
+    checkout main
+    merge hotfix  tag:"v0.2"
+    checkout featureB
+    commit
+    checkout develop
+    branch featureA
+    commit
+    checkout develop
+    merge hotfix
+    checkout featureA
+    commit
+    checkout featureB
+    commit
+    checkout develop
+    merge featureA
+    branch release
+    checkout release
+    commit
+    checkout main
+    commit tag:"v1.0"
+    checkout release
+    merge main
+    checkout develop
+    merge release

@@ -21,7 +21,7 @@
   * Set of snapshots of a mini-filesystem
   * No change - link to the previous identical stored file
 
-<center><img src="../../_images/introduction/git_introduction_basics_01_changes.png" style="width:526px;height:305px;" alt="Basic Changes"/></center>
+<center><img src="../../_images/mermaid/deltas.mmd.png" alt="Detla Changes"/></center>
 
 !SLIDE smbullets printonly
 # Snapshots and Differences
@@ -31,7 +31,7 @@
   * Set of snapshots of a mini-filesystem
   * No change - link to the previous identical stored file
 
-<center><img src="../../_images/introduction/git_introduction_basics_01_changes.png" style="width:450px" alt="Basic Changes"/></center>
+<center><img src="../../_images/mermaid/deltas.mmd.png" width="70%" alt="Detla Changes"/></center>
 
 
 !SLIDE smbullets
@@ -62,15 +62,23 @@ Example:
 
 ~~~ENDSECTION~~~
 
-!SLIDE smbullets
+!SLIDE smbullets noprint
 # The three states
 
 * Working directory ("modified")
 * Staging area ("staged")
 * Git directory ("committed")
 
-<center><img src="../../_images/introduction/git_introduction_basics_03_three_states.png" alt="Basics 3 States"/></center>
+<center><img src="../../_images/mermaid/git-stages.mmd.png" alt="Git Stages"/></center>
 
+!SLIDE smbullets printonly
+# The three states
+
+* Working directory ("modified")
+* Staging area ("staged")
+* Git directory ("committed")
+
+<center><img src="../../_images/mermaid/git-stages.mmd.png" width="75%" alt="Git Stages"/></center>
 
 ~~~SECTION:notes~~~
 
