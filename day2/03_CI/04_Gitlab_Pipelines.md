@@ -15,7 +15,9 @@ Code => Build => Test => Deploy
 
 ****
 
-Reference: https://docs.gitlab.com/ce/ci/pipelines.html
+Reference:
+
+https://docs.gitlab.com/ee/ci/pipelines/
 
 ~~~ENDSECTION~~~
 
@@ -174,8 +176,6 @@ This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious a
 ~~~SECTION:handouts~~~
 
 ****
-
-Reference: https://docs.gitlab.com/ce/ci/pipelines.html
 
 ~~~ENDSECTION~~~
 

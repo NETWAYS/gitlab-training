@@ -49,7 +49,7 @@ Example:
 
 ****
 
-# Forking Workflow - Keep in Sync
+**Forking Workflow - Keep in Sync**
 
 * Pull changes from `upstream` HEAD to own repository main branch to sync development
 * Remote `HEAD` is the default branch for this repository, usually `main`

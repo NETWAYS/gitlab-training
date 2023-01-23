@@ -25,8 +25,7 @@ there are open source and enterprise hosting options available.
 
 NETWAYS also provides GitLab hosting services:
 
-* https://www.netways.de/managed_hosting/gitlab_ce_hosting/
-* https://nws.netways.de/products/gitlab-ce
+* https://nws.netways.de/de/apps/gitlab/
 
 ~~~ENDSECTION~~~
 !SLIDE smbullets

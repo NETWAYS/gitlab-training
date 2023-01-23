@@ -12,7 +12,7 @@
 
 !SLIDE smbullets
 # Training Virtual Machine / Notebook
-* Base OS is CentOS 7
+* Base OS is CentOS
   * Password-less sudo is configured
   * Git and terminal integrations are installed
 
@@ -42,7 +42,7 @@
 
 Click on the link in your email to join the session
 
-* Operating system is CentOS 7
+* Operating system is CentOS
 * We use tmux to join your session and help you
 * Change the appearance of the terminal as you like
 

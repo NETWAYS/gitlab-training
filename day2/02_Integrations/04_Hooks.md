@@ -56,7 +56,8 @@ Official GitLab Slack integration: https://gitlab.com/gitlab-org/gitlab-ce/blob/
 
 Both Rocket.Chat and GitLab are available at NWS:
 
-* https://nws.netways.de/products/gitlab-ce
-* https://nws.netways.de/products/rocket-chat
+https://nws.netways.de/products/gitlab-ce
+
+https://nws.netways.de/products/rocket-chat
 
 ~~~ENDSECTION~~~
