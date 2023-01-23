@@ -12,9 +12,11 @@
 
 ****
 
-Documentation: https://docs.gitlab.com/ce/ci/README.html
+References:
 
-Reference example (German): https://blog.netways.de/2017/05/03/gitlab-ce-continuous-integration-jobs-and-runners/
+https://docs.gitlab.com/ce/ci/README.html
+
+https://blog.netways.de/2017/05/03/gitlab-ce-continuous-integration-jobs-and-runners/  (German)
 
 ~~~ENDSECTION~~~
 
@@ -32,9 +34,9 @@ Reference example (German): https://blog.netways.de/2017/05/03/gitlab-ce-continu
 
 ****
 
-Documentation references:
+References:
 
-https://docs.gitlab.com/ce/user/project/container_registry.html
+https://docs.gitlab.com/ee/user/packages/container_registry/
 
 ~~~ENDSECTION~~~
 
@@ -53,7 +55,9 @@ https://docs.gitlab.com/ce/user/project/container_registry.html
 
 ****
 
-Documentation reference: https://docs.gitlab.com/runner/
+Reference:
+
+https://docs.gitlab.com/runner/
 
 ~~~ENDSECTION~~~
 
@@ -69,9 +73,10 @@ Documentation reference: https://docs.gitlab.com/runner/
 
 ****
 
-Documentation References:
+References:
 
 https://docs.gitlab.com/runner/install/linux-repository.html
+
 https://docs.gitlab.com/runner/register/index.html
 
 ~~~ENDSECTION~~~
@@ -88,17 +93,18 @@ https://docs.gitlab.com/runner/register/index.html
 
 ****
 
-   @@@ Sh 
-   $ vim /etc/gitlab/gitlab.rb
+Configuration:
 
-   registry_external_url 'https://gitlab.example.com:5000'
+    @@@Sh
+    $ vim /etc/gitlab/gitlab.rb
+    registry_external_url 'https://gitlab.example.com:5000'
 
-   $ gitlab-ctl reconfigure
+    $ gitlab-ctl reconfigure
 
-Documentation References:
+References:
 
-https://docs.gitlab.com/ce/user/project/container_registry.html
-https://docs.gitlab.com/ce/administration/container_registry.html
+https://docs.gitlab.com/ee/user/packages/container_registry/
+
 ~~~ENDSECTION~~~
 
 
@@ -116,12 +122,6 @@ https://docs.gitlab.com/ce/administration/container_registry.html
 
 ****
 
-Documentation References:
-
-https://docs.docker.com
-https://podman.io/
-
-
 ~~~ENDSECTION~~~
 
 !SLIDE smbullets noprint
@@ -138,10 +138,12 @@ https://podman.io/
 
 ****
 
-Documentation References:
+References:
 
 https://docs.docker.com
+
 https://podman.io/
+
 https://docs.gitlab.com/runner/install/docker.html
 
 ~~~ENDSECTION~~~
@@ -163,9 +165,9 @@ https://docs.gitlab.com/runner/install/docker.html
 
 ****
 
-Reference: https://gitlab.com/gitlab-org/gitlab-runner/blob/master/docs/install/linux-repository.md
+Reference:
 
-
+https://docs.gitlab.com/runner/install/
 
 ~~~ENDSECTION~~~
 
@@ -301,7 +303,7 @@ Example:
 
 ****
 
-Documentation References:
+References:
 
 https://about.gitlab.com/2016/03/01/gitlab-runner-with-docker/
 
@@ -538,7 +540,7 @@ Example:
     all_tests:
       script:
         - exit 0
-        
+
 ### Commit and push the changes
 
     @@@ Sh
@@ -709,7 +711,7 @@ This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious a
     # CI Runners
 
     ....
-    
+
 ### Download HTML artifacts
 
 Navigate into the repository > `CI / CD` > Jobs > `#...`  and choose `Job Artifacts`.
@@ -722,21 +724,15 @@ This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious a
 !SLIDE smbullets
 # GitLab CI: .gitlab-ci.yml Templates
 
-* Repository: https://gitlab.com/gitlab-org/gitlab-ce/tree/master/lib/gitlab/ci/templates
  * PHP
  * C++
  * Go
  * Python
 
-~~~SECTION:handouts~~~
+Examples:
 
-****
-
-Documentation References:
-
-https://docs.gitlab.com/ce/ci/README.html#examples
-
-https://gitlab.com/gitlab-org/gitlab-ci-yml
+* https://gitlab.com/gitlab-org/gitlab-ce/tree/master/lib/gitlab/ci/templates
+* https://docs.gitlab.com/ce/ci/README.html#examples
 
 
 ~~~ENDSECTION~~~

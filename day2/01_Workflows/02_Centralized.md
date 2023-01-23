@@ -233,15 +233,13 @@ in a non-fast forward fashion is not allowed.
 ****
 Instead of `git fetch` and `git rebase` you can also use
 the `git pull` command with the additional `--rebase` flag.
-This helps if you are familiar with SVN and `svn update`.
 
 If you forget the `--rebase` flag it will still work
 but generate merge commits. This will merge your commits
 in historical order but not rebase them on top of the existing
 history.
 
-For using a centralized workflow it is better to use `rebase`
-instead of generating a merge commit.
+When using a centralized workflow it is generally better to use `rebase`.
 
 ~~~ENDSECTION~~~
 

@@ -12,9 +12,13 @@
 
 ****
 
-* Eclipse egit: http://www.eclipse.org/egit/
-* vim-fugitive: https://github.com/tpope/vim-fugitive
-* emacs-magit: https://magit.vc/
+References:
+
+Eclipse egit: http://www.eclipse.org/egit/
+
+vim-fugitive: https://github.com/tpope/vim-fugitive
+
+emacs-magit: https://magit.vc/
 
 ~~~ENDSECTION~~~
 
@@ -40,7 +44,9 @@
 
 ****
 
-Reference: https://www.jetbrains.com/help/idea/using-git-integration.html
+Reference:
+
+https://www.jetbrains.com/help/idea/using-git-integration.html
 
 ~~~ENDSECTION~~~
 
@@ -67,8 +73,9 @@ Reference: https://www.jetbrains.com/help/idea/using-git-integration.html
 
 References:
 
-* https://docs.microsoft.com/en-us/vsts/git/gitquickstart?tabs=visual-studio
-* https://visualstudio.github.com/
+https://docs.microsoft.com/en-us/vsts/git/gitquickstart?tabs=visual-studio
+
+https://visualstudio.github.com/
 
 
 ~~~ENDSECTION~~~

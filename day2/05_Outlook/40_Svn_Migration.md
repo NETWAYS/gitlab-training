@@ -7,11 +7,4 @@
  * Run `svn2git` with `authors.txt`
 * No history, copy source and start fresh
 
-~~~SECTION:handouts~~~
-
-****
-
 https://docs.gitlab.com/ce/user/project/import/svn.html
-
-
-~~~ENDSECTION~~~
