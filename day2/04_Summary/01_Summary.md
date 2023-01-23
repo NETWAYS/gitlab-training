@@ -68,6 +68,8 @@
 * Creating Pipelines with Jobs
  * `.gitlab-ci.yml`
 
+**This concludes the outlined training content.**
+
 ~~~SECTION:handouts~~~
 
 ****
