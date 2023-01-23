@@ -83,8 +83,8 @@ Remote Repository
 !SLIDE smbullets
 # Centralized Workflow - Merge Conflicts
 
-* Conflicts arise when the same lines in a file have changed
 * When merging Git will try to automatically integrate new changes
+* Conflicts arise when the same lines in a file have changed
 * Git cannot automatically determine what is correct
   * `>>>` marks conflicts and show the differences
   * `===` is the barrier between the two states
@@ -114,7 +114,7 @@ Example:
 * Steps:
  * Open the GitLab project `training`
  * Open `README.md` using the Gitlab Web IDE
- * Edit `README.md`, add `This change is from my colleague.`
+ * Edit `README.md`, add `This change is on the remote.`
  * Stage & commit the change to main
 * Local steps:
  * Change into `training` directory on your local machine

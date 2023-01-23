@@ -32,7 +32,7 @@ in GitLab.
 
 ****
 
-# SSH Keys
+**SSH Keys**
 
 Generate a new SSH key pair on your client.
 

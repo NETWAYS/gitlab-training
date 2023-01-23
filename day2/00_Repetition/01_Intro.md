@@ -1,4 +1,4 @@
-!SLIDE subsection noprint
+!SLIDE subsectionnonum noprint
 # ~~~SECTION:MAJOR~~~ Repetition
 
 
