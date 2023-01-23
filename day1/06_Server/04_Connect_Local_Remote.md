@@ -28,8 +28,6 @@ in GitLab.
 * New GitLab repository for this user
 * Configure local repository for the remote server
 
-
-
 ~~~SECTION:handouts~~~
 
 ****
@@ -136,15 +134,25 @@ the changes to the Git repository.
 * Steps
  * Open the project in GitLab and extract the `HTTPS` clone URL
  * Navigate into your local repository in `$HOME/training`
- * Use `git remote add origin <remoteurl>`
- * Push your local branch with `--set-upstream` (short: `-u`)
+ * Use `git remote add origin <https-remote-url>`
+ * Push local branches with `git push -u origin --all`
+
 * Bonus
  * Set default push method to `simple`
- * Explain what `git push -u origin --all` does suggested by GitLab
 
 ~~~SECTION:handouts~~~
 
 ****
+
+There are various `push` methods:
+
+* `simple` - pushes the current branch with the same name on the remote
+* `current` - push the current branch to update a branch with the same name on the receiving end
+* `nothing` - do not push anything (error out) unless a refspec is given
+
+References:
+
+https://git-scm.com/docs/git-config/#Documentation/git-config.txt-pushdefault
 
 
 ~~~ENDSECTION~~~
@@ -163,16 +171,14 @@ the changes to the Git repository.
 
 * Open the project in GitLab and extract the `HTTPS` clone URL
 * Navigate into your local repository
-* Use `git remote add origin <remoteurl>`
-* Push your local branch
-* Use `--set-upstream` (short: `-u`) to enable the local branch tracking the remote repository 
+ * Use `git remote add origin <https-remote-url>`
+* Push local branches with `git push -u origin --all`
 
 ## Bonus:
 
 ****
 
 * Configure the default push method to `simple`
-* Explain what `git push -u origin --all` does suggested by GitLab
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
@@ -198,7 +204,9 @@ This will not work since the local branch does not follow the remote branch.
 Use `--set-upstream` as proposed by the cli output. Short form is `-u`.
 
     @@@ Sh
-    $ git push --set-upstream origin main
+    $ cd $HOME/training.git
+    $ git remote add origin https://[...].nws.netways.de/root/training.git
+    $ git push -u origin --all
 
 ### Set default push method
 
