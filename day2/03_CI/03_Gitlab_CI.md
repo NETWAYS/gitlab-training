@@ -185,6 +185,8 @@ https://docs.gitlab.com/runner/install/
 * Inspect the token
 * Check existing runners
 
+Note: Runners can be defined per Instance, Group or Project.
+
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
