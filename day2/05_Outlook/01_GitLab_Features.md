@@ -2,109 +2,59 @@
 # ~~~SECTION:MAJOR~~~ Further GitLab Features
 
 !SLIDE smbullets
-# Issue Boards
+# Project Issue Boards
 
-* Plan, organize, visualize workflows for releases
+The issue board is a software project management tool used to plan, organize, and visualize a workflow for a feature or product release.
+
 * Kanban or Scrum board
-* Filter by label
-* Drag&drop issues
-
-~~~SECTION:handouts~~~
-
-****
-
-
+* Filter by labels
+* Drag & drop issues
 
 ~~~ENDSECTION~~~
-
-!SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Use the Issue Board
-
-* Objective:
- * Use the Issue Board
-* Steps:
- * Navigate to `Issues` and create a new issue `Learn about the issue board`
- * Navigate to `Issues > Boards`
- * Choose to create `To Do/Doing` labels
- * Drag the issue from `Backlog` to `To Do` to `Doing` to `Closed`
- * Explain the changed labels and workflow
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
-
-!SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Use the Issue Board
-
-## Use the Issue Board
-****
-
-* Use the Issue Board
-
-## Steps:
-
-* Navigate to `Issues` and create a new issue `Learn about the issue board`
-* Navigate to `Issues > Board`
-* Choose to create `To Do/Doing` labels
-* Drag the issue from `Open` to `To Do` to `Doing` to `Closed`
-* Explain the changed labels and workflow
-
-!SLIDE supplemental solutions
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
-****
-
-## Use the Issue Board
-
-****
-
-Follow the instructions and ask the trainer for help in case.
-
 
 !SLIDE smbullets
 # Project Snippets
 
-* Keep notes outside of the repository
-* Code snippets
-* URL can be shared
+With GitLab snippets, you can store and share bits of code and text with other users.
 
+* Snippet visibility can differ from the project's visibility
+* Are version controlled and have syntax highlighting
+* URL is stable and can be shared
 
-~~~SECTION:handouts~~~
+Example use cases:
 
-****
-
-https://docs.gitlab.com/ce/user/snippets.html
+* Guides for less code-savvy people
+* Documentation for hard to automate but regular tasks
 
 ~~~ENDSECTION~~~
 
 !SLIDE smbullets
 # Project Wiki
 
+Every wiki is a separate Git repository, within the project.
+
+* Support Markdown, Rdoc, AsciiDoc, and Org for content
+* Hierarchical links possible
+* Mermaid diagrams and charts can be included
+
+Example use cases:
+
 * Additional documentation for the project
-* Supports Markdown (default), RDoc, Asciidoc
-* Live preview
-
-
-~~~SECTION:handouts~~~
-
-****
-
-https://docs.gitlab.com/ce/user/project/wiki/
 
 ~~~ENDSECTION~~~
 
 !SLIDE smbullets
 # Container and Package Registry
 
-* Every GitLab project can have its own space to store its Docker images
+Every GitLab project can have its own space to store Container Images and Packages.
+
 * Image naming convention: `<registry URL>/<namespace>/<project>/<image>`
   * `git.example.com/mynamespace/myproject:some-tag`
 * Package registry for a variety of supported package managers (npm, pypi, Ruby gems, etc.)
 
-~~~SECTION:handouts~~~
+Example use cases:
 
-****
-
+* Store artifacts (Images/Packages) right next to the code
+* Independent and interal registry without download rate limits
 
 ~~~ENDSECTION~~~
