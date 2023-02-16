@@ -34,34 +34,6 @@
 <center><img src="../../_images/mermaid/deltas.mmd.png" width="70%" alt="Detla Changes"/></center>
 
 
-!SLIDE smbullets
-# Work locally
-
-* No network latency involved as with other VCS systems
-* Local repository clone, fast operations
- * Browse the history
- * Show differences between specific branches
-* Work offline and push changes later
-
-!SLIDE smbullets
-# Integrity
-
-* Everything has a checksum (SHA)
-* No changes possible without Git knowing about them
-* Checksums are used everywhere
-* Revert changes and even restore deleted files
-
-Example:
-
-    7f0b824ba55e1fd4ffc5c461df0a0f48a94195cc
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
-
 !SLIDE smbullets noprint
 # The three states
 
@@ -155,3 +127,31 @@ is copied when you clone a repository from another computer.
 
 ~~~ENDSECTION~~~
 
+
+!SLIDE smbullets
+# The Git Workfow is local
+
+* No network latency involved as with other VCS systems
+* Local repository clone, fast operations
+ * Browse the history
+ * Show differences between specific branches
+* Work offline and push changes later
+
+!SLIDE smbullets
+# Git Object Integrity
+
+* Everything has a checksum (SHA)
+* No changes possible without Git knowing about them
+* Checksums are used everywhere
+* Revert changes and even restore deleted files
+
+Example:
+
+    7f0b824ba55e1fd4ffc5c461df0a0f48a94195cc
+
+~~~SECTION:handouts~~~
+
+****
+
+
+~~~ENDSECTION~~~
