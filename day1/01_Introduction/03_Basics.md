@@ -1,9 +1,9 @@
 !SLIDE smbullets
-# Git Basics
+# When coming from another VCS
 
-* Learn Git, forget about other VCS systems (SVN, etc.)
-* Git interface is similar to existing VCS
-* ... but Git behaves differently
+* If you have knowledge about other VCS - try to put it aside
+* A lot of commands sound similar but work differently in git
+  * A `git commit` is not the same as an `svn commit`
 
 ~~~SECTION:handouts~~~
 
