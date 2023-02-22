@@ -26,11 +26,6 @@ We have developed our training material based on years of experience in
 development, professional services and training. To support our work,
 please join the official training sessions and get your ticket at [NETWAYS](https://www.netways.de/trainings/gitlab/).
 
-## Online Material
-
-In addition to the sources you can find the rendered material on
-[netways.github.io](https://netways.github.io/gitlab-training)
-
 * [Handouts](https://github.com/NETWAYS/gitlab-training/releases)
 
 ## Provide your training
@@ -79,7 +74,4 @@ Patches to fix mistakes or add optional content are always appreciated. If you w
 changes on the default content of the training we are open for suggestions but keep in mind
 that the training is intended for a two day hands-on training.
 
-The rendered content will be updated at least if we do a newer version of the material which
-will also be tagged on git.
-
-Material is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+The material is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/).
