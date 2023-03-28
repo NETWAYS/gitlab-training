@@ -1,25 +1,13 @@
 !SLIDE smbullets
 # Git Server Installation
 
-This training focuses on a pre-installed GitLab instance.
+This training focuses on working with a GitLab instances.
 
-Each user gets access to NWS - https://nws.netways.de
-and a GitLab CE app.
+Manual installation instructions are out of scope. It is recommended to use:
 
-GitLab supports working with
-
-* SSH
-* HTTPS
-
-Manual installation instructions are provided in the
-handout.
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
-
+* The "Omnibus Installation" package
+* The GitLab Container Images
+* A managed cloud hosting service
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Create GitLab app in NWS
@@ -34,13 +22,6 @@ handout.
   * Deploy the app
   * Choose Access and Live View and set a secure password for the `root` user
   * Login
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Create GitLab Project
@@ -59,7 +40,6 @@ handout.
 * Deploy the app
 * Choose Access and Live View and set a secure password for the `root` user
 * Login
-
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution

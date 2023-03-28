@@ -1,41 +1,27 @@
-!SLIDE smbullets
+!SLIDE
 # Good Commits
 
-* Selectively add changes for commit (do not commit everything)
- * `git add` for all changes in a file
- * `git add -p` for interactive selection of changes in a file
-* `git commit <file1> <file2>`
-* Enable the verbose mode `-v` to show the differences below the editor
- * Write a short summary based on the visible changes
+Make it easy for you and others to understand the changes over time.
 
-~~~SECTION:handouts~~~
+* Selectively add changes for a commit (do not commit everything)
+* Write a short summary based on the changes (what and why)
+* You can add references to existing commits or ticket ids
 
-****
+Over time, commits should tell a story of the history
+of your repository and how it came to be the way that it currently is.
 
+!SLIDE
+# Good Commits Messages
 
-~~~ENDSECTION~~~
-
-!SLIDE smbullets
-# Commit Message Overview
-
-* Pick a short telling subject (max. 80-120 characters)
-* Add a new line
-* Add a body text explaining the issue (max. 80-120 characters in a line)
-* Optional: Add external reference markers, e.g. for ticket systems
+* The subject line is the most important
+* Describe why a change is being made in the body
+* Do not assume the reviewer understands what the original problem was
+* Do not assume the code is self-evident
 
 Example:
 
-    A short subject for the commit line
-    <newline>
-    Some body text explaining the issue.
-    80-120 characters max width.
-    <newline>
-    refs #<ticketid>
+    Fix race condition config generation
 
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
-
+    Due to a missing lock on the Foo Object
+    there was a race condition, this caused
+    the config generation to fail sometimes
