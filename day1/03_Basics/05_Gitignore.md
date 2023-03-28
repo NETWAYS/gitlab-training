@@ -1,17 +1,19 @@
-!SLIDE smbullets
+!SLIDE
 # Exclude files with .gitignore
 
-* Build directories from source code compilation (e.g. `debug/`, `release/`)
+The `.gitignore` file can used to ignore files from being tracked by Git. Each line specifies a pattern to ignore.
+
+* Build directories for compilation (e.g. `debug/`, `release/`)
 * Files generated at runtime (e.g. test results or stats)
 * Temporary files (e.g. `*.tmp`, `temp/`)
-* User specific IDE settings
+* User specific settings or secrets
 
 Example:
 
     cat .gitignore
     release/
     *.tmp
-    .idea
+    .env
 
 Personal ignore patterns can be defined in `.git/info/exclude`
 
@@ -36,12 +38,11 @@ and not a global file, this will also work
 
 ~~~ENDSECTION~~~
 
-
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add .gitignore file and exclude files/directories
 
 * Objective:
- * Add .gitignore file and exclude files/directories
+ * Add a .gitignore file and exclude files/directories
 * Steps:
  * Change into `$HOME/training`
  * Create a file `generated.tmp`
@@ -49,12 +50,6 @@ and not a global file, this will also work
  * Examine the state with `git status`
  * Exclude them in a .gitignore file
  * Examine the state with `git status`
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add .gitignore file and exclude files/directories
@@ -98,10 +93,10 @@ for simulating unwanted files in the working directory.
     @@@ Sh
     $ git status
     On branch main
-    
+
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
-    
+
            	debug/
            	generated.tmp
 
@@ -121,13 +116,12 @@ trailing slash).
     @@@ Sh
     $ git status
     On branch main
-    
+
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
-    
+
            	.gitignore
 
 
 We'll learn how to add and commit the untracked `.gitignore` file
 in later examples.
-

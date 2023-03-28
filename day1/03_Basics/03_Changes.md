@@ -2,11 +2,11 @@
 # Add current changes
 
 * `git add`
-  * Add new files to Git (staged)
-  * Add modified file(s) from the working directory into the staging area
+  * Adds new files from the working directory to the staging area
+  * Adds modified files to the staging area
   * `-A` adds all files. Question: Where is this applicable?
 * `git mv`
-  * Rename file(s) tracked by Git
+  * Renames files tracked by Git
 
 ~~~SECTION:handouts~~~
 
@@ -25,8 +25,7 @@ manually move the file, you will need to rm and add it again.
 
 ~~~ENDSECTION~~~
 
-
-!SLIDE smbullets small
+!SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add a new README.md file
 
 * Objective:
@@ -34,21 +33,13 @@ manually move the file, you will need to rm and add it again.
 * Steps:
  * Change into `$HOME/training`
  * Create README.md and add `# GitLab Training Notes` as first line
- * Use `git add` to add README.md to the current change area
+ * Use `git add` to add README.md to the staging area
 * Next steps:
  * Verify the change with `git status`
 
-Best practice is to have a README.md file written in Markdown
-in every project. This gets rendered by GitHub/GitLab in readable HTML.
+Hint: Markdown is a markup language that is rendered by GitLab as HTML.
 
-During this training we will learn many new things. Keep notes
-in the `README.md` file.
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
+You can keep notes from the training in the `README.md` file.
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add a new README.md file
@@ -86,16 +77,15 @@ in the `README.md` file.
 
 ~~~ENDSECTION~~~
 
-
 !SLIDE smbullets
 # Remove changes
 
 * `git rm --cached`
-  * Reset files added to the staging area
+  * Removes files from to the staging area
   * Hint: This comes in handy with `git add -A` before
 * `git rm`
-  * Remove the file(s) from working tree and Git repository
-  * Note that file(s) will be visible in Git history, and can be restored from it
+  * Removes the files from working tree and Git repository
+  * Note: files will be visible in the Git history, and can be restored from it
 
 ~~~SECTION:handouts~~~
 
@@ -111,24 +101,16 @@ and then selectively unstage the unwanted 5 changes.
 
 ~~~ENDSECTION~~~
 
-
-
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Reset File from Staging Area
 
 * Objective:
- * Reset file from staging area
+ * Remove a file from staging area
 * Steps:
  * Change into `$HOME/training`
- * Remove the previously added `README.md` file from the staging area with `git rm --cached README.md`
+ * Remove the previously added README.md file from the staging area with `git rm --cached README.md`
  * Verify it with `git status` and explain what happened
- * Re-add the `README.md` and examine again with `git status`
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
+ * Re-add the README.md and examine again with `git status`
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Reset File from Staging Area
@@ -136,8 +118,7 @@ and then selectively unstage the unwanted 5 changes.
 ## Objective: Reset File from Staging Area
 ****
 
-* Reset file from staging area
-
+* Remove a file from staging area
 
 ## Steps:
 
@@ -170,4 +151,3 @@ and then selectively unstage the unwanted 5 changes.
     $ git add README.md
 
     $ git status
-

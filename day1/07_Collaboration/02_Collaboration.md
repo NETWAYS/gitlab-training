@@ -2,18 +2,17 @@
 # Collaboration: Put History
 
 * `git push`
-  * Update remote references and push local history to remote repository
-  * This pushes source code changes and commits
+  * Pushes the local history to the remote repository
   * Halts if the remote history diverged from your local history
 * `git remote`
-  * Configure/list remote repository URLs (default `origin`)
+  * Adds remote repository URLs (default `origin`)
+  * Lists and removes remote repository URLs
 * `git branch -r`
-  * List remote branches, prefixed with the remote name, e.g. `origin/main`
+  * Lists remote branches, prefixed with the remote name, e.g. `origin/main`
 
 ~~~SECTION:handouts~~~
 
 ****
-
 
 `git push` updates remote references and pushes your local commit history to the remote repository.
 
@@ -28,17 +27,11 @@
  * Learn more about git push
 * Steps:
  * Change into `$HOME/training`
- * Edit `README.md` and add a note on `git push`
+ * Edit `README.md` and notes about `git push`
  * Add and commit the changes
  * Push the changes
 * Bonus:
  * List all remote branches with `git branch -r`
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Learn more about git push
@@ -51,7 +44,7 @@
 ## Steps:
 
 * Change into `$HOME/training`
-* Edit `README.md` and add a note on `git push`
+* Edit `README.md` and add notes about `git push`
 * Add and commit the changes
 * Push the changes
 
@@ -90,41 +83,180 @@
     @@@ Sh
     $ git branch -r
 
-!SLIDE smbullets
+!SLIDE
 # Collaboration: Branch Tracking
 
-* Local branches track remote branches
-* Use same names for local and remote branches
- * Enables "simple" push with `git push` in the current checked out branch
+A *tracking branch* is a local branch that is connected to a remote branch.
+
+* We can now push without the need to be specific(`git push origin main`)
+* Git can now inform you about "unpushed" and "unpulled" commits (`git status`)
 * `git branch -a` lists all branches
-* Use `git branch -vv` to list tracking
+* `git branch -vv` lists tracking branches
 
 Example:
 
     @@@ Sh
     git branch -vv
-      feature/config  7b36d4a [origin/feature/] Add flag to extend config
-      fix/replication 324882e [origin/fix/replication: gone] Fix bug #231
-      *master         f2cce0c [origin/master] Rename test directory
-      wip-foobar      d92a5ad Why wont it work?!
+      *master    f2cce0c [origin/master] Rename test directory
+      wip-foobar d92a5ad Why wont it work?!
+
+Hint: There are various `push` methods that can be configured
 
 ~~~SECTION:handouts~~~
 
 ****
 
+There are various `push` methods:
+
+* `simple` - pushes the current branch with the same name on the remote
+* `current` - push the current branch to update a branch with the same name on the receiving end
+* `nothing` - do not push anything (error out) unless a refspec is given
+
+References:
+
+https://git-scm.com/docs/git-config/#Documentation/git-config.txt-pushdefault
 
 ~~~ENDSECTION~~~
 
+!SLIDE smbullets
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Configure a tracking branch
+
+* Objective:
+ * Set the origin/main as tracking branch for main
+* Steps:
+ * Change into `$HOME/training`
+ * Push with `git push` explain the error
+ * Push with `git push --set-upstream origin main`
+ * Push again with `git push`
+* Bonus:
+ * Verify the tracking branches with `git branch -vv`
+
+!SLIDE supplemental exercises
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Configure a tracking branch
+
+## Objective: Set the origin/main as tracking branch for main
+****
+
+* Set the origin/main as tracking branch for main
+
+## Steps:
+
+* Change into `$HOME/training`
+* Push with `git push` explain the error
+* Push with `git push --set-upstream origin main`
+* Push again with `git push`
+
+## Bonus:
+
+* Verify the tracking branches with `git branch -vv`
+
+!SLIDE supplemental solutions
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
+****
+
+## Set the origin/main as tracking branch for main
+
+****
+
+### Make changes
+
+    @@@ Sh
+    $ cd $HOME/training
+    $ git checkout main
+
+    $ git push
+    $ # fatal: The current branch foobar has no upstream branch.
+    $ git push --set-upstream origin main
+    $ git push
+
+### List tracking branches
+
+    @@@ Sh
+    $ git branch -vv
+
+
+!SLIDE smbullets
+# Deleting Remote Branches
+
+You have learned that you can create remote (feature) branches. But what if
+you want to delete such branches?
+
+`git push origin <branch>` is short for `git push origin <localbranch>:<remotebranch>`.
+
+Pushing `NULL` into a remote branch will delete it.
+
+`git push origin :<remotebranch>`
+
+Hint: You can delete branches in GitLab/GitHub too.
+
+!SLIDE smbullets
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Delete remote branch
+
+* Objective:
+ * Delete remote branch
+* Steps:
+ * Change into `$HOME/training`
+ * Create or identify a remote branch `feature/docs-wrong-name`
+ * Delete the remote branch
+
+!SLIDE supplemental exercises
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Delete remote branch
+
+## Objective: Delete remote branch
+****
+
+* Delete remote branch
+
+## Steps:
+
+* Change into `$HOME/training`
+* Create or identify a remote branch `feature/docs-wrong-name`
+* Delete the remote branch
+
+!SLIDE supplemental solutions
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
+****
+
+## Delete remote branch
+
+****
+
+### Create and push remote branch
+
+If you do not have any.
+
+    @@@ Sh
+    $ cd $HOME/training
+    $ git checkout main
+    $ git checkout -b feature/docs-wrong-name
+    $ git push -u origin feature/docs-wrong-name
+
+### Identify remote branch to delete
+
+    @@@ Sh
+    $ git branch -r
+      feature/docs-wrong-name
+
+### Delete remote branch
+
+    @@@ Sh
+    $ git push origin :feature/docs-wrong-name
+
+Now verify it is gone (Hint: `-r` lists remote branches).
+
+    @@@ Sh
+    $ git fetch
+    $ git branch -r
 
 !SLIDE smbullets
 # Collaboration: Get History
 
 * `git fetch`
-  * Update the remote branch reference pointers to the latest commit and cache it locally
-  * Does not pull in any remote commit history
+  * Downloads data from a remote repository
+  * The changes from the remote repository are not integrated into local branches
 * `git pull`
-  * Fetch and update the local history from remote repository (implicit fetch)
-  * This pulls in source code changes and commits
+  * Downloads data from a remote repository and integrates them into local branches
+  * git pull runs `git fetch` and either `git rebase` or `git merge` behind the scences
 
 ~~~SECTION:handouts~~~
 
@@ -134,10 +266,7 @@ Example:
 
 `git pull` invokes a fetch and updates the local history with commits from the remote repository.
 
-
 ~~~ENDSECTION~~~
-
-
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Learn more about git fetch and git pull
@@ -150,12 +279,6 @@ Example:
  * Run `git fetch` and explain `git diff main origin/main`
  * Run `git pull`
  * Explain the difference
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Learn more about git fetch and git pull
@@ -219,4 +342,3 @@ updated with the remote history.
     @@@ Sh
     $ git log
     $ git diff main origin/main
-

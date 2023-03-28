@@ -2,20 +2,21 @@
 # Examine the Git history
 
 * `git log`
-  * Show commit history of the current branch
+  * Shows the commit history of the current branch
   * Supports `-10` notation to show a limited number of commits
+  * `--oneline` can be used for less output
 
 * `git blame <filename>`
-  * Show authors of a certain file line-by-line
+  * Shows the authors of a file line-by-line
   * Supports `--color-lines` notation for grouping lines of the same commit
 
 ~~~SECTION:handouts~~~
 
 ****
 
-`git log` shows the commit history of the current branch
-`git blame <filename>`shows the author line-by-line of the selected file
+`git log` shows the commit history of the current branch.
 
+`git blame <filename>` shows the author line-by-line of the selected file.
 
 ~~~ENDSECTION~~~
 
@@ -23,13 +24,13 @@
 # Examine the Git history
 
 * `git show`
-  * Print commit details
-  * If the commit id is omitted, the last commit is printed
+  * Prints details of the latest commit
+  * Commit IDs can be used to show a specific commit
   * Supports `-10` notation to show a limited number of commits
 * `git diff`
   * Show changes between working tree and last commit
   * Supports source and target parameters
-  * Can be used to compare 2 commit ids, branches, etc.
+  * Can be used to compare commits, branches, etc.
 
 ~~~SECTION:handouts~~~
 
@@ -57,12 +58,6 @@ also compare specific commits.
  * Use `git blame .gitignore` to see the authors for the file
 
 Bonus: Try `git log` with the `--graph` and `--oneline` option.
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Examine the Commit History
@@ -141,12 +136,6 @@ Bonus: Try `git log` with the `--graph` and `--oneline` option.
 
 <center><img src="../../_images/commits/git_history_tig.png"  style="width: 450px;" alt="Tig"/></center>
 
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
-
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Learn more about tig
 
@@ -159,12 +148,6 @@ Bonus: Try `git log` with the `--graph` and `--oneline` option.
 * Next steps:
  * Select a line and press `Enter`
  * `q` quits the detail view and the application
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Learn more about tig

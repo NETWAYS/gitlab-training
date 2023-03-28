@@ -4,7 +4,7 @@
 
 * Name and Company
 * Your role and or daily business
-* Any previous experiences with git
+* Any previous experiences with Git
 * Your expectations for this training
 
 !SLIDE subsection
@@ -46,14 +46,6 @@ Click on the link in your email to join the session
 * We use tmux to join your session and help you
 * Change the appearance of the terminal as you like
 
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
-
 !SLIDE smbullets
 # Create GitLab app in NWS
 
@@ -66,11 +58,3 @@ Click on the link in your email to join the session
   * Choose `Access` and `Live View` and set a secure password for the `root` user
   * Login with `root` and your chosen password
   * Wait for the trainer with the Git Basics
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
-

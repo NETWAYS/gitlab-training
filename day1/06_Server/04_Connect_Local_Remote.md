@@ -1,56 +1,3 @@
-!SLIDE smbullets
-# Connect Local Repository to Remote Server
-
-* Local standalone repository
-* Connect to remote server
-* Clone, Pull, Fetch, Push via SSH/HTTPS
-
-You can also start fresh without any local repository
-and clone that from remote.
-
-For training purposes we've started to work offline in `$HOME/training`.
-Now we want to publish the local commits to a newly created Git repository
-in GitLab.
-
-~~~SECTION:handouts~~~
-
-****
-
-
-
-~~~ENDSECTION~~~
-
-!SLIDE smbullets
-# Requirements
-
-* SSH or HTTPS auth
-  * NWS apps come pre-defined with HTTPS clone/fetch only
-* New GitLab repository for this user
-* Configure local repository for the remote server
-
-~~~SECTION:handouts~~~
-
-****
-
-**SSH Keys**
-
-Generate a new SSH key pair on your client.
-
-```
-ssh-keygen -t ed25519
-```
-
-Copy the public key into your GitLab settings.
-
-```
-cat $HOME/.ssh/id_ed25519.pub
-```
-
-User > Settings > SSH Keys
-
-
-~~~ENDSECTION~~~
-
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Create GitLab Project
@@ -65,13 +12,6 @@ User > Settings > SSH Keys
  * Create the project
 * Note:
  * Learn about the project view and the HTTPS clone URL
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Create GitLab Project
@@ -125,6 +65,127 @@ GitLab offers you to add new files, e.g. a README.md file or LICENSE details
 directly in the browser. In the background, it is still comitting
 the changes to the Git repository.
 
+!SLIDE
+# GitLab Issues and Boards
+
+Issues can be used for planning and tracking work (feature requests, bugfixes, questions).
+
+Issues can be annotated with labels.
+
+Milestones allow you to organize issues into a cohesive group.
+
+The issue board is a software project management tool used to plan, organize, and visualize a workflow for a feature or product release.
+
+* Kanban or Scrum board
+* Filter by labels
+* Drag & drop issues
+
+!SLIDE smbullets
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Create Milestone and Issues
+
+* Objective
+ * Create Milestone `v1.0`
+ * Create Issue `Update documentation`
+
+* Steps:
+ * Navigate into `Issues > Milestones`
+ * Select `New Milestone` and use `v1.0` as title
+ * Navigate to `Issues` and select `New issue`
+ * Use `Update documentation` as title, add a description
+ * Assign the `v1.0` milestone
+
+!SLIDE supplemental exercises
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Create Milestone and Issues
+
+## Objective: Create Milestone and First Issue
+****
+
+* Create Milestone and First Issue
+
+## Steps:
+
+****
+
+* Navigate into `Issues > Milestones`
+* Select `New Milestone` and use `v1.0` as title
+* Navigate to `Issues` and select `New issue`
+* Use `Update documentation` as title, add a description
+* Assign the `v1.0` milestone
+
+!SLIDE
+# GitLab Project Snippets
+
+With GitLab snippets, you can store and share bits of code and text with other users.
+
+* Snippet visibility can differ from the project's visibility
+* Are version controlled and have syntax highlighting
+* URL is stable and can be shared
+
+Example use cases:
+
+* Guides for less code-savvy people
+* Documentation for hard to automate but regular tasks
+
+Can be cloned because they are stored with Git.
+
+Try it out with the trainer.
+
+~~~ENDSECTION~~~
+
+!SLIDE
+# GitLab Project Wiki
+
+Every wiki is a separate Git repository, within the project.
+
+* Support Markdown, Rdoc, AsciiDoc, and Org for content
+* Hierarchical links possible
+* Mermaid diagrams and charts can be included
+
+Example use cases:
+
+* Additional documentation for the project
+
+Can be cloned because they are stored with Git.
+
+Try it out with the trainer.
+
+~~~ENDSECTION~~~
+
+!SLIDE smbullets
+# Connect Local Repository to Remote Server
+
+We can either start a local repository and connect it to a remote server, or clone an existing repository.
+
+* Endpoints for the remote servers are called `remote` in Git.
+* Communication is done via SSH/HTTPS (SSH is recommended)
+* We need a remove for: `clone`, `push`, `pull`
+
+For training purposes we've started to work offline in `$HOME/training`.
+
+Now we want to publish the local commits to a newly created Git repository
+in GitLab.
+
+~~~SECTION:handouts~~~
+
+****
+
+**SSH Keys**
+
+Generate a new SSH key pair on your client.
+
+```
+ssh-keygen -t ed25519
+```
+
+Copy the public key into your GitLab settings.
+
+```
+cat $HOME/.ssh/id_ed25519.pub
+```
+
+User > Settings > SSH Keys
+
+~~~ENDSECTION~~~
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add the repository as remote origin
@@ -135,27 +196,7 @@ the changes to the Git repository.
  * Open the project in GitLab and extract the `HTTPS` clone URL
  * Navigate into your local repository in `$HOME/training`
  * Use `git remote add origin <https-remote-url>`
- * Push local branches with `git push -u origin --all`
-
-* Bonus
- * Set default push method to `simple`
-
-~~~SECTION:handouts~~~
-
-****
-
-There are various `push` methods:
-
-* `simple` - pushes the current branch with the same name on the remote
-* `current` - push the current branch to update a branch with the same name on the receiving end
-* `nothing` - do not push anything (error out) unless a refspec is given
-
-References:
-
-https://git-scm.com/docs/git-config/#Documentation/git-config.txt-pushdefault
-
-
-~~~ENDSECTION~~~
+ * Push the main branch with `git push origin main`
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add the repository as remote origin
@@ -171,14 +212,8 @@ https://git-scm.com/docs/git-config/#Documentation/git-config.txt-pushdefault
 
 * Open the project in GitLab and extract the `HTTPS` clone URL
 * Navigate into your local repository
- * Use `git remote add origin <https-remote-url>`
-* Push local branches with `git push -u origin --all`
-
-## Bonus:
-
-****
-
-* Configure the default push method to `simple`
+* Use `git remote add origin <https-remote-url>`
+* Push the main branch with `git push origin main`
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
@@ -206,7 +241,7 @@ Use `--set-upstream` as proposed by the cli output. Short form is `-u`.
     @@@ Sh
     $ cd $HOME/training.git
     $ git remote add origin https://[...].nws.netways.de/root/training.git
-    $ git push -u origin --all
+    $ git push origin main
 
 ### Set default push method
 
@@ -238,7 +273,6 @@ use `--all` instead.
 Keep in mind that syncing all your local branches might create unwanted remote branches.
 Those can be there just for testing things, or are not meant for the public domain.
 
-
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add a credential cache
 
@@ -249,13 +283,6 @@ Those can be there just for testing things, or are not meant for the public doma
  * Use `git config credential.helper 'cache --timeout=99999'`
 
 This is only for the training. In reality use SSH authentication.
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add a credential cache
@@ -305,14 +332,6 @@ This is only for the training. In reality use SSH authentication.
 * Bonus:
  * Use `Repository > Graph` in GitLab
 
-~~~SECTION:handouts~~~
-
-****
-
-
-
-~~~ENDSECTION~~~
-
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Explore Project History
 
@@ -346,9 +365,8 @@ This is only for the training. In reality use SSH authentication.
 
 Choose `History` and look at the Git commits, their author, subject and timestamp.
 
-Compare it with the local `git log` or `tig` entries. 
+Compare it with the local `git log` or `tig` entries.
 
 ### GitLab Graphs
 
 Navigate into `Repository > Graph` to get an alternative history view.
-

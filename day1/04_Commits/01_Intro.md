@@ -1,19 +1,21 @@
 !SLIDE subsection
 # ~~~SECTION:MAJOR~~~ Git Commits
 
-!SLIDE smbullets
+!SLIDE
 # Git Commits
 
-* View as history log on production changes
-* Keep the subject short, simple and explaining
-* Make it easier for others understanding the changes
-* Add detailed explanations on larger changes
-* Add references to existing commits and/or ticket ids for further details
+Commits are the history or logbook of our project.
 
-~~~SECTION:handouts~~~
+* They can have a subject line and a body
+* Keep the subject short and simple
+* Add a detailed explanations for larger changes
 
-****
+Example:
 
+    commit 25037b
+    Author: Anita Bath <a.bath@example.com
+    Date:   Tue Mar 31 13:37:00 2023
 
-~~~ENDSECTION~~~
+    Changed background color
 
+    The existing color made text hard to read.
