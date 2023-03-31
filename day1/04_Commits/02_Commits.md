@@ -10,7 +10,7 @@
 
 Commits use the `user.name` and `user.email` settings to set the commit's author.
 
-Additionally, the date and time is stored.
+Additionally, the date, time, and the checksum of the previous commit are stored.
 
 ~~~SECTION:handouts~~~
 
