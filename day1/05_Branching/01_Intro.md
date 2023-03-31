@@ -217,7 +217,7 @@ when working with branches quite often.
 
 * Change into `$HOME/training`
 * Switch to the main branch
-* Use `git branch -d feature/more-docs` to delete the feature/docs branch
+* Use `git branch -d feature/docs` to delete the feature/docs branch
 
 ## Bonus:
 
@@ -243,7 +243,7 @@ when working with branches quite often.
 ### Delete the previously created branch
 
     @@@ Sh
-    $ git branch -d feature/more-docs
+    $ git branch -d feature/docs
 
 ### Try to delete the current branch
 
