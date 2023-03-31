@@ -20,8 +20,11 @@ of your repository and how it came to be the way that it currently is.
 
 Example:
 
-    Fix race condition config generation
+    Improve UI acessibility
 
-    Due to a missing lock on the Foo Object
-    there was a race condition, this caused
-    the config generation to fail sometimes
+    Previously we had red and green buttons.
+    This made them difficult to differenciate
+    for colourblind people.
+    We are now using blue and purple.
+    
+    fixes #1
