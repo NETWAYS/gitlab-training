@@ -12,7 +12,7 @@
 Try it out with the trainer.
 
     $ git reset --soft HEAD^
-    $ git reset --hard 1fe312
+    $ git reset --hard HEAD^
 
 !SLIDE smbullets
 # Revert Git Commits
@@ -24,4 +24,4 @@ Try it out with the trainer.
 Try it out with the trainer.
 
     $ git revert HEAD^
-    $ git revert 1fe312
+    $ git revert HEAD~2
