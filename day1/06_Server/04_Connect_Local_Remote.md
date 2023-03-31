@@ -9,6 +9,7 @@
  * Choose `New Project`
  * Add the name `training`
  * Leave it as `Private`
+ * Untick "Initialise with README.md" for an empty project
  * Create the project
 * Note:
  * Learn about the project view and the HTTPS clone URL
@@ -29,6 +30,7 @@
 * Choose `New Project`
 * Add the name `training`
 * Leave it as `Private`
+* Untick "Initialise with README.md" for an empty project
 * Create the project
 
 ## Note:
@@ -50,7 +52,7 @@
 GitLab 10.x provides `New Project` underneath the `+` icon
 in the top menu bar, next to the search form.
 
-Fill in the `Project name` form with `training` and leave the
+Fill in the `Project name` form with `training`, untick "Initialise with README.md" for an empty project and leave the
 other options as default.
 
 ### Project View
