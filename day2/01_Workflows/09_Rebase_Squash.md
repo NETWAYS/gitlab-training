@@ -106,8 +106,6 @@ from commit messages.
     squash ce90e16 commit2
     squash ed6a68f commit3
 
-
-
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Force Push and Protected Branches
 
