@@ -2,6 +2,7 @@
 # Exclude files with .gitignore
 
 The `.gitignore` file can used to ignore files from being tracked by Git. Each line specifies a pattern to ignore.
+The file is read from top to bottom.
 
 * Build directories for compilation (e.g. `debug/`, `release/`)
 * Files generated at runtime (e.g. test results or stats)
