@@ -9,7 +9,7 @@ A Git Server is a central storage for repositories
 * Facilitates collaboration between teams
 * Offers user based access control
 * Can trigger events (e.g. for CI)
-* Can offer web interfaces
+* Can be connected with web interfaces
 
 There are collaboration suites with many features:
 
