@@ -1,10 +1,10 @@
 !SLIDE smbullets noprint
 # Feature Branch Workflow
 
-* Feature development happens in named branches
+* Development happens in named branches
 * Does not interfere with the main codebase
 * Main branch does not contain broken code
-* Feature branches can be rebased against stable main branch on demand
+* Branches can be rebased against the main branch on demand
 
 <center><img src="../../_images/mermaid/workflow-branches.mmd.png" alt="Feature Branch Workflow"/></center>
 
@@ -14,33 +14,17 @@
 * Feature development happens in named branches
 * Does not interfere with the main codebase
 * Main branch does not contain broken code
-* Feature branches can be rebased against stable main branch on demand
+* Branches can be rebased against stable main branch on demand
 
 <center><img src="../../_images/mermaid/workflow-branches.mmd.png" alt="Feature Branch Workflow" width="75%" /></center>
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
 
 !SLIDE smbullets
 # Feature Branch Workflow - How it works
 
-* Create a new branch for each feature
-* Descriptive branch names, e.g. `feature/docs-workflows`
-* Changes in a feature branch similar to centralized workflow
-* Push feature branches to central repository for collaboration with other developers
-
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
-
+* Create a new branch every time you start new work
+* Use descriptive branch names (`feature/new-login`, `fix/db-error`)
+* Changes in a branch are similar to the centralized workflow
+* Push branches to central repository for collaboration with other developers
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Use Feature Branches
@@ -52,12 +36,6 @@
  * Use `git checkout -b feature/docs-workflows` to create a new feature branch based on the main
  * Add and commit changes
  * Push the branch to your central repository
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Use Feature Branches
@@ -123,12 +101,6 @@ The new branch `feature/docs-workflows` will be based on the `main` branch.
  * Diff the feature branch to the current main with `git diff main`
  * Checkout the `main` branch, merge the feature branch as non-fast-forward with `--no-ff`
  * Show the history tree with `tig` or inside GitLab and explain why the forced merge commit with `--no-ff` is important
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Merge Feature Branches

@@ -1,21 +1,11 @@
 !SLIDE smbullets
 # Gitflow Workflow
 
-* Strict branching model for project releases
+Gitflow is a strict branching model for larger projects
+
 * Based on Feature Branch Workflow
-* Assigns roles to different branches
+* It assigns roles to different branches
 * Defines interaction between branches for releases
- * Prepare
- * Maintain
- * Record
-
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
 
 !SLIDE smbullets noprint
 # Gitflow Workflow - Historical Branches
@@ -31,17 +21,9 @@
 
 * Main branch for release history (including version tags)
 * Main branch is always `stable` and in production
-* Develop branch for feature integration
+* Development branch for feature integration
 
 <center><img src="../../_images/mermaid/workflow-historical-branches.mmd.png" alt="Gitflow Workflow" width="75%" /></center>
-
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
 
 !SLIDE smbullets noprint
 # Gitflow Workflow - Feature Branches
@@ -61,13 +43,6 @@
 
 <center><img src="../../_images/mermaid/workflow-feature-branches.mmd.png" alt="Gitflow Workflow" width="85%" /></center>
 
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
-
 !SLIDE smbullets noprint
 # Gitflow Workflow - Release Branches
 
@@ -84,12 +59,6 @@
 
 <center><img src="../../_images/mermaid/workflow-release-branches.mmd.png" alt="Gitflow Workflow" width="85%" /></center>
 
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
-
 !SLIDE smbullets noprint
 # Gitflow Workflow - Maintenance Branches
 
@@ -105,10 +74,3 @@
 * Merged to `main`, tagged and merged to `develop`
 
 <center><img src="../../_images/mermaid/workflow-maintenance-branch.mmd.png" alt="Gitflow Workflow" width="85%" /></center>
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~

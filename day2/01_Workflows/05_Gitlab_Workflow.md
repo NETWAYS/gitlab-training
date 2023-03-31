@@ -18,13 +18,6 @@
 
 <center><img src="../../_images/mermaid/workflow-gitlab-mr.mmd.png" alt="GitLab Workflow" width="75%" /></center>
 
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
-
-
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
 ****
@@ -91,7 +84,6 @@ branch names, review them and then delete them.
 ****
 
 * Run `git fetch --prune` and `git branch -d feature/docs-merge-request`
-
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
@@ -160,6 +152,3 @@ by merging the MR.
     $ git checkout main
     $ git pull
     $ tig
-
-
-
