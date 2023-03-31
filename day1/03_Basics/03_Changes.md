@@ -38,6 +38,8 @@ manually move the file, you will need to rm and add it again.
  * Verify the change with `git status`
 
 Hint: Markdown is a markup language that is rendered by GitLab as HTML.
+Best practice is to have a README.md file written in Markdown in every project.
+This gets rendered on the projects frontpage and is great for user documentation.
 
 You can keep notes from the training in the `README.md` file.
 
@@ -85,7 +87,7 @@ You can keep notes from the training in the `README.md` file.
   * Hint: This comes in handy with `git add -A` before
 * `git rm`
   * Removes the files from working tree and Git repository
-  * Note: files will be visible in the Git history, and can be restored from it
+  * Note: Once committed, files will be visible in the Git history, and can be restored from it
 
 ~~~SECTION:handouts~~~
 
