@@ -1,12 +1,15 @@
 !SLIDE smbullets
 # GitLab CI
 
-* Build Pipelines
-  * Consists of one or more Jobs
-* Natively integrated into GitLab
-* Invokes GitLab Runners
-* Local container registry for runners
+GitLab offers a natively integrated CI solution.
 
+Offers automated jobs that are bundled in a Pipeline.
+
+Example:
+
+    Clone Code => Test => Build => Deploy
+
+These job are executed on GitLab Runners.
 
 ~~~SECTION:handouts~~~
 
@@ -20,54 +23,23 @@ https://blog.netways.de/2017/05/03/gitlab-ce-continuous-integration-jobs-and-run
 
 ~~~ENDSECTION~~~
 
-!SLIDE smbullets
-# GitLab CI: Introduction
-
-* `.gitlab-ci.yml` configuration file in Git repository
-* Runner is triggered on specific events, e.g. `git push`
-* Jobs can be run on-demand
-* Built-in and external runners
-* Container registry enabled for the project (optional)
-
-
-~~~SECTION:handouts~~~
-
-****
-
-References:
-
-https://docs.gitlab.com/ee/user/packages/container_registry/
-
-~~~ENDSECTION~~~
-
-
-!SLIDE smbullets
+!SLIDE
 # GitLab Runners
 
-* Written in Go
-* Linux/Unix, macOS, Windows, Container support
-* Run multiple jobs in parallel
-* Run jobs locally, in Containers, remote via SSH
+GitLab Runner is an application that works with GitLab CI to run jobs in a pipeline.
+
+* Written in Go (available for Linux/Unix, macOS, Windows)
+* They can run multiple jobs in parallel
+* They can run jobs locally, remote via SSH or in Containers
 * Can run Bash, Windows Batch/Powershell
 
+We can have multiple Runners (Instance, Group, Project).
 
-~~~SECTION:handouts~~~
+Example:
 
-****
-
-Reference:
-
-https://docs.gitlab.com/runner/
-
-~~~ENDSECTION~~~
-
-
-!SLIDE smbullets
-# GitLab Runners: Installation and Configuration
-
-* Separate server
-* Installation via package repository
-* `gitlab-runner register`
+    # From the GitLab Repository
+    yum install -y gitlab-runner
+    gitlab-runner register
 
 ~~~SECTION:handouts~~~
 
@@ -81,56 +53,34 @@ https://docs.gitlab.com/runner/register/index.html
 
 ~~~ENDSECTION~~~
 
+!SLIDE smbullets
+# GitLab CI Configuration
+
+The CI is configured by the `.gitlab-ci.yml` in our Git repository
+
+* Jobs are triggered on specific events, e.g. `git push`
+* Jobs can run on-demand
+* Jobs can run on different built-in and external runners
+
+We will be using Containers to run our jobs.
 
 !SLIDE smbullets
-# GitLab CI: Container Registry
+# GitLab CI Containers
 
-* Enable the Container Registry (administration server setting)
-* Enable the Container Registry for the project
-* Advanced usage only
+Containers are an isolated environment for execution.
 
-~~~SECTION:handouts~~~
-
-****
-
-Configuration:
-
-    @@@Sh
-    $ vim /etc/gitlab/gitlab.rb
-    registry_external_url 'https://gitlab.example.com:5000'
-
-    $ gitlab-ctl reconfigure
-
-References:
-
-https://docs.gitlab.com/ee/user/packages/container_registry/
-
-~~~ENDSECTION~~~
-
-
-!SLIDE smbullets
-# GitLab CI: Containers - how to use it
-
-* Run an application in an isolated environment (Docker, Podman)
-* Layered images providing additional libraries and tools, e.g. base linux, mysql, apache, ruby
-* Start container, run tests, return results
-* Light-weight and fast, can run on each Git push
-* Reliable same run each time, container is destroyed on stop
-
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
+* Created from Images that provide preinstalled libraries and tools (i.e. Python)
+* They are light-weight and fast and can run on each Git push
+* For each job we start a container, run tests, return the results
+* Reproducible jobs since they are removed once the job is done
 
 !SLIDE smbullets noprint
-# GitLab CI: Containers and CI Runners
+# GitLab CI Containers and CI Runners
 
 <center><img src="../../_images/ci/git_gitlab_ci_runners_docker.png" alt="GitLab CI Runners Docker"/></center>
 
 !SLIDE smbullets printonly
-# GitLab CI: Containers and CI Runners
+# GitLab CI Containers and CI Runners
 
 <center><img src="../../_images/ci/git_gitlab_ci_runners_docker.png" style="width:450px" alt="GitLab CI Runners Docker"/></center>
 
@@ -148,8 +98,6 @@ https://docs.gitlab.com/runner/install/docker.html
 
 ~~~ENDSECTION~~~
 
-
-
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Inspect CI Runner settings
 
@@ -159,7 +107,6 @@ https://docs.gitlab.com/runner/install/docker.html
  * Navigate to Admin > Overview > Runners
  * Inspect the token
  * Check existing runners
-
 
 ~~~SECTION:handouts~~~
 
@@ -287,19 +234,21 @@ Start CLI
 
 
 !SLIDE smbullets
-# GitLab CI: Configuration in .gitlab-ci.yml
+# GitLab CI .gitlab-ci.yml
 
-* `image` as container base image
-* `services` which should be running
-* `all_tests` as job name
+In the .gitlab-ci.yml file, you can define:
+
+* `image` as Container image in which the job runs
+* `name_of_my_job` the name of the job
+* `script` what should run in the job
 
 Example:
 
     image: docker.io/alpine:latest
 
-    all_tests:
+    name_of_my_job:
       script:
-        - exit 1
+        - run-my-tests.sh
 
 ~~~SECTION:handouts~~~
 
@@ -307,32 +256,29 @@ Example:
 
 References:
 
-https://about.gitlab.com/2016/03/01/gitlab-runner-with-docker/
-
+https://docs.gitlab.com/ee/ci/yaml/gitlab_ci_yaml.html
 
 ~~~ENDSECTION~~~
 
 !SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Create .gitlab-ci.yml
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Create the .gitlab-ci.yml
 
 * Objective:
  * Create CI configuration for the training project
 * Steps:
  * Create the `.gitlab-ci.yml` file in the `training` directory (Web IDE)
- * Add `image: docker.io/alpine:latest` to specify base image
+ * Add the following content to the file and commit
 
- * Add job `all_tests` with `script` as array element, which itself runs `exit 1`
+Example:
 
+    image: docker.io/alpine:latest
 
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
+    my_tests:
+      script:
+        - exit 1
 
 !SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Create .gitlab-ci.yml
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Create the .gitlab-ci.yml
 
 ## Create CI configuration
 ****
@@ -342,15 +288,21 @@ https://about.gitlab.com/2016/03/01/gitlab-runner-with-docker/
 ## Steps:
 
 * Create the `.gitlab-ci.yml` file in the `training` directory (Web IDE)
-* Add `image: docker.io/alpine:latest` to specify base image
+* Add the following content to the file and commit
 
-* Add job `all_tests` with `script` as array element, which itself runs `exit 1`
+Example:
+
+    image: docker.io/alpine:latest
+
+    my_tests:
+      script:
+        - exit 1
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
 ****
 
-## Create .gitlab-ci.yml file
+## Create the .gitlab-ci.yml file
 
 ****
 
@@ -359,12 +311,10 @@ https://about.gitlab.com/2016/03/01/gitlab-runner-with-docker/
  * Navigate your GitLab Web interface and click the button 'Web IDE'
  * Click 'Add file' and create the `.gitlab-ci.yml` file from the suggestions
 
-
     @@@ Sh
 
     image: docker.io/alpine:latest
-
-    all_tests:
+    my_tests:
       script:
         - exit 1
 
@@ -372,36 +322,29 @@ This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious a
 The script will always fail. We will use different exit states to fix it.
 Future examples and tests work the same way.
 
-
 !SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Commit to GitLab
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Explore and fix the job
 
 * Objective:
- * Commit .gitlab-ci.yml in GitLab
+ * Explore the failed job in GitLab
 * Steps:
- * Commit via the WebIDE into the remote repository
- * Navigate to the project into `CI / CD` and verify the running job
+ * Navigate to the project into `CI / CD` and view the job
+ * Explain the output
 * Bonus
  * Modify the exit code to `0`, commit, push and verify again
 
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
-
 !SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Commit to GitLab
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Explore and fix the job
 
-## Commit CI config and trigger GitLab job
+## Explore the failed job in GitLab
 ****
 
-* Commit .gitlab-ci.yml to GitLab
+* Explore the failed job in GitLab
 
 ## Steps:
 
-* Commit into the remote repository
-* Navigate to the project into `CI / CD` and verify the running job
+* Navigate to the project into `CI / CD` and view the job
+* Explain the output
 
 ## Bonus:
 
@@ -411,15 +354,8 @@ Future examples and tests work the same way.
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
 ****
 
-##  Make the commit and trigger GitLab job
+## Explore and fix the failed job in GitLab
 ****
-
-### Git Add, Commit, Push
-
-    @@@ Sh
-    $ git add .gitlab-ci.yml
-    $ git commit -av -m "Add GitLab CI config"
-    $ git push origin main
 
 ### Modify exit code
 
@@ -431,10 +367,7 @@ Future examples and tests work the same way.
       script:
         - exit 0
 
-This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious alternative.
-
-
-!SLIDE smbullets small
+!SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Preparations
 
 * Objectives:
@@ -551,14 +484,67 @@ Example:
 
 This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious alternative.
 
-!SLIDE smbullets small
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Create Docs
+!SLIDE smbullets
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Linting
+
+* Objective:
+ * Validate the Markdown in the README.md
+* Steps:
+ * Modify the `my_tests` job to validate the Markdown in the README.md
+ * Commit the changes
+
+Example:
+
+    my_tests:
+      script:
+        - pymarkdownlint scan README.md
+      allow_failure: true
+
+!SLIDE supplemental exercises
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Linting
+
+## Validate the Markdown in the README.md
+****
+
+* Validate the Markdown in the README.md
+
+## Steps:
+
+* Modify the `my_tests` job to validate the Markdown in the README.md
+* Commit the changes
+
+Example:
+
+    my_tests:
+      script:
+        - pymarkdownlint scan README.md
+      allow_failure: true
+
+!SLIDE supplemental solutions
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
+****
+
+## Validate the Markdown in the README.md
+
+****
+
+### Edit .gitlab-ci.yml and modify the job
+
+    @@@ Sh
+
+    my_tests:
+      script:
+        - pymarkdownlint scan README.md
+      allow_failure: true
+
+!SLIDE smbullets
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Create HTML
 
 * Objective:
  * Create HTML docs from Markdown
 * Steps:
- * Add a new `markdown` and use `script` to generate `README.html`
- * Add `artifacts` with `paths` pointing to `README.html`. Expires in `1 week`
+ * Add a new job and use `script` to generate `README.html`
+ * Add `artifacts` with `paths` pointing to `README.html`
  * Commit the changes, then download and view the `README.html` file in your browser
 
 Example:
@@ -571,14 +557,8 @@ Example:
         - README.html
         expire_in: 1 week
 
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
-
 !SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Create Docs
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Create HTML
 
 ## Create HTML docs from Markdown
 ****
@@ -668,7 +648,7 @@ Download them, extract them and open the HTML file with your browser.
 This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious alternative.
 
 !SLIDE smbullets small
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Update Docs
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Update HTML
 
 * Objective:
  * Add what you have learned so far into README.md and generate docs
@@ -677,15 +657,8 @@ This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious a
  * Commit changes
  * Download and view the `README.html` file in your browser
 
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
-
 !SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Update Docs
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Update HTML
 
 ## Update docs
 ****
@@ -720,11 +693,10 @@ Navigate into the repository > `CI / CD` > Jobs > `#...`  and choose `Job Artifa
 Download them, extract them and open the HTML file with your browser.
 This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious alternative.
 
+!SLIDE
+# GitLab CI .gitlab-ci.yml Templates
 
-
-
-!SLIDE smbullets
-# GitLab CI: .gitlab-ci.yml Templates
+GitLab offers various templates for the .gitlab-ci.yml.
 
  * PHP
  * C++
@@ -734,31 +706,24 @@ This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious a
 Examples:
 
 * https://gitlab.com/gitlab-org/gitlab-ce/tree/master/lib/gitlab/ci/templates
-* https://docs.gitlab.com/ce/ci/README.html#examples
 
+Templates can make use of variables.
 
 ~~~ENDSECTION~~~
 
+!SLIDE
+# GitLab CI Variables
 
-!SLIDE smbullets
-# GitLab CI: Variables
+CI Variables are environment variables that are  accessible in the job.
 
-* CI Variables are accessible in the Job Container
- * Pre-defined environment variables
+ * Pre-defined environment variables (by GitLab)
  * User-defined project variables
  * .gitlab-ci.yml defined variables
 
-* Example uses are:
- * Credentials (`AWS_ACCESS_KEY`)
- * Controlling builds (`CMAKE_C_FLAGS`)
+Example:
 
-https://docs.gitlab.com/ce/ci/variables/
+    job1:
+      script:
+      - echo "Job for the Commit: '$CI_COMMIT_SHA'"
 
-~~~SECTION:handouts~~~
-
-****
-
-
-
-~~~ENDSECTION~~~
-
+Usecases: Credentials (`AWS_ACCESS_KEY`) or controlling builds (`CMAKE_C_FLAGS`).
