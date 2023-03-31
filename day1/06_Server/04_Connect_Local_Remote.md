@@ -279,7 +279,7 @@ Those can be there just for testing things, or are not meant for the public doma
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add a credential cache
 
 * Objective:
- * Add the credentail cache to the configuration
+ * Add the credential cache to the configuration
 * Steps
  * Go to your terminal
  * Use `git config credential.helper 'cache --timeout=99999'`
@@ -289,10 +289,10 @@ This is only for the training. In reality use SSH authentication.
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add a credential cache
 
-## Objective: Add the credentail cache to the configuration
+## Objective: Add the credential cache to the configuration
 ****
 
-* Add the credentail cache to the configuration
+* Add the credential cache to the configuration
 
 ## Steps:
 
