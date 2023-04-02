@@ -3,9 +3,9 @@
 
 A mix of feature branch and gitflow workflow.
 
-* `master` is the development branch
-* Major releases are created from `main`
-* `support/x.y` branches for bugfix releases
+* `master` corresponds to the development branch
+* Major releases are created and tagged on `master`
+* `support/x.y` branches for bugfix releases of long time support releases
 
 Organizational workflow:
 
