@@ -11,6 +11,9 @@ Squashing in Git means to combine multiple commits into one.
     commit2
     commit3
 
+This is recommended when you have a lot of WIP commits,
+to clean up your history, so it only has meaningful commits.
+
 `git rebase` can also be used to perform various
 actions on the repository's history.
 
