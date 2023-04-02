@@ -23,7 +23,8 @@
 
 * Create a new branch every time you start new work
 * Use descriptive branch names (`feature/new-login`, `fix/db-error`)
-* Changes in a branch are similar to the centralized workflow
+* Branch names can mirror issue names and numbers (`feature/new-login-1`)
+* Changes within a branch are similar to the centralized workflow
 * Push branches to central repository for collaboration with other developers
 
 !SLIDE smbullets
