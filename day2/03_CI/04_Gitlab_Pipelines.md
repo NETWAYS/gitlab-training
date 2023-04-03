@@ -204,7 +204,7 @@ Example:
         - changes:
             - a/*
 
-!SLIDE smbullets
+!SLIDE smbullets small
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: CI: Pipeline Rules
 
 * Objective:
@@ -213,16 +213,19 @@ Example:
  * Add a new job `publish`
  * Use `rules` to start this job only when we add tags
  * Use `needs` to add a dependency on the `build` job
+ * Use `release` to add a release for the `build` job
 
 Example:
 
     publish:
-      stage: publish
       needs: [build]
       script:
-        - cat README.html
+        - echo README.html
       rules:
         - if: $CI_COMMIT_TAG
+      release:
+        tag_name: '$CI_COMMIT_TAG'
+        description: "The End of the Training Release. Hooray!"
 
 
 !SLIDE supplemental exercises
@@ -257,6 +260,10 @@ Example:
         - cat README.html
       rules:
         - if: $CI_COMMIT_TAG
+      release:
+        tag_name: '$CI_COMMIT_TAG'
+        ref: '$CI_COMMIT_SHA'
+        description: "This is the End of the Training Release"
 
 ---------------
 
@@ -268,8 +275,6 @@ Example:
 * Steps:
  * Use the Web UI to create a new tag `v1.0`
  * Verify the `publish` job
-* Bonus:
- * Create a `End Of Training Release` Release from the new tag
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: CI: Trigger Pipeline Rules
