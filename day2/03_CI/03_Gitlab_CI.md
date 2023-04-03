@@ -470,7 +470,7 @@ Example:
 
     before_script:
       - apk update && apk add python3 py-pip
-      - pip install markdown Pygments
+      - pip install markdown Pygments pymarkdownlnt
 
     all_tests:
       script:
@@ -497,7 +497,7 @@ Example:
 
     my_tests:
       script:
-        - pymarkdownlint scan README.md
+        - pymarkdown scan README.md
       allow_failure: true
 
 !SLIDE supplemental exercises
@@ -727,3 +727,57 @@ Example:
       - echo "Job for the Commit: '$CI_COMMIT_SHA'"
 
 Usecases: Credentials (`AWS_ACCESS_KEY`) or controlling builds (`CMAKE_C_FLAGS`).
+
+!SLIDE smbullets
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add jobs using variables
+
+* Objective:
+ * Use variables and the `matrix` keyword to create more jobs
+* Steps:
+ * Add a new job and add the `parallel` keyword
+ * Add the `matrix` keyword under `parallel`
+ * Add some variables under `matrix`
+
+Example:
+
+    parallel:
+      matrix:
+        - MYVAR: [hello, hallo]
+
+!SLIDE supplemental exercises
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add jobs using variables
+
+## Add jobs using variables
+****
+
+* Use variables and the `matrix` keyword to create more jobs
+
+## Steps:
+
+* Add a new job and add the `parallel` keyword
+* Add the `matrix` keyword under `parallel`
+* Add some variables under `matrix`
+
+!SLIDE supplemental solutions
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
+****
+
+## Add jobs using variables
+
+****
+
+Example:
+
+    my_parallel_job:
+      script:
+        - echo "Platform: $PLATFORM"
+        - echo "Architecture: $ARCH"
+      parallel:
+        matrix:
+          - PLATFORM:
+              - Linux
+              - Windows
+              - macOS
+          - ARCH:
+              - x86
+              - arm
