@@ -114,6 +114,36 @@ The issue board is a software project management tool used to plan, organize, an
 * Use `Update documentation` as title, add a description
 * Assign the `v1.0` milestone
 
+!SLIDE smbullets
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add Project Members
+
+* Objective
+ * Add the trainers as Project members
+
+* Steps:
+ * Navigate into `Project information > Members`
+ * Use `Invite members` and search for the trainers
+ * Select the `Developer` role and add the trainers
+
+* Bonus
+ * Add a colleague or participant as `Guest`
+
+!SLIDE supplemental exercises
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add Project Members
+
+## Objective: Add the trainers as Project members
+****
+
+* Add the trainers as Project members
+
+## Steps:
+
+****
+
+* Navigate into `Project information > Members`
+* Use `Invite members` and search for the trainers
+* Select the `Developer` role and add the trainers
+
 !SLIDE
 # GitLab Project Snippets
 
