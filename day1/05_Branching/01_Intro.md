@@ -20,8 +20,8 @@ environment.
 
 * `git branch`
  * Creates a new branch
- * Deletes branches
- * List branches
+ * Deletes existing branches
+ * Lists all available branches
 * `git checkout`
   * Switch between branches
 * `git merge`

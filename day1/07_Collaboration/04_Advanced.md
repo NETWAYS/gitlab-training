@@ -244,7 +244,7 @@ Example:
     @@@ Sh
     $ git show
     commit 2f3a0096017051d9ab86774282203dc6c9827ee4 (HEAD -> main)
-    Author: Michael Friedrich <michael.friedrich@netways.de>
+    Author: Guy Incognito <g.i@example.com>
     Date:   Thu Jan 24 14:52:19 2019 +0100
 
         Update docs for cherry-pick

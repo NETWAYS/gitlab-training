@@ -16,7 +16,7 @@ Git stores compressed snapshots (aka BLOBs) of the files, not diffs. It keeps tr
 
 If a file does not change between commits, Git just refers back to the previous commit.
 
-<center><img src="../../_images/mermaid/deltas.mmd.png" alt="Git Snapshots" width="70%"/></center>
+<center><img src="../../_images/mermaid/deltas.mmd.png" alt="Git Snapshots" width="50%"/></center>
 
 !SLIDE smbullets
 # Git Branch

@@ -11,7 +11,7 @@
 
 Try it out with the trainer.
 
-    $ git reset --soft HEAD^
+    $ git reset --soft HEAD^  # Commit IDs are also possible
     $ git reset --hard HEAD^
 
 !SLIDE smbullets
@@ -23,5 +23,5 @@ Try it out with the trainer.
 
 Try it out with the trainer.
 
-    $ git revert HEAD^
+    $ git revert HEAD^  # Commit IDs are also possible
     $ git revert HEAD~2

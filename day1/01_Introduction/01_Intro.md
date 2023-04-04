@@ -79,7 +79,7 @@ The Git CLI is available for most operating systems.
 
 * Linux package are available in most distibutions
 * Installers for macOS or Windows
-* Many GUI options are also exist
+* Many GUI clients are available
 
 Optional shell integrations provide auto-completion and quality-of-life features.
 

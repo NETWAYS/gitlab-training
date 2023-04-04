@@ -64,7 +64,7 @@ Branch names are also pointers to their respective latest commit.
 This means, you don't need to change branches to
 
 * Show different branch histories
-* Show specific commits where you don't know the commit id
+* Show specific commits where you don't know the commit ID
 * Compare branches and committed code
 
 Example:

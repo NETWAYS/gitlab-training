@@ -100,7 +100,7 @@ Example:
       *master    f2cce0c [origin/master] Rename test directory
       wip-foobar d92a5ad Why wont it work?!
 
-Hint: There are various `push` methods that can be configured
+Hint: There are various `push` methods that can be configured.
 
 ~~~SECTION:handouts~~~
 
