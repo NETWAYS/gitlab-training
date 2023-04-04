@@ -5,6 +5,8 @@
 * Snapshots track changes in these file, these are called **commits**
 * A chain of these commits is called a **branch**
 
+Analogy: Writing on a desk or packing a parcel.
+
 !SLIDE smbullets
 # Git Commit
 
