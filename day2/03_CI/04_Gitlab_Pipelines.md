@@ -184,13 +184,14 @@ Pipeline schedules can be used to also run pipelines at specific intervals.
 
 Try it out with the trainer.
 
-!SLIDE smbullets
-# GitLab Pipelines: Triggers
+!SLIDE
+# GitLab Pipelines: Triggers and Rules
 
 We can use the `trigger` keyword to start other pipelines:
 
-* Multi-project pipeline
-* Child pipeline
+* Multi-project pipeline or Child pipeline
+
+We can use the `rules` keyword include or exclude jobs.
 
 Example:
 
@@ -203,6 +204,23 @@ Example:
       rules:
         - changes:
             - a/*
+
+~~~SECTION:handouts~~~
+
+****
+
+Rules are evaluated in order until the first match when the pipeline is created. Depending on the configuration, a job is either included or excluded.
+
+The `rules` keyword accepts an array of rules defined with:
+
+* if
+* changes
+* exists
+* allow_failure
+* variables
+* when
+
+~~~ENDSECTION~~~
 
 !SLIDE smbullets small
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: CI: Pipeline Rules
