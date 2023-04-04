@@ -91,8 +91,8 @@ You'll recognize the unstaged changes compared to your staging area.
 # Examine the current state: Diff
 
 * `git diff`
-  * Compare changes between modified working tree and latest commit
-  * Output is a unified diff similar to `diff -ur file1 file2`
+  * Compares changes between modified working tree and latest commit
+  * The output is a unified diff similar to `diff -ur file1 file2`
 
 Later we will learn how to compare other objects (i.e. commits and branches).
 

@@ -83,12 +83,12 @@ https://git-scm.com/book/tr/v2/Customizing-Git-Git-Configuration
 ### Set the global username
 
     @@@ Sh
-    $ git config --global user.name "Michael Friedrich"
+    $ git config --global user.name "Name Surname"
 
 ### Set the global email address
 
     @@@ Sh
-    $ git config --global user.email "michael.friedrich@netways.de"
+    $ git config --global user.email "name.surname@example.com"
 
 ### Verification
 

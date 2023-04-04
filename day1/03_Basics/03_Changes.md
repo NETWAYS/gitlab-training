@@ -33,15 +33,13 @@ manually move the file, you will need to rm and add it again.
 * Steps:
  * Change into `$HOME/training`
  * Create README.md and add `# GitLab Training Notes` as first line
+ * Hint: You can keep notes from the training in the `README.md` file
  * Use `git add` to add README.md to the staging area
 * Next steps:
  * Verify the change with `git status`
 
-Hint: Markdown is a markup language that is rendered by GitLab as HTML.
-Best practice is to have a README.md file written in Markdown in every project.
-This gets rendered on the projects frontpage and is great for user documentation.
-
-You can keep notes from the training in the `README.md` file.
+Markdown is a markup language that is rendered by GitLab as HTML.
+Best practice is to have a README.md file written in Markdown in every project, which is great for documentation.
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add a new README.md file

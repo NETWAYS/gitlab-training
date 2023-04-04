@@ -7,7 +7,7 @@
 * Fix a bug in already commited files
 * Add missing files into the last commit
 
-If you amend changes to a specific commit, a new unique commit id is generated.
+If you amend changes to a specific commit, a new unique commit ID is generated.
 
 This changes the Git history and we will learn later this might cause issues when collaborating.
 
