@@ -62,5 +62,4 @@ Example:
     $ git pull upstream HEAD
     $ git push origin main
 
-
 ~~~ENDSECTION~~~

@@ -1,6 +1,8 @@
 !SLIDE smbullets noprint
 # GitLab Workflow
 
+A workflow similar to feature branches.
+
 * Manage branch access with roles and permissions
 * Create `Merge Requests` from branches, CI runs tests/builds automatically
 * Review and inline code comments
@@ -56,7 +58,6 @@ branch names, review them and then delete them.
     @@@Sh
     $ git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}'
     $ git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d
-
 
 ~~~ENDSECTION~~~
 

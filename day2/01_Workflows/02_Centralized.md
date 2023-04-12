@@ -1,10 +1,11 @@
 !SLIDE smbullets
 # Centralized Workflow
 
+The simplest possible workflow:
+
 * Developers clone the central repository
-* Work in local copies
-* New commits are stored locally
-* Importing the remote repository's changes is optional
+* They work in local copies
+* Pulling from the remote repository is optional
 
 ~~~SECTION:handouts~~~
 
@@ -22,7 +23,6 @@ In addition to that the Git branching model provides a fail-safe mechanism
 for integrating and sharing code changes between repositories.
 
 ~~~ENDSECTION~~~
-
 
 !SLIDE smbullets noprint
 # Centralized Workflow - Publish Changes
@@ -50,13 +50,6 @@ Local Repository
 Remote Repository
 <center><img src="../../_images/mermaid/workflow-remote.mmd.png" width="50%"></center>
 
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
-
 !SLIDE smbullets noprint
 # Centralized Workflow - Managing Conflicts
 
@@ -72,13 +65,6 @@ Remote Repository
 * If local commit history diverges, pushing changes is denied
 
 <center><img src="../../_images/mermaid/workflow-diverge.mmd.png" alt="Diverged Remote" width="75%" /></center>
-
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
 
 !SLIDE smbullets
 # Centralized Workflow - Merge Conflicts
@@ -99,12 +85,6 @@ Example:
     =======
     What is on other branch
     >>>>>>> other-branch
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Collaborate in a central repository

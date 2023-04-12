@@ -2,9 +2,11 @@
 # ~~~SECTION:MAJOR~~~ Git Workflows
 
 !SLIDE smbullets
-# Git Workflows Overview
+# Git Workflow Overview
 
-* Single user environments
-* Multiple users working together
-* Branching models
-* Merge and pull request workflow integration
+Table of contents:
+
+* Centralized Workflow
+* Feature Branch Workflow
+* Gitflow Workflow
+* Merge/Pull Request workflow
