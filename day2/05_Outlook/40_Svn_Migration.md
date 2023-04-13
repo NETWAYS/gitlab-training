@@ -1,10 +1,10 @@
 !SLIDE smbullets
-# Migration from SVN
+# Git - Migration from SVN
 
-* Preserve history?
+There are tools that are able to preserve the SVN history.
+
  * Pick a migration route with `svn2git`: https://github.com/nirvdrum/svn2git
  * Extract authors, Git needs user/email mapping
  * Run `svn2git` with `authors.txt`
-* No history, copy source and start fresh
 
-https://docs.gitlab.com/ce/user/project/import/svn.html
+See also: https://docs.gitlab.com/ce/user/project/import/svn.html

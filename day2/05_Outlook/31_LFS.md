@@ -1,9 +1,11 @@
 !SLIDE smbullets
-# Git Large File Storage (LFS)
+# Git - Large File Storage (LFS)
 
-* Open source Git extension for versioning large files
-* Replaces large files (audio, videos, datasets, graphics) with text pointers
-* Requires a '.gitattributes' file for tracking files in your repository
+Git LFS replaces large files (audio, videos, datasets, graphics) with text pointers.
+
+* It is generally not recommended to store binary files in Git
+* Git LFS is a plugin to overcome this shortcomming
+* Requires a `.gitattributes` file for tracking files
 
 Installation:
 
@@ -14,10 +16,3 @@ Usage:
 
     @@@ Sh
     $ git lfs track "*.<filetype>"
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
