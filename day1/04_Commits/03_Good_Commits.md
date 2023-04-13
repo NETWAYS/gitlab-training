@@ -11,7 +11,7 @@ Over time, commits should tell a story of the history
 of your repository and how it came to be the way that it currently is.
 
 !SLIDE
-# Good Commits Messages
+# Good Commit Messages
 
 * The subject line is the most important
 * Describe why a change is being made in the body
@@ -23,8 +23,8 @@ Example:
     Improve UI acessibility
 
     Previously we had red and green buttons.
-    This made them difficult to differenciate
-    for colourblind people.
+    This made them difficult to differentiate
+    for colorblind people.
     We are now using blue and purple.
     
     fixes #1

@@ -9,8 +9,8 @@ environment.
 
 * The default branch is usually called `main`
   * Note: Historically it was `master`, many vendors are now moving to `main`
-* We can create dedicated branchs for development
-* We can switch branches to work on this in parallel
+* We can create dedicated branches for development
+* We can switch branches to work on things in parallel
 * Once we are done developing we merge the dedicated branch into `main`
 
 <center><img src="../../_images/mermaid/workflow-branches.mmd.png" alt="Feature Branch Workflow" width="50%" /></center>
@@ -23,7 +23,7 @@ environment.
  * Deletes existing branches
  * Lists all available branches
 * `git checkout`
-  * Switch between branches
+  * Switches between branches
 * `git merge`
   * Incorporates commits from a branch into the current one
 

@@ -4,7 +4,7 @@
 * `git status`
   * Shows current working tree status
   * Shows modified files and untracked files
-  * Shows what is in the staging area
+  * Shows contents of the staging area
   * `--short` can be used for less output
 
 ~~~SECTION:handouts~~~

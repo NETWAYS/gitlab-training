@@ -150,7 +150,7 @@ The issue board is a software project management tool used to plan, organize, an
 With GitLab snippets, you can store and share bits of code and text with other users.
 
 * Snippet visibility can differ from the project's visibility
-* Are version controlled and have syntax highlighting
+* Snippets are version controlled and have syntax highlighting
 * URL is stable and can be shared
 
 Example use cases:
@@ -190,7 +190,7 @@ We can either start a local repository and connect it to a remote server, or clo
 
 * Endpoints for the remote servers are called `remote` in Git.
 * Communication is done via SSH/HTTPS (SSH is recommended)
-* We need a remove for: `clone`, `push`, `pull`
+* We need a remote for: `clone`, `push`, `pull`
 
 For training purposes we've started to work offline in `$HOME/training`.
 

@@ -105,7 +105,7 @@ and then selectively unstage the unwanted 5 changes.
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Reset File from Staging Area
 
 * Objective:
- * Remove a file from staging area
+ * Remove a file from the staging area
 * Steps:
  * Change into `$HOME/training`
  * Remove the previously added README.md file from the staging area with `git rm --cached README.md`

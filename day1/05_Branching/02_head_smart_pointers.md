@@ -11,7 +11,7 @@
 Hint: Git stores this information in the file `.git/HEAD`.
 
 !SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Show the second commit
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Show the second latest commit
 
 * Objective:
  * Use `HEAD` and only show the second latest commit
@@ -20,12 +20,12 @@ Hint: Git stores this information in the file `.git/HEAD`.
  * Combine `git show` with `HEAD^` or `HEAD~1`
 
 !SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Show the second commit
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Show the second latest commit
 
-## Objective: Show the second commit
+## Objective: Show the second latest commit
 ****
 
-* Show the second commit
+* Show the second latest commit
 
 ## Steps:
 
@@ -39,7 +39,7 @@ Hint: Git stores this information in the file `.git/HEAD`.
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
 ****
 
-## Show the second commit
+## Show the second latest commit
 
 ****
 

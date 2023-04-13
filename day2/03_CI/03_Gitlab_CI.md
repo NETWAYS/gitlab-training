@@ -9,7 +9,7 @@ Example:
 
     Clone Code => Test => Build => Deploy
 
-These job are executed on GitLab Runners.
+These jobs are executed on GitLab Runners.
 
 ~~~SECTION:handouts~~~
 

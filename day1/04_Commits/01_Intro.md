@@ -13,8 +13,8 @@ Commits are the history or logbook of our project.
 Example:
 
     commit 25037b
-    Author: Anita Bath <a.bath@example.com
-    Date:   Tue Mar 31 13:37:00 2023
+    Author: Anita Bath <a.bath@example.com>
+    Date:   Fri Mar 31 13:37:00 2023
 
     Changed background color
 

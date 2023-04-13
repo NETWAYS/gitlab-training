@@ -64,7 +64,7 @@ Their design goals:
 Git has become a de facto standard for version control.
 
 !SLIDE smbullets
-# The Git Workfow is local
+# The Git Workflow is local
 
 In Git we `clone` the data to our local system and work locally.
 
@@ -77,7 +77,7 @@ In Git we `clone` the data to our local system and work locally.
 
 The Git CLI is available for most operating systems.
 
-* Linux package are available in most distibutions
+* Linux package is available for most distibutions
 * Installers for macOS or Windows
 * Many GUI clients are available
 

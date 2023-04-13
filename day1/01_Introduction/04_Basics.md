@@ -2,7 +2,7 @@
 # Core Concepts of Git
 
 * All work is done in a **repository**, it contains our files
-* Snapshots track changes in these file, these are called **commits**
+* Snapshots track changes in these files, these are called **commits**
 * A chain of these commits is called a **branch**
 
 Analogy: Writing on a desk or packing a parcel.

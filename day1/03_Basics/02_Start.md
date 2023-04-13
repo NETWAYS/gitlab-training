@@ -2,7 +2,7 @@
 # Start a project
 
 * `git clone`
-  * Clones a copy of existing remote repository (i.e. from GitLab)
+  * Clones a copy of an existing remote repository (i.e. from GitLab)
   * Can be modified with `--depth=5`
 * `git init`
   * Initializes a local empty Git repository

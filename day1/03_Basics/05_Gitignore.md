@@ -10,7 +10,7 @@ The `.gitignore` file can be used to ignore files from being tracked by Git. Eac
 
 Example:
 
-    cat .gitignore
+    $ cat .gitignore
     release/
     *.tmp
     .env

@@ -13,6 +13,6 @@ Every GitLab project can have its own space to store Container Images and Packag
 Example use cases:
 
 * Store artifacts (Images/Packages) right next to the code
-* Independent and interal registry without download rate limits
+* Independent and internal registry without download rate limits
 
 ~~~ENDSECTION~~~
