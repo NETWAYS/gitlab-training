@@ -74,6 +74,8 @@ Containers are an isolated environment for execution.
 * For each job we start a container, run tests, return the results
 * Reproducible jobs since they are removed once the job is done
 
+Hint: GitLab offers an integrated Container Registry to store container images for each project.
+
 !SLIDE smbullets noprint
 # GitLab CI Containers and CI Runners
 
@@ -370,7 +372,7 @@ Future examples and tests work the same way.
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Preparations
 
-* Objectives:
+* Objective:
  * Prepare container to convert Markdown to HTML
 * Steps:
  * Modify `.gitlab-ci.yml` and add a `before_script` section after the `image` section
@@ -647,8 +649,8 @@ Navigate into the repository > `CI / CD` > Jobs > `#...`  and choose `Job Artifa
 Download them, extract them and open the HTML file with your browser.
 This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious alternative.
 
-!SLIDE smbullets small
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Update HTML
+!SLIDE smbullets
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Update
 
 * Objective:
  * Add what you have learned so far into README.md and generate docs
@@ -658,7 +660,7 @@ This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious a
  * Download and view the `README.html` file in your browser
 
 !SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Update HTML
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Practical Example for CI Runners: Update
 
 ## Update docs
 ****

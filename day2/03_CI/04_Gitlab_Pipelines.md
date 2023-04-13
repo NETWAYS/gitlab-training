@@ -37,7 +37,7 @@ https://docs.gitlab.com/ee/ci/pipelines/
 <center><img src="../../_images/ci/git_gitlab_ci_pipelines_project_ci_cd.png" style="width:450px" alt="GitLab Pipelines"/></center>
 
 !SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: CI: Pipelines
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Build a Pipeline
 
 * Objective:
  * Build a job pipeline with stages
@@ -174,7 +174,7 @@ Example:
         - echo "This test job will start as soon as build_a finishes."
 
 !SLIDE smbullets
-# Pipeline schedules
+# GitLab Pipelines: Schedules
 
 Pipeline schedules can be used to also run pipelines at specific intervals.
 
@@ -293,6 +293,7 @@ Example:
 * Steps:
  * Use the Web UI to create a new tag `v1.0`
  * Verify the `publish` job
+ * View the Release in the Web UI
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: CI: Trigger Pipeline Rules

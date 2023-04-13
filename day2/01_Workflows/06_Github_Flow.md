@@ -29,7 +29,7 @@ GitLab: https://docs.gitlab.com/ce/workflow/forking_workflow.html
 
 ~~~ENDSECTION~~~
 
-!SLIDE smbullets small
+!SLIDE smbullets
 # Forking Workflow - Multiple Remote Repositories
 
 * **Multiple** remote repositories
