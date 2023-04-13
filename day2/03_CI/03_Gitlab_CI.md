@@ -769,6 +769,8 @@ Example:
 Example:
 
     my_parallel_job:
+      before_script:
+        - env
       script:
         - echo "Platform: $PLATFORM"
         - echo "Architecture: $ARCH"
