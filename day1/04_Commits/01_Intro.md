@@ -8,7 +8,7 @@ Commits are the history or logbook of our project.
 
 * They can have a subject line and a body
 * Keep the subject short and simple
-* Add a detailed explanations for larger changes
+* Add a detailed explanation for larger changes
 
 Example:
 

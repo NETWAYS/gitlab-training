@@ -28,7 +28,7 @@ Amending other commits in Git history is also possible, explained later with `gi
  * Change into `$HOME/training`
  * Modify README.md and add more text
  * Add README.md to the staging area and commit the change
- * Edit README.md again and add it to staging area
+ * Edit README.md again and add it to the staging area
  * Use `git commit --amend README.md` and explain what happens
 * Bonus:
  * Edit the commit message using `git commit --amend`
@@ -48,7 +48,7 @@ Amending other commits in Git history is also possible, explained later with `gi
 * Change into `$HOME/training`
 * Modify README.md and add more text
 * Add README.md to the staging area and commit the change
-* Edit README.md again and add it to staging area
+* Edit README.md again and add it to the staging area
 * Use `git commit --amend README.md` to add the change to the previous commit
 
 ## Bonus:

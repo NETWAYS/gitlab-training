@@ -30,7 +30,7 @@ The main branch is used for release history (including version tags).
 !SLIDE smbullets noprint
 # Gitflow Workflow - Feature Branches
 
-Development happends on features branches.
+Development happens on feature branches.
 
 * Feature branches use the development branch as their parent
 * Once development is completed, they are merged
@@ -40,7 +40,7 @@ Development happends on features branches.
 !SLIDE smbullets printonly
 # Gitflow Workflow - Feature Branches
 
-Development happends on features branches.
+Development happens on feature branches.
 
 * Feature branches use the development branch as their parent
 * Once development is completed, they are merged to `develop`

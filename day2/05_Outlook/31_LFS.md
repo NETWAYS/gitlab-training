@@ -4,7 +4,7 @@
 Git LFS replaces large files (audio, videos, datasets, graphics) with text pointers.
 
 * It is generally not recommended to store binary files in Git
-* Git LFS is a plugin to overcome this shortcomming
+* Git LFS is a plugin to overcome this shortcoming
 * Requires a `.gitattributes` file for tracking files
 
 Installation:

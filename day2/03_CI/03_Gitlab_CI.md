@@ -56,7 +56,7 @@ https://docs.gitlab.com/runner/register/index.html
 !SLIDE smbullets
 # GitLab CI Configuration
 
-The CI is configured by the `.gitlab-ci.yml` in our Git repository
+The CI is configured by the `.gitlab-ci.yml` file in our Git repository
 
 * Jobs are triggered on specific events, e.g. `git push`
 * Jobs can run on-demand

@@ -169,7 +169,7 @@ Try it out with the trainer.
 
 Every wiki is a separate Git repository, within the project.
 
-* Support Markdown, Rdoc, AsciiDoc, and Org for content
+* Supports Markdown, Rdoc, AsciiDoc, and Org for content
 * Hierarchical links possible
 * Mermaid diagrams and charts can be included
 
@@ -397,7 +397,7 @@ This is only for the training. In reality use SSH authentication.
 
 Choose `History` and look at the Git commits, their author, subject and timestamp.
 
-Compare it with the local `git log` or `tig` entries.
+Compare it to the local `git log` or `tig` entries.
 
 ### GitLab Graphs
 

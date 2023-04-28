@@ -81,7 +81,7 @@ Best practice is to have a README.md file written in Markdown in every project, 
 # Remove changes
 
 * `git rm --cached`
-  * Removes files from to the staging area
+  * Removes files from the staging area
   * Hint: This comes in handy with `git add -A` before
 * `git rm`
   * Removes the files from working tree and Git repository

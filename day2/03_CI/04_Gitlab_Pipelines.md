@@ -191,7 +191,7 @@ We can use the `trigger` keyword to start other pipelines:
 
 * Multi-project pipeline or Child pipeline
 
-We can use the `rules` keyword include or exclude jobs.
+We can use the `rules` keyword to include or exclude jobs.
 
 Example:
 
