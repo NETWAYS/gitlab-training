@@ -1,44 +1,15 @@
-!SLIDE smbullets small
-# Workflow Examples: Icinga 2
+!SLIDE
+# Workflow Examples: Icinga
 
-* Feature branch workflow
-* `main` as development branch
-* Major releases from `main`, `support/x.y` for bugfix releases
+A mix of feature branch and gitflow workflow.
 
-Moving to GitHub, we extended this to:
+* `master` corresponds to the development branch
+* Major releases are created and tagged on `master`
+* `support/x.y` branches for bugfix releases of long time support releases
 
-* (WIP) Pull Requests, local and community forks
-* Travis CI, GitHub Actions (Linux) & Appveyor (Windows) automated tests
-* Developers review and approve PRs, maintainer merges
+Organizational workflow:
+
+* Pull Requests, local and community forks
+* Testing via GitHub Actions (Linux) and Appveyor (Windows)
+* Developers review and approve PRs, maintainers merge them
 * Maintainer prepares and publishes a release
-
-https://github.com/Icinga/icinga2/blob/master/CONTRIBUTING.md
-
-https://github.com/Icinga/icinga2/blob/master/RELEASE.md
-
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
-
-
-!SLIDE smbullets small
-# Workflow Examples: Icinga Exchange
-
-* Issue management in GitLab with milestones and boards
-* Developers create Merge Requests from local branches
-* CI jobs run unit and Mock tests (GitHub oauth, etc.)
-* Maintainer reviews MRs and merges
-* Maintainer creates a new release
-* Manual deployment via Puppet and release tags
-
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~

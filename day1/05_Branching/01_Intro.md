@@ -1,31 +1,29 @@
 !SLIDE subsection
 # ~~~SECTION:MAJOR~~~ Git Branching
 
-
-!SLIDE smbullets
+!SLIDE
 # Working with Git branches
 
-A git branch creates a new history line starting from the current
-git commit.
-
-Branches are useful to develop features/fixes in their isolated
+Branches are useful to develop features/fixes in an isolated
 environment.
 
-* Main branch
+* The default branch is usually called `main`
   * Note: Historically it was `master`, many vendors are now moving to `main`
-* Develop a new feature in a dedicated branch
-* Merge fixes into the main branch (production)
-* Continue to work on the feature
+* We can create dedicated branches for development
+* We can switch branches to work on things in parallel
+* Once we are done developing we merge the dedicated branch into `main`
+
+<center><img src="../../_images/mermaid/workflow-branches.mmd.png" alt="Feature Branch Workflow" width="50%" /></center>
 
 !SLIDE smbullets
 # Git Branch CLI commands
 
 * `git branch`
- * Create new branch without leaving the current one
- * Delete branches
- * List branches
+ * Creates a new branch
+ * Deletes existing branches
+ * Lists all available branches
 * `git checkout`
-  * Switch between branches
+  * Switches between branches
 * `git merge`
   * Incorporates commits from a branch into the current one
 
@@ -41,7 +39,6 @@ environment.
 
 ~~~ENDSECTION~~~
 
-
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Show the current branch
 
@@ -50,12 +47,6 @@ environment.
 * Steps:
  * Change into `$HOME/training`
  * Use `git branch` to highlight the current branch
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Show the current branch
@@ -89,7 +80,6 @@ environment.
     $ git branch
     * main
 
-
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Create and checkout a new branch
 
@@ -101,13 +91,7 @@ environment.
  * List the branches with `git branch`
  * Checkout the new branch with `git checkout feature/docs`
 * Bonus:
- * Explain `git checkout -b feature/docs2`
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
+ * Explain `git checkout -b feature/more-docs`
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Create and checkout a new branch
@@ -128,7 +112,7 @@ environment.
 
 ## Bonus:
 
-* Verify how `git checkout -b feature/docs2` works
+* Verify how `git checkout -b feature/more-docs` works
 * Explain how it helps here
 
 ****
@@ -171,8 +155,7 @@ when working with branches quite often.
 
     @@@ Sh
     $ git checkout main
-    $ git checkout -b feature/docs2
-
+    $ git checkout -b feature/more-docs
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Merge the branch
@@ -181,7 +164,7 @@ when working with branches quite often.
  * Use `git merge` to merge the new branch
 * Steps:
  * Change into `$HOME/training`
- * Modify the `README.md` and commit the change
+ * Edit the README.md and commit the change
  * Switch to the main branch
  * Use `git merge feature/docs` to merge the branch
 
@@ -209,13 +192,6 @@ when working with branches quite often.
     $ git checkout main
     $ git merge feature/docs
 
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
-
-
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Delete the branch
 
@@ -223,15 +199,9 @@ when working with branches quite often.
  * Delete the previously created branch
 * Steps:
  * Change into `$HOME/training`
- * Use `git branch -d` to delete the selected branch
+ * Use `git branch -d` to delete the feature/docs branch
 * Bonus:
  * Try to delete the branch you are currently on
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Delete the branch
@@ -247,7 +217,7 @@ when working with branches quite often.
 
 * Change into `$HOME/training`
 * Switch to the main branch
-* Use `git branch -d feature/docs2` to delete the selected branch
+* Use `git branch -d feature/docs` to delete the feature/docs branch
 
 ## Bonus:
 
@@ -273,7 +243,7 @@ when working with branches quite often.
 ### Delete the previously created branch
 
     @@@ Sh
-    $ git branch -d feature/docs2
+    $ git branch -d feature/docs
 
 ### Try to delete the current branch
 

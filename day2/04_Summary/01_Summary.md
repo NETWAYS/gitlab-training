@@ -26,7 +26,7 @@
   * `git branch`, `git checkout`
 * Remote Repositories
   * `git push`, `git fetch`, `git pull`
-* Merging and resolving conflics
+* Merging and resolving conflicts
   * `git merge`
 * Rebasing and squashing
   * `git rebase -i <SHA>`

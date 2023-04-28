@@ -2,10 +2,10 @@
 # Start a project
 
 * `git clone`
-  * Clone a copy of existing remote repository
-  * Can be newly created in GitLab/GitHub and empty
+  * Clones a copy of an existing remote repository (i.e. from GitLab)
+  * Can be modified with `--depth=5`
 * `git init`
-  * Initialize a local empty Git repository
+  * Initializes a local empty Git repository
 
 ~~~SECTION:handouts~~~
 
@@ -22,7 +22,6 @@ called an `origin`.
 
 ~~~ENDSECTION~~~
 
-
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Clone an existing Git repository
 
@@ -33,12 +32,6 @@ called an `origin`.
  * Copy the clone URL
  * Navigate into your home directory
  * Use `git clone` to clone the remote Git repository
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Clone an existing Git repository
@@ -57,8 +50,6 @@ called an `origin`.
 * Navigate into your home directory
 * Use `git clone` to clone the remote Git repository
 
-
-
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
 ****
@@ -73,27 +64,17 @@ called an `origin`.
     $ cd $HOME
     $ git clone https://github.com/Icinga/icinga2.git
 
-
-
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Initialize a local Git repository
 
 * Objective:
- * Initialize git repository
+ * Initialize a new Git repository
 * Steps:
  * Create a new directory called `training` in your home directory
  * Change into it
  * Run `git init`
 
-We will be working inside the `training` directory throughout the training
-unless noted otherwise.
-
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
+We will be working inside this `training` directory unless noted otherwise.
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Initialize a local Git repository
@@ -111,8 +92,6 @@ unless noted otherwise.
 * Change into it
 * Run `git init`
 
-
-
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
 ****
@@ -128,4 +107,3 @@ unless noted otherwise.
     $ mkdir training
     $ cd training
     $ git init
-

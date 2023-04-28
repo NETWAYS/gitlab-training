@@ -1,23 +1,17 @@
 !SLIDE smbullets
-# HEAD and "smart pointers"
-
-A git commit is unique and identified by its SHA checksum.
+# What is "HEAD" in Git?
 
 `HEAD` is a pointer to the latest commit in the current branch.
 
-`HEAD^` identifies the second latest commit.
+`HEAD` can be used in Git commands as reference.
 
-`HEAD~9` points to the tenth latest commit. Counting starts at zero.
+* `HEAD^` identifies the second latest commit.
+* `HEAD~9` points to the tenth latest commit. Counting starts at zero.
 
-This can be used for `git show`. More advanced techniques will be discussed later.
-
-~~~SECTION:handouts~~~
-
-~~~ENDSECTION~~~
-
+Hint: Git stores this information in the file `.git/HEAD`.
 
 !SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Show the second commit
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Show the second latest commit
 
 * Objective:
  * Use `HEAD` and only show the second latest commit
@@ -25,19 +19,13 @@ This can be used for `git show`. More advanced techniques will be discussed late
  * Change into `$HOME/training`
  * Combine `git show` with `HEAD^` or `HEAD~1`
 
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
-
 !SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Show the second commit
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Show the second latest commit
 
-## Objective: Show the second commit
+## Objective: Show the second latest commit
 ****
 
-* Show the second commit
+* Show the second latest commit
 
 ## Steps:
 
@@ -51,7 +39,7 @@ This can be used for `git show`. More advanced techniques will be discussed late
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
 ****
 
-## Show the second commit
+## Show the second latest commit
 
 ****
 
@@ -68,18 +56,15 @@ or
     @@@ Sh
     $ git show HEAD~1
 
-
-
-
 !SLIDE smbullets
-# Branches and "smart pointers"
+# Branches and "HEAD"
 
-`feature/docs` as branch name also points to the latest commit.
+Branch names are also pointers to their respective latest commit.
 
-You don't need to change branches to
+This means, you don't need to change branches to
 
 * Show different branch histories
-* Show specific commits where you don't know the commit id
+* Show specific commits where you don't know the commit ID
 * Compare branches and committed code
 
 Example:
@@ -87,14 +72,23 @@ Example:
     $ git show feature/docs
     commit b825ff86e4022a8fbcf52cb5a1d9a1984bd2a310 (feature/docs)
 
+
 ~~~SECTION:handouts~~~
 
+****
+
+We can view the content of the branch name pointer as such:
+
+    cat .git/refs/heads/feature/foobar
+    fefe5d45980e72488e633b8ffbb25293d22389886
+
 ~~~ENDSECTION~~~
+
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Show history of different branch
 
 * Objective:
- * Use `git log` from the main branch on another branch
+ * Use `git log` on the main branch and other branches
 * Steps:
  * Create a new branch aside from main, if not existing: `git checkout -b feature/docs`
  * Switch to the main branch
@@ -103,19 +97,13 @@ Example:
  * Modify and commit changes
  * Diff current HEAD against `feature/docs` branch
 
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
-
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Show history of different branch
 
 ## Objective: Delete the branch
 ****
 
-* Use `git log` from the main branch on another branch
+* Use `git log` on the main branch and other branches
 
 ## Steps:
 

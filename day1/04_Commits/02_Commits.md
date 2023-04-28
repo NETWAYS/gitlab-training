@@ -2,15 +2,15 @@
 # Work on Git History
 
 * `git commit`
- * Selected changes from the staging area
- * All changes (`-a`) not necessarily added to the staging area
-* Verbose mode shows changes compared to latest commit (`-v`)
-* Uses the configured editor (vim, nano, etc.)
- * `-m` allows for a short commit message without editor view
+ * Takes all files from the staging area
+ * Alternatively `-a` or `--interactive` are possible
+ * Verbose mode `-v` shows changes compared to latest commit
+* Uses the editor configured in `.gitconfig`  (vim, nano, etc.)
+ * `-m` allows for a short commit message without the editor
 
-Commits use the `user.name` and `user.email` settings to qualify
-you as the author of this change. In addition to that the date
-and time is stored.
+Commits use the `user.name` and `user.email` settings to set the commit's author.
+
+Additionally, the date, time, and the checksum of the previous commit are stored.
 
 ~~~SECTION:handouts~~~
 
@@ -22,7 +22,6 @@ requiring you to add a commit message.
 
 ~~~ENDSECTION~~~
 
-
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Commit Changes
 
@@ -30,17 +29,11 @@ requiring you to add a commit message.
  * Modify files and commit your changes
 * Steps:
  * Change into `$HOME/training`
- * Modify the `README.md` file and add more docs
- * Add the change to the staging area
- * Commit the change to your Git history with `git commit -v README.md`
+ * Modify the README.md file and add more docs
+ * Add the README.md to the staging area
+ * Commit the change to your Git history with `git commit -v`
 * Next steps:
- * Use `git log` to verify the history
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
+ * Use `git log` to verify the commit
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Commit Changes
@@ -55,16 +48,15 @@ requiring you to add a commit message.
 ****
 
 * Change into `$HOME/training`
-* Modify the `README.md` file and add more docs
-* Add the change to the staging area
-* Commit the change to your Git history with `git commit -v README.md`
+* Modify the README.md file and add more text
+* Add the README.md to the staging area
+* Commit the change to your Git history with `git commit -v`
 
 ## Next steps:
 
 ****
 
 * Use `git log` to verify the history
-
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
@@ -94,12 +86,9 @@ requiring you to add a commit message.
 
       My first commit :)
 
-
     Save and exit.
 
 ### Verify the Git history
 
     @@@ Sh
     $ git log
-
-

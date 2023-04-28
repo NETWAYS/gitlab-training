@@ -1,114 +1,89 @@
 !SLIDE smbullets
 # Gitflow Workflow
 
-* Strict branching model for project releases
+Gitflow is a strict branching model for larger projects
+
 * Based on Feature Branch Workflow
-* Assigns roles to different branches
+* It assigns roles to different branches
 * Defines interaction between branches for releases
- * Prepare
- * Maintain
- * Record
-
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
 
 !SLIDE smbullets noprint
 # Gitflow Workflow - Historical Branches
 
-* Main branch for release history (including version tags)
-* Main branch is always `stable` and in production
-* Develop branch for feature integration
+The main branch is used for release history (including version tags).
 
-<center><img src="../../_images/mermaid/workflow-historical-branches.mmd.png" alt="Gitflow Workflow" width="400px"/></center>
+* The main branch is always `stable` and in production
+* A development branch is used for feature integration
+
+<center><img src="../../_images/git_gitflow_workflow_01.png" alt="Gitflow Workflow" width="600px"/></center>
 
 !SLIDE smbullets printonly
 # Gitflow Workflow - Historical Branches
 
-* Main branch for release history (including version tags)
-* Main branch is always `stable` and in production
-* Develop branch for feature integration
+The main branch is used for release history (including version tags).
 
-<center><img src="../../_images/mermaid/workflow-historical-branches.mmd.png" alt="Gitflow Workflow" width="75%" /></center>
+* The main branch is always `stable` and in production
+* A development branch is used for feature integration
 
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
+<center><img src="../../_images/git_gitflow_workflow_01.png" alt="Gitflow Workflow" width="75%" /></center>
 
 !SLIDE smbullets noprint
 # Gitflow Workflow - Feature Branches
 
-* New features in their own branches
-* Feature branches use `develop` as their parent branch
-* Once completed, merged back to `develop`
+Development happens on feature branches.
 
-<center><img src="../../_images/mermaid/workflow-feature-branches.mmd.png" alt="Gitflow Workflow" width="600px" /></center>
+* Feature branches use the development branch as their parent
+* Once development is completed, they are merged
+
+<center><img src="../../_images/git_gitflow_workflow_02.png" alt="Gitflow Workflow" width="600px" /></center>
 
 !SLIDE smbullets printonly
 # Gitflow Workflow - Feature Branches
 
-* New features in their own branches
-* Feature branches use `develop` as their parent branch
-* Once completed, merged back to `develop`
+Development happens on feature branches.
 
-<center><img src="../../_images/mermaid/workflow-feature-branches.mmd.png" alt="Gitflow Workflow" width="85%" /></center>
+* Feature branches use the development branch as their parent
+* Once development is completed, they are merged to `develop`
 
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
+<center><img src="../../_images/git_gitflow_workflow_02.png" alt="Gitflow Workflow" width="85%" /></center>
 
 !SLIDE smbullets noprint
 # Gitflow Workflow - Release Branches
 
-* Enough features in `develop`: `release` branch based on `develop`
-* Ready to ship: merged to `main` and tagged with version
+New releases are prepared on a temporary release branch.
 
-<center><img src="../../_images/mermaid/workflow-release-branches.mmd.png" alt="Gitflow Workflow" width="580px" /></center>
+* Release branches use the development branch as their parent
+* Preparation happens on the release branch, they are then merged to `main`
+
+<center><img src="../../_images/git_gitflow_workflow_03.png" alt="Gitflow Workflow" width="600px" /></center>
 
 !SLIDE smbullets printonly
 # Gitflow Workflow - Release Branches
 
-* Enough features in `develop`: `release` branch based on `develop`
-* Ready to ship: merged to `main` and tagged with version
+New releases are prepared on a temporary release branch.
 
-<center><img src="../../_images/mermaid/workflow-release-branches.mmd.png" alt="Gitflow Workflow" width="85%" /></center>
+* Release branches use the development branch as their parent
+* Release preparation happens on the release branch
+* Once the release is ready, they are merged to `main`
 
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
+<center><img src="../../_images/git_gitflow_workflow_03.png" alt="Gitflow Workflow" width="85%" /></center>
 
 !SLIDE smbullets noprint
 # Gitflow Workflow - Maintenance Branches
 
-* Fixes based on `main`
-* Merged to `main`, tagged and merged to `develop`
+Maintenance/hotfix branches are used to quickly patch releases.
 
-<center><img src="../../_images/mermaid/workflow-maintenance-branch.mmd.png" alt="Gitflow Workflow" width="600px" /></center>
+* Hotfix branches the `main` branch as their parent
+* Hotfix branches are merged into `main`, tagged and also merged into `develop`
+
+<center><img src="../../_images/git_gitflow_workflow_04.png" alt="Gitflow Workflow" width="600px" /></center>
 
 !SLIDE smbullets printonly
 # Gitflow Workflow - Maintenance Branches
 
-* Fixes based on `main`
-* Merged to `main`, tagged and merged to `develop`
+Maintenance/hotfix branches are used to quickly patch releases.
 
-<center><img src="../../_images/mermaid/workflow-maintenance-branch.mmd.png" alt="Gitflow Workflow" width="85%" /></center>
+* Hotfix branches the `main` branch as their parent
+* Hotfix branches are merged into `main`, tagged and also merged into `develop`
 
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
+<center><img src="../../_images/git_gitflow_workflow_04.png" alt="Gitflow Workflow" width="85%" /></center>

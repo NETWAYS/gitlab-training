@@ -1,16 +1,21 @@
 !SLIDE smbullets
-# More Hints: Rebase and Squash
+# Rewriting History: Rebase and Squash
 
-The `git rebase` command can also be used to perform certain
-actions on a specific commit history.
-
-If you are contributing to open source projects developers
-might ask you to either rebase your history or even `squash`
+Developers from open source projects sometimes ask you
+to `rebase` your history or even `squash`
 all commits into one commit.
 
-    commit1  => commit
+Squashing in Git means to combine multiple commits into one.
+
+    commit1 => commit
     commit2
     commit3
+
+This is recommended when you have a lot of WIP commits,
+to clean up your history, so it only has meaningful commits.
+
+`git rebase` can also be used to perform various
+actions on the repository's history.
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Rebase and squash commits
@@ -104,8 +109,6 @@ from commit messages.
     squash ce90e16 commit2
     squash ed6a68f commit3
 
-
-
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Force Push and Protected Branches
 
@@ -142,7 +145,6 @@ Therefore it is advised to protect sensitive branches in the project's repositor
 **Hint**: Project maintainers can edit the settings. If you have the requirement
 to make this a permanent setting as administrator, you can e.g. use the REST API
 to always force this setting with a small script and cronjob.
-
 
 ~~~ENDSECTION~~~
 
@@ -196,8 +198,8 @@ and choose `Protected Branches > Expand`.
 Add `main` as protected branch, and set all options to
 `maintainers` again.
 
-!SLIDE smbullets
-# More Hints: Force Push in shared branch, what now?
+!SLIDE
+# Don't Force Push a shared branch
 
 * You pulled the 3 commits now being squashed in main
 * Your colleague force pushed the branch with 1 squashed commit
@@ -210,11 +212,4 @@ Discuss this with the trainer.
     $ git checkout feature/new-backend
     $ git reset --hard origin/feature/new-backend
 
-
-!SLIDE smbullets
-# Alternatives to force push?
-
-* `git revert`
-* Creates a new commit undoing changes
-* Can be used on merges too!
-* Allows to document an undo
+Alernatives: `git revert` which allows to document an undo.

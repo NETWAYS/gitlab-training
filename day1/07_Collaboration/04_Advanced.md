@@ -2,18 +2,26 @@
 # Advanced Git Commands: Stash
 
 * `git stash`
- * Put current changes on a temporary stack
- * Useful when changing branches (diff would not apply)
- * Use with care, pop changes immediately after changing back
- * Only local, not stored in the central repository
+ * Moves the current working directory to a temporary stack
+ * The stash is only local, not stored in the central repository
+ * Useful when changing branches or pulling
+ * Use with care, apply and drop changes immediately after changing back
 
 Example:
 
     @@@ Sh
     $ git stash
     Saved working directory and index state WIP on main: 4b4f6c2 <msg>
+    
+    $ git stash apply
+    On branch main
+    Your branch is up to date with 'origin/main'.
+    
+    Changes to be committed:
+    (use "git restore --staged <file>..." to unstage)
+    new file:   <your file>
 
-    $ git stash pop
+    $ git stash drop
     Dropped refs/stash@{0} (43d879b99aca12b6175c5362339b177af22589a9)
 
 ~~~SECTION:handouts~~~
@@ -23,11 +31,13 @@ Example:
 `git stash` allows you put your current changes on a temporary stack (`stash`).
 This comes in handy when you want to change branches with a different history
 where your uncommitted changes will not apply.
-Use `git stash pop` to fetch the changes again. You can stash multiple uncommitted
+Use `git stash apply` to copy them from the stash to your working directory again.
+Use `git stash drop` to remove your stashed changes.
+
+You can stash multiple uncommitted
 stages, `git stash list` will list them.
 
 ~~~ENDSECTION~~~
-
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Learn more about git stash
@@ -41,13 +51,8 @@ stages, `git stash list` will list them.
  * Stash your current changes to the working directory
  * Run git status again
  * Examine the stash with `git stash list` and `git stash show -p`
- * Fetch the previously stashed changes with `git stash pop`
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
+ * Fetch the previously stashed changes with `git stash apply`
+ * Drop the stashed changes with `git stash drop`
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Learn more about git stash
@@ -65,11 +70,13 @@ stages, `git stash list` will list them.
 * Stash your current changes to the working directory
 * Run git status again
 * Examine the stash with `git stash list` and `git stash show -p`
-* Fetch the previously stashed changes with `git stash pop`
+ * Fetch the previously stashed changes with `git stash apply`
+ * Drop the stashed changes with `git stash drop`
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
 ****
+
 
 ## Learn more about git stash
 
@@ -128,29 +135,35 @@ stages, `git stash list` will list them.
 ### Fetch previously stashed changes
 
     @@@ Sh
-    $ git stash pop
+    $ git stash apply
     
+    On branch main
+    Your branch is up to date with 'origin/main'.
+
+    Changes to be committed:
+    (use "git restore --staged <file>..." to unstage)
+    new file:   README.md
+
+### Drop the stashed changes
+
+    @@@ Sh
+    $ git stash drop
+
     Dropped refs/stash@{0} (a9f28340e6d536a9179307bd26169368e450161f)
-    
 
 
 !SLIDE smbullets
 # Advanced Git Commands: Cherry-Pick
 
 * `git cherry-pick`
-  * Collect specific commit into your working tree
-  * Applies the contained patch
-  * When the base commit differs, checksum changes = new commit id
-  * Use `git cherry-pick -x <sha1>` to add source comment
+  * Integrates a specific commit into your working tree
+  * Hint: When the base commit differs, the checksum changes, thus new commit ID
+  * `-x` can be used to keep a reference to the original commit
 
-~~~SECTION:handouts~~~
+Example:
 
-****
+    $ git cherry-pick -x ef5d1c2
 
-`git cherry-pick` collects a specific commit into your working tree.
-
-
-~~~ENDSECTION~~~
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Learn more about git cherry-pick
@@ -164,13 +177,6 @@ stages, `git stash list` will list them.
  * Checkout the main branch
  * Use `git cherry-pick -x <id>`
  * Verify the commit with `git show`
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
-
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Learn more about git cherry-pick
@@ -238,7 +244,7 @@ stages, `git stash list` will list them.
     @@@ Sh
     $ git show
     commit 2f3a0096017051d9ab86774282203dc6c9827ee4 (HEAD -> main)
-    Author: Michael Friedrich <michael.friedrich@netways.de>
+    Author: Guy Incognito <g.i@example.com>
     Date:   Thu Jan 24 14:52:19 2019 +0100
 
         Update docs for cherry-pick

@@ -1,5 +1,5 @@
-!SLIDE smbullets small
-# Git Submodules
+!SLIDE
+# Git - Submodules
 
 A Git repository can contain other Git repositories via submodules.
 
@@ -22,8 +22,8 @@ Note: Git submodule removal is not trivial.
 
 ~~~ENDSECTION~~~
 
-!SLIDE smbullets small
-# Git Subtree
+!SLIDE
+# Git - Subtree
 
 A Git subtree is another option to include other Git repositories within a Git repository.
 

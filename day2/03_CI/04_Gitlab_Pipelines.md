@@ -1,15 +1,16 @@
 !SLIDE smbullets
 # GitLab Pipelines
 
-Code => Build => Test => Deploy
+Pipelines are the top-level component of continuous integration.
 
-* Encapsulate QA steps into pipelines
-* Visible which pipeline is affected
-* Halt if one step is failing
-* Direct feedback to developers
-* CI and CD
-  * Continuous Integration
-  * Continuous Delivery
+* Jobs, which define what to do.
+* Stages, which define when to run the jobs.
+  * If all jobs in a stage succeed, the pipeline moves forward
+  * If any job in a stage fails, the pipeline ends early
+
+Example:
+
+    Clone Code => Test => Build => Deploy
 
 ~~~SECTION:handouts~~~
 
@@ -20,7 +21,6 @@ Reference:
 https://docs.gitlab.com/ee/ci/pipelines/
 
 ~~~ENDSECTION~~~
-
 
 !SLIDE smbullets noprint
 # GitLab Pipelines: Basic Pipelines
@@ -36,30 +36,26 @@ https://docs.gitlab.com/ee/ci/pipelines/
 
 <center><img src="../../_images/ci/git_gitlab_ci_pipelines_project_ci_cd.png" style="width:450px" alt="GitLab Pipelines"/></center>
 
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
-
-!SLIDE smbullets small
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: CI: Pipelines
+!SLIDE smbullets
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Build a Pipeline
 
 * Objective:
  * Build a job pipeline with stages
+* Steps:
+ * Edit the `.gitlab-ci.yml` and add `stages`
+ * Place your jobs in stages using `stage:`
 
 Example:
 
     stages:
       - test
-      - deploy
+      - build
 
     all_tests:
       stage: test
 
     markdown:
-      stage: deploy
+      stage: build
 
 ~~~SECTION:handouts~~~
 
@@ -68,8 +64,6 @@ Example:
 Documentation: https://docs.gitlab.com/ce/ci/yaml/README.html#stage
 
 ~~~ENDSECTION~~~
-
-
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: CI: Pipelines
@@ -101,7 +95,7 @@ Documentation: https://docs.gitlab.com/ce/ci/yaml/README.html#stage
 
     stages:
       - test
-      - deploy
+      - build
 
 ### Add jobs to stages
 
@@ -116,7 +110,7 @@ Documentation: https://docs.gitlab.com/ce/ci/yaml/README.html#stage
     ...
 
     markdown:
-      stage: deploy
+      stage: build
 
 ### Complete example
 
@@ -131,7 +125,7 @@ Documentation: https://docs.gitlab.com/ce/ci/yaml/README.html#stage
 
     stages:
       - test
-      - deploy
+      - build
 
     all_tests:
       stage: test
@@ -139,7 +133,7 @@ Documentation: https://docs.gitlab.com/ce/ci/yaml/README.html#stage
         - exit 0
 
     markdown:
-      stage: deploy
+      stage: build
       script:
         - python -m markdown README.md > README.html
       artifacts:
@@ -159,45 +153,15 @@ This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious a
 
 
 !SLIDE smbullets
-# Jobs, Stages, Pipelines
-
-* Stage pipeline
-
-<center>
-<img src="../../_images/ci/git_gitlab_ci_jobs_stages.png"/>
-</center>
-
-* Failure: Edit the first job to `exit 1`
-
-<center>
-<img src="../../_images/ci/git_gitlab_ci_jobs_stages_failed.png"/>
-</center>
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
-
-!SLIDE smbullets
-# Pipeline schedules
-
-* Pipelines are normally run based on certain conditions being met
-* Pipeline schedules can be used to also run pipelines at specific intervals
-* Navigate to `CI / CD > Schedules` to create a new pipeline
-* Pipelines can be scheduled using Cron syntax
-
-****
-
-!SLIDE smbullets
 # GitLab Pipelines: Directed Acyclic Graph Pipelines
 
-* Maximum efficiency
-* Disregards stage order
-* Use `needs` keyword to define dependencies between jobs
+Instead of stages we can use the `needs` keyword to define dependencies between jobs
+
+* Builds relationships between jobs
+* Ignore stage ordering and run some jobs without waiting for others
 
 Example:
-    
+
     build_a:
       stage: build
       script:
@@ -209,25 +173,150 @@ Example:
       script:
         - echo "This test job will start as soon as build_a finishes."
 
-
-****
-
 !SLIDE smbullets
-# GitLab Pipelines: Child / Parent Pipelines
+# GitLab Pipelines: Schedules
 
-* Clean configuration
-* Split your tests for different parts of your code
+Pipeline schedules can be used to also run pipelines at specific intervals.
+
+* Pipelines are normally run based on certain conditions being met
+* Navigate to `CI / CD > Schedules` to create a new pipeline
+* Pipelines can be scheduled using Cron syntax
+
+Try it out with the trainer.
+
+!SLIDE
+# GitLab Pipelines: Triggers and Rules
+
+We can use the `trigger` keyword to start other pipelines:
+
+* Multi-project pipeline or Child pipeline
+
+We can use the `rules` keyword to include or exclude jobs.
 
 Example:
 
     stages:
-      - triggers
-
-    trigger_a:
-      stage: triggers
+      - test
+    run_a_jobs:
+      stage: test
       trigger:
         include: a/.gitlab-ci.yml
       rules:
         - changes:
             - a/*
 
+~~~SECTION:handouts~~~
+
+****
+
+Rules are evaluated in order until the first match when the pipeline is created. Depending on the configuration, a job is either included or excluded.
+
+The `rules` keyword accepts an array of rules defined with:
+
+* if
+* changes
+* exists
+* allow_failure
+* variables
+* when
+
+~~~ENDSECTION~~~
+
+!SLIDE smbullets small
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: CI: Pipeline Rules
+
+* Objective:
+ * Add a job to publish our HTML
+* Steps:
+ * Add a new job `publish`
+ * Use `rules` to start this job only when we add tags
+ * Use `needs` to add a dependency on the `build` job
+ * Use `release` to add a release for the `build` job
+
+Example:
+
+    publish:
+      needs: [build]
+      script:
+        - echo README.html
+      rules:
+        - if: $CI_COMMIT_TAG
+      release:
+        tag_name: '$CI_COMMIT_TAG'
+        description: "The End of the Training Release. Hooray!"
+
+
+!SLIDE supplemental exercises
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: CI: Pipeline Rules
+
+## Add a job to publish our HTML
+****
+
+* Add a job to publish our HTML
+
+## Steps:
+
+ * Add a new job `publish`
+ * Use `rules` to start this job only when we add tags
+ * Use `needs` to add a dependency on the `build` job
+
+!SLIDE supplemental solutions
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
+****
+
+## Add a job to publish our HTML
+
+****
+
+### Add a job to publish our HTML
+
+    @@@ Sh
+    publish:
+      stage: publish
+      needs: [build]
+      script:
+        - cat README.html
+      rules:
+        - if: $CI_COMMIT_TAG
+      release:
+        tag_name: '$CI_COMMIT_TAG'
+        ref: '$CI_COMMIT_SHA'
+        description: "This is the End of the Training Release"
+
+---------------
+
+!SLIDE smbullets
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: CI: Trigger Pipeline Rules
+
+* Objective:
+ * Trigger the new job by creating a Git tag
+* Steps:
+ * Use the Web UI to create a new tag `v1.0`
+ * Verify the `publish` job
+ * View the Release in the Web UI
+
+!SLIDE supplemental exercises
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: CI: Trigger Pipeline Rules
+
+## Trigger the new job by creating a Git tag
+****
+
+* Trigger the new job by creating a Git tag
+
+## Steps:
+
+* Use the Web UI to create a new tag `v1.0`
+* Verify the `publish` job
+
+!SLIDE supplemental solutions
+# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
+****
+
+## Trigger the new job by creating a Git tag
+
+****
+
+### Trigger the new job by creating a Git tag
+
+* Open GitLab and navigate into `Repository > Tags`
+* Click on `New Tag` and create a new `v1.0` tag

@@ -1,18 +1,38 @@
 !SLIDE smbullets
-# Configuration
+# Git Configuration
 
-* CLI command support
-* Edit $HOME/.gitconfig directly
+The Git command-line can be configured in multiple locations:
+
+* Global for the user
+  * `$HOME/.gitconfig`
+* Local to the repository
+  * `training/.git/config`
+
+Optional configuration can also be included:
+
+    [includeIf "gitdir:/path/to/group/"]
+	    path = /path/to/foo.inc
+
+~~~ENDSECTION~~~
+
+!SLIDE smbullets
+# Git Configuration Sections
+
+The Git configuration has different sections.
+
+* Commit author [`user`]
+* Core functionality (e.g. editor, pager) [`core`]
+* Colors [`color`] and Aliases [`alias`]
+* And many more...
 
 Example:
 
     @@@ Sh
-    $ git config --global user.email michael.friedrich@netways.de
-
-    $ cat $HOME/.gitconfig
     [user]
-    email = michael.friedrich@netways.de
-
+      email = name.surname@example.com
+      name  = Name Surname
+    [core]
+      editor = nano
 
 ~~~SECTION:handouts~~~
 
@@ -20,30 +40,6 @@ Example:
 
 More information can be found in the documentation at
 https://git-scm.com/book/tr/v2/Customizing-Git-Git-Configuration
-
-~~~ENDSECTION~~~
-
-!SLIDE smbullets
-# Configuration Sections
-
-* Commit author (`user`)
-* Aliases (`alias`)
-* Colors for diff and verbose commit (`color`)
-* Core functionality (`core`)
-
-Example:
-
-    @@@ Sh
-    [user]
-      email = michael.friedrich@netways.de
-      name  = Michael Friedrich
-    [color "status"]
-      untracked = red
-
-~~~SECTION:handouts~~~
-
-****
-
 
 ~~~ENDSECTION~~~
 
@@ -87,12 +83,12 @@ Example:
 ### Set the global username
 
     @@@ Sh
-    $ git config --global user.name "Michael Friedrich"
+    $ git config --global user.name "Name Surname"
 
 ### Set the global email address
 
     @@@ Sh
-    $ git config --global user.email "michael.friedrich@netways.de"
+    $ git config --global user.email "name.surname@example.com"
 
 ### Verification
 
@@ -106,4 +102,3 @@ In addition to that you can open the `.gitconfig` file in your $HOME directory.
 ### Notes
 
 You can also use `git config --global --list` to list all configured options.
-

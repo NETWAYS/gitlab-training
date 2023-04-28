@@ -4,16 +4,9 @@
 !SLIDE smbullets
 # Collaboration
 
-* Work locally
-* Push to remote repository
-* Share your work with others
-* Review, discuss, collaborate
-* Change, adopt, release
+A common workflow when working with others is:
 
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
-
+* Each person works locally
+* Finished work is pushed to remote repository
+* We review and discuss the changes
+* We merge the changes into our main branch

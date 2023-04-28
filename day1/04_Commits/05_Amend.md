@@ -1,22 +1,23 @@
 !SLIDE smbullets
 # Amend changes to commits
 
-* Change the commit message, e.g. typos or missing changes broke the build
-* Amend changes from staging area
-* Helps if new files were added but not committed
-* `git commit --amend` changes the latest commit
- * Amending commits in Git history is possible, explained later with `git rebase`
+`git commit --amend` is a convenient way to modify the most recent commit.
 
-If you amend changes to a specific commit, a new unique commit id is generated.
-This changes the Git history and we will learn later how to resolve possible
-problems in collaboration with others.
+* Change the commit message (e.g. typos or better phrasing)
+* Fix a bug in already commited files
+* Add missing files into the last commit
+
+If you amend changes to a specific commit, a new unique commit ID is generated.
+
+This changes the Git history and we will learn later this might cause issues when collaborating.
 
 ~~~SECTION:handouts~~~
 
 ****
 
-~~~ENDSECTION~~~
+Amending other commits in Git history is also possible, explained later with `git rebase`.
 
+~~~ENDSECTION~~~
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Amend changes to commits
@@ -25,19 +26,12 @@ problems in collaboration with others.
  * Use git amend
 * Steps:
  * Change into `$HOME/training`
- * Modify `README.md` and add docs about amend
- * Add `README.md` to the staging area and commit the change
- * Edit `README.md` again and add it to staging area
+ * Modify README.md and add more text
+ * Add README.md to the staging area and commit the change
+ * Edit README.md again and add it to the staging area
  * Use `git commit --amend README.md` and explain what happens
 * Bonus:
- * Adopt the commit message using `git commit --amend`
-
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
+ * Edit the commit message using `git commit --amend`
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Amend changes to commits
@@ -52,9 +46,9 @@ problems in collaboration with others.
 ****
 
 * Change into `$HOME/training`
-* Modify `README.md` and add docs about amend
-* Add `README.md` to the staging area and commit the change
-* Edit `README.md` again and add it to staging area
+* Modify README.md and add more text
+* Add README.md to the staging area and commit the change
+* Edit README.md again and add it to the staging area
 * Use `git commit --amend README.md` to add the change to the previous commit
 
 ## Bonus:

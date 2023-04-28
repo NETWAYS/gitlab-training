@@ -1,6 +1,8 @@
 !SLIDE smbullets noprint
 # GitLab Workflow
 
+A workflow similar to feature branches.
+
 * Manage branch access with roles and permissions
 * Create `Merge Requests` from branches, CI runs tests/builds automatically
 * Review and inline code comments
@@ -18,51 +20,6 @@
 
 <center><img src="../../_images/mermaid/workflow-gitlab-mr.mmd.png" alt="GitLab Workflow" width="75%" /></center>
 
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
-
-!SLIDE smbullets
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Create Milestone and first Issue
-
-* Objective
- * Create Milestone `v0.1`
- * Create Issue `Update documentation`
-
-* Steps:
- * Navigate into `Issues > Milestones`
- * Select `New Milestone` and use `v0.1` as title
- * Navigate to `Issues` and select `New issue`
- * Use `Update documentation` as title, add a description
- * Assign the `v0.1` milestone
-
-~~~SECTION:handouts~~~
-
-****
-
-~~~ENDSECTION~~~
-
-!SLIDE supplemental exercises
-# Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Create Milestone and First Issue
-
-## Objective: Create Milestone and First Issue
-****
-
-* Create Milestone and First Issue
-
-## Steps:
-
-****
-
-* Navigate into `Issues > Milestones`
-* Select `New Milestone` and use `v0.1` as title
-* Navigate to `Issues` and select `New issue`
-* Use `Update documentation` as title, add a description
-* Assign the `v0.1` milestone
-
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
 ****
@@ -72,9 +29,6 @@
 ****
 
 Follow the instructions and ask the trainer for help.
-
-
-
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Create Merge Request
@@ -105,7 +59,6 @@ branch names, review them and then delete them.
     $ git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}'
     $ git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d
 
-
 ~~~ENDSECTION~~~
 
 !SLIDE supplemental exercises
@@ -132,7 +85,6 @@ branch names, review them and then delete them.
 ****
 
 * Run `git fetch --prune` and `git branch -d feature/docs-merge-request`
-
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
@@ -201,6 +153,3 @@ by merging the MR.
     $ git checkout main
     $ git pull
     $ tig
-
-
-

@@ -2,8 +2,8 @@
   "name": "GitLab",
   "subtitle": "Version Control System & Continuous Integration",
   "location": "Nuremberg",
-  "author": "Feu Mourek, Henrik Triem, Markus Opolka, <br><small>originally Michael Friedrich</small>",
-  "release": "3.0.0",
+  "author": "Feu Mourek, Henrik Triem, Markus Opolka, Daniel Bodky, <br><small>originally Michael Friedrich</small>",
+  "release": "4.0.0",
 
   "favicon": "image/global/favicon.ico",
 
@@ -33,7 +33,6 @@
 
     {"section":"day2/00_Repetition/"},
     {"section":"day2/01_Workflows"},
-    {"section":"day2/02_Integrations"},
     {"section":"day2/03_CI"},
     {"section":"day2/04_Summary"},
     {"section":"day2/05_Outlook"},

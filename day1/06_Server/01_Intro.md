@@ -1,13 +1,21 @@
 !SLIDE subsection
 # ~~~SECTION:MAJOR~~~ Git Server
 
-!SLIDE smbullets
+!SLIDE
 # Introduction
 
-* Central storage for repositories
-* Collaboration between teams
-* User based access control
-* Trigger events (e.g. for CI)
+A Git Server is a central storage for repositories
+
+* Facilitates collaboration between teams
+* Offers user based access control
+* Can trigger events (e.g. for CI)
+* Can be connected to web interfaces
+
+There are collaboration suites with many features:
+
+* GitLab
+* GitHub
+* Bitbucket
 
 ~~~SECTION:handouts~~~
 
@@ -16,7 +24,6 @@
 There is a variety of Git server tools, web interfaces
 and addons out there.
 
-* GitLab
 * Gitea
 * Gogs
 
@@ -26,23 +33,6 @@ there are open source and enterprise hosting options available.
 NETWAYS also provides GitLab hosting services:
 
 * https://nws.netways.de/de/apps/gitlab/
-
-~~~ENDSECTION~~~
-!SLIDE smbullets
-# Git Server Overview
-
-* Git server daemon
-* Web interfaces
-* Entire collaboration suites
-  * GitHub
-  * GitLab
-  * Bitbucket
-
-
-~~~SECTION:handouts~~~
-
-****
-
 
 ~~~ENDSECTION~~~
 
@@ -65,16 +55,15 @@ NETWAYS also provides GitLab hosting services:
 
 <center><img src="../../_images/server/git_server_github.png" style="width:450px" alt="GitHub"/></center>
 
-
 !SLIDE smbullets
-# Git Server Protocol
+# Supported Protocols
 
-* Read/write access via SSH
-  * `git@github.com:username/repo.git`
-* HTTPS protocol (write access via oauth tokens)
+Git can use different protocols to transfer data: HTTP, Secure Shell (SSH) and Git.
+
+* HTTPS
   * `https://my-gitlab.nws.netways.de/username/repo.git`
+* SSH
+  * `git@github.com:username/repo.git`
 * Git protocol
   * `git://domain.com/repo.git`
-* Local protocol
-  * `file:///opt/git/repo.git`
-
+  * Hint: fast, but unencrypted and no authentication

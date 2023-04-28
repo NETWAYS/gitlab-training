@@ -1,8 +1,9 @@
 !SLIDE smbullets
 # Git GUI Clients
 
-In this training, we are working with the CLI. For your work
-environment, here are a few recommendations for GUI clients:
+In this training, we will work with the command-line interface.
+
+These are a few recommendations for graphical clients:
 
 * Sourcetree (Windows, macOS)
 * GitKraken (Windows, Linux, macOS)
@@ -15,9 +16,9 @@ environment, here are a few recommendations for GUI clients:
 ****
 
 Additional GUI clients can be found here:
-https://git-scm.com/download/gui/linux
 
-https://gitextensions.github.io/
+* https://git-scm.com/download/gui/linux
+* https://gitextensions.github.io/
 
 ~~~ENDSECTION~~~
 
@@ -74,4 +75,3 @@ Download: https://www.gitkraken.com/
 Download: https://desktop.github.com/
 
 ~~~ENDSECTION~~~
-

@@ -1,22 +1,12 @@
 !SLIDE subsection
 # ~~~SECTION:MAJOR~~~ Continuous Integration
 
-
 !SLIDE smbullets
-# Continuous Integration
+# What is Continuous Integration?
 
-* Immediately test changes in feature branches
-* Code quality checks
-* Deploy branches into environments (dev, staging, production)
+Continuous integration (CI) is the practice of integrating new code more frequently and securely throughout development.
+
+* Automated code quality checks (linting, testing)
+* Security scanning (dependencies, static analysis)
 * Visualize failures and notify users
-* Reporting
-
-
-~~~SECTION:handouts~~~
-
-****
-
-
-~~~ENDSECTION~~~
-
-
+* Generate Reporting and prepare deployments
