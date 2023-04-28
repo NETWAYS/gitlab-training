@@ -29,7 +29,7 @@ Branches represent an isolated line of development.
 
 <center><img src="../../_images/mermaid/workflow-branches.mmd.png" alt="Feature Branch Workflow" width="50%" /></center>
 
-!SLIDE
+!SLIDE smbullets noprint
 # The Three States
 
 Files in a repository go through three states before being version controlled.
@@ -39,6 +39,17 @@ Files in a repository go through three states before being version controlled.
 * Git directory ("committed")
 
 <center><img src="../../_images/mermaid/git-stages.mmd.png" alt="Git Stages"/></center>
+
+!SLIDE smbullets printonly
+# The Three States
+
+Files in a repository go through three states before being version controlled.
+
+* Working directory ("modified")
+* Staging area ("staged")
+* Git directory ("committed")
+
+<center><img src="../../_images/mermaid/git-stages.mmd.png" alt="Git Stages" width="400px"/></center>
 
 ~~~SECTION:handouts~~~
 
