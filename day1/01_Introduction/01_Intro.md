@@ -27,7 +27,7 @@ systems which store the file revisions in a database.
 
 ~~~ENDSECTION~~~
 
-!SLIDE
+!SLIDE noprint
 # Centralized and Distributed VCS
 
 * Central VCS
@@ -45,6 +45,21 @@ systems which store the file revisions in a database.
     </tr>
   </tbody>
 </table>
+
+!SLIDE smbullets printonly
+# Centralized and Distributed VCS
+
+* Central VCS
+  * A central system contains the *version database*, clients work on this system
+  * Examples: CVS, Subversion
+
+<img src="../../_images/mermaid/central-vcs.mmd.png" alt="Central VCS"/>
+
+* Decentral VCS
+  * Clients mirror the *version database* from a central system and work locally
+  * Examples: Git, Mercurial
+
+<img src="../../_images/mermaid/decentral-vcs.mmd.png" alt="Decentral VCS"/>
 
 !SLIDE
 # The History of Git

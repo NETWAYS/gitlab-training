@@ -114,15 +114,9 @@ GitLab puts the URL into the shell output when pushing the branch.
 
     @@@ Sh
     $ git push -u origin feature/docs-merge-request
-    Counting objects: 6, done.
-    Delta compression using up to 4 threads.
-    Compressing objects: 100% (6/6), done.
-    Writing objects: 100% (6/6), 618 bytes | 618.00 KiB/s, done.
     Total 6 (delta 4), reused 0 (delta 0)
-    remote:
     remote: To create a merge request for feature/docs-merge-request, visit:
     remote:   https://[...].nws.netways.de/root/training/merge_requests/new?merge_request%5Bsource_branch%5D=feature%2Fdocs-merge-request
-    remote:
     To https://[...].nws.netways.de/root/training.git
      * [new branch]      feature/docs-merge-request -> feature/docs-merge-request
     Branch 'feature/docs-merge-request' set up to track remote branch 'feature/docs-merge-request' from 'origin'.
@@ -152,4 +146,3 @@ by merging the MR.
     @@@ Sh
     $ git checkout main
     $ git pull
-    $ tig
