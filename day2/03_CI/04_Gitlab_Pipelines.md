@@ -211,14 +211,7 @@ Example:
 
 Rules are evaluated in order until the first match when the pipeline is created. Depending on the configuration, a job is either included or excluded.
 
-The `rules` keyword accepts an array of rules defined with:
-
-* if
-* changes
-* exists
-* allow_failure
-* variables
-* when
+The `rules` keyword accepts an array of rules defined with: if, changes , exists, allow_failure, variables, when.
 
 ~~~ENDSECTION~~~
 
