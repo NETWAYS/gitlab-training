@@ -4,7 +4,7 @@
 The simplest possible workflow:
 
 * Developers clone the central repository
-* They work in local copies
+* They work with local copies
 * Pulling from the remote repository is optional
 
 ~~~SECTION:handouts~~~

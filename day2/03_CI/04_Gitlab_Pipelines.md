@@ -45,7 +45,7 @@ https://docs.gitlab.com/ee/ci/pipelines/
  * Edit the `.gitlab-ci.yml` and add `stages`
  * Place your jobs in stages using `stage:`
 
-Example:
+Incomplete example:
 
     stages:
       - test
@@ -121,7 +121,7 @@ Documentation: https://docs.gitlab.com/ce/ci/yaml/README.html#stage
 
     before_script:
       - apk update && apk add python py-pip
-      - pip install markdown Pygments
+      - pip install markdown Pygments pymarkdown
 
     stages:
       - test
@@ -130,7 +130,8 @@ Documentation: https://docs.gitlab.com/ce/ci/yaml/README.html#stage
     all_tests:
       stage: test
       script:
-        - exit 0
+        - pymarkdown scan README.md
+      allow_failure: true
 
     markdown:
       stage: build
@@ -223,20 +224,17 @@ The `rules` keyword accepts an array of rules defined with: if, changes , exists
 * Steps:
  * Add a new job `publish`
  * Use `rules` to start this job only when we add tags
- * Use `needs` to add a dependency on the `build` job
- * Use `release` to add a release for the `build` job
+ * Use `release` to add a release for the `publish` job
 
-Example:
+Incomplete example:
 
     publish:
-      needs: [build]
-      script:
-        - echo README.html
+      stage: deploy
       rules:
         - if: $CI_COMMIT_TAG
       release:
         tag_name: '$CI_COMMIT_TAG'
-        description: "The End of the Training Release. Hooray!"
+        description: '$CI_COMMIT_TAG_MESSAGE'
 
 
 !SLIDE supplemental exercises
@@ -267,14 +265,16 @@ Example:
     publish:
       stage: publish
       needs: [build]
-      script:
-        - cat README.html
+      before_script:
+        - wget -O /usr/local/bin/release-cli
+          https://release-cli-downloads.s3.amazonaws.com/latest/release-cli-linux-amd64
+        - chmod +x /usr/local/bin/release-cli
       rules:
         - if: $CI_COMMIT_TAG
       release:
         tag_name: '$CI_COMMIT_TAG'
         ref: '$CI_COMMIT_SHA'
-        description: "This is the End of the Training Release"
+        description: '$CI_COMMIT_TAG_MESSAGE'
 
 ---------------
 
@@ -284,7 +284,8 @@ Example:
 * Objective:
  * Trigger the new job by creating a Git tag
 * Steps:
- * Use the Web UI to create a new tag `v1.0`
+ * Use the Web UI to create a new tag `v1.0` with the message:
+   * `The End of the Training Release. Hooray!`
  * Verify the `publish` job
  * View the Release in the Web UI
 
@@ -298,7 +299,8 @@ Example:
 
 ## Steps:
 
-* Use the Web UI to create a new tag `v1.0`
+* Use the Web UI to create a new tag `v1.0` with the message:
+  * `The End of the Training Release. Hooray!`
 * Verify the `publish` job
 
 !SLIDE supplemental solutions
@@ -312,4 +314,5 @@ Example:
 ### Trigger the new job by creating a Git tag
 
 * Open GitLab and navigate into `Repository > Tags`
-* Click on `New Tag` and create a new `v1.0` tag
+* Click on `New Tag` and create a new `v1.0` tag with the message:
+  * `The End of the Training Release. Hooray!`

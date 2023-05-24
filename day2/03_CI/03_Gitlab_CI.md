@@ -384,7 +384,7 @@ Example:
 
     before_script:
       - apk update && apk add python3 py-pip
-      - pip install markdown Pygments
+      - pip install markdown Pygments pymarkdown
 
 ~~~SECTION:handouts~~~
 
@@ -427,7 +427,7 @@ Example:
 
     before_script:
       - apk update && apk add python3 py-pip
-      - pip install markdown Pygments
+      - pip install markdown Pygments pymarkdown
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
@@ -462,7 +462,7 @@ Example:
 
     before_script:
       - apk update && apk add python3 py-pip
-      - pip install markdown Pygments
+      - pip install markdown Pygments pymarkdown
 
 ### Verify the content
 
@@ -472,7 +472,7 @@ Example:
 
     before_script:
       - apk update && apk add python3 py-pip
-      - pip install markdown Pygments pymarkdownlnt
+      - pip install markdown Pygments pymarkdown
 
     all_tests:
       script:
@@ -630,7 +630,7 @@ Tell GitLab to expire this artifact in `1 week`.
 
     before_script:
       - apk update && apk add python3 py-pip
-      - pip install markdown Pygments
+      - pip install markdown Pygments pymarkdown
 
     all_tests:
       script:
@@ -742,9 +742,12 @@ Usecases: Credentials (`AWS_ACCESS_KEY`) or controlling builds (`CMAKE_C_FLAGS`)
 
 Example:
 
-    parallel:
-      matrix:
-        - MYVAR: [hello, hallo]
+    job_name
+      script:
+        - echo $MYVAR
+      parallel:
+        matrix:
+          - MYVAR: [hello, hallo]
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add jobs using variables
@@ -774,14 +777,14 @@ Example:
       before_script:
         - env
       script:
-        - echo "Platform: $PLATFORM"
-        - echo "Architecture: $ARCH"
+        - "echo Platform: $PLATFORM"
+        - "echo Architecture: $ARCH"
       parallel:
         matrix:
           - PLATFORM:
               - Linux
               - Windows
               - macOS
-          - ARCH:
+            ARCH:
               - x86
               - arm

@@ -9,4 +9,4 @@ Table of contents:
 * Centralized Workflow
 * Feature Branch Workflow
 * Gitflow Workflow
-* Merge/Pull Request workflow
+* Merge/Pull Request Workflow
