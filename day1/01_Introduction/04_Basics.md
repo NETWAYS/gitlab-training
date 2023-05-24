@@ -5,8 +5,6 @@
 * Snapshots track changes in these files, these are called **commits**
 * A chain of these commits is called a **branch**
 
-Analogy: Writing on a desk or packing a parcel.
-
 !SLIDE smbullets
 # Git Commit
 
@@ -37,6 +35,8 @@ Files in a repository go through three states before being version controlled.
 * Working directory ("modified")
 * Staging area ("staged")
 * Git directory ("committed")
+
+Analogy: Writing on a desk or packing a parcel.
 
 <center><img src="../../_images/mermaid/git-stages.mmd.png" alt="Git Stages"/></center>
 

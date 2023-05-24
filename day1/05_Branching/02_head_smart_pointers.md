@@ -94,7 +94,7 @@ We can view the content of the branch name pointer as such:
  * Switch to the main branch
  * Use `git log feature/docs`
 * Bonus:
- * Modify and commit changes
+ * Modify files and commit changes
  * Diff current HEAD against `feature/docs` branch
 
 !SLIDE supplemental exercises
@@ -117,7 +117,7 @@ We can view the content of the branch name pointer as such:
 
 ****
 
-* Modify and commit changes
+* Modify files and commit changes
 * Diff current HEAD against `feature/docs` branch
 
 !SLIDE supplemental solutions

@@ -44,14 +44,14 @@ Example for checking out a tag into a new branch:
 
 ## Steps:
 
-* Use `git tag` and add the `v0.5` tag
+* Use `git tag` and add the `v0.4` tag
 * Verify the added tag with `git tag -l`
 * Push tags to remote origin with `git push --tags`
 * Open GitLab and navigate into `Repository > Tags`
 
 ## Bonus:
 
-* Add a tag description with `git tag -m "End Of Day One Release" v0.5`
+* Add a tag with description: `git tag -m "End Of Day One Release" v0.5`
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
@@ -65,7 +65,8 @@ Example for checking out a tag into a new branch:
 
     @@@ Sh
     $ git log
-    $ git tag -m "Release v0.1" v0.1
+    $ git tag v0.4
+    $ git tag -m "End Of Day One Release" v0.5
 
 ### Verify tag
 
