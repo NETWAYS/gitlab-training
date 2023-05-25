@@ -359,7 +359,7 @@ This is only for the training. In reality use SSH authentication.
  * Learn more about GitLab and the project's history
  * Compare the local history to the remote project's history
 * Steps:
- * Click on `History` in the project view and examine the Git commits
+ * Click on `Files > History` in the project view and examine the Git commits
  * Run `git log` or `tig` on your shell and compare them to GitLab
 * Bonus:
  * Use `Repository > Graph` in GitLab
@@ -378,7 +378,7 @@ This is only for the training. In reality use SSH authentication.
 
 ****
 
-* Click on `History` in the project view and examine the Git commits
+* Click on `Files > History` in the project view and examine the Git commits
 * Run `git log` or `tig` on your shell and compare them to GitLab
 
 ## Bonus:
