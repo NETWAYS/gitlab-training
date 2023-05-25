@@ -106,9 +106,9 @@ https://docs.gitlab.com/runner/install/docker.html
 * Objective:
  * Inspect CI Runner Settings
 * Steps:
- * Navigate to Admin > Overview > Runners
- * Inspect the token
- * Check existing runners
+ * Navigate to Settings > CI/CD > Expand Runners
+ * Inspect Project runners
+ * Inspect the shared runners
 
 ~~~SECTION:handouts~~~
 
@@ -123,117 +123,47 @@ https://docs.gitlab.com/runner/install/
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Inspect CI Runner settings
 
-## Get CI Runner Token
+## Inspect CI Runner settings
 ****
 
-* Use the GitLab Admin UI to inspect CI runners
+* Use the Project Settings to inspect the CI runners
 
 ## Steps:
 
-* Navigate to Admin > Overview > Runners
-* Inspect the token
-* Check existing runners
+* Navigate to Settings > CI/CD > Expand Runners
+* Inspect Project runners
+* Inspect the shared runners
 
 Note: Runners can be defined per Instance, Group or Project.
-
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
 ****
 
-## Open Runner Administration View
+## Open Project Runner Settings
 
 ****
 
-Navigate to `/admin/runners`.
+## Steps:
 
-```
-How to setup a shared Runner for a new project
-Install a Runner compatible with GitLab CI (checkout the GitLab Runner section for information on how to install it).
-Specify the following URL during the Runner setup: ...
-Use the following registration token during setup: ...
-Start the Runner!
-```
+* Navigate to Settings > CI/CD > Expand Runners
+* Inspect Project runners
+* Inspect the shared runners
 
-### Runners
+## Bonus:
 
-Registered runners are listed at the bottom.
+You can install your own runner:
 
-#### Register Runner
+    sudo yum install -y yum-utils
+    sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    sudo yum install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-* Steps:
- * Run `gitlab-runner register` as root
- * Use the HTTP Url as host
- * Paste the token
- * Add description `training01` and tag `training`
- * Untagged builds: `true`, Lock to current project: `false`
- * Executor: `docker`, Default: `docker.io/alpine:latest`
+    curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.rpm.sh" | sudo bash
 
+    sudo yum install -y gitlab-runner
 
-Reference: https://gitlab.com/gitlab-org/gitlab-runner/blob/master/docs/install/linux-repository.md
-Reference: https://docs.gitlab.com/runner/install/linux-repository.html
-
-Reference for Docker: https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/
-
-Example on Ubuntu:
-
-```
-apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    software-properties-common
-
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-
-add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
-   stable"
-
-apt-get update
-apt-get install docker-ce
-```
-
-```
-curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh | sudo bash
-apt-get install gitlab-runner
-```
-
-
-Start CLI
-
-    @@@ Sh
-    # gitlab-runner register
-    Running in system-mode.
-
-    Please enter the gitlab-ci coordinator URL (e.g. https://gitlab.com/):
-    http://192.168.56.101
-
-    Please enter the gitlab-ci token for this runner:
-    Do1aqTvPiiBj6_u_u5Ye
-
-    Please enter the gitlab-ci description for this runner:
-    [ubuntu-16]: training01
-
-    Please enter the gitlab-ci tags for this runner (comma separated):
-    training
-
-    Whether to run untagged builds [true/false]:
-    [false]: true
-
-    Whether to lock the Runner to current project [true/false]:
-    [true]: false
-    Registering runner... succeeded                     runner=Do1aqTvP
-
-    Please enter the executor: docker+machine, docker-ssh, parallels, ssh, virtualbox, docker, shell, docker-ssh+machine, kubernetes:
-    docker
-
-    Please enter the default Docker image (e.g. ruby:2.1):
-    docker.io/alpine:latest
-
-    Runner registered successfully. Feel free to start it, but if it's running already the config should be automatically reloaded!
-
+    # You need the GitLab URL and your project's registration token
+    sudo gitlab-runner register
 
 !SLIDE smbullets
 # GitLab CI .gitlab-ci.yml
@@ -493,6 +423,7 @@ This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious a
  * Validate the Markdown in the README.md
 * Steps:
  * Modify the `my_tests` job to validate the Markdown in the README.md
+ * Use the `allow_failure: true` keyword for this job
  * Commit the changes
 
 Example:
@@ -513,6 +444,7 @@ Example:
 ## Steps:
 
 * Modify the `my_tests` job to validate the Markdown in the README.md
+* Use the `allow_failure: true` keyword for this job
 * Commit the changes
 
 Example:
@@ -669,8 +601,8 @@ This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious a
 
 ## Steps:
 
-* Edit `README.md`
-* Commit changes
+* Edit the `README.md` file
+* Commit the changes
 * Download and view the `README.html` file in your browser
 
 !SLIDE supplemental solutions

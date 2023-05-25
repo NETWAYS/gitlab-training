@@ -236,6 +236,7 @@ Incomplete example:
         tag_name: '$CI_COMMIT_TAG'
         description: '$CI_COMMIT_TAG_MESSAGE'
 
+Hint: Requires the release-cli tool.
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: CI: Pipeline Rules
