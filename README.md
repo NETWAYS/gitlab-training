@@ -75,3 +75,5 @@ changes on the default content of the training we are open for suggestions but k
 that the training is intended for a two day hands-on training.
 
 The material is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+Copyright (c) 2018 NETWAYS GmbH <info@netways.de>
