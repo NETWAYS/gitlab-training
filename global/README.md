@@ -118,13 +118,13 @@ make image RUNTIME=podman
 ### Run showoff
 
 ```bash
-docker run -it --rm -v "$PWD:/training" -p "9090:9090" netways/showoff:0.19.6
+docker run -it --rm -v "$PWD:/training" -p "9090:9090" netways/showoff:0.20.4
 ```
 
 ### Build static html files
 
 ```bash
-docker run -it --rm -v "$PWD:/training" netways/showoff:0.19.6 \
+docker run -it --rm -v "$PWD:/training" netways/showoff:0.20.4 \
   showoff static print
 ```
 
@@ -132,7 +132,7 @@ docker run -it --rm -v "$PWD:/training" netways/showoff:0.19.6 \
 
 ```bash
 docker run -it --rm -v "$PWD:/training" \
-  netways/showoff:0.19.6 \
+  netways/showoff:0.20.4 \
   wkhtmltopdf -s A5 --print-media-type \
   --footer-left \[page\] --footer-right '© NETWAYS' \
   static/index.html test.pdf

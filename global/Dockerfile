@@ -1,4 +1,4 @@
-FROM docker.io/ubuntu:focal
+FROM docker.io/ubuntu:lunar
 LABEL maintainer="support@netways.de"
 
 WORKDIR /training
@@ -17,33 +17,34 @@ RUN set -ex; \
       xz-utils \
       zlib1g \
       zlib1g-dev \
-      libssl1.1 \
-      libssl-dev \
+      libssl3 \
       libxrender-dev \
       libx11-dev \
       libxext-dev \
       libfontconfig1-dev \
       libfreetype6-dev \
       fontconfig \
+      libjpeg-turbo8 \
+      xfonts-75dpi \
+      xfonts-base \
   && apt-get clean \
   && rm -r /var/lib/apt/lists/*
 
 # wkhtmltopdf needs a patched QT version
-ARG wkhtmltox_sha256_checksum="40bc014d0754ea44bb90e733f03e7c92862f7445ef581e3599ecc00711dddcaa"
-ARG wkhtmltox_url="https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.3/wkhtmltox-0.12.3_linux-generic-amd64.tar.xz"
-
-# Download, verify and install wkhtmltox
+ARG wkhtmltox_url=https://github.com/NETWAYS/training-global/releases/download/v0.20.4/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
 RUN set -ex; \
-    curl -sSL "${wkhtmltox_url}" --output /tmp/wkhtmltox.tar.xz\
-    && echo "${wkhtmltox_sha256_checksum}  /tmp/wkhtmltox.tar.xz" | sha256sum -c - \
-    \
-    && tar vxf /tmp/wkhtmltox.tar.xz -C /usr/local/bin/ --strip-components=2 wkhtmltox/bin/wkhtmltoimage \
-    && tar vxf /tmp/wkhtmltox.tar.xz -C /usr/local/bin/ --strip-components=2 wkhtmltox/bin/wkhtmltopdf \
-    && rm -f /tmp/wkhtmltox.tar.xz
+    curl -sSL "${wkhtmltox_url}" --output /tmp/wkhtmltox.deb \
+    && dpkg -i /tmp/wkhtmltox.deb \
+    && rm -f /tmp/wkhtmltox.deb
 
 # Install showoff Gem
-ARG showoff_version=0.19.6
-RUN gem install showoff --version="$showoff_version"
+ARG showoff_version=0.20.4
+RUN set -ex; \
+    gem install showoff --version="$showoff_version" \
+    # uri v0.11.0 (installed as dependency for showoff) contains CVE-2023-28755
+    # so we upgrade and delete the default manually. This might be removed in the future
+    # Note that the Ruby 3.1.0 path might change when updating the distro
+    && GEM_HOME=/usr/lib/ruby/gems/3.1.0/ gem install --default uri; rm -f /usr/lib/ruby/gems/3.1.0/specifications/default/uri-0.11*;
 
 EXPOSE 9090
 
