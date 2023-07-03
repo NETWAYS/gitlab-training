@@ -1,4 +1,6 @@
 .*
+!.gitignore
+!.gitattributes
 static
 stats
 trainer
