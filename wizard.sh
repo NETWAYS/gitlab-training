@@ -1,7 +1,7 @@
 #!/bin/bash
 DIR=$(pwd)
 CLANG=${CLANG:-C.UTF-8}
-IMAGE=${IMAGE:-netways/showoff:0.19.6}
+IMAGE=${IMAGE:-netways/showoff:0.20.4}
 CNAME=${CNAME:-showoff}
 TRAINING=${TRAINING:-$(basename "$DIR")}
 RUNTIME=${RUNTIME:-$(command -v docker)}
@@ -33,21 +33,21 @@ printhandouts () {
   echo -e "\n--- RUN SHOWOFF STATIC FOR HANDOUTS ---"
   execdocker "showoff static print"
   echo -e "\n--- RUN WKHTMLTOPDF FOR HANDOUTS ---"
-  execdocker "wkhtmltopdf --load-error-handling ignore -s A5 --print-media-type --footer-left [page] --footer-right ©NETWAYS static/index.html ${TRAINING}_${1}-handouts.pdf"
+  execdocker "wkhtmltopdf --enable-local-file-access --load-error-handling ignore -s A5 --print-media-type --footer-left [page] --footer-right ©NETWAYS static/index.html ${TRAINING}_${1}-handouts.pdf"
 }
 
 printexercises () {
   echo -e "\n--- RUN SHOWOFF STATIC FOR EXERCISES ---"
   execdocker "showoff static supplemental exercises"
   echo -e "\n--- RUN WKHTMLTOPDF FOR EXERCISES ---"
-  execdocker "wkhtmltopdf --load-error-handling ignore -s A5 --print-media-type --footer-left [page] --footer-right ©NETWAYS static/index.html ${TRAINING}_${1}-exercises.pdf"
+  execdocker "wkhtmltopdf --enable-local-file-access --load-error-handling ignore -s A5 --print-media-type --footer-left [page] --footer-right ©NETWAYS static/index.html ${TRAINING}_${1}-exercises.pdf"
 }
 
 printsolutions () {
   echo -e "\n--- RUN SHOWOFF STATIC FOR SOLUTIONS ---"
   execdocker "showoff static supplemental solutions"
   echo -e "\n--- RUN WKHTMLTOPDF FOR SOLUTIONS ---"
-  execdocker "wkhtmltopdf --load-error-handling ignore -s A5 --print-media-type --footer-left [page] --footer-right ©NETWAYS static/index.html ${TRAINING}_${1}-solutions.pdf"
+  execdocker "wkhtmltopdf --enable-local-file-access --load-error-handling ignore -s A5 --print-media-type --footer-left [page] --footer-right ©NETWAYS static/index.html ${TRAINING}_${1}-solutions.pdf"
 }
 
 setlayout () {
