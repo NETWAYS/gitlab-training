@@ -22,20 +22,8 @@
     {"section": "global/pre/netways/about"},
     {"section": "global/pre/hints"},
 
-    {"section":"day1/00_Organisation"},
-    {"section":"day1/01_Introduction"},
-    {"section":"day1/02_Configuration"},
-    {"section":"day1/03_Basics"},
-    {"section":"day1/04_Commits"},
-    {"section":"day1/05_Branching"},
-    {"section":"day1/06_Server"},
-    {"section":"day1/07_Collaboration"},
-
-    {"section":"day2/00_Repetition/"},
-    {"section":"day2/01_Workflows"},
-    {"section":"day2/03_CI"},
-    {"section":"day2/04_Summary"},
-    {"section":"day2/05_Outlook"},
+    {"section":"day1/"},
+    {"section":"day2/"},
 
     {"section": "global/post"}
   ]
