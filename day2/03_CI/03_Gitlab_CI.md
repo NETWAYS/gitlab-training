@@ -628,6 +628,23 @@ Download them, extract them and open the HTML file with your browser.
 This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious alternative.
 
 !SLIDE
+# GitLab CI Pipeline Efficiency
+
+There are various ways to optimize GitLab CI pipelines.
+
+* Fail early to avoid wasting resources
+* Use caching for depencencies
+* Use Container Images with depencencies pre-installed
+
+In our example, we could change to a Python image to skip the Python installation:
+
+```
+image: docker.io/python:latest
+```
+
+Further details: https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html
+
+!SLIDE
 # GitLab CI .gitlab-ci.yml Templates
 
 GitLab offers various templates for the .gitlab-ci.yml.
