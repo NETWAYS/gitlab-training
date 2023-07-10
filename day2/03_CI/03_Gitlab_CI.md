@@ -633,8 +633,8 @@ This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious a
 There are various ways to optimize GitLab CI pipelines.
 
 * Fail early to avoid wasting resources
-* Use caching for depencencies
-* Use Container Images with depencencies pre-installed
+* Use caching for dependencies
+* Use Container Images with dependencies pre-installed
 
 In our example, we could change to a Python image to skip the Python installation:
 
