@@ -9,8 +9,7 @@ GIT=${GIT:-$(command -v git)}
 SCRIPT_DIR=$(cd $(dirname $0); pwd -P)
 NO_RESET=${NO_RESET:-""}
 
-# Functions
-
+# Run given command in the showoff container
 execdocker () {
   if [[ -n $($RUNTIME ps -aq -f name=$CNAME 2> /dev/null) ]]; then
     $RUNTIME rm -f $CNAME 2> /dev/null
@@ -21,6 +20,7 @@ execdocker () {
     --name=$CNAME \
     --rm \
     -p 9090:9090 \
+    --user $(id -u) \
     -v "$DIR:/training:z" \
     -e "LANG=$CLANG" \
     -e "LANGUAGE=$CLANG" \
@@ -29,23 +29,32 @@ execdocker () {
     $1
 }
 
+# Generate handouts as showoff HTML and convert HTML to PDF
 printhandouts () {
   echo -e "\n--- RUN SHOWOFF STATIC FOR HANDOUTS ---"
   execdocker "showoff static print"
+  # Removes showoff's Section markers for PDF output
+  sed -i 's/~~~.*~~~ //g' static/index.html
   echo -e "\n--- RUN WKHTMLTOPDF FOR HANDOUTS ---"
   execdocker "wkhtmltopdf --enable-local-file-access --load-error-handling ignore -s A5 --print-media-type --footer-left [page] --footer-right ©NETWAYS static/index.html ${TRAINING}_${1}-handouts.pdf"
 }
 
+# Generate exercises as showoff HTML and convert HTML to PDF
 printexercises () {
   echo -e "\n--- RUN SHOWOFF STATIC FOR EXERCISES ---"
   execdocker "showoff static supplemental exercises"
+  # Removes showoff's Section markers for PDF output
+  sed -i 's/~~~.*~~~ //g' static/index.html
   echo -e "\n--- RUN WKHTMLTOPDF FOR EXERCISES ---"
   execdocker "wkhtmltopdf --enable-local-file-access --load-error-handling ignore -s A5 --print-media-type --footer-left [page] --footer-right ©NETWAYS static/index.html ${TRAINING}_${1}-exercises.pdf"
 }
 
+# Generate solutions as showoff HTML and convert HTML to PDF
 printsolutions () {
   echo -e "\n--- RUN SHOWOFF STATIC FOR SOLUTIONS ---"
   execdocker "showoff static supplemental solutions"
+  # Removes showoff's Section markers for PDF output
+  sed -i 's/~~~.*~~~ //g' static/index.html
   echo -e "\n--- RUN WKHTMLTOPDF FOR SOLUTIONS ---"
   execdocker "wkhtmltopdf --enable-local-file-access --load-error-handling ignore -s A5 --print-media-type --footer-left [page] --footer-right ©NETWAYS static/index.html ${TRAINING}_${1}-solutions.pdf"
 }
