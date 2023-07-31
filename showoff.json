@@ -18,7 +18,7 @@
   "sections": [
     {"section": "global/pre/netways/title"},
     {"section": "global/pre/toc"},
-    {"section": "trainer"},
+    {"section": "global/pre/licence"},
     {"section": "global/pre/netways/about"},
     {"section": "global/pre/hints"},
 
