@@ -69,8 +69,8 @@ This means, you don't need to change branches to
 
 Example:
 
-    $ git show feature/docs
-    commit b825ff86e4022a8fbcf52cb5a1d9a1984bd2a310 (feature/docs)
+    $ git show main
+    commit b825ff86e4022a8fbcf52cb5a1d9a1984bd2a310 (main)
 
 
 ~~~SECTION:handouts~~~
