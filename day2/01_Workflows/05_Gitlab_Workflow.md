@@ -42,7 +42,7 @@ Follow the instructions and ask the trainer for help.
  * Open the proposed GitLab URL in your browser
  * Fill in the merge request and add `fixes #1` as description
  * Merge the MR and tick `delete source branch`
- * Analyze the history in GitLab/tig and open issue #1
+ * Analyze the history in GitLab and open issue #1
 
 * Bonus:
  * Run `git fetch --prune` and `git branch -d feature/docs-merge-request`
@@ -78,7 +78,7 @@ branch names, review them and then delete them.
 * Open the proposed GitLab URL in your browser
 * Fill in the merge request and add `fixes #1` as description
 * Merge the MR and tick `delect source branch`
-* Analyze the history in GitLab/tig and open issue #1
+* Analyze the history in GitLab and open issue #1
 
 ## Bonus:
 

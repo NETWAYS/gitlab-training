@@ -104,7 +104,7 @@ The new branch `feature/docs-workflows` will be based on the `main` branch.
  * Edit `README.md`, add and commit the changes
  * Diff the feature branch to the current main with `git diff main`
  * Checkout the `main` branch, merge the feature branch as non-fast-forward with `--no-ff`
- * Show the history tree with `tig` or inside GitLab and explain why the forced merge commit with `--no-ff` is important
+ * Show the history tree inside GitLab and explain why the forced merge commit with `--no-ff` is important
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Merge Feature Branches
@@ -124,7 +124,7 @@ The new branch `feature/docs-workflows` will be based on the `main` branch.
 * Diff the feature branch to the current main with `git diff main`
 * Checkout the `main` branch
 * Merge the feature branch as non-fast-forward with `--no-ff`
-* Show the history tree with `tig` or inside GitLab
+* Show the history tree inside GitLab
 
 ## Bonus:
 
@@ -170,8 +170,3 @@ The new branch `feature/docs-workflows` will be based on the `main` branch.
     to automatically resolve it after merge.
 
     fixes #12
-
-### Examine the history
-
-    @@@ Sh
-    $ tig
