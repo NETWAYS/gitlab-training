@@ -97,7 +97,7 @@ The new branch `feature/docs-workflows` will be based on the `main` branch.
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Merge Feature Branches
 
 * Objective:
- * Update `main` branch and merge feature branch `feature/docs-workflows`
+ * Update and merge feature branch `feature/docs-workflows`
 
 * Steps:
  * Checkout the feature branch `feature/docs-workflows`
@@ -112,7 +112,7 @@ The new branch `feature/docs-workflows` will be based on the `main` branch.
 ## Objective: Merge Feature Branches
 ****
 
-* Update main branch and merge feature branch
+* Update and merge feature branch `feature/docs-workflows`
 
 ## Steps:
 
