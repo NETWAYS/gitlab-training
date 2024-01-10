@@ -1,5 +1,5 @@
 !SLIDE smbullets
-# Collaboration: Put History
+# Collaboration: Push History
 
 * `git push`
   * Pushes the local history to the remote repository
