@@ -16,6 +16,6 @@ Example:
     Author: Anita Bath <a.bath@example.com>
     Date:   Fri Mar 31 13:37:00 2023
 
-    Changed background color
+    Change background color of header
 
     The existing color made text hard to read.
