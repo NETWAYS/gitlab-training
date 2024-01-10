@@ -4,7 +4,7 @@
 * `git add`
   * Adds new files from the working directory to the staging area
   * Adds modified files to the staging area
-  * `-A` adds all files. Question: Where is this applicable?
+  * `-A` adds all files. Question: When is this applicable?
 * `git mv`
   * Renames files tracked by Git
 
