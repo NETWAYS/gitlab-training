@@ -55,7 +55,7 @@ also compare specific commits.
  * Use `git log` to print the current history
  * Use `git show` to show specific commits (defaults to the latest)
  * Use `git diff` to compare changes between specific revisions
- * Use `git blame .gitignore to see the files` authors
+ * Use `git blame .gitignore` to see the files authors
 
 Bonus: Try `git log` with the `--graph` and `--oneline` option.
 
