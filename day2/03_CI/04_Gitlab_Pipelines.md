@@ -121,7 +121,7 @@ Documentation: https://docs.gitlab.com/ce/ci/yaml/README.html#stage
 
     before_script:
       - apk update && apk add python py-pip
-      - pip install markdown Pygments pymarkdownlnt
+      - pip install --break-system-packages markdown Pygments pymarkdownlnt
 
     stages:
       - test
