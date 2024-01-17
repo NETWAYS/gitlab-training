@@ -12,8 +12,8 @@ Example:
 
     $ cat .gitignore
     release/
+    !release/latest
     *.tmp
-    .env
 
 Personal ignore patterns can be defined in `.git/info/exclude`.
 
