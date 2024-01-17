@@ -314,7 +314,7 @@ Example:
 
     before_script:
       - apk update && apk add python3 py-pip
-      - pip install markdown Pygments pymarkdownlnt
+      - pip install --break-system-packages markdown Pygments pymarkdownlnt
 
 ~~~SECTION:handouts~~~
 
@@ -357,7 +357,7 @@ Example:
 
     before_script:
       - apk update && apk add python3 py-pip
-      - pip install markdown Pygments pymarkdownlnt
+      - pip install --break-system-packages markdown Pygments pymarkdownlnt
 
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
@@ -392,7 +392,7 @@ Example:
 
     before_script:
       - apk update && apk add python3 py-pip
-      - pip install markdown Pygments pymarkdownlnt
+      - pip install --break-system-packages markdown Pygments pymarkdownlnt
 
 ### Verify the content
 
@@ -402,7 +402,7 @@ Example:
 
     before_script:
       - apk update && apk add python3 py-pip
-      - pip install markdown Pygments pymarkdownlnt
+      - pip install --break-system-packages markdown Pygments pymarkdownlnt
 
     all_tests:
       script:
@@ -562,7 +562,7 @@ Tell GitLab to expire this artifact in `1 week`.
 
     before_script:
       - apk update && apk add python3 py-pip
-      - pip install markdown Pygments pymarkdownlnt
+      - pip install --break-system-packages markdown Pygments pymarkdownlnt
 
     all_tests:
       script:
