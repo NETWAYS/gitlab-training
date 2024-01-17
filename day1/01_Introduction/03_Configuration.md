@@ -15,7 +15,7 @@ Optional configuration can also be included:
 
 ~~~ENDSECTION~~~
 
-!SLIDE smbullets
+!SLIDE
 # Git Configuration Sections
 
 The Git configuration has different sections.
@@ -33,6 +33,9 @@ Example:
       name  = Name Surname
     [core]
       editor = nano
+    [color "diff"]
+      old = red old
+      new = blue bold
 
 ~~~SECTION:handouts~~~
 
