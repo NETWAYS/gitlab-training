@@ -34,7 +34,7 @@ Example:
     [core]
       editor = nano
     [color "diff"]
-      old = red old
+      old = red bold
       new = blue bold
 
 ~~~SECTION:handouts~~~
