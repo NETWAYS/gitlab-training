@@ -27,15 +27,6 @@
   * Exercises use the default terminal
 
 !SLIDE smbullets
-# BBB Application
-
-* Lower and raise your hand in the bottom right
-* Mute and unmute or share camera in the bottom
-* Chat and shared notes to the left
-* Click on your name to set a status
-
-
-!SLIDE smbullets
 # Terminal session
 
 Click on the link in your email to join the session
