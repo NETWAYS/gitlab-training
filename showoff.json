@@ -2,8 +2,8 @@
   "name": "GitLab",
   "subtitle": "Version Control System & Continuous Integration",
   "location": "Nuremberg",
-  "author": "Feu Mourek, Henrik Triem, Markus Opolka, Daniel Bodky, <br><small>originally Michael Friedrich</small>",
-  "release": "4.0.1",
+  "author": "Feu Mourek, Markus Opolka, Daniel Bodky",
+  "release": "4.1.0",
 
   "favicon": "image/global/favicon.ico",
 
