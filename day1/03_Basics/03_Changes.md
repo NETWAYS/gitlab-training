@@ -49,6 +49,8 @@ Best practice is to have a README.md file written in Markdown in every project, 
 
 * Add a new README.md file
 
+Hint: https://www.markdownguide.org/basic-syntax/
+
 ## Steps:
 
 ****

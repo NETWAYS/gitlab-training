@@ -28,7 +28,7 @@ called an `origin`.
 * Objective:
  * Clone an existing Git repository
 * Steps:
- * Navigate to https://github.com/icinga/icinga2
+ * Navigate to https://github.com/NETWAYS/gitlab-training
  * Copy the clone URL
  * Navigate into your home directory
  * Use `git clone` to clone the remote Git repository
@@ -45,7 +45,7 @@ called an `origin`.
 
 ****
 
-* Navigate to https://github.com/icinga/icinga2
+* Navigate to https://github.com/NETWAYS/gitlab-training
 * Copy the clone URL
 * Navigate into your home directory
 * Use `git clone` to clone the remote Git repository
@@ -62,7 +62,7 @@ called an `origin`.
 
     @@@ Sh
     $ cd $HOME
-    $ git clone https://github.com/Icinga/icinga2.git
+    $ git clone https://github.com/NETWAYS/gitlab-training.git
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Initialize a local Git repository

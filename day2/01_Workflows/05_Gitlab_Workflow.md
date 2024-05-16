@@ -146,3 +146,27 @@ by merging the MR.
     @@@ Sh
     $ git checkout main
     $ git pull
+
+!SLIDE smbullets
+# Forking Repositories
+
+A Fork is a server-side copy of a repository.
+
+If you have no write access to a repository you can fork it. Then:
+
+* Commit and push into the copy
+* Create a `Merge/Pull Request` in the original repo
+* Maintainers of the original repo can review and then merge your changes
+
+GitLab and GitHub support creating forks.
+
+~~~SECTION:handouts~~~
+
+****
+
+References:
+
+* GitHub: https://guides.github.com/introduction/flow/
+* GitLab: https://docs.gitlab.com/ce/workflow/forking_workflow.html
+
+~~~ENDSECTION~~~

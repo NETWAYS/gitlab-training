@@ -47,9 +47,8 @@ Example:
 
 References:
 
-https://docs.gitlab.com/runner/install/linux-repository.html
-
-https://docs.gitlab.com/runner/register/index.html
+* https://docs.gitlab.com/runner/install/linux-repository.html
+* https://docs.gitlab.com/runner/register/index.html
 
 ~~~ENDSECTION~~~
 
@@ -92,11 +91,9 @@ Hint: GitLab offers an integrated Container Registry to store container images f
 
 References:
 
-https://docs.docker.com
-
-https://podman.io/
-
-https://docs.gitlab.com/runner/install/docker.html
+* https://docs.docker.com
+* https://podman.io/
+* https://docs.gitlab.com/runner/install/docker.html
 
 ~~~ENDSECTION~~~
 
@@ -116,7 +113,7 @@ https://docs.gitlab.com/runner/install/docker.html
 
 Reference:
 
-https://docs.gitlab.com/runner/install/
+* https://docs.gitlab.com/runner/install/
 
 ~~~ENDSECTION~~~
 
@@ -154,6 +151,7 @@ Note: Runners can be defined per Instance, Group or Project.
 
 You can install your own runner:
 
+    @@@Sh
     sudo yum install -y yum-utils
     sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
     sudo yum install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
@@ -176,6 +174,7 @@ In the .gitlab-ci.yml file, you can define:
 
 Example:
 
+    @@@Yaml
     image: docker.io/alpine:latest
 
     name_of_my_job:
@@ -203,9 +202,10 @@ https://docs.gitlab.com/ee/ci/yaml/gitlab_ci_yaml.html
 
 Example:
 
+    @@@Yaml
     image: docker.io/alpine:latest
 
-    my_tests:
+    my_job:
       script:
         - exit 1
 
@@ -224,9 +224,12 @@ Example:
 
 Example:
 
+<!-- -->
+
+    @@@Yaml
     image: docker.io/alpine:latest
 
-    my_tests:
+    my_job:
       script:
         - exit 1
 
@@ -243,10 +246,12 @@ Example:
  * Navigate your GitLab Web interface and click the button 'Web IDE'
  * Click 'Add file' and create the `.gitlab-ci.yml` file from the suggestions
 
-    @@@ Sh
+<!-- -->
 
+    @@@Yaml
     image: docker.io/alpine:latest
-    my_tests:
+
+    my_job:
       script:
         - exit 1
 
@@ -291,11 +296,10 @@ Future examples and tests work the same way.
 
 ### Modify exit code
 
-    @@@ Sh
-
+    @@@Yaml
     image: docker.io/alpine:latest
 
-    all_tests:
+    my_job:
       script:
         - exit 0
 
@@ -355,6 +359,7 @@ Reference: https://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management
 
 Example:
 
+    @@@Yaml
     before_script:
       - apk update && apk add python3 py-pip
       - pip install --break-system-packages markdown Pygments pymarkdownlnt
@@ -369,7 +374,7 @@ Example:
 
 ### Edit .gitlab-ci.yml and add before_script
 
-    @@@ Sh
+    @@@Yaml
 
     image: docker.io/alpine:latest
 
@@ -377,7 +382,7 @@ Example:
 
 ### Update apk and install Python/pip
 
-    @@@ Sh
+    @@@Yaml
 
     image: docker.io/alpine:latest
 
@@ -386,7 +391,7 @@ Example:
 
 ### Install Markdown Python libraries
 
-    @@@ Sh
+    @@@Yaml
 
     image: docker.io/alpine:latest
 
@@ -396,7 +401,7 @@ Example:
 
 ### Verify the content
 
-    @@@ Sh
+    @@@Yaml
 
     image: docker.io/alpine:latest
 
@@ -404,7 +409,7 @@ Example:
       - apk update && apk add python3 py-pip
       - pip install --break-system-packages markdown Pygments pymarkdownlnt
 
-    all_tests:
+    my_job:
       script:
         - exit 0
 
@@ -428,7 +433,8 @@ This is an example of how to do it from a CLI, the Gitlab WebIDE is an obvious a
 
 Example:
 
-    my_tests:
+    @@@Yaml
+    lint_markdown:
       script:
         - pymarkdown scan README.md
       allow_failure: true
@@ -449,7 +455,8 @@ Example:
 
 Example:
 
-    my_tests:
+    @@@Yaml
+    lint_markdown:
       script:
         - pymarkdown scan README.md
       allow_failure: true
@@ -464,9 +471,8 @@ Example:
 
 ### Edit .gitlab-ci.yml and modify the job
 
-    @@@ Sh
-
-    my_tests:
+    @@@Yaml
+    lint_markdown:
       script:
         - pymarkdown scan README.md
       allow_failure: true
@@ -483,7 +489,8 @@ Example:
 
 Example:
 
-    markdown:
+    @@@Yaml
+    convert_markdown:
       script:
         - python3 -m markdown README.md > README.html
       artifacts:
@@ -517,23 +524,23 @@ Example:
 
 ### Edit .gitlab-ci.yml and add markdown section
 
-    @@@ Sh
+    @@@Yaml
 
     ...
 
-    all_tests:
+    my_job:
       script:
         - exit 0
 
-    markdown:
+    convert_markdown:
 
 ### Add script to convert Markdown into HTML
 
-    @@@ Sh
+    @@@Yaml
 
     ...
 
-    markdown:
+    convert_markdown:
       script:
         - python3 -m markdown README.md > README.html
 
@@ -542,11 +549,11 @@ Example:
 Add `paths` section which includes `README.html` as entry.
 Tell GitLab to expire this artifact in `1 week`.
 
-    @@@ Sh
+    @@@Yaml
 
     ...
 
-    markdown:
+    convert_markdown:
       script:
         - python3 -m markdown README.md > README.html
       artifacts:
@@ -556,7 +563,7 @@ Tell GitLab to expire this artifact in `1 week`.
 
 ### Verify the content
 
-    @@@ Sh
+    @@@Yaml
 
     image: docker.io/alpine:latest
 
@@ -564,11 +571,11 @@ Tell GitLab to expire this artifact in `1 week`.
       - apk update && apk add python3 py-pip
       - pip install --break-system-packages markdown Pygments pymarkdownlnt
 
-    all_tests:
+    my_job:
       script:
         - exit 0
 
-    markdown:
+    convert_markdown:
       - python3 -m markdown README.md > README.html
       artifacts:
         paths:
@@ -673,6 +680,7 @@ CI Variables are environment variables that are  accessible in the job.
 
 Example:
 
+    @@@Yaml
     job1:
       script:
       - echo "Job for the Commit: '$CI_COMMIT_SHA'"
@@ -691,12 +699,13 @@ Usecases: Credentials (`AWS_ACCESS_KEY`) or controlling builds (`CMAKE_C_FLAGS`)
 
 Example:
 
+    @@@Yaml
     job_name
       script:
-        - echo $MYVAR
+        - echo $PLATFORM
       parallel:
         matrix:
-          - MYVAR: [hello, hallo]
+          - PLATFORM: [Linux, Windows, macOS]
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Add jobs using variables
@@ -722,6 +731,7 @@ Example:
 
 Example:
 
+    @@@Yaml
     my_parallel_job:
       before_script:
         - env
