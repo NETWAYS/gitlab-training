@@ -186,11 +186,11 @@ Try it out with the trainer.
 !SLIDE smbullets
 # Connect Local Repository to Remote Server
 
-We can either start a local repository and connect it to a remote server, or clone an existing repository.
+Endpoints for the remote servers are called `remote` in Git.
 
-* Endpoints for the remote servers are called `remote` in Git.
 * Communication is done via SSH/HTTPS (SSH is recommended)
 * We need a remote for: `clone`, `push`, `pull`
+* We can have multiple remotes (e.g. fork, upstream)
 
 For training purposes we've started to work offline in `$HOME/training`.
 
