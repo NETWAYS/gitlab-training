@@ -82,7 +82,7 @@ The issue board is a software project management tool used to plan, organize, an
 * Filter by labels
 * Drag & drop issues
 
-!SLIDE smbullets
+!SLIDE
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Create Milestone and Issues
 
 * Objective
@@ -95,6 +95,9 @@ The issue board is a software project management tool used to plan, organize, an
  * Navigate to `Issues` and select `New issue`
  * Use `Update documentation` as title, add a description
  * Assign the `v1.0` milestone
+
+* Bonus:
+ * Add labels to the new issue
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Create Milestone and Issues
