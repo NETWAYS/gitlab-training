@@ -5,7 +5,7 @@
 * Objective:
  * Create a new GitLab project for the current user
 * Steps:
- * Click the `+` icon next to the search field
+ * Click the `+` in the top left corner
  * Choose `New Project`
  * Add the name `training`
  * Leave it as `Private`
@@ -26,7 +26,7 @@
 
 ****
 
-* Click the `+` icon next to the search field
+* Click the `+` in the top left corner
 * Choose `New Project`
 * Add the name `training`
 * Leave it as `Private`
@@ -49,8 +49,7 @@
 ****
 ### Add Project
 
-GitLab 10.x provides `New Project` underneath the `+` icon
-in the top menu bar, next to the search form.
+GitLab provides a `New Project` link underneath the `+` icon in the top left corner.
 
 Fill in the `Project name` form with `training`, untick `Initialize repository with a README` for an empty project and leave the
 other options as default.
@@ -90,9 +89,9 @@ The issue board is a software project management tool used to plan, organize, an
  * Create Issue `Update documentation`
 
 * Steps:
- * Navigate into `Issues > Milestones`
+ * Navigate into `Plan > Milestones`
  * Select `New Milestone` and use `v1.0` as title
- * Navigate to `Issues` and select `New issue`
+ * Navigate to `Plan > Issues` and select `New issue`
  * Use `Update documentation` as title, add a description
  * Assign the `v1.0` milestone
 
@@ -111,9 +110,9 @@ The issue board is a software project management tool used to plan, organize, an
 
 ****
 
-* Navigate into `Issues > Milestones`
+* Navigate into `Plan > Milestones`
 * Select `New Milestone` and use `v1.0` as title
-* Navigate to `Issues` and select `New issue`
+* Navigate to `Plan > Issues` and select `New issue`
 * Use `Update documentation` as title, add a description
 * Assign the `v1.0` milestone
 
@@ -124,7 +123,7 @@ The issue board is a software project management tool used to plan, organize, an
  * Add the trainers as Project members
 
 * Steps:
- * Navigate into `Project information > Members`
+ * Navigate into `Manage > Members`
  * Use `Invite members` and search for the trainers
  * Select the `Developer` role and add the trainers
 
@@ -143,7 +142,7 @@ The issue board is a software project management tool used to plan, organize, an
 
 ****
 
-* Navigate into `Project information > Members`
+* Navigate into `Manage > Members`
 * Use `Invite members` and search for the trainers
 * Select the `Developer` role and add the trainers
 
