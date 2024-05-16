@@ -47,8 +47,6 @@ Hint: Git stores this information in the file `.git/HEAD`.
 
     @@@ Sh
     $ cd $HOME/training
-
-    @@@ Sh
     $ git show HEAD^
 
 or

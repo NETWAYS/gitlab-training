@@ -47,14 +47,15 @@ https://docs.gitlab.com/ee/ci/pipelines/
 
 Incomplete example:
 
+    @@@Yaml
     stages:
       - test
       - build
 
-    all_tests:
+    lint_markdown:
       stage: test
 
-    markdown:
+    convert_markdown:
       stage: build
 
 ~~~SECTION:handouts~~~
@@ -99,24 +100,20 @@ Documentation: https://docs.gitlab.com/ce/ci/yaml/README.html#stage
 
 ### Add jobs to stages
 
-    @@@ Sh
-    $ vim .gitlab-ci.yml
-
+    @@@Yaml
     ...
 
-    all_tests:
+    lint_markdown:
       stage: test
 
     ...
 
-    markdown:
+    convert_markdown:
       stage: build
 
 ### Complete example
 
-    @@@ Sh
-    $ vim .gitlab-ci.yml
-
+    @@@Yaml
     image: alpine:latest
 
     before_script:
@@ -127,13 +124,13 @@ Documentation: https://docs.gitlab.com/ce/ci/yaml/README.html#stage
       - test
       - build
 
-    all_tests:
+    lint_markdown:
       stage: test
       script:
         - pymarkdown scan README.md
       allow_failure: true
 
-    markdown:
+    convert_markdown:
       stage: build
       script:
         - python -m markdown README.md > README.html
@@ -163,6 +160,7 @@ Instead of stages we can use the `needs` keyword to define dependencies between 
 
 Example:
 
+    @@@Yaml
     build_a:
       stage: build
       script:
@@ -196,6 +194,7 @@ We can use the `rules` keyword to include or exclude jobs.
 
 Example:
 
+    @@@Yaml
     stages:
       - test
     run_a_jobs:
@@ -228,6 +227,7 @@ The `rules` keyword accepts an array of rules defined with: if, changes , exists
 
 Incomplete example:
 
+    @@@Yaml
     publish:
       stage: deploy
       rules:
@@ -262,14 +262,15 @@ Hint: Requires the release-cli tool.
 
 ### Add a job to publish our HTML
 
-    @@@ Sh
+    @@@Yaml
     publish:
       stage: publish
-      needs: [build]
       before_script:
         - wget -O /usr/local/bin/release-cli
           https://release-cli-downloads.s3.amazonaws.com/latest/release-cli-linux-amd64
         - chmod +x /usr/local/bin/release-cli
+      script:
+        - echo "Creating a new Release"
       rules:
         - if: $CI_COMMIT_TAG
       release:
@@ -277,7 +278,7 @@ Hint: Requires the release-cli tool.
         ref: '$CI_COMMIT_SHA'
         description: '$CI_COMMIT_TAG_MESSAGE'
 
----------------
+---
 
 !SLIDE smbullets
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: CI: Trigger Pipeline Rules

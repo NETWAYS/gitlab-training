@@ -160,6 +160,8 @@ stages, `git stash list` will list them.
   * Hint: When the base commit differs, the checksum changes, thus new commit ID
   * `-x` can be used to keep a reference to the original commit
 
+Example use-case: backporting patches to older software version.
+
 Example:
 
     $ git cherry-pick -x ef5d1c2
