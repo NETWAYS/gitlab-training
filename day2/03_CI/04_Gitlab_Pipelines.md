@@ -238,6 +238,18 @@ Incomplete example:
 
 Hint: Requires the release-cli tool.
 
+~~~SECTION:handouts~~~
+
+****
+
+Releases can have custom assets, for example compiled executables. These are added via URLs and can thus
+be also hosted outside of GitLab.
+
+A GitLab Release automatically adds the project's source code as a default asset.
+
+~~~ENDSECTION~~~
+
+
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: CI: Pipeline Rules
 
