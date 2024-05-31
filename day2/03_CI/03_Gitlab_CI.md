@@ -197,7 +197,7 @@ https://docs.gitlab.com/ee/ci/yaml/gitlab_ci_yaml.html
 * Objective:
  * Create CI configuration for the training project
 * Steps:
- * Create the `.gitlab-ci.yml` file in the `training` directory (Web IDE)
+ * Create the `.gitlab-ci.yml` file in the `training` directory
  * Add the following content to the file and commit
 
 Example:
@@ -208,6 +208,8 @@ Example:
     my_job:
       script:
         - exit 1
+
+Hint: You can use the Pipeline editor in the Web UI.
 
 !SLIDE supplemental exercises
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Create the .gitlab-ci.yml
@@ -683,7 +685,7 @@ Example:
     @@@Yaml
     job1:
       script:
-      - echo "Job for the Commit: '$CI_COMMIT_SHA'"
+      - echo "Job for the Commit: $CI_COMMIT_SHA"
 
 Usecases: Credentials (`AWS_ACCESS_KEY`) or controlling builds (`CMAKE_C_FLAGS`).
 

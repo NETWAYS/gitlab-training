@@ -62,7 +62,7 @@
 
 * Creating Projects and `git remote`
 * Working with Remote Branches
- * `git push --force`, `git push origin --delete feature/login`
+ * `git push --force`, `git pull origin my-branch`
 * Create Milestone and First Issue
 * Create Merge Request
 * Creating Pipelines with Jobs
