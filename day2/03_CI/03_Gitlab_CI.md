@@ -685,7 +685,7 @@ Example:
     @@@Yaml
     job1:
       script:
-      - echo "Job for the Commit: $CI_COMMIT_SHA"
+      - echo "Job for the Commit $CI_COMMIT_SHA"
 
 Usecases: Credentials (`AWS_ACCESS_KEY`) or controlling builds (`CMAKE_C_FLAGS`).
 
