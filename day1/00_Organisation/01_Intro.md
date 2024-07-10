@@ -40,5 +40,5 @@ Click on the link in your email to join the session
 
 * We are using a shared GitLab instance hosted on https://nws.netways.de/
 * The instance is a free-forever version
-* You should have received administrative rights for the instance
+* You should have received user access for the instance and need to set a password
 
