@@ -34,3 +34,11 @@ Click on the link in your email to join the session
 * Operating system is CentOS
 * We use tmux to join your session and help you
 * Change the appearance of the terminal as you like
+
+!SLIDE smbullets
+# GitLab Instance
+
+* We are using a shared GitLab instance hosted on https://nws.netways.de/
+* The instance is a free-forever version
+* You should have received user access for the instance and need to set a password
+
