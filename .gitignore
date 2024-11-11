@@ -1,0 +1,8 @@
+.*
+!.gitignore
+!.gitattributes
+static
+stats
+trainer
+*.pdf
+global
