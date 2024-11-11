@@ -1,2 +1,0 @@
-!SLIDE noprint subsectionnonum
-# Trainer
