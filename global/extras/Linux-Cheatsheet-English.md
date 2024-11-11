@@ -51,3 +51,13 @@
 | Talk to HTTP endpoint | `curl -X GET <HTTP path>` |
 | Search for regular expression in file | `grep <regular expression> <Path to file>` |
 | Search for regular expression in directory | `grep -r <regular expression> <Path to file>` |
+
+## tmux
+
+| Description | Command |
+|---|---|
+| Split pane with horizontal layout | `Ctrl + b %` |
+| Split pane with vertical layout | `Ctrl + b "` |
+| Switch to next pane | `Ctrl + b o` |
+| Toggle fullscreen on current pane | `Ctrl + b z` |
+| Close current pane | `Ctrl + b x` |

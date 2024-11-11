@@ -51,3 +51,13 @@
 | HTTP Endpunkt ansprechen | `curl -X GET <HTTP Pfad>` |
 | Regulären Ausdruck in Datei suchen | `grep <regulärer Ausdruck> <Pfad zur Datei>` |
 | Regulären Ausdruck in Ordner suchen | `grep -r <regulärer Ausdruck> <Pfad zur Datei>` |
+
+## tmux
+
+| Beschreibung | Befehl |
+|---|---|
+| Fenster horizontal teilen | `Ctrl + b %` |
+| Fenster vertikal teilen | `Ctrl + b "` |
+| Zum nächsten Fenster wechseln | `Ctrl + b o` |
+| Vollbildmodus wechseln | `Ctrl + b z` |
+| Aktuelles Fenster schließen | `Ctrl + b x` |

@@ -1,6 +1,6 @@
-# NETWAYS Training global artefacts
+# NETWAYS Training global artifacts
 
-This repository holds global artefacts for a specific NETWAYS training. For example, layouts, templates and images
+This repository holds global artifacts for a specific NETWAYS training. For example, layouts, templates and images
 resides here.
 
 ## How to use

@@ -44,4 +44,15 @@
 !SLIDE noprint
 # NETWAYS Trainings & Workshops
 
-<center><img src="../_images/overview_trainings.png" style="width:720px;height:590px;" alt="NETWAYS Trainings & Workshops"/></center>
+* Ansible
+* Elastic Stack
+* Foreman
+* GitLab
+* Grafana
+* Graylog
+* Icinga
+* Kubernetes
+* Prometheus
+* Terraform
+
+Check out: https://www.netways.de/schulungen/

@@ -15,12 +15,18 @@ execdocker () {
     $RUNTIME rm -f $CNAME 2> /dev/null
   fi
 
+  case $RUNTIME in
+      *podman*) USERNS=keep-id;;
+      *)        USERNS=host;;
+  esac
+
   $RUNTIME run \
     -it \
     --name=$CNAME \
     --rm \
     -p 9090:9090 \
     --user $(id -u) \
+    --userns=$USERNS \
     -v "$DIR:/training:z" \
     -e "LANG=$CLANG" \
     -e "LANGUAGE=$CLANG" \
@@ -36,7 +42,7 @@ printhandouts () {
   # Removes showoff's Section markers for PDF output
   sed -i 's/~~~.*~~~ //g' static/index.html
   echo -e "\n--- RUN WKHTMLTOPDF FOR HANDOUTS ---"
-  execdocker "wkhtmltopdf --enable-local-file-access --load-error-handling ignore -s A5 --print-media-type --footer-left [page] --footer-right ©NETWAYS static/index.html ${TRAINING}_${1}-handouts.pdf"
+  execdocker "wkhtmltopdf --enable-local-file-access --load-error-handling ignore -s ${FORMAT} --print-media-type --footer-left [page] --footer-right ©NETWAYS static/index.html ${TRAINING}_${1}_${FORMAT}-handouts.pdf"
 }
 
 # Generate exercises as showoff HTML and convert HTML to PDF
@@ -46,7 +52,7 @@ printexercises () {
   # Removes showoff's Section markers for PDF output
   sed -i 's/~~~.*~~~ //g' static/index.html
   echo -e "\n--- RUN WKHTMLTOPDF FOR EXERCISES ---"
-  execdocker "wkhtmltopdf --enable-local-file-access --load-error-handling ignore -s A5 --print-media-type --footer-left [page] --footer-right ©NETWAYS static/index.html ${TRAINING}_${1}-exercises.pdf"
+  execdocker "wkhtmltopdf --enable-local-file-access --load-error-handling ignore -s ${FORMAT} --print-media-type --footer-left [page] --footer-right ©NETWAYS static/index.html ${TRAINING}_${1}_${FORMAT}-exercises.pdf"
 }
 
 # Generate solutions as showoff HTML and convert HTML to PDF
@@ -56,7 +62,7 @@ printsolutions () {
   # Removes showoff's Section markers for PDF output
   sed -i 's/~~~.*~~~ //g' static/index.html
   echo -e "\n--- RUN WKHTMLTOPDF FOR SOLUTIONS ---"
-  execdocker "wkhtmltopdf --enable-local-file-access --load-error-handling ignore -s A5 --print-media-type --footer-left [page] --footer-right ©NETWAYS static/index.html ${TRAINING}_${1}-solutions.pdf"
+  execdocker "wkhtmltopdf --enable-local-file-access --load-error-handling ignore -s ${FORMAT} --print-media-type --footer-left [page] --footer-right ©NETWAYS static/index.html ${TRAINING}_${1}_${FORMAT}-solutions.pdf"
 }
 
 setlayout () {
@@ -115,6 +121,27 @@ case "$LAYOUT" in
 esac
 
 setlayout $LAYOUT
+
+echo -e "\n### FORMAT ###"
+
+echo -e "
+   [1] A5
+   [2] A4\n"
+
+FORMAT_DEFAULT=1
+read -p "Which format? [1-2] (Default: "$FORMAT_DEFAULT"): " FORMAT
+FORMAT="${FORMAT:-$FORMAT_DEFAULT}"
+
+while [[ $FORMAT != [1-2] ]]; do
+  echo "Invalid option, try again..."
+  read -p "Which format? [1-2] (Default: "$FORMAT_DEFAULT"): " FORMAT
+  FORMAT="${FORMAT:-$FORMAT_DEFAULT}"
+done
+
+case "$FORMAT" in
+  1) FORMAT=A5;;
+  2) FORMAT=A4;;
+esac
 
 echo -e "\n### MODE ###"
 
