@@ -81,6 +81,8 @@ Documentation: https://docs.gitlab.com/ce/ci/yaml/README.html#stage
 * Commit the changes
 * Check the GitLab Job Pipelines
 
+Hint: You can add `[ci skip]` or `[skip ci]` to your commit message.
+
 !SLIDE supplemental solutions
 # Lab ~~~SECTION:MAJOR~~~.~~~SECTION:MINOR~~~: Proposed Solution
 ****

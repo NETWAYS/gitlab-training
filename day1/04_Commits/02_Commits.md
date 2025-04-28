@@ -20,6 +20,11 @@ Additionally, the date, time, and the checksum of the previous commit are stored
 user name and email address as commit author. This command opens the configured editor
 requiring you to add a commit message.
 
+You can also create empty commits. This is sometimes done with the initial commit in a repository:
+
+    @@@Sh
+    git commit --allow-empty -m "Initial commit"
+
 ~~~ENDSECTION~~~
 
 !SLIDE smbullets
